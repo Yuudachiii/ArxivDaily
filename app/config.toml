@@ -98,5 +98,5 @@ quota_timezone = "Asia/Shanghai"
 query_counts_quota = false
 
 [archive]
-public_base_url = "https://raw.githubusercontent.com/KinokoY/ArxivDaily/arxivdaily-state"
+public_base_url = ""  # Actions fills this from github.repository for each fork.
 state_branch = "arxivdaily-state"

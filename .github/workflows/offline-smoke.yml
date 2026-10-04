@@ -1,0 +1,83 @@
+name: Offline smoke (no credentials)
+
+on:
+  push:
+    branches: [experiment/actions-offline-smoke]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TMPDIR: ${{ github.workspace }}/app/tmp
+      PIP_CACHE_DIR: ${{ github.workspace }}/app/tmp/pip-cache
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - name: Check out application
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Prepare temporary directories
+        run: mkdir -p tmp/pip-cache
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install locked dependencies
+        run: |
+          python -m pip install -r requirements.lock
+          python -m pip install -e . --no-deps --no-build-isolation
+          python -m pip check
+      - name: Verify fork archive configuration
+        env:
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os
+          import tomllib
+          import yaml
+
+          workflow = yaml.load(Path('../.github/workflows/daily-digest.yml').read_text(encoding='utf-8'), Loader=yaml.BaseLoader)
+          prepare = next(s['run'] for s in workflow['jobs']['digest']['steps'] if s['name'] == 'Prepare public configuration')
+          script = prepare.split("python - <<'PY'\n", 1)[1].split('\nPY', 1)[0]
+          exec(script, {})
+          actual = tomllib.loads(Path('config.toml').read_text(encoding='utf-8'))['archive']['public_base_url']
+          assert actual == f"https://raw.githubusercontent.com/{os.environ['REPOSITORY']}/arxivdaily-state"
+          PY
+      - name: Check public files
+        run: python scripts/check_public_files.py --tracked-only
+      - name: Run self-contained tests
+        # These five tests need ignored, version-pinned original HTML/PDF files.
+        # Keep the remaining parser, pipeline and local Git transaction tests.
+        run: |
+          python -m pytest -q --basetemp=tmp/smoke-tests --junitxml=reports/smoke.xml \
+            --deselect tests/test_fulltext.py::test_real_medisee_html_uses_figure_captions_for_tables_and_retains_formulas \
+            --deselect tests/test_fulltext.py::test_hashed_representative_html_sources_support_manual_summaries \
+            --deselect tests/test_fulltext.py::test_representative_pdf_pages_have_structured_reading_order \
+            --deselect tests/test_fulltext.py::test_real_pdf_fallback_download_parse_render_and_local_cleanup \
+            --deselect tests/test_fulltext.py::test_qualified_html_supplies_needed_same_version_figure_images_to_summary
+      - name: Run synthetic simulation
+        run: python -m arxivdaily.cli simulate --config config.toml --now 2026-10-02T07:17:00+00:00
+      - name: Summarize coverage
+        if: always()
+        run: |
+          echo '## Offline smoke' >> "$GITHUB_STEP_SUMMARY"
+          echo 'No credentials, paid API calls, real messages or persistent state publication.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Five original-paper HTML/PDF tests are excluded because those files are not distributed with Git.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload offline reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: arxivdaily-offline-smoke
+          path: |
+            app/reports/smoke.xml
+            app/reports/run.json
+          if-no-files-found: ignore
+          retention-days: 3

@@ -24,3 +24,4 @@ app/fixtures/sources/*.pdf
 app/fixtures/sources/*.png
 app/reports/*.xml
 app/reports/run.json
+/docs/CHANGE_LOG.md
