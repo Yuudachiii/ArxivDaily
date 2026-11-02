@@ -22,7 +22,7 @@ main 维护代码，状态分支维护机器状态和历史。存档放 main 技
 
 ## Actions 日常操作
 
-工作流当前配置北京时间每天 14:00（Asia/Shanghai），定时执行自动发送 Server酱通知，实际启动可能延迟。Secrets 配置 DEEPSEEK_API_KEY、SERVERCHAN_SENDKEY，DeepL 另需 TRANSLATION_API_KEY；允许 Actions contents 写权限。真实发送前检查代码库和归档公开可读。
+工作流当前配置北京时间每天 10:00（Asia/Shanghai），定时执行自动发送 Server酱通知，实际启动可能延迟。Secrets 配置 DEEPSEEK_API_KEY、SERVERCHAN_SENDKEY，DeepL 另需 TRANSLATION_API_KEY；允许 Actions contents 写权限。真实发送前检查代码库和归档公开可读。
 
 手工 mode 可选 daily、replay（指定 IDs）、backfill（UTC 起止日期）、retry（已有 ID 与失败阶段）；内容统一读取根配置 `[presentation]` 的模块开关。
 

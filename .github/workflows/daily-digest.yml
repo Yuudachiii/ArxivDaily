@@ -2,7 +2,7 @@ name: Daily arXiv digest
 
 on:
   schedule:
-    - cron: '0 14 * * *'
+    - cron: '0 10 * * *'
       timezone: Asia/Shanghai
   workflow_dispatch:
     inputs:
