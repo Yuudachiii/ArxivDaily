@@ -17,35 +17,34 @@ jobs:
           python-version: '3.12'
       - name: Install translators
         run: python -m pip install --quiet translators
-      - name: Probe free engines
+      - name: Probe library engines with default region
         run: |
           python - <<'PY'
-          import os
-          os.environ['translators_default_region'] = 'CN'
           import translators as ts
           text = 'Large language model reasoning with reinforcement learning'
-          for engine in ('google', 'bing', 'youdao', 'qq', 'baidu'):
+          for engine in ('google', 'bing', 'youdao'):
               try:
                   out = ts.translate_text(text, translator=engine, from_language='en', to_language='zh')
                   print(f'ENGINE {engine}: OK :: {str(out)[:80]}', flush=True)
               except Exception as exc:
                   print(f'ENGINE {engine}: FAIL :: {type(exc).__name__}: {str(exc)[:160]}', flush=True)
           PY
-      - name: Probe raw endpoints and semantic scholar
+      - name: Probe direct google throughput
         run: |
           python - <<'PY'
-          import json, urllib.request, urllib.parse
-          def get(url, headers=None):
-              req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0', **(headers or {})})
+          import time, urllib.parse, urllib.request
+          ok = 0
+          codes = {}
+          for i in range(40):
+              url = ('https://translate.googleapis.com/translate_a/single'
+                     '?client=gtx&sl=en&tl=zh-CN&dt=t&q=' +
+                     urllib.parse.quote(f'large language model test sentence {i} about reasoning and agents'))
               try:
-                  with urllib.request.urlopen(req, timeout=20) as r:
-                      return r.status, r.read()[:120]
+                  with urllib.request.urlopen(url, timeout=20) as r:
+                      ok += 1
               except Exception as exc:
-                  return getattr(exc, 'code', None), str(exc)[:120]
-          q = urllib.parse.quote('Large language model reasoning')
-          print('GOOGLE_GTX:', get(f'https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q={q}'))
-          print('MS_EDGE_AUTH:', get('https://edge.microsoft.com/translate/auth'))
-          print('MYMEMORY:', get('https://api.mymemory.translated.net/get?q=hello&langpair=en|zh-CN'))
-          print('SEMANTIC_SCHOLAR:', get('https://api.semanticscholar.org/graph/v1/paper/arXiv:2501.00001?fields=title,citationCount'))
-          print('ARXIV_STATS:', get('https://arxiv.org/stats/'))
+                  code = getattr(exc, 'code', None) or type(exc).__name__
+                  codes[code] = codes.get(code, 0) + 1
+              time.sleep(1)
+          print('THROUGHPUT ok=', ok, 'fail=', 40 - ok, 'codes=', codes, flush=True)
           PY
