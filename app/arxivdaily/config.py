@@ -20,9 +20,9 @@ DEFAULTS = {
         "screening_routes": True,
     },
     "prompts": {"directory": ""},
-    "selection": {"route_priority": ["medical_reasoning", "medical_objective", "general_rl", "transferable_objective", "general_reasoning"]},
+    "selection": {"mode": "llm", "route_priority": ["medical_reasoning", "medical_objective", "general_rl", "transferable_objective", "general_reasoning"]},
     "translation": {
-        "provider": "llm", "base_url": "https://api-free.deepl.com",
+        "provider": "llm", "label": "", "base_url": "https://api-free.deepl.com",
         "api_key_env": "TRANSLATION_API_KEY", "timeout": 30, "attempts": 3,
         "retry_delay_seconds": 1,
     },
@@ -73,9 +73,16 @@ def _merge(default: dict, supplied: dict, path: str = "") -> dict:
         if isinstance(default[key], dict):
             if not isinstance(value, dict):
                 raise ValueError(f"config table expected: {here}")
-            # Group and route *names* are extensible; supplying one entry
-            # updates it without silently removing every default route.
-            result[key] = (deepcopy(default[key]) | deepcopy(value)) if here in {"rules.groups", "rules.routes"} else _merge(default[key], value, here)
+            # Supplied route names replace the built-in scheme, so a project can
+            # fully repurpose its selection routes. When the file also replaces
+            # the routes, its groups are a complete replacement too; a file that
+            # only adds groups keeps the built-in groups for its default routes.
+            if here == "rules.routes":
+                result[key] = deepcopy(value)
+            elif here == "rules.groups":
+                result[key] = deepcopy(value) if "routes" in supplied else deepcopy(default[key]) | deepcopy(value)
+            else:
+                result[key] = _merge(default[key], value, here)
         else:
             result[key] = value
     return result
@@ -134,6 +141,12 @@ def load_config(path: str | Path | None = None) -> dict:
         with Path(path).open("rb") as handle:
             supplied = tomllib.load(handle)
     config = _merge(DEFAULTS, supplied)
+    # A replaced route table must not inherit the built-in priority list; keep
+    # configuration files that only define routes usable without extra noise.
+    supplied_selection = supplied.get("selection")
+    if (isinstance(supplied.get("rules"), dict) and "routes" in supplied["rules"]
+            and not (isinstance(supplied_selection, dict) and "route_priority" in supplied_selection)):
+        config["selection"]["route_priority"] = list(config["rules"]["routes"])
     branch = config["archive"]["state_branch"]
     if not isinstance(branch, str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._/-]*", branch) or ".." in branch or branch.endswith("/"):
         raise ValueError("archive.state_branch must be a valid branch name")
@@ -143,17 +156,20 @@ def load_config(path: str | Path | None = None) -> dict:
     if directory:
         base = Path(path).resolve().parent if path is not None else Path.cwd()
         config["prompts"]["directory"] = str((base / directory).resolve())
-    priority = config["selection"]["route_priority"]
-    if not isinstance(priority, list) or any(not isinstance(r, str) for r in priority) or len(priority) != 5 or set(priority) != set(DEFAULTS["selection"]["route_priority"]):
-        raise ValueError("selection.route_priority must list each of the five selection routes exactly once")
+    mode = config["selection"]["mode"]
+    if mode not in {"llm", "rules"}:
+        raise ValueError("selection.mode must be llm or rules")
     for key, value in config["presentation"].items():
         if type(value) is not bool:
             raise ValueError(f"presentation.{key} must be boolean")
     if not any(config["presentation"].values()):
         raise ValueError("presentation must enable at least one module")
     translation = config["translation"]
-    if translation["provider"] not in {"llm", "deepl", "libretranslate"}:
-        raise ValueError("translation.provider must be llm, deepl, or libretranslate")
+    if translation["provider"] not in {"llm", "deepl", "libretranslate", "google_free", "microsoft_free"}:
+        raise ValueError("translation.provider must be llm, deepl, libretranslate, google_free, or microsoft_free")
+    label = translation["label"]
+    if not isinstance(label, str) or len(label) > 32 or any(ord(character) < 32 for character in label):
+        raise ValueError("translation.label must be a string of at most 32 characters")
     name = translation["api_key_env"]
     if not isinstance(name, str) or not re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", name):
         raise ValueError("translation.api_key_env must be an environment variable name")
@@ -241,4 +257,9 @@ def load_config(path: str | Path | None = None) -> dict:
         raise ValueError("rules.groups must map names to phrase lists")
     if not isinstance(routes, dict) or not all(isinstance(v, list) and all(isinstance(c, list) and c and all(isinstance(g, str) and g in groups for g in c) for c in v) for v in routes.values()):
         raise ValueError("rules.routes must map names to OR clauses of AND groups")
+    priority = config["selection"]["route_priority"]
+    if (not isinstance(priority, list) or not priority
+            or any(not isinstance(name, str) or name not in routes for name in priority)
+            or len(set(priority)) != len(priority)):
+        raise ValueError("selection.route_priority must be a non-empty list of distinct configured route names")
     return config

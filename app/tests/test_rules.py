@@ -70,9 +70,13 @@ class RuleTests(unittest.TestCase):
     def test_custom_group_merge_and_no_secret_values(self):
         with tempfile.TemporaryDirectory(dir=TEST_TMP) as temp:
             path = Path(temp) / "config.toml"
-            path.write_text('[rules.groups]\nCUSTOM = ["pixel inference"]\n[rules.routes]\nnew = [["SEG", "CUSTOM"]]\ngeneral_reasoning = []\n', encoding="utf-8")
+            path.write_text('[rules.groups]\nSEG = ["segmentation"]\nCUSTOM = ["pixel inference"]\n[rules.routes]\nnew = [["SEG", "CUSTOM"]]\n', encoding="utf-8")
             config = load_config(path)
+            # Supplied routes replace the built-in scheme; groups stay extensible.
+            self.assertIn("CUSTOM", config["rules"]["groups"])
             self.assertIn("SEG", config["rules"]["groups"])
+            self.assertEqual(set(config["rules"]["routes"]), {"new"})
+            self.assertEqual(config["selection"]["route_priority"], ["new"])
             self.assertIn("new", match_rules(paper("x", "Pixel inference for segmentation."), config))
             path.write_text('[llm.filter]\napi_key = "should-not-be-here"\n', encoding="utf-8")
             with self.assertRaises(ValueError):

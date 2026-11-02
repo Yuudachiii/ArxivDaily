@@ -107,8 +107,12 @@ def render_archive(date: date | str, items: list[DigestItem], notes=None) -> str
     return "\n\n".join(parts).rstrip() + "\n"
 
 
-def server_title(date: date | str) -> str:
-    return f"arXiv 每日简报 {_day(date)}"
+def server_title(date: date | str, label: str = "") -> str:
+    base = f"arXiv 每日简报 {_day(date)}"
+    label = label if isinstance(label, str) else ""
+    if label and len(label) <= 32:
+        return f"{base} · {label}"
+    return base
 
 
 def render_notification(

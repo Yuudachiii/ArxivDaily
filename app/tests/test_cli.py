@@ -90,6 +90,75 @@ def test_missing_send_credentials_fail_before_external_work(tmp_path,monkeypatch
     assert "DEEPSEEK_API_KEY" in error and "SERVERCHAN_SENDKEY" in error
 
 
+def test_rules_mode_send_requires_only_the_push_key(tmp_path, monkeypatch):
+    from arxivdaily.cli import required_credentials
+    from arxivdaily.config import load_config
+    config = load_config()
+    config["selection"]["mode"] = "rules"
+    config["translation"]["provider"] = "google_free"
+    assert required_credentials(config) == [config["delivery"]["sendkey_env"]]
+    config["translation"]["provider"] = "microsoft_free"
+    assert required_credentials(config) == [config["delivery"]["sendkey_env"]]
+    config["translation"]["provider"] = "deepl"
+    assert required_credentials(config) == sorted({config["delivery"]["sendkey_env"], config["translation"]["api_key_env"]})
+
+    monkeypatch.delenv("DEEPSEEK_API_KEY", raising=False)
+    monkeypatch.delenv("TRANSLATION_API_KEY", raising=False)
+    monkeypatch.delenv("SERVERCHAN_SENDKEY", raising=False)
+    path = tmp_path / "config.toml"
+    path.write_text('[selection]\nmode = "rules"\n[archive]\npublic_base_url = "https://example.org/state"\n', encoding="utf-8")
+    report = tmp_path / "report.json"
+    assert main(["run", "--send", "--config", str(path), "--checkpoint-command", "never-execute", "--report", str(report)]) == 2
+    error = json.loads(report.read_text(encoding="utf-8"))["error"]
+    assert "SERVERCHAN_SENDKEY" in error and "DEEPSEEK_API_KEY" not in error
+
+
+def test_workflow_matrix_has_two_translation_variants_and_no_llm_secret():
+    root = Path(__file__).resolve().parents[2]
+    workflow = yaml.load((root / ".github/workflows/daily-digest.yml").read_text(encoding="utf-8"), Loader=yaml.BaseLoader)
+    job = workflow["jobs"]["digest"]
+    variants = job["strategy"]["matrix"]["translation"]
+    assert {item["provider"] for item in variants} == {"google_free", "microsoft_free"}
+    branches = {item["state_branch"] for item in variants}
+    assert branches == {"arxivdaily-state-google", "arxivdaily-state-microsoft"}
+    assert job["concurrency"]["group"] == "arxivdaily-state-${{ matrix.translation.state }}"
+    assert "concurrency" not in workflow  # per-variant groups, not a shared workflow lock
+    run_step = next(step for step in job["steps"] if step["name"] == "Run digest and checkpoint before side effects")
+    assert "DEEPSEEK_API_KEY" not in run_step.get("env", {})
+    prepare = next(step for step in job["steps"] if step["name"] == "Prepare public configuration")
+    assert prepare["env"]["TRANSLATION_PROVIDER"] == "${{ matrix.translation.provider }}"
+    assert prepare["env"]["STATE_BRANCH"] == "${{ matrix.translation.state_branch }}"
+
+
+def test_workflow_prepare_rewrites_translation_variant_and_state_branch(tmp_path, monkeypatch):
+    import shutil
+    from arxivdaily.config import load_config
+    root = Path(__file__).resolve().parents[2]
+    app = tmp_path / "app"
+    app.mkdir()
+    shutil.copytree(root / "app/prompts", app / "prompts")
+    config = tmp_path / "config.toml"
+    config.write_text((root / "config.toml").read_text(encoding="utf-8"), encoding="utf-8")
+    workflow = yaml.load((root / ".github/workflows/daily-digest.yml").read_text(encoding="utf-8"), Loader=yaml.BaseLoader)
+    prepare = next(step["run"] for step in workflow["jobs"]["digest"]["steps"] if step["name"] == "Prepare public configuration")
+    script = prepare.split("python - <<'PY'\n", 1)[1].split("\nPY", 1)[0]
+    monkeypatch.chdir(app)
+    monkeypatch.setenv("REPOSITORY", "reader/llm-digest")
+    monkeypatch.setenv("TRANSLATION_PROVIDER", "microsoft_free")
+    monkeypatch.setenv("TRANSLATION_LABEL", "微软")
+    monkeypatch.setenv("STATE_BRANCH", "arxivdaily-state-microsoft")
+    output = tmp_path / "github-output"
+    monkeypatch.setenv("GITHUB_OUTPUT", str(output))
+    exec(script, {})
+    updated = load_config(config)
+    assert updated["translation"]["provider"] == "microsoft_free"
+    assert updated["translation"]["label"] == "微软"
+    assert updated["archive"]["state_branch"] == "arxivdaily-state-microsoft"
+    assert updated["archive"]["public_base_url"] == "https://raw.githubusercontent.com/reader/llm-digest/arxivdaily-state-microsoft"
+    assert tomllib.loads(config.read_text(encoding="utf-8"))["presentation"] == tomllib.loads((root / "config.toml").read_text(encoding="utf-8"))["presentation"]
+    assert output.read_text(encoding="utf-8").strip() == "state_branch=arxivdaily-state-microsoft"
+
+
 def test_delivery_only_recovery_does_not_require_deepseek_key(tmp_path,monkeypatch):
     from arxivdaily import cli
     from arxivdaily.config import load_config

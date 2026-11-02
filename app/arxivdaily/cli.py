@@ -18,8 +18,12 @@ from .models import ProcessingError, normalize_id, parse_time
 from .pipeline import Pipeline
 from .prompts import load_prompts, prompt_fingerprint
 from .rules import match_rules
+from .rulesmode import RulesAnalysis
 from .simulation import FixtureAnalysis, FixtureReader, load_fixture
 from .state import SecretScrubber, StateStore, command_publisher
+
+
+PROVIDERS = ["llm", "deepl", "libretranslate", "google_free", "microsoft_free"]
 
 
 def parser() -> argparse.ArgumentParser:
@@ -34,7 +38,7 @@ def parser() -> argparse.ArgumentParser:
     for command in ("run", "simulate", "replay"):
         p = subs.add_parser(command)
         p.add_argument("--config", default=None)
-        p.add_argument("--translation-provider", choices=["llm", "deepl", "libretranslate"], default=None)
+        p.add_argument("--translation-provider", choices=PROVIDERS, default=None)
         p.add_argument("--state-dir", default=".state")
         p.add_argument("--fixture", default=None)
         p.add_argument("--live", action="store_true", help="enable actual arXiv/fulltext/paid model requests")
@@ -78,6 +82,42 @@ def check_configuration(args) -> int:
         return 2
 
 
+def _translation_key_names(config: dict) -> list[str]:
+    provider = config["translation"]["provider"]
+    return {
+        "llm": [config["llm"]["filter"]["api_key_env"]],
+        "deepl": [config["translation"]["api_key_env"]],
+        "libretranslate": [],
+        "google_free": [],
+        "microsoft_free": [],
+    }.get(provider, [])
+
+
+def required_credentials(config: dict, *, retry_stage: str | None = None, resend_ids=(), promotion_ids=()) -> list[str]:
+    """Return the credential env names the requested --send path actually uses."""
+    sendkey = config["delivery"]["sendkey_env"]
+    if retry_stage == "delivery" or resend_ids:
+        return [sendkey]
+    mode = config["selection"]["mode"]
+    needs_translation = config["presentation"]["title_translation"] or config["presentation"]["abstract_translation"]
+    translation_keys = _translation_key_names(config) if needs_translation else []
+    if retry_stage in {"translation", "title_translation"}:
+        return sorted({sendkey, *translation_keys})
+    if retry_stage in {"body", "review", "summary"} or promotion_ids:
+        if mode == "rules":
+            raise ValueError("selection.mode = rules cannot run the LLM summary stages")
+        return sorted({config["llm"]["summary"]["api_key_env"], sendkey})
+    needs_fulltext = config["presentation"]["llm_summary"] or config["presentation"]["evidence"]
+    if mode == "rules":
+        if needs_fulltext:
+            raise ValueError("selection.mode = rules does not support llm_summary or evidence")
+        return sorted({sendkey, *translation_keys})
+    names = {config["llm"]["filter"]["api_key_env"], sendkey, *translation_keys}
+    if needs_fulltext:
+        names.add(config["llm"]["summary"]["api_key_env"])
+    return sorted(names)
+
+
 def main(argv=None) -> int:
     args = parser().parse_args(argv)
     if args.command == "config":
@@ -92,7 +132,18 @@ def main(argv=None) -> int:
         load_prompts(config)  # Fail before collection or paid requests if a prompt is missing.
         if args.translation_provider:
             config["translation"]["provider"] = args.translation_provider
-        names = [config["llm"][r]["api_key_env"] for r in ("filter", "summary")] + [config["delivery"]["sendkey_env"], config["translation"]["api_key_env"]]
+        mode = config["selection"]["mode"]
+        if mode == "rules" and config["translation"]["provider"] == "llm":
+            # Rules mode must never reach a model.  The committed config keeps
+            # provider="llm" as the legacy/test default, so live rules runs fall
+            # back to the keyless Google endpoint unless one is chosen explicitly.
+            if args.translation_provider == "llm":
+                raise ValueError("translation provider llm is unavailable when selection.mode = rules; use google_free or microsoft_free")
+            config["translation"]["provider"] = "google_free"
+        names = [config["delivery"]["sendkey_env"]]
+        if mode == "llm":
+            names += [config["llm"][r]["api_key_env"] for r in ("filter", "summary")]
+        names.append(config["translation"]["api_key_env"])
         secrets = [os.environ.get(n, "") for n in names]
         scrubber = SecretScrubber(secrets)
         live = args.live or args.send
@@ -105,6 +156,8 @@ def main(argv=None) -> int:
         if (args.promote or args.resend) and not args.send:
             raise ValueError("promotion or resend requires explicit --send")
         needs_fulltext = config["presentation"]["llm_summary"] or config["presentation"]["evidence"]
+        if mode == "rules" and needs_fulltext:
+            raise ValueError("selection.mode = rules does not support llm_summary or evidence")
         if args.promote and not needs_fulltext:
             raise ValueError("fulltext promotion requires llm_summary or evidence")
         if sum(bool(x) for x in (args.promote,args.resend,args.retry_stage)) > 1:
@@ -123,17 +176,7 @@ def main(argv=None) -> int:
         if args.send and (publisher is None or not config["archive"]["public_base_url"]):
             raise ValueError("--send requires public_base_url and --checkpoint-command")
         if args.send:
-            mt_names = [config["translation"]["api_key_env"]] if config["translation"]["provider"] == "deepl" else [config["llm"]["filter"]["api_key_env"]] if config["translation"]["provider"] == "llm" else []
-            needs_translation = config["presentation"]["title_translation"] or config["presentation"]["abstract_translation"]
-            required_names = [config["llm"]["filter"]["api_key_env"], config["delivery"]["sendkey_env"], *(mt_names if needs_translation else [])]
-            if needs_fulltext:
-                required_names.append(config["llm"]["summary"]["api_key_env"])
-            if args.retry_stage == "delivery" or resend_ids:
-                required_names = [config["delivery"]["sendkey_env"]]
-            elif args.retry_stage in {"body","review","summary"} or promotion_ids:
-                required_names = [config["llm"]["summary"]["api_key_env"],config["delivery"]["sendkey_env"]]
-            elif args.retry_stage in {"translation", "title_translation"}:
-                required_names = [config["delivery"]["sendkey_env"], *mt_names]
+            required_names = required_credentials(config, retry_stage=args.retry_stage, resend_ids=resend_ids, promotion_ids=promotion_ids)
             missing = sorted({name for name in required_names if not os.environ.get(name)})
             if missing:
                 raise ValueError("missing required credential environment variables: " + ", ".join(missing))
@@ -156,7 +199,7 @@ def main(argv=None) -> int:
         papers = None
         if live:
             collector = Collector(config)
-            analysis = AnalysisClient(config)
+            analysis = RulesAnalysis(config) if mode == "rules" else AnalysisClient(config)
             reader = FulltextReader(config, app_dir / "tmp" / "fulltext")
             if ids:
                 papers = collector.by_ids(ids)
@@ -181,7 +224,7 @@ def main(argv=None) -> int:
         if args.retry_stage or resend_ids or promotion_ids:
             papers = []
         report = Pipeline(config, store, collector, analysis, reader, delivery, now=now, real_send=args.send).run(papers, manual_start=args.start, manual_end=args.end, promotion_ids=promotion_ids, resend_ids=resend_ids, retry_stage=args.retry_stage, retry_ids=retry_ids)
-        report.update({"mode": "live" if live else "scripted_offline", "real_delivery": args.send, "state_dir": str(state_dir), "dry_run_isolated": isolated, "model_calls": getattr(analysis, "calls", None), "validation_scope": "scripted fixture behavior; not actual LLM or WeChat quality" if not live else "actual provider requests; consult stage status"})
+        report.update({"mode": "live" if live else "scripted_offline", "real_delivery": args.send, "state_dir": str(state_dir), "dry_run_isolated": isolated, "selection_mode": config["selection"]["mode"], "translation_provider": config["translation"]["provider"], "model_calls": getattr(analysis, "calls", None), "validation_scope": "scripted fixture behavior; not actual provider quality" if not live else "actual provider requests; consult stage status"})
         code = 1 if report.get("errors") else 0
     except Exception as exc:
         code = 2

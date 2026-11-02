@@ -1,10 +1,11 @@
 # ArxivDaily 唯一公开配置入口。改此文件后提交到 main，下一次 Actions 生效。
 # 不要写入任何 API key 或 SendKey；运行凭证由环境变量 / GitHub Actions Secrets 提供。
 # 配置说明：docs/CONFIGURATION.md；提示说明：docs/PROMPTS.md。
+# 当前用途：大语言模型（LLM）研究每日简报。日常路径不做任何模型调用，也不需要 LLM 密钥。
 
 # 日常入口一：每篇论文的内容模块。true = 勾选，false = 不生成、不显示。
 # 按标题、标题翻译、摘要、摘要翻译、总结、证据、来源、初筛路径的固定顺序呈现。
-# 不选 llm_summary 和 evidence 时不读取正文；evidence=false 不生成证据链。
+# 规则模式不生成总结和证据；不勾选 llm_summary/evidence 时不读取正文。
 [presentation]
 title = true
 title_translation = true
@@ -16,247 +17,190 @@ source = true
 screening_routes = true
 
 # arXiv 初筛：任一交叉分类命中即可；categories=[] 表示不限分类。
-# 默认关键词匹配标题与摘要。
+# 标题和摘要都参与关键词匹配。
 [rules]
-categories = ["cs.CV", "cs.LG", "cs.AI", "cs.CL"]
+categories = ["cs.CL", "cs.LG", "cs.AI", "cs.CV"]
 title_enabled = true
 exclude = []
 
 # 同义词组：同组词之间是 OR，大小写不敏感，按完整词和短语匹配。
+# 覆盖 LLM 研究的核心主题；可按自己的方向增删词组。
 [rules.groups]
 
-# Segmentation 基础任务
-SEG = [
-    "segmentation",
-    "segmenting",
-    "segmentation mask",
-    "semantic segmentation",
-    "instance segmentation",
-    "referring segmentation",
-    "pixel-level perception",
-    "pixel-wise perception",
-    "vessel segmentation"
+# 大语言模型本体与基础模型
+LLM = [
+    "large language model",
+    "large language models",
+    "LLM",
+    "LLMs",
+    "language model",
+    "language models",
+    "pretrained language model",
+    "pretrained language models",
+    "foundation model",
+    "foundation models",
+    "base model"
 ]
 
-# Reasoning / instruction / grounding segmentation
-REASON = [
-    "reasoning segmentation",
-    "reasoning-based segmentation",
-    "reasoning-aware segmentation",
-    "reasoning referring segmentation",
-    "referring image segmentation",
-    "referring expression segmentation",
-    "instruction-guided segmentation",
-    "prompt-guided segmentation",
-    "language-guided segmentation",
-    "visual grounding",
-    "grounded segmentation",
-    "position reasoning",
-    "positional reasoning",
-    "spatial reasoning",
-    "medical reasoning",
-    "implicit query",
-    "implicit queries",
-    "implicit instruction",
-    "complex instruction",
+# 训练：预训练、后训练、指令微调、偏好对齐
+TRAIN = [
+    "pre-training",
+    "pretraining",
+    "post-training",
+    "post training",
+    "instruction tuning",
+    "instruction-tuned",
+    "supervised fine-tuning",
+    "supervised finetuning",
+    "SFT",
+    "RLHF",
+    "reinforcement learning from human feedback",
+    "DPO",
+    "direct preference optimization",
+    "GRPO",
+    "fine-tuning",
+    "finetuning"
+]
+
+# 推理与提示：思维链、上下文学习、测试时计算
+INFER = [
     "chain-of-thought",
     "chain of thought",
-    "visual reasoning"
+    "CoT",
+    "reasoning",
+    "in-context learning",
+    "in-context",
+    "prompting",
+    "prompt engineering",
+    "test-time compute",
+    "test time compute",
+    "step-by-step reasoning",
+    "self-consistency"
 ]
 
-# Vision-Language / Multimodal LLM
-VLM = [
-    "vision-language model",
-    "vision language model",
-    "vision-language models",
+# Agent：工具调用、函数调用、多智能体
+AGENT = [
+    "agent",
+    "agents",
+    "agentic",
+    "tool use",
+    "tool-use",
+    "tool calling",
+    "function calling",
+    "function-call",
+    "multi-agent",
+    "multi agent"
+]
+
+# 检索增强生成
+RAG = [
+    "retrieval-augmented generation",
+    "retrieval augmented generation",
+    "retrieval-augmented",
+    "retrieval augmentation",
+    "RAG",
+    "graph retrieval"
+]
+
+# 效率：量化、KV cache、MoE、长上下文、投机解码、蒸馏
+EFF = [
+    "quantization",
+    "quantized",
+    "KV cache",
+    "key-value cache",
+    "mixture of experts",
+    "mixture-of-experts",
+    "MoE",
+    "long context",
+    "long-context",
+    "speculative decoding",
+    "distillation",
+    "distilled",
+    "pruning",
+    "sparse attention",
+    "flash attention"
+]
+
+# 安全与对齐
+SAFETY = [
+    "alignment",
+    "aligned",
+    "hallucination",
+    "hallucinations",
+    "jailbreak",
+    "jailbreaking",
+    "red teaming",
+    "red-teaming",
+    "safety",
+    "harmlessness",
+    "toxicity"
+]
+
+# 多模态大模型 / 视觉语言模型
+MM = [
     "multimodal large language model",
     "multi-modal large language model",
     "multimodal LLM",
-    "multimodal language model",
-    "large multimodal model",
-    "large multimodal models",
     "MLLM",
-    "LMM",
+    "vision-language model",
+    "vision language model",
+    "vision-language models",
     "VLM",
-    "large language model",
-    "vision-language foundation model",
+    "large multimodal model",
     "multimodal foundation model",
-    "language-guided segmentation",
-    "text-guided segmentation",
-    "instruction-guided segmentation",
-    "LLM-guided segmentation"
+    "LMM"
 ]
 
-# Medical / biomedical imaging
-MED = [
-    "medical",
-    "biomedical",
-    "clinical",
-    "radiology",
-    "radiologist",
-    "anatomical",
-    "anatomy",
-    "pathology",
-    "lesion",
-    "tumor",
-    "tumour",
-    "MRI",
-    "magnetic resonance imaging",
-    "CT",
-    "computed tomography",
-    "PET",
-    "X-ray",
-    "ultrasound",
-    "endoscopy",
-    "angiography",
-    "coronary",
-    "retinal",
-    "fundus",
-    "OCT",
-    "histopathology",
-    "whole slide image",
-    "whole-slide image",
-    "WSI",
-    "nuclei",
-    "polyp",
-    "dermoscopy",
-    "dermoscopic",
-    "mammography",
-    "microscopy",
-    "surgical",
-    "laparoscopic",
-    "echocardiography",
-    "colonoscopy",
-    "organ",
-    "volumetric",
-    "3D medical"
-]
-
-# RL / preference optimization / alignment
-RL_PREF = [
-    "reinforcement learning",
-    "reinforcement fine-tuning",
-    "reinforcement finetuning",
-    "preference learning",
-    "direct preference optimization",
-    "preference optimization",
-    "preference alignment",
-    "preference-based learning",
-    "policy optimization",
-    "reward optimization",
-    "reward model",
-    "reward modeling",
-    "verifiable reward",
-    "RLHF",
-    "RLAIF",
-    "DPO",
-    "PPO",
-    "GRPO",
-    "KTO",
-    "ORPO",
-    "SimPO",
-    "IPO"
-]
-
-# 明确的 loss / structural objective 创新
-# 避免使用裸的 loss / objective / optimization / boundary，降低普通 segmentation 论文噪声。
-OBJECTIVE = [
-    "loss function",
-    "loss formulation",
-    "training objective",
-    "learning objective",
-    "optimization objective",
-    "regularization",
-    "regularization term",
-    "boundary loss",
-    "boundary-aware loss",
-    "topological loss",
-    "topology-aware",
-    "topological",
-    "topology",
-    "connectivity loss",
-    "connectivity constraint",
-    "structural constraint",
-    "structure-aware loss",
-    "shape prior",
-    "shape constraint",
-    "Dice loss",
-    "Tversky loss",
-    "focal loss",
-    "Lovasz loss",
-    "Hausdorff loss",
-    "clDice",
-    "Betti"
-]
-
-# SAM 系架构
-SAM = [
-    "segment anything",
-    "segment anything model",
-    "SAM",
-    "SAM2",
-    "SAM 2",
-    "MedSAM",
-    "MedSAM2",
-    "SAM-Med2D",
-    "SAM-Med3D"
-]
-
-# 理论性、泛化性、迁移性提示
-THEORY_HINT = [
-    "theoretical",
-    "theory",
-    "provable",
-    "theorem",
-    "convergence",
-    "generalization bound",
-    "guarantee",
-    "transferability",
-    "transferable"
+# 评测与基准
+EVAL = [
+    "benchmark",
+    "benchmarks",
+    "evaluation",
+    "evaluations",
+    "leaderboard",
+    "human evaluation"
 ]
 
 # 组合规则：
 # 路线之间 OR；
 # 每个内层列表中的组之间 AND；
 # 多个内层列表 OR。
+# 具体方向在前、llm_core 最后：规则模式取“首个命中路线”，因此顺序也决定条目归属展示。
 [rules.routes]
-# 医学场景中的 reasoning / VLM segmentation
-medical_reasoning = [
-    ["MED", "SEG", "REASON"],
-    ["MED", "SEG", "VLM"]
-]
-# 不限医学领域，只要是 segmentation + reasoning/VLM + RL/DPO/preference optimization
-general_rl = [
-    ["SEG", "REASON", "RL_PREF"],
-    ["SEG", "VLM", "RL_PREF"]
-]
-# 医学 + SAM 系 segmentation + 新 loss/objective
-medical_objective = [
-    ["MED", "SEG", "SAM", "OBJECTIVE"]
-]
-# 通用 reasoning segmentation。
-general_reasoning = [
-    ["SEG", "REASON"]
-]
-# 可迁移的 SAM / objective 工作。
-transferable_objective = [
-    ["SEG", "SAM"],
-    ["SEG", "OBJECTIVE", "THEORY_HINT"]
-]
+llm_reasoning = [["LLM", "INFER"]]
+llm_training = [["LLM", "TRAIN"]]
+llm_agent = [["LLM", "AGENT"]]
+llm_rag = [["LLM", "RAG"]]
+llm_efficiency = [["LLM", "EFF"]]
+llm_safety = [["LLM", "SAFETY"]]
+llm_multimodal = [["LLM", "MM"]]
+llm_eval = [["LLM", "EVAL"]]
+llm_core = [["LLM"]]
 
-# 全文名额分配顺序：
+# 正文名额分配顺序（规则模式下全部为翻译档，顺序决定条目排列）。
 [selection]
+mode = "rules"
 route_priority = [
-    "medical_reasoning",
-    "general_rl",
-    "medical_objective",
-    "general_reasoning",
-    "transferable_objective"
+    "llm_reasoning",
+    "llm_training",
+    "llm_agent",
+    "llm_rag",
+    "llm_efficiency",
+    "llm_safety",
+    "llm_multimodal",
+    "llm_eval",
+    "llm_core"
 ]
 
-# 翻译服务：llm 复用终筛模型和密钥；deepl 使用官方免费 API；libretranslate 使用自己的实例。LLM 翻译提示在 app/prompts/。
+# 翻译服务：Actions 的每日任务会按 matrix 覆盖为 google_free / microsoft_free，
+# 两者免费且不需要密钥，每个变体运行一次、推送一次。
+# 留下 provider = "llm" 作为本地测试的兼容默认值；规则模式不会调用 LLM，
+# 本地真实运行可显式使用 --translation-provider google_free。
+# 其他可选值：deepl（需要 TRANSLATION_API_KEY）、libretranslate（自建实例）。
+# label 会追加到微信推送标题，便于区分两个变体；留空则不加后缀。
 [translation]
 provider = "llm"
+label = ""
 # llm 模式复用 llm.filter；以下端点和密钥引用仅用于机器翻译服务。
 # TRANSLATION_API_KEY 是环境变量/Secret 的名称，不是已经创建好的密钥。
 # 切换 deepl 后，需要自己在 DeepL API 账户创建 key，再配置同名 Secret。
@@ -266,7 +210,7 @@ timeout = 30
 attempts = 3
 retry_delay_seconds = 1
 
-# 完整总结每日默认 5 篇，最多 10 篇；超额入选论文进入轻量档。不选总结/证据时不受 full_daily_limit 限制。
+# 完整总结每日默认 5 篇，最多 10 篇；规则模式不生成总结，不受此上限限制。
 [limits]
 full_daily_limit = 5
 review_daily_limit = 2
@@ -275,6 +219,7 @@ recovery_days = 14
 run_seconds = 2400
 
 # 日常入口二：本目录集中存放六项任务提示。相对路径以本配置文件所在目录为基准。
+# 规则模式不读取提示文件，但配置校验仍要求提示目录完整。
 [prompts]
 directory = "app/prompts"
 
@@ -287,6 +232,7 @@ lookback_days = 14
 shard_limit = 10000
 max_candidates = 2000
 
+# 以下 LLM 配置在规则模式下不会使用；保留以便切回 mode = "llm" 时仍可运行。
 # 可选单次运行费用保护（按配置币种估计，非精确账单）：取消下一行注释启用。
 [llm]
 # max_run_cost = 12.5
@@ -342,6 +288,7 @@ max_download_bytes = 25000000
 max_visual_pages = 8
 
 # 推送密钥只填写环境变量名称，不能填写密钥值。发送、告警和重试共同受每日额度限制。
+# 规则模式每日只需要 SERVERCHAN_SENDKEY 一个 Secret。
 [delivery]
 sendkey_env = "SERVERCHAN_SENDKEY"
 daily_limit = 5
@@ -351,7 +298,8 @@ body_bytes = 30000
 quota_timezone = "Asia/Shanghai"
 query_counts_quota = false
 
-# 正式状态和公开历史分支。Actions 从这里读取分支名；更换已有正式分支需迁移状态。
+# 正式状态和公开历史分支。本地留空时 Actions 会按 matrix 覆盖为：
+# arxivdaily-state-google / arxivdaily-state-microsoft。
 # 留空时 Actions 按当前 owner/repo 和 state_branch 生成地址，fork 无需改用户名。
 # 本地 --send 需显式填写自己仓库的公开归档地址。
 [archive]

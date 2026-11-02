@@ -136,7 +136,7 @@ def test_notebook_cells_execute_offline_with_metadata_fetch_substituted(tmp_path
             continue
         if index == 5:
             def offline_fetch(config, window, cache_dir, **kwargs):
-                client = MetadataClient([raw(1, "Medical spatial reasoning segmentation.")])
+                client = MetadataClient([raw(1, "We pre-train a large language model with instruction tuning.")])
                 return load_or_fetch(config, date_window(14, "2026-10-06"), tmp_path, client=client)
             namespace["load_or_fetch"] = offline_fetch
             namespace["window"] = date_window(14, "2026-10-06")

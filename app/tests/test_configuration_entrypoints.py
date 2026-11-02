@@ -27,12 +27,29 @@ def test_default_cli_uses_configuration_not_internal_defaults(tmp_path, monkeypa
     assert result["real_delivery"] is False
 
 
+def test_committed_config_is_llm_research_rules_mode():
+    config = load_config(default_config_path())
+    assert config["selection"]["mode"] == "rules"
+    assert config["presentation"]["llm_summary"] is False
+    assert config["presentation"]["evidence"] is False
+    assert set(config["rules"]["routes"]) == {
+        "llm_core", "llm_training", "llm_reasoning", "llm_agent", "llm_rag",
+        "llm_efficiency", "llm_safety", "llm_multimodal", "llm_eval",
+    }
+    assert {"LLM", "TRAIN", "INFER", "AGENT", "RAG", "EFF", "SAFETY", "MM", "EVAL"} <= set(config["rules"]["groups"])
+    assert config["rules"]["categories"] == ["cs.CL", "cs.LG", "cs.AI", "cs.CV"]
+    # The committed provider stays "llm" only as a test-safe default; Actions
+    # overrides it per matrix variant.
+    assert config["translation"]["provider"] == "llm"
+    assert config["translation"]["label"] == ""
+
+
 def test_rule_preview_uses_supplied_categories_and_has_no_provider_requests(tmp_path, capsys, monkeypatch):
     monkeypatch.setattr(cli, "AnalysisClient", lambda *_: pytest.fail("rule preview instantiated provider"))
-    assert cli.main(["config", "--abstract", "Medical spatial reasoning segmentation with DPO.", "--categories", "cs.CV"]) == 0
+    assert cli.main(["config", "--abstract", "We pre-train a large language model with instruction tuning.", "--categories", "cs.CL"]) == 0
     output = json.loads(capsys.readouterr().out)
-    assert "medical_reasoning" in output["rule_hits"] and output["external_requests"] is False
-    assert cli.main(["config", "--abstract", "Medical spatial reasoning segmentation with DPO.", "--categories", "hep-th"]) == 0
+    assert "llm_training" in output["rule_hits"] and output["external_requests"] is False
+    assert cli.main(["config", "--abstract", "We pre-train a large language model with instruction tuning.", "--categories", "hep-th"]) == 0
     assert json.loads(capsys.readouterr().out)["rule_hits"] == []
 
 

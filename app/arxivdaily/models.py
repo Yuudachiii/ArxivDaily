@@ -77,7 +77,10 @@ class Paper:
         return cls(**{k: data[k] for k in cls.__dataclass_fields__ if k in data})
 
 
+# Legacy LLM route names kept for old saved fixtures/state; rules mode only
+# needs any syntactic route label (the configured rule name or "rules").
 ROUTES = {"medical_reasoning", "medical_objective", "general_rl", "transferable_objective", "general_reasoning", "irrelevant"}
+_ROUTE_NAME = re.compile(r"[A-Za-z][A-Za-z0-9_]*")
 
 
 @dataclass
@@ -96,7 +99,7 @@ class Decision:
     review_evidence: list[dict] = field(default_factory=list)
 
     def __post_init__(self) -> None:
-        if self.status not in {"select", "reject", "uncertain"} or self.tier not in {"full", "light"} or self.route not in ROUTES:
+        if self.status not in {"select", "reject", "uncertain"} or self.tier not in {"full", "light", "translation"} or not isinstance(self.route, str) or not _ROUTE_NAME.fullmatch(self.route):
             raise ProcessingError("invalid selection enum")
         if not isinstance(self.reason, str) or not self.reason.strip():
             raise ProcessingError("selection reason missing")
@@ -113,12 +116,15 @@ class Decision:
             raise ProcessingError("invalid relevance score")
         if self.status == "select" and self.route == "irrelevant":
             raise ProcessingError("irrelevant route cannot be selected")
-        if self.status == "select" and self.route == "general_reasoning":
-            self.tier = "light"
-        if self.status == "select" and self.route == "general_rl" and not (self.rl_is_method or self.dpo_is_method):
-            raise ProcessingError("general RL route requires a method contribution")
-        if self.status == "select" and self.route == "transferable_objective" and not (self.theory_evidence and self.transfer_evidence):
-            raise ProcessingError("objective route requires theory and transfer evidence")
+        if self.status == "select" and self.tier != "translation":
+            # Legacy model-decision rules; deterministic rules mode uses the
+            # translation tier and must not inherit these route semantics.
+            if self.route == "general_reasoning":
+                self.tier = "light"
+            if self.route == "general_rl" and not (self.rl_is_method or self.dpo_is_method):
+                raise ProcessingError("general RL route requires a method contribution")
+            if self.route == "transferable_objective" and not (self.theory_evidence and self.transfer_evidence):
+                raise ProcessingError("objective route requires theory and transfer evidence")
 
     def to_dict(self) -> dict:
         return asdict(self)

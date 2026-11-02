@@ -7,5 +7,5 @@
 返回与摘要终筛相同的 JSON 字段，另加非空 review_evidence 数组。
 每项为 {"field": "theory|transfer|method|evaluation|other", "locator": "原定位", "quote": "原文连续片段", "source_url": "原版本URL"}。
 quote 必须从提供的正文逐字复制且至少 12 字符；定位和 URL 必须使用原值。
-transferable_objective 入选时，分别提供 theory 与 transfer 证据；general_rl 入选时提供 method 证据。
+若使用旧版路线名，transferable_objective 入选时分别提供 theory 与 transfer 证据；general_rl 入选时提供 method 证据。
 只输出 JSON。

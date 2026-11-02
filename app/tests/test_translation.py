@@ -179,6 +179,70 @@ def test_mt_retries_rate_limits_but_never_uses_paid_fallback():
         TranslationClient(cfg, AnalysisClient(cfg, client)).translate(paper())
 
 
+def test_google_free_provider_needs_no_key_and_parses_nested_segments(monkeypatch):
+    monkeypatch.delenv("TRANSLATION_API_KEY", raising=False)
+    cfg = load_config()
+    cfg["translation"].update(provider="google_free")
+    requests = []
+
+    def respond(request):
+        requests.append(request)
+        assert request.url.host == "translate.googleapis.com"
+        assert request.url.path == "/translate_a/single"
+        assert request.url.params["client"] == "gtx" and request.url.params["sl"] == "en"
+        assert request.url.params["tl"] == "zh-CN" and request.url.params["dt"] == "t"
+        text = request.url.params["q"]
+        return httpx.Response(200, json=[[[f"译:{text}", text, None], ["补充", text, None]], None, "en"])
+
+    client = httpx.Client(transport=httpx.MockTransport(respond))
+    from arxivdaily.rulesmode import RulesAnalysis
+    analysis = RulesAnalysis(cfg, client)
+    result = TranslationClient(cfg, analysis).translate(paper())
+    assert result == Translation("译:" + paper().title + "补充", "译:" + paper().abstract + "补充")
+    assert len(requests) == 2  # one request per text
+    assert not analysis.usage_records and analysis.calls == {"selection": 0, "review": 0, "summary": 0}
+
+
+def test_microsoft_free_provider_uses_auth_token_and_single_post(monkeypatch):
+    monkeypatch.delenv("TRANSLATION_API_KEY", raising=False)
+    cfg = load_config()
+    cfg["translation"].update(provider="microsoft_free")
+    requests = []
+
+    def respond(request):
+        requests.append(request)
+        if request.method == "GET":
+            assert request.url.host == "edge.microsoft.com" and request.url.path == "/translate/auth"
+            return httpx.Response(200, text="edge-token")
+        assert request.url.host == "api-edge.cognitive.microsofttranslator.com"
+        assert request.url.path == "/translate"
+        assert request.url.params["api-version"] == "3.0"
+        assert request.url.params["from"] == "en" and request.url.params["to"] == "zh-Hans"
+        assert request.headers["Authorization"] == "Bearer edge-token"
+        assert request.headers["Content-Type"] == "application/json"
+        assert json.loads(request.content) == [{"Text": paper().title}, {"Text": paper().abstract}]
+        return httpx.Response(200, json=[{"translations": [{"text": "标题"}]}, {"translations": [{"text": "摘要"}]}])
+
+    client = httpx.Client(transport=httpx.MockTransport(respond))
+    from arxivdaily.rulesmode import RulesAnalysis
+    analysis = RulesAnalysis(cfg, client)
+    result = TranslationClient(cfg, analysis).translate(paper())
+    assert result == Translation("标题", "摘要")
+    assert [request.method for request in requests] == ["GET", "POST"]
+
+
+def test_google_free_retries_rate_limits_without_llm_fallback():
+    cfg = load_config()
+    cfg["translation"].update(provider="google_free", attempts=2)
+    replies = [httpx.Response(429), httpx.Response(200, json=[[["标题", "title", None]]])]
+    client = httpx.Client(transport=httpx.MockTransport(lambda request: replies.pop(0)))
+    from arxivdaily.rulesmode import RulesAnalysis
+    analysis = RulesAnalysis(cfg, client)
+    sleeps = []
+    assert TranslationClient(cfg, analysis, sleep=sleeps.append).translate(paper(), title_only=True).title_zh == "标题"
+    assert len(sleeps) == 1 and not analysis.usage_records
+
+
 @pytest.mark.parametrize("text", ['[workflow]\nmode="bad"', '[translation]\nprovider="unknown"', '[translation]\nprovider="deepl"\nbase_url="http://localhost:5000"'])
 def test_invalid_translation_config_is_rejected(tmp_path, text):
     path = tmp_path / "config.toml"
@@ -191,6 +255,26 @@ def test_local_libretranslate_config_is_allowed(tmp_path):
     path = tmp_path / "config.toml"
     path.write_text('[translation]\nprovider="libretranslate"\nbase_url="http://localhost:5000"', encoding="utf-8")
     assert load_config(path)["translation"]["provider"] == "libretranslate"
+
+
+@pytest.mark.parametrize("provider", ["google_free", "microsoft_free"])
+def test_keyless_free_provider_config_is_allowed(tmp_path, provider):
+    path = tmp_path / "config.toml"
+    path.write_text(f'[translation]\nprovider="{provider}"\nlabel="谷歌"\n', encoding="utf-8")
+    config = load_config(path)
+    assert config["translation"]["provider"] == provider
+    assert config["translation"]["label"] == "谷歌"
+
+
+@pytest.mark.parametrize("text", [
+    '[selection]\nmode = "auto"',
+    '[translation]\nlabel = "' + "x" * 33 + '"',
+])
+def test_invalid_selection_mode_or_translation_label_is_rejected(tmp_path, text):
+    path = tmp_path / "config.toml"
+    path.write_text(text, encoding="utf-8")
+    with pytest.raises(ValueError):
+        load_config(path)
 
 
 def test_empty_notice_does_not_block_new_papers_later_same_day(tmp_path):

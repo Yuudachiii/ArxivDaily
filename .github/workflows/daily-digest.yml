@@ -2,6 +2,7 @@ name: Daily arXiv digest
 
 on:
   schedule:
+    # Beijing time is set explicitly so the cron expression is not UTC.
     - cron: '0 10 * * *'
       timezone: Asia/Shanghai
   workflow_dispatch:
@@ -31,7 +32,7 @@ on:
         type: string
         required: false
       send:
-        description: Send notification and update shared state; dry-run still uses paid analysis
+        description: Send notification and update shared state; a dry-run still performs real arXiv and free-translation requests
         type: boolean
         default: false
         required: true
@@ -39,14 +40,28 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: arxivdaily-state
-  cancel-in-progress: false
-
 jobs:
   digest:
+    name: Daily digest (${{ matrix.translation.provider }})
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    strategy:
+      # Two independent variants push two distinguishable digests per day.
+      fail-fast: false
+      matrix:
+        translation:
+          - provider: google_free
+            label: 谷歌
+            state: google
+            state_branch: arxivdaily-state-google
+          - provider: microsoft_free
+            label: 微软
+            state: microsoft
+            state_branch: arxivdaily-state-microsoft
+    concurrency:
+      # Never cancel the sibling variant; only serialize the same variant.
+      group: arxivdaily-state-${{ matrix.translation.state }}
+      cancel-in-progress: false
     env:
       TMPDIR: ${{ github.workspace }}/app/tmp
       PIP_CACHE_DIR: ${{ github.workspace }}/app/tmp/pip-cache
@@ -70,10 +85,14 @@ jobs:
         id: config
         env:
           REPOSITORY: ${{ github.repository }}
+          TRANSLATION_PROVIDER: ${{ matrix.translation.provider }}
+          TRANSLATION_LABEL: ${{ matrix.translation.label }}
+          STATE_BRANCH: ${{ matrix.translation.state_branch }}
         run: |
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
+          import json
           import os
           import re
 
@@ -85,22 +104,37 @@ jobs:
           load_prompts(config)
           repository = os.environ['REPOSITORY']
           assert re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', repository)
-          branch = config['archive']['state_branch']
+          branch = os.environ.get('STATE_BRANCH') or config['archive']['state_branch']
+          provider = os.environ.get('TRANSLATION_PROVIDER') or config['translation']['provider']
+          label = os.environ.get('TRANSLATION_LABEL')
+          source = path.read_text(encoding='utf-8')
+
+          def set_value(text, section, key, value):
+              match = re.search(rf'(?ms)^\[{re.escape(section)}\]\s*\n.*?(?=^\[|\Z)', text)
+              if match is None:
+                  raise SystemExit(f'configuration has no [{section}] section')
+              line = f'{key} = ' + json.dumps(value, ensure_ascii=False)
+              updated, count = re.subn(rf'^{key}\s*=.*$', line, match.group(), count=1, flags=re.MULTILINE)
+              if count != 1:
+                  raise SystemExit(f'configuration has no {section}.{key} field')
+              return text[:match.start()] + updated + text[match.end():]
+
+          if os.environ.get('TRANSLATION_PROVIDER'):
+              source = set_value(source, 'translation', 'provider', provider)
+          if label is not None:
+              source = set_value(source, 'translation', 'label', label)
+          if os.environ.get('STATE_BRANCH'):
+              source = set_value(source, 'archive', 'state_branch', branch)
           if not config['archive']['public_base_url']:
               from urllib.parse import quote
-              source = path.read_text(encoding='utf-8')
-              section = re.search(r'(?ms)^\[archive\]\s*\n.*?(?=^\[|\Z)', source)
-              if section is None:
-                  raise SystemExit('configuration has no [archive] section')
-              replacement = f'public_base_url = "https://raw.githubusercontent.com/{repository}/{quote(branch, safe="")}"'
-              updated, count = re.subn(r'^public_base_url\s*=.*$', replacement, section.group(),
-                                       count=1, flags=re.MULTILINE)
-              if count != 1:
-                  raise SystemExit('configuration has no archive.public_base_url field')
-              source = source[:section.start()] + updated + source[section.end():]
-              path.write_text(source, encoding='utf-8')
+              source = set_value(source, 'archive', 'public_base_url',
+                                 f'https://raw.githubusercontent.com/{repository}/{quote(branch, safe="")}')
+          path.write_text(source, encoding='utf-8')
+          # Re-validate the rewritten TOML before any external request.
+          final = load_config(path)
+          load_prompts(final)
           with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
-              output.write(f'state_branch={branch}\n')
+              output.write(f'state_branch={final["archive"]["state_branch"]}\n')
           PY
       - name: Check public files and repository visibility
         env:
@@ -167,9 +201,8 @@ jobs:
           python -m pip install -e . --no-deps --no-build-isolation
       - name: Run digest and checkpoint before side effects
         env:
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          # Rules mode only needs the push key; no LLM or translation secret.
           SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
-          TRANSLATION_API_KEY: ${{ secrets.TRANSLATION_API_KEY }}
           INPUT_MODE: ${{ github.event.inputs.mode }}
           INPUT_IDS: ${{ github.event.inputs.ids }}
           INPUT_RETRY_STAGE: ${{ github.event.inputs.retry_stage }}
@@ -234,11 +267,12 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
           INPUT_MODE: ${{ github.event.inputs.mode }}
+          PROVIDER: ${{ matrix.translation.provider }}
         run: |
           if [[ "$EVENT_NAME" == "schedule" ]]; then mode=daily; else mode="$INPUT_MODE"; fi
-          printf '## ArxivDaily\n\nMode: %s\n\n' "$mode" >> "$GITHUB_STEP_SUMMARY"
+          printf '## ArxivDaily (%s)\n\nMode: %s\n\n' "$PROVIDER" "$mode" >> "$GITHUB_STEP_SUMMARY"
           if [[ -f tmp/reports/run.json ]]; then
-            printf 'A redacted run report is available in the arxivdaily-run-report artifact.\n' >> "$GITHUB_STEP_SUMMARY"
+            printf 'A redacted run report is available in the arxivdaily-run-report-%s artifact.\n' "$PROVIDER" >> "$GITHUB_STEP_SUMMARY"
           else
             printf 'No run report was produced. Review the job failure and persistent state.\n' >> "$GITHUB_STEP_SUMMARY"
           fi
@@ -246,7 +280,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: arxivdaily-run-report
+          name: arxivdaily-run-report-${{ matrix.translation.provider }}
           path: app/tmp/reports/run.json
           if-no-files-found: ignore
           retention-days: 3

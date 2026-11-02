@@ -181,7 +181,7 @@ class Pipeline:
                 record["decision"] = decision.to_dict()
                 record["config_fingerprint"] = fingerprint(self.config)
                 record["prompt_fingerprint"] = self._prompt_fingerprint("selection")
-                record["model"] = self.config["llm"]["filter"]["model"]
+                record["model"] = getattr(self.analysis, "model_id", self.config["llm"]["filter"]["model"])
                 record["stage"] = "rejected" if decision.status == "reject" else "selected" if decision.status == "select" else "uncertain"
                 self.checkpoint()
         metadata_ids = set()
@@ -481,7 +481,7 @@ class Pipeline:
         for item in items:
             self.state["papers"][item.paper.base_id].pop("_pre_attempt_chain", None)
         try:
-            outcome = self.delivery.send("ArxivDaily 运行告警" if alert else server_title(self.day), notification)
+            outcome = self.delivery.send("ArxivDaily 运行告警" if alert else server_title(self.day, self.config["translation"].get("label", "")), notification)
         except Exception:
             outcome = DeliveryResult("unknown", detail="transport_exception")
         status = "unknown" if outcome.status == "queued" else outcome.status

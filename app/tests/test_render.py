@@ -16,6 +16,13 @@ def item(number: int, tier: str, *, chinese: int = 0) -> DigestItem:
     return DigestItem(p, tier, s)
 
 
+def test_server_title_appends_short_variant_label_only():
+    assert server_title("2026-10-02") == "arXiv 每日简报 2026-10-02"
+    assert server_title("2026-10-02", "谷歌") == "arXiv 每日简报 2026-10-02 · 谷歌"
+    assert server_title("2026-10-02", "") == "arXiv 每日简报 2026-10-02"
+    assert server_title("2026-10-02", "x" * 33) == "arXiv 每日简报 2026-10-02"
+
+
 def test_archive_shows_summary_without_internal_evidence_and_light_only_title_link():
     full = item(1, "full")
     archive = render_archive(date(2026, 10, 2), [full, item(2, "light")])
