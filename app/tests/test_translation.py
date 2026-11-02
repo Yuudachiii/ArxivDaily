@@ -12,6 +12,7 @@ from arxivdaily.llm import AnalysisClient
 from arxivdaily.models import DigestItem, Paper, ProcessingError, Translation
 from arxivdaily.pipeline import Pipeline
 from arxivdaily.render import render_archive, render_notification
+from arxivdaily import translation as translation_module
 from arxivdaily.translation import TranslationClient
 from test_pipeline import NOW, system
 from test_llm import FakeClient, FakeResponse, paper
@@ -182,7 +183,7 @@ def test_mt_retries_rate_limits_but_never_uses_paid_fallback():
 def test_google_free_provider_needs_no_key_and_parses_nested_segments(monkeypatch):
     monkeypatch.delenv("TRANSLATION_API_KEY", raising=False)
     cfg = load_config()
-    cfg["translation"].update(provider="google_free")
+    cfg["translation"].update(provider="google_free", request_interval=0)
     requests = []
 
     def respond(request):
@@ -203,44 +204,86 @@ def test_google_free_provider_needs_no_key_and_parses_nested_segments(monkeypatc
     assert not analysis.usage_records and analysis.calls == {"selection": 0, "review": 0, "summary": 0}
 
 
-def test_microsoft_free_provider_uses_auth_token_and_single_post(monkeypatch):
+class FakeTranslators:
+    def __init__(self, replies):
+        self.replies = list(replies)
+        self.calls = []
+
+    def translate_text(self, text, *, translator, from_language, to_language, **kwargs):
+        self.calls.append((text, translator, from_language, to_language))
+        reply = self.replies.pop(0)
+        if isinstance(reply, Exception):
+            raise reply
+        return reply
+
+
+def test_microsoft_free_provider_uses_translators_bing_engine(monkeypatch):
     monkeypatch.delenv("TRANSLATION_API_KEY", raising=False)
     cfg = load_config()
     cfg["translation"].update(provider="microsoft_free")
-    requests = []
-
-    def respond(request):
-        requests.append(request)
-        if request.method == "GET":
-            assert request.url.host == "edge.microsoft.com" and request.url.path == "/translate/auth"
-            return httpx.Response(200, text="edge-token")
-        assert request.url.host == "api-edge.cognitive.microsofttranslator.com"
-        assert request.url.path == "/translate"
-        assert request.url.params["api-version"] == "3.0"
-        assert request.url.params["from"] == "en" and request.url.params["to"] == "zh-Hans"
-        assert request.headers["Authorization"] == "Bearer edge-token"
-        assert request.headers["Content-Type"] == "application/json"
-        assert json.loads(request.content) == [{"Text": paper().title}, {"Text": paper().abstract}]
-        return httpx.Response(200, json=[{"translations": [{"text": "标题"}]}, {"translations": [{"text": "摘要"}]}])
-
-    client = httpx.Client(transport=httpx.MockTransport(respond))
+    fake = FakeTranslators(["标题", "摘要"])
+    monkeypatch.setattr(translation_module, "_load_translators", lambda: fake)
     from arxivdaily.rulesmode import RulesAnalysis
-    analysis = RulesAnalysis(cfg, client)
+    analysis = RulesAnalysis(cfg)
     result = TranslationClient(cfg, analysis).translate(paper())
     assert result == Translation("标题", "摘要")
-    assert [request.method for request in requests] == ["GET", "POST"]
+    assert fake.calls == [
+        (paper().title, "bing", "en", "zh"),
+        (paper().abstract, "bing", "en", "zh"),
+    ]
 
 
-def test_google_free_retries_rate_limits_without_llm_fallback():
+def test_microsoft_free_retries_library_errors_without_region_settings(monkeypatch):
     cfg = load_config()
-    cfg["translation"].update(provider="google_free", attempts=2)
-    replies = [httpx.Response(429), httpx.Response(200, json=[[["标题", "title", None]]])]
-    client = httpx.Client(transport=httpx.MockTransport(lambda request: replies.pop(0)))
+    cfg["translation"].update(provider="microsoft_free", attempts=2)
+    fake = FakeTranslators([RuntimeError("engine busy"), "标题"])
+    monkeypatch.setattr(translation_module, "_load_translators", lambda: fake)
+    from arxivdaily.rulesmode import RulesAnalysis
+    analysis = RulesAnalysis(cfg)
+    sleeps = []
+    result = TranslationClient(cfg, analysis, sleep=sleeps.append).translate(paper(), title_only=True)
+    assert result.title_zh == "标题"
+    assert len(sleeps) == 1 and len(fake.calls) == 2
+
+
+def test_microsoft_free_missing_dependency_is_a_processing_error(monkeypatch):
+    cfg = load_config()
+    cfg["translation"].update(provider="microsoft_free", attempts=3)
+
+    def missing():
+        raise ProcessingError("translation_dependency_missing")
+
+    monkeypatch.setattr(translation_module, "_load_translators", missing)
+    from arxivdaily.rulesmode import RulesAnalysis
+    with pytest.raises(ProcessingError, match="dependency_missing"):
+        TranslationClient(cfg, RulesAnalysis(cfg)).translate(paper())
+
+
+def test_google_free_retries_rate_limits_and_forbidden_without_llm_fallback():
+    cfg = load_config()
+    cfg["translation"].update(provider="google_free", attempts=2, request_interval=0)
+    for status in (429, 403):
+        replies = [httpx.Response(status), httpx.Response(200, json=[[["标题", "title", None]]])]
+        client = httpx.Client(transport=httpx.MockTransport(lambda request: replies.pop(0)))
+        from arxivdaily.rulesmode import RulesAnalysis
+        analysis = RulesAnalysis(cfg, client)
+        sleeps = []
+        assert TranslationClient(cfg, analysis, sleep=sleeps.append).translate(paper(), title_only=True).title_zh == "标题"
+        assert len(sleeps) == 1 and not analysis.usage_records
+
+
+def test_google_free_pauses_between_requests(monkeypatch):
+    cfg = load_config()
+    cfg["translation"].update(provider="google_free", request_interval=1.0)
+    client = httpx.Client(transport=httpx.MockTransport(
+        lambda request: httpx.Response(200, json=[[["标题", "title", None]]])))
     from arxivdaily.rulesmode import RulesAnalysis
     analysis = RulesAnalysis(cfg, client)
     sleeps = []
-    assert TranslationClient(cfg, analysis, sleep=sleeps.append).translate(paper(), title_only=True).title_zh == "标题"
-    assert len(sleeps) == 1 and not analysis.usage_records
+    translator = TranslationClient(cfg, analysis, sleep=sleeps.append)
+    translator.translate(paper(), title_only=True)  # first request has no wait
+    translator.translate(paper(), title_only=True)  # second request waits for the interval
+    assert len(sleeps) == 1 and 0 < sleeps[0] <= 1.0
 
 
 @pytest.mark.parametrize("text", ['[workflow]\nmode="bad"', '[translation]\nprovider="unknown"', '[translation]\nprovider="deepl"\nbase_url="http://localhost:5000"'])
@@ -269,6 +312,8 @@ def test_keyless_free_provider_config_is_allowed(tmp_path, provider):
 @pytest.mark.parametrize("text", [
     '[selection]\nmode = "auto"',
     '[translation]\nlabel = "' + "x" * 33 + '"',
+    '[translation]\nrequest_interval = -0.5',
+    '[translation]\nrequest_interval = 61',
 ])
 def test_invalid_selection_mode_or_translation_label_is_rejected(tmp_path, text):
     path = tmp_path / "config.toml"

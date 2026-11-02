@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from arxivdaily.config import load_config
+from arxivdaily.config import default_config_path, load_config
 from arxivdaily.delivery import MockDelivery
 from arxivdaily.models import Paper, ProcessingError, Translation
 from arxivdaily.pipeline import Pipeline
@@ -98,3 +98,33 @@ def test_label_is_forwarded_to_push_title(tmp_path):
     delivery = MockDelivery("confirmed")
     Pipeline(config, store, None, analysis, reader, delivery, now=NOW, translator=StubTranslator()).run(papers[:1])
     assert delivery.sent[0][0] == server_title("2026-10-02", "谷歌")
+
+
+def test_rules_mode_has_no_daily_paper_cap_and_archives_full_detail(tmp_path):
+    config = load_config(default_config_path())
+    config["translation"]["provider"] = "google_free"
+    # A tiny full-text quota must be irrelevant: rules mode never uses the full tier.
+    config["limits"]["full_daily_limit"] = 1
+    papers = [
+        Paper(f"2502.{90000 + index}v1", f"Large language model paper {index}",
+              f"We train a large language model with instruction tuning and method {index}.",
+              ["cs.CL"], "2026-10-01T00:00:00+00:00", "2026-10-01T00:00:00+00:00")
+        for index in range(12)
+    ]
+    analysis = RulesAnalysis(config)
+    translator = StubTranslator()
+    store = StateStore(tmp_path / "state")
+    delivery = MockDelivery("confirmed")
+    report = Pipeline(config, store, None, analysis, None, delivery, now=NOW, translator=translator).run(papers)
+    assert not report["errors"]
+    assert report["translation"] == 12 and report["full"] == report["light"] == 0
+    assert analysis.calls["selection"] == 12
+    assert len(delivery.sent) == 1
+    state = store.load()
+    digest = state["digests"][report["digest_id"]]
+    assert len(digest["items"]) == 12
+    assert {record["intended_tier"] for record in state["papers"].values()} == {"translation"}
+    archive = (store.directory / f"archive/2026/10/02/{report['digest_id']}.md").read_text(encoding="utf-8")
+    for paper in papers:
+        assert paper.title in archive
+        assert "中文摘要：" + paper.abstract in archive

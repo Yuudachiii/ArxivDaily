@@ -201,6 +201,24 @@ class CollectionTests(unittest.TestCase):
         stalled = plan_window(now, {"collection": {"initial_floor": (now - timedelta(days=20)).isoformat()}})
         self.assertEqual(len(stalled["uncovered"]), 1)
 
+    def test_daily_one_day_window_covers_only_the_previous_day(self):
+        now = datetime(2026, 10, 21, 2, tzinfo=timezone.utc)  # 10:00 Beijing
+        yesterday = now - timedelta(days=1)
+        state = {"collection": {"initial_floor": yesterday.isoformat(), "last_complete_end": yesterday.isoformat()}}
+        window = plan_window(now, state, initial_days=1, lookback_days=1)
+        self.assertEqual(window["start"], yesterday.isoformat())
+        self.assertEqual(window["end"], now.isoformat())
+        self.assertEqual(window["uncovered"], [])
+        first = plan_window(now, {}, initial_days=1, lookback_days=1)
+        self.assertEqual(first["start"], yesterday.isoformat())
+        # A skipped day is reported as a gap, never processed as a multi-day backlog.
+        stale = {"collection": {"initial_floor": (now - timedelta(days=30)).isoformat(),
+                                "last_complete_end": (now - timedelta(days=3)).isoformat()}}
+        skipped = plan_window(now, stale, initial_days=1, lookback_days=1)
+        self.assertEqual(skipped["start"], yesterday.isoformat())
+        self.assertEqual(len(skipped["uncovered"]), 1)
+
+
     def test_late_visible_submission_before_prior_checkpoint_is_revisited(self):
         now = datetime(2026, 10, 21, tzinfo=timezone.utc)
         state = {"collection": {"initial_floor": (now - timedelta(days=30)).isoformat(), "last_complete_end": (now - timedelta(days=1)).isoformat()}}

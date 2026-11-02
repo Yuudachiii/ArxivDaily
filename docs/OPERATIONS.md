@@ -9,7 +9,7 @@
 | 谷歌 `google_free` | `arxivdaily-state-google` | `archive/papers.md` | `archive/YYYY-MM-DD.md` 与 `archive/YYYY/MM/DD/` |
 | 微软 `microsoft_free` | `arxivdaily-state-microsoft` | `archive/papers.md` | `archive/YYYY-MM-DD.md` 与 `archive/YYYY/MM/DD/` |
 
-索引列首次收集日期（北京时间）、英文/中文标题和链接，按基础 arXiv ID 去重，覆盖规则命中的候选。标题翻译失败先显示“待翻译”。每日汇总 `archive/YYYY-MM-DD.md` 是当日入口；`archive/YYYY/MM/DD/<digest-id>.md` 为每次发送的独立快照，同目录的 `notification.md` 为通知正文，JSON 为关联清单。已发送快照不覆盖，恢复补发建立新快照。
+索引列首次收集日期（北京时间）、英文/中文标题和链接，按基础 arXiv ID 去重，覆盖规则命中的候选。标题翻译失败先显示“待翻译”。每日汇总 `archive/YYYY-MM-DD.md` 是当日入口；`archive/YYYY/MM/DD/<digest-id>.md` 为每次发送的独立快照，同目录的 `notification.md` 为通知正文，JSON 为关联清单。规则模式没有每日篇数上限，所有命中论文的完整内容都写入当日快照；Server酱单条消息放不下的条目在消息里以归档链接呈现。已发送快照不覆盖，恢复补发建立新快照。
 
 这些文件在对应状态分支，README 已提供直接链接。本机只有正式分支 checkout 到 `app/.state` 时才有对应远端状态；离线与未发送的真实试跑位于 `app/runs/dry-*/`。
 
@@ -28,7 +28,7 @@ main 维护代码，状态分支维护机器状态和历史。存档放 main 技
 
 ## Actions 日常操作
 
-工作流当前配置北京时间每天 10:00（Asia/Shanghai），定时执行自动发送两条 Server酱通知（谷歌、微软），实际启动可能延迟。规则模式不需要 LLM 密钥；Secrets 只需配置 `SERVERCHAN_SENDKEY`。允许 Actions contents 写权限。真实发送前检查代码库和归档公开可读。
+工作流当前配置北京时间每天 10:00（Asia/Shanghai），定时执行自动发送两条 Server酱通知（谷歌、微软），实际启动可能延迟。每次只抓取并处理最近约 24 小时（约等于前一天）新增的论文，不做多日积压。规则模式不需要 LLM 密钥；Secrets 只需配置 `SERVERCHAN_SENDKEY`。`app/requirements.lock` 固定了 `translators` 及其依赖，Actions 安装依赖后微软变体无需额外配置即可使用 Bing 引擎。允许 Actions contents 写权限。真实发送前检查代码库和归档公开可读。
 
 手工 mode 可选 daily、replay（指定 IDs）、backfill（UTC 起止日期）、retry（已有 ID 与失败阶段）；内容统一读取根配置 `[presentation]` 的模块开关。手工 dispatch 会同时运行两个翻译变体；只想验证一个变体时，可临时减少 matrix 或使用本地命令。
 
@@ -67,7 +67,7 @@ send 默认关闭，此时使用真实 arXiv 和免费翻译端点做隔离试�
 
 抓取成功与后续处理成功分别保存。采集中断保留已抓论文、标记覆盖不完整，不推进完整采集游标。下次滚动回看重新扫描，有界分片/分页恢复且按基础 ID 合并。
 
-首次自动窗口默认 7 天，之后在首次下界之上最多滚动回看 14 天；这与论文首次发现后允许恢复 14 天是两种不同限制。超过自动回看范围的漏跑需日期补采；首次运行不会因为 lookback_days=14 就自动抓到前 14 天。Notebook 使用明确人工窗口，不受首次 7 天下界限制。
+首次自动窗口与之后每天的滚动回看都是 1 天：正常运行时处理 `[now-24h, now]`，与上一轮完整采集终点衔接，不产生多日积压。若漏跑一天，窗口仍只有 1 天，缺失日期记录为覆盖缺口并告警，需要时用 `--start/--end` 手工补采。论文首次发现后允许恢复 14 天，这是恢复限制，不会扩大每日抓取窗口。Notebook 使用明确人工窗口（默认 14 天），不受每日 1 天限制。
 
 处理阶段先记录尝试意图，成功后保存结果。下一次优先复用成功部分，再补失败部分：
 

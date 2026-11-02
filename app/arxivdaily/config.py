@@ -24,11 +24,11 @@ DEFAULTS = {
     "translation": {
         "provider": "llm", "label": "", "base_url": "https://api-free.deepl.com",
         "api_key_env": "TRANSLATION_API_KEY", "timeout": 30, "attempts": 3,
-        "retry_delay_seconds": 1,
+        "retry_delay_seconds": 1, "request_interval": 1.0, "stage_seconds": 900,
     },
     "collection": {
-        "page_size": 100, "delay_seconds": 3.0, "initial_days": 7,
-        "lookback_days": 14, "shard_limit": 10000, "max_candidates": 2000,
+        "page_size": 100, "delay_seconds": 3.0, "initial_days": 1,
+        "lookback_days": 1, "shard_limit": 10000, "max_candidates": 10000,
     },
     "rules": {
         "categories": ["cs.CV", "cs.LG", "cs.AI", "eess.IV"],
@@ -59,7 +59,7 @@ DEFAULTS = {
         "max_run_cost": None,
     },
     "fulltext": {"timeout": 30, "attempts": 3, "min_chars": 2500, "chunk_chars": 20000, "max_download_bytes": 25000000, "max_visual_pages": 8},
-    "delivery": {"sendkey_env": "SERVERCHAN_SENDKEY", "daily_limit": 5, "chain_attempts": 3, "poll_limit": 3, "body_bytes": 30000, "quota_timezone": "Asia/Shanghai", "query_counts_quota": False},
+    "delivery": {"sendkey_env": "SERVERCHAN_SENDKEY", "daily_limit": 5, "chain_attempts": 3, "poll_limit": 3, "body_bytes": 32768, "quota_timezone": "Asia/Shanghai", "query_counts_quota": False},
     "archive": {"public_base_url": "", "state_branch": "arxivdaily-state"},
 }
 
@@ -182,6 +182,8 @@ def load_config(path: str | Path | None = None) -> dict:
     _bounded_number(translation["timeout"], "translation.timeout", 1, 300)
     _integer(translation["attempts"], "translation.attempts", 1, 10)
     _bounded_number(translation["retry_delay_seconds"], "translation.retry_delay_seconds", 0, 60)
+    _bounded_number(translation["request_interval"], "translation.request_interval", 0, 60)
+    _bounded_number(translation["stage_seconds"], "translation.stage_seconds", 1, 2700)
     coll = config["collection"]
     for key, upper in (("page_size", 2000), ("initial_days", 7), ("lookback_days", 14), ("shard_limit", 10000), ("max_candidates", 10000)):
         _integer(coll[key], f"collection.{key}", 1, upper)

@@ -11,12 +11,24 @@ from .models import Paper, ProcessingError, Translation
 
 
 GOOGLE_FREE_URL = "https://translate.googleapis.com/translate_a/single"
-MICROSOFT_FREE_AUTH_URL = "https://edge.microsoft.com/translate/auth"
-MICROSOFT_FREE_TRANSLATE_URL = "https://api-edge.cognitive.microsofttranslator.com/translate"
 
 # Providers that do not need an API key at all.
 KEYLESS_PROVIDERS = {"google_free", "microsoft_free"}
 MACHINE_PROVIDERS = {"deepl", "libretranslate", "google_free", "microsoft_free"}
+
+# The direct Google endpoint throttles large days with 429/403. Other providers
+# keep the historical mapping (403 is not retried, e.g. a bad key).
+_RETRYABLE_STATUSES = {408, 429, 500, 502, 503, 504}
+_GOOGLE_RETRYABLE_STATUSES = _RETRYABLE_STATUSES | {403}
+
+
+def _load_translators():
+    """Lazy import: rules-mode runs and tests must not require the dependency."""
+    try:
+        import translators
+    except ImportError:
+        raise ProcessingError("translation_dependency_missing") from None
+    return translators
 
 
 def _google_text(client: httpx.Client, text: str, timeout: float) -> str:
@@ -40,30 +52,35 @@ def _google_text(client: httpx.Client, text: str, timeout: float) -> str:
     return value
 
 
-def _microsoft_texts(client: httpx.Client, texts: list[str], timeout: float) -> list[str]:
-    """Translate all texts with one Edge Translator POST after an auth GET."""
-    auth = client.get(MICROSOFT_FREE_AUTH_URL, timeout=timeout)
-    auth.raise_for_status()
-    token = auth.text.strip()
-    if not token:
-        raise ProcessingError("translation_auth_token_missing")
-    response = client.post(
-        MICROSOFT_FREE_TRANSLATE_URL,
-        params={"api-version": "3.0", "from": "en", "to": "zh-Hans"},
-        json=[{"Text": text} for text in texts],
-        headers={"Authorization": "Bearer " + token, "Content-Type": "application/json"},
-        timeout=timeout,
-    )
-    response.raise_for_status()
-    data = response.json()
-    if not isinstance(data, list) or len(data) != len(texts):
-        raise ProcessingError("translation_response_invalid")
+def _bing_texts(texts: list[str], guard=None, timeout=None) -> list[str]:
+    """Translate texts with the third-party ``translators`` Bing engine.
+
+    The library is imported lazily so offline rules processing and the test
+    suite do not need it installed. No region environment variable is set; the
+    engine must resolve its own region as it did in the verified Actions probe.
+    ``timeout`` may be a number or a callable returning the remaining budget.
+    """
+    translators = _load_translators()
     values: list[str] = []
-    for item in data:
+    for text in texts:
+        if guard is not None:
+            guard()
+        seconds = timeout() if callable(timeout) else timeout
+        if seconds is not None and seconds <= 0.1:
+            raise ProcessingError("translation_run_time_guard")
         try:
-            value = item["translations"][0]["text"]
-        except (TypeError, KeyError, IndexError):
-            raise ProcessingError("translation_response_invalid") from None
+            kwargs = {} if seconds is None else {"timeout": seconds}
+            value = translators.translate_text(
+                text, translator="bing", from_language="en", to_language="zh", **kwargs
+            )
+        except ProcessingError:
+            raise
+        except Exception:
+            # Library-specific exceptions are mapped onto the existing
+            # retryable translation failure path.
+            raise ProcessingError("translation_provider_unavailable") from None
+        if not isinstance(value, str) or not value.strip():
+            raise ProcessingError("translation_response_invalid")
         values.append(value)
     return values
 
@@ -74,6 +91,29 @@ class TranslationClient:
         self.analysis = analysis
         self.client = client
         self.sleep = sleep
+        self._last_request_at: float | None = None
+
+    def _pace(self) -> None:
+        """Space Google requests so a 100-200 paper day stays under the quota."""
+        interval = float(self.settings.get("request_interval", 0) or 0)
+        if interval <= 0:
+            return
+        now = time.monotonic()
+        if self._last_request_at is not None:
+            wait = interval - (now - self._last_request_at)
+            if wait > 0:
+                self.sleep(min(wait, self.analysis._remaining_seconds(wait)))
+        self._last_request_at = time.monotonic()
+
+    def _google_values(self, client: httpx.Client, texts: list[str]) -> list[str]:
+        values: list[str] = []
+        for text in texts:
+            self._pace()
+            timeout = self.analysis._remaining_seconds(self.settings["timeout"])
+            if timeout <= 0.1:
+                raise ProcessingError("translation_run_time_guard")
+            values.append(_google_text(client, text, timeout))
+        return values
 
     def translate(self, paper: Paper, *, title_only=False) -> Translation:
         # Fixture runs must remain offline regardless of the selected backend.
@@ -90,13 +130,15 @@ class TranslationClient:
         key = os.environ.get(cfg["api_key_env"], "") if provider not in KEYLESS_PROVIDERS else ""
         if provider == "deepl" and not key:
             raise ProcessingError("translation_key_missing")
+        retryable = _GOOGLE_RETRYABLE_STATUSES if provider == "google_free" else _RETRYABLE_STATUSES
         for attempt in range(cfg["attempts"]):
             self.analysis._guard()
             timeout = self.analysis._remaining_seconds(cfg["timeout"])
             if timeout <= 0.1:
                 raise ProcessingError("translation_run_time_guard")
             try:
-                client = self.client or self.analysis.client
+                if provider in {"deepl", "libretranslate", "google_free"}:
+                    client = self.client or self.analysis.client
                 if provider == "deepl":
                     response = client.post(cfg["base_url"].rstrip("/") + "/v2/translate",
                                            json={"text": texts, "source_lang": "EN", "target_lang": "ZH"},
@@ -111,14 +153,20 @@ class TranslationClient:
                     response.raise_for_status()
                     values = response.json()["translatedText"]
                 elif provider == "google_free":
-                    values = [_google_text(client, text, timeout) for text in texts]
+                    values = self._google_values(client, texts)
                 else:  # microsoft_free
-                    values = _microsoft_texts(client, texts, timeout)
+                    values = _bing_texts(
+                        texts,
+                        guard=self.analysis._guard,
+                        timeout=lambda: self.analysis._remaining_seconds(cfg["timeout"]),
+                    )
                 if not isinstance(values, list) or len(values) != len(texts) or any(not isinstance(v, str) or not v.strip() for v in values):
                     raise ProcessingError("translation_response_invalid")
                 return Translation(values[0], "" if title_only else values[1])
             except (httpx.HTTPError, ValueError, KeyError, TypeError, IndexError, ProcessingError) as exc:
-                if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code not in {408, 429, 500, 502, 503, 504}:
+                if isinstance(exc, ProcessingError) and str(exc) == "translation_dependency_missing":
+                    raise
+                if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code not in retryable:
                     raise ProcessingError("translation_http_nonretryable") from None
                 if attempt == cfg["attempts"] - 1:
                     raise ProcessingError("translation_request_failed") from None

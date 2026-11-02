@@ -64,8 +64,11 @@ class RulesAnalysis:
         raise ProcessingError("llm_disabled")
 
     def _begin_stage(self, role: str) -> None:
-        default = 180 if role == "filter" else 900
-        seconds = min(float(default), self.run_seconds)
+        if role == "translation":
+            configured = self.config.get("translation", {}).get("stage_seconds", 900)
+        else:
+            configured = 180 if role == "filter" else 900
+        seconds = min(float(configured), self.run_seconds)
         self.deadline_monotonic = time.monotonic() + seconds
 
     def _guard(self) -> None:

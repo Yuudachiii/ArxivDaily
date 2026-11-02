@@ -42,6 +42,10 @@ def test_committed_config_is_llm_research_rules_mode():
     # overrides it per matrix variant.
     assert config["translation"]["provider"] == "llm"
     assert config["translation"]["label"] == ""
+    assert config["translation"]["request_interval"] == 1.0
+    assert config["collection"]["initial_days"] == 1 and config["collection"]["lookback_days"] == 1
+    assert config["collection"]["max_candidates"] == 10000
+    assert config["delivery"]["body_bytes"] == 32768
 
 
 def test_rule_preview_uses_supplied_categories_and_has_no_provider_requests(tmp_path, capsys, monkeypatch):

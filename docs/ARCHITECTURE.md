@@ -7,7 +7,7 @@ Python 批处理应用，没有网页界面或独立数据库。Actions 负责�
 | cli / config / prompts | 命令、配置校验、提示加载 |
 | collection / rules | arXiv 分页、日期窗口、确定性关键词召回 |
 | rulesmode | 规则模式适配器：把初筛命中转成 selection 决策，不调用模型 |
-| llm / fulltext / translation | 可选 LLM 终筛/总结、正文/图表、标题摘要翻译 |
+| llm / fulltext / translation | 可选 LLM 终筛/总结、正文/图表、标题摘要翻译（Google 直连、`translators` Bing、DeepL、LibreTranslate） |
 | pipeline | 阶段编排、篇数/费用预算、恢复、索引、推送标题 |
 | models | 论文、判断、内容与事件结构 |
 | state | 原子保存、运行锁、检查点、脱敏 |
@@ -22,7 +22,7 @@ Python 批处理应用，没有网页界面或独立数据库。Actions 负责�
 - `rules`：`RulesAnalysis` 实现 pipeline/translation 使用的 `AnalysisClient` 子集（`select`、`review`、`summarize`、`translate`、`client`、`usage_records`、`_guard`、`_remaining_seconds`、`_begin_stage`、`run_deadline_monotonic`、`on_usage`、`usage_start_cursor`、`calls`、`prompt_fingerprint`）。`select` 对已命中的候选返回 `status=select`、`tier=translation`、`score=0`，路线取首个初筛路线或 `rules`；`review`/`summarize`/`translate` 只在被错误调用时抛 `ProcessingError("llm_disabled")`。pipeline 中 `llm_summary`/`evidence` 关闭时不会走到这些方法。
 - `llm`：沿用 `AnalysisClient`，需要模型密钥，测试和旧配置继续支持。
 
-规则模式的日常链路是：抓取 → 分类+关键词规则 → 全部命中候选进入翻译档 → 免费翻译 → 渲染 → Server酱。没有正文下载、模型复审、总结或证据链，因此不需要 `DEEPSEEK_API_KEY`。
+规则模式的日常链路是：抓取最近约 1 天 → 分类+关键词规则 → 全部命中候选进入翻译档 → 免费翻译 → 渲染 → Server酱。没有正文下载、模型复审、总结或证据链，因此不需要 `DEEPSEEK_API_KEY`；也没有每日篇数上限，命中多少篇就翻译并渲染多少篇。`initial_days`/`lookback_days` 都是 1，`plan_window` 生成滚动 24 小时窗口，与上一轮采集终点衔接，不处理多日积压。
 
 ## 每日双变体
 
@@ -32,6 +32,7 @@ Python 批处理应用，没有网页界面或独立数据库。Actions 负责�
 - 状态分支分别为 `arxivdaily-state-google` 与 `arxivdaily-state-microsoft`，历史、索引、去重互不共享。
 - job 级 concurrency 组按变体区分；同一变体串行，两个变体不互相取消。
 - 推送标题追加 `translation.label`（如 `· 谷歌`），因此两条微信消息可区分；标题函数对空值/超长 label 保持原样。
+- `google_free` 直连 Google 端点，按 `request_interval` 在请求间暂停，429/403 退避重试；`microsoft_free` 惰性导入 `translators` 包并用 Bing 引擎翻译，依赖固定在 `app/requirements.lock`。
 
 ## 核心约定
 
@@ -39,7 +40,7 @@ Python 批处理应用，没有网页界面或独立数据库。Actions 负责�
 
 规则模式命中的条目统一为翻译档，内容按 `presentation` 模块组合；翻译失败是可恢复阶段，不会降级成“无新增”。LLM 模式的 select/reject/uncertain 三态、全文复审、总结和证据链行为保持不变。
 
-总索引覆盖规则候选；中文标题独立翻译，失败不丢行。正常无新增仍通知，失败单独报告。正文按 UTF-8 字节控制容量，整篇移到公开归档，不截半篇。
+总索引覆盖规则候选；中文标题独立翻译，失败不丢行。正常无新增仍通知，失败单独报告。推送正文按 UTF-8 字节控制容量，单条 Server酱消息放不下的论文整篇留在公开归档快照，消息里给归档链接，不截半篇；归档本身保留全部命中论文的完整字段。
 
 ## 内容生命周期
 

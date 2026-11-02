@@ -194,6 +194,9 @@ route_priority = [
 
 # 翻译服务：Actions 的每日任务会按 matrix 覆盖为 google_free / microsoft_free，
 # 两者免费且不需要密钥，每个变体运行一次、推送一次。
+# google_free 直连 translate.googleapis.com，按 request_interval 在请求之间暂停，
+# 并对 429/403 退避重试，避免 100-200 篇的大日被限流；
+# microsoft_free 通过 translators 包的 bing 引擎翻译（依赖已固定在 requirements.lock）。
 # 留下 provider = "llm" 作为本地测试的兼容默认值；规则模式不会调用 LLM，
 # 本地真实运行可显式使用 --translation-provider google_free。
 # 其他可选值：deepl（需要 TRANSLATION_API_KEY）、libretranslate（自建实例）。
@@ -207,10 +210,15 @@ label = ""
 base_url = "https://api-free.deepl.com"
 api_key_env = "TRANSLATION_API_KEY"
 timeout = 30
-attempts = 3
-retry_delay_seconds = 1
+attempts = 5
+retry_delay_seconds = 2
+# 直连 Google 时每次请求之间的最小间隔（秒）；0 表示不暂停。
+request_interval = 1.0
+# 单次翻译调用的时间预算；重试与退避总时长不会超过该预算。
+stage_seconds = 900
 
-# 完整总结每日默认 5 篇，最多 10 篇；规则模式不生成总结，不受此上限限制。
+# 规则模式没有每日篇数上限：命中多少篇就翻译并推送多少篇，全部为翻译档。
+# full_daily_limit/review_daily_limit 只影响 llm 模式的全文总结与复审，规则模式不会使用。
 [limits]
 full_daily_limit = 5
 review_daily_limit = 2
@@ -223,14 +231,17 @@ run_seconds = 2400
 [prompts]
 directory = "app/prompts"
 
-# 以下为高级配置，通常保持默认。首次抓取最近 7 天，后续最多回看 14 天；网络请求间隔至少 3 秒。
+# 每天只抓上一个日报周期之后新增的论文：正常运行时窗口是最近 24 小时（约等于前一天），
+# 不回补多日积压；跳过的日期只报告缺口，需用 --start/--end 手工补采。
+# 首次抓取 1 天，之后最多滚动回看 1 天；网络请求间隔至少 3 秒。
+# max_candidates 取上限 10000：规则模式不设每日篇数上限，避免大日被截断。
 [collection]
 page_size = 100
 delay_seconds = 3.0
-initial_days = 7
-lookback_days = 14
+initial_days = 1
+lookback_days = 1
 shard_limit = 10000
-max_candidates = 2000
+max_candidates = 10000
 
 # 以下 LLM 配置在规则模式下不会使用；保留以便切回 mode = "llm" 时仍可运行。
 # 可选单次运行费用保护（按配置币种估计，非精确账单）：取消下一行注释启用。
@@ -289,12 +300,14 @@ max_visual_pages = 8
 
 # 推送密钥只填写环境变量名称，不能填写密钥值。发送、告警和重试共同受每日额度限制。
 # 规则模式每日只需要 SERVERCHAN_SENDKEY 一个 Secret。
+# body_bytes 取 Server酱上限 32768；规则模式命中太多、单条消息放不下时，
+# 完整内容仍写入公开归档快照，消息里给出归档链接（不截断论文内容）。
 [delivery]
 sendkey_env = "SERVERCHAN_SENDKEY"
 daily_limit = 5
 chain_attempts = 3
 poll_limit = 3
-body_bytes = 30000
+body_bytes = 32768
 quota_timezone = "Asia/Shanghai"
 query_counts_quota = false
 

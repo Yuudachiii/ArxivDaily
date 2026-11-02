@@ -2,12 +2,15 @@
 
 每天抓取 arXiv 上与大语言模型（LLM）研究相关的论文，按关键词规则确定性筛选，翻译标题和摘要后用 Server酱推送微信简报。项目由 GitHub Actions 定时运行，每天以两种免费翻译变体各推送一次（谷歌、微软），中文侧可比较两版译文。
 
-**日常路径不调用任何大模型，不需要 DeepSeek 或任何 LLM API key。** 筛选完全由 `config.toml` 中的分类、同义词组和 AND/OR 路线决定；翻译使用免费、无需密钥的 Google / Microsoft 端点。唯一必需的 Secret 是 `SERVERCHAN_SENDKEY`。
+**日常路径不调用任何大模型，不需要 DeepSeek 或任何 LLM API key。** 筛选完全由 `config.toml` 中的分类、同义词组和 AND/OR 路线决定；翻译使用免费、无需密钥的 Google / Microsoft 服务。唯一必需的 Secret 是 `SERVERCHAN_SENDKEY`。
 
 ## 每日如何运行
 
 - 北京时间每天 10:00（`Asia/Shanghai`）触发。
+- 每次只抓**上一个日报周期之后新增的论文**：正常运行窗口是最近约 24 小时（相当于前一天），不回补多日积压。若中间漏跑，只报告日期缺口，需要时用 `--start/--end` 手工补采。
+- **没有每日篇数上限**：规则命中多少篇，就翻译并推送多少篇，全部包含标题、中文标题、摘要、摘要翻译、来源和初筛路径。单条微信消息受 Server酱 32768 字节上限约束，放不下的论文整篇写入公开归档快照，消息中给出归档链接，不截断论文内容。
 - 两个并行 job 使用同一份配置和同一套规则，分别采用 `google_free`、`microsoft_free` 翻译，各推送一条微信消息；标题带 `· 谷歌` / `· 微软` 后缀以便区分。
+- `google_free` 直连 Google 翻译端点，请求之间默认暂停 1 秒，并对 429/403 退避重试；`microsoft_free` 使用 `translators` 包的 Bing 引擎（依赖已固定在 `app/requirements.lock`）。
 - 两个 job 各用独立状态分支 `arxivdaily-state-google`、`arxivdaily-state-microsoft`，互不覆盖去重状态和历史归档。
 
 ## 日常只需调整两个入口
@@ -52,7 +55,7 @@
 
 参数见 [运行说明](docs/OPERATIONS.md)。离线样本的判断和翻译是模拟结果。
 
-要查看最近 14 天的规则初筛结果，打开 [初筛调试 notebook](app/notebooks/arxiv_rules_debug.ipynb)，选择 conda ml 内核。它只抓 arXiv 元数据，支持缓存、规则对比、命中依据和 CSV 导出；不调用模型或使用正式去重记录。见 [主动调试说明](docs/DEBUGGING.md)。
+要查看最近 14 天的规则初筛结果（调试用，与每日 1 天抓取窗口无关），打开 [初筛调试 notebook](app/notebooks/arxiv_rules_debug.ipynb)，选择 conda ml 内核。它只抓 arXiv 元数据，支持缓存、规则对比、命中依据和 CSV 导出；不调用模型或使用正式去重记录。见 [主动调试说明](docs/DEBUGGING.md)。
 
 ## 项目结构
 

@@ -19,6 +19,20 @@ route_priority = [ ... ] # 配置的路线名，按顺序排列，决定条目�
 
 规则模式不允许 `llm_summary` 或 `evidence`，CLI 会在启动时明确报错；需要全文总结时切回 `mode = "llm"`。
 
+## 抓取窗口（只抓前一天）
+
+每日任务只处理上一个日报周期之后新增的论文，不做多日回补：
+
+```toml
+[collection]
+initial_days = 1    # 首次运行也只抓 1 天
+lookback_days = 1   # 之后每天滚动回看 1 天
+```
+
+正常每天 10:00 运行时，`plan_window` 生成 `[now-24h, now]` 的窗口，即最近约一天（相当于前一天），并与上一轮完整采集的终点衔接。若中间漏跑一天，窗口仍只有 1 天，缺失日期只记录为覆盖缺口并告警，需要时用 `--start/--end` 手工补采；不会自动把多天积压塞进当天推送。
+
+`max_candidates` 取上限 `10000`，避免大日候选被截断。调试 notebook 的 14 天窗口是独立的人工实验范围，不受这里影响。
+
 ## 内容模块与额度
 
 只使用 `[presentation]` 选择每篇论文的内容，固定顺序为：标题 → 标题翻译 → 摘要 → 摘要翻译 → LLM 总结 → 证据链 → 来源 → 初筛路径。至少启用一个模块。
@@ -37,7 +51,7 @@ screening_routes = true
 
 不启用总结和证据链时不下载正文、不复审、不占用完整档名额；规则模式命中的论文以翻译档呈现，翻译失败保留为可恢复阶段。`screening_routes` 使用关键词初筛保存的全部命中路线（如 `llm_core`、`llm_training`），放在每篇最后。关闭标题时以 arXiv ID 作为条目标识。
 
-`limits.full_daily_limit` 只影响 `llm` 模式的完整总结档；规则模式不生成总结，所以不会截断当日论文数，通知正文超出 `delivery.body_bytes` 时整篇移到公开归档，不截半篇。
+**规则模式没有每日篇数上限**：命中多少篇就翻译并推送多少篇，全部包含勾选的完整内容。`limits.full_daily_limit`/`review_daily_limit` 只影响 `llm` 模式的全文总结与复审，规则模式不会用它们截断。Server酱单条消息上限 32 KiB（`delivery.body_bytes` 取上限 32768）；单条消息放不下的论文整篇写入不可变公开归档快照，消息中给归档链接，不截断论文内容。
 
 ## arXiv 初筛
 
@@ -77,15 +91,17 @@ llm_reasoning = [["LLM", "INFER"]]
 
 `translation.provider` 可选 `llm`、`deepl`、`libretranslate`、`google_free`、`microsoft_free`。仓库默认 `llm` 仅用于兼容旧测试；Actions 会按 matrix 覆盖为免费服务。
 
-- `google_free`：GET `translate.googleapis.com/translate_a/single`，每个文本一次请求，无需密钥。
-- `microsoft_free`：先 GET `edge.microsoft.com/translate/auth` 取得 Bearer token，再一次 POST 翻译标题和摘要，无需密钥。
+- `google_free`：直连 `translate.googleapis.com/translate_a/single`，每个文本一次请求，无需密钥。请求之间按 `translation.request_interval`（默认 1.0 秒）暂停；遇到 429/403 按 `attempts`/`retry_delay_seconds` 退避重试，适合 100-200 篇的大日。
+- `microsoft_free`：通过 `translators` 包的 Bing 引擎翻译（`translate_text(..., translator='bing', from_language='en', to_language='zh')`），无需密钥。该依赖已固定在 `app/requirements.lock`；代码惰性导入，离线运行和测试不要求安装。不要设置 `translators_default_region`，引擎会自行解析区域。
 - `deepl`：官方免费 API 端点，需要 `TRANSLATION_API_KEY` 环境变量/Secret。
 - `libretranslate`：自己的实例；本机 localhost HTTP 可用；机器翻译失败不会自动切换收费服务。
 - `llm`：复用终筛模型和密钥，规则模式下不可用；CLI 会明确拒绝或自动改用 `google_free`。
 
+`translation.request_interval` 取值范围 0-60 秒，0 表示不暂停。`translation.stage_seconds` 是单次翻译调用的时间预算，重试、退避和等待都不会超过它；运行级总预算仍由 `limits.run_seconds` 控制。
+
 `translation.label` 会追加到微信推送标题：`arXiv 每日简报 2026-10-02 · 谷歌`。留空则保持原标题；最长 32 字符。两个变体分别使用“谷歌”“微软”。
 
-两者都走现有 `attempts`、`timeout`、退避重试和运行时间预算；响应形状不符合约定时明确失败，不做静默降级。
+机器翻译都走现有 `attempts`、`timeout`、退避重试和运行时间预算；响应形状不符合约定或依赖/引擎报错时明确失败，不做静默降级，也不会自动切换到 LLM。
 
 ## 推送、归档与凭证
 
