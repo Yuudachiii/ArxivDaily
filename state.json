@@ -2050,9 +2050,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "AI systems that ground their answers from retrieved documents usually need only a few relevant passages, but applications such as systematic reviews and legal discovery need nearly all of them, because their conclusions rest on the full body of evidence. These applications have traditionally searched with curated taxonomies, which can only find what their vocabulary describes. We compare taxonomy-based retrieval with an alternative neural retrieval based on sentence embeddings and followed by language model screening in ImpactAI, an evidence synthesis application built on 7,354 randomized trials. Measured against the studies included in 29 systematic reviews, the share of studies found rises from 45% to 85%, and the screening model agrees with human annotators as well as annotators agree with each other. This gain comes at a cost in speed: at the median, retrieving and screening evidence for a query takes 77 seconds, against 6 seconds for taxonomy retrieval. The results suggest finding evidence with embeddings, organizing it with taxonomy labels, and setting how many candidates to screen according to the time available for each query.",
         "authors": [
@@ -2073,15 +2089,11 @@
         "updated": "2026-10-28T09:40:53+00:00",
         "version_id": "2610.36910v2"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.36910v2"
       ]
