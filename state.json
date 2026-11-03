@@ -42356,9 +42356,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Goal pursuit in open-ended dialogue requires agents to adapt their actions to interaction feedback across successive exchanges. We investigate whether agentic capabilities developed for multi-step tool use carry over to dialogue organized through the model's native tool interface, and how this changes interaction behavior. We define Tool-Mediated Interaction (TMI) as a training-free protocol that represents dialogue actions as tool calls and counterpart responses as tool results, maintaining a continuous reasoning-action-observation loop with retained reasoning and interaction history. We evaluate TMI across social interaction, emotional support, persuasion, and price negotiation using two models and 15,678 main-experiment episodes. Across both models, TMI improves social goal attainment, emotional-support preference, donation amounts, and buyer negotiation margins over conversational baselines with and without thinking. A Qwen ablation further shows that TMI outperforms ordinary conversation with retained reasoning on all four primary outcomes. Behavioral analyses associate the improvements with task-specific patterns in initial proposals and responses to interaction feedback. Alongside these gains, TMI reduces mean reasoning tokens per decision by 42.0-81.5% relative to the thinking baseline and lowers mean cross-turn phrase reuse across all eight model-environment pairs. These findings show that interaction organization shapes both goal attainment and reasoning across dialogue turns.",
         "authors": [
@@ -42378,17 +42394,13 @@
         "updated": "2026-11-01T04:23:27+00:00",
         "version_id": "2611.01552v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01552v1"
       ]
