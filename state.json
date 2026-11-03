@@ -24708,9 +24708,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Faced with an unanswerable question, small language models can either refuse or confabulate: confidently produce a wrong answer. Can the hidden state before the first generated token provide a clue? Can we flip confabulations into refusals? I introduce ConfabQA, a 784-item benchmark whose obscure-pre-cutoff category breaks the typical correctness/knowledge-cutoff confound and map the geometry of the hidden state with linear probes, a sparse autoencoder (SAE), and direct optimization of intervention directions. On Qwen3-1.7B and Gemma 2 2B the probe separates upcoming refusals from confabulations well beyond prompt features (+7.4/+16.3 pp); on Llama 3.2 3B the ConfabQA margin is within fold-to-fold spread, but a direct refusal probe on PopQA and TriviaQA recovers +18-25 pp. On Qwen I closely inspect three candidate directions for the refusal vector: probe-recovered, Qwen-Scope SAE feature, and directly optimized. Although the three directions are pairwise 50-81 degrees apart, a push at or below the state's own norm along any of them flips most confabulations into refusal openings dominated by the \"As...\" family. Forcing the opener without touching the hidden state yields the same one-in-three judged-refusal rate as any push. The opposite push collapses refusals mostly into confabulations, yet leaves originally correct answers intact, so the direction gates the opening speech act rather than the knowledge behind it. Confabulations do not resolve into a concentrated feature in a dictionary or a token signature on Qwen3-1.7B. Scoring every probe on the margin over the strongest of four prompt-feature baselines extracts the hidden state's own contribution. Correctness signal is model-dependent and portable only for Llama 3.2 3B: 81% of the probe's margin over test majority survives transfer between ConfabQA, PopQA, and TriviaQA. Benchmark, judge, and code are released.",
         "authors": [
@@ -24726,16 +24742,12 @@
         "updated": "2026-10-31T21:14:26+00:00",
         "version_id": "2611.01272v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01272v1"
       ]
