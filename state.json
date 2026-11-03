@@ -5920,9 +5920,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_efficiency、llm_safety、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Benign fine-tuning can erode safety alignment in large language models, and sequential adaptation substantially compounds this risk. Prior work mitigates this erosion by replaying harmful-prompt refusals and benign-compliance examples, while other work instead matches base-model logits via distillation. However, the individual contributions of supervised exposure and distillation to safety behavior and refusal geometry during sequential adaptation remain unclear. We factor these two strategies apart and study their behavioral and geometric effects during sequential LoRA fine-tuning of Mistral-7B and Llama-3-8B across diverse task sequences (code generation, German-language summarization, and science question-answering). Behaviorally, supervised replay exposure yields the largest reduction in HarmBench attack success rate (ASR) on Mistral, averaging 51.1 points below base, but at a substantial over-refusal cost, averaging 53.4 points above base on OR-Bench-hard. Logit distillation, without any supervised replay loss, largely prevents safety erosion at a fraction of this cost: an average 5.4-point ASR reduction against only a 5.1-point rise in over-refusal. Llama shows the same asymmetry between the two strategies. Combining exposure and distillation moderates exposure's over-refusal while leaving downstream task scores largely unaffected. Geometrically, the two models diverge: on Mistral, distillation preserves the base refusal direction more closely than exposure does, whereas on Llama, refusal behavior after exposure largely survives ablation of the extracted refusal direction. This dissociation between models indicates that preserving the base refusal direction is not a reliable proxy for behavioral safety.",
         "authors": [
@@ -5938,18 +5954,14 @@
         "updated": "2026-10-27T21:52:05+00:00",
         "version_id": "2610.38001v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_efficiency",
         "llm_safety",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38001v1"
       ]
