@@ -42420,9 +42420,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Language models are often used to judge generated code without running it. A useful evaluation should reveal substantial changes in the answers it scores. We examine this requirement by repeating an earlier evaluation on 421 coding problems, comparing Qwen-2.5-7B-Instruct with two versions trained using Group Relative Policy Optimization (GRPO). One receives rewards from execution tests (CE-trained), and the other from a strong language-model judge (SLJ-trained). The base model's syntax-failure rate remains stable, but the trained checkpoints produce invalid Python on 63%-67% of attempts. Despite this change, the strong judge's Pass@32 scores fall by only about 3 percentage points, from 96.67% to 93.95% for SLJ-trained. Within the later run, allowing more attempts makes the base and trained checkpoints look increasingly similar under the judge. With 128 attempts per question, the judge accepts at least one SLJ-trained answer on 96.44% of problems, compared with 28.27% under execution tests. We recommend reporting the share of answers that pass Python's syntax check alongside every judge-based score. This check requires no tests or code execution and flags invalid answers that the judge accepts, although it cannot establish functional correctness. Our findings show how a high judge-based score can hide substantial output damage and motivate checking an evaluation's sensitivity to change. Project page and code: https://curiousorbitnotes.github.io/evorobust-replay-audit/",
         "authors": [
@@ -42438,17 +42454,13 @@
         "updated": "2026-11-01T04:52:25+00:00",
         "version_id": "2611.01572v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01572v1"
       ]
