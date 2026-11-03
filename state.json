@@ -19840,9 +19840,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Multimodal Large Language Models (MLLMs) are increasingly capable of understanding images and performing complex visual reasoning, suggesting the possibility of using them to automate biological image analysis. This need is becoming increasingly urgent as advances in technology continue to generate ever larger and more diverse microscopy datasets, already exceeding the scale at which manual visual analysis is feasible. With the final aim to use MLLMs for visual comparison of complex phenotypes, we investigate a very simple baseline: comparison of the size of body parts in synthetic images of ants. We find that state-of-the-art open-weight MLLMs fail for some body parts, but not for others, even though the comparison itself is visually trivial for all of them. We evaluate different in-context learning strategies and analyze performance on the related object recognition task. Our results suggest a recognition-driven grounding failure: structures that the models cannot recognize are instead associated with a recognizable semantic concept, impairing the grounding and comparison of both. Further analysis of the vision encoder is consistent with the hypothesis that fine-grained visual structure may be less well preserved without semantic support. Together, our results reveal a surprising limitation of current MLLMs: semantic recognition can gate simple visual comparisons that do not intrinsically require semantic understanding. Our code and data are available at https://github.com/kreshuklab/Open-Weight-MLLMs-Cannot-Compare-What-They-Cannot-Name",
         "authors": [
@@ -19858,16 +19874,12 @@
         "updated": "2026-10-30T14:56:19+00:00",
         "version_id": "2610.41841v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41841v1"
       ]
