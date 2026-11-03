@@ -24403,9 +24403,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_efficiency、llm_multimodal、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Streaming video question answering (QA) requires real-time reasoning over continuous video streams under strict latency and active-context budgets. Current streaming vision-language models (VLMs) often give confident yet ungrounded answers when queries are ambiguous or have false premises, or when relevant visual evidence is no longer in the active context. Proactive clarification can help, but must satisfy the same latency and memory constraints. We present StreamClarify, a training-free framework for grounded streaming QA that combines a pre-answer uncertainty check with hierarchical memory. The check uses the entropy of a binary pre-answer judgment as a lightweight uncertainty score to decide whether to answer directly or request clarification. To support re-answering, a temporal-pyramid KV cache maintains a bounded active visual context, while a CPU-side semantic retrieval archive provides access to historical frames. We further construct StreamClarify-QA, a diagnostic benchmark of 1,837 QA pairs from StreamBench and OVO-Bench, spanning standard, referential ambiguity, and unanswerable scenarios. Across three VLM backbones, StreamClarify improves Macro accuracy by up to 8.2 points over backbone-matched baselines. At comparable trigger rates, entropy-based selection achieves more than 18 points higher precision than random selection in identifying initially incorrect answers. Under oracle user guidance, clarification improves Macro accuracy by up to 3.5 points. We also report a controlled, oracle-assisted Qwen3-VL simulation on Ambiguous QA with generated questions and referent-only user replies, where the entropy-gated condition improves accuracy by 8.3 points.",
         "authors": [
@@ -24422,6 +24438,7 @@
         "updated": "2026-10-31T21:01:42+00:00",
         "version_id": "2611.01263v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_efficiency",
@@ -24429,12 +24446,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01263v1"
       ]
