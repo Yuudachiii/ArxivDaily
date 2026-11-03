@@ -14360,10 +14360,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.38631v1",
+      "model": "rules",
       "paper": {
         "abstract": "Financial assistants answer questions that sound factual but depend on what the user leaves unsaid: what a data figure measures, which product variant is meant, and the investor's situation and the rules that apply. An assistant that ignores these can still answer with a real number from its data, one that answers a different question. We call this frame collapse. We study it in Indian mutual funds, where product variants and tax rules are formally defined, so the correct answer can be computed for every reading. One study tests each challenge. Given an ambiguously labelled figure, models used it, often under the user's label. Given every alternative labelled, they listed them all, but the layout decided which came first. Missing a fact about the investor, weaker agents assumed a default or an outdated tax rule; requiring the fact did not guarantee its use. Because such answers match their data, checks against the data pass them. An AI judge caught mislabelled figures only when told what each field means, and still passed answers that silently chose another reading. We show how these failures arise, not how often, and propose controls for financial assistants.",
         "authors": [
@@ -14383,16 +14399,12 @@
         "updated": "2026-10-28T10:48:32+00:00",
         "version_id": "2610.38631v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38631v1"
       ]
