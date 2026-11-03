@@ -55260,7 +55260,7 @@
         "llm_core",
         "llm_training"
       ],
-      "stage": "ready",
+      "stage": "presentation_pending",
       "versions": [
         "2611.03633v1"
       ]
