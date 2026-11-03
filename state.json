@@ -13803,9 +13803,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "To save cost, practitioners often ask a language model to grade many independent items in one prompt. This assumes that verdicts are separable: that the verdict on an item does not depend on the other items in the prompt or on its position among them. Across three judgement tasks (harm in social-media comments, short-answer grading and review star ratings) and five open-weight models with 4-9B parameters, assigning the same 2,000 items to different random batches of 25 changes 11-22% of decisions on harm and grading, 6.5-13.3 points more than renaming the item keys or rewording the instruction, while AUROC against human labels differs from single-item grading only by -0.033 to +0.010; for four models with 14-32B parameters, 6-15% of decisions change, 4.2-9.1 points more. We show that flip rates decompose exactly into components of order, slot and membership, and that under a threshold model they grow with the square root of the variance that the context contributes, so that effects that are small for scores are large for decisions. Most of the latent dissimilarity between partitions comes from the order of the neighbours and the slot. The main effect of which items share the prompt, the part that voting over permutations of a batch cannot remove, accounts for 0.11-0.22 of it, and majority votes over nine permutations still leave 52-60% of the flips. Batched verdicts also differ systematically from single-item verdicts: even the majority of fifteen random batches disagrees with them on 8.4-17.8% of decisions. Editing a single generation shows that both the model's own earlier verdicts and the neighbours' texts carry the effect. On the easy task, star ratings, only 2.9-3.9% of decisions change. We recommend grading ambiguous items one per prompt, recovering most of the cost with a cached prefix, and reporting agreement with single-item grading whenever items are batched.",
         "authors": [
@@ -13821,16 +13837,12 @@
         "updated": "2026-10-29T15:14:16+00:00",
         "version_id": "2610.40241v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.40241v1"
       ]
