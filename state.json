@@ -19270,9 +19270,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_efficiency、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "The needle-in-a-haystack (NIAH) benchmark was introduced as a test for measuring a model's ability to find small relevant facts within a very large body of input text. However, existing NIAH benchmarks each suffer from one or more of the following limitations: (1) reliance on synthetic data, so their evaluations may not generalize to real-world settings; (2) reuse of previously published datasets, leading to the risk of benchmark contamination; (3) dependence on manual annotation, which requires human effort to create and update data and is prone to future benchmark contamination; and (4) unrealistic simplification of long-context multi-hop reasoning where each next step is trivial given previous steps, while real-world reasoning often requires planning over multiple possible proof paths. To address these limitations, we introduce \\Benchmark, a dynamic benchmark built from real citation relationships among scientific papers published after the evaluated models' knowledge cutoff date, which utilizes real-world information while ensuring no benchmark contamination. The fully automated benchmark construction pipeline samples representative subgraphs of the citation graph formed by these papers and converts each subgraph into a long-context QA example with a verifiable answer. We use GraphNIAH to evaluate eight LLMs from the GPT-5.6, Gemini-3, and Qwen3.5 families. We find that accuracy falls as questions require longer reasoning paths: at question depths of 16 and 32, the GPT-5.6 and Qwen3.5 models answer YES/NO questions no better than random guessing, mostly by answering NO; four of the eight models answer no counting example correctly, and the others model get worse as the subgraph size increases. These findings suggest that current LLMs often stop searching the citation relationships in their context before they reach the answer, even though every fact they need is in the context.",
         "authors": [
@@ -19288,18 +19304,14 @@
         "updated": "2026-10-30T13:07:47+00:00",
         "version_id": "2610.41704v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_efficiency",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41704v1"
       ]
