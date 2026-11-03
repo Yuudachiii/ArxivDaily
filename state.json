@@ -46094,9 +46094,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Computed tomography (CT) provides diverse patient information and various clinical tasks, for which numerous deep learning models have been investigated. Recent years have seen the development of vision-language foundation models that can comprehensively extract clinical features, driven by representation learning that combines CT volumes with radiology reports. Existing approaches typically adopt Contrastive Language-Image Pre-training (CLIP)-based representation learning, where pairs from different cases are, in principle, treated as negative pairs such that the volume and report embeddings are pushed apart. In the biomedical imaging, however, treating different cases as negative pairs is not always appropriate, particularly when clinical similarity exists. In this study, we propose a supervised representation learning framework grounded in clinical knowledge from language foundation models, rather than the weak supervision used in CLIP. Specifically, we utilized a large language model to extract abnormal finding phrases from reports. We then explicitly constructed the target features that the image encoder should output, as the semantic representation of the extracted findings using a biomedical text embedding model. Our Findings-aware Language-Image Pre-training (FiLIP) outperformed weakly supervised approaches in multi-label zero-shot finding classification in both in-domain and external-domain evaluations, and also proved effective when fine-tuned for the downstream task of radiology report generation.",
         "authors": [
@@ -46114,17 +46130,13 @@
         "updated": "2026-11-02T00:21:07+00:00",
         "version_id": "2611.02327v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02327v1"
       ]
