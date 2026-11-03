@@ -10599,9 +10599,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "In transformer language models with gated multilayer perceptrons (MLPs), adjacent layers write partly against each other into the residual stream. Previous work interpreted this cancellation as layers proposing features and the next layer selectively rejecting the inappropriate ones. We decompose the cancellation by removing the previous layer's write from the input of the next MLP: what the next layer writes along that write splits into what it writes anyway and how much less its MLP writes because the write is present, which we call the damping, and we trace the damping to the neurons that carry it. In gated MLPs the damping is carried by neurons whose gates are closed. SiLU and GELU are slightly negative below zero, so a closed gate still passes a small negative multiple of what the neuron reads, and a neuron whose output weight points along its input weight then subtracts a fraction of the direction it read. Summed over such neurons, closed gates contract the average direction a gated MLP reads, and the previous layer's write is not singled out: the same layer's write at another token is damped as much or more, and the eigenvalue signature from which that work concluded that the correction is selective appears for another token's write as well. Over training the damping grows while what the next layer writes anyway stays flat, and cancellation begins when the damping overtakes it; annealing the negative side of the gate activation away in continued pretraining removes the damping and the cancellation. Adjacent-layer cancellation is therefore weak evidence about which features a model rejects: it is produced by a contraction that gated MLPs apply, on average over directions, to whatever they read.",
         "authors": [
@@ -10617,16 +10633,12 @@
         "updated": "2026-10-28T23:59:49+00:00",
         "version_id": "2610.39068v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.39068v1"
       ]
