@@ -10740,9 +10740,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "A recurring design choice in building AI systems is whether, when a task is too hard for a model, to expand the model (make it larger, better-prompted, fine-tuned), or to decompose the task (extract the parts that admit a deterministic solution to a host, leaving the model only the irreducibly fuzzy residue). We make three claims. First, that many tasks commonly delegated whole to a model are in fact deterministic tasks with a small generative core. Second, and our central empirical result, that decomposing such a task yields a measurable and desirable property we call parity by construction: on the extracted sub-tasks the model-size performance curve becomes flat, because no model performs them at all. We measure this across nine models spanning a 494M-parameter local checkpoint to a frontier Opus-class model, a thirty-fold parameter range on the local family alone: once the host resolves the context, operation selection scores identically for all nine models and selector resolution for eight of nine, while the one task that does not decompose, labelling, remains sloped across the same range. Because the task leaves the model, a stock checkpoint suffices: no task-specific training and no fine-tuning. Third, that this is a general design discipline, not a domain trick: we show the same move recurring across physics setup, motion retargeting, and object-model editing, and in a Web-CLI tool family (same author, so not an independent replication). We give a method for locating the cut, the construction that makes a cut exist (a deterministic surface and a closed grammar over it), and a way to make the residue safe (resolve the deterministic context; verify the generative output), position the work against neuro-symbolic AI, tool-augmented language models, and generate-and-verify approaches, and are explicit about what is measured (one domain) versus illustrative (the rest).",
         "authors": [
@@ -10758,16 +10774,12 @@
         "updated": "2026-10-28T01:28:24+00:00",
         "version_id": "2610.38144v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38144v1"
       ]
