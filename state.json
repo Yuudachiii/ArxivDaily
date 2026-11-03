@@ -7,6 +7,10 @@
     "20261103T030506Z-fc853d4e-alert-bae796488281": {
       "attempts": 1,
       "created_at": "2026-11-03T03:05:06.061867+00:00"
+    },
+    "20261103T115444Z-6575b93a-49a36d508d32": {
+      "attempts": 0,
+      "created_at": "2026-11-03T11:54:44.310540+00:00"
     }
   },
   "collection": {
@@ -97,6 +101,450 @@
       "run_id": "20261103T030506Z-fc853d4e",
       "schema_version": 1,
       "status": "unknown"
+    },
+    "20261103T115444Z-6575b93a-49a36d508d32": {
+      "alert": false,
+      "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-google/archive/2026/11/03/20261103T115444Z-6575b93a-49a36d508d32.md",
+      "chain_root": "20261103T115444Z-6575b93a-49a36d508d32",
+      "chain_roots": [
+        "20261103T115444Z-6575b93a-49a36d508d32"
+      ],
+      "content_hash": "49a36d508d3266c904b8cc37a0356712f8156baa6979bb7ec731e2aa5674e8f6",
+      "created_at": "2026-11-03T11:54:44.310540+00:00",
+      "day": "2026-11-03",
+      "digest_id": "20261103T115444Z-6575b93a-49a36d508d32",
+      "empty": false,
+      "items": [
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Chain-of-Thought (CoT) generation has substantially improved the performance of Large Language Models (LLMs) on complex reasoning tasks, including code generation, data analysis, and exam-style question answering. Despite these advances, purely neural LLMs continue to struggle with elementary logical reasoning problems and lack the determinism, soundness, and reliability characteristic of symbolic reasoning systems. Conversely, classical symbolic methods such as SAT solving and exact cover guarantee correctness and completeness, but require problems to be expressed in highly specialized formal encodings, limiting their applicability to natural language inputs. In this work, we present a synergistic neuro-symbolic framework that bridges this gap by combining neural semantic parsing with deterministic exact cover reasoning. Given a Zebra-style logic puzzle in natural language, an LLM translates entities and constraints into structured tool calls that construct an exact cover instance. A symbolic solver then computes the solution and provides feedback to iteratively refine invalid, under- or overconstrained encodings, exploiting the uniqueness property of Zebra puzzles. We conduct a comprehensive empirical evaluation across multiple parameter scales, post-training paradigms, and LLM families. The results demonstrate that our hybrid approach consistently outperforms strong plain neural baselines, including CoT prompting, as well as recent neuro-symbolic methods.",
+            "authors": [
+              "Paulius Skaisgiris",
+              "Thomas Pammer",
+              "Veronika Semmelrock",
+              "Mykyta Ielanskyi",
+              "Maximilian Heisinger",
+              "Erich Kobler"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.03641v1",
+            "published": "2026-11-02T18:58:21+00:00",
+            "title": "From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles",
+            "updated": "2026-11-02T18:58:21+00:00",
+            "version_id": "2611.03641v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core",
+            "llm_eval",
+            "llm_reasoning",
+            "llm_training"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "思想链 (CoT) 生成极大地提高了大型语言模型 (LLM) 在复杂推理任务上的性能，包括代码生成、数据分析和考试式问答。尽管取得了这些进步，纯神经法学硕士仍然在与基本逻辑推理问题作斗争，并且缺乏符号推理系统的确定性、健全性和可靠性特征。相反，经典的符号方法（例如 SAT 求解和精确覆盖）保证了正确性和完整性，但需要以高度专业化的形式编码来表达问题，从而限制了它们对自然语言输入的适用性。在这项工作中，我们提出了一个协同神经符号框架，通过将神经语义解析与确定性精确覆盖推理相结合来弥补这一差距。给定自然语言中的斑马式逻辑难题，法学硕士将实体和约束转换为构造精确封面实例的结构化工具调用。然后，符号求解器计算解决方案并提供反馈，以迭代地完善无效、约束不足或过度约束的编码，从而利用 Zebra 谜题的唯一性属性。我们对多个参数尺度、训练后范式和法学硕士系列进行了全面的实证评估。结果表明，我们的混合方法始终优于强大的普通神经基线，包括 CoT 提示以及最近的神经符号方法。",
+            "title_zh": "从自然语言到精确覆盖：斑马谜题的神经符号方法"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Muon has recently emerged as a promising optimizer for pretraining large language models, offering a speedup over AdamW in minimizing pretraining loss. However, it remains unclear whether Muon's advantage persists after fine-tuning. In this paper, we study the downstream behavior of Muon and AdamW and uncover a surprising trend: beyond a sufficiently large pretraining data budget, AdamW outperforms Muon after fine-tuning. Moreover, as model size increases, AdamW overtakes Muon at progressively smaller pretraining token-parameter ratios. To explain this reversal, we view fine-tuning as a perturbation of the outputs and introduce the margin-to-spread ratio, which measures how far the correct logit lies above the wrong ones relative to how widely the wrong logits are spread. In language models, Muon has the larger margin-to-spread ratio at small data budgets and AdamW at large ones, mirroring the fine-tuning trend. In a linear associative memory, we prove that after one update the margin-to-spread ratio of gradient descent gains on that of Muon as the data budget grows, and simulations show that this trend persists after extended training.",
+            "authors": [
+              "Catherine Li",
+              "Jingchu Gai",
+              "Andrej Risteski",
+              "Jacob Mitchell Springer",
+              "Aditi Raghunathan"
+            ],
+            "categories": [
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.03633v1",
+            "published": "2026-11-02T18:56:43+00:00",
+            "title": "Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap",
+            "updated": "2026-11-02T18:56:43+00:00",
+            "version_id": "2611.03633v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core",
+            "llm_training"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "Muon 最近成为一种有前途的预训练大型语言模型优化器，在最小化预训练损失方面比 AdamW 提供了加速。然而，目前尚不清楚微调后 Muon 的优势是否仍然存在。在本文中，我们研究了 Muon 和 AdamW 的下游行为，并发现了一个令人惊讶的趋势：超出足够大的预训练数据预算，AdamW 在微调后优于 Muon。此外，随着模型大小的增加，AdamW 在逐渐减小的预训练标记参数比率上超越了 Muon。为了解释这种逆转，我们将微调视为对输出的扰动，并引入了保证金与散布比，该比率衡量正确的 logit 相对于错误的 logit 的散布范围而言，正确的 logit 高于错误的 logit 多远。在语言模型中，Muon 在小数据预算下具有较大的裕度与扩展比，而 AdamW 在大数据预算下具有较大的裕度与扩展比，反映了微调趋势。在线性联想记忆中，我们证明，随着数据预算的增长，更新梯度下降增益的边际与扩展比后，Muon 增益的边际扩展比会随着数据预算的增长而增加，并且模拟表明，这种趋势在扩展训练后仍然存在。",
+            "title_zh": "预训练数据规模扭转了 Muon-AdamW 微调差距"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Reinforcement learning with verifiable rewards (RLVR) can enable generalizable improvement for large language model (LLM) reasoning. This paper studies how to incentivize such generalization via reasoning strategies. We study this question with a controllable equation-solving framework: finding multiple inputs x for equations f(x)=y, where f is a non-bijective string function. This setting makes reasoning strategies observable while supporting a clear definition of easy-to-hard out-of-distribution (OOD) shifts, e.g., more solutions, longer y, etc. We uncover a subtle RLVR failure: it teaches the model to solve in-distribution tasks with high accuracy and structured step-by-step derivation, yet under OOD shifts, the same model abandons derivation and collapses to ineffective brute-force enumeration, causing sharp accuracy drops. This observation reveals the deeper challenges of RLVR generalization as it is neither incapable base model nor reward hacking, since the model succeeds in-distribution with the correct reasoning strategy. The key to mitigating this failure is an indirect intervention that surprisingly helps: co-training with bijective inversion tasks. Although these bijective tasks are actually not uniformly harder and even further from the non-bijective OOD evaluation, they make derivation more certain and substantially restore the correct strategy and accuracy under OOD shifts. This effect further motivates our theoretical analysis: outcome-only RLVR can shape reasoning processes through implicitly crediting the effective reasoning strategies more, even without process supervision. To conclude, our analysis framework and findings systematically reveal the crucial role and incentivization of reasoning strategies in RLVR generalization under OOD shifts. Code is available at https://github.com/ziqipang/rl_meta_thinking.",
+            "authors": [
+              "Ziqi Pang",
+              "Yu-Xiong Wang"
+            ],
+            "categories": [
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.03627v1",
+            "published": "2026-11-02T18:53:54+00:00",
+            "title": "Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR",
+            "updated": "2026-11-02T18:53:54+00:00",
+            "version_id": "2611.03627v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core",
+            "llm_eval",
+            "llm_reasoning"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "具有可验证奖励的强化学习 (RLVR) 可以实现大语言模型 (LLM) 推理的普遍改进。本文研究如何通过推理策略来激励这种泛化。我们使用可控方程求解框架来研究这个问题：为方程 f(x)=y 找到多个输入 x，其中 f 是非双射弦函数。这种设置使推理策略变得可观察，同时支持从易到难的分布外（OOD）转变的明确定义，例如更多的解决方案、更长的 y 等。我们发现了一个微妙的 RLVR 失败：它教会模型以高精度和结构化的逐步推导来解决分布内任务，但在 OOD 转变下，同一模型放弃推导并崩溃为无效的暴力枚举，从而导致尖锐的问题。准确度下降。这一观察揭示了 RLVR 泛化的更深层次挑战，因为它既不是无能的基础模型，也不是奖励黑客，因为该模型通过正确的推理策略成功实现了分布。缓解这种失败的关键是一种间接干预，这种干预出人意料地有帮助：与双射反演任务进行联合训练。尽管这些双射任务实际上并不是一律困难，甚至与非双射 OOD 评估相去甚远，但它们使推导更加确定，并在 OOD 转变下基本上恢复了正确的策略和准确性。这种效应进一步激发了我们的理论分析：即使没有过程监督，仅结果的 RLVR 也可以通过隐式地更多地信任有效的推理策略来塑造推理过程。总之，我们的分析框架和研究结果系统地揭示了 OOD 转变下推理策略在 RLVR 泛化中的关键作用和激励。代码可在 https://github.com/ziqipang/rl_meta_thinking 获取。",
+            "title_zh": "并非所有推理都能泛化：RLVR 中学习泛化推理策略的案例研究"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language models (LLMs) show growing promise for scientific discovery, yet basic questions remain about what enables reliable discovery. How can we trace the scientific discovery capacity of LLMs to their training data? We study this question as one of missing probability mass and develop a theoretical account in which monofacts-the facts observed once during training-set the discovery capacity. In materials science and regulatory genomics, we directly manipulate monofact rates in training sets and find that more monofacts consistently yield more discoveries across two open-weight model families, sampling strategies, and reasoning budgets. Further experiments show the relationship cannot be explained by training-set diversity alone and can transfer across scientific domains when paired with in-domain data. Together, our results identify monofact rate in training data as a key factor governing discoveries in language models.",
+            "authors": [
+              "Arda Uzunoglu",
+              "Mahler Revsine",
+              "Michael Schatz",
+              "Benjamin Van Durme",
+              "Mehrdad Farajtabar",
+              "Daniel Khashabi",
+              "Eric Nalisnick"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.03617v1",
+            "published": "2026-11-02T18:50:54+00:00",
+            "title": "Tracing the Scientific Discovery Capacity of LLMs to Their Training Data",
+            "updated": "2026-11-02T18:50:54+00:00",
+            "version_id": "2611.03617v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core",
+            "llm_reasoning"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型 (LLM) 在科学发现方面显示出越来越大的前景，但关于如何实现可靠发现的基本问题仍然存在。我们如何将法学硕士的科学发现能力追溯到他们的训练数据？我们将这个问题作为缺失概率质量之一进行研究，并开发了一种理论解释，其中单事实（在训练期间观察到的事实）设置了发现能力。在材料科学和调控基因组学中，我们直接操纵训练集中的单事实率，发现更多的单事实在两个开放权重模型系列、抽样策略和推理预算中始终会产生更多的发现。进一步的实验表明，这种关系不能仅通过训练集多样性来解释，并且当与领域内数据配对时可以跨科学领域转移。总之，我们的结果将训练数据中的单事实率确定为控制语言模型发现的关键因素。",
+            "title_zh": "将法学硕士的科学发现能力追溯到他们的培训数据"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Multimodal large language models (MLLMs) can generate detailed video captions, yet they may overemphasize minor details while overlooking essential context and key events. We argue that not all visual evidence deserves equal attention, as the importance of visual information depends on the content of each video. Motivated by this observation, we propose Reviso, an agentic video captioning framework that learns what to observe and how to gather relevant visual evidence. From a low-frame-rate global preview, Reviso constructs a hierarchical Context--Focus--Points (CFP) observation plan that identifies the video context, prioritizes key aspects, and defines concrete observation targets and corresponding tools. Guided by this plan, Reviso performs goal-directed active perception by selectively revisiting temporal segments and combining tools for fine-grained inspection. It interprets the acquired evidence, updates its plan as needed, and integrates global and local information to generate the final caption. To learn this observation strategy, we develop a verification-guided pipeline that constructs high-quality training trajectories through factual verification and teacher-guided refinement. We further train Reviso using Group Relative Policy Optimization (GRPO), incorporating a key-fact reward for caption quality, a Plan Alignment Reward (PAR) for identifying important observation targets, and an Unproductive Tool-Call Penalty (UTCP) that adjusts observation-cost penalties based on caption quality. Experiments across four video captioning benchmarks show that Reviso outperforms the evaluated open-source baselines, while its generated captions better support downstream video question answering. These findings highlight the effectiveness and potential of priority-guided active observation for video captioning.",
+            "authors": [
+              "Tengfei Liu",
+              "Yang Shi",
+              "Yuran Wang",
+              "Yuqi Tang",
+              "Yizhuo Jia",
+              "Zhuoran Zhang",
+              "Qixun Wang",
+              "Shujie Li",
+              "Xuanyu Zhu",
+              "Xinyu Liu",
+              "Minghui Guo",
+              "Shixuan Liu",
+              "Haotian Wang",
+              "Yuanxing Zhang",
+              "Pengfei Wan"
+            ],
+            "categories": [
+              "cs.CV"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.03602v1",
+            "published": "2026-11-02T18:41:14+00:00",
+            "title": "Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning",
+            "updated": "2026-11-02T18:41:14+00:00",
+            "version_id": "2611.03602v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_training",
+            "llm_agent",
+            "llm_safety",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "多模态大语言模型 (MLLM) 可以生成详细的视频字幕，但它们可能会过分强调次要细节，而忽略重要的上下文和关键事件。我们认为，并非所有视觉证据都值得同等关注，因为视觉信息的重要性取决于每个视频的内容。受这一观察的启发，我们提出了 Reviso，这是一种代理视频字幕框架，可以学习观察什么以及如何收集相关的视觉证据。 Reviso 从低帧率全局预览出发，构建了分层的上下文-焦点-点 (CFP) 观察计划，该计划可识别视频上下文、对关键方面进行优先级排序，并定义具体的观察目标和相应的工具。在此计划的指导下，Reviso 通过选择性地重新访问时间段并结合细粒度检查工具来执行目标导向的主动感知。它解释所获得的证据，根据需要更新其计划，并整合全球和本地信息以生成最终的说明。为了学习这种观察策略，我们开发了一个验证引导的管道，通过事实验证和教师指导的细化构建高质量的训练轨迹。我们使用组相对策略优化（GRPO）进一步训练 Reviso，结合了字幕质量的关键事实奖励、用于识别重要观察目标的计划对齐奖励（PAR）以及根据字幕质量调整观察成本惩罚的非生产性工具调用惩罚（UTCP）。四个视频字幕基准测试的实验表明，Reviso 的性能优于评估的开源基线，而其生成的字幕更好地支持下游视频问答。这些发现凸显了视频字幕优先引导主动观察的有效性和潜力。",
+            "title_zh": "Reviso：并非所有视觉证据都值得在视频字幕中受到同等重视"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Federated learning (FL) runtimes standardize aggregation and deployment, but each new study still requires federation formation: selecting task-eligible sites and preparing their local data and task code for federated training or analysis. This preparation recurs when the target changes, while raw records and site-private mappings are excluded from cross-site FL messages. We present FedReady, a system that performs federation formation with bounded LLM agents. Agents propose shared contracts, local adapters, and task code; the runtime owns workflow state and accepts artifacts only after checks tied to their digests. Candidate site discovery prioritizes recall; local eligibility verification checks task support before site admission. Once participating sites and artifacts are fixed, conventional federated training or analysis proceeds without readiness agents. Across 39 simulated retinal sites and four tasks, discovery reaches recall 1.00 at precision 0.65; local eligibility verification removes all 17 false positives without losing an eligible site-task pair. The participating sites supply 45,575 task-record instances and complete four 100-round jobs, including one with a runtime-generated contract. Across ten patient cohorts, preparation supports seven patient populations and holds endpoints at three sources as unsupported. Comparison with manually prepared reference populations and analysis (the manual reference) gives a maximum survival-curve difference of 0.001133. We also analyze 19 development failures, targeted classification ablations, and standalone and heterogeneous agent configurations. These results establish the feasibility of task-specific data preparation before ordinary FL training or analysis.",
+            "authors": [
+              "Ziyue Xu",
+              "Holger R. Roth",
+              "Chester Chen",
+              "Peter Cnudde"
+            ],
+            "categories": [
+              "cs.AI",
+              "cs.MA"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.03586v1",
+            "published": "2026-11-02T18:32:43+00:00",
+            "title": "FedReady: Bounded Agents for Federation Formation",
+            "updated": "2026-11-02T18:32:43+00:00",
+            "version_id": "2611.03586v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "联邦学习（FL）运行时标准化了聚合和部署，但每项新研究仍然需要联邦形成：选择符合任务条件的站点并准备​​其本地数据和任务代码以进行联邦训练或分析。当目标发生变化时，会重复进行此准备工作，而原始记录和站点私有映射则被排除在跨站点 FL 消息之外。我们推出了 FedReady，这是一个与有限的 LLM 代理执行联盟形成的系统。代理提出共享合约、本地适配器和任务代码；运行时拥有工作流状态，并且仅在与其摘要相关的检查之后才接受工件。候选站点发现优先召回；现场准入前，当地资格验证检查任务支持。一旦参与站点和工件被修复，传统的联合训练或分析就可以在没有准备代理的情况下继续进行。在 39 个模拟视网膜位点和四项任务中，发现达到召回率 1.00，精度为 0.65；本地资格验证消除了所有 17 个误报，而不会丢失符合条件的站点-任务对。参与站点提供 45,575 个任务记录实例，并完成 4 个 100 轮作业，其中一个作业具有运行时生成的合约。在十个患者队列中，准备工作支持七个患者群体，并将三个来源的终点保持为不受支持。与手动准备的参考群体和分析（手动参考）进行比较，得出的最大生存曲线差异为 0.001133。我们还分析了 19 个开发失败、有针对性的分类消融以及独立和异构代理配置。这些结果确立了在普通 FL 训练或分析之前准备特定任务数据的可行性。",
+            "title_zh": "FedReady：联邦组建的有界代理"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter permissions, and modify system configurations. However, an agent may achieve a user's goal while causing unintended harm, such as deleting unrelated files, weakening access controls, or corrupting data, in response to benign inputs without explicit jailbreaking. This failure mode is particularly important because apparent task success may reassure users that an agent behaved correctly, causing harmful side effects to go unnoticed. We call this harmful success: the agent successfully completes the intended benign task while simultaneously causing unintended harm. Despite its importance, harmful success is difficult to measure because conventional task-success metrics overlook harmful behaviors, while existing safety evaluations are often designed solely to assess harmful outcomes. We introduce VeriHarm, an automatic framework for constructing programmatically verifiable benchmarks that directly measure harmful success. VeriHarm minimally perturbs coding tasks to elicit unintended harmful behavior while maintaining the benignity of the task and preserving the original task objective. It then synthesizes executable harm tests that, together with the original task-correctness tests, evaluate both task accuracy and harmful outcomes. Frontier agents, including GPT-5.6-Sol and Claude-Opus-5, achieve an average task accuracy of 95% on our curated VeriHarm-Bench, yet still struggle to complete tasks safely: their safe success rate, the fraction of tasks completed successfully without triggering the designated harm, averages only 37%. These results suggest that successful task completion can frequently coexist with unintended harm, and that task-success metrics alone may substantially understate the potential safety risks of coding agents.",
+            "authors": [
+              "Wei-Lin Chen",
+              "Zhepei Wei",
+              "Xinyu Zhu",
+              "Yu-Min Tseng",
+              "Tzu-Han Lin",
+              "Yu Meng"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.SE"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.03575v1",
+            "published": "2026-11-02T18:27:55+00:00",
+            "title": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+            "updated": "2026-11-02T18:27:55+00:00",
+            "version_id": "2611.03575v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_core",
+            "llm_eval",
+            "llm_safety"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型 (LLM) 编码代理越来越多地使用 shell 访问进行操作，从而允许它们编写脚本、移动文件、更改权限和修改系统配置。然而，代理可能会在实现用户目标的同时造成意想不到的伤害，例如删除不相关的文件、削弱访问控制或损坏数据，以响应良性输入而无需显式越狱。这种失败模式特别重要，因为明显的任务成功可能会让用户确信代理的行为正确，从而导致有害的副作用被忽视。我们称之为有害的成功：代理成功地完成了预期的良性任务，同时造成了意想不到的伤害。尽管有害成功很重要，但它很难衡量，因为传统的任务成功指标忽视了有害行为，而现有的安全评估通常只是为了评估有害结果而设计的。我们推出 VeriHarm，这是一个自动框架，用于构建可通过编程验证的基准，直接衡量有害的成功。 VeriHarm 最小程度地干扰编码任务以引发意外的有害行为，同时保持任务的良性并保留原始任务目标。然后，它综合可执行的危害测试，与原始的任务正确性测试一起评估任务准确性和有害结果。前沿智能体，包括 GPT-5.6-Sol 和 Claude-Opus-5，在我们精心设计的 VeriHarm-Bench 上实现了 95% 的平均任务准确率，但仍然难以安全地完成任务：他们的安全成功率，即在没有触发指定伤害的情况下成功完成任务的比例，平均仅为 37%。这些结果表明，成功完成任务经常与意外伤害并存，并且仅任务成功指标可能会大大低估编码代理的潜在安全风险。",
+            "title_zh": "VeriHarm-Bench：可验证地衡量 LLM 编码代理的有害成功"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "LLM coding agents can increasingly automate model post-training, but whether they can act as forward-deployed engineer (FDE) agents, discovering customer requirements and turning them into deployment decisions, remains unclear. We study this on a real enterprise text-to-SQL engagement: a simulated customer, grounded in the real use case's requirements, starts with an ambiguous request. An agent must discover acceptance criteria, data permissions, and hardware constraints in the discovery phase, then plan and execute a post-training recipe in the delivery phase. Across 15 models, the strongest discover over 80% of withheld requirements and open-weight models discover 40-50%; in the delivery phase, only 25% of runs across eight coding-agent configurations pass all acceptance criteria. We identify four bottlenecks in this engagement: (1) incomplete discovery, with 40% of withheld requirements missing or misrepresented; (2) unreliable execution; (3) underused compute budgets and a lack of systematic comparisons across base models and post-training methods; and (4) benchmark accuracy does not guarantee production readiness. We suggest human review of discovered requirements, monitoring of the agent's plan during execution, and an explicit experiment-environment specification covering hardware, budget scope, and production checks.",
+            "authors": [
+              "Marianne Menglin Liu",
+              "Rongguang Wang",
+              "Zheng Wang",
+              "Yewen Wang",
+              "Leonid Boytsov",
+              "Tao Sheng",
+              "Sujith Ravi",
+              "Dan Roth"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.03551v1",
+            "published": "2026-11-02T18:13:38+00:00",
+            "title": "Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL",
+            "updated": "2026-11-02T18:13:38+00:00",
+            "version_id": "2611.03551v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_core",
+            "llm_eval",
+            "llm_training"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "LLM 编码代理可以日益自动化模型后训练，但它们是否可以充当前向部署工程师 (FDE) 代理，发现客户需求并将其转化为部署决策，仍不清楚。我们在真实的企业文本到 SQL 交互中对此进行了研究：基于真实用例的需求的模拟客户从一个模糊的请求开始。代理必须在发现阶段发现验收标准、数据权限和硬件约束，然后在交付阶段规划并执行训练后配方。在 15 个模型中，最强的模型发现了超过 80% 的保留要求，而开放权重模型则发现了 40-50%；在交付阶段，八种编码代理配置中只有 25% 的运行通过了所有验收标准。我们确定了这种参与中的四个瓶颈：(1) 发现不完整，40% 的保留需求缺失或歪曲； (2)执行不可靠； (3) 计算预算未得到充分利用，并且缺乏基础模型和训练后方法之间的系统比较； (4) 基准精度并不能保证生产准备就绪。我们建议对发现的需求进行人工审查，在执行过程中监控代理的计划，以及涵盖硬件、预算范围和生产检查的明确的实验环境规范。",
+            "title_zh": "LLM代理可以成为前沿部署工程师吗？企业文本到 SQL 的需求发现和交付"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Earth system models (ESMs) rely on parameterizations to represent unresolved processes such as convection, cloud microphysics, and turbulence. However, translating advances in physical understanding into stable, validated parameterizations and integrating them into ESMs often takes years. Agentic AI could accelerate this process and enable more systematic exploration of design choices. Using warm-rain collision-coalescence as a test case, we evaluate agents' ability to synthesize scientific literature, reimplement published bulk parameterizations, and propose new functional forms as differentiable JAX code. We compare conventional parameterizations, data-driven emulators, and agent-generated closures against high-fidelity superdroplet simulations, repeating unattended experiments across ten language models. With expert guidance or iterative feedback, agents produced executable, differentiable, mass-conserving code, although unattended performance depended strongly on the scheme and language model. Iterative feedback lowered median rollout error for eight of ten models. Retuned physical schemes matched or outperformed many learned parameterizations at substantially lower computational cost, but two of 100 unattended agent-generated closures achieved slightly lower rain-mass error than the most accurate retuned scheme on held-out simulations.",
+            "authors": [
+              "Kara D. Lamb"
+            ],
+            "categories": [
+              "physics.ao-ph",
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.03543v1",
+            "published": "2026-11-02T18:05:04+00:00",
+            "title": "Can LLM Agents Improve Imperfect Earth System Model Parameterizations?",
+            "updated": "2026-11-02T18:05:04+00:00",
+            "version_id": "2611.03543v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "地球系统模型 (ESM) 依靠参数化来表示未解决的过程，例如对流、云微物理和湍流。然而，将物理理解的进步转化为稳定、经过验证的参数化并将其集成到 ESM 中通常需要数年时间。代理人工智能可以加速这一过程，并能够对设计选择进行更系统的探索。使用暖雨碰撞合并作为测试用例，我们评估智能体综合科学文献、重新实现已发表的批量参数化的能力，并提出新的函数形式作为可微分的 JAX 代码。我们将传统的参数化、数据驱动的模拟器和代理生成的闭包与高保真超级液滴模拟进行比较，在十种语言模型中重复无人值守的实验。在专家指导或迭代反馈下，智能体生成了可执行的、可微分的、质量守恒的代码，尽管无人值守的性能在很大程度上取决于方案和语言模型。迭代反馈降低了十个模型中八个模型的中值推出误差。重新调整的物理方案以低得多的计算成本匹配或优于许多学习的参数化，但 100 个无人值守代理生成的闭包中的两个实现了比保留模拟中最准确的重新调整方案略低的降雨质量误差。",
+            "title_zh": "LLM 代理可以改善不完美地球系统模型参数化吗？"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Skill extraction benchmarks score models against a few human-annotated positives and treat every other skill in the vocabulary as equally wrong. At the scale of ESCO (13,939 skills) this binary view can reward models that rank the annotated positive high for the wrong reason, and hides semantically nonsensical predictions. The WorkRB Challenge at RecSys-HR 2026 replaces it with graded relevance: every candidate skill in a model's ranking window carries a 0 to 4 grade, and the leaderboard scores nDCG@100 against these grades. Since ternary judgements proved too coarse for objective annotation, relevance is decomposed into a cascade of four binary questions (same domain, activity mentioned, right granularity, replacement of a gold positive) that a smaller LLM judge can answer reliably; the labels are validated with blind human and frontier-model re-annotation. This paper documents the annotation methodology, the construction of five benchmark datasets (four with vacancy sentences as queries, one with lexically distant skill surface forms), the validation of the LLM cascade, and insights from the submissions. The field converged on multi-stage retrieve-and-rerank pipelines, whose gains come from clearing nonsense out of the ranking window rather than finding more positives: at the top of the leaderboard, the graded ordering is uncorrelated with what binary evaluation would have said. Graded labels expose much bigger gaps between top submissions and baselines than binary evaluation does, and show that semantic-understanding skill recommendation is still wide open. The clear next direction is bringing efficiency back: every submitted system we could size uses at least 42x, typically several hundred times, more parameters than the baselines it beats.",
+            "authors": [
+              "Warre Veys",
+              "Luis Gasco",
+              "Jens-Joris Decorte"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.03525v1",
+            "published": "2026-11-02T17:57:53+00:00",
+            "title": "Grading the Unannotated: Insights from the WorkRB Skill Extraction Challenge at RecSys-HR 2026",
+            "updated": "2026-11-02T17:57:53+00:00",
+            "version_id": "2611.03525v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core",
+            "llm_eval"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "技能提取基准根据一些人工注释的积极因素对模型进行评分，并将词汇表中的所有其他技能视为同样错误。在 ESCO 的规模（13,939 项技能）中，这种二元视图可以奖励那些出于错误原因将带注释的积极结果排名较高的模型，并隐藏语义上无意义的预测。 RecSys-HR 2026 的 WorkRB 挑战赛将其替换为分级相关性：模型排名窗口中的每项候选技能都带有 0 到 4 的等级，并且排行榜根据这些等级评分为 nDCG@100。由于三元判断对于客观注释来说过于粗糙，因此相关性被分解为一系列的四个二元问题（相同领域、提到的活动、正确的粒度、黄金肯定的替换），较小的法学硕士法官可以可靠地回答；标签通过盲人和前沿模型重新注释进行验证。本文记录了注释方法、五个基准数据集的构建（四个以空缺句子作为查询，一个以词汇距离较远的技能表面形式）、LLM 级联的验证以及提交的见解。该领域集中在多阶段检索和重新排名管道上，其收益来自于清除排名窗口中的无用信息，而不是寻找更多积极因素：在排行榜的顶部，分级排序与二元评估所说的不相关。与二元评估相比，分级标签暴露了顶级提交和基线之间更大的差距，并表明语义理解技能推荐仍然存在很大的开放性。明确的下一个方向是恢复效率：我们可以调整大小的每个提交的系统使用的参数至少比它所击败的基线多 42 倍，通常是数百倍。",
+            "title_zh": "对未注释的进行评分：RecSys-HR 2026 上 WorkRB 技能提取挑战赛的见解"
+          }
+        }
+      ],
+      "notification_hash": "48ff66b2671fa732e2e5ac598035d9f996ddc304a4949af486e7ccc75955008a",
+      "recovery_of": [],
+      "rendered": {
+        "2611.03525": "translation_archive_link_only",
+        "2611.03543": "rendered_inline_translation",
+        "2611.03551": "rendered_inline_translation",
+        "2611.03575": "rendered_inline_translation",
+        "2611.03586": "rendered_inline_translation",
+        "2611.03602": "rendered_inline_translation",
+        "2611.03617": "rendered_inline_translation",
+        "2611.03627": "rendered_inline_translation",
+        "2611.03633": "rendered_inline_translation",
+        "2611.03641": "rendered_inline_translation"
+      },
+      "run_id": "20261103T115444Z-6575b93a",
+      "schema_version": 1,
+      "status": "prepared"
     }
   },
   "papers": {
