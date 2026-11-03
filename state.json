@@ -43314,9 +43314,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_multimodal、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_multimodal",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Language models can analyze and assess student texts using predefined rubrics and deliver structured feedback, reducing instructors' workload. However, existing solutions often rely on external services that are resource-intensive, costly, and raise privacy concerns, making them unsuitable for constrained environments. This study evaluates an automated assessment pipeline with three key aims: design for low-resource environments, privacy, and focus on a novel context in cybersecurity education. The pipeline integrates lightweight language models for textual evaluation and a vision-language model for image interpretation. Responses from 105 students were collected over two semesters of an undergraduate course during a cybersecurity exercise on incident response. Results across different hardware configurations show that small models in low-resource environments can achieve up to 97% accuracy in text-only and up to 94% in rich-text assessments. This rivals or even outperforms a large model while adding the benefits of locally hosted assessment. Our solution can help educators and practitioners who need grading assistance without replacing human oversight, especially in environments where cloud-based solutions may be impractical. This study contributes an open-source, locally deployable AI-assisted scoring pipeline that runs on affordable hardware and can be extended to various types of student reports in computing education. As a result, it makes automated assessment accessible to a broad range of educators and institutions.",
         "authors": [
@@ -43335,17 +43351,13 @@
         "updated": "2026-11-01T10:46:27+00:00",
         "version_id": "2611.01785v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_multimodal",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01785v1"
       ]
