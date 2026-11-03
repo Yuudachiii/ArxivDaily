@@ -19697,9 +19697,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_safety、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_safety",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Cultural value alignment requires not only model optimization but also a well-specified target grounded in real-human evidence. Yet how such targets should be grounded in human data remains largely unexplored, raising three fundamental questions: (1) whose values should be represented? (2) where should cultural values be observed? and (3) what signals reveal underlying values? We investigate these questions through Re3Culture, a large-scale dataset linking (i) Representative communities: 700+ human participants across four cultures recruited through cultural-affiliation screening and demographic-aware sampling; (ii) Realistic scenario: culturally sensitive scenarios selected by community members, e.g., family and kinship; and (iii) Revealed value signals: 1,400+ value surveys, 20,000+ topic-grounded behavioral principles and explicit value priorities with responses for 6,000+ situated questions. Our analysis shows why these choices matter for defining the target, with three implications. First, estimating cultural values requires both community affiliation and broad internal coverage. Substituting other cultures or restricting subgroup coverage shifts value estimates. LLM simulations also disproportionately reflect particular subgroups. Second, values must be observed in concrete, community-guided situations. Abstract questionnaire profiles weakly recover situated priorities, and communities differ in which scenarios they identify as culturally value-revealing. Third, value priorities should be elicited explicitly, not learned from response preferences or bottom-line answers alone. Preferences conflate value agreement with other response-level qualities, and similar answers can be derived from different value priorities. By addressing these requirements, Re3Culture provides the first human-grounded resource that explicitly informs target definition for cultural value alignment.",
         "authors": [
@@ -19728,16 +19744,12 @@
         "updated": "2026-10-30T14:24:09+00:00",
         "version_id": "2610.41793v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_safety",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41793v1"
       ]
