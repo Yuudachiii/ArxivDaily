@@ -7,6 +7,10 @@
     "20261103T030449Z-5491bbd0-alert-bae796488281": {
       "attempts": 1,
       "created_at": "2026-11-03T03:04:49.053038+00:00"
+    },
+    "20261103T115447Z-edbd5a91-bbdee39c528f": {
+      "attempts": 0,
+      "created_at": "2026-11-03T11:54:47.280244+00:00"
     }
   },
   "collection": {
@@ -97,6 +101,71 @@
       "run_id": "20261103T030449Z-5491bbd0",
       "schema_version": 1,
       "status": "unknown"
+    },
+    "20261103T115447Z-edbd5a91-bbdee39c528f": {
+      "alert": false,
+      "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-microsoft/archive/2026/11/03/20261103T115447Z-edbd5a91-bbdee39c528f.md",
+      "chain_root": "20261103T115447Z-edbd5a91-bbdee39c528f",
+      "chain_roots": [
+        "20261103T115447Z-edbd5a91-bbdee39c528f"
+      ],
+      "content_hash": "bbdee39c528fc008195aaab022739ee8206093e2002b0b9f68b807305bab7764",
+      "created_at": "2026-11-03T11:54:47.280244+00:00",
+      "day": "2026-11-03",
+      "digest_id": "20261103T115447Z-edbd5a91-bbdee39c528f",
+      "empty": false,
+      "items": [
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language models (LLMs) show growing promise for scientific discovery, yet basic questions remain about what enables reliable discovery. How can we trace the scientific discovery capacity of LLMs to their training data? We study this question as one of missing probability mass and develop a theoretical account in which monofacts-the facts observed once during training-set the discovery capacity. In materials science and regulatory genomics, we directly manipulate monofact rates in training sets and find that more monofacts consistently yield more discoveries across two open-weight model families, sampling strategies, and reasoning budgets. Further experiments show the relationship cannot be explained by training-set diversity alone and can transfer across scientific domains when paired with in-domain data. Together, our results identify monofact rate in training data as a key factor governing discoveries in language models.",
+            "authors": [
+              "Arda Uzunoglu",
+              "Mahler Revsine",
+              "Michael Schatz",
+              "Benjamin Van Durme",
+              "Mehrdad Farajtabar",
+              "Daniel Khashabi",
+              "Eric Nalisnick"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.03617v1",
+            "published": "2026-11-02T18:50:54+00:00",
+            "title": "Tracing the Scientific Discovery Capacity of LLMs to Their Training Data",
+            "updated": "2026-11-02T18:50:54+00:00",
+            "version_id": "2611.03617v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core",
+            "llm_reasoning"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型（LLMs）在科学发现方面显示出越来越大的潜力，但关于什么因素能够实现可靠的发现仍存在基本问题。我们如何将LLMs的科学发现能力追溯到其训练数据？我们将这个问题视为缺失概率质量问题，并提出一个理论解释，其中单事实——在训练集中仅观察一次的事实——决定了发现能力。在材料科学和法规基因组学中，我们直接操控训练集中的单事实率，发现更多的单事实始终会在两个开放权重模型家族、抽样策略和推理预算中产生更多的发现。进一步的实验表明，这种关系不能仅通过训练集的多样性来解释，并且在结合领域内数据时能够跨科学领域转移。总之，我们的结果表明，训练数据中的单事实率是决定语言模型发现能力的关键因素。",
+            "title_zh": "将大型语言模型的科学发现能力追溯到其训练数据"
+          }
+        }
+      ],
+      "notification_hash": "c48e8d6339fe80cb041c3ab2c6a6f8af55e3a36b35e67856b7b6c3ae706e15ee",
+      "recovery_of": [],
+      "rendered": {
+        "2611.03617": "rendered_inline_translation"
+      },
+      "run_id": "20261103T115447Z-edbd5a91",
+      "schema_version": 1,
+      "status": "prepared"
     }
   },
   "papers": {
