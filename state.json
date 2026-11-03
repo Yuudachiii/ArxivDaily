@@ -50518,9 +50518,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "The widespread adoption of Large Language Models (LLMs) demands reliable detection of human-authored versus synthetic text. However, current Transformer-based detectors often experience severe performance degradation during domain shifts and operate as opaque classifiers. This paper investigates the robustness and interpretability of fine-tuned Transformer models (DistilBERT, RoBERTa) by evaluating them against a custom out-of-distribution (OOD) dataset of hyper-local news synthesized via open-source LLMs (Llama 3, Mistral, Gemma). To analyze model decision boundaries, we apply a tripartite Explainable AI (xAI) framework using SHAP. Our analysis reveals three key phenomena: First, detectors often rely on a \"Call-to-Action\" syndrome inherent to instruction-tuned LLMs rather than generic machine text. Second, we observe a \"Specificity Bias,\" where LLMs successfully bypass detection by hallucinating specific named entities and mimicking conversational imperfection. Finally, we illustrate the \"Wikipedia Paradox,\" wherein formal, objective human writing is frequently misclassified as AI due to its low statistical burstiness. These findings demonstrate that purely statistical detection paradigms face systematic limitations in highly structured human domains, emphasizing the critical need for semantically-aware, interpretable detection architectures.",
         "authors": [
@@ -50537,16 +50553,12 @@
         "updated": "2026-11-02T15:22:34+00:00",
         "version_id": "2611.03280v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.03280v1"
       ]
