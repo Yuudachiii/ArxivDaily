@@ -10190,9 +10190,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_multimodal、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Vision-language models (VLMs) increasingly process multiple views of the same scene, but it remains unclear whether they integrate these observations into a coherent scene-level representation. Existing multi-image evaluations do not isolate this capability, as tasks may admit correct solutions through independent per-view processing without requiring cross-view correspondence. We introduce OneScene-Bench, a controlled benchmark designed to explicitly distinguish when cross-view integration is necessary. Our benchmark evaluates three complementary capabilities on real-world multi-view scenes: unique object counting, cross-view consistency, and spatial reasoning. For counting, we control object overlap across views to separate cases solvable by simple per-view aggregation from those requiring instance-level correspondence. For consistency, we introduce localized edits in shared and view-specific regions, testing whether models distinguish genuine scene contradictions from differences caused by viewpoint and visibility. For spatial reasoning, we construct object relations that require combining spatial evidence across viewpoints to compare physical proximity. We evaluate twelve state-of-the-art open-weight and proprietary VLMs and find that counting accuracy drops substantially on complementary views, ranging from 4.5-50.0%, compared with 45.5-81.5% on complete-overlap examples. Moreover, cross-view consistency remains around 50% across models, including recent proprietary VLMs, despite substantially stronger performance on spatial reasoning. Our results reveal a substantial gap between processing multiple images and integrating evidence across them, highlighting the need for evaluations that explicitly test scene-level multi-view understanding. Code and data are available at https://github.com/swathisuhas/OneScene-Bench.",
         "authors": [
@@ -10210,18 +10226,14 @@
         "updated": "2026-10-28T21:17:36+00:00",
         "version_id": "2610.38926v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_multimodal",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38926v1"
       ]
