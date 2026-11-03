@@ -47432,9 +47432,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "More databases can make a materials campaign worse. Through an organizational lens, we trace each source's contribution. One band-gap campaign ranks seven anion families from archived measured gaps, one vote per source. In the first half of its budget, all seven pooled rank worse (rank agreement 0.737; 1 = measured order) than the best pool of three (0.851). As a stability check, choosing the pool on half the runs and testing on the rest kept the gap. Splitting Materials Project afterwards points to its transition-metal oxides and fluorides. Two databases from one pipeline add nothing over one, but pooling gives their shared ordering two votes. New calculations repay their cost early only when two or three campaigns reuse them. Flat language-model agent teams trailed a random-pick baseline (mean 0.876, sd 0.096, 20 searches). An adaptive Al-Mg-Si team, mostly interatomic potentials, was scored on unseen HSE06 calculations. In its first quarter of compute it found 49% of the ten lowest-formation-energy compounds, against at most 40% for fixed teams and 73% for MACE-MP-0 alone. Merging members whose orderings agreed carried most of its gain. This suggests pooling a few sources that fit the measurements, counting each pipeline once and charging for computation.",
         "authors": [
@@ -47452,16 +47468,12 @@
         "updated": "2026-11-02T05:56:19+00:00",
         "version_id": "2611.02571v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02571v1"
       ]
