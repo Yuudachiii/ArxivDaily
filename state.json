@@ -10839,10 +10839,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core、llm_eval、llm_multimodal",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.38158v1",
+      "model": "rules",
       "paper": {
         "abstract": "Video understanding keeps moving toward longer recordings, and the longer a recording is, the more questions can be asked about it. But processing it again for every question does not scale, so many systems watch the video once, build a memory, and answer later questions from it. Yet what to remember is decided before anyone knows what will be asked, and whatever is left out cannot be recovered later.\n  Moreover, whether the savings pay off is judged by token counts, which fall when the input gets shorter but not when the model reuses what it has already computed. We present REEL, an evaluation framework that compares three saved representations built from exactly the same observed frames, so that a change in answers can come only from what the system remembered. Text writes a short record of what happened, Visual keeps the encoder outputs, and Prefix State also keeps the language-model prefix. Each is compared with full reprocessing (Frames) by paired correctness changes, cumulative GPU time, and storage size. Across six vision-language models and two benchmarks, Text and Frames differ in correctness on 20\\% to 29\\% of questions, even when their mean accuracy is almost the same. By contrast, Visual and Prefix State stay much closer to Frames. With unlimited storage, Prefix State is the cheapest in total GPU time among memories that keep almost all of the answers Frames gets right, for every model on both benchmarks. The trade-off is storage: Prefix State keeps up to about 21 GiB per video, whereas Text needs only kilobytes. Reusing computation and discarding information both look like efficiency, but only the second removes evidence that later questions may need, and neither mean accuracy nor token count tells them apart. REEL makes that difference measurable for any system that answers many questions from one saved memory.",
         "authors": [
@@ -10858,17 +10874,13 @@
         "updated": "2026-10-28T01:53:23+00:00",
         "version_id": "2610.38158v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core",
         "llm_eval",
         "llm_multimodal"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38158v1"
       ]
