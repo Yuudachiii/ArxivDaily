@@ -23482,9 +23482,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_agent、llm_efficiency、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Long-horizon reasoning and agentic workloads strain KV-cache capacity and decode attention throughput. We present Jet-QSparse, a training-free method that combines compact NVFP4 cache storage with native FP4 query-key computation on Blackwell tensor cores. A dense scan scores the full key history and selects 128-token blocks for sparse FP16 value aggregation with FP32 accumulation, preserving higher precision in the output-forming step while enabling contiguous tile loads. Calibrated key centering and at most two BF16 pages per sequence and layer address quantization error; FP8 prefill uses a temporary arena while the persistent cache is packed directly from BF16 activations. Across four hybrid LLMs, a budget of 128 blocks per KV head shows no detected accuracy loss on the evaluated mathematical reasoning, coding, and agentic benchmarks, although some smaller budgets incur losses. With 64 blocks, Qwen3.8-27B achieves a $1.94\\times$ end-to-end decode speedup over dense BF16 at 128K context and batch size 16 on one GB300, and the measured Qwen KV pools provide $2.58$-$2.76\\times$ BF16's token capacity.",
         "authors": [
@@ -23508,6 +23524,7 @@
         "updated": "2026-10-31T15:06:46+00:00",
         "version_id": "2611.01022v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_agent",
@@ -23515,12 +23532,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01022v1"
       ]
