@@ -16948,9 +16948,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "An LLM agent that helps a patient get care must do two things. It must reach the correct outcome, and it must follow the necessary procedure. For example, the agent must get the patient's permission before it shares the patient's records. We introduce BABA-Bench, a benchmark of 47 interactive worlds. We built each world from a de-identified, real patient advocacy case that expert advocates reviewed. In each world, the agent must find hidden information and coordinate insurers, clinics, suppliers, pharmacies, and community organizations. The engine checks each action at the time the agent does it. It checks if the agent has permission, if the agent has evidence for the action, and if the action is prohibited. We evaluated 14 frontier models with three runs on each world, for a total of 1,974 runs. Agents often reached the correct outcome by an invalid route. Of the 921 runs that reached all required outcomes, 254 (28%) did not follow the necessary procedure. Claude Opus 5 reached all required outcomes in 81.6% of its runs, but only 52.5% of its runs passed all checks. When we gave two models a verified route, their pass rates increased from 29.8% to 91.5% and from 44.0% to 97.2%. For these models, the main problem is to find a route, not to execute it.",
         "authors": [
@@ -16967,17 +16983,13 @@
         "updated": "2026-10-29T23:46:24+00:00",
         "version_id": "2610.41076v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41076v1"
       ]
