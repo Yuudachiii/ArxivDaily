@@ -44798,9 +44798,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Large language models show large and seemingly arbitrary performance drops when a task is rewritten in ways that leave its requirements untouched. We recast task difficulty as a causal quantity: the treatment effect of meaning-preserving perturbations on a model. A meaning-preserving rewrite can only be observed to hurt a task the model can already solve, so we place the estimand on the principal stratum where the degradation occurs: the conditional causal difficulty (CCD), the probability that a randomly drawn twin breaks a solvable task. Because harder tasks tend to be more phrasing-sensitive, complexity enters as an effect modifier rather than a confounder, and we residualize it out to obtain complexity-residualized difficulty (CRD); zero for a task exactly as fragile as its complexity predicts, positive for anomalously fragile ones. Current benchmarks do not supply the data CCD requires, so we introduce GlassGSM and GlassMATH, augmenting GSM8K and MATH with twins built from perturbation families, raising fragility on GlassGSM by $\\approx 12\\times$ over GSM-IC-style distractors on the same problems ($3.7\\%\\to44.9\\%$) while keeping the answer key unchanged. Our predictor Frail learns the per-perturbation break probability and reaches $0.613{\\pm}0.023$ of the suite reliability ceiling on GlassGSM and $0.557{\\pm}0.023$ on GlassMATH, against $0.171$/$0.401$ for a surface-feature baseline and $0.444$/$0.463$ for supervised baselines such as VAP3, and, at a $5\\%$ curation budget on GlassGSM, doubles random recall of fragile items, matching an oracle ranking. Additionally, cross-fitted residualization leaves CRD uncorrelated with the declared proxy in practice.\n  Code is available at https://github.com/upwork/Conditional_Causal_Difficulty_for_LLMs",
         "authors": [
@@ -44820,16 +44836,12 @@
         "updated": "2026-11-01T17:10:02+00:00",
         "version_id": "2611.02065v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02065v1"
       ]
