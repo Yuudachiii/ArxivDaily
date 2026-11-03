@@ -54672,11 +54672,8 @@
         "llm_safety"
       ],
       "stage": "presentation_pending",
-      "stage_started": {
-        "at": "2026-11-03T11:54:47.280244+00:00",
-        "run_id": "20261103T115447Z-edbd5a91",
-        "stage": "title_translation"
-      },
+      "title_translation_prompt_fingerprint": "microsoft_free",
+      "title_zh": "VeriHarm-Bench：可验证地衡量大型语言模型编码代理中的有害成功",
       "versions": [
         "2611.03575v1"
       ]
