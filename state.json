@@ -22087,9 +22087,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Decision models such as TypeSafe's Jev answer typed questions about a text (yes/no, multiple choice, or an ordinal score) with calibrated probabilities in a single forward pass and without generating text, which makes them an inexpensive candidate for LLM-as-a-judge workloads. We evaluate 14 System-1 decision models, selected with a pre-stated protocol, against four generative judges (Claude Haiku 5.5, GPT-5.6 with and without reasoning, and Claude Opus 5.5 with thinking) on eleven established judge benchmarks. Five of the 14 are statistically indistinguishable from GPT-5.6 without reasoning on all five pairwise and best-of-4 benchmarks, and the two strongest, DReX-Max and d1-ultra, are significantly more accurate than Haiku on JudgeBench, LLMBar and RewardBench 2. Conditioned on a reference answer generated once per prompt, eleven models reach 90.3-93.4% on JudgeBench, statistically indistinguishable from Opus 5.5 and GPT-5.6 with reasoning, and on PPE best-of-16 every reference-guided System-1 judge matches GPT-5.6 with reasoning at roughly one-sixteenth of its cost per prompt. Several System-1 judges are better calibrated than every generative judge and correlate more strongly with human helpfulness ratings. Robustness to instructions injected into the judged response is a property of the individual model rather than of the System-1 design: an appended note to the evaluator reverses 0-5% of the correct verdicts of five models but 17-49% for the other nine. Two general System-1 leaderboards that contain no judging tasks predict judging accuracy (Pearson r = 0.95-0.96), a well-calibrated System-1 first stage matches Opus on LLMBar while escalating 17% of items, and same-size controls show that the correctness deficit of a 4B decision model is a reasoning gap rather than a size gap.",
         "authors": [
@@ -22104,17 +22120,13 @@
         "updated": "2026-10-31T00:51:19+00:00",
         "version_id": "2611.00505v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00505v1"
       ]
