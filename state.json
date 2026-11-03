@@ -10684,9 +10684,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_efficiency、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_efficiency",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Web assistants increasingly answer questions about a user's private documents by pairing a small on-device model with a cloud LLM behind a Web API. In collaborative decoding, the document stays on the client, and the cloud receives only a public view that the user approves, such as the question alone, but the two models exchange messages while the answer is generated. We show that the message transcript can disclose private content that neither the public view nor the answer contains. In a planted-secret audit, speculative decoding with private drafts did not include the secret code in its answers, yet sent the code to the cloud in rejected drafts. We present ADLER, a decoding protocol for streaming LLM APIs in which every message to the cloud depends only on the public view and the answer the user sees, regardless of how the client combines the two models or how the cloud behaves. A client-side leakage ledger then bounds how much the answer itself reveals relative to a public reference process built from the cloud's replies. In the audit, no ADLER configuration exposed the secret beyond the answer. On GSM8K math problems with numerical values masked in the cloud's input, ADLER with an unlimited leakage budget raises the exact-match accuracy of a 0.5B client from 0.41 to 0.83 and of a 1.5B client from 0.67 to 0.85 under lenient answer parsing, close to the 0.92 achieved by uploading the full problem. It also exceeds a zero-leakage program baseline (0.69) by 0.14 and 0.16, respectively. In this baseline, the cloud writes a program that the client runs offline using the private numbers. The ledger records the disclosure charge associated with this gain; budgets of 16 nats or less leave accuracy near the cloud-only baseline on GSM8K.",
         "authors": [
@@ -10710,16 +10726,12 @@
         "updated": "2026-10-28T01:01:45+00:00",
         "version_id": "2610.38126v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_efficiency",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38126v1"
       ]
