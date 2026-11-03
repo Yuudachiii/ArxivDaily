@@ -23591,9 +23591,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Recursive self-training can collapse language models, and many proposed remedies target overconfidence, yet their effects on confidence are rarely measured. We study a five-round self-training loop on Qwen3-1.7B, using three seeds per compared method, and distinguish confidence temperature (drift from a calibrated starting point) from discrimination (ranking correct answers above incorrect ones). Accuracy and overall discrimination remain nearly unchanged, but confidence sharpens and the most confident answers become less reliable. Matching predictive entropy to the calibrated starting model each round recalibrates nearly as well as label-based temperature fitting, at both 1.7B and 8B. Sharpening is not inherent to self-training: exact samples from a model's distribution have zero expected gradient. Instead, most drift comes from fitting each generated answer twice, with top-p truncation contributing the rest; removing both keeps entropy on generated outputs flat. Remedies affect the two properties differently: truncated cross-entropy, an entropy bonus, and single-pass training preserve temperature without improving discrimination, while focal loss and multi-sample targets improve discrimination but cause underconfidence. Reference-data mixing also overshoots. Pairing a ranking-improving loss with label-free recalibration achieves both.",
         "authors": [
@@ -23610,15 +23626,11 @@
         "updated": "2026-10-31T15:55:24+00:00",
         "version_id": "2611.01059v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01059v1"
       ]
