@@ -14523,10 +14523,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core、llm_eval、llm_rag、llm_reasoning、llm_training",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.38683v1",
+      "model": "rules",
       "paper": {
         "abstract": "Ranking aggregation from multiple retrievers is a powerful yet under-explored technique in modern retrieval and RAG systems. We introduce LLM-IRA, the first extension of the quantum-inspired interactive ranking aggregation framework to document reranking. By leveraging large language models (LLMs) solely for pairwise judgments on high-disagreement document pairs, our method learns fusion weights in a principled, interactive way. The final ranking is a simple, ultra-fast pointwise linear fusion of scores, no full pairwise matrix or expensive listwise prompting is required. Experiments on the BEIR benchmark and TREC Deep Learning tracks with an open-weight instruction-tuned judge (Llama-3.1-8B-Instruct) show that LLM-IRA matches or numerically exceeds strong static fusion baselines on 5 of 6 evaluated benchmarks. We report two weight-update variants: momentum blending and a full accumulated-history refit, which together reach statistical significance (Wilcoxon signed-rank, p<0.05) over the best unsupervised aggregator on 4 of 6 benchmarks (DL19 under momentum; DL20, DBpedia, and NFCorpus under accumulated refit, which is the stronger of the two configurations overall). On the benchmarks we profiled (DL19, DL20), it already clears the best unsupervised baseline within as few as 5 LLM calls per query, well before exhausting its typical ~25--30 call budget. LLM-IRA also achieves cost-effectiveness comparable to state-of-the-art zero-shot LLM rerankers at an order of magnitude fewer LLM calls, and requires no training data or model fine-tuning.",
         "authors": [
@@ -14544,6 +14560,7 @@
         "updated": "2026-10-28T18:55:57+00:00",
         "version_id": "2610.38683v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core",
         "llm_eval",
@@ -14551,12 +14568,7 @@
         "llm_reasoning",
         "llm_training"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38683v1"
       ]
