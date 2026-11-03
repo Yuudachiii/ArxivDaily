@@ -23299,9 +23299,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Topology optimization has become an indispensable design tool in the aerospace, automotive, and mechanical engineering industries. Yet bringing a new problem from its description to an optimized result remains slow, expert-dependent, and unreliable: the workflow spans many manually connected stages, each new problem requires solver code to be written and debugged manually, and such code often fails or yields incorrect results. We present Agent4FreeFem, a pipeline driven by a large language model that turns a natural-language problem description into a set of verified optimization results without manual solver-code development or debugging. The pipeline keeps the problem definition unmodified, localizes errors using independent sources of evidence, and completes constrained repairs automatically, thereby providing efficient end-to-end automation, autonomous execution, and verifiable results. We evaluated Agent4FreeFem on a suite of single-physics and coupled multiphysics problems. Every case passed runtime verification and finished within the repair budget of each stage.",
         "authors": [
@@ -23319,15 +23335,11 @@
         "updated": "2026-10-31T10:25:13+00:00",
         "version_id": "2611.00803v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00803v1"
       ]
