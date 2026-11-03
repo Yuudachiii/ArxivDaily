@@ -9411,9 +9411,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Streaming federated learning (SFL) allows clients to train a shared model from continuously arriving data without retaining large local datasets. Such streams often exhibit temporal dependence, yet its effect on generalization remains poorly understood. In this paper we study the expected generalization gap of the aggregated model when client data follow Markov processes, using information-theoretic and rate-distortion techniques. Our framework accommodates heterogeneous Markovian dynamics across clients and distinguishes temporal dependence from information acquired during local learning. We establish bounds under cross-entropy loss, specializing them to Linear Next-Token Prediction (LNTP) and Self-Attention Next-Token Prediction (SANTP). These results quantify the effects of client count, communication rounds, sample size, data dimension, mixing time, and context length. In particular, they reveal a communication--generalization tradeoff: although frequent aggregation may help optimization, it can weaken generalization guarantees. They also suggest a potential advantage of distributed over centralized streaming learning under a fixed total data budget. Temporal dependence enters through the square root of the mixing time. By analyzing the history-state process, we obtain refined bounds with improved context-length dependence under suitable mixing conditions. Experiments on GPT-style language-model pretraining with TinyStories and real-world time-series forecasting illustrate how collaboration and communication frequency influence generalization under temporal dependence",
         "authors": [
@@ -9434,16 +9450,12 @@
         "updated": "2026-10-28T18:56:59+00:00",
         "version_id": "2610.38686v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38686v1"
       ]
