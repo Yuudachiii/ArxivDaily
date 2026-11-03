@@ -18285,9 +18285,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_efficiency、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_efficiency",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Recent advances in single-cell technologies have enabled the profiling of multiple molecular modalities, including transcriptomics, proteomics, and chromatin accessibility, providing a more comprehensive understanding of cellular states. However, integrating heterogeneous modalities and predicting missing molecular information remain challenging, particularly when paired measurements are limited. Here, we introduce scAnyOmics, a generative framework that distills knowledge from a frozen single-cell foundation model into a multimodal student model. scAnyOmics integrates scRNA-seq, protein-marker measurements, and scATAC-seq into a shared representation, enabling cross-modal prediction and reconstruction of missing modalities. We assembled 690,880 cells from six publicly available studies, covering both paired and partially paired multi-omics measurements, to systematically evaluate its predictive performance. We further evaluated scAnyOmics on held-out donor data, where it outperformed baseline methods across multiple evaluation metrics. Beyond cross-modal reconstruction, we explored its applications in cell-type annotation, perturbation-response prediction, and biological age estimation. Overall, scAnyOmics provides a unified framework for integrating incomplete single-cell multi-omics data and transferring pretrained biological knowledge, supporting the development of virtual cell models across diverse cellular contexts and experimental platforms.",
         "authors": [
@@ -18306,17 +18322,13 @@
         "updated": "2026-10-30T08:12:01+00:00",
         "version_id": "2610.41399v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_efficiency",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41399v1"
       ]
