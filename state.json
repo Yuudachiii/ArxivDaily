@@ -46594,9 +46594,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_rag、llm_efficiency、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_rag",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Retrieval-augmented generation (RAG) extends large language models with external evidence, yet relevant evidence does not ensure that a generator can use it. Indiscriminate retrieval can degrade task performance while adding retrieval and long-context inference costs. Existing methods neither determine before large-scale execution whether a generator, task distribution, and retriever configuration is worth deploying nor diagnose multiple candidate retrievers under a shared budget. We introduce EviCast, a framework that forecasts retrieval value through interventional evidence-state decomposition. EviCast measures a generator's response to controlled evidence states once and combines this shared profile with the offline evidence-state distribution of each candidate retriever, yielding the end-to-end net utility and its 95% lower confidence bound without executing every RAG configuration. A state-refinement analysis characterizes when its binary and topology-aware instantiations are exact and when shared calibration is statistically more efficient than per-retriever calibration. In frozen evaluations, EviCast correctly decides all 14 HotpotQA retrieval configurations with a forecast error of 2.75 F1 points while reducing diagnostic generation calls by 80%, and it attains the lowest forecast error among seven predictors in the low-budget regime. Its topology-aware instantiation, EviCast-T, captures the complementarity between terminal and bridge evidence, correctly deciding all 16 configurations on MuSiQue and HotpotQA and 23 of 24 after prospective transfer to a third dataset. These results show that retrieval deployment depends on both evidence availability and the generator's ability to convert evidence structure into stable net utility. Code is available at https://github.com/YiboWang2002/EviCast.",
         "authors": [
@@ -46623,18 +46639,14 @@
         "updated": "2026-11-02T01:55:58+00:00",
         "version_id": "2611.02387v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_rag",
         "llm_efficiency",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02387v1"
       ]
