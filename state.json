@@ -13516,9 +13516,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_efficiency、llm_safety、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_efficiency",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Activation steering changes what a language model generates by editing its hidden states at inference time. Its most common form adds one vector, the difference of class means (DiM), to every hidden state. CHaRS (concept heterogeneity-aware representation steering) uses optimal transport instead: an entropic plan pairs the clusters of the two classes, and each hidden state moves along a mixture of the cluster displacements, weighted toward its nearest clusters. We study this family of clustered optimal-transport maps for toxicity mitigation in Gemma-2-2B and Granite-3.1-2B, and ask what the plan adds to DiM and whether that survives INT8 and NF4 quantization.\n  We prove an identity: whatever the plan, the displacements averaged with the cluster sizes as weights equal DiM, so a clustered map can differ from DiM only for tokens whose routing weights depart from the cluster sizes. In the CHaRS protocol they stay close, and CHaRS is statistically equivalent to Mean-AcT, which adds DiM at every layer, in all eight pre-specified equivalence tests. A variant fitted on individual tokens, which routes each token mainly to its nearest clusters, leaves 37-39% less toxicity than DiM on Gemma and 51-61% less on Granite at steering strength 3 (toxic-bert), where DiM already removes 76-85% of it. Two other toxicity classifiers confirm the gain on Granite, but on Gemma only one does. At equal strength the variant has somewhat higher perplexity, but at matched toxicity it is slightly more fluent than DiM. Yet a nearly constant map from the same clusters also leaves about 30% less toxicity, so the role of treating tokens differently remains open.\n  Under INT8 and NF4 the variant still leaves less toxicity than DiM, and transferring it from full precision to the NF4 model instead of refitting it adds no significant toxicity after correction for multiple tests.",
         "authors": [
@@ -13535,17 +13551,13 @@
         "updated": "2026-10-29T13:46:39+00:00",
         "version_id": "2610.40055v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_efficiency",
         "llm_safety",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.40055v1"
       ]
