@@ -42902,9 +42902,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Gait assessment supports the diagnosis, monitoring, and prognosis of diverse movement-related conditions, such as neurological and musculoskeletal disorders. Recent advances in deep learning using everyday wearable inertial measurement units (IMUs) offer an accessible and low-cost approach to automated gait assessment. However, IMU measurements vary substantially across individuals, body locations, and device configurations, while existing deep learning models are typically developed using small, homogeneous datasets for specific clinical tasks, limiting their robustness and generalizability in diverse real-world contexts. Here we present GaitFM, a cross-modal foundation model for gait assessment using IMU sensors. GaitFM improves the generalizability of gait assessment by transferring knowledge from large vision models and pretraining on unlabeled IMU sensor data. We pretrain GaitFM on a large curated dataset comprising about 4,000 participants and 1.23 million gait windows across diverse clinical and daily conditions, sensor modalities, and body locations. GaitFM demonstrates strong performance across 18 gait-related tasks, including 3 gait parameter estimation tasks, 14 disease and gait abnormality detection tasks, and 1 clinical outcome prediction task. Furthermore, GaitFM generalizes across different sensor configurations and body locations, including those commonly used in clinical settings and everyday wearable devices. These findings demonstrate the effectiveness of transferring visual knowledge in improving sensor-based gait assessment performance, offering a new promising pathway for addressing data scarcity in the sensor and medical domains.",
         "authors": [
@@ -42920,16 +42936,12 @@
         "updated": "2026-11-01T08:10:18+00:00",
         "version_id": "2611.01684v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01684v1"
       ]
