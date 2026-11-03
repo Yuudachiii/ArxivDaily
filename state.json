@@ -8027,9 +8027,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_efficiency、llm_safety、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Visual foundation models learn rich pathological morphology but lack explicit concept-level supervision. Vision--language pretraining can provide this supervision but requires costly image--text pairs. Here, we introduce GloSAGE, a semantic self-distillation framework that uses lesion profiles predicted by a pretrained visual teacher to construct structured pathology descriptions. Reliability-guided selection identifies image--text anchors, while Knowledge-Structured Pathology Text Synthesis and Evidence-Guided Negative-pair Construction account for partially observed lesions. Image--text alignment trains projection layers while retaining the frozen visual encoder; an intermediate Semantic Transfer Layer supplies features for downstream tasks. Developed on GloMillion and evaluated across seven glomerulus- and case-level cohorts, GloSAGE supported zero-shot lesion recognition, image--text retrieval, hard-negative discrimination and concept-intervention analyses. It outperformed its source visual model in most lesion-recognition tasks and improved lesion grading, while supporting competitive case-level disease classification, injury grading and baseline renal function estimation. Ablations supported the combined contributions of knowledge-structured text and evidence-guided negatives, and the intermediate transfer layer improved mean lesion-recognition ROC-AUC relative to the complete projection output. A frozen language model conditioned on GloSAGE features generated glomerular descriptions. These findings suggest that teacher-derived lesion profiles can provide annotation-efficient semantic supervision for extending a glomerular visual foundation model.",
         "authors": [
@@ -8070,18 +8086,14 @@
         "updated": "2026-10-30T02:48:20+00:00",
         "version_id": "2610.38346v2"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_efficiency",
         "llm_safety",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38346v2"
       ]
