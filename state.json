@@ -4267,10 +4267,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_core、llm_eval",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.37166v1",
+      "model": "rules",
       "paper": {
         "abstract": "In finance, the answer that matters is usually the current one: prices, rates, and disclosures hold only as of a given day, so retrieving up-to-date facts is a core capability of a financial agent. Yet most financial benchmarks overlook timeliness. They fix each answer at annotation time, so the gold goes stale as markets move and, once leaked into training data, rewards recall rather than search and analysis. We introduce LiveSearch, a live benchmark that stores each question as executable verifier code: a typed program of calls to a professional financial data service, followed by a declarative extractor. The question is frozen, while its gold answer is determined by executing the program against professional financial data at evaluation time, and a daily job re-executes it with no human or language model in the loop. A memorized answer is thus likely outdated, and a model must reach the current one through tools and analysis. Construction is equally automatic: a language model only verbalizes programs enumerated from real tool responses and never chooses an answer. Under general web search, six contemporary tool-calling models reach 70.9% to 76.7% answer accuracy. Over three consecutive days, 70% of served questions change their gold value, and even under tolerance-aware matching, a literally reused earlier snapshot fails on a majority of questions within a single day. Per-question tracking uncovers dynamic shifts in correctness masked by aggregate accuracy.",
         "authors": [
@@ -4293,17 +4309,13 @@
         "updated": "2026-10-27T12:55:52+00:00",
         "version_id": "2610.37166v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_core",
         "llm_eval"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.37166v1"
       ]
