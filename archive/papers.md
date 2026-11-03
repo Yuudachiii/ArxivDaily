@@ -19,7 +19,7 @@
 | 2026-11-03 | Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL | 待翻译 | [arXiv 2611.03551v1](https://arxiv.org/abs/2611.03551v1) |
 | 2026-11-03 | Can LLM Agents Improve Imperfect Earth System Model Parameterizations? | 待翻译 | [arXiv 2611.03543v1](https://arxiv.org/abs/2611.03543v1) |
 | 2026-11-03 | Library of Layers (LoL): Adaptively Ordering Transformer Layers at Runtime | 待翻译 | [arXiv 2611.03526v1](https://arxiv.org/abs/2611.03526v1) |
-| 2026-11-03 | Grading the Unannotated: Insights from the WorkRB Skill Extraction Challenge at RecSys-HR 2026 | 待翻译 | [arXiv 2611.03525v1](https://arxiv.org/abs/2611.03525v1) |
+| 2026-11-03 | Grading the Unannotated: Insights from the WorkRB Skill Extraction Challenge at RecSys-HR 2026 | 对未标注数据的评分：来自 RecSys-HR 2026 WorkRB 技能提取挑战的见解 | [arXiv 2611.03525v1](https://arxiv.org/abs/2611.03525v1) |
 | 2026-11-03 | DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems? | 待翻译 | [arXiv 2611.03523v1](https://arxiv.org/abs/2611.03523v1) |
 | 2026-11-03 | VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations | 待翻译 | [arXiv 2611.03518v1](https://arxiv.org/abs/2611.03518v1) |
 | 2026-11-03 | Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization | 待翻译 | [arXiv 2611.03517v1](https://arxiv.org/abs/2611.03517v1) |
