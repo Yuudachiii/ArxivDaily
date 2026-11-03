@@ -42057,9 +42057,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_agent、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "While online medical consultation broadens access, unprompted patient disclosures and topic shifts frequently disrupt clinician inquiry, leaving clinical states progressively revealed. We characterize these dynamics using both existing evaluation metrics and task-specific interaction metrics designed in this work. Through an empirical study across 16 medical dialogue datasets, we show that authentic online interactions exhibit substantially lower contextual continuity and higher unpredictability than offline and simulated benchmarks. We propose PRISM (Policy Reasoning with Inferred States for Medicine), a framework inspired by partially observable Markov decision processes that decouples latent state estimation from action selection to address drifting dialogue trajectories. Specifically, PRISM factorizes clinical triage into belief estimation, policy optimization, and response realization. By maintaining an evolving posterior belief over consultation states and conditioning action selection on the maximum a posteriori state, PRISM advances clinical goals while accommodating patient-initiated shifts. Extensive evaluations show that PRISM substantially outperforms frontier LLMs and clinical agents, achieving a 22.40 percentage point gain in clinical decision accuracy alongside decisive improvements in response generation, surpassing the strongest baseline by 5.51 points in BERTScore_F1. Furthermore, ablation studies show that providing oracle consultation states consistently boosts response quality across all evaluated baselines by guiding their action reasoning, yielding average gains of 5.58 points in BERTScore_F1.",
         "authors": [
@@ -42078,18 +42094,14 @@
         "updated": "2026-11-01T03:05:59+00:00",
         "version_id": "2611.01474v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_agent",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01474v1"
       ]
