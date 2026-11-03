@@ -24770,9 +24770,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_efficiency、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Character names in large language model (LLM) fiction concentrate on a handful of recurrent names such as 'Elara' and 'Elias', a measurable face of AI slop. Existing fixes either require logit access or retraining, or operate per request and cannot control concentration across a corpus. How much prompt-level strategies reduce concentration, and at what cost to name naturalness, has not been systematically measured. We present an empirical study of name-concentration control across eight strategies and introduce speculative naming, a fine-tuning-free method that adapts the draft-verify-reject paradigm of speculative decoding from tokens to names. The method requests candidate name-sets through verbalized sampling, scores them against a SlopTracker that combines a per-model fingerprint with a runtime counter, and selects through a temperature-controlled rule or its strict variant (HARD). We use 20 LLMs to generate 44,782 stories in four languages from text and visual stimuli (88,919 named characters), and measure concentration with a list-free collision metric (Slop Ratio, SR) decomposed into known and emergent components. List-based strategies do not remove slop: static banlists displace concentration to emergent names and more than halve the share of attested real names. Speculative naming removes it: the sampling scaffold alone cuts SR by 89% on average, the dynamic tracker brings the total reduction to 95%, mean collision probability falls from 7.3% to 0.4%, and known-name collisions hold at zero while naturalness stays close to baseline (42-69% attested by language) and within-story collisions drop from 4.3% to 0.2%. The strategy ranking is stable across languages, model families, and name-counting conventions. Name concentration is thus controllable at the corpus level without logit access or retraining; broader creative diversity beyond naming remains open.",
         "authors": [
@@ -24790,17 +24806,13 @@
         "updated": "2026-10-31T21:36:29+00:00",
         "version_id": "2611.01284v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_efficiency",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01284v1"
       ]
