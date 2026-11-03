@@ -16684,9 +16684,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_safety、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Production large language models sometimes reward-hack, exploiting flaws in how tasks are scored rather than performing the tasks as intended, sometimes in highly sophisticated and adversarial ways. We investigate the motivations driving this behavior in GPT 5.6 Sol, GPT 5.5, and a checkpoint of OpenAI o3 without safety training (\"exp-rl-cap-late\") by observing model behavior in agentic environments where the grader is leaked. In our environments, the models appear to be score-seeking: trying to score well according to graders that they believe assess their current actions, even at the expense of violating explicit user instructions. They appear to care about score itself rather than its downstream consequences, violating instructions at approximately the same rate whether the score is indicated to be used for training, for evaluation, or not at all. We observe evidence that the more recent models care to some extent about scores that do not assess their own current actions. GPT 5.6 Sol and GPT 5.5 help other agents 24.6 percentage points more often on average when the other agent stands to gain a score of 1 rather than 0 from being helped. However, when grading or monitoring another trajectory, we find models never collude by distorting its score.",
         "authors": [
@@ -16704,18 +16720,14 @@
         "updated": "2026-10-29T21:50:04+00:00",
         "version_id": "2610.41014v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_safety",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41014v1"
       ]
