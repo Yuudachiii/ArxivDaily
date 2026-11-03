@@ -18874,9 +18874,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Direct Preference Optimization (DPO) treats every reported comparison as correct, yet preference data contain\n  reversed, tied or otherwise noisy comparisons. RW-DPO gives each comparison an unknown reliability weight\n  $w_i\\in[0,1]$ that enters the likelihood linearly -- DPO is $w\\equiv1$, a reversed comparison $w_i=0$ -- and estimates\n  the weights jointly with the policy under a minimax-concave penalty on $-\\log w_i$. The penalty keeps every\n  comparison the model agrees with at exactly $w_i=1$ and acts only on those it contradicts, through closed-form weight\n  updates at negligible cost over DPO. We prove that recovering all flipped comparisons from a single annotation per\n  comparison requires margins of order $\\log n$. Furthermore, in a linear-index model, starting from an initial fit\n  pointing in the correct direction, our estimator jointly consistently recovers the preference direction and weights,\n  as well as identifies the flipped comparisons above this margin scale, even when a fixed fraction of comparisons is\n  flipped. In simulations RW-DPO has the lowest average estimation error among DPO, noise-rate corrections and recent\n  robust methods, with far more precise flags than recent label-correction methods. In DPO fine-tuning of a language\n  model with 10-30% flipped labels, its win rate does not fall as the flip rate grows and exceeds that of DPO trained on\n  clean labels, matching the strongest recent method with corrections concentrated on the flipped labels.",
         "authors": [
@@ -18895,16 +18911,12 @@
         "updated": "2026-10-30T11:24:14+00:00",
         "version_id": "2610.41588v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41588v1"
       ]
