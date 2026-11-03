@@ -5202,9 +5202,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Ant International accumulates large volumes of transaction history across users and payment businesses. Confirmed fraud and chargeback outcomes, by contrast, are scarce, delayed, and specific to each business. A single encoder pretrained on unlabeled histories could serve all businesses, but only if pretraining captures the behavior that separates risk. Coarse activity differences can make contrastive pretraining on transaction logs too easy: transaction volume, amount, and timing can distinguish a history's continuation from arbitrary candidates without modeling how payment resources are used. We present TRIDENT-Seq, a transaction foundation model trained with Prefix-Future Contrast (PFC). PFC matches each prefix to a summary of its subsequent behavior among candidates with similar activity profiles; activity prediction and dispersion regularization act on the encoder output. Across three production payment businesses, the pretrained encoder improves average precision (AP) and recall at a 0.5% intervention budget over architecture-matched scratch training in all six business-budget settings. With a fixed validation set, it exceeds full-label scratch training in mean AP and recall using 10% of the training labels on Wallet and 25% on Shopping and SME. Pretraining only on another business's histories still helps. Replacing profile-matched candidates with random ones cuts recall from 24.62% to 5.64%. In Ant International's deployment evaluation, recorded amount-based chargeback and overall loss rates are 37.7% and 37.9% lower than those of the previous XGBoost-based system under the same intervention budget.",
         "authors": [
@@ -5228,17 +5244,13 @@
         "updated": "2026-10-28T05:18:02+00:00",
         "version_id": "2610.37365v2"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.37365v2"
       ]
