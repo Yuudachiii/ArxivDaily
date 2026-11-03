@@ -17045,9 +17045,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Agentic LLM assistants must repeatedly decide whether to answer from memory or to call a tool such as web search. Unnecessary searches cost latency and money; missing ones yield confident but unsupported answers. Prior work mostly measures verbalised confidence or trains new adaptive-retrieval methods, and rarely audits the search decisions that deployed products actually make. We introduce a benchmark of 400 multiple-choice questions that combines widely known inside-knowledge (IK) questions, which should be answered directly, with outside-knowledge (OK) questions about facts from news published after the models' training cut-offs (to our knowledge), which should trigger search or, without tools, abstention. Each item offers an abstain option, and two action-level scores, NAS and KIS, reward searching on OK questions and restraint on IK questions. Across five commercial LLMs with and without their vendors' web search, GPT-5 mini and Grok 4 Fast search on over 90% of OK but only 1% of IK questions, whereas Mistral Small searches on just 20% of OK questions, often abstaining instead of using its tool; one product's search indicator proved unusable. Searching is partly triggered by explicit temporal cues: on uncued OK questions, the NAS of the two selective models falls from about 0.72 to 0.57--0.58. The scores thus measure the search triggering of specific products, not metacognition in a strict sense.",
         "authors": [
@@ -17063,17 +17079,13 @@
         "updated": "2026-10-30T01:28:38+00:00",
         "version_id": "2610.41124v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41124v1"
       ]
