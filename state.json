@@ -3436,10 +3436,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.37055v1",
+      "model": "rules",
       "paper": {
         "abstract": "Audit-based certification bounds the violation rate of an LLM agent by auditing a random fraction $\\varepsilon$ of actions and reweighting the audited labels; its validity is meant to rest only on the defender's audit coin. We show that it also rests on a confidentiality property: the coin must not interfere with the agent's view before the action commits, at a time the agent chooses. We call this pre-commit noninterference (PNI) and measure its violation by $D_{\\mathrm{A}}$, the total-variation distance between the agent's views under the two coin values. PNI is necessary and sufficient for an unbiased certificate against adaptive agents, the worst-case bias is $(1-\\varepsilon)D_{\\mathrm{A}}$, and no procedure that sees only audited labels can pay less. Leakage composes across steps, a resource shared across episodes opens a channel of computable size, and raising the audit rate cannot restore validity. On a monitor we built, a silent audit changes no output but adds latency that tool timestamps expose, and the agent can enlarge it. A real LLM agent follows an injection that names a visible audit notice (generic, tool, and timing clauses have no effect); over that channel the plain certificate fails on measured labels and, by a post-hoc analysis, in a live run on a pre-registered schedule, while a silent audit restores it. A fresh coin per audited call closes the timing channel; padding only narrows it.",
         "authors": [
@@ -3458,16 +3474,12 @@
         "updated": "2026-10-27T11:24:12+00:00",
         "version_id": "2610.37055v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.37055v1"
       ]
