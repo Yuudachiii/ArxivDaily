@@ -12909,9 +12909,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Large Language Models (LLMs) rely on Multi-Head Attention (MHA) for sequence modeling, but scaling to long contexts is constrained by the quadratic cost of attention, motivating sub-quadratic recurrent alternatives. This paper formalizes a Dynamic Wave recurrent layer, based on input-dependent exponential damping and cosine phase modulation, and evaluates three 10.94M-parameter configurations (Pure Transformer, Pure Wave, and Hybrid Wave-Attention) on TinyStories under perplexity, latency, throughput and peak VRAM profiling up to 4096 tokens. The Hybrid configuration reaches the best perplexity, 5.95 on the full held-out split against 6.93 for the Transformer and 7.26 for Pure Wave. The efficiency picture, however, is governed by implementation rather than by architecture. Against an unfused attention baseline, Pure Wave uses 78.7% less peak VRAM at a 4096-token context (1404.3 MB vs. 6601.6 MB); against a fused scaled-dot-product attention kernel the same comparison yields no advantage at all (1404.3 MB vs. 1403.6 MB), and in training mode Pure Wave is 8.3% more expensive than the Transformer. Likewise, hoisting elementwise terms out of the recurrence loop speeds the layer up 2.53-fold with no custom kernel, reducing its latency gap to attention from 2.48-fold to 1.12-fold. A hybrid stack is found to inherit the cost of its more expensive mixer rather than the advantage of its cheaper one, its peak VRAM matching the Pure Transformer to within 0.1%. A closed-form memory model reproduces these measurements and predicts the context length beyond which attention overtakes the vocabulary projection. The findings indicate that reported efficiency gains for recurrent attention replacements must be stated relative to a named attention backend and a named implementation, and that hybridization is best justified on quality grounds.",
         "authors": [
@@ -12928,15 +12944,11 @@
         "updated": "2026-10-29T11:33:29+00:00",
         "version_id": "2610.39854v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.39854v1"
       ]
