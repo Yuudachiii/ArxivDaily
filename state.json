@@ -43963,9 +43963,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Delta-rule linear attention underlies language models such as Kimi Linear and Qwen3-Next. Chunkwise implementations expose matrix parallelism, but their backward passes compute unnecessary auxiliary adjoints. We present ReWY, an algebraic reformulation that reduces this work before optimizing accelerator execution. Differentiating the chunk correction as one triangular residual system eliminates the inverse adjoint and reduces seven local WY matrix products to three. Two complementary transformations expose further reuse: centered matrix contractions replace pairwise vector-gate processing, and scalar-gate reductions reuse key-gradient products instead of forming a key Gram matrix. These identities simplify backward computation for DeltaNet, GDN, KDA, and GDN2 while preserving the recurrence and gradients in exact arithmetic, without changing the architecture or training objective.\n  We implement the reduced graph on GPUs and Ascend NPUs. Under matched recomputation and full-saving policies, precision-qualified six-shape comparisons with frozen FLA references yield 1.15-1.81$\\times$ geometric-mean complete low-level backward speedups on NVIDIA GPUs. All four operators achieve 1.18-1.70$\\times$ on H100 and H200 while retaining original FP32 working matrices. A separate public-autograd evaluation on Ascend 950DT, including gradient conversions, yields 1.09-2.89$\\times$ under available matched policies. Paired ablations establish further ReWY gains after optimizing the complementary contractions. Complete-gradient checks validate the recorded operator cases; supplementary full-model backward measurements assess integration into community FLA models and a GDN2 layer port. Code and reproduction materials: https://github.com/flashserve/ReWY.",
         "authors": [
@@ -43986,16 +44002,12 @@
         "updated": "2026-11-01T14:21:46+00:00",
         "version_id": "2611.01940v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01940v1"
       ]
