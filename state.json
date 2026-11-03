@@ -48962,9 +48962,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Large Language Models (LLMs) are increasingly used in medical question answering (QA) systems. While recent works aim at incrementally improving the downstream task accuracy, an empirical estimation of the models' energy consumption and the associated carbon footprints is often overlooked. In this study, we demonstrate how practitioners can estimate energy consumption and arrive at reliable emission estimates for medical QA tasks available in the OpenMedical-LLM leaderboard by investigating 13 LLMs from 3 model families ranging from 270M to 14B parameters. We discuss how one can critically interpret energy versus accuracy trade-offs for a set of models for a given task. With this work, we underline that reporting disjoint energy and accuracy metrics alone does not suffice for careful trade-off assessments, but it also demands systematic construction and interpretation of joint trade-off metrics. We envisage such studies aiding practitioners in adopting better and more efficient models for their task and helping them become active participants in building sustainable LLM pipelines.",
         "authors": [
@@ -48984,16 +49000,12 @@
         "updated": "2026-11-02T10:23:57+00:00",
         "version_id": "2611.02889v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02889v1"
       ]
