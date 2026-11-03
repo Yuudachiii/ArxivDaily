@@ -16589,9 +16589,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_safety、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_safety",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "When a language model invents a Qur'anic verse or hadith, it gives false authority to text that readers may treat as sacred. Existing Islamic hallucination benchmarks are largely Arabic and often closed-ended, while Bengali resources mainly study general-domain hallucination or factual knowledge. We introduce BILAL-BENCH, a 240-question expert-verified benchmark for open-ended Islamic-source fabrication in Bengali. It covers Qur'anic attribution, hadith, fiqh, contemporary issues, and adversarial false-premise prompts, and uses a two-axis rubric that separates source errors from assertiveness. We evaluate seven open-weight models from 1B to 120B on 1,680 double-annotated responses. Six of the seven models confidently fabricate on 79.3-95.3% of source-production questions, with no monotonic improvement from scale. Hadith provenance is the weakest category across models: only two of 315 responses are correct and correctly sourced. The two 8B BanglaLLaMA variants have similar confident-fabrication rates but different error profiles. Models vary far more in whether they withhold a claim they cannot support than in source accuracy: appropriate abstention or false-premise correction ranges from 6 to 46 responses across the benchmark, and does not track parameter count.",
         "authors": [
@@ -16607,17 +16623,13 @@
         "updated": "2026-10-29T21:25:31+00:00",
         "version_id": "2610.40996v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_safety",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.40996v1"
       ]
