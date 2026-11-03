@@ -22688,9 +22688,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Recent work has demonstrated agents driving protein design workflows, either through orchestration of specialized tools or direct manipulation of sequences. Yet the fidelity with which agents follow protein design instructions and the factors contributing to their effectiveness remain understudied. We examine agentic antibody design under two settings: when explicit molecular-editing instructions are provided and when agents receive only previously-scored sequences and are prompted to propose improvements. We call the first task-guided and the second black-box design. For the task-guided setting, we curate ten expert-validated affinity-improvement tasks and show that LLM judges closely reproduce programmatic evaluations of instruction following. We then study two augmentations: access to antibody-relevant tools and to previously scored design history. Tools improve instruction following (IF) and sequence space exploration while reducing optimization performance, whereas design history reduces IF but improves optimization performance at the expense of exploration. Finally, we combine taskguided and black-box design within an in silico optimization loop and show that our agentic optimizer performs comparably to an established Bayesian optimization baseline.",
         "authors": [
@@ -22709,17 +22725,13 @@
         "updated": "2026-10-31T02:35:17+00:00",
         "version_id": "2611.00558v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00558v1"
       ]
