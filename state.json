@@ -7123,9 +7123,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_multimodal、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_multimodal",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Short video platforms have become a primary channel for black and gray industry operations in internet finance, where inducements such as prompts to like, follow, join private chat groups, or click external links frequently steer users toward fraud. Because such videos are short, dynamic, and often convey intent through fleeting visual cues rather than stable text, a moderation system must guarantee detection recall and localize the offending segment so reviewers inspect only the relevant clip. Existing OCR+LLM pipelines transcribe on-screen text frame by frame and classify the transcript, but exploit only textual information. Many inducements are conveyed through visual cues OCR cannot observe, and keyframe-based localization cannot recover precise temporal boundaries. We explore OCR+MLLM, which augments the text pipeline with a Multimodal Large Language Model, and compare three routes: OCR+LLM, OCR+MLLM, and a large zero-shot MLLM, along detection, latency, token consumption, and deployment complexity. OCR preserves the text signal that guarantees recall, while the MLLM jointly performs OCR-grounded discrimination and temporal grounding, localizing both textual and non-textual inducements. We construct a dataset of 2,419 internet finance short videos (66.49 hours) with 3,194 annotated events across four categories, and study reward design for RL-based grounding under class imbalance. We report two findings: auxiliary reward terms are exploited through reward hacking, and stronger localization rewards degrade class-balanced detection. We therefore design a recall-weighted F2 localization reward with class-balanced resampling. Experiments show OCR+MLLM localizes better than the keyframe OCR+LLM baseline (mIoU 26.52 vs. 14.49) and detects non-textual inducements that text-only pipelines miss, while maintaining 67.0 percent macro recall.",
         "authors": [
@@ -7140,16 +7156,12 @@
         "updated": "2026-10-28T02:35:19+00:00",
         "version_id": "2610.38185v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_multimodal",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38185v1"
       ]
