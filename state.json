@@ -44306,9 +44306,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_training、llm_safety、llm_multimodal、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Reinforcement learning with verifiable rewards (RLVR) has become an effective post-training paradigm for vision-language models (VLMs). Standard RLVR, however, assigns identical outcome-derived credit to all generated tokens regardless of their perceptual relevance. Recent perception-aware methods estimate visual reliance through image perturbation or masking. These indirect proxies require perturbation branches, while corruption sensitivity does not necessarily identify the visual evidence used for reasoning. We instead shape model perception through native attention, an intrinsic model signal. Rather than treating attention as a post-hoc explanation, we formulate it as a reward-anchored, token-aligned routing signal that encourages attention patterns supporting visually grounded reasoning. To this end, we propose NAS-PO, a Native Attention-Strategy Policy Optimization framework. NAS-PO analyzes native attention with a visual mass policy that quantifies visual allocation and a conditional visual policy that captures spatial routing over visual tokens, making the optimization well-posed. Based on this, Native Attention-Strategy Advantage Shaping (NAS-AS) draws on the visual-mass policy to redistribute signed policy-gradient credit for visually engaged rollouts. The Adaptive Attention-Coupled (AAC) loss then aligns the visual-mass policy on all response tokens and the conditional visual policy on visually active ones, consolidating the visual-routing patterns that drive successful trajectories. Experiments demonstrate that NAS-PO substantially surpasses leading RL-tuned VLMs across 7 out-of-domain reasoning and perception benchmarks, with its effectiveness consistently validated across 8B and 32B. Visual-Routing Sensitivity (VRS) analysis further indicates that the optimized attention prioritizes visually load-bearing regions.",
         "authors": [
@@ -44330,6 +44346,7 @@
         "updated": "2026-11-01T15:51:21+00:00",
         "version_id": "2611.02008v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_training",
@@ -44338,12 +44355,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02008v1"
       ]
