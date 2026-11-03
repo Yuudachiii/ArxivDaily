@@ -18198,9 +18198,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_safety、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_safety",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Whole-slide image classifiers are usually developed within one hospital and often go untested at unseen hospitals. We assembled 5,036 haematoxylin-and-eosin-stained gastric slides from five Korean hospitals, scanned at 20x and 40x, and compared multiple-instance learning aggregators under leave-one-hospital-out validation on frozen pathology foundation-model features. A hierarchical patch-region-slide graph aggregator (CHIME-MIL) with site alignment and two-scale fusion reached a mean area under the receiver operating characteristic curve (AUC) of 0.837, above six conventional attention and transformer aggregators trained without these steps. Under a matched recipe it did not exceed attention-based pooling, and global max pooling given the same alignment and fusion was better (AUC 0.855, P = 0.0002). The alignment, which subtracts each hospital's mean feature vector without labels, onboarded a new hospital from ten unlabelled slides and cost 0.002 AUC without held-out-hospital data, but its accuracy gains were small and inconsistent. The model had low top-label calibration error (0.053) but under-confident malignancy probabilities, and removing its most-attended patches lowered the malignancy probability far more than removing random patches. With these features, more complex aggregators did not improve discrimination; what a deployable system adds is label-free onboarding, calibration checks and auditable evidence.",
         "authors": [
@@ -18233,16 +18249,12 @@
         "updated": "2026-10-30T06:43:47+00:00",
         "version_id": "2610.41328v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_safety",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41328v1"
       ]
