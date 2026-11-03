@@ -43450,9 +43450,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_agent、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Residents who contact a community service desk about a repair or a service charge need answers they can act on, with facts that hold for their case and commitments the desk can keep. In tool-augmented LLM agents, such facts come from documents and records, and the conduct of a service answer is usually specified in a system prompt. We present NEIGHBOR, an LLM agent for community resident services that trains this conduct into the model that drives its tools. NEIGHBOR is deployed on a live resident-service platform for a district of an East Asian city of more than ten million people. It adapts Qwen3-235B-A22B with LoRA on 7,824 supervised fine-tuning examples built from public community-service materials around six service-behaviour targets, among them commitment control and human referral, and the adapted model plans document retrieval and read-only text-to-SQL over the resident's own records. In an offline evaluation with seven configurations, an independent domain expert rated all 350 answers to 50 stratified held-out queries. NEIGHBOR scores 7.74/10 against 5.86 for the same agent running the un-tuned model (+1.88; paired Wilcoxon $p<10^{-8}$; higher on 46 of 50 queries) and improves all six rated dimensions. No tool-augmented answer received a red-line flag (standalone models: 8-14% of answers). An LLM judge ranks the seven configurations much as the expert does (Spearman $ρ=0.93$). Its rubric counts specifics absent from the reference answer as fabricated, so it scores tool-grounded answers 1-2 points lower, enough to change which configuration ranks first. For resident-facing agents, service behaviour is a practical fine-tuning target that raises expert-rated answer quality with the tools held fixed.",
         "authors": [
@@ -43469,18 +43485,14 @@
         "updated": "2026-11-01T12:12:33+00:00",
         "version_id": "2611.01836v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_agent",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01836v1"
       ]
