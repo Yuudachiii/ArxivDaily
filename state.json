@@ -15144,10 +15144,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.38773v1",
+      "model": "rules",
       "paper": {
         "abstract": "The empirical success of matrix-aware optimizers, such as Muon (Jordan et al., 2024) and Shampoo (arXiv:1802.09568), highlights the potential of non-Euclidean geometry for deep learning, including large language model (LLM) training. Despite this progress, the theoretical understanding of stochastic optimization in general normed spaces remains limited, particularly in distributed settings. We analyze minibatch stochastic gradient descent (SGD) for smooth nonconvex optimization with respect to an arbitrary norm on a finite-dimensional space. Using the framework of $κ$-regular normed spaces (arXiv:0809.0813), we derive high-probability oracle complexity bounds under a light-tail condition stated directly in the dual norm induced by the update norm. The bounds make the dependence on geometry explicit through the regularity constant $κ$ of the dual space. In the Euclidean case, our bound recovers the standard minibatch SGD rate up to logarithmic factors. For some non-Euclidean geometries and noise models, it is sharper than bounds obtained by converting a Euclidean noise assumption, reducing a linear dimension dependence to a logarithmic one. Building on this framework, we introduce Rennala NSGD, a semi-asynchronous distributed algorithm, and establish wall-clock time complexity guarantees under fixed, heterogeneous worker computation times. In the Euclidean case ($κ=1$), our bound matches the parameter dependence of classical Rennala SGD up to logarithmic factors.",
         "authors": [
@@ -15166,15 +15182,11 @@
         "updated": "2026-10-28T19:47:15+00:00",
         "version_id": "2610.38773v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38773v1"
       ]
