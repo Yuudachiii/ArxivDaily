@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | 2026-11-03 | Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning | 待翻译 | [arXiv 2611.03602v1](https://arxiv.org/abs/2611.03602v1) |
 | 2026-11-03 | From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles | 待翻译 | [arXiv 2611.03641v1](https://arxiv.org/abs/2611.03641v1) |
-| 2026-11-03 | Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap | 待翻译 | [arXiv 2611.03633v1](https://arxiv.org/abs/2611.03633v1) |
+| 2026-11-03 | Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap | 预训练数据规模扭转了 Muon-AdamW 微调差距 | [arXiv 2611.03633v1](https://arxiv.org/abs/2611.03633v1) |
 | 2026-11-03 | Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR | 并非所有推理都能泛化：RLVR 中学习泛化推理策略的案例研究 | [arXiv 2611.03627v1](https://arxiv.org/abs/2611.03627v1) |
 | 2026-11-03 | D&amp;A: Decoupling Description and Assessment Enables VLMs as Zero-Shot Robotic Reward Models | 待翻译 | [arXiv 2611.03622v1](https://arxiv.org/abs/2611.03622v1) |
 | 2026-11-03 | Tracing the Scientific Discovery Capacity of LLMs to Their Training Data | 将法学硕士的科学发现能力追溯到他们的培训数据 | [arXiv 2611.03617v1](https://arxiv.org/abs/2611.03617v1) |

@@ -56601,11 +56601,13 @@
         "llm_training"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-03T11:54:44.310540+00:00",
-        "run_id": "20261103T115444Z-6575b93a",
-        "stage": "translation"
+      "title_zh": "预训练数据规模扭转了 Muon-AdamW 微调差距",
+      "translation": {
+        "abstract_zh": "Muon 最近成为一种有前途的预训练大型语言模型优化器，在最小化预训练损失方面比 AdamW 提供了加速。然而，目前尚不清楚微调后 Muon 的优势是否仍然存在。在本文中，我们研究了 Muon 和 AdamW 的下游行为，并发现了一个令人惊讶的趋势：超出足够大的预训练数据预算，AdamW 在微调后优于 Muon。此外，随着模型大小的增加，AdamW 在逐渐减小的预训练标记参数比率上超越了 Muon。为了解释这种逆转，我们将微调视为对输出的扰动，并引入了保证金与散布比，该比率衡量正确的 logit 相对于错误的 logit 的散布范围而言，正确的 logit 高于错误的 logit 多远。在语言模型中，Muon 在小数据预算下具有较大的裕度与扩展比，而 AdamW 在大数据预算下具有较大的裕度与扩展比，反映了微调趋势。在线性联想记忆中，我们证明，随着数据预算的增长，更新梯度下降增益的边际与扩展比后，Muon 增益的边际扩展比会随着数据预算的增长而增加，并且模拟表明，这种趋势在扩展训练后仍然存在。",
+        "title_zh": "预训练数据规模扭转了 Muon-AdamW 微调差距"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.03633v1"
       ]
