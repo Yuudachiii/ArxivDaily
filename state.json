@@ -42292,9 +42292,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_safety、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_safety",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Motion language models (MoLMs) encode 3D human motion as discrete tokens for language-based understanding. Deploying them on monocular video raises two problems. Pose detection yields 2D joint sequences, leaving a dimensional gap from the 3D motion used in training. Moreover, the 2D observation changes with the camera viewpoint, while the depth lost in projection makes the 2D pose ambiguous across viewpoints. We propose MoPort, a view-aware 2D interface that enables MoLMs to take 2D observations as input. We introduce Paired View Alignment (PVA), which gives two views of the same motion a shared 3D teacher target and directly constrains the consistency of their latents, so that 2D observations from different viewpoints are mapped to a consistent semantic representation. Camera-Modulated Encoding (CME) estimates the camera extrinsics from the 2D sequence and uses them to modulate encoding, providing the 2D latents with geometric information about the viewpoint. MoPort achieves R@1 of 0.5674 on HumanML3D and 0.3286 on KIT-ML, outperforming all evaluated baselines. On HumanML3D, its R@1 decreases only from 0.5763 on in-distribution viewpoints to 0.5585 on out-of-distribution viewpoints. We validate portability on three downstream MoLMs. Furthermore, on the real-world RGB video dataset Fit3D, MoPort achieves 80.36\\% accuracy. Code will be released upon acceptance.",
         "authors": [
@@ -42313,16 +42329,12 @@
         "updated": "2026-11-01T04:11:25+00:00",
         "version_id": "2611.01541v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_safety",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01541v1"
       ]
