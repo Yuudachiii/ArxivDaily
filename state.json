@@ -9751,9 +9751,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_efficiency、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_efficiency",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Speculative decoding speeds up large language model (LLM) serving only while the GPU has spare compute, so the best draft length, the number of tokens a small drafter guesses per step, shrinks as the batch grows. vLLM lets operators set the draft length for each batch size with a hand-written table, but nothing measures or corrects that table. We present TableTune. Its tuner times the decoding step for every batch size and draft length on vLLM's own serving path and computes, in minutes, the table that maximizes throughput. Its controller, a vLLM plugin, tracks how many guesses are accepted in live traffic and rebuilds the table while serving. We measure TableTune only against other ways to speculate. On an H100, the tuned table delivers at least 94% of the throughput of the best fixed draft length at every load in four of five drafter settings (88% in the fifth) without the operator having to know which length that is. Against reimplementations of TurboSpec- and Nightjar-style control on the same engine, its worst-case loss is never higher than theirs, and with the EAGLE-3 drafter it is 3% against 9% and 12%. On a mixture-of-experts model, vLLM's documented table loses up to 18% and the tuned table at most 3%. Starting from mistuned tables, the controller raises throughput by up to 58% (up to 45% on vLLM's default runner), and after a workload switch with the DFlash drafter it recovers 96% of a stale table's loss. In llm-d's optimized-baseline deployment as shipped, two Qwen3-32B replicas on four GPUs, the tuned table is up to 32% faster than a fixed draft length of 3 and up to 25% faster than vLLM's documented table at high load, and the controller raises the documented table's throughput by up to 29%.",
         "authors": [
@@ -9772,16 +9788,12 @@
         "updated": "2026-10-28T21:52:13+00:00",
         "version_id": "2610.38968v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_efficiency",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38968v1"
       ]
