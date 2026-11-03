@@ -41927,9 +41927,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Assigning GWAS variants to causal genes requires evidence from multiple resources. We present V2G, an agentic pipeline that records evidence retrieval and returns ranked genes alongside the retrieved evidence. We evaluate whether language-model reranking improves gene prioritisation and whether its gains depend on the retrieved evidence or recall of known associations. On 135 held-out loci where candidate retrieval succeeded and Open Targets L2G predicts, reranking by a language model improves Precision@1 over the evidence ordering it receives, 0.793 against 0.711 (+0.081, 95% CI +0.038 to +0.129), and over nearest-gene assignment (+0.178); no difference from Open Targets L2G or from training-membership baselines was detected. Given only the trait and the candidate gene symbols, in shuffled order, the same model scores 0.864 on these loci (three seeds, 0.859 - 0.867) and names the reference gene at 0.594 of the loci where the pipeline never retrieved it; with each gene's symbol moved to another gene's evidence row it follows the top-scored row and scores 0.284. The gain over the evidence ordering is recall of known genes, and the evidence as presented anchors the model to the ordering rather than informing it. Across the 296 held-out loci (five seeds each) the model keeps the given top candidate at 86% of decisions; at naturally retrieved loci its departures select a reference gene in 85% of departure decisions (31 of 37 loci), and none displaced one. Its calls carry trait-matched mouse mutant or Mendelian phenotype annotations more often than other candidates at the same locus. Train-test overlap is reported throughout. The study includes a frozen benchmark, cached predictions and reproduction code.",
         "authors": [
@@ -41948,17 +41964,13 @@
         "updated": "2026-11-01T02:48:40+00:00",
         "version_id": "2611.01461v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01461v1"
       ]
