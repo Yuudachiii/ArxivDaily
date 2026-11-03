@@ -17660,7 +17660,9 @@
       ]
     },
     "2610.41264": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
@@ -17691,6 +17693,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-03T03:04:49.053038+00:00",
+        "run_id": "20261103T030449Z-5491bbd0",
+        "stage": "selection"
+      },
       "versions": [
         "2610.41264v1"
       ]
