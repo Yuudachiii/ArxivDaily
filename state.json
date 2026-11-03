@@ -46030,9 +46030,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Sycophancy in language models is well documented as a behaviour but poorly localised as a mechanism. We ask whether capitulation under user pushback, the abandonment of a correct answer when a user objects, corresponds to a linear direction in the residual stream, and whether such a direction emerges with scale. Across eight instruction-tuned models spanning 0.5B to 14B parameters in two families, under a pre-registered protocol with leave-one-question-out cross-validation, within-question permutation nulls, and a positive control, we find no usable direction below 7B and a direction that clears our validation gate at 7B, 8B and 14B. Ablating that direction in Qwen2.5-7B reduces the rate at which the model reverses a correct answer by 4.8 percentage points, roughly a quarter in relative terms, while the identical intervention on a gate-failing direction and on a marginally passing one produces no effect. Probe quality, not statistical significance, predicts causal relevance. Behaviourally, pushback destroys three to five times more correct answers than it repairs at 1B and reaches parity by 7B, falsifying our own pre-registered prediction, and a sign-reversing crossover between pushback types survives an order of magnitude of scale in Qwen and holds at 8B in Llama, with marginalisation over five paraphrases per type. We additionally quantify five measurement hazards, including a numerical-precision effect that changes roughly one episode label in ten.",
         "authors": [
@@ -46049,16 +46065,12 @@
         "updated": "2026-11-02T00:09:34+00:00",
         "version_id": "2611.02318v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02318v1"
       ]
