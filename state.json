@@ -13484,9 +13484,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "We report that allocating compute to synthetic pre-pretraining (PPT) never outperforms pure natural-language training in our compute-matched experiments. This holds across four PPT curricula (k-Dyck, neural cellular automata (NCA), declarative reference corpora, and code) and three training regimes: data-constrained, data-unconstrained, and a high token-to-parameter-ratio regime (881M parameters trained on 50B tokens). When natural language is scarce, repeated epochs over a 100M-token corpus beat every synthetic curriculum on natural-language validation loss, with no consistent downstream accuracy advantage from PPT. We find that PPT gains reported in prior work are sensitive to the weight initialization scheme. In an NCA reproduction, we recover a 5.4% perplexity improvement from PPT under the original initialization scheme. An alternative scheme improves both methods, but the no-PPT baseline more, closing the gap between them. However, when PPT receives additional compute rather than a share of the natural-language budget, gains persist at small natural-language budgets even with improved initialization, but disappear by 1B tokens. Finally, models forget what they learn during PPT in subsequent natural-language training; interleaving the same data throughout training prevents forgetting, but does not significantly improve natural-language performance. Our results suggest limited benefits of synthetic pre-pretraining as a distinct training stage and motivate rethinking how such data are used in language model training.",
         "authors": [
@@ -13505,16 +13521,12 @@
         "updated": "2026-10-29T13:45:58+00:00",
         "version_id": "2610.40051v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.40051v1"
       ]
