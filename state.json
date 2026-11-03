@@ -9879,9 +9879,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_safety、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Compositional generalization remains a persistent limitation of transformer language models: even when a model learns to combine known facts correctly in-distribution (ID), the same compositional mechanism may fail when applied to out-of-distribution (OOD) knowledge. We investigate this compositionality gap in a controlled two-hop reasoning setting using a GPT-2-like transformer model trained from scratch. Building on prior work identifying a circuit associated with compositional generalization, we test whether the failure of OOD transfer is related to how atomic knowledge is structurally exposed during training. We modify the training distribution by presenting both ID and OOD atomic facts in a format positionally aligned with the second-hop retrieval step of the learned compositional circuit, without modifying the model architecture or adding OOD compositional supervision. Under this intervention, the model successfully transfers the learned ID compositional behaviour to held-out OOD atomic facts, closing the observed compositionality gap in the controlled setting. Our results provide evidence that the observed compositionality gap is not a fundamental architecture limitation and that it can be overcome through mechanistically informed training distribution design.",
         "authors": [
@@ -9898,17 +9914,13 @@
         "updated": "2026-10-28T22:44:54+00:00",
         "version_id": "2610.39016v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_safety",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.39016v1"
       ]
