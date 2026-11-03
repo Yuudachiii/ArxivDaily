@@ -49146,9 +49146,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Feedback-driven iteration is widely used to improve LLM-generated scientific ideas, but existing systems either leave revision decisions implicit in generation, align revisions with feedback-localized weaknesses, or restrict action selection to system-specific operations. This is problematic because problems, hypotheses, and solutions are interdependent: the location where a weakness manifests does not itself determine the revision scope that will produce a better successor. We term this phenomenon diagnosis-intervention mismatch. We introduce Predictive Routing of Interventions by Modeling Effects (PRIME), a plug-and-play feedback-to-revision decision layer for existing scientific ideators. PRIME operates in three stages: (1) Structural Attribution interprets feedback over the problem-hypothesis-solution structure without fixing a revision target; (2) Counterfactual Routing constructs alternative scope-conditioned interventions and compares their projected successor utility and risks through lightweight rollouts; and (3) Intervention Execution compiles the selected intervention into an ordered generator-facing plan with semantic actions, preservation constraints, and dependency requirements for successor generation. We validate diagnosis intervention mismatch on 112 human-annotated idea-feedback pairs. Across four benchmarks, two ideators, and fixed- and open-problem settings, PRIME improves successor quality and routing reliability over strong baselines; removing counterfactual routing reduces quality from 3.463 to 1.960 and increases route regret from 0.426 to 1.929, confirming cross-scope effect modeling as the primary source of its gains.",
         "authors": [
@@ -49173,16 +49189,12 @@
         "updated": "2026-11-02T12:49:33+00:00",
         "version_id": "2611.03055v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.03055v1"
       ]
