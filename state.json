@@ -13181,10 +13181,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.38426v1",
+      "model": "rules",
       "paper": {
         "abstract": "Analog layout remains largely manual and hard to automate. Generator frameworks such as gLayout express layouts as programs, producing layouts from parameterized, design-rule-aware generators; however, writing such generators still takes expert effort. Large language models (LLMs) could now write generator code, and frontier models can even draw layout geometry from design intent. This raises a practical question: if a model can draw the layout itself, what does a generator framework still contribute, and is applying these models to a generator framework better than having them draw a layout from scratch? Through controlled experiments on gLayout in SKY130, we find that the main obstacle to drawing a layout directly is its time and token cost, and that the main advantage of a model building on a generator framework is reusability. Its verified primitives keep each model edit small enough to check, and its parameters allow a single edit to be evaluated across an entire family of layouts. Accordingly, a model is most effective when it develops the layout from the generator source of the family that the design intent belongs to, and tests each edit on the family members most likely to fail, so that one verified change improves every layout the generator produces. The results of these family tests can then serve as supervision for a local model, which learns edits that hold across the family at a fraction of the inference cost.",
         "authors": [
@@ -13204,16 +13220,12 @@
         "updated": "2026-10-28T08:10:12+00:00",
         "version_id": "2610.38426v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38426v1"
       ]
