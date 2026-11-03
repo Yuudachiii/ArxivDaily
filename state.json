@@ -17683,9 +17683,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Transformer-based language models have achieved remarkable success in automated short answer grading (ASAG). However, current methods in ASAG struggle to comprehend, reason about and evaluate complex mathematical answers involving symbols and formulas. These score-only methods fail to generalize across diverse responses and skill states associated with identical scores. Moreover, they ignore the potential upward bias introduced by generative Artificial Intelligence (AI) usage in assessing students' performance and knowledge mastery. To address these limitations, we propose AICG (AI-aware Cognitive-supervised Grading), a two-branch multi-task framework. The first branch combines RoBERTa-based regression, ordinal, and classification heads for individual-answer grading. The second branch uses an expert-designed Q-matrix to associate responses with assessed skills and jointly predicts G-DINA-derived skill mastery and learning gain. Through the shared encoder, these skill-level targets provide cognitive supervision for answer grading beyond score labels. AICG further uses a Gen-AI detector, trained through supervised contrastive pretraining followed by linear classification, to estimate assistance probabilities and convert them into reliability weights, attenuating unreliable cognitive evidence during learning assessment. We conduct experiments on 49,402 instructor-graded responses spanning 19 academic semesters. Relative to RoBERTa regression, AICG reduces mean absolute error (MAE) by 50.3% and improves quadratic weighted kappa (QWK) from 0.798 to 0.927. Ablations identify Q-matrix-guided cognitive supervision as the primary source of improvement, while AI-aware weighting further reduces overall MAE by 4.2% over the unweighted cognitive model and consistently improves MAE and QWK across the four most recent post-Gen-AI semesters.",
         "authors": [
@@ -17703,16 +17719,12 @@
         "updated": "2026-10-30T03:52:32+00:00",
         "version_id": "2610.41215v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41215v1"
       ]
