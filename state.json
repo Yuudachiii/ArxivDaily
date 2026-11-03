@@ -55212,11 +55212,8 @@
         "llm_reasoning"
       ],
       "stage": "presentation_pending",
-      "stage_started": {
-        "at": "2026-11-03T11:54:47.280244+00:00",
-        "run_id": "20261103T115447Z-edbd5a91",
-        "stage": "title_translation"
-      },
+      "title_translation_prompt_fingerprint": "microsoft_free",
+      "title_zh": "并非所有推理都是通用的：关于在RLVR中学习可推广推理策略的案例研究",
       "versions": [
         "2611.03627v1"
       ]
