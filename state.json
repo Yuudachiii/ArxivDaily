@@ -45399,9 +45399,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Reasoning models answer better when they think longer, but a thinking trace keeps going well after its answer has formed. We measure this slack in Qwen3.5-9B and remove most of it with concise self-training: two rounds of on-policy rejection-sampling fine-tuning that keep the shortest correct samples, plus a small share of answer-synthesis targets, giving Concise-9B. On 8,983 held-out problems (competition and hard mathematics, SuperGPQA, a five-area confirmation set and MMLU-Pro), Concise-9B generates 0.66x the tokens of Qwen3.5-9B at a 32K thinking budget, with accuracy equivalent within +/-1 point (-0.20 [-0.77, +0.36] points). Forcing each trace on the hard and confirmation sets to answer every 2,048 thinking tokens, we find that 54-64% of Qwen3.5-9B's thinking tokens come after the point from which every forced answer equals the final one (41-48% for Concise-9B). Stopping there would keep every answer at 0.35-0.44x the base model's tokens, but finding that point takes hindsight: stopping when three consecutive forced answers agree costs the base model 2.4-9.2 points. Concise self-training removes slack without that cost: 86% [83, 90] of the thinking tokens it saves come after the answer has formed. It has a limit: with traces continued to 80K tokens, Concise-9B solves 25 fewer of 1,276 hard problems (-25 [-49, -1]), mostly in competition mathematics. The measurement also yields a cheap commit signal for adaptive sampling that matched two-sample escalation within +/-1 point at 0.67x its tokens in a pre-registered test. Results on Qwen3.5-4B, on which the recipe was developed, and a replication on Olmo-3-7B-Think suggest that the saving depends on how verbose the base model is.",
         "authors": [
@@ -45417,17 +45433,13 @@
         "updated": "2026-11-01T23:02:43+00:00",
         "version_id": "2611.02278v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02278v1"
       ]
