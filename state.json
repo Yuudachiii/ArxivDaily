@@ -18448,9 +18448,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "In AI for Science scenarios, experimental design and method reproduction require retrieving protocols that satisfy multiple interdependent constraints, yet existing benchmarks lack systematic evaluation of this capability. To address this gap, we introduce ProSearch, a benchmark for multi-constraint protocol retrieval in experimental science. ProSearch has three key features: (1) realism, with queries grounded in real experimental records and expert-defined templates; (2) complexity, with 60 experimental fields and their dependencies; and (3) diagnosticity, with 3-5 explicit constraints per query, including numerical and negation constraints. We construct ProSearch through LLM-based extraction, data-driven constraint selection, controlled query generation, and evidence-based relevance validation. The resulting benchmark contains 1,515 queries across six experimental science domains. We conduct extensive experiments on ProSearch with 19 representative retrievers and complementary analyses. The best-performing retriever achieves an average nDCG@10 of only 0.290, which improves to 0.474 with reranking. Structured diagnostic analysis shows that explicit constraint matching provides a strong ranking signal, while manual error analysis identifies joint constraint binding as a key bottleneck. ProSearch provides a testbed for systematically evaluating scientific retrieval systems.",
         "authors": [
@@ -18472,16 +18488,12 @@
         "updated": "2026-10-30T08:06:24+00:00",
         "version_id": "2610.41396v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41396v1"
       ]
