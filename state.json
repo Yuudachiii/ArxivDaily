@@ -23524,9 +23524,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_training、llm_agent、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Existing large language model (LLM) backdoor attacks operate primarily in chat settings, where the risk is bounded by free-form text outputs. AI agents remove that bound by performing actions and executing commands on the user's machine. We introduce structured-output backdoor attacks against reasoning models in agentic coding settings. A trigger placed anywhere in the agent's context causes the model to emit an attacker-chosen tool call, which the harness executes, directly compromising the system's confidentiality, integrity, or availability. We present Kerkoporta, a methodology that constructs high-quality poison samples, injects the backdoor via supervised fine-tuning, and recovers utility loss with lightweight reinforcement learning. We evaluate on modern, heavily post-trained open-weight models across proprietary and open-source harnesses, focusing on coding for its wide adoption and long-horizon task structure. The attack reaches success rates of up to 96.2% and can be configured to generalize across harnesses or bind to a single target. The resulting models can outperform the clean baseline on standard utility benchmarks, giving victims a direct incentive to adopt them. Overall, we demonstrate that LLM backdoors can have critical security impacts in the context of modern coding agents, and we characterize the poisoning methodology required to insert backdoors that are both effective and stealthy in this setting.",
         "authors": [
@@ -23548,6 +23564,7 @@
         "updated": "2026-10-29T18:41:43+00:00",
         "version_id": "2611.00138v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_training",
@@ -23555,12 +23572,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00138v1"
       ]
