@@ -61,6 +61,8 @@ def plan_window(
         if end < start:
             raise ValueError("manual end precedes start")
         return {"start": iso(start), "end": iso(end), "initial_floor": iso(floor), "uncovered": [], "manual": True}
+    # A floor saved under a shorter initial window must not block an expansion.
+    floor = min(floor, now - timedelta(days=initial_days))
     start = max(floor, now - timedelta(days=lookback_days))
     uncovered = []
     last_value = collection_state.get("last_complete_collection") or collection_state.get("last_complete_end")

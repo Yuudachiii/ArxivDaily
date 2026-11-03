@@ -24,3 +24,6 @@ app/fixtures/sources/*.html
 app/fixtures/sources/*.pdf
 app/fixtures/sources/*.png
 app/reports/
+
+# Local change history must not be published.
+/docs/CHANGE_LOG.md

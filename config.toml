@@ -231,15 +231,15 @@ run_seconds = 2400
 [prompts]
 directory = "app/prompts"
 
-# 每天只抓上一个日报周期之后新增的论文：正常运行时窗口是最近 24 小时（约等于前一天），
-# 不回补多日积压；跳过的日期只报告缺口，需用 --start/--end 手工补采。
-# 首次抓取 1 天，之后最多滚动回看 1 天；网络请求间隔至少 3 秒。
+# 每天按提交时间滚动回看最近 7 天，以覆盖论文公开和索引的延迟。
+# 已确认发送的论文继续去重；超过 7 天的缺口需用 --start/--end 手工补采。
+# 首次抓取 7 天，之后滚动回看 7 天；网络请求间隔至少 3 秒。
 # max_candidates 取上限 10000：规则模式不设每日篇数上限，避免大日被截断。
 [collection]
 page_size = 100
 delay_seconds = 3.0
-initial_days = 1
-lookback_days = 1
+initial_days = 7
+lookback_days = 7
 shard_limit = 10000
 max_candidates = 10000
 

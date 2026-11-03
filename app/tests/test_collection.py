@@ -218,6 +218,19 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual(skipped["start"], yesterday.isoformat())
         self.assertEqual(len(skipped["uncovered"]), 1)
 
+    def test_expanded_window_revisits_before_the_saved_one_day_floor(self):
+        now = datetime(2026, 11, 3, 2, 42, tzinfo=timezone.utc)
+        yesterday = (now - timedelta(days=1)).isoformat()
+        state = {"collection": {"initial_floor": yesterday, "last_complete_end": now.isoformat()}}
+        window = plan_window(now, state, initial_days=7, lookback_days=7)
+        self.assertEqual(window["start"], (now - timedelta(days=7)).isoformat())
+        self.assertEqual(window["end"], now.isoformat())
+        self.assertEqual(window["uncovered"], [])
+        manual = plan_window(now, state, "2026-10-29", "2026-10-30", initial_days=7, lookback_days=7)
+        self.assertEqual(manual["initial_floor"], yesterday)
+        self.assertEqual(manual["start"], "2026-10-29T00:00:00+00:00")
+        self.assertEqual(state["collection"]["initial_floor"], yesterday)
+
 
     def test_late_visible_submission_before_prior_checkpoint_is_revisited(self):
         now = datetime(2026, 10, 21, tzinfo=timezone.utc)
