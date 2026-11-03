@@ -22512,9 +22512,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Finding the passage that answers a question is the first step of most practical systems built on documents, and for Tajik we found no openly described model for it. We present Saidzoda-Tajik-E5-Large, a Tajik text embedder built from multilingual-e5-large-instruct (560M parameters). We asked our own Tajik language model to write questions for passages from Tajik laws, tax documents, Wikipedia and web text, and trained on 235,140 question and passage pairs for one epoch, with hard negatives chosen by another embedder and English and Russian pairs mixed in so the model would not forget those languages. On laws the model had never seen, the right passage is among the top ten results for 93.6% of questions, up from 80.2%; on tax documents, 94.5% against 82.6%. On Belebele, the one test we have that was written by people, the gain is smaller and not confirmed (92.2% to 95.2%, with touching intervals), and Russian and English do not change. On law and tax questions written in the same style as its training questions, it is tied with Giga-Embeddings-3B, a model five times its size; on Belebele the 3B and 8B models score slightly higher, and only after we fine-tuned them on our data are they clearly ahead. We also report what failed: training in bfloat16 broke the model, and replacing Tajik letters with similar Russian ones did not help. Our law, tax and Wikipedia test questions come from the same model that wrote the training questions, so we treat those scores as an upper limit until questions written by Tajik speakers are available.",
         "authors": [
@@ -22536,16 +22552,12 @@
         "updated": "2026-10-31T03:41:43+00:00",
         "version_id": "2611.00592v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00592v1"
       ]
