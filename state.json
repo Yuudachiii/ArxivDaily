@@ -54395,6 +54395,7 @@
     "2611.03543": {
       "attempts": {
         "selection": 1,
+        "title_translation": 1,
         "translation": 1
       },
       "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
@@ -54457,6 +54458,11 @@
         "llm_core"
       ],
       "stage": "presentation_pending",
+      "stage_started": {
+        "at": "2026-11-03T11:54:47.280244+00:00",
+        "run_id": "20261103T115447Z-edbd5a91",
+        "stage": "title_translation"
+      },
       "versions": [
         "2611.03543v1"
       ]
