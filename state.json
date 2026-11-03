@@ -49894,9 +49894,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "We classify real and complex state-space models (SSMs) with linear transitions, distinguishing fixed-basis diagonal equivalence from input-output equivalence and tracking coefficient-conditioning windows under coordinate changes. We characterize diagonal equivalence through commuting transition families whose members are diagonalizable over the chosen field. With time-shared token-local matrix maps, we identify this class's state-mediated kernels with unnormalized scalar-mode linear attention with multiplicative masks. Mamba 3's multiple-input, multiple-output (MIMO) construction lifts one value per local interface; SSD-MIMO routes independent values for local retrieval rank above one. HybridMamba combines Mamba 1's per-coordinate decay, Mamba 2-style heads and Mamba 3's complex rotations and two-endpoint writes, mixing real and rotating state blocks with different decay laws. They recover Mamba 1-3 single-input, single-output (SISO) configurations as exact special cases. On five large H100 bfloat16 workloads, our fused GPU kernels improve geometric-mean training time over official Mamba 1/3 in matched SISO recoveries, with Mamba 2 near parity at SSM-core scope. Memory tradeoffs depend on the baseline and metric: saved-for-backward versus peak allocation. In small-model multi-token recall experiments, both designs outperform Mamba 1-3 on the hardest tier; higher routing ranks perform best in gated or phase-diverse configurations. In single-seed language models with about 500M parameters, both improve on Mamba 1/2 in test loss at 2B tokens, but the routing gains do not translate into lower language-model loss. Our best configurations approach Mamba 3 SISO through 10B tokens while remaining behind it and Mamba 3 MIMO in language-model loss.",
         "authors": [
@@ -49913,15 +49929,11 @@
         "updated": "2026-11-02T13:17:42+00:00",
         "version_id": "2611.03101v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.03101v1"
       ]
