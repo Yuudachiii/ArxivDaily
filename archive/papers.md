@@ -5,7 +5,7 @@
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
 | 2026-11-03 | Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning | 待翻译 | [arXiv 2611.03602v1](https://arxiv.org/abs/2611.03602v1) |
-| 2026-11-03 | From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles | 待翻译 | [arXiv 2611.03641v1](https://arxiv.org/abs/2611.03641v1) |
+| 2026-11-03 | From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles | 从自然语言到精确覆盖：一种解决斑马难题的神经符号方法 | [arXiv 2611.03641v1](https://arxiv.org/abs/2611.03641v1) |
 | 2026-11-03 | Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap | 预训练数据规模逆转了Muon-AdamW微调差距 | [arXiv 2611.03633v1](https://arxiv.org/abs/2611.03633v1) |
 | 2026-11-03 | Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR | 并非所有推理都是通用的：关于在RLVR中学习可推广推理策略的案例研究 | [arXiv 2611.03627v1](https://arxiv.org/abs/2611.03627v1) |
 | 2026-11-03 | D&amp;A: Decoupling Description and Assessment Enables VLMs as Zero-Shot Robotic Reward Models | 待翻译 | [arXiv 2611.03622v1](https://arxiv.org/abs/2611.03622v1) |
