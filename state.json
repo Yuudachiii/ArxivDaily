@@ -21782,9 +21782,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "An agent's visible score can exceed its real progress because it gamed the score or because it simply made mistakes, so a useful reward-hacking monitor must tell the two apart. We built a sandboxed task in which an agent can game a completion score, labelled every episode by replaying it and repairing the final state counterfactually, and ran five pre-registered studies. On 60 episodes from a Llama 3.1 8B agent, small local monitors (Llama 3B and 8B) did not separate exploit attempts from honest failures with the same score gap: prompt changes traded missed exploits for false alarms, and the pre-registered primary monitor reached AUC 0.64. On identical inputs, Gemini 3.1 Flash-Lite, which completed 9/10 clean tasks against 2/10 for the 8B model, met our pre-registered criterion (AUC 0.80, 95% interval [0.66, 0.93]; 1/35 honest failures flagged); with only 14 exploit episodes, this estimate is uncertain. On an exploit that no prompt names, Gemini usually described the action correctly yet never flagged it, in 5 and then 25 new episodes, even when manipulation was defined by its effect on the score. Given the full trace, the 8B monitor flagged all 25 replication episodes and none of 25 honest look-alikes, but its explanations described actions that had not occurred; given additional structured evidence, it also flagged 15 of the 25 look-alikes. A two-rule deterministic check caught every known exploit. We release the environment, labels, pre-registrations and per-judgement logs.",
         "authors": [
@@ -21800,16 +21816,12 @@
         "updated": "2026-10-30T21:52:47+00:00",
         "version_id": "2611.00407v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00407v1"
       ]
