@@ -44167,9 +44167,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Rubric optimization improves LLM grading by revising scoring instructions while keeping the grader's parameters fixed. Existing optimizers often judge edits by aggregate validation performance, limiting the supervision they retain about which errors an edit corrects or introduces. Testing each candidate also requires rescoring validation answers, which limits how many edits can be explored within a fixed budget. We propose RubricWorld, a framework that learns from previous edit evaluations to guide further search. Its world model predicts an edit's correction and degradation rates at score boundaries, conditioned on the current rubric state. The training signal comes from paired grading results: scores for the same answers before and after an edit. Predictions select one candidate for direct evaluation, and held-out confidence bounds determine whether it corrects enough target errors while keeping new errors within prespecified limits. Measured effects update the model even when the edit is rejected. Across EIR (National), ASAP2.0, and ASAP-SAS with three frozen LLM graders, RubricWorld achieves the highest score in 20 of 27 metric comparisons. On ASAP2.0, it raises gpt-5-mini accuracy from 18.20% with the original rubric to 46.70%, exceeding the strongest baseline, APO, by 22.60 percentage points. code will be released upon acceptance.",
         "authors": [
@@ -44187,16 +44203,12 @@
         "updated": "2026-11-01T15:22:37+00:00",
         "version_id": "2611.01986v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01986v1"
       ]
