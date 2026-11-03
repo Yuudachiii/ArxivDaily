@@ -9011,9 +9011,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Spectroscopic diagnostics provide rich information for characterizing plasma states in tokamak fusion experiments, while existing learning-based approaches are often designed for individual tasks and rely heavily on labeled data. In this work, we propose SpectralTF-MAE, a self-supervised spectral foundation model for tokamak plasma diagnostics. The model is pretrained on paired charge-exchange recombination spectroscopy (CXRS) and X-ray crystal spectroscopy (XCS) measurements through masked spectral reconstruction. To better capture diagnostically important spectral structures, we introduce a peak-aware masking strategy together with a peak-enhanced reconstruction objective, encouraging the model to focus on characteristic spectral regions. A shared Transformer encoder is employed to learn transferable representations across different diagnostic modalities. The pretrained model is further adapted to several downstream tasks, including plasma-parameter prediction, cross-diagnostic spectral generation, and spectral peak analysis. Experiments on EAST diagnostic data demonstrate that the proposed framework achieves competitive performance across different tasks and consistently benefits from self-supervised spectral pretraining. These results indicate the potential of SpectralTF-MAE as a general and transferable representation learning framework for plasma spectroscopic diagnostics.",
         "authors": [
@@ -9037,16 +9053,12 @@
         "updated": "2026-10-28T10:20:53+00:00",
         "version_id": "2610.38593v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38593v1"
       ]
