@@ -930,9 +930,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Reasoning language models answer math problems by writing long chains of thought, and sampling many chains per problem and taking a majority vote raises accuracy at a large cost in generated text. A popular way to cut that cost scores each chain by the model's confidence in each token it writes, where a token is a word or part of a word. The method averages this confidence over a sliding window of 2048 tokens and keeps or stops chains based on the lowest average. We treat the confidence, recorded token by token, as a signal in the sense of audio or radio, and examine the method with standard signal-processing tools such as spectral analysis and statistical tests for detecting a sudden change. We sampled 16 chains for each of 500 problems from two math benchmarks with a small open reasoning model. The windowed-minimum score turns out to measure mostly how long a chain is. Ranking chains by length alone does as well as or better than the confidence score, and once length is accounted for the score carries no information about correctness. Signal processing explains why: the minimum of a longer stretch of a slowly drifting signal is lower by chance alone, and the confidence signal drifts slowly enough that this effect dominates. The spectrum does hold a small signal that length does not explain, since incorrect chains carry more rapid token-to-token fluctuation, but it is too weak to improve the vote. For stopping chains early, neither the sliding average nor a classical change detector beats the simpler choice of sampling fewer chains.",
         "authors": [
@@ -947,17 +963,13 @@
         "updated": "2026-10-27T06:26:06+00:00",
         "version_id": "2610.36709v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.36709v1"
       ]
