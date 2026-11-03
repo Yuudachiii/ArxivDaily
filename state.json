@@ -10442,9 +10442,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Industrial systems continuously generate time series that vary in sampling frequency, scale, dynamics, and operating regime. Consequently a single time-series foundation model may not be able to represent all regimes effectively and retraining a large model for every new dataset or regime shift is computationally expensive. Modular foundation models address this issue by reusing specialised encoders trained on diverse datasets and by allowing the expansion of capabilities through the addition of new experts. This approach requires compact experts to minimize storage cost and a proper selection mechanism of experts for unseen data. We propose a modular foundation model framework that combines end-to-end Bayesian encoder training with uncertainty based routing. Using Singular Bayesian Neural Networks (SBNNs), we build a collection of compact Bayesian encoders whose epistemic uncertainty guides label-free selection. At the selected ranks, our Bayesian collection uses 63.8\\% less storage than its deterministic counterpart. We evaluate this framework on time-series data through distribution shift, encoder selection, and probabilistic forecasting. Across seven incoming datasets, uncertainty-based routing is competitive with distance-based routing in terms of forecast MSE, while reducing average ECE from 0.086 to 0.072 and average NLL from 0.907 to 0.836. It also increases PICP90 from 82.28\\% to 89.03\\%. In a separate model-family comparison, we evaluate the SBNN pipeline against full-rank Bayes by Backprop, deep ensembles, and MC Dropout. The SBNN pipeline achieves an average MSE of 0.390, comparable with 0.396 for deep ensembles, 0.389 for MC dropout, and 0.443 for the full-rank Bayesian model. It uses 63.9\\% fewer parameters than MC dropout, 81.9\\% fewer than the full-rank model, and 92.8\\% fewer than the deep ensemble.",
         "authors": [
@@ -10467,15 +10483,11 @@
         "updated": "2026-10-28T23:16:09+00:00",
         "version_id": "2610.39043v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.39043v1"
       ]
