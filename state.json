@@ -14934,10 +14934,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core、llm_efficiency、llm_safety、llm_training",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.38732v1",
+      "model": "rules",
       "paper": {
         "abstract": "Even though current safety-aligned language models are able to refuse harmful requests, their guard can still be bypassed by adversarial perturbations. As in other domains, adversarial training is considered a standard defense. However, due to the autoregressive nature of language generation, supervised finetuning on template refusals does not necessarily teach the model to refuse. Evidence of this is that the adversarially trained model still complies when the attacker injects a compliant prefill. We propose Adversarial Self-Distillation (ASD), which extends a model's own safe behavior to the space of adversarial perturbations. The teacher (the model itself given the clean prompt) can refuse the harmful request by default, or with the help of an additional instruction in its context. ASD distills this knowledge to the student (which is the same model under attack) at the prefixes that the student visits (due to on-policy sampling). These potentially include compliant openings. ASD achieves lower attack success than state-of-the-art defenses with little loss in multiple-choice accuracy, and it becomes able to recover a refusal even after a compliant opening.",
         "authors": [
@@ -14954,18 +14970,14 @@
         "updated": "2026-10-28T19:26:43+00:00",
         "version_id": "2610.38732v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core",
         "llm_efficiency",
         "llm_safety",
         "llm_training"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38732v1"
       ]
