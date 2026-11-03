@@ -23033,9 +23033,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Conversational text-to-SQL interfaces could give healthcare professionals natural-language access to electronic health record (EHR) data, but evidence for their real-world usability remains limited: prior evaluations have relied largely on curated benchmarks with fully specified questions or on simulated users. We report a user study in which 14 physicians who regularly work with EHR data used both a single-turn and a conversational multi-turn text-to-SQL interface over the MIMIC-IV database in a within-subjects design; dialogue analyses additionally drew on interaction logs from 21 healthcare professionals across the main study and two pilot studies. The conversational interface was consistently favored: mean System Usability Scale scores rose from 68.2, near the industry average, to 85.9 (p<0.001), with significant advantages across technology-acceptance constructs including performance expectancy, effort expectancy, self-efficacy, and behavioral intention. In post-study forced-choice comparisons, 93% of participants reported greater overall satisfaction with the conversational interface, 86% preferred it for real-world adoption, and 71% trusted its results more; no participant preferred or trusted the single-turn interface more. Turn-level analysis of 425 logged user turns showed that freely composed queries triggered clarification requests in 24.8% of cases versus 1.8% for predefined, fully specified questions, and 64.3% of clarification episodes stemmed from EHR- or clinical-domain knowledge. Conversational interaction is a practical prerequisite, rather than a convenience, for natural-language EHR access. The frequent need for clarification in realistic clinical queries further underscores the importance of conversational interfaces, while benchmark-style evaluation can substantially underrepresent the ambiguity of real clinical use.",
         "authors": [
@@ -23055,16 +23071,12 @@
         "updated": "2026-10-31T04:01:13+00:00",
         "version_id": "2611.00605v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00605v1"
       ]
