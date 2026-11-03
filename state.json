@@ -22217,9 +22217,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "LLMs degrade in multi-turn conversation partly because of context pollution: the model's own earlier outputs stay in context and anchor later turns, so an early misreading of the user's intent can persist after the user corrects it. Assistant omission (AO), dropping every assistant message, removes this pollution but fails when interaction is referential: later turns refer back to drafts, decisions, and tool-call results that exist only in assistant turns. We propose Agentic Conversation Context Curation (AC3), a training-free method in which a separate analyzer (1) consolidates the task specification from the user's messages alone, (2) audits the assistant's prior outputs against it, and (3) edits the context, either appending the analysis or discarding the assistant side and rebuilding the context from the specification. A second finding: pollution is contagious. An analyzer that sees the assistant's reasoning while extracting the specification can do worse than no intervention, and instructing it to ignore them did not close the gap, so we exclude assistant turns structurally. On Lost in Conversation (replaying difficulty-selected instances), where AO is an oracle by construction, AC3 closes 55-84% of the gap between full context and AO on three of four tasks and exceeds AO on the fourth, and an LLM that faithfully summarizes the history does not reproduce the gain even with more compute. On real WildChat conversations, a GPT-5-mini judge prefers AC3's next turn over both full context and AO in every configuration of our main table, though this preference depends on the judge; on CollabLLM results are mixed. In stateful tool use (tau2-bench), AO collapses to 0% on every model; AC3 does not collapse, though it falls slightly behind full context. Detector studies show that Reset removes injected pollution but is not span-selective: the gain comes from rebuilding the specification.",
         "authors": [
@@ -22242,17 +22258,13 @@
         "updated": "2026-10-31T01:13:55+00:00",
         "version_id": "2611.00518v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00518v1"
       ]
