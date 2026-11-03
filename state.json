@@ -42251,9 +42251,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_rag、llm_safety、llm_multimodal、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_rag",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Radiology report generation (RRG) streamlines clinical workflows and alleviates the burden of radiologists' documentation. Standard vision-language models capture global visual cues and lack fine-grained alignment between anatomical regions and diagnostic text. Most retrieval-augmented methods retrieve complete historical reports, introducing redundant noise and severe vision-text mismatches that trigger clinically risky hallucinations and missed lesions. In this paper, we introduce AR-RRG, an anatomy-guided retrieval-driven method for the generation of radiology reports. AR-RRG consists of two core modules: the anatomy-aware self-training lesion detection network (ASLDNet) and the retrieval-driven radiology report generation (RRRG). ASLDNet leverages anatomy-aware spatial verification (ASV) and class-adaptive dynamic thresholding (CDT) via self-training, delivering accurate lesion localization to support subsequent generation. As the generative branch of AR-RRG, RRRG eliminates clinical hallucinations through dual-granularity retrieval (DR) and complements missing lesions with a neighborhood consensus (NC) mechanism. A parallel continuous visual perception (PCVP) stream converts radiographs into visual tokens through fixed medical encoding and resampling. Multi-scale text and visual features are fused, followed by LoRA-efficient large language model tuning to generate clinically consistent, visually grounded radiology reports. Extensive evaluations on MS-CXR, MIMIC-CXR, and IU X-Ray demonstrate that AR-RRG consistently outperforms state-of-the-art methods across mainstream metrics. Our code will be made publicly available.",
         "authors": [
@@ -42278,6 +42294,7 @@
         "updated": "2026-11-01T04:00:01+00:00",
         "version_id": "2611.01529v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_rag",
         "llm_safety",
@@ -42285,12 +42302,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01529v1"
       ]
