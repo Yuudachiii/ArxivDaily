@@ -23502,9 +23502,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_training、llm_agent、llm_efficiency、llm_safety、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Depth pruning removes whole Transformer blocks to make a language model smaller and faster, but the damage is not spread evenly across what the model can do, and a short fine-tuning run, called healing, decides what comes back. We measure this for small models used as agents. Four instruction-tuned models of 1.2-1.7B parameters (Llama-3.2-1B, Qwen2.5-1.5B, SmolLM2-1.7B and OLMo-2-1B) are pruned and healed, and six capabilities are tracked: structured output, function calling, instruction following, mathematical reasoning, safety refusal and knowledge. Three results hold across the families. First, function calling and math collapse in every model (retention 0.00-0.07 of the unpruned score), and the order in which capabilities break agrees closely across the four (Kendall's W = 0.92; 0.62 after correcting for chance floors). Second, which parameters are trained matters as much as which data: fully tuning the last three blocks instead of adding low-rank adapters to all blocks costs up to 0.18 in capped mean retention on three families, and one 300k-token pilot per scope detects this. Third, we test a planner that allocates a 1M-token healing budget from 21 short pilot heals. At a fixed budget it raises the weakest capability on two families, although only one of these gains survives a test that also resamples training seeds. Once its 3.48M pilot tokens are counted, uniform healing with the same total number of training tokens matches or beats every planned variant on every family and retains math significantly better on three of them in an item-level test (on one when seeds are also resampled). Healing longer is a strong and simple baseline that planned recovery must beat. Code, per-item predictions and every result are public.",
         "authors": [
@@ -23524,6 +23540,7 @@
         "updated": "2026-10-31T12:25:46+00:00",
         "version_id": "2611.00877v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_training",
@@ -23532,12 +23549,7 @@
         "llm_safety",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00877v1"
       ]
