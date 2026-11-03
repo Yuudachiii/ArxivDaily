@@ -11983,9 +11983,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Tabular foundation models use in-context learning to estimate conditional expected outcomes and average treatment effects for specific groups of individuals. Using these estimates to guide scientific decisions requires reliable uncertainty quantification. The challenge is to account simultaneously for two sources of uncertainty: limited-context bias and context variation arising from the small labeled sample supplied at inference. Predictive spread does not directly quantify both sources of uncertainty, and we observe that the ordinary bootstrap may substantially overestimate context variation, whereas subsampling may underestimate it. We introduce TabCUQ, a perturbation-based framework that injects noise into observed outcomes and applies the foundation model to the perturbed contexts. TabCUQ estimates context variation using wild-bootstrap dispersion and accounts for limited-context bias using the maximum deviation between perturbed and original estimates. For a kernel-regression analogue whose estimation error admits an exact decomposition into these two components, we show that our framework provides asymptotically valid pointwise coverage. In simulations, TabCUQ substantially improves coverage, with average interval widths typically about twice those of an oracle bias-aware benchmark. Across seven real-world tasks, it also improves coverage of reference functions learned from much larger samples.",
         "authors": [
@@ -12003,17 +12019,13 @@
         "updated": "2026-10-29T07:58:20+00:00",
         "version_id": "2610.39558v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.39558v1"
       ]
