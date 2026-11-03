@@ -4,6 +4,371 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-03 | From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles | 待翻译 | [arXiv 2611.03641v1](https://arxiv.org/abs/2611.03641v1) |
+| 2026-11-03 | Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap | 待翻译 | [arXiv 2611.03633v1](https://arxiv.org/abs/2611.03633v1) |
+| 2026-11-03 | Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR | 待翻译 | [arXiv 2611.03627v1](https://arxiv.org/abs/2611.03627v1) |
+| 2026-11-03 | D&amp;A: Decoupling Description and Assessment Enables VLMs as Zero-Shot Robotic Reward Models | 待翻译 | [arXiv 2611.03622v1](https://arxiv.org/abs/2611.03622v1) |
+| 2026-11-03 | Tracing the Scientific Discovery Capacity of LLMs to Their Training Data | 待翻译 | [arXiv 2611.03617v1](https://arxiv.org/abs/2611.03617v1) |
+| 2026-11-03 | DiabAgent: Toward Agentic Physiological Control | 待翻译 | [arXiv 2611.03601v1](https://arxiv.org/abs/2611.03601v1) |
+| 2026-11-03 | Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models | 待翻译 | [arXiv 2611.03592v1](https://arxiv.org/abs/2611.03592v1) |
+| 2026-11-03 | A Scaling Theory of Multi-Epoch Pretraining: Late-Time Overfitting and Ensembling | 待翻译 | [arXiv 2611.03590v1](https://arxiv.org/abs/2611.03590v1) |
+| 2026-11-03 | FedReady: Bounded Agents for Federation Formation | 待翻译 | [arXiv 2611.03586v1](https://arxiv.org/abs/2611.03586v1) |
+| 2026-11-03 | VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably | 待翻译 | [arXiv 2611.03575v1](https://arxiv.org/abs/2611.03575v1) |
+| 2026-11-03 | MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study | 待翻译 | [arXiv 2611.03555v1](https://arxiv.org/abs/2611.03555v1) |
+| 2026-11-03 | Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL | 待翻译 | [arXiv 2611.03551v1](https://arxiv.org/abs/2611.03551v1) |
+| 2026-11-03 | Can LLM Agents Improve Imperfect Earth System Model Parameterizations? | 待翻译 | [arXiv 2611.03543v1](https://arxiv.org/abs/2611.03543v1) |
+| 2026-11-03 | Library of Layers (LoL): Adaptively Ordering Transformer Layers at Runtime | 待翻译 | [arXiv 2611.03526v1](https://arxiv.org/abs/2611.03526v1) |
+| 2026-11-03 | Grading the Unannotated: Insights from the WorkRB Skill Extraction Challenge at RecSys-HR 2026 | 待翻译 | [arXiv 2611.03525v1](https://arxiv.org/abs/2611.03525v1) |
+| 2026-11-03 | DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems? | 待翻译 | [arXiv 2611.03523v1](https://arxiv.org/abs/2611.03523v1) |
+| 2026-11-03 | VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations | 待翻译 | [arXiv 2611.03518v1](https://arxiv.org/abs/2611.03518v1) |
+| 2026-11-03 | Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization | 待翻译 | [arXiv 2611.03517v1](https://arxiv.org/abs/2611.03517v1) |
+| 2026-11-03 | IdeaTaste: Do LLMs Share the Research Taste of Human Researchers? | 待翻译 | [arXiv 2611.03424v1](https://arxiv.org/abs/2611.03424v1) |
+| 2026-11-03 | DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects | 待翻译 | [arXiv 2611.03412v1](https://arxiv.org/abs/2611.03412v1) |
+| 2026-11-03 | ASCoR: Asymmetric Semantic-Spatial Learning for Remote Sensing Domain Generalization | 待翻译 | [arXiv 2611.03382v1](https://arxiv.org/abs/2611.03382v1) |
+| 2026-11-03 | Same Outputs, Different Scores: Auditing the Unchecked Graders of Multimodal LLM Benchmarks | 待翻译 | [arXiv 2611.03377v1](https://arxiv.org/abs/2611.03377v1) |
+| 2026-11-03 | Characterizing When Language Models Take Harmful Actions to Protect Their Assigned Goals | 待翻译 | [arXiv 2611.03374v1](https://arxiv.org/abs/2611.03374v1) |
+| 2026-11-03 | EO-Jev: Decision Model for Earth Observation | 待翻译 | [arXiv 2611.03371v1](https://arxiv.org/abs/2611.03371v1) |
+| 2026-11-03 | Every Pixel Is an Option: A System One Model for Medical Ultrasound Biometry | 待翻译 | [arXiv 2611.03360v1](https://arxiv.org/abs/2611.03360v1) |
+| 2026-11-03 | ArabGeoText: Tool-Augmented Vision-Language Models for Arabic Geospatial Text Spotting | 待翻译 | [arXiv 2611.03339v1](https://arxiv.org/abs/2611.03339v1) |
+| 2026-11-03 | The SIMPLE Law for Energy Cost of LLM Inference | 待翻译 | [arXiv 2611.03330v1](https://arxiv.org/abs/2611.03330v1) |
+| 2026-11-03 | TrafficInstruct: A Multi-Task Network Traffic Dataset and Benchmark for Instruction Tuning | 待翻译 | [arXiv 2611.03319v1](https://arxiv.org/abs/2611.03319v1) |
+| 2026-11-03 | MultiInpaintCOCO: Fine-Grained Visual Understanding in Multiple Languages | 待翻译 | [arXiv 2611.03309v1](https://arxiv.org/abs/2611.03309v1) |
+| 2026-11-03 | LLMs Depend on Specialist Tools for Out-of-Distribution Generalization in MS/MS Structural Elucidation | 待翻译 | [arXiv 2611.03308v1](https://arxiv.org/abs/2611.03308v1) |
+| 2026-11-03 | SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL | 待翻译 | [arXiv 2611.03298v1](https://arxiv.org/abs/2611.03298v1) |
+| 2026-11-03 | ENGINE: Endogenous Variational MultiScale Optimization for Zeroth-Order LLM Fine-Tuning | 待翻译 | [arXiv 2611.03293v1](https://arxiv.org/abs/2611.03293v1) |
+| 2026-11-03 | Specificity Bias and the Wikipedia Paradox: An xAI Analysis of AI Text Detectors under Domain Shift | 待翻译 | [arXiv 2611.03280v1](https://arxiv.org/abs/2611.03280v1) |
+| 2026-11-03 | The Cost of Mismatch: Noise Amplification in Zeroth-Order Reinforcement Learning | 待翻译 | [arXiv 2611.03260v1](https://arxiv.org/abs/2611.03260v1) |
+| 2026-11-03 | R$^2$-Omni: Reducing Structural and Precision Redundancy in Omni-LLMs for Long-Form Generation | 待翻译 | [arXiv 2611.03247v1](https://arxiv.org/abs/2611.03247v1) |
+| 2026-11-03 | A Common Language for Dynamic Graphs: Interaction Tokenization Enables Foundation Models | 待翻译 | [arXiv 2611.03246v1](https://arxiv.org/abs/2611.03246v1) |
+| 2026-11-03 | ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents | 待翻译 | [arXiv 2611.03238v1](https://arxiv.org/abs/2611.03238v1) |
+| 2026-11-03 | Axion 1.0: Open Agent Foundation Models, Simplified | 待翻译 | [arXiv 2611.03233v1](https://arxiv.org/abs/2611.03233v1) |
+| 2026-11-03 | Do Agents Still Follow the Rules? Benchmarking Rule Compliance under Agent Context Compaction | 待翻译 | [arXiv 2611.03223v1](https://arxiv.org/abs/2611.03223v1) |
+| 2026-11-03 | Can Coding Agents Sustain Continual Evolution without Forgetting? | 待翻译 | [arXiv 2611.03219v1](https://arxiv.org/abs/2611.03219v1) |
+| 2026-11-03 | CISA: Retrofitting Dense Attention Models with Chunk-Indexed Sparse Attention | 待翻译 | [arXiv 2611.03200v1](https://arxiv.org/abs/2611.03200v1) |
+| 2026-11-03 | Written Once, Read Differently How Language Models Own Answers Steer Their Next Ones | 待翻译 | [arXiv 2611.03198v1](https://arxiv.org/abs/2611.03198v1) |
+| 2026-11-03 | LaBraM at Scale: Scaling Data and Models for EEG Pretraining | 待翻译 | [arXiv 2611.03165v1](https://arxiv.org/abs/2611.03165v1) |
+| 2026-11-03 | Toward Knowledge-Centric AI: Discovering, Internalizing, and Using Explicit Knowledge Across Agents and Generations | 待翻译 | [arXiv 2611.03157v1](https://arxiv.org/abs/2611.03157v1) |
+| 2026-11-03 | Controlling Sharpening in LLM Post-Training | 待翻译 | [arXiv 2611.03146v1](https://arxiv.org/abs/2611.03146v1) |
+| 2026-11-03 | DepthGraft: Structural Regularization through Hierarchical Cross-Layer KV Reconstruction | 待翻译 | [arXiv 2611.03142v1](https://arxiv.org/abs/2611.03142v1) |
+| 2026-11-03 | Behavioral Affinity Transduction for Zero-Shot Vision-Language Classification | 待翻译 | [arXiv 2611.03132v1](https://arxiv.org/abs/2611.03132v1) |
+| 2026-11-03 | SurgPace: Complexity-Aware Progressive Distillation for Surgical Multimodal Large Language Models | 待翻译 | [arXiv 2611.03125v1](https://arxiv.org/abs/2611.03125v1) |
+| 2026-11-03 | From Local Skills to Long-Horizon Web Tasks: Progressive Skill Exploration for LLM Web Agents | 待翻译 | [arXiv 2611.03116v1](https://arxiv.org/abs/2611.03116v1) |
+| 2026-11-03 | Preprocessing Choices in Fine-Tuning Data Matter: Utility and Demographic Sensitivity in LLM-Based Recommendation | 待翻译 | [arXiv 2611.03113v1](https://arxiv.org/abs/2611.03113v1) |
+| 2026-11-03 | Diagonal Equivalence in State Space Models: Characterization, Retrieval Rank, and Selective Extensions | 待翻译 | [arXiv 2611.03101v1](https://arxiv.org/abs/2611.03101v1) |
+| 2026-11-03 | LUCA: A Synthetic World for Experimental Reasoning | 待翻译 | [arXiv 2611.03100v1](https://arxiv.org/abs/2611.03100v1) |
+| 2026-11-03 | DR Pixel: Page-Native Deep Research with Vision-Language Models | 待翻译 | [arXiv 2611.03097v1](https://arxiv.org/abs/2611.03097v1) |
+| 2026-11-03 | A Fine-Grained Hierarchy and Benchmark for State Tracking in Language Models | 待翻译 | [arXiv 2611.03094v1](https://arxiv.org/abs/2611.03094v1) |
+| 2026-11-03 | An Experimental Study of Hybrid Retrieval, NLI and Open-source LLMs for Scientific Claim Verification | 待翻译 | [arXiv 2611.03093v1](https://arxiv.org/abs/2611.03093v1) |
+| 2026-11-03 | VL-Dedup: Graded Multimodal Entity Resolution for Image-Text Data Deduplication | 待翻译 | [arXiv 2611.03080v1](https://arxiv.org/abs/2611.03080v1) |
+| 2026-11-03 | PACERec: Progressive Adaptation of LLM Item Embeddings with Collaborative Evidence for Recommendation | 待翻译 | [arXiv 2611.03068v1](https://arxiv.org/abs/2611.03068v1) |
+| 2026-11-03 | Towards a Trustworthy and Governable Internet of Agentics: An Architectural Perspective on Protocols, Systems, and Services | 待翻译 | [arXiv 2611.03066v1](https://arxiv.org/abs/2611.03066v1) |
+| 2026-11-03 | PRIME: Predictive Routing of Interventions by Modeling Effects for Scientific Ideation | 待翻译 | [arXiv 2611.03055v1](https://arxiv.org/abs/2611.03055v1) |
+| 2026-11-03 | Unlocking Criminal Court Decisions: Flexible Information Extraction for Empirical Legal Research | 待翻译 | [arXiv 2611.03051v1](https://arxiv.org/abs/2611.03051v1) |
+| 2026-11-03 | VERS: Steering Reasoning Models by Editing Their Activation Explanations | 待翻译 | [arXiv 2611.03040v1](https://arxiv.org/abs/2611.03040v1) |
+| 2026-11-03 | VLM-as-a-Judge for Person Re-Identification | 待翻译 | [arXiv 2611.03027v1](https://arxiv.org/abs/2611.03027v1) |
+| 2026-11-03 | VizDAGuide: Misleading Chart Question Answering in Compact Vision Language Models via DAG-Structured Supervision | 待翻译 | [arXiv 2611.03023v1](https://arxiv.org/abs/2611.03023v1) |
+| 2026-11-03 | Q-CamTuning: A Multimodal Large Language Model for Fine-Grained Quality Reasoning in Livestreaming Camera Tuning | 待翻译 | [arXiv 2611.03007v1](https://arxiv.org/abs/2611.03007v1) |
+| 2026-11-03 | BLPO: Beyond-Local Policy Optimization for Long-Horizon LLM Agents | 待翻译 | [arXiv 2611.03005v1](https://arxiv.org/abs/2611.03005v1) |
+| 2026-11-03 | Finding Errors Is Not Enough: Selective Model Escalation for Entity-Targeted Sentiment Analysis | 待翻译 | [arXiv 2611.02989v1](https://arxiv.org/abs/2611.02989v1) |
+| 2026-11-03 | Distilling Literary Sentiment from LLM Annotations into an Ordinal BERT Model | 待翻译 | [arXiv 2611.02985v1](https://arxiv.org/abs/2611.02985v1) |
+| 2026-11-03 | CAREFUL-Bench: Effect-Aware, Judge-Free Evaluation of Multi-Turn LLM Function Calling | 待翻译 | [arXiv 2611.02978v1](https://arxiv.org/abs/2611.02978v1) |
+| 2026-11-03 | SHq: Learnable Grids for LLM Weight Quantization | 待翻译 | [arXiv 2611.02966v1](https://arxiv.org/abs/2611.02966v1) |
+| 2026-11-03 | Specification-Aware Predictive Uncertainty Decomposition | 待翻译 | [arXiv 2611.02956v1](https://arxiv.org/abs/2611.02956v1) |
+| 2026-11-03 | Action Verification through Conjecture and Refutation for Language Model Agents | 待翻译 | [arXiv 2611.02950v1](https://arxiv.org/abs/2611.02950v1) |
+| 2026-11-03 | PlagiaCorpus: A Bilingual, Adversarial, and Cross-Lingual Dataset for Forensic Plagiarism Detection | 待翻译 | [arXiv 2611.02940v1](https://arxiv.org/abs/2611.02940v1) |
+| 2026-11-03 | Why Tabular Foundation Models Excel on Relational Data They Have Never Seen | 待翻译 | [arXiv 2611.02936v1](https://arxiv.org/abs/2611.02936v1) |
+| 2026-11-03 | User Attributes and Political Ideology Shape LLM Receptiveness in Online Political Debates | 待翻译 | [arXiv 2611.02908v1](https://arxiv.org/abs/2611.02908v1) |
+| 2026-11-03 | What makes a theorem interesting? Operationalizing interestingness for open-ended exploration | 待翻译 | [arXiv 2611.02905v1](https://arxiv.org/abs/2611.02905v1) |
+| 2026-11-03 | Control Foundation Models across Changing Block Diagrams: Generalizing Time-Series Prediction to Dynamic Graphs | 待翻译 | [arXiv 2611.02900v1](https://arxiv.org/abs/2611.02900v1) |
+| 2026-11-03 | Zero-shot time-series foundation models against the Khepri v1.5 baselines for 96-hour carbon-intensity forecasts in nine Nordic bidding zones: a preregistered comparison | 待翻译 | [arXiv 2611.02895v1](https://arxiv.org/abs/2611.02895v1) |
+| 2026-11-03 | Voice-Native LLMs Hear Frustration but Do Not Listen to It | 待翻译 | [arXiv 2611.02893v1](https://arxiv.org/abs/2611.02893v1) |
+| 2026-11-03 | Tug of Watts: A study on the Energy - Accuracy Trade-off of Large Language Models on Medical Question Answering Tasks | 待翻译 | [arXiv 2611.02889v1](https://arxiv.org/abs/2611.02889v1) |
+| 2026-11-03 | Solv3R: 3D Looped Transformer as a Multi-view Solver | 待翻译 | [arXiv 2611.02857v1](https://arxiv.org/abs/2611.02857v1) |
+| 2026-11-03 | SpecOPD: Branch-Parallel On-Policy Distillation for Speculative Decoding | 待翻译 | [arXiv 2611.02846v1](https://arxiv.org/abs/2611.02846v1) |
+| 2026-11-03 | Math Foundation Formalization Agent: A General-Purpose Approach to Formalizing Mathematical Foundations | 待翻译 | [arXiv 2611.02843v1](https://arxiv.org/abs/2611.02843v1) |
+| 2026-11-03 | Reimagining computational quantum research with AI scientists | 待翻译 | [arXiv 2611.02833v1](https://arxiv.org/abs/2611.02833v1) |
+| 2026-11-03 | Think with Skills: Pseudocode Planning Before Execution for Advanced Reasoners | 待翻译 | [arXiv 2611.02830v1](https://arxiv.org/abs/2611.02830v1) |
+| 2026-11-03 | Disen-Forcing: Disentangling Semantic Anchoring from Motion for Autoregressive Video Diffusion | 待翻译 | [arXiv 2611.02822v1](https://arxiv.org/abs/2611.02822v1) |
+| 2026-11-03 | Predictive Safety Guardrails Do Not Always Make LLM Agents Safer | 待翻译 | [arXiv 2611.02815v1](https://arxiv.org/abs/2611.02815v1) |
+| 2026-11-03 | TRIO: Task Refinement with Individual Optimization for Retrieval-Augmented Generation | 待翻译 | [arXiv 2611.02810v1](https://arxiv.org/abs/2611.02810v1) |
+| 2026-11-03 | Creating Hybrid Interactive Narrative Systems with LLM: From Formal Description to Evaluation | 待翻译 | [arXiv 2611.02807v1](https://arxiv.org/abs/2611.02807v1) |
+| 2026-11-03 | SynForecast: Controlled Synthetic Time Series for Forecasting Research | 待翻译 | [arXiv 2611.02802v1](https://arxiv.org/abs/2611.02802v1) |
+| 2026-11-03 | DrawOffer: Evidence-Grounded Longitudinal User-State Modeling for Career Support | 待翻译 | [arXiv 2611.02793v1](https://arxiv.org/abs/2611.02793v1) |
+| 2026-11-03 | PGuard: A Native, Streaming, and Plug-in Guardrail for Multimodal Large Language Models | 待翻译 | [arXiv 2611.02791v1](https://arxiv.org/abs/2611.02791v1) |
+| 2026-11-03 | HLSClaw: Bringing Vibe Coding to High-Level Synthesis through Skill-Based Agentic Harness | 待翻译 | [arXiv 2611.02784v1](https://arxiv.org/abs/2611.02784v1) |
+| 2026-11-03 | Lookahead Prediction-Guided Adaptive Visual Refocusing for Interleaved Multimodal Reasoning | 待翻译 | [arXiv 2611.02780v1](https://arxiv.org/abs/2611.02780v1) |
+| 2026-11-03 | Stop Handcrafting Your Engine! GenDB-V: Towards AI-Generated and Formally Verified Database Systems | 待翻译 | [arXiv 2611.02779v1](https://arxiv.org/abs/2611.02779v1) |
+| 2026-11-03 | Unlocking the Potential of Vision Foundation Models for Multi-Task Dense Prediction via Mixture of Task Adapters | 待翻译 | [arXiv 2611.02769v1](https://arxiv.org/abs/2611.02769v1) |
+| 2026-11-03 | Is your LLM an Agressive Narcissist with Depression? Analyzing Psychological Portraits of Large Language Models | 待翻译 | [arXiv 2611.02757v1](https://arxiv.org/abs/2611.02757v1) |
+| 2026-11-03 | Investigating the effects of the patch size in Time Series Foundation Models | 待翻译 | [arXiv 2611.02750v1](https://arxiv.org/abs/2611.02750v1) |
+| 2026-11-03 | Replay for LLM Continual Learning with Multi-Teacher On-Policy Distillation | 待翻译 | [arXiv 2611.02746v1](https://arxiv.org/abs/2611.02746v1) |
+| 2026-11-03 | AffToM: Benchmarking Recursive Affective Theory of Mind in Dynamic Multi-Party Interactions | 待翻译 | [arXiv 2611.02725v1](https://arxiv.org/abs/2611.02725v1) |
+| 2026-11-03 | IssueLighter: An Issue Type-Aware LLM Agent for Issue Report Validity Assessment | 待翻译 | [arXiv 2611.02721v1](https://arxiv.org/abs/2611.02721v1) |
+| 2026-11-03 | Human-Supervised Artificial Intelligence Researchers in Electric Power Systems: Knowledge, Physics, Simulation, and Governance for Large Language Models | 待翻译 | [arXiv 2611.02711v1](https://arxiv.org/abs/2611.02711v1) |
+| 2026-11-03 | Hindsight Credit Assignment over Trees for Agentic RL | 待翻译 | [arXiv 2611.02706v1](https://arxiv.org/abs/2611.02706v1) |
+| 2026-11-03 | GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation | 待翻译 | [arXiv 2611.02698v1](https://arxiv.org/abs/2611.02698v1) |
+| 2026-11-03 | LLMs Cannot Be Neutral: Gender Sensitivity Across Candidates, Evaluators, and Models | 待翻译 | [arXiv 2611.02692v1](https://arxiv.org/abs/2611.02692v1) |
+| 2026-11-03 | The Customer Never Sees the Goal: Measuring and Detecting Vulnerability-Targeted Manipulation in LLM Assistants | 待翻译 | [arXiv 2611.02689v1](https://arxiv.org/abs/2611.02689v1) |
+| 2026-11-03 | Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute | 待翻译 | [arXiv 2611.02688v1](https://arxiv.org/abs/2611.02688v1) |
+| 2026-11-03 | HistoTx: Early fusion of H&amp;E images and spatial transcriptomics at varying spatial transcriptomics resolution with self-supervised learning | 待翻译 | [arXiv 2611.02681v1](https://arxiv.org/abs/2611.02681v1) |
+| 2026-11-03 | Auditing Representation-Space Fraud Detection: A Bayesian IRL Framework for Calibrated Uncertainty and Its Limits | 待翻译 | [arXiv 2611.02673v1](https://arxiv.org/abs/2611.02673v1) |
+| 2026-11-03 | UPSHIFT: User Preference Steering from Human-AI Interaction Feedback Traces | 待翻译 | [arXiv 2611.02667v1](https://arxiv.org/abs/2611.02667v1) |
+| 2026-11-03 | Train the Sampler You Run: Few-Step Masked Diffusion Language Models via Mixture-Likelihood Fine-Tuning | 待翻译 | [arXiv 2611.02666v1](https://arxiv.org/abs/2611.02666v1) |
+| 2026-11-03 | PriCBMs: Multi-granular Concept Bottleneck Vision-Language Models for Visual Privacy Recognition | 待翻译 | [arXiv 2611.02661v1](https://arxiv.org/abs/2611.02661v1) |
+| 2026-11-03 | OctreeSplat: Hierarchical Octree-Guided Feed-Forward Gaussian Splatting | 待翻译 | [arXiv 2611.02658v1](https://arxiv.org/abs/2611.02658v1) |
+| 2026-11-03 | SearchInject: Retrieval Exposure Control for Indirect Prompt Injection in Language-Model Search | 待翻译 | [arXiv 2611.02643v1](https://arxiv.org/abs/2611.02643v1) |
+| 2026-11-03 | Variable names provide priors: semantic grounding enables data-efficient numerical prediction by large language models | 待翻译 | [arXiv 2611.02637v1](https://arxiv.org/abs/2611.02637v1) |
+| 2026-11-03 | Widening Harm Evaluation Coverage with a Judge that Reads the World | 待翻译 | [arXiv 2611.02624v1](https://arxiv.org/abs/2611.02624v1) |
+| 2026-11-03 | Adaptive Localization of Knowledge Negation for Continual LLM Unlearning | 待翻译 | [arXiv 2611.02620v1](https://arxiv.org/abs/2611.02620v1) |
+| 2026-11-03 | Whitened Advantage Summation Policy Optimization: Correlation-Aware Aggregation for Multi-Reward Reinforcement Learning | 待翻译 | [arXiv 2611.02609v1](https://arxiv.org/abs/2611.02609v1) |
+| 2026-11-03 | StateFence: Task-State Protection Against Evidence-Chain Contamination in Blue-Team LLM Agents | 待翻译 | [arXiv 2611.02605v1](https://arxiv.org/abs/2611.02605v1) |
+| 2026-11-03 | They Know Where It Is, But Not What It Says: A Bilingual Hallucination Benchmark of Hadith Recall in Open LLMs | 待翻译 | [arXiv 2611.02587v1](https://arxiv.org/abs/2611.02587v1) |
+| 2026-11-03 | From Language to Country to Valence: A Multilingual Audit of Stereotype Bias Across LLMs | 待翻译 | [arXiv 2611.02585v1](https://arxiv.org/abs/2611.02585v1) |
+| 2026-11-03 | BasisKV: Value Latents for Communication and Key Routing | 待翻译 | [arXiv 2611.02583v1](https://arxiv.org/abs/2611.02583v1) |
+| 2026-11-03 | SMILE: A Structured Multi-Agent Clinical Reasoning for Liver Ultrasound Understanding | 待翻译 | [arXiv 2611.02581v1](https://arxiv.org/abs/2611.02581v1) |
+| 2026-11-03 | RLVR Sharpens the Pencil, Not the Mind | 待翻译 | [arXiv 2611.02574v1](https://arxiv.org/abs/2611.02574v1) |
+| 2026-11-03 | Organizational Learning in Materials Discovery Campaigns: Which Databases, Calculations, and Agent Teams Pay Off | 待翻译 | [arXiv 2611.02571v1](https://arxiv.org/abs/2611.02571v1) |
+| 2026-11-03 | CR-Bench-v2: Evaluating the Real-World Utility of AI Code Review Agents | 待翻译 | [arXiv 2611.02566v1](https://arxiv.org/abs/2611.02566v1) |
+| 2026-11-03 | PixelBench: Can LLMs Understand and Generate Images Pixel by Pixel? | 待翻译 | [arXiv 2611.02540v1](https://arxiv.org/abs/2611.02540v1) |
+| 2026-11-03 | FORGE: Fault-Oriented Rework Code Generation for Executable Interlocking Assembly | 待翻译 | [arXiv 2611.02536v1](https://arxiv.org/abs/2611.02536v1) |
+| 2026-11-03 | Tune the Baseline First: Most of Muon's Scaled Weight Decay Gain Is a Tuning Gap, but Its Small Real Advantage Grows With Model Size | 待翻译 | [arXiv 2611.02529v1](https://arxiv.org/abs/2611.02529v1) |
+| 2026-11-03 | Ranked but Not Stopped: Detecting Prompt-Injection Hijacks from Typed Decision Models' Output Probabilities | 待翻译 | [arXiv 2611.02522v1](https://arxiv.org/abs/2611.02522v1) |
+| 2026-11-03 | MedHEB: Benchmarking Medical Embeddings Across Heterogeneous Clinical Evidence | 待翻译 | [arXiv 2611.02519v1](https://arxiv.org/abs/2611.02519v1) |
+| 2026-11-03 | Cumulative and Audited Guardrail Tool Evolution for LLM Agent Safety | 待翻译 | [arXiv 2611.02516v1](https://arxiv.org/abs/2611.02516v1) |
+| 2026-11-03 | Latent Spectral Prompting for Multimodal Hyperspectral Object Tracking | 待翻译 | [arXiv 2611.02512v1](https://arxiv.org/abs/2611.02512v1) |
+| 2026-11-03 | A balloon effect: ban one channel and a hidden trait finds another | 待翻译 | [arXiv 2611.02509v1](https://arxiv.org/abs/2611.02509v1) |
+| 2026-11-03 | Towards Multi-Value Alignment via Value Localization in LLMs | 待翻译 | [arXiv 2611.02503v1](https://arxiv.org/abs/2611.02503v1) |
+| 2026-11-03 | SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding | 待翻译 | [arXiv 2611.02501v1](https://arxiv.org/abs/2611.02501v1) |
+| 2026-11-03 | Semantic Caches for LLM Web Services Leave Their Error Budget Unspent | 待翻译 | [arXiv 2611.02498v1](https://arxiv.org/abs/2611.02498v1) |
+| 2026-11-03 | Same Sentence, Different Construct: Identity-Swapped Rationales Reveal Measurement Non-Invariance in LLM Hate Speech Classifiers | 待翻译 | [arXiv 2611.02491v1](https://arxiv.org/abs/2611.02491v1) |
+| 2026-11-03 | RecRSI: Mechanism-Guided Discovery of Recommendation Algorithms | 待翻译 | [arXiv 2611.02487v1](https://arxiv.org/abs/2611.02487v1) |
+| 2026-11-03 | Benchmark of THReD: Evaluating an LLM Agent and Its Preprocessing Tools for Turning Electronic Health Records into AI-Ready Datasets | 待翻译 | [arXiv 2611.02484v1](https://arxiv.org/abs/2611.02484v1) |
+| 2026-11-03 | Training Autoregressive Language Models on Rounded, Bounded, and Censored Numerical Labels via Exact Likelihood | 待翻译 | [arXiv 2611.02461v1](https://arxiv.org/abs/2611.02461v1) |
+| 2026-11-03 | RLiD: Reinforcement Learning in the Decision Plane for Language Agents and LLMs | 待翻译 | [arXiv 2611.02455v1](https://arxiv.org/abs/2611.02455v1) |
+| 2026-11-03 | RecGroupMemory: Feedback-Aware Cohort Memory for E-Commerce Recommendation | 待翻译 | [arXiv 2611.02453v1](https://arxiv.org/abs/2611.02453v1) |
+| 2026-11-03 | As Expected? Efficient LLM Planning via Expectation-Observation Consistency Verification | 待翻译 | [arXiv 2611.02438v1](https://arxiv.org/abs/2611.02438v1) |
+| 2026-11-03 | Blueprint2CAD: Benchmarking Foundation Models on Engineering Drawing-to-CAD Render Correspondence | 待翻译 | [arXiv 2611.02433v1](https://arxiv.org/abs/2611.02433v1) |
+| 2026-11-03 | Diagnosing Model--Item Interactions in Language Model Benchmarks with LSIRM | 待翻译 | [arXiv 2611.02432v1](https://arxiv.org/abs/2611.02432v1) |
+| 2026-11-03 | SGR-OPSD: Learning from Subgoal Plans with Graph-Regularized Credit Assignment for Agentic Reinforcement Learning | 待翻译 | [arXiv 2611.02414v1](https://arxiv.org/abs/2611.02414v1) |
+| 2026-11-03 | Solver-Like Behavior in Large Language Models as Formalizers | 待翻译 | [arXiv 2611.02395v1](https://arxiv.org/abs/2611.02395v1) |
+| 2026-11-03 | Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse | 待翻译 | [arXiv 2611.02391v1](https://arxiv.org/abs/2611.02391v1) |
+| 2026-11-03 | EviCast: Forecasting Retrieval Gains Through Shared Response Calibration | 待翻译 | [arXiv 2611.02387v1](https://arxiv.org/abs/2611.02387v1) |
+| 2026-11-03 | Beyond Accuracy: How Quantization Affects Coding Agents | 待翻译 | [arXiv 2611.02368v1](https://arxiv.org/abs/2611.02368v1) |
+| 2026-11-03 | Do Visual RL Gains Scale at Test Time? A Quantile View of Post-Training | 待翻译 | [arXiv 2611.02366v1](https://arxiv.org/abs/2611.02366v1) |
+| 2026-11-03 | GEAR: Generative Editing for Scene-Conditioned Outfit Retrieval for VR Travel | 待翻译 | [arXiv 2611.02363v1](https://arxiv.org/abs/2611.02363v1) |
+| 2026-11-03 | Prior Action Control Causally Alters Language-Model Plasticity | 待翻译 | [arXiv 2611.02362v1](https://arxiv.org/abs/2611.02362v1) |
+| 2026-11-03 | Agent Memory as Rate-Limited Filtering: Explicit State Outlasts Long Context Beyond a Reader-Dependent Horizon | 待翻译 | [arXiv 2611.02361v1](https://arxiv.org/abs/2611.02361v1) |
+| 2026-11-03 | Exploiting Textual Semantics for Robust Cross-View Object Correspondence | 待翻译 | [arXiv 2611.02356v1](https://arxiv.org/abs/2611.02356v1) |
+| 2026-11-03 | VisCodeBench: a new benchmark dataset for Text-to-Vis reflecting real-world practice | 待翻译 | [arXiv 2611.02353v1](https://arxiv.org/abs/2611.02353v1) |
+| 2026-11-03 | Which Words a Model Fears: From a Refusal Direction to a Vocabulary-Wide Fear Lexicon | 待翻译 | [arXiv 2611.02348v1](https://arxiv.org/abs/2611.02348v1) |
+| 2026-11-03 | MemShift: Separating Detection from Repair in LLM-Derived Personal Memory | 待翻译 | [arXiv 2611.02338v1](https://arxiv.org/abs/2611.02338v1) |
+| 2026-11-03 | Attribution-based diagnostics for single-cell foundation models | 待翻译 | [arXiv 2611.02335v1](https://arxiv.org/abs/2611.02335v1) |
+| 2026-11-03 | Does a Norwegian further-trained model give more outdated legal values than its base model? A preregistered paired comparison of Borealis 2 and Gemma 4 | 待翻译 | [arXiv 2611.02334v1](https://arxiv.org/abs/2611.02334v1) |
+| 2026-11-03 | When Does Adaptive Halting Win? Selection Rules Matter in Looped Language Models | 待翻译 | [arXiv 2611.02333v1](https://arxiv.org/abs/2611.02333v1) |
+| 2026-11-03 | LEANGUARD: Lean-Verified Guardrails for Tool-Using Agents | 待翻译 | [arXiv 2611.02332v1](https://arxiv.org/abs/2611.02332v1) |
+| 2026-11-03 | Spatial Transfusion: From Structured Spatial Scene Understanding to Generation and Editing | 待翻译 | [arXiv 2611.02330v1](https://arxiv.org/abs/2611.02330v1) |
+| 2026-11-03 | Findings-aware Language-Image Pretraining for CT Volume Interpretation | 待翻译 | [arXiv 2611.02327v1](https://arxiv.org/abs/2611.02327v1) |
+| 2026-11-03 | Accessed, never disclosed: Silent access to protected health information by medical artificial intelligence agents | 待翻译 | [arXiv 2611.02319v1](https://arxiv.org/abs/2611.02319v1) |
+| 2026-11-03 | A Capitulation Direction Emerges With Scale and Is Causally Load-Bearing Where Validation Is Strong: Eight Models, Two Families, and Five Measurement Hazards | 待翻译 | [arXiv 2611.02318v1](https://arxiv.org/abs/2611.02318v1) |
+| 2026-11-03 | Lie Routing Vision Language Models for View-Robust 3D Understanding | 待翻译 | [arXiv 2611.02306v1](https://arxiv.org/abs/2611.02306v1) |
+| 2026-11-03 | FactorSpec: Serving Exact Relational Constraints as Speculative Drafts | 待翻译 | [arXiv 2611.02297v1](https://arxiv.org/abs/2611.02297v1) |
+| 2026-11-03 | Toward Agentic AI-Ready Workflows in Built Environment Organizations: Knowledge Structures and Interoperability Challenges | 待翻译 | [arXiv 2611.02286v1](https://arxiv.org/abs/2611.02286v1) |
+| 2026-11-03 | SVD-Prune: Spectral Vision Token Pruning under Extreme Compression | 待翻译 | [arXiv 2611.02284v1](https://arxiv.org/abs/2611.02284v1) |
+| 2026-11-03 | Concise-9B: Removing the Slack from a Reasoning Model's Thinking | 待翻译 | [arXiv 2611.02278v1](https://arxiv.org/abs/2611.02278v1) |
+| 2026-11-03 | When the Text Is Silent: Memory Shortcuts and the Validity of LLM Annotation under Evidence Insufficiency | 待翻译 | [arXiv 2611.02273v1](https://arxiv.org/abs/2611.02273v1) |
+| 2026-11-03 | Current state of LLMs for Arabic dialectal machine translation | 待翻译 | [arXiv 2611.02271v1](https://arxiv.org/abs/2611.02271v1) |
+| 2026-11-03 | Beyond Binary Detection: Type-Aware Hallucination Analysis and Hierarchical Detection in Financial Question Answering | 待翻译 | [arXiv 2611.02258v1](https://arxiv.org/abs/2611.02258v1) |
+| 2026-11-03 | The 3-Tier Integrated Technology Risk Model for Occupational Safety and Health | 待翻译 | [arXiv 2611.02257v1](https://arxiv.org/abs/2611.02257v1) |
+| 2026-11-03 | Forecasting Earth Surface Change in Embedding Space | 待翻译 | [arXiv 2611.02211v1](https://arxiv.org/abs/2611.02211v1) |
+| 2026-11-03 | Depth Anyviewpoint? Evaluating Monocular Depth Over Viewpoint Sequences | 待翻译 | [arXiv 2611.02203v1](https://arxiv.org/abs/2611.02203v1) |
+| 2026-11-03 | Inner-Speech Decoding from EEG Across Three Corpora Under a Fixed Architecture and Protocol | 待翻译 | [arXiv 2611.02180v1](https://arxiv.org/abs/2611.02180v1) |
+| 2026-11-03 | Multi-Agent Collusion and the J-Space | 待翻译 | [arXiv 2611.02153v1](https://arxiv.org/abs/2611.02153v1) |
+| 2026-11-03 | GatedV: Self-Gated Values for Transformer Language Models | 待翻译 | [arXiv 2611.02145v1](https://arxiv.org/abs/2611.02145v1) |
+| 2026-11-03 | FOLLIE: Automated Reasoning over the First Dataset of Sentences with their First-Order Logical Representation for French | 待翻译 | [arXiv 2611.02129v1](https://arxiv.org/abs/2611.02129v1) |
+| 2026-11-03 | Consolidating Reasoning with Test-Time Training | 待翻译 | [arXiv 2611.02104v1](https://arxiv.org/abs/2611.02104v1) |
+| 2026-11-03 | When Delay Meets Drift: Physical Safety of Robot Foundation Models Is a Cross-Layer Problem | 待翻译 | [arXiv 2611.02101v1](https://arxiv.org/abs/2611.02101v1) |
+| 2026-11-03 | EarthJev: Calibrated, Non-Generative Answers to Natural-Language Questions about Sentinel-2 Land Cover | 待翻译 | [arXiv 2611.02096v1](https://arxiv.org/abs/2611.02096v1) |
+| 2026-11-03 | Bernoulli On-Policy Distillation: Don't Ignore High-Confidence Student Tokens | 待翻译 | [arXiv 2611.02093v1](https://arxiv.org/abs/2611.02093v1) |
+| 2026-11-03 | ParetoSaddler: Pareto-Guided Optimization of Agent Harnesses for Quality and Cost | 待翻译 | [arXiv 2611.02079v1](https://arxiv.org/abs/2611.02079v1) |
+| 2026-11-03 | Decoupled Predictive Decision Making: A Shared Conditional Predictor for Agents | 待翻译 | [arXiv 2611.02075v1](https://arxiv.org/abs/2611.02075v1) |
+| 2026-11-03 | State-Aware Virtual Patient Simulation for Training Psychiatrists in Challenging Clinical Scenarios | 待翻译 | [arXiv 2611.02067v1](https://arxiv.org/abs/2611.02067v1) |
+| 2026-11-03 | Fragility Is Not Reducible to Hardness: Conditional Causal Difficulty for LLMs | 待翻译 | [arXiv 2611.02065v1](https://arxiv.org/abs/2611.02065v1) |
+| 2026-11-03 | Do Embodied VLMs Actually Use Their Scene-Graph Memory? | 待翻译 | [arXiv 2611.02056v1](https://arxiv.org/abs/2611.02056v1) |
+| 2026-11-03 | Learning to Look: A Foundation for Visual Understanding | 待翻译 | [arXiv 2611.02053v1](https://arxiv.org/abs/2611.02053v1) |
+| 2026-11-03 | ECGJev: Question-Conditioned Option Scoring for 12-Lead ECG Interpretation | 待翻译 | [arXiv 2611.02041v1](https://arxiv.org/abs/2611.02041v1) |
+| 2026-11-03 | Scalar Smoothness Is One Point on a Besov Spectrum | 待翻译 | [arXiv 2611.02037v1](https://arxiv.org/abs/2611.02037v1) |
+| 2026-11-03 | How Green Is Your Manifesto? Scoring Environmental Positions in the 2024 EU Elections with an LLM Panel | 待翻译 | [arXiv 2611.02033v1](https://arxiv.org/abs/2611.02033v1) |
+| 2026-11-03 | SensOFormer: Foundation Models for Particle Accelerators | 待翻译 | [arXiv 2611.02031v1](https://arxiv.org/abs/2611.02031v1) |
+| 2026-11-03 | Query-efficient scan-and-search watermark localization | 待翻译 | [arXiv 2611.02030v1](https://arxiv.org/abs/2611.02030v1) |
+| 2026-11-03 | LARK: Lean-Assisted Reasoning for LLM-Generated GPU Kernels | 待翻译 | [arXiv 2611.02028v1](https://arxiv.org/abs/2611.02028v1) |
+| 2026-11-03 | Reconstruction as Spatial Evaluation: Diagnosing Cross-View Spatial Intelligence in Large Vision-Language Models | 待翻译 | [arXiv 2611.02026v1](https://arxiv.org/abs/2611.02026v1) |
+| 2026-11-03 | ClickSight: An LLM Framework for Interpreting Student Clickstreams Through Learning Strategies | 待翻译 | [arXiv 2611.02021v1](https://arxiv.org/abs/2611.02021v1) |
+| 2026-11-03 | Scaling Makes It Possible: How Large Models Master Impossible Languages | 待翻译 | [arXiv 2611.02015v1](https://arxiv.org/abs/2611.02015v1) |
+| 2026-11-03 | MedPsy: State-of-the-Art Small Medical Language Models for Efficient Edge Deployment | 待翻译 | [arXiv 2611.02011v1](https://arxiv.org/abs/2611.02011v1) |
+| 2026-11-03 | Retrieval-Enhanced Cultural Evaluation for Social Media Translation Training | 待翻译 | [arXiv 2611.02009v1](https://arxiv.org/abs/2611.02009v1) |
+| 2026-11-03 | NAS-PO: Native Attention-Strategy Policy Optimization for Vision-Language Models | 待翻译 | [arXiv 2611.02008v1](https://arxiv.org/abs/2611.02008v1) |
+| 2026-11-03 | To Align Long, Plan Short: Simulating Diverse Profile-Aligned Students by Realizing Short-Term Plans in Long-Horizon Learning Environments | 待翻译 | [arXiv 2611.02002v1](https://arxiv.org/abs/2611.02002v1) |
+| 2026-11-03 | TrackMem: Tracking Evolving Beliefs in Long-Horizon Financial Dialogue | 待翻译 | [arXiv 2611.02001v1](https://arxiv.org/abs/2611.02001v1) |
+| 2026-11-03 | Safety4DM: A Vision-Language Framework for Risk-Aware Dynamic Maps in Vehicle-Road-Cloud Collaborative Driving | 待翻译 | [arXiv 2611.01996v1](https://arxiv.org/abs/2611.01996v1) |
+| 2026-11-03 | RubricWorld: World Model-Guided Rubric Optimization for LLM Graders | 待翻译 | [arXiv 2611.01986v1](https://arxiv.org/abs/2611.01986v1) |
+| 2026-11-03 | Beyond Prompt Injection: The Tool Update Gap in LLM Agent Security | 待翻译 | [arXiv 2611.01976v1](https://arxiv.org/abs/2611.01976v1) |
+| 2026-11-03 | OC-OPD: Observation-coordinated Supervision for On-Policy Distillation | 待翻译 | [arXiv 2611.01965v1](https://arxiv.org/abs/2611.01965v1) |
+| 2026-11-03 | Towards Self-Evolving Narrative Systems: Real-Time Adaptation and Long-Term Optimization with LLMs | 待翻译 | [arXiv 2611.01954v1](https://arxiv.org/abs/2611.01954v1) |
+| 2026-11-03 | Tracing How Language Models Integrate Temporal Anchors into Factual Recall | 待翻译 | [arXiv 2611.01945v1](https://arxiv.org/abs/2611.01945v1) |
+| 2026-11-03 | Beyond Multimodal Emotion Conflict: Temporal Context-Aware Hidden Emotion Detection with Multimodal Large Language Models | 待翻译 | [arXiv 2611.01943v1](https://arxiv.org/abs/2611.01943v1) |
+| 2026-11-03 | ReWY: Faster Gradient Computation for Delta-Rule Attention Family | 待翻译 | [arXiv 2611.01940v1](https://arxiv.org/abs/2611.01940v1) |
+| 2026-11-03 | VLSplat: Vision-Language Guided Object-Centric 3D Gaussian Splatting via Scene Graph | 待翻译 | [arXiv 2611.01939v1](https://arxiv.org/abs/2611.01939v1) |
+| 2026-11-03 | TriPhysBench: Evaluating Physical Intelligence for Embodied Agents | 待翻译 | [arXiv 2611.01934v1](https://arxiv.org/abs/2611.01934v1) |
+| 2026-11-03 | Geometric Morphology Learning: Empowering Foundation Models from Structure to Spacetime Intelligence | 待翻译 | [arXiv 2611.01932v1](https://arxiv.org/abs/2611.01932v1) |
+| 2026-11-03 | RECEIPT: Measuring and Repairing the Return Assumption of LLM Agents in Web Service Operations | 待翻译 | [arXiv 2611.01930v1](https://arxiv.org/abs/2611.01930v1) |
+| 2026-11-03 | Is Your Long-Horizon Benchmark Really Deep? Measuring and Synthesizing Depth in Terminal Tasks | 待翻译 | [arXiv 2611.01927v1](https://arxiv.org/abs/2611.01927v1) |
+| 2026-11-03 | TAC-CoT: Tool-Empowered Implicit Chain-of-Thought via Interleaving Explicit Tokens | 待翻译 | [arXiv 2611.01926v1](https://arxiv.org/abs/2611.01926v1) |
+| 2026-11-03 | Vision-language classification of Torsades de Pointes risk from pseudo-coloured ECG images: do T-wave morphology and colour context help or hinder? | 待翻译 | [arXiv 2611.01921v1](https://arxiv.org/abs/2611.01921v1) |
+| 2026-11-03 | AgenticMobility: An Open-Source Platform for Multi-AI-Agent Mobility Dynamics | 待翻译 | [arXiv 2611.01918v1](https://arxiv.org/abs/2611.01918v1) |
+| 2026-11-03 | Who Asks, Who Answers: Linear Attention Builds the Query in Hybrid Language Models | 待翻译 | [arXiv 2611.01909v1](https://arxiv.org/abs/2611.01909v1) |
+| 2026-11-03 | Does reflective LLM feedback survive a wet-lab-scale label budget? | 待翻译 | [arXiv 2611.01908v1](https://arxiv.org/abs/2611.01908v1) |
+| 2026-11-03 | Don't Guess, Ask Wisely: Benchmarking and Training Proactive Elicitation in Open-Domain LLM Conversations | 待翻译 | [arXiv 2611.01878v1](https://arxiv.org/abs/2611.01878v1) |
+| 2026-11-03 | Quantizing Recurrent Language Models Is Easier Than You Think | 待翻译 | [arXiv 2611.01864v1](https://arxiv.org/abs/2611.01864v1) |
+| 2026-11-03 | Advances in Agentic Computer Graphics | 待翻译 | [arXiv 2611.01860v1](https://arxiv.org/abs/2611.01860v1) |
+| 2026-11-03 | Self-Evolving Agentic Workflows via Semantic Decomposition of Complex Tasks | 待翻译 | [arXiv 2611.01840v1](https://arxiv.org/abs/2611.01840v1) |
+| 2026-11-03 | NEIGHBOR: Aligning Service Behaviour and Evidence Use in an LLM Agent for Community Resident Services | 待翻译 | [arXiv 2611.01836v1](https://arxiv.org/abs/2611.01836v1) |
+| 2026-11-03 | ReFrame: Silence-Aware Compute Reclamation for Full-Duplex Speech Models | 待翻译 | [arXiv 2611.01835v1](https://arxiv.org/abs/2611.01835v1) |
+| 2026-11-03 | LegoEnv: Self-Evolving Agentic Environments via Modular Recombination | 待翻译 | [arXiv 2611.01834v1](https://arxiv.org/abs/2611.01834v1) |
+| 2026-11-03 | Shared relations, specific choices: conditional sensitivity and competing pathways in language models | 待翻译 | [arXiv 2611.01809v1](https://arxiv.org/abs/2611.01809v1) |
+| 2026-11-03 | Rubric-Based Assessment of Student Reports Using Small Language Models | 待翻译 | [arXiv 2611.01785v1](https://arxiv.org/abs/2611.01785v1) |
+| 2026-11-03 | MemRole: From Memories to Decisions for Long-Horizon Reasoning in Role-Playing Agents | 待翻译 | [arXiv 2611.01778v1](https://arxiv.org/abs/2611.01778v1) |
+| 2026-11-03 | ReCoG: Relative Node Contexts for Multi-Domain Graph Pre-training | 待翻译 | [arXiv 2611.01753v1](https://arxiv.org/abs/2611.01753v1) |
+| 2026-11-03 | Evolving Memory, Learning to Meta-Control: Test-Time Adaptation for Experience-augmented LLM Agents | 待翻译 | [arXiv 2611.01747v1](https://arxiv.org/abs/2611.01747v1) |
+| 2026-11-03 | Less but Sufficient: Relation Knowledge Selects Compact Knowledge-Graph Contexts, and What External Checks Can and Cannot Catch | 待翻译 | [arXiv 2611.01733v1](https://arxiv.org/abs/2611.01733v1) |
+| 2026-11-03 | MAC-Bench: Benchmarking Multi-Agent Collaboration via Interconnected Tasks | 待翻译 | [arXiv 2611.01728v1](https://arxiv.org/abs/2611.01728v1) |
+| 2026-11-03 | Delivered, Not Used: Evaluating Agent Memory at Its Point of Use | 待翻译 | [arXiv 2611.01718v1](https://arxiv.org/abs/2611.01718v1) |
+| 2026-11-03 | EarlySelectKV: Anticipatory KV Selection via Cross-Layer Query Proxies | 待翻译 | [arXiv 2611.01715v1](https://arxiv.org/abs/2611.01715v1) |
+| 2026-11-03 | MatMoE: Matryoshka Mixture-of-Experts with Dynamic Mixed-Precision Quantization for Efficient Inference | 待翻译 | [arXiv 2611.01704v1](https://arxiv.org/abs/2611.01704v1) |
+| 2026-11-03 | Just-in-Time Skill Retrieval via Long-Horizon State Tracking | 待翻译 | [arXiv 2611.01701v1](https://arxiv.org/abs/2611.01701v1) |
+| 2026-11-03 | SPAR: Experience-Driven Strategy Evolution in Multi-Session B2B Sales | 待翻译 | [arXiv 2611.01695v1](https://arxiv.org/abs/2611.01695v1) |
+| 2026-11-03 | Phase-wise MLLM Tuning for Multi-framework WebUI Code Generation | 待翻译 | [arXiv 2611.01692v1](https://arxiv.org/abs/2611.01692v1) |
+| 2026-11-03 | GaitFM: A Cross-Modal Foundation Model for Wearable Gait Assessment | 待翻译 | [arXiv 2611.01684v1](https://arxiv.org/abs/2611.01684v1) |
+| 2026-11-03 | Leveraging 2D Foundation Priors for Generalized Category Discovery under Test-Time Adaptation in 3D LiDAR Segmentation | 待翻译 | [arXiv 2611.01682v1](https://arxiv.org/abs/2611.01682v1) |
+| 2026-11-03 | MMCoT$^3$: Empowering 3D Scene Understanding with 3D-Text Interleaved Multi-Modal Chain-of-Thought Reasoning | 待翻译 | [arXiv 2611.01676v1](https://arxiv.org/abs/2611.01676v1) |
+| 2026-11-03 | GatedVLA with Camera-Based Emergency Braking: AlpaSim E2E Closed Loop Challenge Technical Report | 待翻译 | [arXiv 2611.01663v1](https://arxiv.org/abs/2611.01663v1) |
+| 2026-11-03 | EEG-HealthLLM: Hierarchical Adaptation of Large Language Models for Unified Heterogeneous EEG Health Assessment | 待翻译 | [arXiv 2611.01652v1](https://arxiv.org/abs/2611.01652v1) |
+| 2026-11-03 | UA-Depth: Uncertainty-Aware Depth Restoration for Material-Agnostic Object Manipulation | 待翻译 | [arXiv 2611.01645v1](https://arxiv.org/abs/2611.01645v1) |
+| 2026-11-03 | CREDO: Evidence-Conditioned Credit Assignment for Temporal Reasoning Agents | 待翻译 | [arXiv 2611.01643v1](https://arxiv.org/abs/2611.01643v1) |
+| 2026-11-03 | Benchmarking Vision-Language Models for Urdu Nastaliq Handwriting Recognition | 待翻译 | [arXiv 2611.01635v1](https://arxiv.org/abs/2611.01635v1) |
+| 2026-11-03 | BanglishDepYT: Depression Detection in Native Bengali Social Media with Emotion-Preserving Preprocessing and Domain-Adaptive Pretraining | 待翻译 | [arXiv 2611.01633v1](https://arxiv.org/abs/2611.01633v1) |
+| 2026-11-03 | Zero-shot evaluation of open vision-language models as System 1 decision models on radiology tasks | 待翻译 | [arXiv 2611.01631v1](https://arxiv.org/abs/2611.01631v1) |
+| 2026-11-03 | Seeing What Matters, Verifying What Pays: Load-Adaptive Speculative Decoding for Vision-Language Models | 待翻译 | [arXiv 2611.01617v1](https://arxiv.org/abs/2611.01617v1) |
+| 2026-11-03 | LLM-Enhanced Multimodal House Price Prediction using Structured, Textual, and Visual Features | 待翻译 | [arXiv 2611.01615v1](https://arxiv.org/abs/2611.01615v1) |
+| 2026-11-03 | NatureFusion: Rethinking Infrared and Visible Image Fusion as Natural Complementary Enhancement | 待翻译 | [arXiv 2611.01607v1](https://arxiv.org/abs/2611.01607v1) |
+| 2026-11-03 | SCOUT: Planning under Occlusion via Object-Centric World Model Rollouts | 待翻译 | [arXiv 2611.01600v1](https://arxiv.org/abs/2611.01600v1) |
+| 2026-11-03 | Impossible Code, Barely Changed Score: A Replay Study of Judge-Based Evaluation | 待翻译 | [arXiv 2611.01572v1](https://arxiv.org/abs/2611.01572v1) |
+| 2026-11-03 | &#92;textsc{ChatDify}: Automating End-to-End Dify Workflow Synthesis from Natural Language via Multi-Agent Collaboration | 待翻译 | [arXiv 2611.01563v1](https://arxiv.org/abs/2611.01563v1) |
+| 2026-11-03 | Can Large Language Models Extend Their Agentic Capabilities to Goal Pursuit in Open-Ended Multi-Turn Interaction? | 待翻译 | [arXiv 2611.01552v1](https://arxiv.org/abs/2611.01552v1) |
+| 2026-11-03 | Revisiting LLM Homogeneity Through a Multidimensional Lens | 待翻译 | [arXiv 2611.01549v1](https://arxiv.org/abs/2611.01549v1) |
+| 2026-11-03 | MoPort: A View-Aware 2D Interface for Motion Language Models | 待翻译 | [arXiv 2611.01541v1](https://arxiv.org/abs/2611.01541v1) |
+| 2026-11-03 | AR-RRG: Anatomy-Guided Retrieval-Driven Radiology Report Generation | 待翻译 | [arXiv 2611.01529v1](https://arxiv.org/abs/2611.01529v1) |
+| 2026-11-03 | Write Facts the Way Models Read Them: Lifting the Two-Hop Curse | 待翻译 | [arXiv 2611.01519v1](https://arxiv.org/abs/2611.01519v1) |
+| 2026-11-03 | VLMs Read Aloud: The Gap Between Recognizing and Using Visual Text | 待翻译 | [arXiv 2611.01517v1](https://arxiv.org/abs/2611.01517v1) |
+| 2026-11-03 | Label-Free Localization and Test-Time Suppression of CLIP's Typographic Circuits | 待翻译 | [arXiv 2611.01513v1](https://arxiv.org/abs/2611.01513v1) |
+| 2026-11-03 | Sweep Less, Steer More: Using Activation Steering Geometry for Reduced Hyperparameter Search | 待翻译 | [arXiv 2611.01496v1](https://arxiv.org/abs/2611.01496v1) |
+| 2026-11-03 | TopoSteer: Topological Layer Selection for Activation Steering in LLMs | 待翻译 | [arXiv 2611.01493v1](https://arxiv.org/abs/2611.01493v1) |
+| 2026-11-03 | Accounting for Irregular State Transitions through Belief Estimation in Online Medical Consultation | 待翻译 | [arXiv 2611.01474v1](https://arxiv.org/abs/2611.01474v1) |
+| 2026-11-03 | Causal Optimal-Transport Attention: Positional Priors and Length Extrapolation | 待翻译 | [arXiv 2611.01472v1](https://arxiv.org/abs/2611.01472v1) |
+| 2026-11-03 | See, Think, Use: Diagnosing Perception and Reasoning Failures in VLMs | 待翻译 | [arXiv 2611.01467v1](https://arxiv.org/abs/2611.01467v1) |
+| 2026-11-03 | DIMWIT: Directly Invoking Models Without Intensive Tuning | 待翻译 | [arXiv 2611.01463v1](https://arxiv.org/abs/2611.01463v1) |
+| 2026-11-03 | An auditable agentic pipeline for variant-to-gene prioritisation, validated against orthogonal functional evidence | 待翻译 | [arXiv 2611.01461v1](https://arxiv.org/abs/2611.01461v1) |
+| 2026-11-03 | Can Large Language Model Agents Learn by Watching Tutorial Videos? | 待翻译 | [arXiv 2611.01460v1](https://arxiv.org/abs/2611.01460v1) |
+| 2026-11-03 | CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging | 待翻译 | [arXiv 2611.01449v1](https://arxiv.org/abs/2611.01449v1) |
+| 2026-11-03 | I-PTC: Interactive Programmatic Tool Calling for Stateful Tool-Augmented Agents | 待翻译 | [arXiv 2611.01446v1](https://arxiv.org/abs/2611.01446v1) |
+| 2026-11-03 | FOCUS: Closed-Loop Attention Feedback for Efficient Vision-Language Understanding | 待翻译 | [arXiv 2611.01438v1](https://arxiv.org/abs/2611.01438v1) |
+| 2026-11-03 | Towards Fine-grained and Robust Detection of Human-AI Co-authorship | 待翻译 | [arXiv 2611.01427v1](https://arxiv.org/abs/2611.01427v1) |
+| 2026-11-03 | Latent Harness: Compiling Agent Behaviors into Post-Block Activation Shifts | 待翻译 | [arXiv 2611.01415v1](https://arxiv.org/abs/2611.01415v1) |
+| 2026-11-03 | Sensitivity Inflation from Cross-Record Precision Routing in Private Quantized Fine-Tuning | 待翻译 | [arXiv 2611.01411v1](https://arxiv.org/abs/2611.01411v1) |
+| 2026-11-03 | RAG-TRACE: Tracing Measurement Evidence and Diagnostic Completeness in AI-Generated ECG Reports | 待翻译 | [arXiv 2611.01409v1](https://arxiv.org/abs/2611.01409v1) |
+| 2026-11-03 | SpecUltra: A Unified Foundation Model for Heterogeneous Spectral Images | 待翻译 | [arXiv 2611.01396v1](https://arxiv.org/abs/2611.01396v1) |
+| 2026-11-03 | ERIA: An Instruction-Optimized Agent for Clinical EEG Reporting | 待翻译 | [arXiv 2611.01394v1](https://arxiv.org/abs/2611.01394v1) |
+| 2026-11-03 | Learning by Doing: Autonomously Compiling and Curating Agent Skills from Verified Traces | 待翻译 | [arXiv 2611.01386v1](https://arxiv.org/abs/2611.01386v1) |
+| 2026-11-03 | Information-Theoretic Design of Sparse Autoencoder-Based Steering | 待翻译 | [arXiv 2611.01378v1](https://arxiv.org/abs/2611.01378v1) |
+| 2026-11-03 | A Self-Exploring and Self-Evolving Paradigm for Adaptive Edge AI Development | 待翻译 | [arXiv 2611.01377v1](https://arxiv.org/abs/2611.01377v1) |
+| 2026-11-03 | XDecideBench: Evaluating Typed Decision Models and Confidence Policies Across Languages | 待翻译 | [arXiv 2611.01370v1](https://arxiv.org/abs/2611.01370v1) |
+| 2026-11-03 | ProofPatch: Reviewing Lean Statements and Keeping the Reviews Valid as Formalizations Evolve | 待翻译 | [arXiv 2611.01357v1](https://arxiv.org/abs/2611.01357v1) |
+| 2026-11-03 | Learned Surrogates of Three-Dimensional Magnetohydrodynamic Turbulence | 待翻译 | [arXiv 2611.01356v1](https://arxiv.org/abs/2611.01356v1) |
+| 2026-11-03 | Wrong Together: Shared Bias in User Simulation | 待翻译 | [arXiv 2611.01354v1](https://arxiv.org/abs/2611.01354v1) |
+| 2026-11-03 | MAPLE: A Multimodal Mobile Agent with Playbook-Learned Experience | 待翻译 | [arXiv 2611.01351v1](https://arxiv.org/abs/2611.01351v1) |
+| 2026-11-03 | J-Anchor: Defending Against Prefill Attacks via J-Space Selective Refusal Restoration | 待翻译 | [arXiv 2611.01342v1](https://arxiv.org/abs/2611.01342v1) |
+| 2026-11-03 | The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery | 待翻译 | [arXiv 2611.01334v1](https://arxiv.org/abs/2611.01334v1) |
+| 2026-11-03 | Large language models underrepresent malice and overreport virtue | 待翻译 | [arXiv 2611.01332v1](https://arxiv.org/abs/2611.01332v1) |
+| 2026-11-03 | Step-dLLM: Adaptive Step-aware Sparse Attention for Efficient Diffusion LLM Inference | 待翻译 | [arXiv 2611.01320v1](https://arxiv.org/abs/2611.01320v1) |
+| 2026-11-03 | AgentCBO: Causal Belief Routing for Bayesian Optimization under Unknown Graphs | 待翻译 | [arXiv 2611.01317v1](https://arxiv.org/abs/2611.01317v1) |
+| 2026-11-03 | Are Fake Citations a Form of Reward Hacking? A Pre-Registered Study of Post-Training and Citation Cues | 待翻译 | [arXiv 2611.01313v1](https://arxiv.org/abs/2611.01313v1) |
+| 2026-11-03 | What Do LLM Judges Actually Verify? Matched Controls and Record Gaps for Document Currency | 待翻译 | [arXiv 2611.01311v1](https://arxiv.org/abs/2611.01311v1) |
+| 2026-11-03 | When LLMs Modify Themselves: Convergence, Values, and Stopping in Iterative Self-Improvement | 待翻译 | [arXiv 2611.01304v1](https://arxiv.org/abs/2611.01304v1) |
+| 2026-11-03 | CuriousTogether: Implications of Curiosity and Cultural Grounding in Multi-Agent LLM Interactions | 待翻译 | [arXiv 2611.01301v1](https://arxiv.org/abs/2611.01301v1) |
+| 2026-11-03 | Learning What to Ask and What to Believe: Distilling a Variational Bayesian Agent into Language Models | 待翻译 | [arXiv 2611.01245v1](https://arxiv.org/abs/2611.01245v1) |
+| 2026-11-03 | The Brittle Compass: Navigating LLM Prompt Sensitivity in Slovak Migration Media Discourse | 待翻译 | [arXiv 2611.01219v1](https://arxiv.org/abs/2611.01219v1) |
+| 2026-11-03 | Do Earnings Calls Help Predict Financial Restatements? Evaluating Text Beyond Public Firm Information | 待翻译 | [arXiv 2611.01123v1](https://arxiv.org/abs/2611.01123v1) |
+| 2026-11-03 | StreamDuo: A Live Commentator and a Research Agent for Unseen Games | 待翻译 | [arXiv 2611.01120v1](https://arxiv.org/abs/2611.01120v1) |
+| 2026-11-03 | CompSkill: Compiling Execution Experience for Skill Retrieval | 待翻译 | [arXiv 2611.01115v1](https://arxiv.org/abs/2611.01115v1) |
+| 2026-11-03 | Scute: Exact Batched Serving for PEFT Adapters Beyond LoRA | 待翻译 | [arXiv 2611.01089v1](https://arxiv.org/abs/2611.01089v1) |
+| 2026-11-03 | Temperature, Not Knowledge: What Recursive Self-Training and Its Remedies Do to a Language Model's Confidence | 待翻译 | [arXiv 2611.01059v1](https://arxiv.org/abs/2611.01059v1) |
+| 2026-11-03 | SNAPPerf: Software-Aware Tabular Foundation Model for Retraining-Free Performance Prediction of Configurable Systems | 待翻译 | [arXiv 2611.00944v1](https://arxiv.org/abs/2611.00944v1) |
+| 2026-11-03 | Can Agentic AI Undermine Its Own Assurance Loop? Closed-Loop Dependency Assurance for Cognitive Network Digital Twins | 待翻译 | [arXiv 2611.00838v1](https://arxiv.org/abs/2611.00838v1) |
+| 2026-11-03 | AI Data Analysis: A New Approach - Multi-engine Joint State Data Analysis | 待翻译 | [arXiv 2611.00807v1](https://arxiv.org/abs/2611.00807v1) |
+| 2026-11-03 | CheXPoT: Post-Hoc Visual Verification and Correction of VLM-Generated Radiology Reports | 待翻译 | [arXiv 2611.00785v1](https://arxiv.org/abs/2611.00785v1) |
+| 2026-11-03 | A Tool in the Forward Pass: Frozen Tape Modules as Layers of a Small Language Model | 待翻译 | [arXiv 2611.00783v1](https://arxiv.org/abs/2611.00783v1) |
+| 2026-11-03 | Who Schedules Agent Memory? A Sidecar Approach to Long-Horizon Tasks | 待翻译 | [arXiv 2611.00779v1](https://arxiv.org/abs/2611.00779v1) |
+| 2026-11-03 | Designing Informative Actions: Action Construction for Long-Horizon Research Agents | 待翻译 | [arXiv 2611.00773v1](https://arxiv.org/abs/2611.00773v1) |
+| 2026-11-03 | DramaVQA: Probing Detailed Understanding of Ultra-Long TV Dramas | 待翻译 | [arXiv 2611.00769v1](https://arxiv.org/abs/2611.00769v1) |
+| 2026-11-03 | Reading Between the Chapters: A Graph-Free RAG Rebuilt With AI and Human Feedback | 待翻译 | [arXiv 2611.00752v1](https://arxiv.org/abs/2611.00752v1) |
+| 2026-11-03 | Can Jev Improve Demonstration Retrieval for In-Context Learning? | 待翻译 | [arXiv 2611.00737v1](https://arxiv.org/abs/2611.00737v1) |
+| 2026-11-03 | Constructing Budgeted KGW Evasion through Token-Event Evidence Replacement | 待翻译 | [arXiv 2611.00726v1](https://arxiv.org/abs/2611.00726v1) |
+| 2026-11-03 | Architecting Fairness-Aware LLM Interactions | 待翻译 | [arXiv 2611.00723v1](https://arxiv.org/abs/2611.00723v1) |
+| 2026-11-03 | Uncertainty Aware Quality-Diversity Optimization For Offline Biological Sequence Design | 待翻译 | [arXiv 2611.00716v1](https://arxiv.org/abs/2611.00716v1) |
+| 2026-11-03 | Density-Aware Calibration for Resource-Efficient Medical Vision-Language Models | 待翻译 | [arXiv 2611.00684v1](https://arxiv.org/abs/2611.00684v1) |
+| 2026-11-03 | Precedent Labels and Facts Shift LLM Approval Decisions in Opposite Directions | 待翻译 | [arXiv 2611.00672v1](https://arxiv.org/abs/2611.00672v1) |
+| 2026-11-03 | Versatile Graph Foundation Models from Frozen Time-Series Foundation Models via Parallel Flows | 待翻译 | [arXiv 2611.00670v1](https://arxiv.org/abs/2611.00670v1) |
+| 2026-11-03 | Designing Behavioral Profiles for Language Model Simulation of Out-of-Distribution Human Behavior | 待翻译 | [arXiv 2611.00661v1](https://arxiv.org/abs/2611.00661v1) |
+| 2026-11-03 | Heirloom: Carrying a Phone's Personalization Across Base-Model Generations | 待翻译 | [arXiv 2611.00650v1](https://arxiv.org/abs/2611.00650v1) |
+| 2026-11-03 | Selecting LLM-Generated Hypotheses Raises Truth Beyond What an LLM Panel Expects: A Pre-registered Study on NAS-Bench-201 and HPOBench | 待翻译 | [arXiv 2611.00643v1](https://arxiv.org/abs/2611.00643v1) |
+| 2026-11-03 | Bridging Singular Learning Theory and Mechanistic Interpretability at the Billion-Parameter Scale | 待翻译 | [arXiv 2611.00640v1](https://arxiv.org/abs/2611.00640v1) |
+| 2026-11-03 | ElectroChemLLM: A Multimodal LLM Pipeline for High-Fidelity Electrochemical Informatics | 待翻译 | [arXiv 2611.00638v1](https://arxiv.org/abs/2611.00638v1) |
+| 2026-11-03 | KV-Cache Patching: Tracing How and Where Fine-Tuned Behaviors Arise | 待翻译 | [arXiv 2610.41480v1](https://arxiv.org/abs/2610.41480v1) |
+| 2026-11-03 | Operon-S1: a fast decision controller for long-horizon biomedical agents | 待翻译 | [arXiv 2610.41350v1](https://arxiv.org/abs/2610.41350v1) |
+| 2026-11-03 | SERIAL-7: Deriving, Realizing, and Preserving Machine-Verifiable Outputs Across Representations | 待翻译 | [arXiv 2610.41308v1](https://arxiv.org/abs/2610.41308v1) |
+| 2026-11-03 | MEMIG: Self-evolving Memory Construction for Antibody Optimization | 待翻译 | [arXiv 2610.41245v1](https://arxiv.org/abs/2610.41245v1) |
+| 2026-11-03 | RTL-Interact: Training EDA-Interactive Models for Multi-Task RTL Design | 待翻译 | [arXiv 2610.41225v1](https://arxiv.org/abs/2610.41225v1) |
+| 2026-11-03 | TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents | 待翻译 | [arXiv 2610.41216v1](https://arxiv.org/abs/2610.41216v1) |
+| 2026-11-03 | Beyond Response Scoring: An AI-aware Cognitive Supervision Framework for Automated Mathematical Short Answer Grading | 待翻译 | [arXiv 2610.41215v1](https://arxiv.org/abs/2610.41215v1) |
+| 2026-11-03 | LLM Detoxification via Transition-Aware Reward-Guided Representation Sampling | 待翻译 | [arXiv 2610.41165v1](https://arxiv.org/abs/2610.41165v1) |
+| 2026-11-03 | HyperRepair: Recovering Forgotten General Capabilities of Fine-Tuned Language Models | 待翻译 | [arXiv 2610.41147v1](https://arxiv.org/abs/2610.41147v1) |
+| 2026-11-03 | Language Models Show a "Women-Are-Wonderful" Effect in Blame Attribution That is Not Just Leniency | 待翻译 | [arXiv 2610.41116v1](https://arxiv.org/abs/2610.41116v1) |
+| 2026-11-03 | EDU-Jev Training System-One Decision Models for Education | 待翻译 | [arXiv 2610.41079v1](https://arxiv.org/abs/2610.41079v1) |
+| 2026-11-03 | BABA-Bench: Evaluating Long-Horizon Patient-Advocacy Agents | 待翻译 | [arXiv 2610.41076v1](https://arxiv.org/abs/2610.41076v1) |
+| 2026-11-03 | Characterizing Recoverable Expert-Utilization Signatures in Fine-Tuned Mixture-of-Experts LLMs | 待翻译 | [arXiv 2610.41039v1](https://arxiv.org/abs/2610.41039v1) |
+| 2026-11-03 | CLIC: Closed-Loop Intent Consistency for Securing LLM-Driven Control in Open RAN | 待翻译 | [arXiv 2610.40744v1](https://arxiv.org/abs/2610.40744v1) |
+| 2026-11-03 | Certified Behavioral Retention for Continual Adaptation with Held-Out Anchors | 待翻译 | [arXiv 2610.40740v1](https://arxiv.org/abs/2610.40740v1) |
+| 2026-11-03 | Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use | 待翻译 | [arXiv 2610.40738v1](https://arxiv.org/abs/2610.40738v1) |
+| 2026-11-03 | MetaVul: Agentic Harness Discovery for Vulnerability Detection | 待翻译 | [arXiv 2610.40721v1](https://arxiv.org/abs/2610.40721v1) |
+| 2026-11-03 | Characterizing LLM Agent Behaviors in Module Shadowing Environments | 待翻译 | [arXiv 2610.40716v1](https://arxiv.org/abs/2610.40716v1) |
+| 2026-11-03 | Probing Spatial State Representations in Visual Foundation Models | 待翻译 | [arXiv 2610.40636v1](https://arxiv.org/abs/2610.40636v1) |
+| 2026-11-03 | Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns | 待翻译 | [arXiv 2610.40563v1](https://arxiv.org/abs/2610.40563v1) |
+| 2026-11-03 | Homebrewed SLMs: Autoregressive and Masked Diffusion Language Models Built at Home for Portuguese | 待翻译 | [arXiv 2610.40533v1](https://arxiv.org/abs/2610.40533v1) |
+| 2026-11-03 | Agentic University: Collaborative Agents for Personalized Learning | 待翻译 | [arXiv 2610.40492v1](https://arxiv.org/abs/2610.40492v1) |
+| 2026-11-03 | Latent Path Exploration via Potential-Guided Subtrajectory Balance | 待翻译 | [arXiv 2610.40283v1](https://arxiv.org/abs/2610.40283v1) |
+| 2026-11-03 | What Breaks When Facts Become Stories? The Distortions Source-Agreement Metrics Miss When Models Retell Real Events | 待翻译 | [arXiv 2610.39500v2](https://arxiv.org/abs/2610.39500v2) |
+| 2026-11-03 | Routed Continual Learning | 待翻译 | [arXiv 2610.38796v1](https://arxiv.org/abs/2610.38796v1) |
+| 2026-11-03 | Latent Decision Flow Rewards for Clinical Guideline Reasoning | 待翻译 | [arXiv 2610.38709v1](https://arxiv.org/abs/2610.38709v1) |
+| 2026-11-03 | Knowledge-structured and evidence-aware semantic self-distillation for glomerular pathology foundation model | 待翻译 | [arXiv 2610.38346v2](https://arxiv.org/abs/2610.38346v2) |
+| 2026-11-03 | Jailbreak Connectivity: Towards Diverse, Transferable, and Universal Multimodal Large Language Model Jailbreak | 待翻译 | [arXiv 2610.38091v1](https://arxiv.org/abs/2610.38091v1) |
+| 2026-11-03 | Interpretable Feature Discovery from Unstructured Data Using LLMs and Statistical Choice Models | 待翻译 | [arXiv 2610.38082v1](https://arxiv.org/abs/2610.38082v1) |
+| 2026-11-03 | Can Event Detectors Leave the Broadcast Camera? Evidence from Tennis | 待翻译 | [arXiv 2610.38042v1](https://arxiv.org/abs/2610.38042v1) |
+| 2026-11-03 | Are Seismic Foundation Models More Than Glorified Feature Extractors? | 待翻译 | [arXiv 2610.38003v1](https://arxiv.org/abs/2610.38003v1) |
+| 2026-11-03 | Responsible Quantum Machine Learning for Medical Imaging: A Fairness Audit Across Sensitive Subgroups | 待翻译 | [arXiv 2610.37819v1](https://arxiv.org/abs/2610.37819v1) |
+| 2026-11-03 | Locating Sycophancy Across Training Stages in Open Language Models | 待翻译 | [arXiv 2610.37788v1](https://arxiv.org/abs/2610.37788v1) |
+| 2026-11-03 | Beyond Similarity Search: Knowledge Graph Metadata Enrichment for Enterprise Retrieval-Augmented Generation | 待翻译 | [arXiv 2610.37728v1](https://arxiv.org/abs/2610.37728v1) |
+| 2026-11-03 | Timestral | 待翻译 | [arXiv 2610.37585v1](https://arxiv.org/abs/2610.37585v1) |
+| 2026-11-03 | Collective Dynamics of Self-Reinforcement: How Cross-Task Coupling Drives Policy Collapse in Unsupervised RLVR | 待翻译 | [arXiv 2610.37553v1](https://arxiv.org/abs/2610.37553v1) |
+| 2026-11-03 | What Carries Forward? Pretraining Disclosure Across Language Model Releases | 待翻译 | [arXiv 2610.37465v1](https://arxiv.org/abs/2610.37465v1) |
 | 2026-11-03 | Character-Name Concentration in LLM Fiction: Measuring Displacement and Mitigating Repetition | 待翻译 | [arXiv 2611.01284v1](https://arxiv.org/abs/2611.01284v1) |
 | 2026-11-03 | OntoDoc: Automatically Generating Ontology Resource Descriptions | 待翻译 | [arXiv 2611.01276v1](https://arxiv.org/abs/2611.01276v1) |
 | 2026-11-03 | Geometry of Confabulation and Refusal in Small Language Models | 待翻译 | [arXiv 2611.01272v1](https://arxiv.org/abs/2611.01272v1) |
@@ -465,7 +830,7 @@
 | 2026-11-03 | The Quine Test: How Much of a Model's Self Survives Its Own Description? | 待翻译 | [arXiv 2610.38726v1](https://arxiv.org/abs/2610.38726v1) |
 | 2026-11-03 | inkGround: Benchmarking Fine-grained Visual Grounding Capabilities of Vision-Language Models for Cursive Handwriting in the Wild | 待翻译 | [arXiv 2610.38720v1](https://arxiv.org/abs/2610.38720v1) |
 | 2026-11-03 | Learning Scientific Trajectories to Predict Future Biomedical Discoveries | 待翻译 | [arXiv 2610.38719v1](https://arxiv.org/abs/2610.38719v1) |
-| 2026-11-03 | Beyond fabrication: Misattributed numbers in papers written by AI research agents | 待翻译 | [arXiv 2610.38691v1](https://arxiv.org/abs/2610.38691v1) |
+| 2026-11-03 | Beyond fabrication: Misattributed numbers in papers written by AI research agents | 待翻译 | [arXiv 2610.38691v2](https://arxiv.org/abs/2610.38691v2) |
 | 2026-11-03 | Deogen: Automatic Benchmark Generation for Reasoning over Policies | 待翻译 | [arXiv 2610.38687v1](https://arxiv.org/abs/2610.38687v1) |
 | 2026-11-03 | On the Generalization Gap of Streaming Federated Learning with Markovian Data | 待翻译 | [arXiv 2610.38686v1](https://arxiv.org/abs/2610.38686v1) |
 | 2026-11-03 | Quantum-Inspired Pairwise Ranking Aggregation via Active LLM Feedback | 待翻译 | [arXiv 2610.38683v1](https://arxiv.org/abs/2610.38683v1) |
@@ -479,7 +844,7 @@
 | 2026-11-03 | Data Scaling Laws in Stereo Matching: From In-domain Fitting to Cross-domain Generalization | 待翻译 | [arXiv 2610.38600v1](https://arxiv.org/abs/2610.38600v1) |
 | 2026-11-03 | Two-Stage Clipping: Linear-Time Approximate and Exact Mixed-Norm Projections for Transformers | 待翻译 | [arXiv 2610.38598v1](https://arxiv.org/abs/2610.38598v1) |
 | 2026-11-03 | Rethinking LLM Jailbreak Evaluation: Continuous Risk Landscapes Beyond Binary Outcomes | 待翻译 | [arXiv 2610.38595v1](https://arxiv.org/abs/2610.38595v1) |
-| 2026-11-03 | SpectralTF-MAE: A Pre-trained Spectral Foundation Model for Tokamak Fusion Plasma Diagnostics | 待翻译 | [arXiv 2610.38593v1](https://arxiv.org/abs/2610.38593v1) |
+| 2026-11-03 | SpectralTF-MAE: A Pre-trained Spectral Foundation Model for Tokamak Fusion Plasma Diagnostics | 待翻译 | [arXiv 2610.38593v2](https://arxiv.org/abs/2610.38593v2) |
 | 2026-11-03 | Do Audio LLMs HEAR Pain? Tracing Acoustic Evidence from Speech to Language Reasoning | 待翻译 | [arXiv 2610.38570v1](https://arxiv.org/abs/2610.38570v1) |
 | 2026-11-03 | Co-Evolving Policy and Rubric via Capability Awareness for Open-Ended Generation | 待翻译 | [arXiv 2610.38566v1](https://arxiv.org/abs/2610.38566v1) |
 | 2026-11-03 | Implicit Minor Detection from Multi-Turn Dialogue in High-Risk AI Interactions: A Constrained Self-Evolving LLM Harness | 待翻译 | [arXiv 2610.38546v1](https://arxiv.org/abs/2610.38546v1) |
@@ -504,7 +869,7 @@
 | 2026-11-03 | Compute Has Shape: Self-Morphing the Internal Computation of Frozen LLMs | 待翻译 | [arXiv 2610.38382v1](https://arxiv.org/abs/2610.38382v1) |
 | 2026-11-03 | TCC-RAG: Temporal Causal Chain-Guided RAG for Temporal Knowledge Graph Question Answering | 待翻译 | [arXiv 2610.38366v1](https://arxiv.org/abs/2610.38366v1) |
 | 2026-11-03 | Manifest-Assisted Retrieval in Artificial Intelligence Search: Evidence Gaps and a Security Evaluation | 待翻译 | [arXiv 2610.38361v1](https://arxiv.org/abs/2610.38361v1) |
-| 2026-11-03 | Encode Once, Answer Many: Internalizing Context via Parametric Flow | 待翻译 | [arXiv 2610.38356v1](https://arxiv.org/abs/2610.38356v1) |
+| 2026-11-03 | Encode Once, Answer Many: Internalizing Context via Parametric Flow | 待翻译 | [arXiv 2610.38356v2](https://arxiv.org/abs/2610.38356v2) |
 | 2026-11-03 | WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video | 待翻译 | [arXiv 2610.38352v1](https://arxiv.org/abs/2610.38352v1) |
 | 2026-11-03 | Statutory Article Retrieval from Arabic Judicial Narratives: Family Law and Law of Evidence in Saudi Arabia | 待翻译 | [arXiv 2610.38336v1](https://arxiv.org/abs/2610.38336v1) |
 | 2026-11-03 | Learning a Prior-Data Fitted Network for Graph Foundation Models via Structural Causal Model Priors | 待翻译 | [arXiv 2610.38335v1](https://arxiv.org/abs/2610.38335v1) |
@@ -520,9 +885,9 @@
 | 2026-11-03 | Hidden Commitment: When Language Models Silently Pick a Side and How Steering Can Surface It | 待翻译 | [arXiv 2610.38296v2](https://arxiv.org/abs/2610.38296v2) |
 | 2026-11-03 | EPSBench: Benchmarking LLM Agents for Earnings Forecasting | 待翻译 | [arXiv 2610.38293v1](https://arxiv.org/abs/2610.38293v1) |
 | 2026-11-03 | Vendster: An Evaluation Arena to Investigate How Forecasting Tool Quality Affects LLM Agent Behaviors in Buyer-Vendor Negotiation | 待翻译 | [arXiv 2610.38292v1](https://arxiv.org/abs/2610.38292v1) |
-| 2026-11-03 | The Role of Quantization in Loss Spikes | 待翻译 | [arXiv 2610.38277v1](https://arxiv.org/abs/2610.38277v1) |
+| 2026-11-03 | The Role of Quantization in Loss Spikes | 待翻译 | [arXiv 2610.38277v2](https://arxiv.org/abs/2610.38277v2) |
 | 2026-11-03 | Cross Lingual Abstractive Summarization for Marathi | 待翻译 | [arXiv 2610.38267v1](https://arxiv.org/abs/2610.38267v1) |
-| 2026-11-03 | Keepace.ai: A Technical Report on a Large Language Model for Sports and Health | 待翻译 | [arXiv 2610.38249v2](https://arxiv.org/abs/2610.38249v2) |
+| 2026-11-03 | Keepace.ai: A Technical Report on a Large Language Model for Sports and Health | 待翻译 | [arXiv 2610.38249v3](https://arxiv.org/abs/2610.38249v3) |
 | 2026-11-03 | The Indian Financial Automated Advice Bias (IFAAB) Dataset : Auditing Socioeconomic and Demographic Disparities in LLM-Generated Financial Advice in India | 待翻译 | [arXiv 2610.38239v1](https://arxiv.org/abs/2610.38239v1) |
 | 2026-11-03 | 3DCodeEdit: Benchmarking Instruction-Guided 3D Program Editing | 待翻译 | [arXiv 2610.38231v1](https://arxiv.org/abs/2610.38231v1) |
 | 2026-11-03 | FACTS-MAS: A Multi-Agent Architecture for Adaptive Forecasting from Heterogeneous Evidence | 待翻译 | [arXiv 2610.38225v1](https://arxiv.org/abs/2610.38225v1) |
@@ -560,7 +925,7 @@
 | 2026-11-03 | GARDEN: Generalist Autonomous Reward Design Through Evidence Navigation for Cooperative Multi-Agent Reinforcement Learning | 待翻译 | [arXiv 2610.37926v1](https://arxiv.org/abs/2610.37926v1) |
 | 2026-11-03 | FAD-KV: Adaptive Dictionary KV Caching for Efficient Reasoning Decoding | 待翻译 | [arXiv 2610.37921v1](https://arxiv.org/abs/2610.37921v1) |
 | 2026-11-03 | SciGame: Let Agents Play the Scientific Discovery Games in the Real and Counterfactual World | 待翻译 | [arXiv 2610.37919v1](https://arxiv.org/abs/2610.37919v1) |
-| 2026-11-03 | Venus-DefakerOne2: A Vision-Forensics Foundation Model with Broader Coverage | 待翻译 | [arXiv 2610.37918v1](https://arxiv.org/abs/2610.37918v1) |
+| 2026-11-03 | Venus-DefakerOne2: A Vision-Forensics Foundation Model with Broader Coverage | 待翻译 | [arXiv 2610.37918v2](https://arxiv.org/abs/2610.37918v2) |
 | 2026-11-03 | Muon Makes the First Mixture-of-Experts Layer Harder to Balance | 待翻译 | [arXiv 2610.37914v1](https://arxiv.org/abs/2610.37914v1) |
 | 2026-11-03 | FilingLoop: Evaluating and Evolving LLM Agents for Corporate Disclosure Review and Revision | 待翻译 | [arXiv 2610.37905v1](https://arxiv.org/abs/2610.37905v1) |
 | 2026-11-03 | Think Twice: The Metis-1.6 Technical Report | 待翻译 | [arXiv 2610.37903v1](https://arxiv.org/abs/2610.37903v1) |
