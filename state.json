@@ -17654,9 +17654,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "LLM agents increasingly triage security alerts by combining the outputs of several detection tools, implicitly treating those tools as trustworthy. Unlike prior work on conflicts between a model's knowledge and its context, we study conflicts among the tools themselves: what happens when this machine-generated evidence is conflicting or wrong. On the corrected CIC-IDS2017 dataset, four heterogeneous detectors emit labels and confidences that we corrupt under a threat model varying the number of corrupted tools, the persistence of the corruption, and the confidence attached to wrong outputs. Across open-weight LLMs from 3B to 14B parameters, unverified investigators are fragile: one corrupted detector out of four lowers naive accuracy to .50-.72, three lower every unverified investigator to .13 or less, and honest disagreement alone makes them abstain on up to 63% of flows. We propose Conflict-Aware Evidence Verification (CAV), built from established components: an equal-weight vote that ignores reported confidences, an evidence-conflict gate, and an independent nearest-neighbour trust check that tests the leading candidates. With its prompt frozen before testing, CAV-LLM improves on the naive investigator in every corrupted condition ($p < 0.001$), reaching .84-.88 with three corrupted detectors against at most .08, while calling the LLM on 0.4% of clean traffic. A fixed verification rule is as accurate or better unless most tools are corrupted. When we make the independent channel itself noisy, CAV inherits its errors: it stays ahead when two or more tools are corrupted, but adding the channel as an extra voter is better when at most one is. Verification thus moves trust from the tools to the check, which must be measured and protected in turn.",
         "authors": [
@@ -17672,16 +17688,12 @@
         "updated": "2026-10-30T03:13:59+00:00",
         "version_id": "2610.41191v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41191v1"
       ]
