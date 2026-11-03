@@ -44728,9 +44728,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_safety、llm_multimodal、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Vision-language models (VLMs) suffer from visual hallucination, such as saying an object that is not present in an image. We ask a more fundamental question: whether a VLM is even aware of where it is looking before understanding the semantic meaning in the image. We formulate this question as a LOOK task: identifying which parts of its visual input were available to the model. We construct the task in a self-supervised way without manually labeling the available region to the model. Our experiments show that existing VLMs fail to localize the visible region. We further show that fine-tuning VLMs on the proposed LOOK task improves a model's awareness of visual input.",
         "authors": [
@@ -44749,18 +44765,14 @@
         "updated": "2026-11-01T16:57:20+00:00",
         "version_id": "2611.02053v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_safety",
         "llm_multimodal",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02053v1"
       ]
