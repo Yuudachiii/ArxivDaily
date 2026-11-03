@@ -1,1 +1,18 @@
-{"chains": {}, "collection": {}, "daily": {}, "digests": {}, "papers": {}, "runs": [], "schema_version": 1, "usage": []}
+{
+  "chains": {},
+  "collection": {},
+  "daily": {},
+  "digests": {},
+  "papers": {},
+  "runs": [
+    {
+      "config_fingerprint": "22ce384dcb13fa676e4987021648d9008879aed21a87d5bb8a8d5b6320423d73",
+      "coverage_complete": false,
+      "day": "2026-11-03",
+      "run_id": "20261103T024159Z-c0c38d77",
+      "started_at": "2026-11-03T02:41:59.424237+00:00"
+    }
+  ],
+  "schema_version": 1,
+  "usage": []
+}
