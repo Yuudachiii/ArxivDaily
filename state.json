@@ -24372,9 +24372,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Pretrained models are typically viewed as generalists, requiring bespoke post-training to achieve task-specific expertise. Gan & Isola (2026) recently proposed a striking alternative: that pretrained models lie in a dense neural thicket of task specialists, which can be surfaced with simple Gaussian weight perturbations. We examine this neural thicket of task-specific experts and identify several key findings that question this perspective. First, we find that the apparent lift of the best-of-N selected perturbation decays quickly with selection-set size m, strongly suggesting overfitting to the selection questions. In fact, for 10 of the 12 model-task pairs we study, a simple null model of pure selection noise predicts more than 75 percent of the top expert's reward lift. Second, the top experts' advantage often vanishes on held-out questions or remains within the run-to-run variability of the unperturbed pretrained model. Third, we find that majority voting over the top-K selected perturbations, termed RandOpt(N, K) by Gan & Isola (2026), is often matched or outperformed by majority voting over K samples from the base model. Overall, our results suggest that random weight perturbations may be ineffective at uncovering task experts around pretrained models, and that task adaptation requires more sophistication than random search. Code and artifacts are available at github.com/asil012/RevisitingNeuralThickets.",
         "authors": [
@@ -24392,16 +24408,12 @@
         "updated": "2026-10-31T21:01:08+00:00",
         "version_id": "2611.01262v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01262v1"
       ]
