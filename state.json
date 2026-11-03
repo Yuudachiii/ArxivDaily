@@ -44982,9 +44982,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_multimodal、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_multimodal",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Vision-language models for remote sensing answer questions about satellite images by generating text: every answer costs a decoding loop, has to be parsed back to an option, and comes without a usable probability. We present EarthJev, a 0.8B-parameter model that answers typed questions about multispectral Sentinel-2 patches without generating any token. All 12 bands enter the vision encoder of Qwen3.5-0.8B through a widened input layer initialised from the RGB kernels, and, following the open OneJev recipe, the answer is read from the logits of the option letters at a single position and trained with cross-entropy plus Brier score. Under a pre-specified analysis plan, we compare it with the same backbone fine-tuned to generate the answer and with three multimodal language models fine-tuned with LoRA, all trained on the same 70,890 questions from 5% of BigEarthNet v2.0 and timed in one job on the same GPU; VQA models that classify over a fixed answer vocabulary are reported as a reference for the cost of answering only the questions seen in training. EarthJev answers a question in 19.9 ms, 4.3 to 8.7 times faster than the multimodal language models and 6.8 times faster than its own backbone used generatively; when all the questions about an image are asked together, it answers them in 42.8 ms, 3.7 to 10.1 times faster than the batched generative models. On 36,028 test questions it reaches 86.0% accuracy (three seeds), 0.6 and 1.2 points below the two 2B multimodal models and 3.5 points below the remote-sensing EarthDial-4B, with answers that are valid by construction and calibrated probabilities (ECE 0.006). Replacing the nine non-RGB bands with their mean costs 4.5 points, so the model uses the multispectral input, and in an ablation training the whole vision encoder raises accuracy to 88.4% at the same cost. Code and model: https://github.com/CosmoIknosLab/EarthJev",
         "authors": [
@@ -45002,16 +45018,12 @@
         "updated": "2026-11-01T18:11:10+00:00",
         "version_id": "2611.02096v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_multimodal",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02096v1"
       ]
