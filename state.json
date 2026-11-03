@@ -20463,9 +20463,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Hundreds of millions of people now ask large language model (LLM) chatbots for health advice, which raises a question that is simple to pose and hard to answer: does everyone get the same advice? We audit six widely deployed LLMs from four providers on smoking cessation, a domain with codified clini- cal guidance and substantial public-health stakes, by putting the same four cessation questions to twelve user personas that differ in life stage, self-described expertise, and smoking history, for a total of 2,880 responses. What the models say depends on who appears to be asking. Every model named FDA-approved prescription cessation medications less often to teen personas than to adult personas, by 32 to 67 percentage points, and in five of six models a persona presenting health- care expertise received fewer facts than a persona presenting none. We then evaluate one deployable intervention: a short system prompt specifying a factual floor, the set of core med- ical facts every user should receive when they are relevant, while leaving tone, vocabulary, and framing free to adapt. The prompt narrows persona differences in every model, but its effect on overall fact coverage varies in both magnitude and direction across models, so a prompt validated on one system cannot be assumed to transfer to another. Two cautions frame these results. Equal mention rates are not always the correct clinical target, because prescription cessation pharmacother- apy is not recommended for minors, so a defensible factual floor must be age-aware rather than uniform. And because our personas vary on several attributes at once, we report scenario- level differences rather than isolated effects of age or expertise. We release all 2,880 responses and the analysis code.",
         "authors": [
@@ -20483,15 +20499,11 @@
         "updated": "2026-10-30T17:03:35+00:00",
         "version_id": "2610.42039v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.42039v1"
       ]
