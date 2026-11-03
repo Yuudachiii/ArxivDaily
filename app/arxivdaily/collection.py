@@ -125,7 +125,7 @@ class Collector:
         return self._client
 
     @staticmethod
-    def _search(*, query: str | None = None, id_list: list[str] | None = None) -> Any:
+    def _search(*, query: str | None = None, id_list: list[str] | None = None, newest_first: bool = False) -> Any:
         import arxiv
 
         kwargs: dict[str, Any] = {"max_results": None}
@@ -133,6 +133,8 @@ class Collector:
             kwargs["query"] = query
         if id_list is not None:
             kwargs["id_list"] = id_list
+        if newest_first:
+            kwargs.update(sort_by=arxiv.SortCriterion.SubmittedDate, sort_order=arxiv.SortOrder.Descending)
         return arxiv.Search(**kwargs)
 
     def collect(self, window: dict, *, apply_rules: bool = True) -> CollectionResult:
@@ -153,6 +155,8 @@ class Collector:
         # still appear in this scan so their metadata/version can be observed,
         # but cannot repeatedly consume the discovery budget on rolling runs.
         known_ids = {normalize_id(value)[0] for value in window.get("known_ids", [])}
+        excluded_ids = set(window.get("excluded_ids", []))
+        limit = window.get("limit")
         candidate_limit = int(self.config["collection"].get("max_candidates", 2000))
         papers: dict[str, Paper] = {}
         new_ids: set[str] = set()
@@ -171,12 +175,14 @@ class Collector:
             shard = {"start": iso(lo), "end": iso(hi), "categories": list(cats), "status": "pending", "seen": 0}
             result.shards.append(shard)
             try:
-                search = self._search(query=_query(lo, hi, cats))
+                search = self._search(query=_query(lo, hi, cats), **({"newest_first": True} if limit else {}))
                 for raw in self.client.results(search):
                     shard["seen"] += 1
                     paper = _paper(raw)
                     published = parse_time(paper.published)
                     if published < requested_start or published > requested_end:
+                        continue
+                    if paper.base_id in excluded_ids:
                         continue
                     # API date boundaries and category cross listings can
                     # overlap. Keep the newest version, never duplicate IDs.
@@ -194,6 +200,10 @@ class Collector:
                                 new_ids.add(paper.base_id)
                         else:
                             papers[paper.base_id] = merge_metadata(existing, paper)
+                        if limit and len(papers) >= limit:
+                            shard["status"] = "limit_reached"
+                            pending.clear()
+                            break
                     if shard["seen"] >= shard_limit:
                         shard["status"] = "shard_limit"
                         break
@@ -211,6 +221,8 @@ class Collector:
                 continue
             if shard["status"] in {"shard_limit", "failed"}:
                 children = self._split(lo, hi, cats)
+                if limit:
+                    children.reverse()
                 # Do not fan out persistent API errors without evidence of a
                 # page/capacity problem; retry the full window on a later run.
                 can_recover = shard["status"] == "shard_limit" or shard["seen"] >= self.config["collection"]["page_size"]

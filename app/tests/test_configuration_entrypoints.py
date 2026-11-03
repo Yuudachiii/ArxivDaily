@@ -44,6 +44,8 @@ def test_committed_config_is_llm_research_rules_mode():
     assert config["translation"]["label"] == ""
     assert config["translation"]["request_interval"] == 1.0
     assert config["collection"]["initial_days"] == 7 and config["collection"]["lookback_days"] == 7
+    assert config["collection"]["max_lookback_days"] == 30
+    assert config["limits"]["daily_paper_limit"] == 30
     assert config["collection"]["max_candidates"] == 10000
     assert config["delivery"]["body_bytes"] == 32768
 

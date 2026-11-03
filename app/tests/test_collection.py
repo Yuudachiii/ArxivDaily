@@ -47,6 +47,8 @@ class FakeClient:
             start, end = (datetime.strptime(x, "%Y%m%d%H%M").replace(tzinfo=timezone.utc) for x in date_parts)
             cats = re.findall(r"cat:([\w.]+)", search.query)
             selected = [x for x in self.items if start <= x.published <= end + timedelta(minutes=1) and (not cats or set(cats).intersection(x.categories))]
+        if getattr(search, "sort_order", None) == "descending":
+            selected.sort(key=lambda item: item.published, reverse=True)
         for index, item in enumerate(selected):
             if self.fail_after is not None and index == self.fail_after:
                 self.fail_after = None
@@ -56,7 +58,9 @@ class FakeClient:
 
 class CollectionTests(unittest.TestCase):
     def setUp(self):
-        self.module = patch.dict(sys.modules, {"arxiv": types.SimpleNamespace(Search=Search)})
+        self.module = patch.dict(sys.modules, {"arxiv": types.SimpleNamespace(
+            Search=Search, SortCriterion=types.SimpleNamespace(SubmittedDate="submittedDate"),
+            SortOrder=types.SimpleNamespace(Descending="descending"))})
         self.module.start()
         self.addCleanup(self.module.stop)
         self.config = load_config()
@@ -217,6 +221,17 @@ class CollectionTests(unittest.TestCase):
         skipped = plan_window(now, stale, initial_days=1, lookback_days=1)
         self.assertEqual(skipped["start"], yesterday.isoformat())
         self.assertEqual(len(skipped["uncovered"]), 1)
+
+    def test_bounded_collection_gets_newest_unsent_candidates(self):
+        client = FakeClient([raw(i, self.start + timedelta(minutes=i)) for i in range(1, 81)])
+        excluded = [f"2610.{i:05d}" for i in range(76, 81)]
+        result = Collector(self.config, client).collect({**self.window, "limit": 30, "excluded_ids": excluded})
+        self.assertTrue(result.complete)
+        self.assertEqual(len(result.papers), 30)
+        self.assertEqual(result.papers[0].base_id, "2610.00075")
+        self.assertEqual(result.papers[-1].base_id, "2610.00046")
+        self.assertEqual(client.calls[0].sort_by, "submittedDate")
+        self.assertEqual(result.shards[0]["status"], "limit_reached")
 
     def test_expanded_window_revisits_before_the_saved_one_day_floor(self):
         now = datetime(2026, 11, 3, 2, 42, tzinfo=timezone.utc)

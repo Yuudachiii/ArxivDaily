@@ -7,7 +7,7 @@ import time
 import uuid
 from zoneinfo import ZoneInfo
 
-from .collection import plan_window
+from .collection import CollectionResult, plan_window
 from .llm import validate_summary
 from .models import Decision, DeliveryResult, DigestItem, Paper, ProcessingError, Summary, Translation, fingerprint, iso, parse_time, utcnow
 from .render import render_archive, render_notification, server_title
@@ -40,6 +40,7 @@ class Pipeline:
         self.resend_ids: set[str] = set()
         self.retry_ids: set[str] = set()
         self.retry_stage = None
+        self.daily_ids: set[str] | None = None
 
     def _manual_active(self, record: dict) -> bool:
         return bool(record.get("manual_retry_until") and self.now <= parse_time(record["manual_retry_until"]))
@@ -148,8 +149,69 @@ class Pipeline:
     def _pending(self, record: dict) -> bool:
         return bool(record.get("pending_digest"))
 
+    def _daily_paper_ids(self) -> list[str]:
+        ids = self._daily().setdefault("paper_ids", [])
+        # Include deliveries made before the paper limit was introduced.
+        for digest in self.state["digests"].values():
+            if (digest.get("quota_day", digest.get("day")) == self.day
+                    and digest["status"] in {"confirmed", "sending", "unknown"}):
+                for item in digest["items"]:
+                    key = Paper.from_dict(item["paper"]).base_id
+                    if key not in ids:
+                        ids.append(key)
+        return ids
+
+    def _daily_candidates(self, start=None) -> list[dict]:
+        start = start or self.now - timedelta(days=self.config["collection"]["max_lookback_days"])
+        records = []
+        for record in self.state["papers"].values():
+            paper = Paper.from_dict(record["paper"])
+            if (start <= parse_time(paper.published) <= self.now and not confirmed(record)
+                    and not record.get("manual_required") and record.get("stage") != "rejected"
+                    and match_rules(paper, self.config)):
+                records.append(record)
+        return sorted(records, key=lambda r: (parse_time(r["paper"]["published"]), r["paper"]["version_id"]), reverse=True)
+
+    def _collect_daily(self, window: dict) -> CollectionResult:
+        reserved = self._daily_paper_ids()
+        remaining = self.config["limits"]["daily_paper_limit"] - len(reserved)
+        if remaining <= 0:
+            return CollectionResult()
+        excluded = set(reserved) | {key for key, r in self.state["papers"].items() if confirmed(r)}
+        result = self.collector.collect({**window, "known_ids": list(self.state["papers"]),
+                                         "excluded_ids": list(excluded), "limit": remaining})
+        recent = {Paper.from_dict(r["paper"]).base_id for r in self._daily_candidates(parse_time(window["start"]))
+                  if Paper.from_dict(r["paper"]).base_id not in excluded}
+        recent.update(p.base_id for p in result.papers)
+        older_start = self.now - timedelta(days=self.config["collection"]["max_lookback_days"])
+        if result.complete and len(recent) < remaining and older_start < parse_time(window["start"]):
+            excluded.update(p.base_id for p in result.papers)
+            older = self.collector.collect({**window, "start": iso(older_start), "end": window["start"],
+                                           "known_ids": list(self.state["papers"]),
+                                           "excluded_ids": list(excluded), "limit": remaining - len(recent)})
+            result.papers.extend(older.papers)
+            result.shards.extend(older.shards)
+            result.errors.extend(older.errors)
+            result.complete = older.complete
+            window["start"] = window["initial_floor"] = iso(older_start)
+        return result
+
+    def _allocate_daily(self) -> None:
+        if self.config["selection"]["mode"] != "rules":
+            return
+        ids = self._daily_paper_ids()
+        records = self._daily_candidates()
+        for record in records:
+            key = Paper.from_dict(record["paper"]).base_id
+            if key not in ids and len(ids) < self.config["limits"]["daily_paper_limit"]:
+                ids.append(key)
+        self.daily_ids = set(ids).intersection(Paper.from_dict(r["paper"]).base_id for r in records)
+        self.checkpoint()
+
     def _eligible(self, record: dict) -> bool:
         paper = Paper.from_dict(record["paper"])
+        if self.daily_ids is not None and paper.base_id not in self.daily_ids:
+            return False
         if self.retry_ids and paper.base_id not in self.retry_ids:
             return False
         if paper.base_id in self.promotion_ids:
@@ -160,7 +222,8 @@ class Pipeline:
             return True
         if confirmed(record):
             return False
-        if not self._manual_active(record) and self.now - parse_time(record["first_discovered"]) > timedelta(days=self.config["limits"]["recovery_days"]):
+        recovering = self.daily_ids is None or self._pending(record) or bool(record.get("failures"))
+        if recovering and not self._manual_active(record) and self.now - parse_time(record["first_discovered"]) > timedelta(days=self.config["limits"]["recovery_days"]):
             if record.get("stage") not in {"rejected", "delivered"}:
                 record["manual_required"] = True
                 self.errors.append(f"{paper.version_id}:recovery_age_exhausted")
@@ -172,6 +235,8 @@ class Pipeline:
 
     def _process(self) -> None:
         records = [r for r in self.state["papers"].values() if self._eligible(r) and not r.get("resend_pending")]
+        if self.daily_ids is not None:
+            records.sort(key=lambda r: (parse_time(r["paper"]["published"]), r["paper"]["version_id"]), reverse=True)
         for record in records:
             if record.get("decision"):
                 continue
@@ -279,6 +344,8 @@ class Pipeline:
         if self.resend_ids or self.promotion_ids or (self.retry_ids and self.retry_stage != "title_translation"):
             return
         for key, record in self.state["papers"].items():
+            if self.daily_ids is not None and key not in self.daily_ids:
+                continue
             if self.retry_ids and key not in self.retry_ids:
                 continue
             if record.get("title_zh") or record.get("translation", {}).get("title_zh"):
@@ -338,6 +405,8 @@ class Pipeline:
     def _recover_items(self) -> list[DigestItem]:
         result = []
         for key, record in self.state["papers"].items():
+            if self.daily_ids is not None and key not in self.daily_ids:
+                continue
             if self.promotion_ids and key not in self.promotion_ids:
                 continue
             if self.resend_ids and key not in self.resend_ids:
@@ -372,6 +441,17 @@ class Pipeline:
         current_day = attempt_time.astimezone(ZoneInfo("Asia/Shanghai")).date().isoformat()
         if current_day != self.day:
             self.day = current_day
+        if self.daily_ids is not None:
+            ids = self._daily_paper_ids()
+            allowed = []
+            for item in items:
+                key = item.paper.base_id
+                if key not in ids and len(ids) < self.config["limits"]["daily_paper_limit"]:
+                    ids.append(key)
+                if key in ids:
+                    allowed.append(item)
+            items = allowed
+            items.sort(key=lambda i: (parse_time(i.paper.published), i.paper.base_id), reverse=True)
         items = [i for i in items if i.tier != "full" or self._full_slot(i.paper.base_id)]
         if not items and not alert and not empty:
             return None
@@ -546,16 +626,16 @@ class Pipeline:
                 window = plan_window(self.now, self.state, manual_start, manual_end, initial_days=self.config["collection"]["initial_days"], lookback_days=self.config["collection"]["lookback_days"])
                 self.state["collection"].setdefault("initial_floor", window["initial_floor"])
                 run["window"] = window
-                if window["uncovered"]:
+                if window["uncovered"] and self.config["selection"]["mode"] != "rules":
                     self.notes.append("自动补采之外存在未覆盖区间，请使用 --start/--end 人工补采。")
                     self.errors.append("collection_gap_outside_14_days")
                 self.checkpoint()
                 try:
-                    result = self.collector.collect({**window,"known_ids":list(self.state["papers"])})
+                    result = (self._collect_daily(window) if self.config["selection"]["mode"] == "rules" and not window["manual"]
+                              else self.collector.collect({**window,"known_ids":list(self.state["papers"])}))
                 except PersistenceError:
                     raise
                 except Exception as exc:
-                    from .collection import CollectionResult
                     result = CollectionResult(complete=False, errors=[f"collector_failed:{type(exc).__name__}"])
                 papers = result.papers
                 run.update({"coverage_complete": result.complete, "shards": result.shards, "collection_errors": result.errors})
@@ -574,6 +654,7 @@ class Pipeline:
             run["discovered_papers"] = len({p.base_id for p in papers})
             run["discovered_candidates"] = len(discovered_ids)
             self.checkpoint()  # Collection complete checkpoint independent of LLM.
+            self._allocate_daily()
             for key in self.promotion_ids:
                 if key not in self.state["papers"]:
                     raise ProcessingError("promotion_requires_existing_record")
@@ -610,8 +691,10 @@ class Pipeline:
             self.day = self.clock().astimezone(ZoneInfo("Asia/Shanghai")).date().isoformat()
             recovered_ids = {i.paper.base_id for i in recoveries}
             new = []
-            normal_already_sent = any(self.state["digests"][d]["status"] == "confirmed" for d in self._daily()["normal_digests"])
+            normal_already_sent = self.daily_ids is None and any(self.state["digests"][d]["status"] == "confirmed" for d in self._daily()["normal_digests"])
             for key, record in self.state["papers"].items():
+                if self.daily_ids is not None and key not in self.daily_ids:
+                    continue
                 if retry_stage == "title_translation":
                     continue
                 if self.promotion_ids and key not in self.promotion_ids:
