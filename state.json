@@ -10805,9 +10805,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Semantic entropy, the entropy of the meanings among a language model's sampled answers, is estimated from the verdicts of a judge that declares pairs of answers equivalent or not, and automatic judges err in ways that depend on the answers they compare. The existing minimax theory covers only judges whose false-equivalence probability is the same for all pairs. We model a known judge that declares two answers with meanings $a$ and $b$ equivalent with probability $q+ΔM_{ab}$, for a symmetric matrix $M$ and $q$ bounded away from $0$ and $1$, and show that for three meanings the rate is set by tree statistics on four answers, while on an open set of channels the consistency threshold is set by trees on five. For every channel in an explicit open class, the minimax squared risk is of order $N^{-1/3}$ with $N=n^4Δ^6$ on polynomial weak windows on which $n^5Δ^8$ exceeds a multiple of $\\log n$, and of order $\\min\\{1,N^{-1/3}\\}$ on every polynomial weak window when the tree functions on at most four vertices are injective. The exponent comes from a cubic degeneracy at the equitable point. On an open set of channels in the class, the four-vertex tree functions take equal values at two distributions with different entropies. For such a channel, on every polynomial weak window, the minimax risk is of the order of the sum of $\\min\\{1,N^{-1/3}\\}$ and a term that decays exponentially in $n^5Δ^8$, so no estimator is consistent while $n^5Δ^8$ stays bounded, even as $N\\to\\infty$. For $Δ=n^{-β}$ with $β>1/2$, channels of the class with injective four-vertex tree functions allow consistent estimation exactly for $β<2/3$, and the channels of this open set exactly for $β<5/8$, at which the risk exponent drops from $1/12$ to $0$. Computer-assisted certificates show that both kinds of channels occur on open sets.",
         "authors": [
@@ -10826,15 +10842,11 @@
         "updated": "2026-10-29T02:18:52+00:00",
         "version_id": "2610.39196v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.39196v1"
       ]
