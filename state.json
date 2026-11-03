@@ -45742,9 +45742,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Looped language models can stop iterating early, and recent work shows that post-hoc readouts of the loop trajectory often rival the learned exit gate of the looped model Ouro. Such comparisons reduce each method to one operating point chosen by a selection rule. We ask whether that rule decides the outcome. On a frozen Ouro-1.4B with four loops, we compared a trained stability probe ($π_1$-x) with Ouro's native gate, adapted to a per-question stopping decision, in pre-registered studies; the confirmatory study was designed after an exploratory finding on development data and evaluated once on a sealed test set of 8,517 questions. In the pre-registered confirmatory comparison, which selected operating points with a bootstrap-screened 1 pp accuracy-loss rule, the probe saved more of the four-loop budget than the native gate (+0.053 gross macro saving over three benchmarks, 95% CI [+0.049, +0.057]), mostly from CommonsenseQA, where the probe's test upper bound on accuracy loss exceeded 1 pp. Under a point-only rule, a pre-specified secondary analysis on the same test set reversed the preference (-0.022 [-0.026, -0.018]), with operating points that exceeded the budget. In pre-specified secondary comparisons, the probe showed no demonstrated advantage over an untrained KL divergence between successive loops (+0.00125 [-0.0041, +0.0065]); we emphasise this result post hoc and claim no equivalence. The probe also broke its budget on one of two out-of-distribution benchmarks (3.26 pp loss on Social IQa). Savings are estimated from stored full-depth traces, not measured inference time, and our screen carries no formal risk-control guarantee. We conclude that halting methods should be compared as signals together with selection procedures, with strong untrained baselines and out-of-distribution checks.",
         "authors": [
@@ -45760,16 +45776,12 @@
         "updated": "2026-11-02T00:28:21+00:00",
         "version_id": "2611.02333v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02333v1"
       ]
