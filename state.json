@@ -21722,9 +21722,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Performativity arises when prediction-informed decisions change the data-generating process, creating feedback between deployment and learning. This phenomenon occurs in policy-making and in self-evolving AI systems that shape their own future training data. Statistical inference is challenging because estimation errors in earlier predictors affect subsequent data distributions and propagate into later updates. We develop an end-to-end framework for statistical inference under performativity. For repeated risk minimization and repeated gradient descent, we establish central limit theorems at fixed deployment rounds and derive covariance recursions that capture both current-round sampling variation and uncertainty inherited from earlier deployments. We develop consistent covariance estimators using policy perturbations and score matching. These results can yield asymptotically valid confidence regions for population iterates and the performative stable point. We further extend prediction-powered inference to this dynamic setting, combining labeled observations with predictions on additional unlabeled data to improve statistical efficiency. We evaluate our framework in synthetic, semi-synthetic educational, and self-evolving large language model routing settings. Our experiments demonstrate that ignoring propagated uncertainty can lead to substantial undercoverage even after repeated retraining. Together, these results provide statistical tools for learning systems that help determine the distributions from which they learn. Our work establish a complete statistical inference under performativity, introducing new challenges and inference settings that we believe will provide substantial value to policy-making, statistics, and machine learning.",
         "authors": [
@@ -21745,15 +21761,11 @@
         "updated": "2026-10-30T22:45:28+00:00",
         "version_id": "2611.00438v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00438v1"
       ]
