@@ -50684,9 +50684,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Instruction tuning for multi-task network traffic analysis requires data with clearly defined sources, supervision targets, and evaluation conditions. We introduce TrafficInstruct, a newly collected dataset comprising raw packet captures and 55,000 structured supervised fine-tuning records across ten tasks: malware traffic detection, botnet detection, malicious DNS-over-HTTPS detection, Web attack detection, advanced persistent threat detection, encrypted VPN detection, Tor behavior detection, encrypted application/service classification, website fingerprinting, and application classification under concept drift. An automated workflow captures traffic from controlled software executions, attack experiments, and application activities. Labels are supported by task-specific collection evidence, including process or socket attribution, activity records, and execution outcomes. Filtering, sanitization, and task-specific transformations produce instructions, traffic observations, and structured answers. We verify sample sources and partition the dataset by complete collection sessions, keeping all samples from the same session within one partition. The benchmark defines allowed inputs, deterministic label mappings, fixed training/validation/test partitions, and task-wise scoring rules. We evaluate majority-class, random-forest, and ET-BERT baselines, an unadapted 27B language model, and independently trained task-specific LoRA adapters on a shared frozen base. Adapters are selected using validation data and evaluated on the corresponding test sets. Task-specific adaptation improves classification performance, supporting instruction tuning across diverse traffic-analysis tasks.",
         "authors": [
@@ -50710,17 +50726,13 @@
         "updated": "2026-11-02T15:44:53+00:00",
         "version_id": "2611.03319v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.03319v1"
       ]
