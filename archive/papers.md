@@ -16,7 +16,7 @@
 | 2026-11-03 | FedReady: Bounded Agents for Federation Formation | 待翻译 | [arXiv 2611.03586v1](https://arxiv.org/abs/2611.03586v1) |
 | 2026-11-03 | VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably | 待翻译 | [arXiv 2611.03575v1](https://arxiv.org/abs/2611.03575v1) |
 | 2026-11-03 | MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study | 待翻译 | [arXiv 2611.03555v1](https://arxiv.org/abs/2611.03555v1) |
-| 2026-11-03 | Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL | 待翻译 | [arXiv 2611.03551v1](https://arxiv.org/abs/2611.03551v1) |
+| 2026-11-03 | Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL | 大型语言模型代理能成为前置部署工程师吗？企业文本到SQL的需求发现与交付 | [arXiv 2611.03551v1](https://arxiv.org/abs/2611.03551v1) |
 | 2026-11-03 | Can LLM Agents Improve Imperfect Earth System Model Parameterizations? | 大型语言模型代理能改善不完善的地球系统模型参数化吗？ | [arXiv 2611.03543v1](https://arxiv.org/abs/2611.03543v1) |
 | 2026-11-03 | Library of Layers (LoL): Adaptively Ordering Transformer Layers at Runtime | 待翻译 | [arXiv 2611.03526v1](https://arxiv.org/abs/2611.03526v1) |
 | 2026-11-03 | Grading the Unannotated: Insights from the WorkRB Skill Extraction Challenge at RecSys-HR 2026 | 对未标注数据的评分：来自 RecSys-HR 2026 WorkRB 技能提取挑战的见解 | [arXiv 2611.03525v1](https://arxiv.org/abs/2611.03525v1) |
