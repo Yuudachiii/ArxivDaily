@@ -16426,9 +16426,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Continual adaptation requires deciding not only how to update a model, but whether to commit an update without exceeding a declared budget for changes to protected behavior. We introduce Certified Anchor-Based Adaptation (CABA), a candidate-agnostic post-update gate that reserves historical observations from candidate optimization, compares old and candidate policies on frozen representations, and selects the largest tested interpolation coefficient whose worst-anchor forward KL divergence remains within budget. The finite check requires neither action labels nor complete trajectories. We develop a theory-led certification framework that separates measured anchor retention from conditional off-anchor guarantees. Under explicit representation-coverage and Lipschitz assumptions, an accepted update satisfies a uniform behavioral-divergence bound on protected support. The analysis gives regularity bounds for affine softmax heads, probabilistic coverage and compression guarantees, interpolation monotonicity conditions, grid-resolution bounds, and trajectory-level and sequential-composition guarantees. In a controlled UCI Human Activity Recognition study used as a non-stationary sensor-policy proxy, CABA reduces mean forgetting from 1.01 percent for unconstrained adaptation to 0.00 percent at budget epsilon = 0.05, while reducing final average accuracy from 93.04 percent to 88.48 percent. The experiment illustrates a retention-plasticity trade-off and does not establish foundation-model or robotic performance. CABA provides an auditable retention check for candidate generators exposing comparable policy distributions and a declared update path, while deployment also requires separate evidence of current-task utility.",
         "authors": [
@@ -16445,15 +16461,11 @@
         "updated": "2026-10-29T15:08:12+00:00",
         "version_id": "2610.40740v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.40740v1"
       ]
