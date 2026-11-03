@@ -23573,9 +23573,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Web agents and answer engines fetch pages at question time, and liveness checks of cited sources treat an HTTP 200 response as success. We measure how often that assumption fails and what it does to measurements built on fetched pages. We fetched 10,307 URLs in three days with a polite static client and a rendered browser client: pages from 1,507 sites in five strata, random non-existent paths on every site, and the 4,795 URLs cited by expert-verified claims in ExpertQA. We define a taxonomy of what a 200 response contains, label the static 200 responses automatically, and check the labels against 300 items reviewed by an LLM-based assistant; a human check of 60 of them retained every reviewed usability label after discussion. By the automatic labels, 20.9% of the pages that a static client receives with status 200 do not contain the page's main content: app shells, bot challenges, block pages, error and placeholder pages, and partial content. On the held-out test split, the reviewed sample lowers this estimate from 25.5% to 20.0%. 13.1% of the sites whose random-path probe was answered returned 200. The error propagates: for the cited sources, treating 200 as content overstates the share of claim-source pairs that can be checked against live content by 12.2 points and inflates the apparent silent citation-drift rate from 5.8% to 21.9%. Cheap heuristics catch most of it. Text length, probe comparison and redirect-to-root, combined and tuned on held-out sites, recover 86% of unusable reviewed responses at a false-alarm rate near 5%. Content-reading detectors perform comparably: the best, the text classifier, gains five to seven points of recall at more than twice the false-alarm rate. We argue that agents and their evaluations should report fetch outcomes explicitly instead of inferring them from the status line and will release the labelled data and code.",
         "authors": [
@@ -23592,17 +23608,13 @@
         "updated": "2026-10-31T12:42:45+00:00",
         "version_id": "2611.00884v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00884v1"
       ]
