@@ -10539,9 +10539,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_safety、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_safety",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "As large language models (LLMs) reach users worldwide, personal counseling has emerged as one of their most consequential applications, sometimes in life-critical situations. Yet broader access does not mean equal support. The text these models learn from disproportionately reflects people with the freedom to act, embedding an implicit assumption that users can leave, report, seek help, or appeal. Existing benchmarks largely inherit this assumption, overlooking users whose agency is constrained by structural conditions such as war, statelessness, and displacement. Meanwhile, models are increasingly shaped by normative frameworks such as Constitutional AI, often grounded in ideals like human rights, even as many users live where those rights offer little protection or recourse.\n  We introduce HEARSAYBENCH, a human-authored dataset of 400 test cases with in-region human verification grounded in scenarios where structural barriers stand between a person and the exercise of their rights. Built from United Nations and other human rights reports, the scenarios span over 80 regions and cover social, environmental, and personal constraints. Drawing on Nobel laureate Amartya Sen's Capabilities Approach, HEARSAYBENCH tests whether models can distinguish what a person is formally entitled to do from what they are actually able to do. Across 14 proprietary and open-weight models, every model infers a user's situation more accurately than it advises on it. Stronger models narrow this gap, but their recommendations remain unsafe to follow. Models may understand lives shaped by constraint, yet that knowledge remains hearsay if it cannot translate into advice people can act on. Those people are not alignment's long tail; they are among the users for whom good guidance matters most. HEARSAYBENCH makes this failure measurable, a step toward systems that serve the world as it is rather than as assumed.",
         "authors": [
@@ -10559,17 +10575,13 @@
         "updated": "2026-10-28T23:49:28+00:00",
         "version_id": "2610.39062v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_safety",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.39062v1"
       ]
