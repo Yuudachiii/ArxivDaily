@@ -55888,6 +55888,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "intended_tier": "translation",
       "latest_version": "2611.03575v1",
       "model": "rules",
       "paper": {
@@ -55910,6 +55911,20 @@
         "updated": "2026-11-02T18:27:55+00:00",
         "version_id": "2611.03575v1"
       },
+      "presentation_modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "presentation_rule_hits": [
+        "llm_agent",
+        "llm_core",
+        "llm_eval",
+        "llm_safety"
+      ],
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
@@ -55917,7 +55932,7 @@
         "llm_eval",
         "llm_safety"
       ],
-      "stage": "selected",
+      "stage": "ready",
       "versions": [
         "2611.03575v1"
       ]
