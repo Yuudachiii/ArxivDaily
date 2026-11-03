@@ -22016,9 +22016,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_efficiency、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "SpBench is an agent-native framework for cross-engine lakehouse benchmarking, in production use for benchmarking Snowpark, Snowpark Connect for Apache Spark, and other execution environments across standardized suites -- such as TPCx-BB and TPC-DI -- and custom benchmarks distilled from production workload patterns. It runs continuously across a broad portfolio of workloads, guiding the performance roadmap and detecting regressions for production-scale data engines. Benchmarking has historically been an expensive investment requiring continuous cross-functional collaboration and domain expertise, making it difficult to obtain actionable performance insights. SpBench provides (i) a typed, code-generated benchmark substrate that compiles platform-agnostic benchmark definitions into fair, comparable platform-specific implementations; (ii) a structured-telemetry contract recording every run as queryable fact and dimension data, letting LLM agents query results deterministically; and (iii) an agent-native harness of three composable skills to expedite building benchmarks and analyzing results. This agent-native architecture enabled the rapid development of more than 400 benchmark queries that run on a regular cadence to detect performance regressions; catching these has directly led to improvements in production.",
         "authors": [
@@ -22044,18 +22060,14 @@
         "updated": "2026-10-30T23:05:21+00:00",
         "version_id": "2611.00449v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_efficiency",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00449v1"
       ]
