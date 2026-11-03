@@ -7561,9 +7561,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Time-series forecasters are ranked almost entirely by accuracy metrics, but a forecast's decision value, its effect on the downstream decision, need not track accuracy and is rarely measured. This problem compounds as large language model (LLM) agents increasingly consume forecasters as tools, mediating them through stochastic, opaque policies. We present Vendster, an evaluation arena measuring how a forecaster's bias and prediction-interval width change the outcome of a buyer--vendor discount negotiation between two LLM agents. In the reference instance Vendster-M5, sampling base demand patterns from the M5 dataset, we evaluate two frontier-closed LLM families (Claude Opus 4.6 and GPT-5.6 Sol) and two open ones (DeepSeek-V3.2 and Qwen3-235B-A22B). Model-generated forecasts raise sales target attainment by up to +17 percentage points (p<0.001), yet standard forecast evaluation metrics such as relWQL and MASE do not predict negotiation outcomes at a statistically significant level. To isolate the causal structure, we substitute in synthetic forecasts with controlled bias and interval width. Under-prediction bias significantly improves outcomes for agents that react more to the forecasts---dose-response slopes -0.387 and -0.416 (p<0.001). Interval width has no statistically significant effect at zero bias. These findings indicate that the direction of forecast bias and agent forecast-reactivity are more strongly associated with downstream outcomes than forecast accuracy. Vendster is fully customizable and released under CC BY-NC 4.0 at https://github.com/amazon-science/Vendster.",
         "authors": [
@@ -7579,17 +7595,13 @@
         "updated": "2026-10-28T05:23:48+00:00",
         "version_id": "2610.38292v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38292v1"
       ]
