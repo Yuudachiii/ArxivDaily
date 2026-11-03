@@ -45704,9 +45704,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Repeated satellite imagery permits understanding of how our planet changes over time, letting us predict its future and plan mitigating actions. Most existing studies that rely on a time series of satellite observations forecast the spectral values at each pixel for a future target date. However, clouds, shadows, and sensor noise often corrupt these observations, so that spectral forecasters waste much of their capacity on low-level features or noise rather than real change. With the advent of Earth foundation models, we argue that forecasting in embedding space is a feasible and more effective alternative. To this end, we design a token space that handles irregular histories from different sensors and foundation models and supports forecasts at any query date. Tokens from this space are inputs to our proposed forecaster, E$^2$Forecast, which is a transformer with two branches: a Gaussian branch that directly predicts a mean point forecast and per-dimension standard deviations, and a rectified-flow branch that generates forecast ensembles. On Sentinel-1 and Sentinel-2 benchmarks, forecasting embeddings instead of spectral values halves the cosine distance (from 0.20 to 0.10) and greatly reduces overconfidence, lowering the z-score standard deviation from 2.63 to 1.22. By comparing new observations with its forecasts, E$^2$Forecast can also detect anomalous changes without labels or retraining, raising F$_1$ from 41.58 to 48.70 on a global benchmark. This consistent superiority is validated on nine remote sensing foundation models. Beyond change detection, we believe our approach advances the field by permitting effective reuse of diverse pretrained task heads. Our code is publicly available at https://github.com/ucam-eo/e2forecast.",
         "authors": [
@@ -45731,16 +45747,12 @@
         "updated": "2026-11-01T21:11:19+00:00",
         "version_id": "2611.02211v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02211v1"
       ]
