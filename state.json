@@ -9,7 +9,7 @@
       "created_at": "2026-11-03T03:04:49.053038+00:00"
     },
     "20261103T115447Z-edbd5a91-bbdee39c528f": {
-      "attempts": 0,
+      "attempts": 1,
       "created_at": "2026-11-03T11:54:47.280244+00:00"
     }
   },
@@ -23,7 +23,9 @@
         "20261103T030449Z-5491bbd0-alert-bae796488281"
       ],
       "full_ids": [],
-      "normal_digests": [],
+      "normal_digests": [
+        "20261103T115447Z-edbd5a91-bbdee39c528f"
+      ],
       "paper_ids": [
         "2611.03641",
         "2611.03633",
@@ -38,7 +40,7 @@
       ],
       "query_reservations": 0,
       "review_ids": [],
-      "send_attempts": 2
+      "send_attempts": 3
     }
   },
   "digests": {
@@ -105,6 +107,8 @@
     "20261103T115447Z-edbd5a91-bbdee39c528f": {
       "alert": false,
       "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-microsoft/archive/2026/11/03/20261103T115447Z-edbd5a91-bbdee39c528f.md",
+      "attempt_run": "20261103T115447Z-edbd5a91",
+      "attempt_started": "2026-11-03T12:02:31.965074+00:00",
       "chain_root": "20261103T115447Z-edbd5a91-bbdee39c528f",
       "chain_roots": [
         "20261103T115447Z-edbd5a91-bbdee39c528f"
@@ -159,13 +163,14 @@
         }
       ],
       "notification_hash": "c48e8d6339fe80cb041c3ab2c6a6f8af55e3a36b35e67856b7b6c3ae706e15ee",
+      "quota_day": "2026-11-03",
       "recovery_of": [],
       "rendered": {
         "2611.03617": "rendered_inline_translation"
       },
       "run_id": "20261103T115447Z-edbd5a91",
       "schema_version": 1,
-      "status": "prepared"
+      "status": "sending"
     }
   },
   "papers": {
@@ -55076,6 +55081,7 @@
       ]
     },
     "2611.03617": {
+      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -55095,7 +55101,18 @@
         "transfer_evidence": false,
         "uncertainty": []
       },
-      "events": [],
+      "delivery_chain": "20261103T115447Z-edbd5a91-bbdee39c528f",
+      "events": [
+        {
+          "at": "2026-11-03T12:02:31.965074+00:00",
+          "digest_id": "20261103T115447Z-edbd5a91-bbdee39c528f",
+          "kind": "normal",
+          "recovery_of": "",
+          "rendered": "rendered_inline_translation",
+          "status": "sending",
+          "tier": "translation"
+        }
+      ],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
       "intended_tier": "translation",
@@ -55122,6 +55139,7 @@
         "updated": "2026-11-02T18:50:54+00:00",
         "version_id": "2611.03617v1"
       },
+      "pending_digest": "20261103T115447Z-edbd5a91-bbdee39c528f",
       "presentation_modules": [
         "title",
         "title_translation",
