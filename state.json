@@ -19531,9 +19531,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_training、llm_multimodal、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "A central challenge in multimodal in-context learning (MICL) arises from tasks that are ill-defined without context and require uncovering the underlying rules from demonstrations. Existing methods predominantly treat MICL as direct input-output mapping, overlooking the importance of explicitly inducing and reasoning over such rules, limiting both performance and interpretability. We propose ERIM, Explicit Rule-Induction for Multimodal In-Context Learning, a unified framework that enhances MICL by explicitly inducing the latent rules governing demonstration samples. Leveraging the reasoning ability of multi-modal large language model (MLLM), ERIM constructs rule-centric MICL datasets, introduces explicit supervision for rule induction, and fine-tunes MLLM to perform explicit rule-induction via a two-stage training strategy that combines mixed cold-start supervised fine-tuning with reinforcement learning. Extensive experiments show consistent performance improvements across diverse MICL settings and demonstrate that correctly inducing underlying rules directly leads to stronger and more stable performance.",
         "authors": [
@@ -19551,18 +19567,14 @@
         "updated": "2026-10-30T13:57:30+00:00",
         "version_id": "2610.41754v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_training",
         "llm_multimodal",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41754v1"
       ]
