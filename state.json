@@ -45495,9 +45495,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_efficiency、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_efficiency",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Speculative decoding speeds up LLM serving by drafting tokens that the target model verifies in one pass, and its gain grows with the drafts the target accepts. Structured outputs should be an ideal case, because much of a record follows from relations among its fields: an itinerary's days follow from its cities' stays and flights. Serving engines, however, draft such text by proposing it from the prompt or a learned head, and their grammar masks enforce only syntax, so the model must satisfy the relations, which it violates: on NATURAL PLAN's trip problems, Qwen3-8B writes a valid itinerary for 10%, and retries that name the violated relation raise this to 14%. We present FactorSpec, which serves exact relational constraints as speculative drafts. FactorSpec compiles a JSON Schema and its relations into a factor graph with an exact feasibility check, drafts every token the constraint determines as certain, verifies each request at a width chosen for it, and computes the masks in worker processes outside the scheduler while the GPU runs. In SGLang, its drafts yield up to 10.5 tokens per verify step, up to 1.9x those of the fastest n-gram drafter, and it decodes up to 1.43x faster than speculators tuned per load, at a grammar mask's cost; it also leads in vLLM. Because every record is also valid, it serves up to 13.9x the valid records per GPU-second of syntax-only baselines.",
         "authors": [
@@ -45515,16 +45531,12 @@
         "updated": "2026-11-01T23:46:06+00:00",
         "version_id": "2611.02297v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_efficiency",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02297v1"
       ]
