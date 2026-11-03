@@ -7686,9 +7686,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Attribute-Based Access Control (ABAC) policy mining---recovering a compact, auditable policy from an access log---is posed as minimum set cover and solved greedily, which enjoys an $s^{*}(1+\\ln m)$ guarantee. That guarantee is \\emph{conditional} on a precondition the literature never states: the candidate pool handed to greedy must contain the optimal rules. Generation, not selection, is the binding constraint, and existing generators are purely \\emph{syntactic}---they surface a rule only when enough log records witness it, so they fail on precisely the rare exception rules that fill a heavy-tailed policy. We replace the generator with a language model proposing rules \\emph{semantically}, from attribute names, and keep the combinatorial selector to carry the guarantee: every proposal is filtered against the observed denials, so soundness is independent of the proposal mechanism and an unreliable proposer can only waste candidates, never grant access. Over five seeds on each of two enterprise domains, adding semantic proposal to a syntactic miner dominates it on \\emph{ten of ten} runs---strictly better on seven---with near-optimal policies ($9.2$--$9.6$ rules against $s^{*}=9$, versus $11.2$--$14.6$) and false grants cut four- to sevenfold. Replacing the syntactic miner rather than augmenting it wins only where witnesses are scarce. An anonymization ablation isolates the mechanism: opaque attribute names cost two thirds of the model's rule recovery while leaving the syntactic baselines provably unmoved, and cost nothing where witnesses are plentiful. Semantic knowledge and log evidence are substitutes.",
         "authors": [
@@ -7706,15 +7722,11 @@
         "updated": "2026-10-27T05:38:18+00:00",
         "version_id": "2610.37716v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.37716v1"
       ]
