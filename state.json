@@ -5372,7 +5372,9 @@
       ]
     },
     "2610.37868": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
@@ -5399,6 +5401,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-03T03:05:06.061867+00:00",
+        "run_id": "20261103T030506Z-fc853d4e",
+        "stage": "selection"
+      },
       "versions": [
         "2610.37868v1"
       ]
