@@ -54479,7 +54479,13 @@
         "uncertainty": []
       },
       "events": [],
-      "failures": {},
+      "failures": {
+        "translation": {
+          "attempts": 1,
+          "error": "translation_request_failed",
+          "last_at": "2026-11-03T11:54:47.280244+00:00"
+        }
+      },
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
       "intended_tier": "translation",
       "latest_version": "2611.03551v1",
@@ -54528,11 +54534,6 @@
         "llm_training"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-03T11:54:47.280244+00:00",
-        "run_id": "20261103T115447Z-edbd5a91",
-        "stage": "translation"
-      },
       "versions": [
         "2611.03551v1"
       ]
