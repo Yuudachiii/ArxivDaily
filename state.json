@@ -43726,9 +43726,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_multimodal、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Contextual prompting is widely presented as a cheap route to better performance from vision models, but the evidence comes largely from benchmarks in which an attribute named in a prompt is also present in the image, confounding the two channels. We investigate the significance of context for a semantically complex biomedical signal classification task using a domain-adapted vision-language model, BiomedCLIP. Building on our previous work that renders electrocardiogram (ECG) signals as colour-enhanced images to flag Torsades de Pointes risk using the QT-nomogram and pseudo-colouring technique, we cross four context strategies with four T-wave morphology label sets, evaluated zero-shot and with a class-balanced linear probe, under five-fold stratified cross-validation on 9,789 images. Zero-shot inference is unusable. Once trained, the colour-enhanced images outperform the colourless ones on every metric: balanced accuracy 0.903 versus 0.825, sensitivity 0.914 versus 0.827, specificity 0.892 versus 0.823, ROC-AUC 0.955 versus 0.888 and Matthews correlation coefficient (MCC) 0.437 versus 0.311. Crossing colour-in-image with colour-in-prompt separates the confounded channels: the image contributes +0.126 MCC (+0.078 balanced accuracy, +0.067 ROC-AUC) whether or not the prompt names colour, whereas naming it changes nothing under any metric. Context is two-sided: the best prompt set gains 0.008 MCC where colour is present and 0.016 where it is not, while the worst loses 0.017 and 0.013. For a signal rendered as an image, the leverage lies in how the signal is drawn rather than in how it is described - and where the endpoint is an interval measurement, prompts naming T-wave morphology describe the wrong quantity.",
         "authors": [
@@ -43744,18 +43760,14 @@
         "updated": "2026-11-01T14:02:27+00:00",
         "version_id": "2611.01921v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_multimodal",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01921v1"
       ]
