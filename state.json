@@ -46995,7 +46995,9 @@
       ]
     },
     "2611.02574": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
@@ -47019,6 +47021,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-03T09:04:50.742684+00:00",
+        "run_id": "20261103T090450Z-3a0c86ff",
+        "stage": "selection"
+      },
       "versions": [
         "2611.02574v1"
       ]
