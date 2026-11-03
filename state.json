@@ -1882,9 +1882,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Earth Observation (EO)-based agricultural monitoring is shifting from pixel-level spectral analysis toward representation-driven modeling, yet systematic evaluation of learned representations remains limited. Geospatial foundation models (FMs) generate high-dimensional embeddings encoding complex spatio-temporal land-surface properties, but their utility and interpretability for agricultural applications remain insufficiently understood. This study presents a representation-agnostic framework evaluating a 64-dimensional AlphaEarth embedding space against Sentinel-2 reflectance, NDVI phenology, and harmonic features across geometric separability, temporal dynamics, spatial robustness, and cross-regional generalisation using field-scale data from the Conterminous United States (CONUS; 2017-2023) and Northern India (2021).\n  Traditional features achieve strong linear separability (Fisher ratio), while embeddings provide superior distribution-aware separation - Bhattacharyya and Mahalanobis distances up to an order of magnitude higher for spectrally similar pairs (e.g. Corn/Soybeans: 3.9 vs. 0.10). Embeddings uniquely capture multi-year crop rotation dynamics, yielding a separability ratio of 1.784, versus a maximum of 1.003 for all engineered features. Under spatially explicit validation, embeddings exhibit lower residual spatial autocorrelation of errors (mean Moran's $I \\approx 0.17$), reducing reliance on geographic proximity. However, harmonic features show stronger cross-continental transferability (US $\\to$ India Macro F1: 0.493 vs. 0.326 for embeddings), with NDVI showing a similar advantage. The combined feature space yields balanced performance. These findings reveal a trade-off between representational richness and cross-region transferability, providing a framework for feature selection in large-scale crop classification.",
         "authors": [
@@ -1903,16 +1919,12 @@
         "updated": "2026-10-29T14:15:27+00:00",
         "version_id": "2610.36857v2"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.36857v2"
       ]
