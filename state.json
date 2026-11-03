@@ -116,8 +116,15 @@
       "content_hash": "49a36d508d3266c904b8cc37a0356712f8156baa6979bb7ec731e2aa5674e8f6",
       "created_at": "2026-11-03T11:54:44.310540+00:00",
       "day": "2026-11-03",
+      "delivery": {
+        "detail": "wechat_status",
+        "polls": 1,
+        "pushid": "65834649",
+        "status": "unknown"
+      },
       "digest_id": "20261103T115444Z-6575b93a-49a36d508d32",
       "empty": false,
+      "finished_at": "2026-11-03T11:56:55.418240+00:00",
       "items": [
         {
           "modules": [
@@ -549,7 +556,7 @@
       },
       "run_id": "20261103T115444Z-6575b93a",
       "schema_version": 1,
-      "status": "sending"
+      "status": "unknown"
     }
   },
   "papers": {
@@ -56057,7 +56064,6 @@
       ]
     },
     "2611.03525": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -56085,7 +56091,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "translation_archive_link_only",
-          "status": "sending",
+          "status": "unknown",
           "tier": "translation"
         }
       ],
@@ -56197,7 +56203,6 @@
       ]
     },
     "2611.03543": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -56225,7 +56230,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "unknown",
           "tier": "translation"
         }
       ],
@@ -56280,7 +56285,6 @@
       ]
     },
     "2611.03551": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -56308,7 +56312,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "unknown",
           "tier": "translation"
         }
       ],
@@ -56424,7 +56428,6 @@
       ]
     },
     "2611.03575": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -56452,7 +56455,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "unknown",
           "tier": "translation"
         }
       ],
@@ -56516,7 +56519,6 @@
       ]
     },
     "2611.03586": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -56544,7 +56546,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "unknown",
           "tier": "translation"
         }
       ],
@@ -56765,7 +56767,6 @@
       ]
     },
     "2611.03602": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -56793,7 +56794,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "unknown",
           "tier": "translation"
         }
       ],
@@ -56866,7 +56867,6 @@
       ]
     },
     "2611.03617": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -56894,7 +56894,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "unknown",
           "tier": "translation"
         }
       ],
@@ -57020,7 +57020,6 @@
       ]
     },
     "2611.03627": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -57048,7 +57047,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "unknown",
           "tier": "translation"
         }
       ],
@@ -57105,7 +57104,6 @@
       ]
     },
     "2611.03633": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -57133,7 +57131,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "unknown",
           "tier": "translation"
         }
       ],
@@ -57191,7 +57189,6 @@
       ]
     },
     "2611.03641": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -57219,7 +57216,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "unknown",
           "tier": "translation"
         }
       ],
