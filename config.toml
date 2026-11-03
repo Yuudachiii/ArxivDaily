@@ -217,10 +217,10 @@ request_interval = 1.0
 # 单次翻译调用的时间预算；重试与退避总时长不会超过该预算。
 stage_seconds = 900
 
-# 每个翻译渠道每天最多处理并推送 30 篇未发送论文，余下留待次日。
+# 每个翻译渠道每天最多处理并推送 10 篇未发送论文，余下留待次日。
 # full_daily_limit/review_daily_limit 只影响 llm 模式的全文总结与复审，规则模式不会使用。
 [limits]
-daily_paper_limit = 30
+daily_paper_limit = 10
 full_daily_limit = 5
 review_daily_limit = 2
 stage_attempts = 3
@@ -232,7 +232,8 @@ run_seconds = 2400
 [prompts]
 directory = "app/prompts"
 
-# 优先最近 7 天，未发送论文不足每日名额时按从近到远扩展，最多回看 30 天。
+# 优先最近 7 天，按 5/10 篇向上取最近档位；0 篇时目标为 5 篇，上限 10 篇。
+# 只从更早的未发送论文补到该档位，最多回看 30 天；不足则按实际数量发送。
 # 已确认发送的论文继续去重；元数据读取后先筛选和分配名额，再翻译。
 # 网络请求间隔至少 3 秒；max_candidates 是元数据容量，不是每日推送篇数。
 [collection]

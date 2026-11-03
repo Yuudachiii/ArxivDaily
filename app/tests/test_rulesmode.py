@@ -111,7 +111,7 @@ def test_rules_mode_archives_full_detail_within_daily_limit(tmp_path):
         Paper(f"2502.{90000 + index}v1", f"Large language model paper {index}",
               f"We train a large language model with instruction tuning and method {index}.",
               ["cs.CL"], "2026-10-01T00:00:00+00:00", "2026-10-01T00:00:00+00:00")
-        for index in range(12)
+        for index in range(10)
     ]
     analysis = RulesAnalysis(config)
     translator = StubTranslator()
@@ -119,12 +119,12 @@ def test_rules_mode_archives_full_detail_within_daily_limit(tmp_path):
     delivery = MockDelivery("confirmed")
     report = Pipeline(config, store, None, analysis, None, delivery, now=NOW, translator=translator).run(papers)
     assert not report["errors"]
-    assert report["translation"] == 12 and report["full"] == report["light"] == 0
-    assert analysis.calls["selection"] == 12
+    assert report["translation"] == 10 and report["full"] == report["light"] == 0
+    assert analysis.calls["selection"] == 10
     assert len(delivery.sent) == 1
     state = store.load()
     digest = state["digests"][report["digest_id"]]
-    assert len(digest["items"]) == 12
+    assert len(digest["items"]) == 10
     assert {record["intended_tier"] for record in state["papers"].values()} == {"translation"}
     archive = (store.directory / f"archive/2026/10/02/{report['digest_id']}.md").read_text(encoding="utf-8")
     for paper in papers:
@@ -139,10 +139,10 @@ def _llm_paper(index, age):
 
 
 @pytest.mark.parametrize("provider", ["google_free", "microsoft_free"])
-def test_each_channel_limits_processing_to_thirty_and_defers_rest(tmp_path, provider):
+def test_each_channel_limits_processing_to_ten_and_defers_rest(tmp_path, provider):
     config = load_config(default_config_path())
     config["translation"]["provider"] = provider
-    papers = [_llm_paper(i, timedelta(days=1, minutes=i)) for i in range(65)]
+    papers = [_llm_paper(i, timedelta(days=1, minutes=i)) for i in range(25)]
     store = StateStore(tmp_path / provider)
     translator = StubTranslator()
     analysis = RulesAnalysis(config)
@@ -151,19 +151,22 @@ def test_each_channel_limits_processing_to_thirty_and_defers_rest(tmp_path, prov
         return Pipeline(config, store, None, analysis, None, delivery, now=NOW + timedelta(days=day),
                         translator=translator).run(list(reversed(papers)))
     first = run(0)
-    assert first["translation"] == 30 and not first["errors"]
-    assert analysis.calls["selection"] == translator.calls == 30
+    assert first["translation"] == 10 and not first["errors"]
+    assert analysis.calls["selection"] == translator.calls == 10
     state = store.load()
-    assert [item["paper"]["version_id"] for item in state["digests"][first["digest_id"]]["items"]] == [p.version_id for p in papers[:30]]
-    assert all(not state["papers"][p.base_id].get("decision") for p in papers[30:])
+    assert [item["paper"]["version_id"] for item in state["digests"][first["digest_id"]]["items"]] == [p.version_id for p in papers[:10]]
+    assert all(not state["papers"][p.base_id].get("decision") for p in papers[10:])
     again = run(0)
-    assert again["translation"] == 0 and translator.calls == 30
-    assert run(1)["translation"] == 30 and translator.calls == 60
-    assert run(2)["translation"] == 5 and translator.calls == 65
+    assert again["translation"] == 0 and translator.calls == 10
+    assert run(1)["translation"] == 10 and translator.calls == 20
+    assert run(2)["translation"] == 5 and translator.calls == 25
 
 
-@pytest.mark.parametrize("recent_count,expected_queries", [(35, 1), (8, 2)])
-def test_recent_week_is_filled_with_newest_month_papers_only_when_needed(tmp_path, recent_count, expected_queries):
+@pytest.mark.parametrize("recent_count,target,expected_queries", [
+    (35, 10, 1), (10, 10, 1), (9, 10, 2), (8, 10, 2),
+    (7, 10, 2), (5, 5, 1), (1, 5, 2), (0, 5, 2),
+])
+def test_recent_week_is_filled_with_newest_month_papers_only_when_needed(tmp_path, recent_count, target, expected_queries):
     config = load_config(default_config_path())
     config["translation"]["provider"] = "google_free"
     papers = ([_llm_paper(i, timedelta(days=2, minutes=i)) for i in range(recent_count)]
@@ -182,15 +185,15 @@ def test_recent_week_is_filled_with_newest_month_papers_only_when_needed(tmp_pat
     store = StateStore(tmp_path / "daily")
     report = Pipeline(config, store, source, RulesAnalysis(config), None, MockDelivery("confirmed"),
                       now=NOW, translator=translator).run()
-    assert not report["errors"] and report["translation"] == 30
+    assert not report["errors"] and report["translation"] == target
     assert len(source.windows) == expected_queries
     if expected_queries == 2:
         assert source.windows[1]["start"] == (NOW - timedelta(days=30)).isoformat()
         assert source.windows[1]["end"] == source.windows[0]["start"]
-        assert source.windows[1]["limit"] == 22
+        assert source.windows[1]["limit"] == target - recent_count
     sent = store.load()["digests"][report["digest_id"]]["items"]
-    assert [item["paper"]["version_id"] for item in sent] == [p.version_id for p in papers[:30]]
-    assert translator.calls == 30
+    assert [item["paper"]["version_id"] for item in sent] == [p.version_id for p in papers[:target]]
+    assert translator.calls == target
 
 
 def test_committed_rules_require_language_model_specific_terms():
@@ -224,8 +227,8 @@ def test_cached_unsent_papers_wait_without_translation_and_expire_after_month(tm
     translator = StubTranslator()
     report = Pipeline(config, store, None, RulesAnalysis(config), None, MockDelivery("confirmed"),
                       now=NOW, translator=translator).run([])
-    assert not report["errors"] and report["translation"] == 30
-    assert translator.calls == 30
+    assert not report["errors"] and report["translation"] == 5
+    assert translator.calls == 5
     assert not store.load()["papers"][papers[-1].base_id].get("translation")
 
 
@@ -237,8 +240,65 @@ def test_same_day_partial_digest_only_uses_the_remaining_paper_slots(tmp_path):
     papers = [_llm_paper(i, timedelta(days=1, minutes=i)) for i in range(40)]
     def run(items):
         return Pipeline(config, store, None, analysis, None, delivery, now=NOW, translator=translator).run(items)
-    assert run(papers[:10])["translation"] == 10
-    assert run(papers)["translation"] == 20
-    assert translator.calls == 30
+    assert run(papers[:4])["translation"] == 4
+    assert run(papers)["translation"] == 6
+    assert translator.calls == 10
     assert run(papers)["translation"] == 0
-    assert len(store.load()["daily"]["2026-10-02"]["paper_ids"]) == 30
+    assert len(store.load()["daily"]["2026-10-02"]["paper_ids"]) == 10
+
+
+@pytest.mark.parametrize("older_count,expected", [(0, 0), (3, 3), (8, 5)])
+def test_empty_week_only_fills_five_and_notifies_when_month_is_empty(tmp_path, older_count, expected):
+    config = load_config(default_config_path())
+    config["translation"]["provider"] = "google_free"
+    papers = ([_llm_paper(i, timedelta(days=9, minutes=i)) for i in range(older_count)]
+              + [_llm_paper(100, timedelta(days=31))])
+    class Source:
+        def collect(self, window):
+            selected = [p for p in papers if window["start"] <= p.published <= window["end"]
+                        and p.base_id not in window["excluded_ids"]]
+            return CollectionResult(papers=selected[:window["limit"]])
+    source, store = Source(), StateStore(tmp_path / "sparse")
+    state = store.load()
+    expired = upsert_paper(state, papers[-1], NOW - timedelta(days=31), match_rules(papers[-1], config))
+    expired.update(stage="ready", intended_tier="translation")
+    store.save(state)
+    analysis, translator, delivery = RulesAnalysis(config), StubTranslator(), MockDelivery("confirmed")
+    def run():
+        return Pipeline(config, store, source, analysis, None, delivery, now=NOW, translator=translator).run()
+    report = run()
+    assert not report["errors"] and report["translation"] == expected
+    assert translator.calls == expected and len(delivery.sent) == 1
+    assert report["delivery_kind"] == ("empty" if expected == 0 else "digest")
+    if expected == 0:
+        assert "今天未发现新增工作" in delivery.sent[0][1]
+    else:
+        assert run()["translation"] == 0
+        assert translator.calls == expected and len(delivery.sent) == 1
+
+
+@pytest.mark.parametrize("already_sent", [0, 6, 12])
+def test_lower_limit_respects_existing_deliveries_and_releases_old_reservations(tmp_path, already_sent):
+    config = load_config(default_config_path())
+    config["translation"]["provider"] = "google_free"
+    store = StateStore(tmp_path / "old-limit")
+    analysis, translator, delivery = RulesAnalysis(config), StubTranslator(), MockDelivery("confirmed")
+    papers = [_llm_paper(i, timedelta(days=1, minutes=i)) for i in range(30)]
+    if already_sent:
+        config["limits"]["daily_paper_limit"] = 30  # Previous configuration.
+        prior = Pipeline(config, store, None, analysis, None, delivery, now=NOW, translator=translator)
+        assert prior.run(papers[-already_sent:])["translation"] == already_sent
+    config["limits"]["daily_paper_limit"] = 10
+    state = store.load()
+    for paper in papers:
+        upsert_paper(state, paper, NOW, match_rules(paper, config))
+    day = state["daily"].setdefault("2026-10-02", {
+        "full_ids": [], "review_ids": [], "send_attempts": 0,
+        "query_reservations": 0, "normal_digests": [], "alerts": [],
+    })
+    day["paper_ids"] = [p.base_id for p in papers]
+    store.save(state)
+    report = Pipeline(config, store, None, analysis, None, delivery, now=NOW, translator=translator).run(papers)
+    assert not report["errors"]
+    assert report["translation"] == max(0, 10 - already_sent)
+    assert translator.calls == max(10, already_sent)

@@ -51,7 +51,7 @@ DEFAULTS = {
             "general_reasoning": [["SEG", "REASON"]],
         },
     },
-    "limits": {"daily_paper_limit": 30, "full_daily_limit": 5, "review_daily_limit": 2, "stage_attempts": 3, "recovery_days": 14, "run_seconds": 2400},
+    "limits": {"daily_paper_limit": 10, "full_daily_limit": 5, "review_daily_limit": 2, "stage_attempts": 3, "recovery_days": 14, "run_seconds": 2400},
     "llm": {
         "filter": {"provider": "deepseek", "protocol": "chat_completions", "base_url": "https://api.deepseek.com", "model": "deepseek-flash", "api_key_env": "DEEPSEEK_API_KEY", "effort": "high", "max_tokens": 16384, "timeout": 120, "stage_seconds": 180, "attempts": 3, "retry_delay_seconds": 1, "image_capable": False, "input_chars": 30000},
         "summary": {"provider": "deepseek", "protocol": "chat_completions", "base_url": "https://api.deepseek.com", "model": "deepseek-flash", "api_key_env": "DEEPSEEK_API_KEY", "effort": "max", "max_tokens": 65536, "timeout": 240, "stage_seconds": 900, "attempts": 3, "retry_delay_seconds": 1, "image_capable": True, "input_chars": 120000, "max_section_calls": 64},
@@ -189,7 +189,7 @@ def load_config(path: str | Path | None = None) -> dict:
         _integer(coll[key], f"collection.{key}", 1, upper)
     _number(coll["delay_seconds"], "collection.delay_seconds", 3)
     limits = config["limits"]
-    for key, lower, upper in (("daily_paper_limit", 1, 30), ("full_daily_limit", 1, 10), ("review_daily_limit", 0, 10), ("stage_attempts", 1, 10), ("recovery_days", 1, 14), ("run_seconds", 1, 2700)):
+    for key, lower, upper in (("daily_paper_limit", 1, 10), ("full_daily_limit", 1, 10), ("review_daily_limit", 0, 10), ("stage_attempts", 1, 10), ("recovery_days", 1, 14), ("run_seconds", 1, 2700)):
         _integer(limits[key], f"limits.{key}", lower, upper)
     delivery = config["delivery"]
     for key, lower, upper in (("daily_limit", 1, 5), ("poll_limit", 0, 3), ("chain_attempts", 1, 3), ("body_bytes", 1, 32768)):

@@ -151,14 +151,18 @@ class Pipeline:
 
     def _daily_paper_ids(self) -> list[str]:
         ids = self._daily().setdefault("paper_ids", [])
+        attempted = []
         # Include deliveries made before the paper limit was introduced.
         for digest in self.state["digests"].values():
             if (digest.get("quota_day", digest.get("day")) == self.day
                     and digest["status"] in {"confirmed", "sending", "unknown"}):
                 for item in digest["items"]:
                     key = Paper.from_dict(item["paper"]).base_id
-                    if key not in ids:
-                        ids.append(key)
+                    if key not in attempted:
+                        attempted.append(key)
+        # Preserve actual attempts; release excess unused slots after a limit reduction.
+        remaining = max(0, self.config["limits"]["daily_paper_limit"] - len(attempted))
+        ids[:] = attempted + [key for key in ids if key not in attempted][:remaining]
         return ids
 
     def _daily_candidates(self, start=None) -> list[dict]:
@@ -172,6 +176,15 @@ class Pipeline:
                 records.append(record)
         return sorted(records, key=lambda r: (parse_time(r["paper"]["published"]), r["paper"]["version_id"]), reverse=True)
 
+    def _daily_target(self, recent_ids=()) -> int:
+        start = self.now - timedelta(days=self.config["collection"]["lookback_days"])
+        recent = {Paper.from_dict(r["paper"]).base_id for r in self._daily_candidates(start)}
+        recent.update(recent_ids)
+        # Today's already assigned recent papers still count on a same-day rerun.
+        recent.update(key for key in self._daily_paper_ids() if key in self.state["papers"]
+                      and start <= parse_time(self.state["papers"][key]["paper"]["published"]) <= self.now)
+        return min(self.config["limits"]["daily_paper_limit"], max(5, ((len(recent) + 4) // 5) * 5))
+
     def _collect_daily(self, window: dict) -> CollectionResult:
         reserved = self._daily_paper_ids()
         remaining = self.config["limits"]["daily_paper_limit"] - len(reserved)
@@ -184,11 +197,12 @@ class Pipeline:
                   if Paper.from_dict(r["paper"]).base_id not in excluded}
         recent.update(p.base_id for p in result.papers)
         older_start = self.now - timedelta(days=self.config["collection"]["max_lookback_days"])
-        if result.complete and len(recent) < remaining and older_start < parse_time(window["start"]):
+        needed = self._daily_target(recent) - len(reserved) - len(recent)
+        if result.complete and needed > 0 and older_start < parse_time(window["start"]):
             excluded.update(p.base_id for p in result.papers)
             older = self.collector.collect({**window, "start": iso(older_start), "end": window["start"],
                                            "known_ids": list(self.state["papers"]),
-                                           "excluded_ids": list(excluded), "limit": remaining - len(recent)})
+                                           "excluded_ids": list(excluded), "limit": needed})
             result.papers.extend(older.papers)
             result.shards.extend(older.shards)
             result.errors.extend(older.errors)
@@ -201,11 +215,12 @@ class Pipeline:
             return
         ids = self._daily_paper_ids()
         records = self._daily_candidates()
+        target = self._daily_target()
         for record in records:
             key = Paper.from_dict(record["paper"]).base_id
-            if key not in ids and len(ids) < self.config["limits"]["daily_paper_limit"]:
+            if key not in ids and len(ids) < target:
                 ids.append(key)
-        self.daily_ids = set(ids).intersection(Paper.from_dict(r["paper"]).base_id for r in records)
+        self.daily_ids = set(ids[:target]).intersection(Paper.from_dict(r["paper"]).base_id for r in records)
         self.checkpoint()
 
     def _eligible(self, record: dict) -> bool:
@@ -448,7 +463,7 @@ class Pipeline:
                 key = item.paper.base_id
                 if key not in ids and len(ids) < self.config["limits"]["daily_paper_limit"]:
                     ids.append(key)
-                if key in ids:
+                if key in ids[:self.config["limits"]["daily_paper_limit"]]:
                     allowed.append(item)
             items = allowed
             items.sort(key=lambda i: (parse_time(i.paper.published), i.paper.base_id), reverse=True)
@@ -717,8 +732,10 @@ class Pipeline:
             digest_id = self._send(recoveries + new)
             if not digest_id and self.errors and not self._daily()["alerts"]:
                 digest_id = self._send([], alert=True)
-            waiting_ready = any(r.get("stage") in {"ready", "summary_validated"} and not confirmed(r) for r in self.state["papers"].values())
-            if not digest_id and not waiting_ready and not self.errors and run["coverage_complete"] and not (self.promotion_ids or self.resend_ids or self.retry_ids or manual_start or manual_end):
+            waiting_ready = any(r.get("stage") in {"ready", "summary_validated"} and not confirmed(r)
+                                for key, r in self.state["papers"].items()
+                                if self.daily_ids is None or key in self.daily_ids)
+            if not digest_id and not waiting_ready and not self.errors and run["coverage_complete"] and not (self.promotion_ids or self.resend_ids or self.retry_ids or manual_start or manual_end) and (self.daily_ids is None or not self._daily_paper_ids()):
                 digest_id = self._send([], empty=True)
             actual = self.state["digests"][digest_id]["items"] if digest_id else []
             digest = self.state["digests"].get(digest_id,{})

@@ -22,7 +22,7 @@ Python 批处理应用，没有网页界面或独立数据库。Actions 负责�
 - `rules`：`RulesAnalysis` 实现 pipeline/translation 使用的 `AnalysisClient` 子集（`select`、`review`、`summarize`、`translate`、`client`、`usage_records`、`_guard`、`_remaining_seconds`、`_begin_stage`、`run_deadline_monotonic`、`on_usage`、`usage_start_cursor`、`calls`、`prompt_fingerprint`）。`select` 对已命中的候选返回 `status=select`、`tier=translation`、`score=0`，路线取首个初筛路线或 `rules`；`review`/`summarize`/`translate` 只在被错误调用时抛 `ProcessingError("llm_disabled")`。pipeline 中 `llm_summary`/`evidence` 关闭时不会走到这些方法。
 - `llm`：沿用 `AnalysisClient`，需要模型密钥，测试和旧配置继续支持。
 
-规则模式按标题和摘要中的明确 LLM 用语召回，按提交时间从近到远分配每渠道每天最多 30 篇未发送论文，再进行免费翻译和推送。先查最近 7 天，不足时扩展至最近 30 天；未取得当天名额的文章不判定、不翻译，继续保留至次日。每天的名单和已有发送记录分别用于限制处理数量和防止重发。此路径不下载正文、不调用大模型，两个翻译渠道使用各自的状态分支独立计数。
+规则模式按标题和摘要中的明确 LLM 用语召回，按提交时间从近到远分配每渠道每天最多 10 篇未发送论文，再进行免费翻译和推送。最近 7 天的文章数按 5 篇或 10 篇档位补齐（0 篇时目标为 5），只从最近 30 天补到该档位；数量不足时发送实际篇数，全无未发送文章时发送无新增通知。未取得当天名额的文章不判定、不翻译，继续保留至次日。每天的名单和已有发送记录分别用于限制处理数量和防止重发。此路径不下载正文、不调用大模型，两个翻译渠道使用各自的状态分支独立计数。
 
 ## 每日双变体
 
