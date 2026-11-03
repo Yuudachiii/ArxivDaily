@@ -8307,10 +8307,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.37842v1",
+      "model": "rules",
       "paper": {
         "abstract": "As growing compute budgets outpace the growth of high-quality training data, large language models must be trained with both compute and data constraints in mind. Unfortunately, existing prescriptions for data-constrained scaling suffer from two important limitations. First, past works hold key hyperparameters such as weight decay fixed with scale, despite the fact that optimal hyperparameters vary wildly with model size and number of epochs. Second, past works neglect ensembling, a promising axis for scaling under data constraints. As a surprising consequence, prior prescriptions can lead to loss that increases with compute budget. We address both limitations by fitting power laws that prescribe how to transfer hyperparameters with scale and scaling laws that prescribe how to allocate compute with ensembling. Training on 100M tokens from FineWeb, our recipe reduces validation loss by over 0.15 nats compared to prior recipes, a 14% decrease in perplexity, and achieves monotonic improvements with compute through ensembling. These gains are achieved using prescriptions fit to smaller runs and validated at up to 12$\\times$ larger compute budgets.",
         "authors": [
@@ -8330,15 +8346,11 @@
         "updated": "2026-10-27T18:52:54+00:00",
         "version_id": "2610.37842v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.37842v1"
       ]
