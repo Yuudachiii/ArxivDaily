@@ -47267,9 +47267,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Programs that use a language model as a classifier act on its most probable label. Text injected into the input can move that label to one the attacker chooses, a hijack. A monitor that does not know the attacker's label can read the model's own confidence and raise an alarm when the top probability is low. We test this monitor on AG News topic classification with five systems, three of them served through a provider's API. Pooled over five families of injected text, low confidence ranks hijacked answers above clean ones on four of the five systems (AUROC 0.86-0.90). Ranking them does not stop many of them. A threshold set so that at most 5% of clean answers to separate calibration articles alarm falls among the least confident clean answers, and every more confident hijack passes. In our main gate run on the three API-served systems, the monitor misses 51-70% of the hijacks caused by a plain injected note (per-system point estimates). When the note adds one handwritten sentence that calls the target certain and asks for full probability, the monitor misses 99-100% of the hijacks, although low confidence still ranks them at AUROC 0.70-0.79. Confidence monitors should be tested at their operating alarm rate, against attackers who claim certainty.",
         "authors": [
@@ -47288,15 +47304,11 @@
         "updated": "2026-11-02T04:49:25+00:00",
         "version_id": "2611.02522v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02522v1"
       ]
