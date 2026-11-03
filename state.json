@@ -11476,9 +11476,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "FP8 formats specify how values are stored, not how products are summed; this gap can break checkpoints. Evo 2, a DNA language model, documents a Hopper FP8 requirement for its 1B and 40B checkpoints. On two Blackwell (sm_120) GPUs both fail the developers' forward test (the 7B passes); on an RTX 5070 Ti the 40B's next-base accuracy is 25.7%, near guessing. Greater accuracy breaks them, as BioNeMo saw for the 40B on Hopper: natively, 99.996% of one projection's outputs are correctly rounded (H100: about 30%), and fp32 accumulation of the same operands fails. Our H100 FP8 GEMM emulator, mmaemu (bit-exact on captured 1B projections), localises the dependence to the 1B's first projection (of 21), where exact sums fail but pass when shrunk by the H100's 1.4% (measured in-sample), not 2.1%. The 40B fails with only its first projection native. Emulating only that projection, weights unchanged, raises 40B BRCA1 variant-classification AUROC from 0.434 to 0.869 (H100: 0.868) on the RTX 5070 Ti, despite a narrow forward-test miss, and 0.481 to 0.867 on an RTX PRO 6000. We tested one model family but not training origin; releases should specify reference arithmetic.",
         "authors": [
@@ -11494,15 +11510,11 @@
         "updated": "2026-10-29T05:55:59+00:00",
         "version_id": "2610.39415v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.39415v1"
       ]
