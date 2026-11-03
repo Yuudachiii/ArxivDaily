@@ -1,17 +1,35 @@
 {
   "chains": {},
   "collection": {
-    "initial_floor": "2026-11-02T02:42:00.481953+00:00"
+    "initial_floor": "2026-11-02T02:42:00.481953+00:00",
+    "last_complete_end": "2026-11-03T02:42:00.481953+00:00"
   },
   "daily": {},
   "digests": {},
   "papers": {},
   "runs": [
     {
+      "collection_errors": [],
       "config_fingerprint": "7c836ebb53f711006aca3630507bc86f7d7e43aa871ac426ceb670d942776ef1",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-03",
+      "discovered_candidates": 0,
+      "discovered_papers": 0,
       "run_id": "20261103T024200Z-999afcea",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-03T02:42:00+00:00",
+          "seen": 0,
+          "start": "2026-11-02T02:42:00+00:00",
+          "status": "complete"
+        }
+      ],
       "started_at": "2026-11-03T02:42:00.481953+00:00",
       "window": {
         "end": "2026-11-03T02:42:00.481953+00:00",
