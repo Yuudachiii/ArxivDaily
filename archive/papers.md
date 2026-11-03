@@ -14,7 +14,7 @@
 | 2026-11-03 | Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models | 待翻译 | [arXiv 2611.03592v1](https://arxiv.org/abs/2611.03592v1) |
 | 2026-11-03 | A Scaling Theory of Multi-Epoch Pretraining: Late-Time Overfitting and Ensembling | 待翻译 | [arXiv 2611.03590v1](https://arxiv.org/abs/2611.03590v1) |
 | 2026-11-03 | FedReady: Bounded Agents for Federation Formation | 待翻译 | [arXiv 2611.03586v1](https://arxiv.org/abs/2611.03586v1) |
-| 2026-11-03 | VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably | 待翻译 | [arXiv 2611.03575v1](https://arxiv.org/abs/2611.03575v1) |
+| 2026-11-03 | VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably | VeriHarm-Bench：可验证地衡量 LLM 编码代理的有害成功 | [arXiv 2611.03575v1](https://arxiv.org/abs/2611.03575v1) |
 | 2026-11-03 | MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study | 待翻译 | [arXiv 2611.03555v1](https://arxiv.org/abs/2611.03555v1) |
 | 2026-11-03 | Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL | LLM代理可以成为前沿部署工程师吗？企业文本到 SQL 的需求发现和交付 | [arXiv 2611.03551v1](https://arxiv.org/abs/2611.03551v1) |
 | 2026-11-03 | Can LLM Agents Improve Imperfect Earth System Model Parameterizations? | LLM 代理可以改善不完美地球系统模型参数化吗？ | [arXiv 2611.03543v1](https://arxiv.org/abs/2611.03543v1) |
