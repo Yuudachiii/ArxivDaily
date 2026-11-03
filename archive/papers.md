@@ -4,6 +4,7 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-03 | Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning | 待翻译 | [arXiv 2611.03602v1](https://arxiv.org/abs/2611.03602v1) |
 | 2026-11-03 | From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles | 待翻译 | [arXiv 2611.03641v1](https://arxiv.org/abs/2611.03641v1) |
 | 2026-11-03 | Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap | 待翻译 | [arXiv 2611.03633v1](https://arxiv.org/abs/2611.03633v1) |
 | 2026-11-03 | Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR | 待翻译 | [arXiv 2611.03627v1](https://arxiv.org/abs/2611.03627v1) |

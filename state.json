@@ -11,7 +11,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:42:00.481953+00:00",
-    "last_complete_end": "2026-11-03T09:04:47.999239+00:00"
+    "last_complete_end": "2026-11-03T11:54:47.280244+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -20,6 +20,7 @@
       ],
       "full_ids": [],
       "normal_digests": [],
+      "paper_ids": [],
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 2
@@ -54273,6 +54274,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "latest_version": "2611.03525v1",
       "model": "rules",
       "paper": {
         "abstract": "Skill extraction benchmarks score models against a few human-annotated positives and treat every other skill in the vocabulary as equally wrong. At the scale of ESCO (13,939 skills) this binary view can reward models that rank the annotated positive high for the wrong reason, and hides semantically nonsensical predictions. The WorkRB Challenge at RecSys-HR 2026 replaces it with graded relevance: every candidate skill in a model's ranking window carries a 0 to 4 grade, and the leaderboard scores nDCG@100 against these grades. Since ternary judgements proved too coarse for objective annotation, relevance is decomposed into a cascade of four binary questions (same domain, activity mentioned, right granularity, replacement of a gold positive) that a smaller LLM judge can answer reliably; the labels are validated with blind human and frontier-model re-annotation. This paper documents the annotation methodology, the construction of five benchmark datasets (four with vacancy sentences as queries, one with lexically distant skill surface forms), the validation of the LLM cascade, and insights from the submissions. The field converged on multi-stage retrieve-and-rerank pipelines, whose gains come from clearing nonsense out of the ranking window rather than finding more positives: at the top of the leaderboard, the graded ordering is uncorrelated with what binary evaluation would have said. Graded labels expose much bigger gaps between top submissions and baselines than binary evaluation does, and show that semantic-understanding skill recommendation is still wide open. The clear next direction is bringing efficiency back: every submitted system we could size uses at least 42x, typically several hundred times, more parameters than the baselines it beats.",
@@ -54292,8 +54294,8 @@
       },
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
-        "llm_eval",
-        "llm_core"
+        "llm_core",
+        "llm_eval"
       ],
       "stage": "selected",
       "versions": [
@@ -54378,6 +54380,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "latest_version": "2611.03543v1",
       "model": "rules",
       "paper": {
         "abstract": "Earth system models (ESMs) rely on parameterizations to represent unresolved processes such as convection, cloud microphysics, and turbulence. However, translating advances in physical understanding into stable, validated parameterizations and integrating them into ESMs often takes years. Agentic AI could accelerate this process and enable more systematic exploration of design choices. Using warm-rain collision-coalescence as a test case, we evaluate agents' ability to synthesize scientific literature, reimplement published bulk parameterizations, and propose new functional forms as differentiable JAX code. We compare conventional parameterizations, data-driven emulators, and agent-generated closures against high-fidelity superdroplet simulations, repeating unattended experiments across ten language models. With expert guidance or iterative feedback, agents produced executable, differentiable, mass-conserving code, although unattended performance depended strongly on the scheme and language model. Iterative feedback lowered median rollout error for eight of ten models. Retuned physical schemes matched or outperformed many learned parameterizations at substantially lower computational cost, but two of 100 unattended agent-generated closures achieved slightly lower rain-mass error than the most accurate retuned scheme on held-out simulations.",
@@ -54426,6 +54429,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "latest_version": "2611.03551v1",
       "model": "rules",
       "paper": {
         "abstract": "LLM coding agents can increasingly automate model post-training, but whether they can act as forward-deployed engineer (FDE) agents, discovering customer requirements and turning them into deployment decisions, remains unclear. We study this on a real enterprise text-to-SQL engagement: a simulated customer, grounded in the real use case's requirements, starts with an ambiguous request. An agent must discover acceptance criteria, data permissions, and hardware constraints in the discovery phase, then plan and execute a post-training recipe in the delivery phase. Across 15 models, the strongest discover over 80% of withheld requirements and open-weight models discover 40-50%; in the delivery phase, only 25% of runs across eight coding-agent configurations pass all acceptance criteria. We identify four bottlenecks in this engagement: (1) incomplete discovery, with 40% of withheld requirements missing or misrepresented; (2) unreliable execution; (3) underused compute budgets and a lack of systematic comparisons across base models and post-training methods; and (4) benchmark accuracy does not guarantee production readiness. We suggest human review of discovered requirements, monitoring of the agent's plan during execution, and an explicit experiment-environment specification covering hardware, budget scope, and production checks.",
@@ -54451,10 +54455,10 @@
       },
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
-        "llm_training",
         "llm_agent",
+        "llm_core",
         "llm_eval",
-        "llm_core"
+        "llm_training"
       ],
       "stage": "selected",
       "versions": [
@@ -54533,6 +54537,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "latest_version": "2611.03575v1",
       "model": "rules",
       "paper": {
         "abstract": "Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter permissions, and modify system configurations. However, an agent may achieve a user's goal while causing unintended harm, such as deleting unrelated files, weakening access controls, or corrupting data, in response to benign inputs without explicit jailbreaking. This failure mode is particularly important because apparent task success may reassure users that an agent behaved correctly, causing harmful side effects to go unnoticed. We call this harmful success: the agent successfully completes the intended benign task while simultaneously causing unintended harm. Despite its importance, harmful success is difficult to measure because conventional task-success metrics overlook harmful behaviors, while existing safety evaluations are often designed solely to assess harmful outcomes. We introduce VeriHarm, an automatic framework for constructing programmatically verifiable benchmarks that directly measure harmful success. VeriHarm minimally perturbs coding tasks to elicit unintended harmful behavior while maintaining the benignity of the task and preserving the original task objective. It then synthesizes executable harm tests that, together with the original task-correctness tests, evaluate both task accuracy and harmful outcomes. Frontier agents, including GPT-5.6-Sol and Claude-Opus-5, achieve an average task accuracy of 95% on our curated VeriHarm-Bench, yet still struggle to complete tasks safely: their safe success rate, the fraction of tasks completed successfully without triggering the designated harm, averages only 37%. These results suggest that successful task completion can frequently coexist with unintended harm, and that task-success metrics alone may substantially understate the potential safety risks of coding agents.",
@@ -54557,9 +54562,9 @@
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
-        "llm_safety",
+        "llm_core",
         "llm_eval",
-        "llm_core"
+        "llm_safety"
       ],
       "stage": "selected",
       "versions": [
@@ -54588,6 +54593,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "latest_version": "2611.03586v1",
       "model": "rules",
       "paper": {
         "abstract": "Federated learning (FL) runtimes standardize aggregation and deployment, but each new study still requires federation formation: selecting task-eligible sites and preparing their local data and task code for federated training or analysis. This preparation recurs when the target changes, while raw records and site-private mappings are excluded from cross-site FL messages. We present FedReady, a system that performs federation formation with bounded LLM agents. Agents propose shared contracts, local adapters, and task code; the runtime owns workflow state and accepts artifacts only after checks tied to their digests. Candidate site discovery prioritizes recall; local eligibility verification checks task support before site admission. Once participating sites and artifacts are fixed, conventional federated training or analysis proceeds without readiness agents. Across 39 simulated retinal sites and four tasks, discovery reaches recall 1.00 at precision 0.65; local eligibility verification removes all 17 false positives without losing an eligible site-task pair. The participating sites supply 45,575 task-record instances and complete four 100-round jobs, including one with a runtime-generated contract. Across ten patient cohorts, preparation supports seven patient populations and holds endpoints at three sources as unsupported. Comparison with manually prepared reference populations and analysis (the manual reference) gives a maximum survival-curve difference of 0.001133. We also analyze 19 development failures, targeted classification ablations, and standalone and heterogeneous agent configurations. These results establish the feasibility of task-specific data preparation before ordinary FL training or analysis.",
@@ -54780,6 +54786,51 @@
         "2611.03601v1"
       ]
     },
+    "2611.03602": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-03T11:54:47.280244+00:00",
+      "paper": {
+        "abstract": "Multimodal large language models (MLLMs) can generate detailed video captions, yet they may overemphasize minor details while overlooking essential context and key events. We argue that not all visual evidence deserves equal attention, as the importance of visual information depends on the content of each video. Motivated by this observation, we propose Reviso, an agentic video captioning framework that learns what to observe and how to gather relevant visual evidence. From a low-frame-rate global preview, Reviso constructs a hierarchical Context--Focus--Points (CFP) observation plan that identifies the video context, prioritizes key aspects, and defines concrete observation targets and corresponding tools. Guided by this plan, Reviso performs goal-directed active perception by selectively revisiting temporal segments and combining tools for fine-grained inspection. It interprets the acquired evidence, updates its plan as needed, and integrates global and local information to generate the final caption. To learn this observation strategy, we develop a verification-guided pipeline that constructs high-quality training trajectories through factual verification and teacher-guided refinement. We further train Reviso using Group Relative Policy Optimization (GRPO), incorporating a key-fact reward for caption quality, a Plan Alignment Reward (PAR) for identifying important observation targets, and an Unproductive Tool-Call Penalty (UTCP) that adjusts observation-cost penalties based on caption quality. Experiments across four video captioning benchmarks show that Reviso outperforms the evaluated open-source baselines, while its generated captions better support downstream video question answering. These findings highlight the effectiveness and potential of priority-guided active observation for video captioning.",
+        "authors": [
+          "Tengfei Liu",
+          "Yang Shi",
+          "Yuran Wang",
+          "Yuqi Tang",
+          "Yizhuo Jia",
+          "Zhuoran Zhang",
+          "Qixun Wang",
+          "Shujie Li",
+          "Xuanyu Zhu",
+          "Xinyu Liu",
+          "Minghui Guo",
+          "Shixuan Liu",
+          "Haotian Wang",
+          "Yuanxing Zhang",
+          "Pengfei Wan"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.03602v1",
+        "published": "2026-11-02T18:41:14+00:00",
+        "title": "Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning",
+        "updated": "2026-11-02T18:41:14+00:00",
+        "version_id": "2611.03602v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_agent",
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.03602v1"
+      ]
+    },
     "2611.03617": {
       "attempts": {
         "selection": 1
@@ -54802,6 +54853,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "latest_version": "2611.03617v1",
       "model": "rules",
       "paper": {
         "abstract": "Large language models (LLMs) show growing promise for scientific discovery, yet basic questions remain about what enables reliable discovery. How can we trace the scientific discovery capacity of LLMs to their training data? We study this question as one of missing probability mass and develop a theoretical account in which monofacts-the facts observed once during training-set the discovery capacity. In materials science and regulatory genomics, we directly manipulate monofact rates in training sets and find that more monofacts consistently yield more discoveries across two open-weight model families, sampling strategies, and reasoning budgets. Further experiments show the relationship cannot be explained by training-set diversity alone and can transfer across scientific domains when paired with in-domain data. Together, our results identify monofact rate in training data as a key factor governing discoveries in language models.",
@@ -54826,8 +54878,8 @@
       },
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
-        "llm_reasoning",
-        "llm_core"
+        "llm_core",
+        "llm_reasoning"
       ],
       "stage": "selected",
       "versions": [
@@ -54921,6 +54973,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "latest_version": "2611.03627v1",
       "model": "rules",
       "paper": {
         "abstract": "Reinforcement learning with verifiable rewards (RLVR) can enable generalizable improvement for large language model (LLM) reasoning. This paper studies how to incentivize such generalization via reasoning strategies. We study this question with a controllable equation-solving framework: finding multiple inputs x for equations f(x)=y, where f is a non-bijective string function. This setting makes reasoning strategies observable while supporting a clear definition of easy-to-hard out-of-distribution (OOD) shifts, e.g., more solutions, longer y, etc. We uncover a subtle RLVR failure: it teaches the model to solve in-distribution tasks with high accuracy and structured step-by-step derivation, yet under OOD shifts, the same model abandons derivation and collapses to ineffective brute-force enumeration, causing sharp accuracy drops. This observation reveals the deeper challenges of RLVR generalization as it is neither incapable base model nor reward hacking, since the model succeeds in-distribution with the correct reasoning strategy. The key to mitigating this failure is an indirect intervention that surprisingly helps: co-training with bijective inversion tasks. Although these bijective tasks are actually not uniformly harder and even further from the non-bijective OOD evaluation, they make derivation more certain and substantially restore the correct strategy and accuracy under OOD shifts. This effect further motivates our theoretical analysis: outcome-only RLVR can shape reasoning processes through implicitly crediting the effective reasoning strategies more, even without process supervision. To conclude, our analysis framework and findings systematically reveal the crucial role and incentivization of reasoning strategies in RLVR generalization under OOD shifts. Code is available at https://github.com/ziqipang/rl_meta_thinking.",
@@ -54939,9 +54992,9 @@
       },
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
-        "llm_reasoning",
+        "llm_core",
         "llm_eval",
-        "llm_core"
+        "llm_reasoning"
       ],
       "stage": "selected",
       "versions": [
@@ -54970,6 +55023,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "latest_version": "2611.03633v1",
       "model": "rules",
       "paper": {
         "abstract": "Muon has recently emerged as a promising optimizer for pretraining large language models, offering a speedup over AdamW in minimizing pretraining loss. However, it remains unclear whether Muon's advantage persists after fine-tuning. In this paper, we study the downstream behavior of Muon and AdamW and uncover a surprising trend: beyond a sufficiently large pretraining data budget, AdamW outperforms Muon after fine-tuning. Moreover, as model size increases, AdamW overtakes Muon at progressively smaller pretraining token-parameter ratios. To explain this reversal, we view fine-tuning as a perturbation of the outputs and introduce the margin-to-spread ratio, which measures how far the correct logit lies above the wrong ones relative to how widely the wrong logits are spread. In language models, Muon has the larger margin-to-spread ratio at small data budgets and AdamW at large ones, mirroring the fine-tuning trend. In a linear associative memory, we prove that after one update the margin-to-spread ratio of gradient descent gains on that of Muon as the data budget grows, and simulations show that this trend persists after extended training.",
@@ -54991,8 +55045,8 @@
       },
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
-        "llm_training",
-        "llm_core"
+        "llm_core",
+        "llm_training"
       ],
       "stage": "selected",
       "versions": [
@@ -55021,6 +55075,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:47.999239+00:00",
+      "latest_version": "2611.03641v1",
       "model": "rules",
       "paper": {
         "abstract": "Chain-of-Thought (CoT) generation has substantially improved the performance of Large Language Models (LLMs) on complex reasoning tasks, including code generation, data analysis, and exam-style question answering. Despite these advances, purely neural LLMs continue to struggle with elementary logical reasoning problems and lack the determinism, soundness, and reliability characteristic of symbolic reasoning systems. Conversely, classical symbolic methods such as SAT solving and exact cover guarantee correctness and completeness, but require problems to be expressed in highly specialized formal encodings, limiting their applicability to natural language inputs. In this work, we present a synergistic neuro-symbolic framework that bridges this gap by combining neural semantic parsing with deterministic exact cover reasoning. Given a Zebra-style logic puzzle in natural language, an LLM translates entities and constraints into structured tool calls that construct an exact cover instance. A symbolic solver then computes the solution and provides feedback to iteratively refine invalid, under- or overconstrained encodings, exploiting the uniqueness property of Zebra puzzles. We conduct a comprehensive empirical evaluation across multiple parameter scales, post-training paradigms, and LLM families. The results demonstrate that our hybrid approach consistently outperforms strong plain neural baselines, including CoT prompting, as well as recent neuro-symbolic methods.",
@@ -55043,10 +55098,10 @@
       },
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
-        "llm_reasoning",
-        "llm_training",
+        "llm_core",
         "llm_eval",
-        "llm_core"
+        "llm_reasoning",
+        "llm_training"
       ],
       "stage": "selected",
       "versions": [
@@ -55187,10 +55242,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-03",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261103T115447Z-edbd5a91",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-03T11:54:00+00:00",
+          "seen": 42,
+          "start": "2026-10-27T11:54:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-03T11:54:47.280244+00:00",
       "window": {
         "end": "2026-11-03T11:54:47.280244+00:00",
