@@ -8876,9 +8876,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "LLMs increasingly fact-check online content with the poster's identity in view. However, it remains unclear which post-training changes how much a model's truth judgement depends on the poster's social class, and how such a change happens inside the model. This paper investigates job-based doubt, i.e., judging a claim false more often when the poster has a lower-status job, using fact-checked claims with randomised poster profiles in base and post-trained checkpoints of six model families. Our results reveal that: 1) post-training creates such doubt only with the open Tülu-3 recipe (OLMo-2 32B, Tülu-3 70B), not with Meta's, Alibaba's or Mistral's; the effect is under one percentage point but statistically reliable, exceeding training drift and replicating on independent claim sets; 2) in OLMo-2 32B, the model does not start noticing the poster's job more, but starts interpreting it differently: a lower-status job pushes the base model toward \"true\" and the post-trained model toward \"false\"; and 3) this flip is carried by a single residual-stream direction and happens at supervised fine-tuning. The mechanism was confirmed on 400 new claims with pre-specified predictions. None of seven deployed commercial models doubts lower-status posters more. Our work underscores the need to audit speaker bias per training recipe.",
         "authors": [
@@ -8896,16 +8912,12 @@
         "updated": "2026-10-28T09:39:56+00:00",
         "version_id": "2610.38532v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38532v1"
       ]
