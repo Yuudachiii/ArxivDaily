@@ -21409,9 +21409,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_safety、llm_multimodal、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_safety",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "A child learns which words name which things from roughly 100 million words of input. Vision-language models trained at a comparable scale bind words to referents far less reliably, and we argue that part of the gap is structural: the usual next-token captioning objective has no variable standing for \"this word refers to that region,\" so training applies no direct pressure to ground words. We add such a variable by treating each scene as a small assignment problem between the content words heard and the regions seen, solved as entropic optimal transport under two constraints. First, a word may be assigned to a special NOTHING column instead of any region, which matters because most content words in caregiver speech do not name anything visible. Second, no region may receive more than a bounded share of the assignment mass, a capacity constraint that encodes mutual exclusivity. The alignment step costs about eight Sinkhorn iterations, small next to the vision encoder. In controlled simulation, the naive version of the idea, a row-wise softmax that forces every word onto some region, collapses to 0.000 word-to-picture accuracy under realistic non-reference rates, below the 0.058 of captioning alone, while our two constraints reach 0.075 in that regime and 0.700 on clean input. A one-parameter version of the model reproduces adult cross-situational learning accuracy across three ambiguity conditions (RMSE 0.024). On the SAYCam infant video corpus, adding the alignment loss to a next-token captioning model raises word-to-picture accuracy from 32.4% to 48.7% and localization IoU from 0.18 to 0.38. A contrastive model trained on the same child's data remains stronger on its own benchmark, so our claim is that the loss improves a captioning objective under high non-reference rates, not that it sets a new best.",
         "authors": [
@@ -21428,18 +21444,14 @@
         "updated": "2026-10-30T19:39:12+00:00",
         "version_id": "2611.00319v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_safety",
         "llm_multimodal",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00319v1"
       ]
