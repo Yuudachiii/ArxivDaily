@@ -12857,9 +12857,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "As language models (LMs) have improved, an increasingly common means of evaluating their linguistic competence is through explicit prompting (e.g., \"Which sentence is more acceptable?\"). Prior work indicates that such prompting underperforms compared to standard token-probability-based methods in smaller models, but improves in larger models. We test this in a new domain: semantic focus-sensitivity, responsible for contrasts like \"Lucy only SWAM yesterday\" vs. \"Lucy only swam YESTERDAY\". Testing models of various sizes using text-based focus markers like boldface and italics, we find universal above-chance performance for token probabilities. Prompting results mostly align with previous findings, but in some larger models they outperform probabilities by a wide margin. We propose that this is because LMs are not prone to produce out-of-the-blue focus marking, which muddies results from token probabilities in a way that does not affect prompting. We test this by replacing standard focus markers with randomly generated ones; token probabilities still beat chance but show significantly greater performance decrease compared to prompting. These results suggest that metalinguistic prompting, while non-trivial for LMs, can also be more robust when testing stylistically atypical data. We argue that this has important consequences for the assessment of LMs' language competence, even if LMs do not perform metalinguistic judgments through human-like introspection.",
         "authors": [
@@ -12875,16 +12891,12 @@
         "updated": "2026-10-29T12:28:54+00:00",
         "version_id": "2610.39923v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.39923v1"
       ]
