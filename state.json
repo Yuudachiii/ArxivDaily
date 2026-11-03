@@ -48355,9 +48355,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "AI scientists are expanding automated research across scientific domains, yet their ability to turn the scientific record into a foundation for autonomous discovery remains elusive. Here we uncover a fundamental barrier to this transition and demonstrate a route to overcome it in computational quantum science, where advances shape both what we can learn from complex quantum systems and what quantum computing can ultimately deliver. To identify this barrier, we introduce OmniQ, an expert-audited virtual research environment that converts published studies into executable reproduction tasks. Across 59 papers spanning classical simulation, quantum algorithms and quantum-property characterization, we systematically evaluate five agentic systems powered by large language models and six third-party agent harnesses. Our findings reveal that current AI scientists often fail to reproduce published results, exposing a fundamental mismatch between what scientific papers communicate and what autonomous agents require. By contrast, human expert intervention can turn these failures into successful reproductions, showing that the missing information can be identified and converted into reusable research experience. Guided by this observation, we develop Residual Agents (RA), a quantum-tailored self-improving AI scientist that distils externally verified workflow repairs into such experience. RA substantially improves research performance under fixed base models and limited adaptation budgets. For example, RA raises DeepSeek V4.1 Flash performance from 68% to 85%, matching Claude Code with Opus 5 at a third of its cost despite using a weaker base model. We integrate all reproduced results into an extensible platform built on the model context protocol, making verified research workflows directly accessible to AI scientists and allowing new scientific papers to be continuously incorporated.",
         "authors": [
@@ -48379,16 +48395,12 @@
         "updated": "2026-11-02T09:32:13+00:00",
         "version_id": "2611.02833v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02833v1"
       ]
