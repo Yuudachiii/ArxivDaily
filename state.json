@@ -17757,9 +17757,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Large language models offer a promising route to register-transfer-level (RTL) design, but reliable implementations require checking and revision based on electronic design automation (EDA) tools' feedback. Existing RTL-specialized models often lack learned interaction with such EDA tools or rely on separate generation and repair components. We introduce RTL-Interact, a multi-task post-training framework that trains a single RTL-specialized model to generate RTL, construct task-appropriate EDA checks, and revise implementations using tool feedback. The framework combines automatically constructed multi-task demonstrations with staged supervision from chain-of-thought to tool-integrated reasoning. We further introduce Pattern-Aware Policy Optimization (PAPO) for multi-task reinforcement learning. PAPO augments Group Relative Policy Optimization with correctness-gated rewards that favor concise successful checking while rewarding effective revision, and uses task grouping to preserve coverage across objectives. On CVDP, RTL-Interact-32B achieves 48.7% weighted Pass@1 and 68.9% Pass@5, surpassing its teacher model, DeepSeek-V3.2, while RTL-Interact-8B achieves 44.9% weighted Pass@1. Additionally, we show that PAPO can reduce average tool calls by 63.8% while improving Pass@1. Both models also outperform all RTL-specialized baselines on VerilogEval v2 and RTLLM v2, demonstrating the effectiveness of our method.",
         "authors": [
@@ -17789,17 +17805,13 @@
         "updated": "2026-10-30T04:03:39+00:00",
         "version_id": "2610.41225v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41225v1"
       ]
