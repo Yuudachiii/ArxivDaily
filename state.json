@@ -16241,9 +16241,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_efficiency、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_efficiency",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Recent progress in deep learning has substantially advanced automated grading of ophthalmologic pathologies, supported by large annotated datasets and improved representation learning. However, a significant gap remains between state-of-the-art performance and clinical scalability. In particular, foundation models have reshaped image-based medical screening and diagnosis. These large-scale architectures trained on extensive datasets learn rich, generalizable feature representations that can be adapted to a wide range of downstream tasks. In ophthalmology, RETFound, one of the most relevant foundation models for retinal images, performs strongly across classification, segmentation, and risk prediction tasks. Despite their effectiveness, foundation models are often computationally prohibitive, hindering their deployment in real-world clinical environments where hardware constraints and latency are critical. To bridge this gap, we introduce CAMEL (Cross-Architecture Masked Embedding Learning), a novel cross-architecture distillation framework that uses an asymmetric masking strategy during embedding learning to effectively transfer knowledge from massive teacher foundation models to compact, lightweight student models. Our experimental evaluation across four datasets shows that CAMEL preserves accuracy while drastically reducing computational complexity, enabling lightweight yet highly accurate models suitable for resource-limited clinical settings.",
         "authors": [
@@ -16263,17 +16279,13 @@
         "updated": "2026-10-29T20:33:32+00:00",
         "version_id": "2610.40954v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_efficiency",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.40954v1"
       ]
