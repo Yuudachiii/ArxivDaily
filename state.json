@@ -42870,9 +42870,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "In autonomous driving, 3D LiDAR semantic segmentation is expected to adapt to evolving environments and recognize previously unseen categories, making generalized category discovery under test-time adaptation (GCD-TTA) an important problem. However, existing works treat GCD and TTA separately, while the limited semantic information in 3D point clouds makes GCD-TTA under domain shift more prone to feature collapse when combining GCD with TTA. To address this issue, we propose a two-stage framework for GCD-TTA in 3D LiDAR semantic segmentation. Specifically, in the first stage, we adaptively aggregate local 3D features according to geometric density variations and obtain reliable pseudo labels under a global class-wise prototype consistency constraint. In the second stage, we cast category discovery as an optimal transport assignment process for globally consistent grouping of novel categories. Meanwhile, semantic features from 2D vision foundation models are fused with 3D point cloud features to enrich 3D semantic information and promote a more separable feature space. Extensive experiments on Synth4D to SemanticKITTI, SynLiDAR to SemanticKITTI, and Synth4D to nuScenes demonstrate the effectiveness of our framework. Under a unified evaluation protocol, our method achieves the best overall mIoU on 9 out of 10 benchmark splits and improves the overall mIoU by up to 12.21 points over the strongest re-implemented baseline.",
         "authors": [
@@ -42891,16 +42907,12 @@
         "updated": "2026-11-01T08:02:36+00:00",
         "version_id": "2611.01682v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01682v1"
       ]
