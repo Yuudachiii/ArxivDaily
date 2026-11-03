@@ -1,7 +1,7 @@
 {
   "chains": {
     "20261103T024200Z-999afcea-8fb1aa06704d": {
-      "attempts": 0,
+      "attempts": 1,
       "created_at": "2026-11-03T02:42:00.481953+00:00"
     }
   },
@@ -16,13 +16,15 @@
       "normal_digests": [],
       "query_reservations": 0,
       "review_ids": [],
-      "send_attempts": 0
+      "send_attempts": 1
     }
   },
   "digests": {
     "20261103T024200Z-999afcea-8fb1aa06704d": {
       "alert": false,
       "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-microsoft/archive/2026/11/03/20261103T024200Z-999afcea-8fb1aa06704d.md",
+      "attempt_run": "20261103T024200Z-999afcea",
+      "attempt_started": "2026-11-03T02:42:08.274163+00:00",
       "chain_root": "20261103T024200Z-999afcea-8fb1aa06704d",
       "chain_roots": [
         "20261103T024200Z-999afcea-8fb1aa06704d"
@@ -34,11 +36,12 @@
       "empty": true,
       "items": [],
       "notification_hash": "2ca4de3c4c37fc80c4d72243096575b7b5c3246f2cef9409b4c3ee54077974e6",
+      "quota_day": "2026-11-03",
       "recovery_of": [],
       "rendered": {},
       "run_id": "20261103T024200Z-999afcea",
       "schema_version": 1,
-      "status": "prepared"
+      "status": "sending"
     }
   },
   "papers": {},
