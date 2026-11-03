@@ -16862,9 +16862,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_safety、llm_multimodal、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_safety",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Image composition labels such as center, diagonal, or rule of thirds describe visual structure rather than object categories. KU-PCP provides image-level labels and class-specific geometric elements, but does not show which visible regions people associate with each of its nine classes. We introduce KU-PCP Elements (KU-PCPE), a label-conditioned region-evidence benchmark for photographic composition. Given an image and a label already judged applicable, the task is to segment the visible regions that explain why the label applies. KU-PCPE contains 4,093 single-annotator training masks and a 1,327-task expert test split with three masks per image-label task. The annotations also include exploratory segment-versus-line ratings that describe whether region or semantic-guideline evidence better explains the label. A held-out expert reaches .867 Dice against the other experts, while the strongest deployable model reaches .664, a proposal oracle .672, and the best vision-language model (VLM) proposal selector .395. KU-PCPE exposes the gap between recognizing a composition label and grounding the human-aligned visual evidence that makes it plausible in a particular image.",
         "authors": [
@@ -16883,18 +16899,14 @@
         "updated": "2026-10-29T23:51:43+00:00",
         "version_id": "2610.41080v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_safety",
         "llm_multimodal",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41080v1"
       ]
