@@ -10468,10 +10468,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core、llm_eval",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.38096v1",
+      "model": "rules",
       "paper": {
         "abstract": "When a language model returns engineering quantities with the status \"solved\", software that trusts it passes them on, even when the requested design is physically impossible. Such failures could reflect poor calculation, how the answer is requested, or a failure to judge feasibility. We set beam loads and disk speeds at known percentages above or below plastic collapse or burst, measured each model's limit calculation separately and tested 12 models in 4,860 calls, including follow-up experiments on new designs. We find that a model can recognize an impossible design when asked only whether it is feasible, yet accept the same design, reporting \"solved\", when asked for a full answer. Three models accepted beams 10 to 30% beyond collapse despite precise limit calculations in separate questions, and many accepted replies stated the violation. Asked only about feasibility, Opus 5 and Gemini 3.8 Flash rejected every impossible new design they were given, including those accepted in full answers, without false alarms. Rewording when to decline or changing the answer format raised rejection on the original beams, but not consistently on new designs. Software and benchmarks using a model's status should test feasibility judgment and full-answer rejection separately, and report the exact prompt.",
         "authors": [
@@ -10489,16 +10505,12 @@
         "updated": "2026-10-28T00:28:46+00:00",
         "version_id": "2610.38096v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core",
         "llm_eval"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38096v1"
       ]
