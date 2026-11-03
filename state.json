@@ -4982,10 +4982,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.37280v1",
+      "model": "rules",
       "paper": {
         "abstract": "Narrative-driven recommendation allows users to express multifaceted needs through free-form text where stated preferences naturally qualify and condition one another. Existing methods typically treat narratives as flat keyword combinations or unconstrained generative queries, failing to capture how complex preferences hierarchically refine and contextualize each other. We propose the Preference Dependency Graph Framework (PDG-F), a narrative-driven recommendation framework centered on explicit preference dependencies. Specifically, PDG-A (PDG-Agent) first parses unstructured requests to organize user preferences and their mutual qualifications into a directed acyclic Preference Dependency Graph (PDG). Through this graph, candidate evidence from the open Web is acquired via directed path retrieval, and final recommendations are determined by topological path ranking. Comprehensive experiments across three diverse domains spanning English and Chinese contexts confirm that PDG-F consistently achieves superior recommendation performance over competitive baselines, open-domain retrieval agents, and frontier language models. Further diagnostic analyses show that our dependency-guided retrieval markedly raises the attainable candidate-pool ceiling, demonstrating the fundamental value of modeling preference dependencies in narrative-driven recommendation.",
         "authors": [
@@ -5006,16 +5022,12 @@
         "updated": "2026-10-27T14:08:30+00:00",
         "version_id": "2610.37280v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.37280v1"
       ]
