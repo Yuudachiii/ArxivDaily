@@ -44421,9 +44421,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "While language models (LMs) excel in natural language tasks, their ability to learn impossible languages--those that violate the structural, cognitive, or logical constraints that make human languages learnable and functional--remains debatable. This controversy is further fueled by a divide between linguistic theorists and empirical researchers working with small-scale LMs. To address this controversy, we introduce semantic coherence. This concept measures how effectively semantic information is expressed in language structures and examines the learning capabilities of LMs across multiple scales. By fine-tuning billion-parameter LMs on impossible language samples, we demonstrate that larger LMs achieve similar performance on impossible and possible languages, whereas million-parameter LMs exhibit significant degradation when trained on impossible languages. This performance gap widens as semantic complexity increases. We further show that scaling up the LM size fundamentally shifts the learning focus from grammatical rules to semantic understanding, with billion-scale LMs exhibiting a threefold reduction in sensitivity to low-level linguistic perturbations while maintaining stable performance under high-level semantic perturbations.",
         "authors": [
@@ -44444,16 +44460,12 @@
         "updated": "2026-11-01T15:58:51+00:00",
         "version_id": "2611.02015v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.02015v1"
       ]
