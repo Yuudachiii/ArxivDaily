@@ -217,20 +217,32 @@ class FakeTranslators:
         return reply
 
 
-def test_microsoft_free_provider_uses_translators_bing_engine(monkeypatch):
+@pytest.mark.parametrize("abstract", ["short abstract", "a" * 1000, "a" * 1001, "LLM reasoning. " * 180],
+                         ids=["short", "at-limit", "over-limit", "long-abstract"])
+def test_microsoft_free_provider_uses_translators_bing_engine(monkeypatch, abstract):
     monkeypatch.delenv("TRANSLATION_API_KEY", raising=False)
     cfg = load_config()
     cfg["translation"].update(provider="microsoft_free")
-    fake = FakeTranslators(["标题", "摘要"])
+    calls = []
+
+    class BingWithLengthLimit:
+        def translate_text(self, text, *, translator, from_language, to_language, **kwargs):
+            calls.append((text, translator, from_language, to_language))
+            if len(text) > 1000:
+                raise RuntimeError("Bing input limit exceeded")
+            return text
+
+    fake = BingWithLengthLimit()
     monkeypatch.setattr(translation_module, "_load_translators", lambda: fake)
     from arxivdaily.rulesmode import RulesAnalysis
     analysis = RulesAnalysis(cfg)
-    result = TranslationClient(cfg, analysis).translate(paper())
-    assert result == Translation("标题", "摘要")
-    assert fake.calls == [
-        (paper().title, "bing", "en", "zh"),
-        (paper().abstract, "bing", "en", "zh"),
-    ]
+    article = paper()
+    article.abstract = abstract
+    result = TranslationClient(cfg, analysis, sleep=lambda _: None).translate(article)
+    assert result == Translation(article.title, abstract)
+    assert calls[0] == (article.title, "bing", "en", "zh")
+    assert all(len(text) <= 1000 and args == ["bing", "en", "zh"] for text, *args in calls)
+    assert "".join(text for text, *_ in calls[1:]) == abstract
 
 
 def test_microsoft_free_retries_library_errors_without_region_settings(monkeypatch):

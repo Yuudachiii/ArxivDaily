@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import os
+import textwrap
 import time
 
 import httpx
@@ -63,25 +64,29 @@ def _bing_texts(texts: list[str], guard=None, timeout=None) -> list[str]:
     translators = _load_translators()
     values: list[str] = []
     for text in texts:
-        if guard is not None:
-            guard()
-        seconds = timeout() if callable(timeout) else timeout
-        if seconds is not None and seconds <= 0.1:
-            raise ProcessingError("translation_run_time_guard")
-        try:
-            kwargs = {} if seconds is None else {"timeout": seconds}
-            value = translators.translate_text(
-                text, translator="bing", from_language="en", to_language="zh", **kwargs
-            )
-        except ProcessingError:
-            raise
-        except Exception:
-            # Library-specific exceptions are mapped onto the existing
-            # retryable translation failure path.
-            raise ProcessingError("translation_provider_unavailable") from None
-        if not isinstance(value, str) or not value.strip():
-            raise ProcessingError("translation_response_invalid")
-        values.append(value)
+        translated: list[str] = []
+        # The Bing engine rejects inputs longer than 1,000 characters.
+        for chunk in textwrap.wrap(text, width=1000, expand_tabs=False, replace_whitespace=False,
+                                   drop_whitespace=False, break_on_hyphens=False):
+            if guard is not None:
+                guard()
+            seconds = timeout() if callable(timeout) else timeout
+            if seconds is not None and seconds <= 0.1:
+                raise ProcessingError("translation_run_time_guard")
+            try:
+                kwargs = {} if seconds is None else {"timeout": seconds}
+                value = translators.translate_text(
+                    chunk, translator="bing", from_language="en", to_language="zh", **kwargs
+                )
+            except ProcessingError:
+                raise
+            except Exception:
+                # Library-specific exceptions use the existing retry path.
+                raise ProcessingError("translation_provider_unavailable") from None
+            if not isinstance(value, str) or not value.strip():
+                raise ProcessingError("translation_response_invalid")
+            translated.append(value)
+        values.append("".join(translated))
     return values
 
 
