@@ -21406,9 +21406,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_training、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Large language models (LLMs) are increasingly used to generate analog circuits, yet every netlist must also be verified. We propose LLMs as verification assistants for analog circuits that flag unmet specifications and reliability issues that appear under process, voltage, and temperature (PVT) variation. These issues emerge from how circuit stages combine, a structure that generic parameter-efficient fine-tuning (PEFT) methods such as LoRA do not capture. To this end, we introduce CAPER, a circuit-aware PEFT method that adds a small branch alongside LoRA to read each stage's properties from the LLM and combine them from the relevant stages. In deciding whether a feedback loop is negative, LoRA and a high-rank adapter stay at chance, whereas CAPER answers every test case correctly. For comparator latches, where 11 of 90 LLM-written designs that work under nominal conditions fail under PVT variation, CAPER likewise learns to flag such latent failures, while generic adapters stay near chance. These results show that adding circuit knowledge to PEFT makes such analog verification checks learnable through fine-tuning.",
         "authors": [
@@ -21424,17 +21440,13 @@
         "updated": "2026-10-30T16:42:24+00:00",
         "version_id": "2611.00187v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_training",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.00187v1"
       ]
