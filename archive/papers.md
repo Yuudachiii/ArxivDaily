@@ -9,7 +9,7 @@
 | 2026-11-03 | Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap | 待翻译 | [arXiv 2611.03633v1](https://arxiv.org/abs/2611.03633v1) |
 | 2026-11-03 | Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR | 待翻译 | [arXiv 2611.03627v1](https://arxiv.org/abs/2611.03627v1) |
 | 2026-11-03 | D&amp;A: Decoupling Description and Assessment Enables VLMs as Zero-Shot Robotic Reward Models | 待翻译 | [arXiv 2611.03622v1](https://arxiv.org/abs/2611.03622v1) |
-| 2026-11-03 | Tracing the Scientific Discovery Capacity of LLMs to Their Training Data | 待翻译 | [arXiv 2611.03617v1](https://arxiv.org/abs/2611.03617v1) |
+| 2026-11-03 | Tracing the Scientific Discovery Capacity of LLMs to Their Training Data | 将大型语言模型的科学发现能力追溯到其训练数据 | [arXiv 2611.03617v1](https://arxiv.org/abs/2611.03617v1) |
 | 2026-11-03 | DiabAgent: Toward Agentic Physiological Control | 待翻译 | [arXiv 2611.03601v1](https://arxiv.org/abs/2611.03601v1) |
 | 2026-11-03 | Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models | 待翻译 | [arXiv 2611.03592v1](https://arxiv.org/abs/2611.03592v1) |
 | 2026-11-03 | A Scaling Theory of Multi-Epoch Pretraining: Late-Time Overfitting and Ensembling | 待翻译 | [arXiv 2611.03590v1](https://arxiv.org/abs/2611.03590v1) |
