@@ -18380,9 +18380,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_agent、llm_multimodal、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Spatial reasoning in Vision-Language Models (VLMs) has increasingly benefited from tool-integrated pipelines that ground computation in explicit geometry. However, existing systems often compile queries into relatively open-ended artifacts, such as code, task constraints, tool plans, or gathered evidence, leaving what must be resolved before execution under-specified. This can lead to unnecessary tool acquisition and iterative refinement, while still producing plausible reasoning traces from incomplete spatial commitments. We identify this failure mode as under-committed query compilation. To address it, we propose PEPS, a training-free agentic paradigm Parsing Executable Primitives for Spatial reasoning under a typed FESM schema over Frame, Entity, State, and Metric. PEPS follows a parse-before-execute principle: the Parser commits each query to a compact set of executable requirements; the Executor selectively grounds the required primitives through fixed geometric APIs and deterministic computation; and the Verifier checks execution sufficiency, enabling early termination or targeted repair. Extensive experiments across challenging spatial reasoning benchmarks show that PEPS consistently improves reasoning accuracy while substantially reducing refinement rounds, API cost, and end-to-end latency over strong tool-integrated baselines. These results demonstrate that explicit requirement commitment can make tool-integrated spatial reasoning not only more reliable, but also more execution-efficient.",
         "authors": [
@@ -18404,6 +18420,7 @@
         "updated": "2026-10-30T07:59:08+00:00",
         "version_id": "2610.41389v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_agent",
@@ -18411,12 +18428,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.41389v1"
       ]
