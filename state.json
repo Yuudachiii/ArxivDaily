@@ -42655,9 +42655,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_training、llm_multimodal、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_training",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Handwritten Urdu is hard to recognize because the cursive Nastaliq script has no fixed baseline and no clear character boundaries. We benchmark six systems on the Urdu Nastaliq Handwritten Dataset (UNHD): Tesseract (default configuration), a script-specific recognizer trained on printed Urdu (UTRNet-Large), two open-source vision-language models (VLMs), and two commercial VLMs. All six systems are evaluated without fine-tuning on 2,465 single-line images (Part A), and the four VLMs receive the same fixed prompt (decoding uses temperature 0 where configurable, except for Claude Sonnet 5, whose decoding cannot be configured). Both commercial VLMs reach lower error than the printed-Urdu recognizer and the open-source VLMs. We do not compare against handwriting-trained recognizers, which would likely do better in-domain; we characterize zero-shot behavior, not state of the art. We also describe three distinct failure modes among the ranked systems. In one of them, a commercial model explicitly declines to transcribe a few very hard-to-read images instead of guessing. In a second study (Part B), VLMs correct the output of a separate OCR system using both the source image and the noisy text. Once separated from each model's own reading ability, the benefit is small on Tesseract's output (0.7% to 7.4%) and larger (17.9% and 21.9%) only for the two commercial correctors given UTRNet's text. It appears to depend on how legible the supplied text already is, and a weaker corrector can make a more legible text worse.",
         "authors": [
@@ -42675,18 +42691,14 @@
         "updated": "2026-11-01T06:39:14+00:00",
         "version_id": "2611.01635v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_multimodal",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01635v1"
       ]
