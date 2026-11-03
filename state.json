@@ -44027,9 +44027,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T09:04:50.742684+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Factual recall in language models is typically framed as retrieving a factual association: a subject--relation pair maps to a single object. However, many facts are context-dependent: the same pair maps to different objects depending on a condition such as time. We introduce anchored factual recall, in which the model receives an explicit conditioning expression, an anchor, and must select the object valid under it. This raises questions that single-object recall does not: where the anchor enters the computation, what it changes, and how that change selects the answer. Focusing on temporal anchors, we answer them with causal interventions on four open-weight models on English prompts and identify two routes. In a subject-mediated route, the anchor resolves the final subject-token representation to the queried year, and the relation redistributes the readout of this state across attention heads. In a direct route] the final position attends to the anchor, and upper-layer MLPs turn this signal into a preference for the time-appropriate object. The two routes are parallel channels: their contributions add up, most queries use both, and their balance depends on the query, e.g., on the relation, consistently across models. This reframes mechanistic accounts of factual recall from retrieving a single stored object to selecting among context-dependent alternatives.",
         "authors": [
@@ -44046,15 +44062,11 @@
         "updated": "2026-11-01T14:26:38+00:00",
         "version_id": "2611.01945v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:50.742684+00:00",
-        "run_id": "20261103T090450Z-3a0c86ff",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.01945v1"
       ]
