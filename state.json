@@ -12708,9 +12708,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_multimodal、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_multimodal",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Prompt-tuning has emerged as a parameter-efficient technique for adapting large-scale vision-language models (VLMs) to downstream tasks while keeping the pre-trained weights frozen. However, prompt-tuned VLMs often suffer from a base-to-novel dual miscalibration problem, where models typically show underconfidence on base classes and overconfidence on novel classes. Current VLM calibration approaches address this dual miscalibration either separately or jointly, but lack a geometric understanding of the hyperspherical embedding space and thus fail to exploit angular discriminative properties to adjust distorted decision boundaries. To address this, we propose M-PFT, a novel angular-margin approach for prompt tuning that introduces two complementary objectives to promote class discriminability and semantic anchoring. This enlarges the angular margin by 1) minimizing the maximum cosine similarity between tunable class embeddings to reduce embedding collapse and 2) minimizing the angular distance between each tunable embedding and its corresponding zero-shot embedding to preserve semantic geometry. Extensive experiments across 9 prompt-tuning methods with various backbones on 15 diverse datasets show that our approach reduces the average calibration error on novel classes, while remaining competitive on base classes and maintaining comparable accuracy. Further analyses reveal that M-PFT effectively adjusts distorted decision boundaries induced by prompt tuning while preserving the pre-trained embedding space, improving calibration with negligible computational overhead.",
         "authors": [
@@ -12731,16 +12747,12 @@
         "updated": "2026-10-29T11:39:47+00:00",
         "version_id": "2610.39861v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_multimodal",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.39861v1"
       ]
