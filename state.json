@@ -11799,10 +11799,26 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
       "latest_version": "2610.38296v2",
+      "model": "rules",
       "paper": {
         "abstract": "Language-model answers are often treated as a visible record of the internal decision that produced them. We test this assumption in conflicting-context question answering, where two supplied documents support incompatible answers. A model can process the disagreement and still return a one-sided answer, even under prompts that ask it to disclose conflict. In Qwen 0.8B, hidden source commitment is captured by a residual source-choice direction whose sign tracks which document the answer uses. Sparse middle-layer MLP writers feed the same coordinate, and steering the coordinate changes the chosen source. A transfer run on Gemma 3 1B preserves the source-choice readout and sparse-write bridge under LLM-audited labels. Conflict disclosure follows a different pattern, appearing weaker, later-layer, and only partially steerable. These results support a practical monitoring strategy for retrieval systems that detects silent source commitment with residual readouts and pairs conflict-surfacing prompts with disclosure steering when the model has selected a side under disagreement.",
         "authors": [
@@ -11818,15 +11834,11 @@
         "updated": "2026-10-30T08:39:31+00:00",
         "version_id": "2610.38296v2"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T09:04:47.999239+00:00",
-        "run_id": "20261103T090447Z-849a8b6e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38296v2"
       ]
