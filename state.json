@@ -9650,9 +9650,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "57cce2aa1d84f545869be1bdaf77db25c149e74ff8b8b1b90d218978dd8f0a3b",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:05:06.061867+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Visual rule reasoning asks whether multimodal models can recover an abstract concept from a few examples. Existing studies either infer rules from visual examples but evaluate only classification or verbalization, or supervise executable generation with rules provided as input. Consequently, the relationship between visual rule understanding and reliable rule instantiation remains insufficiently explored. We present Bongard-Forge100k, a controlled benchmark, together with RuleForge, a backbone-agnostic framework that jointly learns visual rule understanding and rule-conditioned executable generation. The benchmark contains 108,797 problems: 86,000 for training, 19,297 for testing familiar rules, and 3,500 for testing held-out rule compositions. The framework progresses through rule-understanding training, joint understanding and scene-program supervision, and refinement via execution-grounded reinforcement learning with Understanding Replay. Executing generated programs under multiple random seeds provides verifiable feedback on executability, rule satisfaction, diversity, and robustness. With UniLIP as the primary backbone, RuleForge improves multiple-choice accuracy over the base model by 20.93 percentage points on familiar rules and 28.42 percentage points on held-out rule compositions, while increasing scene-level rule satisfaction on familiar rules from 2.91% to 70.99%. Additional experiments on InternVL3.5, Qwen3-VL, and Show-o2 demonstrate the effectiveness of the proposed training data and framework across diverse multimodal architectures.",
         "authors": [
@@ -9669,17 +9685,13 @@
         "updated": "2026-10-28T19:29:24+00:00",
         "version_id": "2610.38737v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:05:06.061867+00:00",
-        "run_id": "20261103T030506Z-fc853d4e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.38737v1"
       ]
