@@ -9846,9 +9846,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "f101ade20b5acd83d30af9e781179a015e905a30d7cade595ec71d1de318c3b7",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_agent、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-03T03:04:49.053038+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Small language models (SLMs) offer an attractive alternative to frontier models (FMs) because they can be deployed with lower cost and latency. This makes SLMs especially appealing for terminal tasks on edge devices, where responsiveness, local execution, and limited connectivity are important considerations. However, they continue to lag behind FMs on terminal tasks, as measured by standard task success rates. Yet these rates conflate several capabilities that may contribute to this gap. In this work, we characterize the SLM-FM gap along three axes: solvability, whether additional test-time compute allows an SLM to reach a correct solution; verification, whether it can identify a successful solution among candidate trajectories; and confidence, whether it can accurately anticipate its probability of success. Across two standard terminal benchmarks, we find that repeated sampling narrows, but does not eliminate, the gap in solvability. In contrast, a persistent gap remains in verification. Given the same candidate trajectory pool, FMs recover substantially more of the gap between random and oracle selection than SLMs. SLMs are also more overconfident in their prospective success estimates and exhibit poorer calibration. These results suggest that the SLM-FM gap is multidimensional, spanning not only the ability to generate successful solutions, but also the ability to recognize successful solutions and anticipate success. We hope this decomposition can guide future work on developing stronger and smaller terminal agents.",
         "authors": [
@@ -9866,18 +9882,14 @@
         "updated": "2026-10-28T22:32:32+00:00",
         "version_id": "2610.39006v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_agent",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-03T03:04:49.053038+00:00",
-        "run_id": "20261103T030449Z-5491bbd0",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2610.39006v1"
       ]
