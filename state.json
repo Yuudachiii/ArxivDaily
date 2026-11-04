@@ -57890,11 +57890,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-04T02:23:03.716891+00:00",
-        "run_id": "20261104T022303Z-9dc3fd83",
-        "stage": "translation"
+      "title_zh": "OSGR：地球观测问答的观测支持图推理",
+      "translation": {
+        "abstract_zh": "回答对地球观测 (EO) 档案的地理查询需要在严格的时空约束下解决联合检索和推导问题。现有的 LLM 代理无法将观测项目接地或遭受搜索空间爆炸的影响。我们提出了 OSGR，一个两阶段框架，将这种搜索分解为离线符号概念推导和在线关系条件基础。 OSGR 利用离线观察支持图在概念层面推导有效的目标到结果支持路径，并应用时空兼容性内核来实例化接地观察项集。在 Earth-Bench 和 DisasterM3-Reason 上，OSGR 将 GPT-4o 精度从 49.3% 提高到 63.7%，同时将执行步比从 2.9 降低到 2.5。",
+        "title_zh": "OSGR：地球观测问答的观测支持图推理"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.04301v1"
       ]
