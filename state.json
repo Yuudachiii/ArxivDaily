@@ -57822,11 +57822,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-04T02:23:03.716891+00:00",
-        "run_id": "20261104T022303Z-9dc3fd83",
-        "stage": "translation"
+      "title_zh": "Harness-S：向兄弟 Harness 学习以进行通用代理训练",
+      "translation": {
+        "abstract_zh": "利用共同基础的演化表现出局部性、互补性和非平稳性：变体修复不同的故障，并且它们的效用随着策略的学习而变化。我们不是寻求普遍优越的工具，而是引入 Harness-S，通过兄弟工具有选择地挽救基础执行系统的故障，并将所得功能转移到在原始工具下仍然有效的单个策略中。 Directional Harness Evolution 沿着不同的修复方向开发专门的同级安全带，形成可重复使用的同级安全带池，并在策略训练期间保持固定。仅当基础安全带下的所有初始尝试均失败时，补充安全带救援训练才会调用此池。同样的策略在选定的辅助工具下产生新的部署，并且这些轨迹取代了强化学习的失败组。自适应 Harness 路由器使用 Harness 行为配置文件和多个 LLM 之间的投票来选择 Top-k 变体。随着策略学习，策略感知配置文件重新锚定会刷新此证据。在 AppWorld、SWE-Gym 和 DBBench 中，当返回到原始基础工具时，经过训练的策略大大优于纯策略训练。行为分析和保留案例支持将利用引发的行为转移到政策本身中。重用路由器进行 Rank-1 推理可以在相同的执行器部署数量下获得额外的收益。",
+        "title_zh": "Harness-S：向兄弟 Harness 学习以进行通用代理训练"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.04277v1"
       ]
