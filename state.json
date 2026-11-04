@@ -11,6 +11,10 @@
     "20261103T115444Z-6575b93a-49a36d508d32": {
       "attempts": 1,
       "created_at": "2026-11-03T11:54:44.310540+00:00"
+    },
+    "20261104T022303Z-9dc3fd83-197fdef86667": {
+      "attempts": 0,
+      "created_at": "2026-11-04T02:23:03.716891+00:00"
     }
   },
   "collection": {
@@ -577,6 +581,444 @@
       "run_id": "20261103T115444Z-6575b93a",
       "schema_version": 1,
       "status": "unknown"
+    },
+    "20261104T022303Z-9dc3fd83-197fdef86667": {
+      "alert": false,
+      "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-google/archive/2026/11/04/20261104T022303Z-9dc3fd83-197fdef86667.md",
+      "chain_root": "20261104T022303Z-9dc3fd83-197fdef86667",
+      "chain_roots": [
+        "20261104T022303Z-9dc3fd83-197fdef86667"
+      ],
+      "content_hash": "197fdef86667bfbfe9e301387d281fdda76aae777792a78dea0d00497023c5c1",
+      "created_at": "2026-11-04T02:23:03.716891+00:00",
+      "day": "2026-11-04",
+      "digest_id": "20261104T022303Z-9dc3fd83-197fdef86667",
+      "empty": false,
+      "items": [
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "In-image machine translation (IIMT) replaces text in an image with its translation while preserving the surrounding visual context. Existing task-specific models achieve convincing performance but require massive paired training images before and after translation. As advanced text-to-image (T2I) models have reached a practically usable level of multilingual text generation, we argue that this capability can be transferred to IIMT and present FlowTranslator. It is a training-free IIMT framework that first employs an OCR model and an LLM to generate the translation prompt, which is injected into the T2I-based diffusion model. To optimize the accurate and natural generation of translated text, we introduce two trajectory controls: Region Coupling Release (RCR) partially decorrelates target-branch noise inside the text region early in the trajectory, while Coupling Expansion (CE) amplifies the emerging edit displacement mid-trajectory. Under the EasyOCR read-back protocol, FlowTranslator achieves average PRIM BLEU and COMET scores of 20.6 and 57.2, respectively, substantially outperforming the strong training-based baseline UniTranslator. On the more challenging and realistic whole-image ScenePair photographs translated into Chinese, it reaches 40.1\\% exact-match accuracy and surpasses existing editing systems, some of which only address the text-rendering stage rather than the complete IIMT task. These results establish flow-based editing as a strong, fully training-free baseline for IIMT.",
+            "authors": [
+              "Zhixian Li",
+              "Xingsong Ye",
+              "Yongkun Du",
+              "Yunyan Xiao",
+              "Yanglin Huang",
+              "Pinxuan Chen",
+              "Jiyu Zhuang",
+              "Cong Xu",
+              "Zhineng Chen"
+            ],
+            "categories": [
+              "cs.CV",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.04303v1",
+            "published": "2026-11-03T04:33:47+00:00",
+            "title": "FlowTranslator: Training-Free In-Image Machine Translation with Flow-Based Editing",
+            "updated": "2026-11-03T04:33:47+00:00",
+            "version_id": "2611.04303v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "图像内机器翻译 (IIMT) 用翻译替换图像中的文本，同时保留周围的视觉上下文。现有的特定任务模型取得了令人信服的性能，但在翻译前后需要大量配对训练图像。由于先进的文本到图像（T2I）模型已经达到了多语言文本生成的实用水平，我们认为这种能力可以转移到 IIMT 和现有的 FlowTranslator。它是一个免训练的 IIMT 框架，首先采用 OCR 模型和 LLM 生成翻译提示，然后将其注入到基于 T2I 的扩散模型中。为了优化翻译文本的准确和自然生成，我们引入了两种轨迹控制：区域耦合释放（RCR）在轨迹早期部分去相关文本区域内的目标分支噪声，而耦合扩展（CE）则放大了轨迹中出现的编辑位移。在 EasyOCR 回读协议下，FlowTranslator 的平均 PRIM BLEU 和 COMET 分数分别为 20.6 和 57.2，大大优于基于强大训练的基线 UniTranslator。在翻译成中文的更具挑战性和真实感的全图像 ScenePair 照片上，它达到了 40.1% 的精确匹配精度，并超越了现有的编辑系统，其中一些系统仅解决文本渲染阶段而不是完整的 IIMT 任务。这些结果将基于流程的编辑确立为 IIMT 强大的、完全免训练的基线。",
+            "title_zh": "FlowTranslator：具有基于流的编辑功能的免培训图像内机器翻译"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Answering geographic queries over Earth observation (EO) archives requires solving a joint retrieval-and-derivation problem under strict spatiotemporal constraints. Existing LLM agents fail to ground observation items or suffer from search-space explosion. We propose OSGR, a two-stage framework that factorizes this search into offline symbolic concept deduction and online Relation-Conditioned Grounding. OSGR leverages an offline Observation-Support Graph to deduce valid target-to-result support paths at the concept level, and applies spatiotemporal compatibility kernels to instantiate grounded observation-item sets. On Earth-Bench and DisasterM3-Reason, OSGR improves GPT-4o accuracy from 49.3\\% to 63.7\\% while reducing the execution-step ratio from 2.9 to 2.5.",
+            "authors": [
+              "Dazhou Yu",
+              "Zerong Wang",
+              "Riyang Bao",
+              "Longxiang Li",
+              "Yang Liu",
+              "Liang Zhao"
+            ],
+            "categories": [
+              "cs.AI",
+              "cs.IR"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.04301v1",
+            "published": "2026-11-03T04:31:43+00:00",
+            "title": "OSGR: Observation-Support Graph Reasoning for Earth Observation Question Answering",
+            "updated": "2026-11-03T04:31:43+00:00",
+            "version_id": "2611.04301v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "回答对地球观测 (EO) 档案的地理查询需要在严格的时空约束下解决联合检索和推导问题。现有的 LLM 代理无法将观测项目接地或遭受搜索空间爆炸的影响。我们提出了 OSGR，一个两阶段框架，将这种搜索分解为离线符号概念推导和在线关系条件基础。 OSGR 利用离线观察支持图在概念层面推导有效的目标到结果支持路径，并应用时空兼容性内核来实例化接地观察项集。在 Earth-Bench 和 DisasterM3-Reason 上，OSGR 将 GPT-4o 精度从 49.3% 提高到 63.7%，同时将执行步比从 2.9 降低到 2.5。",
+            "title_zh": "OSGR：地球观测问答的观测支持图推理"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Harness evolution from a common base exhibits Locality, Complementarity, and Nonstationarity: variants repair different failures, and their utility changes as the policy learns. Rather than seeking a universally superior harness, we introduce Harness-S to selectively rescue failures of a base execution system through sibling harnesses and transfer the resulting capabilities into a single policy that remains effective under the original harness. Directional Harness Evolution develops specialized sibling harnesses along distinct repair directions, forming a reusable Sibling Harness Pool that remains fixed during policy training. Complementary Harness Rescue Training invokes this pool only when all initial attempts under the base harness fail. The same policy generates fresh rollouts under selected auxiliary harnesses, and these trajectories replace the failed group for reinforcement learning. An Adaptive Harness Router selects the Top-k variants using Harness Behavior Profiles and voting across multiple LLMs. Policy-aware profile re-anchoring refreshes this evidence as the policy learns. Across AppWorld, SWE-Gym, and DBBench, the trained policy substantially outperforms policy-only training when returned to the original base harness. Behavioral analyses and held-out cases support the transfer of harness-elicited behaviors into the policy itself. Reusing the router for Rank-1 inference provides additional gains at the same executor rollout count.",
+            "authors": [
+              "Kangning Zhang",
+              "Wenxiang Jiao",
+              "Bowen Fang",
+              "Shuai Shao",
+              "Jiachen Zhu",
+              "Rong Shan",
+              "Shijian Wang",
+              "Hao Wang",
+              "Yuan Lu",
+              "Weiwen Liu",
+              "Weinan Zhang"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.04277v1",
+            "published": "2026-11-03T04:03:44+00:00",
+            "title": "Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training",
+            "updated": "2026-11-03T04:03:44+00:00",
+            "version_id": "2611.04277v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "利用共同基础的演化表现出局部性、互补性和非平稳性：变体修复不同的故障，并且它们的效用随着策略的学习而变化。我们不是寻求普遍优越的工具，而是引入 Harness-S，通过兄弟工具有选择地挽救基础执行系统的故障，并将所得功能转移到在原始工具下仍然有效的单个策略中。 Directional Harness Evolution 沿着不同的修复方向开发专门的同级安全带，形成可重复使用的同级安全带池，并在策略训练期间保持固定。仅当基础安全带下的所有初始尝试均失败时，补充安全带救援训练才会调用此池。同样的策略在选定的辅助工具下产生新的部署，并且这些轨迹取代了强化学习的失败组。自适应 Harness 路由器使用 Harness 行为配置文件和多个 LLM 之间的投票来选择 Top-k 变体。随着策略学习，策略感知配置文件重新锚定会刷新此证据。在 AppWorld、SWE-Gym 和 DBBench 中，当返回到原始基础工具时，经过训练的策略大大优于纯策略训练。行为分析和保留案例支持将利用引发的行为转移到政策本身中。重用路由器进行 Rank-1 推理可以在相同的执行器部署数量下获得额外的收益。",
+            "title_zh": "Harness-S：向兄弟 Harness 学习以进行通用代理训练"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Can an LLM directly edit the weights of a diffusion-based image-restoration model to \\emph{improve} restoration quality---without gradients, paired data, or fine-tuning? Recent experiments show frontier LLMs can fix structural bugs by modifying as little as \\(0.016\\%\\) of parameters, but cannot instill new capabilities. We ask whether weight-space programming (WSP) can move from \\emph{debugging} to \\emph{improvement} in the precise-regression setting of image restoration (deblurring, super-resolution, denoising, inpainting). Restoration diffusion UNets present a middle ground: low-level signal-processing layers are concentrated enough for targeted weight-direction edits, while high-level semantic layers remain distributed and resistant to sparse modification. We propose three technical conjectures: (C1) an LLM can localize the layer behind a quality gap (over-smoothing, color shift, hallucinated texture) within a 200 forward-pass budget; (C2) editing a small set of identified weight directions (e.g., scaling high-frequency filter norms, correcting output-bias channels) can measurably improve PSNR and perceptual quality; (C3) a recursive loop---diagnose \\(\\rightarrow\\) edit \\(\\rightarrow\\) evaluate \\(\\rightarrow\\) re-diagnose---can compound gains across rounds, forming a minimal recursive self-improvement (RSI) loop for vision. We analyze the required AI capability (arguing targeted edits need not superintelligence, while general capability generation does) and detail the challenges of precise pixel-level regression. We provide a PyTorch-style deployment pipeline and outline a benchmark. This manuscript is conjectural, intended to open a new subtopic for image restoration.",
+            "authors": [
+              "Zhuoran Zheng",
+              "Doubao"
+            ],
+            "categories": [
+              "cs.CV"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.04268v1",
+            "published": "2026-11-03T03:56:44+00:00",
+            "title": "Weight-Space Programming for Improving Image-Restoration Diffusion Models: Technical Conjectures and a Recursive Improvement Loop",
+            "updated": "2026-11-03T03:56:44+00:00",
+            "version_id": "2611.04268v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_training",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "法学硕士能否直接编辑基于扩散的图像恢复模型的权重来提高恢复质量——无需梯度、配对数据或微调？最近的实验表明，前沿法学硕士可以通过修改少至 \\(0.016\\%\\) 的参数来修复结构性错误，但无法灌输新的功能。我们询问权重空间编程（WSP）是否可以在图像恢复（去模糊、超分辨率、去噪、修复）的精确回归设置中从\\emph{调试}移动到\\emph{改进}。恢复扩散 UNet 提出了一个中间立场：低级信号处理层足够集中，可以进行有针对性的权重方向编辑，而高级语义层保持分布式并抵抗稀疏修改。我们提出了三个技术猜想：(C1) LLM 可以在 200 个前向传递预算内定位质量差距背后的层（过度平滑、颜色偏移、幻觉纹理）； (C2) 编辑一小组已识别的权重方向（例如，缩放高频滤波器规范、校正输出偏置通道）可以显着提高 PSNR 和感知质量； (C3) 递归循环——诊断\\(\\rightarrow\\)编辑\\(\\rightarrow\\)评估\\(\\rightarrow\\)重新诊断——可以在各轮之间复合收益，形成视觉的最小递归自我改进（RSI）循环。我们分析了所需的人工智能能力（认为有针对性的编辑不需要超级智能，而通用能力生成则需要）并详细说明了精确像素级回归的挑战。我们提供了 PyTorch 风格的部署管道并概述了基准。这份手稿是推测性的，旨在为图像修复开辟一个新的子主题。",
+            "title_zh": "用于改进图像恢复扩散模型的权重空间编程：技术猜想和递归改进循环"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Promptable perception, from GroundingDINO to Rex-Omni, puts one model behind one prompt interface and returns coordinates for any localisation task. Every model in that line was built for photographs; none has been given a sketch. We present Sketch-Omni, to our knowledge the first perception MLLM built to work on sketches and from them. On a sketch, the sketch is the image, and text prompts detect, point, resolve object and spatial referring expressions, and ground affordances in it. From a sketch, the sketch is the prompt, and a drawing of one object localises that object in a photograph, even among several of the same category, a query that neither a category name nor a photo exemplar can pose. Two obstacles stand in the way. A photo-trained model's attention is tuned to colour and texture, which a sketch does not have, and no dataset pairs a drawing with the one instance it depicts among others of its kind. We build the training data instead of collecting it. An edge detector turns every labelled photograph into a sketch-like drawing that keeps the photograph's labels, and two constructions produce sketch-to-photo instance pairs from existing data. On top of this, photo-guided relation alignment passes each photograph and its edge sketch through the same model and trains the sketch pass to reproduce how the photograph pass relates phrases to patches and patches to each other. Not one training label is drawn by hand. Sketch-Omni reaches 91.4 F1 on sketch-prompted localisation against 81.8 for the strongest general-purpose MLLM, with a lead that doubles when the photograph holds several instances of the queried category, and it is best in 39 of 40 evaluation cells across six tasks. Code, model, and a hand-annotated benchmark of 2754 sketch-to-photo links will be released.",
+            "authors": [
+              "Dongyu Wang",
+              "Dar-Yen Chen",
+              "Zhiming Hong",
+              "Arkaprabha Basu",
+              "Yi-Zhe Song"
+            ],
+            "categories": [
+              "cs.CV"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.04262v1",
+            "published": "2026-11-03T03:52:45+00:00",
+            "title": "Sketch-Omni: Instance-Level Sketch-Based Visual Prompting for Perception MLLMs",
+            "updated": "2026-11-03T03:52:45+00:00",
+            "version_id": "2611.04262v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_safety",
+            "llm_multimodal",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "即时感知，从 GroundingDINO 到 Rex-Omni，将一个模型置于一个提示界面后面，并返回任何本地化任务的坐标。该系列中的每一款型号都是为拍照而设计的。没有人得到草图。据我们所知，我们展示了 Sketch-Omni，这是 MLLM 为处理草图并根据草图构建的第一个感知。在草图上，草图就是图像，文本提示检测、指向、解析对象和空间引用表达式以及其中的地面可供性。从草图来看，草图就是提示，一个对象的绘图可以在照片中定位该对象，即使是在同一类别的多个对象中，这是类别名称和照片样本都无法提出的查询。有两个障碍挡在路上。经过照片训练的模型的注意力会被调整到颜色和纹理，这是草图所不具备的，并且没有数据集将绘图与它所描绘的一个实例以及其他同类实例配对。我们构建训练数据而不是收集数据。边缘检测器将每张带标签的照片变成类似草图的绘图，保留照片的标签，并且两种结构根据现有数据生成草图到照片的实例对。最重要的是，照片引导的关系对齐将每张照片及其边缘草图通过同一模型，并训练草图通道以重现照片通道如何将短语与补丁以及补丁彼此相关联。没有一个培训标签是手工绘制的。 Sketch-Omni 在草图提示的定位上达到 91.4 F1，而最强的通用 MLLM 则达到 81.8，当照片包含查询类别的多个实例时，领先优势会加倍，并且在六项任务的 40 个评估单元中的 39 个中表现最好。代码、模型和 2754 个草图到照片链接的手工注释基准将被发布。",
+            "title_zh": "Sketch-Omni：用于感知 MLLM 的实例级基于草图的视觉提示"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Understanding what kind of prompts users typically ask and how well an LLM performs on these prompt categories is crucial for LLM practitioners. The existing methods satisfy the demand by hierarchically clustering the user prompts and synthesizing the cluster names using an LLM to build a taxonomy. However, the cluster names from these methods are usually too general for humans to understand the detailed prompt distributions and identify the exact strengths and weaknesses of LLMs. In this study, we propose COMPREHEND, which automatically constructs an ultra-fine-grained entailment hierarchy for the prompts. The entailment hierarchy replaces the cluster names in the taxonomy with sentences to provide more precise cluster descriptions for more fine-grained categorization. Compared with EvalTree, a state-of-the-art taxonomy construction method, COMPREHEND improves an entailment/faithfulness metric from 22.6 to 41.7 and an informative metric from 16.3 to 39.1 in WildBench. Our experiments also show that the weakness report generated based on our entailment hierarchy is much more informative than EvalTree in terms of predicting the response scores in the benchmark. All the code is released in https://github.com/JackNapier20/COMPREHEND_public.",
+            "authors": [
+              "Sivaraaman Balakrishnan",
+              "Prakriti Shetty",
+              "Jeremiah Hong",
+              "Hamed Zamani",
+              "Haw-Shiuan Chang"
+            ],
+            "categories": [
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.04249v1",
+            "published": "2026-11-03T03:32:52+00:00",
+            "title": "COMPREHEND: Ultra-Fine-Grained Benchmark Understanding by Entailment Hierarchy",
+            "updated": "2026-11-03T03:32:52+00:00",
+            "version_id": "2611.04249v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "了解用户通常会问什么类型的提示以及法学硕士在这些提示类别上的表现对于法学硕士从业者来说至关重要。现有方法通过对用户提示进行分层聚类并使用 LLM 合成聚类名称来构建分类法来满足需求。然而，这些方法的聚类名称通常过于笼统，人们无法理解详细的提示分布并确定法学硕士的确切优势和劣势。在本研究中，我们提出了 COMPREHEND，它自动为提示构建超细粒度的蕴涵层次结构。蕴涵层次结构用句子替换分类中的簇名称，以提供更精确的簇描述，从而实现更细粒度的分类。与最先进的分类构建方法 EvalTree 相比，COMPREHEND 在 WildBench 中将蕴涵/忠实度指标从 22.6 提高到 41.7，将信息指标从 16.3 提高到 39.1。我们的实验还表明，在预测基准测试中的响应分数方面，基于我们的蕴含层次结构生成的弱点报告比 EvalTree 提供的信息要丰富得多。所有代码均发布在 https://github.com/JackNapier20/COMPREHEND_public 中。",
+            "title_zh": "COMPREHEND：通过蕴含层次结构进行超细粒度基准理解"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "LLM-powered semantic queries increasingly combine relational processing with multiple LLM-based operators over unstructured data. Efficiently serving such queries is challenging due to runtime dynamism at two coupled levels. Across queries, dynamic arrivals and heterogeneous resource demands continuously change scheduling priorities. Within a query, heterogeneous characteristics across fine-grained input batches cause operator costs and selectivities to vary throughout execution, making a statically optimized plan unreliable. These two forms of dynamism create a circular dependency: inter-query scheduling requires estimates of remaining LLM work, while the remaining work depends on runtime plan choices whose costs become observable only during execution.\n  We present SeqoFlow, a runtime framework that jointly adapts query plans and schedules concurrent semantic queries. SeqoFlow enumerates equivalence-preserving plan alternatives under operator dependencies and decomposes queries into fine-grained units, enabling safe plan adaptation and query preemption at batch boundaries. To support both decisions without exhaustively profiling candidate plans on the target LLM, SeqoFlow uses lightweight speculative estimation to capture runtime costs. These estimates jointly guide plan adaptation and inter-query scheduling, closing the loop between query optimization and LLM inference. Experiments across diverse query structures, data distributions, and arrival rates show that SeqoFlow substantially reduces end-to-end latency compared to existing semantic query systems, adaptive query processing techniques, and conventional scheduling policies.",
+            "authors": [
+              "Hengrui Zhang",
+              "Xupeng Miao"
+            ],
+            "categories": [
+              "cs.DB",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.04248v1",
+            "published": "2026-11-03T03:31:03+00:00",
+            "title": "Navigating Runtime Dynamism in Semantic Query Serving",
+            "updated": "2026-11-03T03:31:03+00:00",
+            "version_id": "2611.04248v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "LLM 支持的语义查询越来越多地将关系处理与非结构化数据上的多个基于 LLM 的运算符结合起来。由于两个耦合级别的运行时动态性，有效地服务此类查询具有挑战性。在查询过程中，动态到达和异构资源需求不断改变调度优先级。在查询中，细粒度输入批次之间的异构特征会导致操作员成本和选择性在整个执行过程中发生变化，从而使静态优化计划变得不可靠。这两种形式的动态性创建了循环依赖：查询间调度需要估计剩余的 LLM 工作，而剩余的工作取决于运行时计划选择，其成本只有在执行期间才能观察到。\n  我们提出了 SeqoFlow，一个运行时框架，可以联合调整查询计划并调度并发语义查询。 SeqoFlow 枚举算子依赖项下的等价保留计划替代方案，并将查询分解为细粒度单元，从而在批次边界实现安全的计划调整和查询抢占。为了支持这两个决策，而又无需详尽分析目标 LLM 的候选计划，SeqoFlow 使用轻量级推测性估计来捕获运行时成本。这些估计共同指导计划适应和查询间调度，从而关闭查询优化和 LLM 推理之间的循环。跨不同查询结构、数据分布和到达率的实验表明，与现有语义查询系统、自适应查询处理技术和传统调度策略相比，SeqoFlow 大大减少了端到端延迟。",
+            "title_zh": "驾驭语义查询服务中的运行时动态"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Power-grid customer service increasingly relies on community social media, where customers describe outages, billing, and equipment faults in informal regional dialect. Such messages exhibit non-standard morphology, semantic drift, and out-of-vocabulary expressions that make manual lexicon construction costly and degrade conventional NLP tools. We propose a weak-supervision framework constructing a regional slang lexicon from curated dialect anchors and power-domain seed terms. Candidates are generated via Pointwise Mutual Information with soft-label bidirectional anchoring, retaining dialect-anchored terms while recording power-domain relevance as separate metadata, and are scored by combining Sentence-BERT semantic similarity with a jieba-based wordhood measure. Uncertainty-aware active learning with rule-based and retrieval-augmented LLM oracles is applied under three query strategies, and the resulting lexicon is evaluated by a higher-capability LLM calibrated against human expert annotations via Cohen's $κ$. On 11,177 real WeChat messages from Yuxi (Yunnan, China), the framework achieves an evaluator-estimated dialect precision of DP~$=$~1.0 with zero false positives. An ablation shows that soft-label layering retains 751\\% more candidates than strict power-gating at identical precision, expanding the candidate pool from 41 to 349 terms. Human calibration ($n=46$) yields $κ_{\\text{dialect}}=1.0$ and $κ_{\\text{power}}=0.85$. The resulting 25--33-term lexicon, 4--5 of which are power-relevant, provides a preliminary resource for dialect-aware power-grid service NLP.",
+            "authors": [
+              "Rong Chang",
+              "Lijing Shi",
+              "Zhaoxiang Zang"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.04231v1",
+            "published": "2026-11-03T03:11:35+00:00",
+            "title": "Constructing a Regional Slang Lexicon for Electricity Demands via Soft-Label Bidirectional Anchoring and Active Learning",
+            "updated": "2026-11-03T03:11:35+00:00",
+            "version_id": "2611.04231v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_rag",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "电网客户服务越来越依赖社区社交媒体，客户用非正式的地方方言描述停电、计费和设备故障。此类消息表现出非标准形态、语义漂移和词汇外表达，使得手动词典构建成本高昂，并降低了传统 NLP 工具的性能。我们提出了一个弱监督框架，从精心策划的方言锚点和权力域种子术语构建区域俚语词典。候选者是通过具有软标签双向锚定的逐点互信息生成的，保留方言锚定术语，同时将功率域相关性记录为单独的元数据，并通过将 Sentence-BERT 语义相似性与基于 jieba 的词性度量相结合来进行评分。基于规则和检索增强的 LLM 预言的不确定性主动学习在三种查询策略下应用，并且通过 Cohen 的 $κ$ 根据人类专家注释进行校准的更高功能的 LLM 来评估生成的词典。在来自玉溪（中国云南）的 11,177 条真实微信消息上，该框架实现了评估者估计的方言精度 DP~$=$~1.0，误报率为零。消融表明，在相同精度下，软标签分层比严格功率门控保留的候选项多 751%，将候选项池从 41 个术语扩展至 349 个术语。人类校准 ($n=46$) 产生 $κ_{\\text{dialect}}=1.0$ 和 $κ_{\\text{power}}=0.85$。由此产生的 25--33 个术语词典，其中 4--5 个与电力相关，为方言感知电网服务 NLP 提供了初步资源。",
+            "title_zh": "通过软标签双向锚定和主动学习构建电力需求区域俚语词典"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Disturbances can invalidate the conditions required by a robot's next action even when much of its task program remains useful. A recovery system must therefore choose a response suited to the current state. We present DiMuRe (diagnosis-guided multilevel recovery), a framework for robot-use agents that uses phase-specific evidence and method preconditions to select program reuse or predefined recovery skills, including bounded vision-language-action (VLA) grasping. After the original program exits, a multimodal large language model (MLLM) can generate corrective code from images and execution feedback. Local verification checks the outcome of each recovery attempt. We also introduce LIBERO-Disturb, a benchmark for robustness and recovery under mid-execution disturbances, supporting program-based agents and VLA policies. On 801 scheduled disturbed Encore development cases, Local DiMuRe (program reuse and recovery skills) achieves 77.65% complete-task success, compared with 58.68% for the original program under the same physical-step allowance. Full DiMuRe achieves 81.90% with terminal replanning, an additional step allowance, and early handoff. Local DiMuRe also uses fewer physical steps per scheduled episode than the original program.",
+            "authors": [
+              "Renkai Yi",
+              "Yuwei Wu",
+              "Haoyu Zhang",
+              "Penghao Dai",
+              "Zhi Gao",
+              "Jin Chen",
+              "Che Sun"
+            ],
+            "categories": [
+              "cs.RO",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.04226v1",
+            "published": "2026-11-03T03:05:25+00:00",
+            "title": "DiMuRe: Diagnosis-Guided Multilevel Recovery for Robotic Task Execution",
+            "updated": "2026-11-03T03:05:25+00:00",
+            "version_id": "2611.04226v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_multimodal",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "即使机器人的大部分任务程序仍然有用，干扰也会使机器人下一步行动所需的条件失效。因此，恢复系统必须选择适合当前状态的响应。我们提出了 DiMuRe（诊断引导的多级恢复），这是一个机器人使用代理的框架，它使用阶段特定的证据和方法先决条件来选择程序重用或预定义的恢复技能，包括有界视觉语言动作（VLA）抓取。原始程序退出后，多模态大语言模型（MLLM）可以根据图像和执行反馈生成正确的代码。本地验证检查每次恢复尝试的结果。我们还引入了 LIBERO-Disturb，这是执行中期干扰下的稳健性和恢复的基准，支持基于程序的代理和 VLA 策略。在 801 个预定的受干扰 Encore 开发案例中，Local DiMuRe（程序重用和恢复技能）实现了 77.65% 的完成任务成功率，而在相同的物理步骤津贴下，原始程序的完成率为 58.68%。通过终端重新规划、额外的步骤津贴和提前切换，完整的 DiMuRe 实现了 81.90%。 Local DiMuRe 在每个预定剧集中使用的物理步骤也比原始节目更少。",
+            "title_zh": "DiMuRe：用于机器人任务执行的诊断引导多级恢复"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language models (LLMs) increasingly shape recommendations across chatbots, e-commerce, and user-generated content (UGC) platforms, creating demand for Generative Engine Optimization (GEO) to improve item visibility in generated responses. Existing GEO studies are mainly content-centric, optimizing visibility under general-purpose queries. However, a shared item description usually serves users with different needs and decision goals, resulting in its visibility gains being dependent on the request. To investigate how changing intent affects visibility, we formulate IntentGEO to evaluate shared rewrites across need specificity and decision progression. We revisit existing GEO methods and find that their visibility gains vary across user intents. More critically, learning-based prompt optimization can underperform its handwritten seed on average. Tracing these updates reveals prompt drift from explicit recommendation instructions toward generic promotional tactics. To address this drift, we propose AMO (Anchored Meta-Optimization), which preserves recommendation instructions in a fixed core while learning appended strategies from citation feedback. Across four domains and ten intent states, AMO improves average citation-rank gain by 35% over the strongest prior learning-based baseline and leads on nine states. Ablations show that learned additions improve on the fixed core alone and that AMO outperforms full-prompt optimization initialized from that core. It also achieves the highest gains in an agentic recommendation pipeline and, after separate adaptation, on Doubao, a commercially deployed, closed-source online assistant. These findings highlight user intent as a key dimension of GEO evaluation and support anchored adaptation across recommendation needs and decision stages.",
+            "authors": [
+              "Runlin Lei",
+              "Shiqi Zhang",
+              "Xiaokui Xiao",
+              "Zhewei Wei"
+            ],
+            "categories": [
+              "cs.IR",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.04225v1",
+            "published": "2026-11-03T03:04:18+00:00",
+            "title": "IntentGEO: Intent-aware Generative Engine Optimization for Recommendation",
+            "updated": "2026-11-03T03:04:18+00:00",
+            "version_id": "2611.04225v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型 (LLM) 越来越多地影响聊天机器人、电子商务和用户生成内容 (UGC) 平台的推荐，从而产生了对生成引擎优化 (GEO) 的需求，以提高生成响应中的项目可见性。现有的GEO研究主要以内容为中心，优化通用查询下的可见性。然而，共享项目描述通常为具有不同需求和决策目标的用户提供服务，导致其可见性增益取决于请求。为了研究改变意图如何影响可见性，我们制定了 IntentGEO 来评估跨需求特异性和决策进程的共享重写。我们重新审视现有的 GEO 方法，发现它们的可见性增益因用户意图而异。更重要的是，基于学习的提示优化平均性能可能低于其手写种子。追踪这些更新揭示了从明确的推荐指令到通用促销策略的迅速转变。为了解决这种漂移，我们提出了 AMO（锚定元优化），它将推荐指令保留在固定核心中，同时从引文反馈中学习附加策略。在四个领域和十个意图状态中，AMO 将平均引用排名增益比最强的基于先前学习的基线提高了 35%，并在 9 个状态中处于领先地位。消融表明，学习添加仅对固定核心进行了改进，并且 AMO 优于从该核心初始化的完全提示优化。它还在代理推荐管道以及单独适配后在商业部署的闭源在线助手豆宝上取得了最高的收益。这些发现强调了用户意图是 GEO 评估的一个关键维度，并支持跨推荐需求和决策阶段的锚定适应。",
+            "title_zh": "IntentGEO：意图感知生成引擎优化推荐"
+          }
+        }
+      ],
+      "notification_hash": "427e1d8a4e97394563f8d0323c2efccc81efcee81a77ae4494a6b74928da64cf",
+      "recovery_of": [],
+      "rendered": {
+        "2611.04225": "rendered_inline_translation",
+        "2611.04226": "rendered_inline_translation",
+        "2611.04231": "rendered_inline_translation",
+        "2611.04248": "rendered_inline_translation",
+        "2611.04249": "rendered_inline_translation",
+        "2611.04262": "rendered_inline_translation",
+        "2611.04268": "rendered_inline_translation",
+        "2611.04277": "rendered_inline_translation",
+        "2611.04301": "rendered_inline_translation",
+        "2611.04303": "rendered_inline_translation"
+      },
+      "run_id": "20261104T022303Z-9dc3fd83",
+      "schema_version": 1,
+      "status": "prepared"
     }
   },
   "papers": {
