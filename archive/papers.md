@@ -12,7 +12,7 @@
 | 2026-11-04 | COMPREHEND: Ultra-Fine-Grained Benchmark Understanding by Entailment Hierarchy | COMPREHEND：通过蕴涵层次的超细粒度基准理解 | [arXiv 2611.04249v1](https://arxiv.org/abs/2611.04249v1) |
 | 2026-11-04 | Navigating Runtime Dynamism in Semantic Query Serving | 在语义查询服务中应对运行时动态性 | [arXiv 2611.04248v1](https://arxiv.org/abs/2611.04248v1) |
 | 2026-11-04 | Constructing a Regional Slang Lexicon for Electricity Demands via Soft-Label Bidirectional Anchoring and Active Learning | 通过软标签双向锚定和主动学习构建电力需求的区域俚语词典 | [arXiv 2611.04231v1](https://arxiv.org/abs/2611.04231v1) |
-| 2026-11-04 | DiMuRe: Diagnosis-Guided Multilevel Recovery for Robotic Task Execution | 待翻译 | [arXiv 2611.04226v1](https://arxiv.org/abs/2611.04226v1) |
+| 2026-11-04 | DiMuRe: Diagnosis-Guided Multilevel Recovery for Robotic Task Execution | DiMuRe：面向机器人任务执行的诊断指导多层次恢复 | [arXiv 2611.04226v1](https://arxiv.org/abs/2611.04226v1) |
 | 2026-11-04 | IntentGEO: Intent-aware Generative Engine Optimization for Recommendation | 待翻译 | [arXiv 2611.04225v1](https://arxiv.org/abs/2611.04225v1) |
 | 2026-11-03 | Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning | Reviso：并非所有视觉证据在视频字幕中都值得同等关注 | [arXiv 2611.03602v1](https://arxiv.org/abs/2611.03602v1) |
 | 2026-11-03 | From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles | 从自然语言到精确覆盖：一种解决斑马难题的神经符号方法 | [arXiv 2611.03641v1](https://arxiv.org/abs/2611.03641v1) |
