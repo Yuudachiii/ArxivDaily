@@ -19,7 +19,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:42:00.481953+00:00",
-    "last_complete_end": "2026-11-04T02:23:06.133469+00:00"
+    "last_complete_end": "2026-11-04T08:41:39.018398+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -57024,10 +57024,14 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-04",
+      "discovered_candidates": 0,
+      "discovered_papers": 0,
       "run_id": "20261104T084139Z-f05b22c2",
+      "shards": [],
       "started_at": "2026-11-04T08:41:39.018398+00:00",
       "window": {
         "end": "2026-11-04T08:41:39.018398+00:00",
