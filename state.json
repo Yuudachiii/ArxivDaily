@@ -55717,7 +55717,9 @@
       ]
     },
     "2611.04277": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-04T02:23:06.133469+00:00",
@@ -55750,6 +55752,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-04T02:23:06.133469+00:00",
+        "run_id": "20261104T022306Z-ced08ba6",
+        "stage": "selection"
+      },
       "versions": [
         "2611.04277v1"
       ]
