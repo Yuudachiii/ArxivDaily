@@ -57369,7 +57369,9 @@
       ]
     },
     "2611.04231": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-04T02:23:03.716891+00:00",
@@ -57395,6 +57397,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-04T02:23:03.716891+00:00",
+        "run_id": "20261104T022303Z-9dc3fd83",
+        "stage": "selection"
+      },
       "versions": [
         "2611.04231v1"
       ]
