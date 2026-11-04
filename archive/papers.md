@@ -5,7 +5,7 @@
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
 | 2026-11-04 | FlowTranslator: Training-Free In-Image Machine Translation with Flow-Based Editing | FlowTranslator：基于流编辑的免训练图像内机器翻译 | [arXiv 2611.04303v1](https://arxiv.org/abs/2611.04303v1) |
-| 2026-11-04 | OSGR: Observation-Support Graph Reasoning for Earth Observation Question Answering | 待翻译 | [arXiv 2611.04301v1](https://arxiv.org/abs/2611.04301v1) |
+| 2026-11-04 | OSGR: Observation-Support Graph Reasoning for Earth Observation Question Answering | OSGR：用于地球观测问答的观测支持图推理 | [arXiv 2611.04301v1](https://arxiv.org/abs/2611.04301v1) |
 | 2026-11-04 | Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training | 待翻译 | [arXiv 2611.04277v1](https://arxiv.org/abs/2611.04277v1) |
 | 2026-11-04 | Weight-Space Programming for Improving Image-Restoration Diffusion Models: Technical Conjectures and a Recursive Improvement Loop | 待翻译 | [arXiv 2611.04268v1](https://arxiv.org/abs/2611.04268v1) |
 | 2026-11-04 | Sketch-Omni: Instance-Level Sketch-Based Visual Prompting for Perception MLLMs | 待翻译 | [arXiv 2611.04262v1](https://arxiv.org/abs/2611.04262v1) |
