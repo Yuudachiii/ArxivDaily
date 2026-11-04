@@ -57335,9 +57335,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_multimodal、llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-04T02:23:03.716891+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Disturbances can invalidate the conditions required by a robot's next action even when much of its task program remains useful. A recovery system must therefore choose a response suited to the current state. We present DiMuRe (diagnosis-guided multilevel recovery), a framework for robot-use agents that uses phase-specific evidence and method preconditions to select program reuse or predefined recovery skills, including bounded vision-language-action (VLA) grasping. After the original program exits, a multimodal large language model (MLLM) can generate corrective code from images and execution feedback. Local verification checks the outcome of each recovery attempt. We also introduce LIBERO-Disturb, a benchmark for robustness and recovery under mid-execution disturbances, supporting program-based agents and VLA policies. On 801 scheduled disturbed Encore development cases, Local DiMuRe (program reuse and recovery skills) achieves 77.65% complete-task success, compared with 58.68% for the original program under the same physical-step allowance. Full DiMuRe achieves 81.90% with terminal replanning, an additional step allowance, and early handoff. Local DiMuRe also uses fewer physical steps per scheduled episode than the original program.",
         "authors": [
@@ -57359,18 +57375,14 @@
         "updated": "2026-11-03T03:05:25+00:00",
         "version_id": "2611.04226v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_multimodal",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-04T02:23:03.716891+00:00",
-        "run_id": "20261104T022303Z-9dc3fd83",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.04226v1"
       ]
