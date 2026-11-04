@@ -7,7 +7,7 @@
 | 2026-11-04 | FlowTranslator: Training-Free In-Image Machine Translation with Flow-Based Editing | FlowTranslator：具有基于流的编辑功能的免培训图像内机器翻译 | [arXiv 2611.04303v1](https://arxiv.org/abs/2611.04303v1) |
 | 2026-11-04 | OSGR: Observation-Support Graph Reasoning for Earth Observation Question Answering | OSGR：地球观测问答的观测支持图推理 | [arXiv 2611.04301v1](https://arxiv.org/abs/2611.04301v1) |
 | 2026-11-04 | Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training | Harness-S：向兄弟 Harness 学习以进行通用代理训练 | [arXiv 2611.04277v1](https://arxiv.org/abs/2611.04277v1) |
-| 2026-11-04 | Weight-Space Programming for Improving Image-Restoration Diffusion Models: Technical Conjectures and a Recursive Improvement Loop | 待翻译 | [arXiv 2611.04268v1](https://arxiv.org/abs/2611.04268v1) |
+| 2026-11-04 | Weight-Space Programming for Improving Image-Restoration Diffusion Models: Technical Conjectures and a Recursive Improvement Loop | 用于改进图像恢复扩散模型的权重空间编程：技术猜想和递归改进循环 | [arXiv 2611.04268v1](https://arxiv.org/abs/2611.04268v1) |
 | 2026-11-04 | Sketch-Omni: Instance-Level Sketch-Based Visual Prompting for Perception MLLMs | 待翻译 | [arXiv 2611.04262v1](https://arxiv.org/abs/2611.04262v1) |
 | 2026-11-04 | COMPREHEND: Ultra-Fine-Grained Benchmark Understanding by Entailment Hierarchy | 待翻译 | [arXiv 2611.04249v1](https://arxiv.org/abs/2611.04249v1) |
 | 2026-11-04 | Navigating Runtime Dynamism in Semantic Query Serving | 待翻译 | [arXiv 2611.04248v1](https://arxiv.org/abs/2611.04248v1) |
