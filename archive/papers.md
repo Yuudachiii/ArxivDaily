@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-04 | FlowTranslator: Training-Free In-Image Machine Translation with Flow-Based Editing | 待翻译 | [arXiv 2611.04303v1](https://arxiv.org/abs/2611.04303v1) |
+| 2026-11-04 | OSGR: Observation-Support Graph Reasoning for Earth Observation Question Answering | 待翻译 | [arXiv 2611.04301v1](https://arxiv.org/abs/2611.04301v1) |
+| 2026-11-04 | Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training | 待翻译 | [arXiv 2611.04277v1](https://arxiv.org/abs/2611.04277v1) |
+| 2026-11-04 | Weight-Space Programming for Improving Image-Restoration Diffusion Models: Technical Conjectures and a Recursive Improvement Loop | 待翻译 | [arXiv 2611.04268v1](https://arxiv.org/abs/2611.04268v1) |
+| 2026-11-04 | Sketch-Omni: Instance-Level Sketch-Based Visual Prompting for Perception MLLMs | 待翻译 | [arXiv 2611.04262v1](https://arxiv.org/abs/2611.04262v1) |
+| 2026-11-04 | COMPREHEND: Ultra-Fine-Grained Benchmark Understanding by Entailment Hierarchy | 待翻译 | [arXiv 2611.04249v1](https://arxiv.org/abs/2611.04249v1) |
+| 2026-11-04 | Navigating Runtime Dynamism in Semantic Query Serving | 待翻译 | [arXiv 2611.04248v1](https://arxiv.org/abs/2611.04248v1) |
+| 2026-11-04 | Constructing a Regional Slang Lexicon for Electricity Demands via Soft-Label Bidirectional Anchoring and Active Learning | 待翻译 | [arXiv 2611.04231v1](https://arxiv.org/abs/2611.04231v1) |
+| 2026-11-04 | DiMuRe: Diagnosis-Guided Multilevel Recovery for Robotic Task Execution | 待翻译 | [arXiv 2611.04226v1](https://arxiv.org/abs/2611.04226v1) |
+| 2026-11-04 | IntentGEO: Intent-aware Generative Engine Optimization for Recommendation | 待翻译 | [arXiv 2611.04225v1](https://arxiv.org/abs/2611.04225v1) |
 | 2026-11-03 | Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning | Reviso：并非所有视觉证据都值得在视频字幕中受到同等重视 | [arXiv 2611.03602v1](https://arxiv.org/abs/2611.03602v1) |
 | 2026-11-03 | From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles | 从自然语言到精确覆盖：斑马谜题的神经符号方法 | [arXiv 2611.03641v1](https://arxiv.org/abs/2611.03641v1) |
 | 2026-11-03 | Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap | 预训练数据规模扭转了 Muon-AdamW 微调差距 | [arXiv 2611.03633v1](https://arxiv.org/abs/2611.03633v1) |
