@@ -57619,11 +57619,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-04T02:23:03.716891+00:00",
-        "run_id": "20261104T022303Z-9dc3fd83",
-        "stage": "translation"
+      "title_zh": "COMPREHEND：通过蕴含层次结构进行超细粒度基准理解",
+      "translation": {
+        "abstract_zh": "了解用户通常会问什么类型的提示以及法学硕士在这些提示类别上的表现对于法学硕士从业者来说至关重要。现有方法通过对用户提示进行分层聚类并使用 LLM 合成聚类名称来构建分类法来满足需求。然而，这些方法的聚类名称通常过于笼统，人们无法理解详细的提示分布并确定法学硕士的确切优势和劣势。在本研究中，我们提出了 COMPREHEND，它自动为提示构建超细粒度的蕴涵层次结构。蕴涵层次结构用句子替换分类中的簇名称，以提供更精确的簇描述，从而实现更细粒度的分类。与最先进的分类构建方法 EvalTree 相比，COMPREHEND 在 WildBench 中将蕴涵/忠实度指标从 22.6 提高到 41.7，将信息指标从 16.3 提高到 39.1。我们的实验还表明，在预测基准测试中的响应分数方面，基于我们的蕴含层次结构生成的弱点报告比 EvalTree 提供的信息要丰富得多。所有代码均发布在 https://github.com/JackNapier20/COMPREHEND_public 中。",
+        "title_zh": "COMPREHEND：通过蕴含层次结构进行超细粒度基准理解"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.04249v1"
       ]
