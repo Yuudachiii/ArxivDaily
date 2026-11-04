@@ -56148,11 +56148,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-04T02:23:06.133469+00:00",
-        "run_id": "20261104T022306Z-ced08ba6",
-        "stage": "translation"
+      "title_zh": "FlowTranslator：基于流编辑的免训练图像内机器翻译",
+      "translation": {
+        "abstract_zh": "图像内机器翻译（IIMT）是在保持周围视觉环境的同时，将图像中的文本替换为其翻译内容。现有的特定任务模型虽然能实现令人信服的性能，但需要大量的翻译前后配对训练图像。随着先进的文本到图像（T2I）模型在多语言文本生成方面达到了实际可用的水平，我们认为这种能力可以转移到IIMT，并提出了FlowTranslator。它是一个无需训练的IIMT框架，首先使用OCR模型和大语言模型（LLM）生成翻译提示，该提示注入到基于T2I的扩散模型中。为了优化翻译文本的准确和自然生成，我们引入了两个轨迹控制：区域耦合释放（RCR）在轨迹早期部分解相关文本区域内的目标分支噪声，而耦合扩展（CE）在轨迹中期放大新出现的编辑位移。在EasyOCR回读协议下，FlowTranslator在平均 PRIM、BLEU 和 COMET 分数上分别达到 20.6 和 57.2，显著超过了强大的基于训练的基线 UniTranslator。在更具挑战性且更真实的整图 ScenePair 照片翻译成中文的任务中，其精确匹配准确率达到 40.1%，并超过了现有的编辑系统，其中一些系统仅处理文本渲染阶段，而非完整的 IIMT 任务。这些结果确立了基于流的编辑作为一个强大的、完全无需训练的 IIMT 基线。",
+        "title_zh": "FlowTranslator：基于流编辑的免训练图像内机器翻译"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.04303v1"
       ]
