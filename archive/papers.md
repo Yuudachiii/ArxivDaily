@@ -9,7 +9,7 @@
 | 2026-11-04 | Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training | Harness-S：从兄弟 Harness 学习用于可推广的智能体训练 | [arXiv 2611.04277v1](https://arxiv.org/abs/2611.04277v1) |
 | 2026-11-04 | Weight-Space Programming for Improving Image-Restoration Diffusion Models: Technical Conjectures and a Recursive Improvement Loop | 用于改进图像修复扩散模型的权重空间编程：技术推测与递归改进循环 | [arXiv 2611.04268v1](https://arxiv.org/abs/2611.04268v1) |
 | 2026-11-04 | Sketch-Omni: Instance-Level Sketch-Based Visual Prompting for Perception MLLMs | Sketch-Omni：用于感知多模态大模型的实例级基于草图的视觉提示 | [arXiv 2611.04262v1](https://arxiv.org/abs/2611.04262v1) |
-| 2026-11-04 | COMPREHEND: Ultra-Fine-Grained Benchmark Understanding by Entailment Hierarchy | 待翻译 | [arXiv 2611.04249v1](https://arxiv.org/abs/2611.04249v1) |
+| 2026-11-04 | COMPREHEND: Ultra-Fine-Grained Benchmark Understanding by Entailment Hierarchy | COMPREHEND：通过蕴涵层次的超细粒度基准理解 | [arXiv 2611.04249v1](https://arxiv.org/abs/2611.04249v1) |
 | 2026-11-04 | Navigating Runtime Dynamism in Semantic Query Serving | 待翻译 | [arXiv 2611.04248v1](https://arxiv.org/abs/2611.04248v1) |
 | 2026-11-04 | Constructing a Regional Slang Lexicon for Electricity Demands via Soft-Label Bidirectional Anchoring and Active Learning | 待翻译 | [arXiv 2611.04231v1](https://arxiv.org/abs/2611.04231v1) |
 | 2026-11-04 | DiMuRe: Diagnosis-Guided Multilevel Recovery for Robotic Task Execution | 待翻译 | [arXiv 2611.04226v1](https://arxiv.org/abs/2611.04226v1) |

@@ -55810,11 +55810,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-04T02:23:06.133469+00:00",
-        "run_id": "20261104T022306Z-ced08ba6",
-        "stage": "translation"
+      "title_zh": "COMPREHEND：通过蕴涵层次的超细粒度基准理解",
+      "translation": {
+        "abstract_zh": "理解用户通常会提出什么样的提示以及大型语言模型（LLM）在这些提示类别上的表现如何，对LLM从业者至关重要。现有方法通过分层聚类用户提示，并使用LLM合成聚类名称以构建分类法来满足这一需求。然而，这些方法得到的聚类名称通常过于笼统，人类难以理解详细的提示分布，也难以识别LLM的具体优缺点。在本研究中，我们提出了COMPREHEND，它能够自动构建提示的超细粒度蕴涵层次结构。该蕴涵层次结构用句子替换分类法中的聚类名称，以提供更精确的聚类描述，从而实现更细粒度的分类。与最先进的分类法构建方法EvalTree相比，COMPREHEND在WildBench中的蕴涵/真实性指标从22.6提高到41.7，信息量指标从16.3提高到39.1。我们的实验还表明基于我们的蕴涵层次生成的弱点报告在预测基准中的响应分数方面，比 EvalTree 提供的信息更丰富。所有代码已发布在 https://github.com/JackNapier20/COMPREHEND_public。",
+        "title_zh": "COMPREHEND：通过蕴涵层次的超细粒度基准理解"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.04249v1"
       ]
