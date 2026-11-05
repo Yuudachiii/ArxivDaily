@@ -9,7 +9,7 @@
 | 2026-11-05 | Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure | 沉闷、肮脏、危险？工作条件和职业人工智能暴露的限制 | [arXiv 2611.06888v1](https://arxiv.org/abs/2611.06888v1) |
 | 2026-11-05 | SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification | SpecCompact：通过时隙并行语义推测验证加速 LLM 代理上下文压缩 | [arXiv 2611.06876v1](https://arxiv.org/abs/2611.06876v1) |
 | 2026-11-05 | On Turn-Level Best-of-N Sampling for Scaling LLM Agents | 用于扩展 LLM 代理的轮次 N 次最佳采样 | [arXiv 2611.06868v1](https://arxiv.org/abs/2611.06868v1) |
-| 2026-11-05 | CompressionBench: How can your coding agents compress LLMs? | 待翻译 | [arXiv 2611.06858v1](https://arxiv.org/abs/2611.06858v1) |
+| 2026-11-05 | CompressionBench: How can your coding agents compress LLMs? | CompressionBench：你们的编码代理如何压缩 LLM？ | [arXiv 2611.06858v1](https://arxiv.org/abs/2611.06858v1) |
 | 2026-11-05 | Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs | 待翻译 | [arXiv 2611.06848v1](https://arxiv.org/abs/2611.06848v1) |
 | 2026-11-05 | Where to Connect? Boosting MLLMs via Dynamic Gated Pathways across ALL ViT and LLM Layers | 待翻译 | [arXiv 2611.06844v1](https://arxiv.org/abs/2611.06844v1) |
 | 2026-11-05 | ServerBench: How can your coding agents design specialized LLM serving systems? | 待翻译 | [arXiv 2611.06841v1](https://arxiv.org/abs/2611.06841v1) |
