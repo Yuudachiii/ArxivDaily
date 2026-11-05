@@ -15,6 +15,10 @@
     "20261104T022303Z-9dc3fd83-197fdef86667": {
       "attempts": 1,
       "created_at": "2026-11-04T02:23:03.716891+00:00"
+    },
+    "20261105T090126Z-66531d12-b3783ed6ff27": {
+      "attempts": 0,
+      "created_at": "2026-11-05T09:01:26.275855+00:00"
     }
   },
   "collection": {
@@ -1051,6 +1055,459 @@
       "run_id": "20261104T022303Z-9dc3fd83",
       "schema_version": 1,
       "status": "confirmed"
+    },
+    "20261105T090126Z-66531d12-b3783ed6ff27": {
+      "alert": false,
+      "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-google/archive/2026/11/05/20261105T090126Z-66531d12-b3783ed6ff27.md",
+      "chain_root": "20261105T090126Z-66531d12-b3783ed6ff27",
+      "chain_roots": [
+        "20261105T090126Z-66531d12-b3783ed6ff27"
+      ],
+      "content_hash": "b3783ed6ff27e38bf08ee4c9e943a289469002aa5d7fa24491373580866658de",
+      "created_at": "2026-11-05T09:01:26.275855+00:00",
+      "day": "2026-11-05",
+      "digest_id": "20261105T090126Z-66531d12-b3783ed6ff27",
+      "empty": false,
+      "items": [
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem for social simulation. One plausible hypothesis is that this brittleness reflects a lack of grounding and can be reduced by enriching the context provided to the agents. Whether richer context improves robustness remains unclear, in part because context richness and robustness are rarely defined in ways that support controlled comparisons. We address the first need with controlled context enrichment, a set of prompt substitution rules that systematically enriches distinct types of context: neutral padding, generic social background, descriptive decision grounding, and normative decision grounding. We address the second by introducing selective robustness as a validation criterion: insensitivity to meaning-preserving prompt variation combined with a directional response to decision-relevant changes in the social world. We demonstrate the framework in a Prisoner's Dilemma-like game, showing how it can be used to identify which forms of context enrichment produce more desirable and robust agent behavior. We find that these forms of enrichment produce distinct behavioral patterns that vary between the two models tested.",
+            "authors": [
+              "Mattia Greiche",
+              "Reihaneh Rabbany",
+              "Maximilian Puelma Touzel"
+            ],
+            "categories": [
+              "cs.MA",
+              "cs.CL",
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.06914v1",
+            "published": "2026-11-04T18:58:23+00:00",
+            "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
+            "updated": "2026-11-04T18:58:23+00:00",
+            "version_id": "2611.06914v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "研究人员使用大型语言模型作为社会模拟中的代理，其中代理会收到旨在塑造其行为的观察结果和背景信息的提示。然而，LLM 代理已被证明可以在保留意义的即时变化下显着改变其行为，从而为社会模拟带来验证问题。一个看似合理的假设是，这种脆弱性反映了缺乏基础，可以通过丰富提供给代理的上下文来减少这种脆弱性。更丰富的上下文是否可以提高稳健性仍不清楚，部分原因是上下文丰富性和稳健性很少以支持受控比较的方式定义。我们通过受控上下文丰富来满足第一个需求，这是一组系统地丰富不同类型上下文的提示替换规则：中性填充、通用社会背景、描述性决策基础和规范性决策基础。我们通过引入选择性鲁棒性作为验证标准来解决第二个问题：对保留意义的即时变化不敏感，并结合对社会世界中与决策相关的变化的定向响应。我们在类似囚徒困境的游戏中演示了该框架，展示了如何使用它来识别哪种形式的上下文丰富可以产生更理想和更稳健的代理行为。我们发现这些形式的丰富产生了不同的行为模式，这些模式在测试的两个模型之间有所不同。",
+            "title_zh": "LLM 社交代理的背景丰富和选择性鲁棒性框架"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reason about experimental states, and act under physical, procedural, and safety constraints. Although Multimodal Large Language Models (MLLMs) are increasingly considered as embodied brains for such systems, existing laboratory benchmarks mainly focus on safety, anomaly detection, or general scientific understanding, leaving their execution-oriented embodied capabilities underexplored. To fill this gap, we introduce BEAKER, a Benchmark for evaluating Embodied Actionability, Knowledge, Experimentation, and Reasoning in SDCLs. BEAKER contains 1,000 expert-curated question-answer samples across 11 image and video task types, covering key judgments required for chemical laboratory execution, including affordance grounding, trajectory planning, equipment, state, and safety recognition, apparatus setup, operation and step reasoning, and temporal procedure reasoning. All questions and annotations are manually created and reviewed by chemistry and embodied Artificial Intelligence (AI) experts, without AI-assisted generation or annotation. We evaluate 28 general-purpose, science-oriented, chemistry-specialized, and embodied MLLMs in an offline, single-turn setting. Results show that current models can follow coarse experimental procedures in videos, but still struggle to ground actions into operable regions and feasible trajectories, to recognize fine-grained laboratory apparatus, states, and safety norms, and to order steps in mid-length procedures. BEAKER thus reveals a clear gap between coarse procedural understanding and the precise, action-grounded perception required for laboratory execution, providing a diagnostic benchmark for future MLLMs in SDCLs.",
+            "authors": [
+              "Fei Lin",
+              "Tengchao Zhang",
+              "Ziyang Gong",
+              "Xiaotong Yu",
+              "Bohan Zhang",
+              "Yifan Zhou",
+              "Qihao Yang",
+              "Ji Dai",
+              "Dong Li",
+              "Yining Jiang",
+              "Qinghua Ni",
+              "Jun Huang",
+              "Qiang Zhang",
+              "Yue Zhou",
+              "Zhihang Zhong",
+              "Yonglin Tian",
+              "Fei-Yue Wang",
+              "Xue Yang"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.06911v1",
+            "published": "2026-11-04T18:57:17+00:00",
+            "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+            "updated": "2026-11-04T18:57:17+00:00",
+            "version_id": "2611.06911v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_safety",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "自动驾驶化学实验室 (SDCL) 正在将化学实验推向具体自动化，其中机器必须感知实验室场景，推理实验状态，并在物理、程序和安全约束下采取行动。尽管多模态大型语言模型（MLLM）越来越多地被认为是此类系统的体现大脑，但现有的实验室基准主要关注安全、异常检测或一般科学理解，而其面向执行的体现能力尚未得到充分探索。为了填补这一空白，我们引入了 BEAKER，这是一个评估 SDCL 中体现的可操作性、知识、实验和推理的基准。 BEAKER 包含 1,000 个专家策划的问答样本，涵盖 11 种图像和视频任务类型，涵盖化学实验室执行所需的关键判断，包括可供性接地、轨迹规划、设备、状态和安全识别、仪器设置、操作和步骤推理以及时间过程推理。所有问题和注释均由化学和人工智能 (AI) 专家手动创建和审核，无需 AI 辅助生成或注释。我们在离线、单轮设置中评估了 28 个通用、面向科学、化学专用和具体化的 MLLM。结果表明，当前的模型可以遵循视频中的粗略实验程序，但仍然难以将动作纳入可操作区域和可行轨迹，识别细粒度的实验室设备、状态和安全规范，以及在中等长度的程序中排序步骤。因此，BEAKER 揭示了粗略的程序理解与实验室执行所需的精确的、基于行动的感知之间的明显差距，为 SDCL 中未来的 MLLM 提供了诊断基准。",
+            "title_zh": "BEAKER：专家为自动驾驶化学实验室中的实体大脑打造的基准"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Automation is often justified as relief from dull, dirty, and dangerous work. I examine how these conditions relate to occupational AI exposure using 21 O*NET items across 754 US occupations. Higher exposure is associated with lower condition scores under a large language model (LLM) measure and AI Occupational Exposure (AIOE), with equal occupation weights and employment weights. Adjustment for physical demands, required education, training and experience, and wages reduces the composite association. The adjusted confidence intervals include zero for LLM exposure and remain below zero for AIOE. Separating repetition from restricted discretion also changes what the combined Dull score conveys. These comparisons show how item groupings and occupational characteristics shape the interpretation of exposure estimates. Occupational profiles offer a starting point for selecting contrasting research settings. Establishing desired automation or realized relief requires evidence about workers' preferences and specific interventions.",
+            "authors": [
+              "Siyi Yu"
+            ],
+            "categories": [
+              "cs.AI",
+              "cs.HC",
+              "econ.GN"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.06888v1",
+            "published": "2026-11-04T18:41:40+00:00",
+            "title": "Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure",
+            "updated": "2026-11-04T18:41:40+00:00",
+            "version_id": "2611.06888v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "自动化通常被认为可以缓解枯燥、肮脏和危险的工作。我使用 754 个美国职业中的 21 个 O*NET 项目来研究这些条件与职业人工智能暴露的关系。在大语言模型 (LLM) 测量和人工智能职业暴露 (AIOE) 下，在职业权重和就业权重相同的情况下，较高的暴露与较低的状况得分相关。对身体需求、所需教育、培训和经验以及工资的调整会减少综合关联。调整后的置信区间包括 LLM 暴露为零和 AIOE 保持低于零。将重复与有限的自由裁量权分开也会改变合并的沉闷分数所传达的内容。这些比较显示了项目分组和职业特征如何影响暴露估计的解释。职业概况为选择对比研究环境提供了一个起点。建立所需的自动化或实现的救济需要有关工人偏好和具体干预措施的证据。",
+            "title_zh": "沉闷、肮脏、危险？工作条件和职业人工智能暴露的限制"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "LLM agents use context compaction to manage growing interaction histories, but summarizing long histories with large models can introduce substantial delays. Compaction therefore requires balancing information retention against latency. We observe that structured summary slots can retain information when generated independently. Based on this observation, we present SpecCompact, a framework that accelerates compaction through slot-parallel semantic speculation. SpecCompact fine-tunes a small drafter and generates slots in parallel. The target model verifies each proposed line and repairs rejected content, while subsequent drafting uses the updated slot prefix. System optimizations further reduce repeated context processing and model calls. Across AppWorld and $τ^3$ benchmarks with two target models, SpecCompact achieves $2.04$--$5.63\\times$ compaction speedups over Hermes-style summarization. Separate downstream evaluations reveal model- and task-dependent performance trade-offs. A user study within Hermes further shows an $8.68\\times$ median compaction speedup.",
+            "authors": [
+              "Yulu An",
+              "Yifei Feng",
+              "Xiangyang Yin"
+            ],
+            "categories": [
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.06876v1",
+            "published": "2026-11-04T18:34:41+00:00",
+            "title": "SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification",
+            "updated": "2026-11-04T18:34:41+00:00",
+            "version_id": "2611.06876v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "LLM 代理使用上下文压缩来管理不断增长的交互历史，但使用大型模型总结较长的历史可能会导致严重的延迟。因此，压缩需要平衡信息保留和延迟。我们观察到，结构化摘要槽在独立生成时可以保留信息。基于这一观察，我们提出了 SpecCompact，一个通过槽并行语义推测加速压缩的框架。 SpecCompact 微调小型绘图仪并并行生成槽。目标模型验证每个建议的行并修复拒绝的内容，而后续起草则使用更新的槽前缀。系统优化进一步减少了重复的上下文处理和模型调用。在具有两个目标模型的 AppWorld 和 $τ^3$ 基准测试中，SpecCompact 比 Hermes 式摘要实现了 $2.04$--$5.63\\times$ 压缩加速。单独的下游评估揭示了模型和任务相关的性能权衡。 Hermes 内部的一项用户研究进一步显示，压缩加速中位数为 $8.68\\times$。",
+            "title_zh": "SpecCompact：通过时隙并行语义推测验证加速 LLM 代理上下文压缩"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "In this work, we evaluate a simple inference-time scaling approach based on \\textit{turn-level best-of-N sampling} (\\method) for large language model (LLM) agents on complex, long-horizon tasks. We instantiate this using a \\textit{generator-selector} framework with two LLMs; at each turn, a \\emph{generator} model generates $N$ candidate actions and a \\emph{selector} model selects one of them, which is then executed in the environment. This paper is closely related to the work of \\cite{zainullina2025guided} who used critic models for guided search at inference time. Different from their work, we evaluate if off-the-shelf, open-weight LLMs can be effective at comparing different candidate actions directly. Experiments on long-horizon terminal tasks show that \\method can lead to significant performance improvements, both in terms of accuracy (5--10\\%) and consistency across repeated attempts. Analysis of agent trajectories reveal a shift in agent behaviour towards desirable patterns such as reduction in number of attempts to solve the task, improved task instruction following, debugging and testing.",
+            "authors": [
+              "Jalaj Bhandari",
+              "Dhawal Gupta",
+              "Hongli Zhan",
+              "Zhenting Wang",
+              "Varad Pimpalkhute",
+              "Zhengzhong Liu",
+              "Eric Xing",
+              "Rupesh Srivastava"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.06868v1",
+            "published": "2026-11-04T18:23:14+00:00",
+            "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+            "updated": "2026-11-04T18:23:14+00:00",
+            "version_id": "2611.06868v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "在这项工作中，我们评估了一种基于 \\textit{turn-level best-of-N 采样} (\\method) 的简单推理时间缩放方法，适用于复杂、长期任务的大型语言模型 (LLM) 代理。我们使用具有两个 LLM 的 \\textit{generator-selector} 框架来实例化它；每一轮，\\emph{generator} 模型都会生成 $N$ 个候选动作，而 \\emph{selector} 模型会选择其中一个，然后在环境中执行。这篇论文与 \\cite{zainullina2025guided} 的工作密切相关，他在推理时使用批评家模型进行引导搜索。与他们的工作不同，我们评估现成的、开放权重的法学硕士是否可以有效地直接比较不同的候选人行动。长期终端任务的实验表明，该方法可以显着提高性能，无论是在准确性（5--10%）还是在重复尝试的一致性方面。对智能体轨迹的分析揭示了智能体行为向理想模式的转变，例如减少解决任务的尝试次数、改进任务指令遵循、调试和测试。",
+            "title_zh": "用于扩展 LLM 代理的轮次 N 次最佳采样"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage budget. We study whether coding agents can carry out this step autonomously. We formulate compression as a terminal task in which an agent receives a source checkpoint, storage limit, inference environment, and time budget, then constructs compressed weights and executable inference code. The agent controls its algorithm and experiments; perplexity feedback guides search, and independent verification checks the final model. Across six agents and six model--size settings, 29 of 36 submissions pass verification. Selecting the lowest-perplexity agent design per task yields an average 3.4% perplexity increase over BF16 and 77.33% downstream accuracy, compared with 79.56% for BF16. Recorded experiments reveal how agents achieve these outcomes and where improvement breaks down. Agents lower PPL in 21 of 24 revisions at nearly fixed storage; complete-model feedback reverses 17 of 79 prior local rankings; and generation and inference tests expose failures that likelihood alone misses. The results identify representation design, experimental judgment, and capability validation as central to agent-driven model compression, a measurable component of efficiency-oriented self-improvement.",
+            "authors": [
+              "Xinrui Zhong",
+              "Zhifeng Li",
+              "Zhiming Wang",
+              "Yongqi Liu",
+              "Shanglin Yang",
+              "Yang Zhou",
+              "Zikun Li",
+              "Zhuoming Chen",
+              "Beidi Chen"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.06858v1",
+            "published": "2026-11-04T18:14:50+00:00",
+            "title": "CompressionBench: How can your coding agents compress LLMs?",
+            "updated": "2026-11-04T18:14:50+00:00",
+            "version_id": "2611.06858v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "递归的自我改进需要人工智能系统改进后续系统使用的模型和基础设施。 LLM 压缩提供了一个具体的效率目标：在较小的模型存储预算内保留预训练模型的行为。我们研究编码代理是否可以自主执行此步骤。我们将压缩制定为一项终端任务，其中代理接收源检查点、存储限制、推理环境和时间预算，然后构造压缩权重和可执行推理代码。代理控制其算法和实验；困惑反馈指导搜索，独立验证检查最终模型。在 6 个代理和 6 个模型尺寸设置中，36 个提交中的 29 个通过了验证。为每个任务选择最低困惑度的智能体设计，与 BF16 相比，困惑度平均提高 3.4%，下游准确率达到 77.33%，而 BF16 为 79.56%。记录的实验揭示了智能体如何实现这些结果以及改进失败的地方。代理商在几乎固定存储的 24 次修订中的 21 次中降低了 PPL；完整模型反馈推翻了 79 个先前本地排名中的 17 个；生成和推理测试揭示了仅似然性所遗漏的故障。结果表明，表示设计、实验判断和能力验证是代理驱动模型压缩的核心，是以效率为导向的自我改进的可衡量组成部分。",
+            "title_zh": "CompressionBench：你们的编码代理如何压缩 LLM？"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Common methods for monitoring features in large language models (LLMs) such as linear probes and sparse autoencoders (SAEs) assume that features maintain a consistent representation across contexts. LLMs, however, can flexibly adopt different perspectives or \"personas\" that suggest different underlying systems of conceptual relations. In this paper, we examine whether prompting an LLM to adopt a persona alters the representational geometry of the model's latent space. We extract representations of over 9,000 common words and 33 semantic axes from models adopting liberal and conservative political personas and compare these against two neutral baselines. We find that persona conditioning systematically alters both the projections of words onto semantic axes and the alignments among the axes themselves in directions consistent with the specified ideology. We then test the implications of this reorganization for two safety-relevant features: truthfulness and morality. Linear probes, SAE-based classifiers, and classifiers built from manually selected word representations, all trained without a persona, produce divergent results when applied to models conditioned on political personas, producing politically slanted ratings of truth and morality on controversial statements. These findings suggest that internal representations, as they are conventionally extracted, can exhibit different geometric relations when the model adopts personas, potentially undermining monitoring efforts.",
+            "authors": [
+              "Austin C. Kozlowski",
+              "Avital Mintz",
+              "Madison Lee"
+            ],
+            "categories": [
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.06848v1",
+            "published": "2026-11-04T18:05:17+00:00",
+            "title": "Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs",
+            "updated": "2026-11-04T18:05:17+00:00",
+            "version_id": "2611.06848v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_safety",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "用于监控大型语言模型 (LLM) 中特征的常见方法（例如线性探针和稀疏自动编码器 (SAE)）假设特征在上下文中保持一致的表示。然而，法学硕士可以灵活地采用不同的观点或“人物角色”，这些观点或“人物角色”提出了概念关系的不同基础系统。在本文中，我们研究了促使法学硕士采用角色是否会改变模型潜在空间的表征几何。我们从采用自由派和保守派政治角色的模型中提取了 9,000 多个常用词和 33 个语义轴的表示，并将它们与两个中立基线进行比较。我们发现角色调节系统地改变了单词在语义轴上的投影以及轴本身之间的对齐方式，以符合特定的意识形态。然后，我们测试这种重组对两个安全相关特征的影响：真实性和道德。线性探针、基于 SAE 的分类器以及根据手动选择的单词表示构建的分类器，所有这些都在没有角色的情况下进行训练，当应用于以政治角色为条件的模型时，会产生不同的结果，从而对有争议的陈述产生政治倾向的真相和道德评级。这些发现表明，当模型采用角色时，按照传统方式提取的内部表示可能会表现出不同的几何关系，从而可能破坏监控工作。",
+            "title_zh": "角色视角：采用观点重新组织法学硕士的表述"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "A central yet under-explored question in Multimodal Large Language Models (MLLMs) is where to connect---how visual information from a hierarchical vision encoder should be wired into the layer-wise semantics of a large language model. Mainstream MLLMs inject a fixed single-layer visual representation into the LLM and treat all LLM layers as a single consumer, ignoring that different layers demand different visual granularities. Recent multi-layer fusion methods either compress hierarchical features on the encoder side or rely on predefined sparse or hierarchical layer-to-layer connections, and therefore stop short of modeling adaptive cross-layer interactions between the ViT and LLM hierarchies. We address this gap with DGP (Dynamic Gated Pathways), a routing mechanism that establishes all-to-all connections between every ViT layer and every LLM layer, with each LLM layer dynamically gating its preference over visual layers conditioned on its own semantic state. Built on top of LLaVA-1.5-7B and 13B, DGP delivers consistent gains over the LLaVA-1.5-7B baseline (e.g., +4.2 on SQA$^{I}$, +3.3 on MM-Vet, +3.1 on VizWiz and LLaVA$^{W}$) and surpasses prior multi-layer visual fusion methods on most benchmarks. Layer-wise routing analyses further show that different LLM layers do select different visual granularities on demand, supporting both the effectiveness and interpretability of the proposed dynamic gated pathways. The code is available: https://github.com/YingyingYan1/DGP.",
+            "authors": [
+              "Yingying Yan",
+              "Jiaqi Tang",
+              "Wei Wei",
+              "Qianzhou Wang",
+              "Lei Zhang",
+              "Jianmin Chen",
+              "Yuyang Xia",
+              "Botong Geng",
+              "Jinjian Wu",
+              "Qifeng Chen"
+            ],
+            "categories": [
+              "cs.CV"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.06844v1",
+            "published": "2026-11-04T18:01:24+00:00",
+            "title": "Where to Connect? Boosting MLLMs via Dynamic Gated Pathways across ALL ViT and LLM Layers",
+            "updated": "2026-11-04T18:01:24+00:00",
+            "version_id": "2611.06844v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "多模态大型语言模型（MLLM）中一个尚未得到充分探索的核心问题是在哪里连接——如何将来自分层视觉编码器的视觉信息连接到大型语言模型的分层语义中。主流 MLLM 将固定的单层视觉表示注入 LLM 中，并将所有 LLM 层视为单个消费者，忽略不同层需要不同的视觉粒度。最近的多层融合方法要么在编码器端压缩分层特征，要么依赖预定义的稀疏或分层层到层连接，因此无法对 ViT 和 LLM 层次结构之间的自适应跨层交互进行建模。我们使用 DGP（动态门控路径）来解决这一差距，这是一种路由机制，可在每个 ViT 层和每个 LLM 层之间建立全面的连接，每个 LLM 层根据其自身的语义状态动态地控制其对视觉层的偏好。 DGP 建立在 LLaVA-1.5-7B 和 13B 之上，在 LLaVA-1.5-7B 基准上提供了一致的增益（例如，在 SQA$^{I}$ 上为 +4.2、在 MM-Vet 上为 +3.3、在 VizWiz 和 LLaVA$^{W}$ 上为 +3.1），并且在大多数基准上超越了先前的多层视觉融合方法。逐层路由分析进一步表明，不同的LLM层确实根据需要选择不同的视觉粒度，支持所提出的动态门控路径的有效性和可解释性。代码可见：https://github.com/YingyingYan1/DGP。",
+            "title_zh": "在哪里连接？通过跨所有 ViT 和 LLM 层的动态门控路径增强 MLLM"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language model (LLM) coding agents develop software through experimentation, offering an opportunity to design the serving systems supporting their own operation. Effective serving requires coordinating implementation and operating decisions under session dependencies, latency constraints, and correctness requirements. We introduce ServerBench, a benchmark for agentic design of complete, specialized LLM serving systems. Agents experiment against a common objective, dollars per dollar: latency-qualified token value per dollar of GPU cost. Stateful replay preserves session dependencies, and independent verification checks the submitted system. Across 11 coding-agent models and three deployments, Claude Sonnet 5.5 achieves 2.97 dollars per dollar on Gemma E4B, $4.87\\times$ the vLLM reference; 22 of 33 runs yield verified systems, and 13 exceed the strongest baseline. Our analysis identifies three findings: high-value designs coordinate capacity improvements with load selection; agents interpret performance feedback through workload-relevant experiments; and reliable delivery requires verification of the execution paths introduced by optimization. Overall, ServerBench supports systematic study of how agents translate service objectives and feedback into effective, verified serving systems for given task specifications.",
+            "authors": [
+              "Xinrui Zhong",
+              "Zhiming Wang",
+              "Yongqi Liu",
+              "Zhaohui Wang",
+              "Shanglin Yang",
+              "Zikun Li",
+              "Zhuoming Chen",
+              "Beidi Chen"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.06841v1",
+            "published": "2026-11-04T17:59:07+00:00",
+            "title": "ServerBench: How can your coding agents design specialized LLM serving systems?",
+            "updated": "2026-11-04T17:59:07+00:00",
+            "version_id": "2611.06841v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型（LLM）编码代理通过实验开发软件，提供了设计支持其自身操作的服务系统的机会。有效的服务需要在会话依赖性、延迟约束和正确性要求下协调实施和操作决策。我们推出 ServerBench，这是完整、专业的 LLM 服务系统的代理设计基准。代理针对一个共同目标进行实验，即每美元的美元数：每美元 GPU 成本的延迟合格代币价值。状态重放保留会话依赖性，独立验证检查提交的系统。在 11 个编码代理模型和 3 个部署中，Claude Sonnet 5.5 在 Gemma E4B 上的每美元售价为 2.97 美元，vLLM 参考价为 4.87 美元\\times$； 33 次运行中的 22 次产生了经过验证的系统，其中 13 次超过了最强基线。我们的分析确定了三个发现：高价值设计将容量改进与负载选择相协调；代理通过与工作负载相关的实验来解释绩效反馈；可靠的交付需要验证优化引入的执行路径。总体而言，ServerBench 支持对代理如何将服务目标和反馈转化为针对给定任务规范的有效、经过验证的服务系统的系统研究。",
+            "title_zh": "ServerBench：你们的编码代理如何设计专门的LLM服务系统？"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language model (LLM) assistants increasingly help users with everyday activities that involve time-dependent constraints. However, users may not mention these constraints in later requests, requiring assistants to recognize and adjust their advice accordingly. To evaluate such capability, we introduce TASC (Temporal Action Safety in Conversation), a benchmark that evaluates whether LLMs apply time-dependent constraints when responding to conversational requests. TASC consists of 3,418 inputs derived from 128 templates, along with a separate set of 33 scenarios designed to compare models' ability to calculate elapsed time with their ability to apply that information. Across 13 models, assistants account for time-dependent constraints in only 30.5% of cases where the proposed action violates a rule, while rarely warning users unnecessarily. More importantly, models fail to apply these constraints in 62.1% of cases despite correctly calculating the elapsed time. Explicitly providing the timing resolves only about half of these failures, revealing a gap between temporal reasoning and its application in conversational advice.",
+            "authors": [
+              "Peidi Dong",
+              "Yunze Xiao",
+              "Yu-Lin Tsai",
+              "Yichen Zheng",
+              "Heyuan Huang",
+              "Weihao Xuan",
+              "Mark Dredze",
+              "Jen-tse Huang"
+            ],
+            "categories": [
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.06839v1",
+            "published": "2026-11-04T17:54:49+00:00",
+            "title": "Before You Continue: Evaluating Time-Sensitive Safety Awareness in Conversational Assistants",
+            "updated": "2026-11-04T17:54:49+00:00",
+            "version_id": "2611.06839v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_safety",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型 (LLM) 助手越来越多地帮助用户处理涉及时间相关约束的日常活动。然而，用户可能不会在以后的请求中提及这些限制，从而需要助手识别并相应地调整他们的建议。为了评估这种能力，我们引入了 TASC（对话中的临时行动安全），这是一个评估法学硕士在响应对话请求时是否应用时间相关约束的基准。 TASC 包含源自 128 个模板的 3,418 个输入，以及一组单独的 33 个场景，旨在比较模型计算经过时间的能力与应用该信息的能力。在 13 个模型中，助手仅在 30.5% 的拟议操作违反规则的情况下考虑到时间相关的约束，同时很少向用户发出不必要的警告。更重要的是，尽管正确计算了经过的时间，但模型在 62.1% 的情况下未能应用这些约束。明确提供时间只能解决大约一半的失败，揭示了时间推理与其在对话建议中的应用之间的差距。",
+            "title_zh": "在继续之前：评估会话助理的时间敏感安全意识"
+          }
+        }
+      ],
+      "notification_hash": "deb30af7d41c3240a5d5463520fe958e431790fe5ab581e96394c57aff7a6c09",
+      "recovery_of": [],
+      "rendered": {
+        "2611.06839": "rendered_inline_translation",
+        "2611.06841": "rendered_inline_translation",
+        "2611.06844": "rendered_inline_translation",
+        "2611.06848": "rendered_inline_translation",
+        "2611.06858": "rendered_inline_translation",
+        "2611.06868": "rendered_inline_translation",
+        "2611.06876": "rendered_inline_translation",
+        "2611.06888": "rendered_inline_translation",
+        "2611.06911": "rendered_inline_translation",
+        "2611.06914": "rendered_inline_translation"
+      },
+      "run_id": "20261105T090126Z-66531d12",
+      "schema_version": 1,
+      "status": "prepared"
     }
   },
   "papers": {
