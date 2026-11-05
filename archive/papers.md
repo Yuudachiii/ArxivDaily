@@ -5,7 +5,7 @@
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
 | 2026-11-05 | A Framework for Context Enrichment and Selective Robustness in LLM Social Agents | LLM 社交代理的背景丰富和选择性鲁棒性框架 | [arXiv 2611.06914v1](https://arxiv.org/abs/2611.06914v1) |
-| 2026-11-05 | BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories | 待翻译 | [arXiv 2611.06911v1](https://arxiv.org/abs/2611.06911v1) |
+| 2026-11-05 | BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories | BEAKER：专家为自动驾驶化学实验室中的实体大脑打造的基准 | [arXiv 2611.06911v1](https://arxiv.org/abs/2611.06911v1) |
 | 2026-11-05 | Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure | 待翻译 | [arXiv 2611.06888v1](https://arxiv.org/abs/2611.06888v1) |
 | 2026-11-05 | SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification | 待翻译 | [arXiv 2611.06876v1](https://arxiv.org/abs/2611.06876v1) |
 | 2026-11-05 | On Turn-Level Best-of-N Sampling for Scaling LLM Agents | 待翻译 | [arXiv 2611.06868v1](https://arxiv.org/abs/2611.06868v1) |
