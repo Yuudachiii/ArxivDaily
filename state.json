@@ -58830,11 +58830,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-05T09:01:26.275855+00:00",
-        "run_id": "20261105T090126Z-66531d12",
-        "stage": "translation"
+      "title_zh": "在哪里连接？通过跨所有 ViT 和 LLM 层的动态门控路径增强 MLLM",
+      "translation": {
+        "abstract_zh": "多模态大型语言模型（MLLM）中一个尚未得到充分探索的核心问题是在哪里连接——如何将来自分层视觉编码器的视觉信息连接到大型语言模型的分层语义中。主流 MLLM 将固定的单层视觉表示注入 LLM 中，并将所有 LLM 层视为单个消费者，忽略不同层需要不同的视觉粒度。最近的多层融合方法要么在编码器端压缩分层特征，要么依赖预定义的稀疏或分层层到层连接，因此无法对 ViT 和 LLM 层次结构之间的自适应跨层交互进行建模。我们使用 DGP（动态门控路径）来解决这一差距，这是一种路由机制，可在每个 ViT 层和每个 LLM 层之间建立全面的连接，每个 LLM 层根据其自身的语义状态动态地控制其对视觉层的偏好。 DGP 建立在 LLaVA-1.5-7B 和 13B 之上，在 LLaVA-1.5-7B 基准上提供了一致的增益（例如，在 SQA$^{I}$ 上为 +4.2、在 MM-Vet 上为 +3.3、在 VizWiz 和 LLaVA$^{W}$ 上为 +3.1），并且在大多数基准上超越了先前的多层视觉融合方法。逐层路由分析进一步表明，不同的LLM层确实根据需要选择不同的视觉粒度，支持所提出的动态门控路径的有效性和可解释性。代码可见：https://github.com/YingyingYan1/DGP。",
+        "title_zh": "在哪里连接？通过跨所有 ViT 和 LLM 层的动态门控路径增强 MLLM"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.06844v1"
       ]
