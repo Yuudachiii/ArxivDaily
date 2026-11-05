@@ -97,6 +97,7 @@ class TranslationClient:
         self.client = client
         self.sleep = sleep
         self._last_request_at: float | None = None
+        self._bing_unavailable = False
 
     def _pace(self) -> None:
         """Space Google requests so a 100-200 paper day stays under the quota."""
@@ -129,8 +130,21 @@ class TranslationClient:
             raise ProcessingError("translation_provider_unsupported")
         self.analysis._begin_stage("translation")
         _quiet_http_debug()
-        cfg = self.settings
         texts = [paper.title] if title_only else [paper.title, paper.abstract]
+        if provider != "microsoft_free":
+            return self._translate_provider(provider, texts)
+        if not self._bing_unavailable:
+            try:
+                return self._translate_provider(provider, texts)
+            except ProcessingError as exc:
+                if str(exc) != "translation_request_failed":
+                    raise
+                # One exhausted retry sequence is enough for this run.
+                self._bing_unavailable = True
+        return self._translate_provider("google_free", texts)
+
+    def _translate_provider(self, provider: str, texts: list[str]) -> Translation:
+        cfg = self.settings
         # Only providers with an official key gate on a credential.
         key = os.environ.get(cfg["api_key_env"], "") if provider not in KEYLESS_PROVIDERS else ""
         if provider == "deepl" and not key:
@@ -167,7 +181,7 @@ class TranslationClient:
                     )
                 if not isinstance(values, list) or len(values) != len(texts) or any(not isinstance(v, str) or not v.strip() for v in values):
                     raise ProcessingError("translation_response_invalid")
-                return Translation(values[0], "" if title_only else values[1])
+                return Translation(*values, fallback_provider=provider if provider != cfg["provider"] else "")
             except (httpx.HTTPError, ValueError, KeyError, TypeError, IndexError, ProcessingError) as exc:
                 if isinstance(exc, ProcessingError) and str(exc) == "translation_dependency_missing":
                     raise

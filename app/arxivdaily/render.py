@@ -43,6 +43,8 @@ def render_item(item: DigestItem) -> str:
         if item.translation is None or not item.translation.abstract_zh.strip():
             raise ValueError("abstract translation module requires translated abstract")
         lines.append(f"**摘要翻译：** {item.translation.abstract_zh}")
+    if item.translation and item.translation.fallback_provider == "google_free":
+        lines.append("**翻译来源：** 谷歌备用翻译")
     if "llm_summary" in modules:
         if item.summary is not None:
             s = item.summary
@@ -86,7 +88,10 @@ def render_paper_index(records: dict) -> str:
     for record in sorted(records.values(), key=lambda r: (r["first_discovered"], r["paper"]["version_id"]), reverse=True):
         paper = Paper.from_dict(record["paper"])
         day = parse_time(record["first_discovered"]).astimezone(ZoneInfo("Asia/Shanghai")).date().isoformat()
-        title_zh = record.get("translation", {}).get("title_zh") or record.get("title_zh") or "待翻译"
+        translation = record.get("translation", {})
+        title_zh = translation.get("title_zh") or record.get("title_zh") or "待翻译"
+        if translation.get("fallback_provider") == "google_free":
+            title_zh += "（谷歌备用翻译）"
         lines.append(f"| {day} | {cell(paper.title)} | {cell(title_zh)} | [arXiv {paper.version_id}]({paper.url}) |")
     return "\n".join(lines) + "\n"
 
@@ -132,6 +137,7 @@ def render_notification(
     blocks = {i.paper.base_id: render_item(i) for i in items}
     inline = set(ids)
     short_labels = set()
+    fallback_count = sum(bool(i.translation and i.translation.fallback_provider == "google_free") for i in items)
 
     def compose():
         modes = {}
@@ -140,6 +146,8 @@ def render_notification(
             lines.append("今天未发现新增工作（本次检查未发现新增符合关注条件的论文）。")
         if any(i.recovery_of for i in items):
             lines.append("**补发：上一轮投递未确认，本次可能重复。**")
+        if fallback_count:
+            lines.append(f"**翻译来源：** 本期有 {fallback_count} 篇使用谷歌备用翻译。")
         for heading, group in groups:
             lines.append(heading)
             omitted = 0

@@ -369,6 +369,9 @@ class Pipeline:
             result = self._stage(record, "title_translation", lambda: self.translator.translate(paper, title_only=True))
             if result is not None:
                 record["title_zh"] = result.title_zh
+                if result.fallback_provider:
+                    record["translation"] = result.to_dict()
+                    record["translation_provider"] = result.fallback_provider
                 record["title_translation_prompt_fingerprint"] = self._prompt_fingerprint("title_translation") if self.config["translation"]["provider"] == "llm" else self.config["translation"]["provider"]
                 self.checkpoint()
 
@@ -397,10 +400,10 @@ class Pipeline:
                     record["stage"] = "presentation_pending"
                     self.checkpoint()
                     continue
-                if abstract_needed:
+                if abstract_needed or result.fallback_provider:
                     record["translation"] = result.to_dict()
                 record["title_zh"] = result.title_zh
-                record["translation_provider"] = self.config["translation"]["provider"]
+                record["translation_provider"] = result.fallback_provider or self.config["translation"]["provider"]
                 record[stage + "_prompt_fingerprint"] = self._prompt_fingerprint(stage) if self.config["translation"]["provider"] == "llm" else self.config["translation"]["provider"]
             record["presentation_modules"] = modules.copy()
             self.checkpoint()
@@ -738,6 +741,7 @@ class Pipeline:
             if not digest_id and not waiting_ready and not self.errors and run["coverage_complete"] and not (self.promotion_ids or self.resend_ids or self.retry_ids or manual_start or manual_end) and (self.daily_ids is None or not self._daily_paper_ids()):
                 digest_id = self._send([], empty=True)
             actual = self.state["digests"][digest_id]["items"] if digest_id else []
+            run["google_fallback_count"] = sum((i.get("translation") or {}).get("fallback_provider") == "google_free" for i in actual)
             digest = self.state["digests"].get(digest_id,{})
             run.update({"completed_at": iso(self.clock()), "delivery_day": self.day, "digest_id": digest_id, "delivery_status": digest.get("status","none"), "delivery_kind": "alert" if digest.get("alert") else "empty" if digest.get("empty") else "digest" if digest_id else "none", "errors": sorted(set(self.errors)), "full": sum(i["tier"] == "full" for i in actual), "light": sum(i["tier"] == "light" for i in actual), "translation": sum(i["tier"] == "translation" for i in actual), "recovery": sum(bool(i.get("recovery_of")) for i in actual), "silent": not digest_id and not self.errors})
             self.checkpoint()

@@ -258,6 +258,40 @@ def test_microsoft_free_retries_library_errors_without_region_settings(monkeypat
     assert len(sleeps) == 1 and len(fake.calls) == 2
 
 
+@pytest.mark.parametrize("google_available", [True, False])
+def test_bing_outage_uses_labelled_google_fallback_or_reports_failure(tmp_path, monkeypatch, google_available):
+    from arxivdaily.rulesmode import RulesAnalysis
+
+    cfg, fixture, papers, analysis, reader, store, delivery = system(tmp_path)
+    cfg["presentation"] = load_config()["presentation"]
+    cfg["translation"].update(provider="microsoft_free", attempts=2, request_interval=0)
+    bing = FakeTranslators([RuntimeError("engine unavailable")] * 2)
+    monkeypatch.setattr(translation_module, "_load_translators", lambda: bing)
+    requests = []
+
+    def google(request):
+        assert request.url.host == "translate.googleapis.com"
+        requests.append(request)
+        return httpx.Response(200, json=[[["备用译文"]]]) if google_available else httpx.Response(503)
+
+    with httpx.Client(transport=httpx.MockTransport(google)) as client:
+        translator = TranslationClient(cfg, RulesAnalysis(cfg, client), sleep=lambda _: None)
+        report = Pipeline(cfg, store, None, analysis, reader, delivery, now=NOW, translator=translator).run(papers[:2])
+    assert len(bing.calls) == 2 and requests
+    state = store.load()
+    digest = state["digests"][report["digest_id"]]
+    if google_available:
+        assert report["delivery_kind"] == "digest" and report["errors"] == []
+        assert report["translation"] == report["google_fallback_count"] == 2
+        assert len(requests) == 4 and "谷歌备用翻译" in delivery.sent[0][1]
+        assert all(i["translation"]["fallback_provider"] == "google_free" for i in digest["items"])
+        assert all(state["papers"][p.base_id]["translation_provider"] == "google_free" for p in papers[:2])
+    else:
+        assert report["delivery_kind"] == "alert" and not digest["items"]
+        assert report["translation"] == 0 and report["errors"]
+        assert all(state["papers"][p.base_id]["stage"] == "presentation_pending" for p in papers[:2])
+
+
 def test_microsoft_free_missing_dependency_is_a_processing_error(monkeypatch):
     cfg = load_config()
     cfg["translation"].update(provider="microsoft_free", attempts=3)
