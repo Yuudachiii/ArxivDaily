@@ -57349,7 +57349,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "presentation_pending",
       "versions": [
         "2611.06888v1"
       ]
