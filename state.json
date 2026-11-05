@@ -1070,8 +1070,15 @@
       "content_hash": "b3783ed6ff27e38bf08ee4c9e943a289469002aa5d7fa24491373580866658de",
       "created_at": "2026-11-05T09:01:26.275855+00:00",
       "day": "2026-11-05",
+      "delivery": {
+        "detail": "wechat_status",
+        "polls": 1,
+        "pushid": "66302187",
+        "status": "confirmed"
+      },
       "digest_id": "20261105T090126Z-66531d12-b3783ed6ff27",
       "empty": false,
+      "finished_at": "2026-11-05T09:04:33.175103+00:00",
       "items": [
         {
           "modules": [
@@ -1512,7 +1519,7 @@
       },
       "run_id": "20261105T090126Z-66531d12",
       "schema_version": 1,
-      "status": "sending"
+      "status": "confirmed"
     }
   },
   "papers": {
@@ -59087,7 +59094,6 @@
       ]
     },
     "2611.06839": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -59115,7 +59121,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -59144,7 +59150,6 @@
         "updated": "2026-11-04T17:54:49+00:00",
         "version_id": "2611.06839v1"
       },
-      "pending_digest": "20261105T090126Z-66531d12-b3783ed6ff27",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -59166,7 +59171,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "在继续之前：评估会话助理的时间敏感安全意识",
       "translation": {
         "abstract_zh": "大型语言模型 (LLM) 助手越来越多地帮助用户处理涉及时间相关约束的日常活动。然而，用户可能不会在以后的请求中提及这些限制，从而需要助手识别并相应地调整他们的建议。为了评估这种能力，我们引入了 TASC（对话中的临时行动安全），这是一个评估法学硕士在响应对话请求时是否应用时间相关约束的基准。 TASC 包含源自 128 个模板的 3,418 个输入，以及一组单独的 33 个场景，旨在比较模型计算经过时间的能力与应用该信息的能力。在 13 个模型中，助手仅在 30.5% 的拟议操作违反规则的情况下考虑到时间相关的约束，同时很少向用户发出不必要的警告。更重要的是，尽管正确计算了经过的时间，但模型在 62.1% 的情况下未能应用这些约束。明确提供时间只能解决大约一半的失败，揭示了时间推理与其在对话建议中的应用之间的差距。",
@@ -59179,7 +59184,6 @@
       ]
     },
     "2611.06841": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -59207,7 +59211,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -59236,7 +59240,6 @@
         "updated": "2026-11-04T17:59:07+00:00",
         "version_id": "2611.06841v1"
       },
-      "pending_digest": "20261105T090126Z-66531d12-b3783ed6ff27",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -59256,7 +59259,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "ServerBench：你们的编码代理如何设计专门的LLM服务系统？",
       "translation": {
         "abstract_zh": "大型语言模型（LLM）编码代理通过实验开发软件，提供了设计支持其自身操作的服务系统的机会。有效的服务需要在会话依赖性、延迟约束和正确性要求下协调实施和操作决策。我们推出 ServerBench，这是完整、专业的 LLM 服务系统的代理设计基准。代理针对一个共同目标进行实验，即每美元的美元数：每美元 GPU 成本的延迟合格代币价值。状态重放保留会话依赖性，独立验证检查提交的系统。在 11 个编码代理模型和 3 个部署中，Claude Sonnet 5.5 在 Gemma E4B 上的每美元售价为 2.97 美元，vLLM 参考价为 4.87 美元\\times$； 33 次运行中的 22 次产生了经过验证的系统，其中 13 次超过了最强基线。我们的分析确定了三个发现：高价值设计将容量改进与负载选择相协调；代理通过与工作负载相关的实验来解释绩效反馈；可靠的交付需要验证优化引入的执行路径。总体而言，ServerBench 支持对代理如何将服务目标和反馈转化为针对给定任务规范的有效、经过验证的服务系统的系统研究。",
@@ -59269,7 +59272,6 @@
       ]
     },
     "2611.06844": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -59297,7 +59299,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -59328,7 +59330,6 @@
         "updated": "2026-11-04T18:01:24+00:00",
         "version_id": "2611.06844v1"
       },
-      "pending_digest": "20261105T090126Z-66531d12-b3783ed6ff27",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -59346,7 +59347,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "在哪里连接？通过跨所有 ViT 和 LLM 层的动态门控路径增强 MLLM",
       "translation": {
         "abstract_zh": "多模态大型语言模型（MLLM）中一个尚未得到充分探索的核心问题是在哪里连接——如何将来自分层视觉编码器的视觉信息连接到大型语言模型的分层语义中。主流 MLLM 将固定的单层视觉表示注入 LLM 中，并将所有 LLM 层视为单个消费者，忽略不同层需要不同的视觉粒度。最近的多层融合方法要么在编码器端压缩分层特征，要么依赖预定义的稀疏或分层层到层连接，因此无法对 ViT 和 LLM 层次结构之间的自适应跨层交互进行建模。我们使用 DGP（动态门控路径）来解决这一差距，这是一种路由机制，可在每个 ViT 层和每个 LLM 层之间建立全面的连接，每个 LLM 层根据其自身的语义状态动态地控制其对视觉层的偏好。 DGP 建立在 LLaVA-1.5-7B 和 13B 之上，在 LLaVA-1.5-7B 基准上提供了一致的增益（例如，在 SQA$^{I}$ 上为 +4.2、在 MM-Vet 上为 +3.3、在 VizWiz 和 LLaVA$^{W}$ 上为 +3.1），并且在大多数基准上超越了先前的多层视觉融合方法。逐层路由分析进一步表明，不同的LLM层确实根据需要选择不同的视觉粒度，支持所提出的动态门控路径的有效性和可解释性。代码可见：https://github.com/YingyingYan1/DGP。",
@@ -59359,7 +59360,6 @@
       ]
     },
     "2611.06848": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -59387,7 +59387,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -59411,7 +59411,6 @@
         "updated": "2026-11-04T18:05:17+00:00",
         "version_id": "2611.06848v1"
       },
-      "pending_digest": "20261105T090126Z-66531d12-b3783ed6ff27",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -59431,7 +59430,7 @@
         "llm_safety",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "角色视角：采用观点重新组织法学硕士的表述",
       "translation": {
         "abstract_zh": "用于监控大型语言模型 (LLM) 中特征的常见方法（例如线性探针和稀疏自动编码器 (SAE)）假设特征在上下文中保持一致的表示。然而，法学硕士可以灵活地采用不同的观点或“人物角色”，这些观点或“人物角色”提出了概念关系的不同基础系统。在本文中，我们研究了促使法学硕士采用角色是否会改变模型潜在空间的表征几何。我们从采用自由派和保守派政治角色的模型中提取了 9,000 多个常用词和 33 个语义轴的表示，并将它们与两个中立基线进行比较。我们发现角色调节系统地改变了单词在语义轴上的投影以及轴本身之间的对齐方式，以符合特定的意识形态。然后，我们测试这种重组对两个安全相关特征的影响：真实性和道德。线性探针、基于 SAE 的分类器以及根据手动选择的单词表示构建的分类器，所有这些都在没有角色的情况下进行训练，当应用于以政治角色为条件的模型时，会产生不同的结果，从而对有争议的陈述产生政治倾向的真相和道德评级。这些发现表明，当模型采用角色时，按照传统方式提取的内部表示可能会表现出不同的几何关系，从而可能破坏监控工作。",
@@ -59444,7 +59443,6 @@
       ]
     },
     "2611.06858": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -59472,7 +59470,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -59502,7 +59500,6 @@
         "updated": "2026-11-04T18:14:50+00:00",
         "version_id": "2611.06858v1"
       },
-      "pending_digest": "20261105T090126Z-66531d12-b3783ed6ff27",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -59520,7 +59517,7 @@
         "llm_agent",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "CompressionBench：你们的编码代理如何压缩 LLM？",
       "translation": {
         "abstract_zh": "递归的自我改进需要人工智能系统改进后续系统使用的模型和基础设施。 LLM 压缩提供了一个具体的效率目标：在较小的模型存储预算内保留预训练模型的行为。我们研究编码代理是否可以自主执行此步骤。我们将压缩制定为一项终端任务，其中代理接收源检查点、存储限制、推理环境和时间预算，然后构造压缩权重和可执行推理代码。代理控制其算法和实验；困惑反馈指导搜索，独立验证检查最终模型。在 6 个代理和 6 个模型尺寸设置中，36 个提交中的 29 个通过了验证。为每个任务选择最低困惑度的智能体设计，与 BF16 相比，困惑度平均提高 3.4%，下游准确率达到 77.33%，而 BF16 为 79.56%。记录的实验揭示了智能体如何实现这些结果以及改进失败的地方。代理商在几乎固定存储的 24 次修订中的 21 次中降低了 PPL；完整模型反馈推翻了 79 个先前本地排名中的 17 个；生成和推理测试揭示了仅似然性所遗漏的故障。结果表明，表示设计、实验判断和能力验证是代理驱动模型压缩的核心，是以效率为导向的自我改进的可衡量组成部分。",
@@ -59533,7 +59530,6 @@
       ]
     },
     "2611.06868": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -59561,7 +59557,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -59590,7 +59586,6 @@
         "updated": "2026-11-04T18:23:14+00:00",
         "version_id": "2611.06868v1"
       },
-      "pending_digest": "20261105T090126Z-66531d12-b3783ed6ff27",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -59608,7 +59603,7 @@
         "llm_agent",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "用于扩展 LLM 代理的轮次 N 次最佳采样",
       "translation": {
         "abstract_zh": "在这项工作中，我们评估了一种基于 \\textit{turn-level best-of-N 采样} (\\method) 的简单推理时间缩放方法，适用于复杂、长期任务的大型语言模型 (LLM) 代理。我们使用具有两个 LLM 的 \\textit{generator-selector} 框架来实例化它；每一轮，\\emph{generator} 模型都会生成 $N$ 个候选动作，而 \\emph{selector} 模型会选择其中一个，然后在环境中执行。这篇论文与 \\cite{zainullina2025guided} 的工作密切相关，他在推理时使用批评家模型进行引导搜索。与他们的工作不同，我们评估现成的、开放权重的法学硕士是否可以有效地直接比较不同的候选人行动。长期终端任务的实验表明，该方法可以显着提高性能，无论是在准确性（5--10%）还是在重复尝试的一致性方面。对智能体轨迹的分析揭示了智能体行为向理想模式的转变，例如减少解决任务的尝试次数、改进任务指令遵循、调试和测试。",
@@ -59621,7 +59616,6 @@
       ]
     },
     "2611.06876": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -59649,7 +59643,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -59673,7 +59667,6 @@
         "updated": "2026-11-04T18:34:41+00:00",
         "version_id": "2611.06876v1"
       },
-      "pending_digest": "20261105T090126Z-66531d12-b3783ed6ff27",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -59693,7 +59686,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "SpecCompact：通过时隙并行语义推测验证加速 LLM 代理上下文压缩",
       "translation": {
         "abstract_zh": "LLM 代理使用上下文压缩来管理不断增长的交互历史，但使用大型模型总结较长的历史可能会导致严重的延迟。因此，压缩需要平衡信息保留和延迟。我们观察到，结构化摘要槽在独立生成时可以保留信息。基于这一观察，我们提出了 SpecCompact，一个通过槽并行语义推测加速压缩的框架。 SpecCompact 微调小型绘图仪并并行生成槽。目标模型验证每个建议的行并修复拒绝的内容，而后续起草则使用更新的槽前缀。系统优化进一步减少了重复的上下文处理和模型调用。在具有两个目标模型的 AppWorld 和 $τ^3$ 基准测试中，SpecCompact 比 Hermes 式摘要实现了 $2.04$--$5.63\\times$ 压缩加速。单独的下游评估揭示了模型和任务相关的性能权衡。 Hermes 内部的一项用户研究进一步显示，压缩加速中位数为 $8.68\\times$。",
@@ -59706,7 +59699,6 @@
       ]
     },
     "2611.06888": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -59734,7 +59726,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -59758,7 +59750,6 @@
         "updated": "2026-11-04T18:41:40+00:00",
         "version_id": "2611.06888v1"
       },
-      "pending_digest": "20261105T090126Z-66531d12-b3783ed6ff27",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -59774,7 +59765,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "沉闷、肮脏、危险？工作条件和职业人工智能暴露的限制",
       "translation": {
         "abstract_zh": "自动化通常被认为可以缓解枯燥、肮脏和危险的工作。我使用 754 个美国职业中的 21 个 O*NET 项目来研究这些条件与职业人工智能暴露的关系。在大语言模型 (LLM) 测量和人工智能职业暴露 (AIOE) 下，在职业权重和就业权重相同的情况下，较高的暴露与较低的状况得分相关。对身体需求、所需教育、培训和经验以及工资的调整会减少综合关联。调整后的置信区间包括 LLM 暴露为零和 AIOE 保持低于零。将重复与有限的自由裁量权分开也会改变合并的沉闷分数所传达的内容。这些比较显示了项目分组和职业特征如何影响暴露估计的解释。职业概况为选择对比研究环境提供了一个起点。建立所需的自动化或实现的救济需要有关工人偏好和具体干预措施的证据。",
@@ -59787,7 +59778,6 @@
       ]
     },
     "2611.06911": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -59815,7 +59805,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -59854,7 +59844,6 @@
         "updated": "2026-11-04T18:57:17+00:00",
         "version_id": "2611.06911v1"
       },
-      "pending_digest": "20261105T090126Z-66531d12-b3783ed6ff27",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -59876,7 +59865,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "BEAKER：专家为自动驾驶化学实验室中的实体大脑打造的基准",
       "translation": {
         "abstract_zh": "自动驾驶化学实验室 (SDCL) 正在将化学实验推向具体自动化，其中机器必须感知实验室场景，推理实验状态，并在物理、程序和安全约束下采取行动。尽管多模态大型语言模型（MLLM）越来越多地被认为是此类系统的体现大脑，但现有的实验室基准主要关注安全、异常检测或一般科学理解，而其面向执行的体现能力尚未得到充分探索。为了填补这一空白，我们引入了 BEAKER，这是一个评估 SDCL 中体现的可操作性、知识、实验和推理的基准。 BEAKER 包含 1,000 个专家策划的问答样本，涵盖 11 种图像和视频任务类型，涵盖化学实验室执行所需的关键判断，包括可供性接地、轨迹规划、设备、状态和安全识别、仪器设置、操作和步骤推理以及时间过程推理。所有问题和注释均由化学和人工智能 (AI) 专家手动创建和审核，无需 AI 辅助生成或注释。我们在离线、单轮设置中评估了 28 个通用、面向科学、化学专用和具体化的 MLLM。结果表明，当前的模型可以遵循视频中的粗略实验程序，但仍然难以将动作纳入可操作区域和可行轨迹，识别细粒度的实验室设备、状态和安全规范，以及在中等长度的程序中排序步骤。因此，BEAKER 揭示了粗略的程序理解与实验室执行所需的精确的、基于行动的感知之间的明显差距，为 SDCL 中未来的 MLLM 提供了诊断基准。",
@@ -59889,7 +59878,6 @@
       ]
     },
     "2611.06914": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -59917,7 +59905,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -59943,7 +59931,6 @@
         "updated": "2026-11-04T18:58:23+00:00",
         "version_id": "2611.06914v1"
       },
-      "pending_digest": "20261105T090126Z-66531d12-b3783ed6ff27",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -59961,7 +59948,7 @@
         "llm_agent",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "LLM 社交代理的背景丰富和选择性鲁棒性框架",
       "translation": {
         "abstract_zh": "研究人员使用大型语言模型作为社会模拟中的代理，其中代理会收到旨在塑造其行为的观察结果和背景信息的提示。然而，LLM 代理已被证明可以在保留意义的即时变化下显着改变其行为，从而为社会模拟带来验证问题。一个看似合理的假设是，这种脆弱性反映了缺乏基础，可以通过丰富提供给代理的上下文来减少这种脆弱性。更丰富的上下文是否可以提高稳健性仍不清楚，部分原因是上下文丰富性和稳健性很少以支持受控比较的方式定义。我们通过受控上下文丰富来满足第一个需求，这是一组系统地丰富不同类型上下文的提示替换规则：中性填充、通用社会背景、描述性决策基础和规范性决策基础。我们通过引入选择性鲁棒性作为验证标准来解决第二个问题：对保留意义的即时变化不敏感，并结合对社会世界中与决策相关的变化的定向响应。我们在类似囚徒困境的游戏中演示了该框架，展示了如何使用它来识别哪种形式的上下文丰富可以产生更理想和更稳健的代理行为。我们发现这些形式的丰富产生了不同的行为模式，这些模式在测试的两个模型之间有所不同。",
