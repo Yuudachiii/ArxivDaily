@@ -59029,11 +59029,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-05T09:01:26.275855+00:00",
-        "run_id": "20261105T090126Z-66531d12",
-        "stage": "translation"
+      "title_zh": "用于扩展 LLM 代理的轮次 N 次最佳采样",
+      "translation": {
+        "abstract_zh": "在这项工作中，我们评估了一种基于 \\textit{turn-level best-of-N 采样} (\\method) 的简单推理时间缩放方法，适用于复杂、长期任务的大型语言模型 (LLM) 代理。我们使用具有两个 LLM 的 \\textit{generator-selector} 框架来实例化它；每一轮，\\emph{generator} 模型都会生成 $N$ 个候选动作，而 \\emph{selector} 模型会选择其中一个，然后在环境中执行。这篇论文与 \\cite{zainullina2025guided} 的工作密切相关，他在推理时使用批评家模型进行引导搜索。与他们的工作不同，我们评估现成的、开放权重的法学硕士是否可以有效地直接比较不同的候选人行动。长期终端任务的实验表明，该方法可以显着提高性能，无论是在准确性（5--10%）还是在重复尝试的一致性方面。对智能体轨迹的分析揭示了智能体行为向理想模式的转变，例如减少解决任务的尝试次数、改进任务指令遵循、调试和测试。",
+        "title_zh": "用于扩展 LLM 代理的轮次 N 次最佳采样"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.06868v1"
       ]
