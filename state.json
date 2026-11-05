@@ -57109,7 +57109,13 @@
         "uncertainty": []
       },
       "events": [],
-      "failures": {},
+      "failures": {
+        "translation": {
+          "attempts": 1,
+          "error": "translation_request_failed",
+          "last_at": "2026-11-05T09:01:26.382980+00:00"
+        }
+      },
       "first_discovered": "2026-11-05T09:01:26.382980+00:00",
       "intended_tier": "translation",
       "model": "rules",
@@ -57153,11 +57159,6 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-05T09:01:26.382980+00:00",
-        "run_id": "20261105T090126Z-2da8fbba",
-        "stage": "translation"
-      },
       "versions": [
         "2611.06858v1"
       ]
