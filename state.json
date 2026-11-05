@@ -59093,11 +59093,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-05T09:01:26.275855+00:00",
-        "run_id": "20261105T090126Z-66531d12",
-        "stage": "translation"
+      "title_zh": "SpecCompact：通过时隙并行语义推测验证加速 LLM 代理上下文压缩",
+      "translation": {
+        "abstract_zh": "LLM 代理使用上下文压缩来管理不断增长的交互历史，但使用大型模型总结较长的历史可能会导致严重的延迟。因此，压缩需要平衡信息保留和延迟。我们观察到，结构化摘要槽在独立生成时可以保留信息。基于这一观察，我们提出了 SpecCompact，一个通过槽并行语义推测加速压缩的框架。 SpecCompact 微调小型绘图仪并并行生成槽。目标模型验证每个建议的行并修复拒绝的内容，而后续起草则使用更新的槽前缀。系统优化进一步减少了重复的上下文处理和模型调用。在具有两个目标模型的 AppWorld 和 $τ^3$ 基准测试中，SpecCompact 比 Hermes 式摘要实现了 $2.04$--$5.63\\times$ 压缩加速。单独的下游评估揭示了模型和任务相关的性能权衡。 Hermes 内部的一项用户研究进一步显示，压缩加速中位数为 $8.68\\times$。",
+        "title_zh": "SpecCompact：通过时隙并行语义推测验证加速 LLM 代理上下文压缩"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.06876v1"
       ]
