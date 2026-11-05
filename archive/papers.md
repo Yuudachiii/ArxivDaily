@@ -13,7 +13,7 @@
 | 2026-11-05 | Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs | 角色视角：采用观点重新组织法学硕士的表述 | [arXiv 2611.06848v1](https://arxiv.org/abs/2611.06848v1) |
 | 2026-11-05 | Where to Connect? Boosting MLLMs via Dynamic Gated Pathways across ALL ViT and LLM Layers | 在哪里连接？通过跨所有 ViT 和 LLM 层的动态门控路径增强 MLLM | [arXiv 2611.06844v1](https://arxiv.org/abs/2611.06844v1) |
 | 2026-11-05 | ServerBench: How can your coding agents design specialized LLM serving systems? | ServerBench：你们的编码代理如何设计专门的LLM服务系统？ | [arXiv 2611.06841v1](https://arxiv.org/abs/2611.06841v1) |
-| 2026-11-05 | Before You Continue: Evaluating Time-Sensitive Safety Awareness in Conversational Assistants | 待翻译 | [arXiv 2611.06839v1](https://arxiv.org/abs/2611.06839v1) |
+| 2026-11-05 | Before You Continue: Evaluating Time-Sensitive Safety Awareness in Conversational Assistants | 在继续之前：评估会话助理的时间敏感安全意识 | [arXiv 2611.06839v1](https://arxiv.org/abs/2611.06839v1) |
 | 2026-11-04 | FlowTranslator: Training-Free In-Image Machine Translation with Flow-Based Editing | FlowTranslator：具有基于流的编辑功能的免培训图像内机器翻译 | [arXiv 2611.04303v1](https://arxiv.org/abs/2611.04303v1) |
 | 2026-11-04 | OSGR: Observation-Support Graph Reasoning for Earth Observation Question Answering | OSGR：地球观测问答的观测支持图推理 | [arXiv 2611.04301v1](https://arxiv.org/abs/2611.04301v1) |
 | 2026-11-04 | Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training | Harness-S：向兄弟 Harness 学习以进行通用代理训练 | [arXiv 2611.04277v1](https://arxiv.org/abs/2611.04277v1) |
