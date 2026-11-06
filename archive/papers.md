@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-06 | SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization | 待翻译 | [arXiv 2611.08483v1](https://arxiv.org/abs/2611.08483v1) |
+| 2026-11-06 | MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue | 待翻译 | [arXiv 2611.08433v1](https://arxiv.org/abs/2611.08433v1) |
+| 2026-11-06 | The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI | 待翻译 | [arXiv 2611.08428v1](https://arxiv.org/abs/2611.08428v1) |
+| 2026-11-06 | Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks | 待翻译 | [arXiv 2611.08417v1](https://arxiv.org/abs/2611.08417v1) |
+| 2026-11-06 | T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models | 待翻译 | [arXiv 2611.08413v1](https://arxiv.org/abs/2611.08413v1) |
+| 2026-11-06 | FedReason: Large Language Models as Weight-Space Meta-Aggregators for Heterogeneous Federated Learning | 待翻译 | [arXiv 2611.08383v1](https://arxiv.org/abs/2611.08383v1) |
+| 2026-11-06 | StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference | 待翻译 | [arXiv 2611.08363v1](https://arxiv.org/abs/2611.08363v1) |
+| 2026-11-06 | Cultural Adaptation within Repeated Social Interactions | 待翻译 | [arXiv 2611.08334v1](https://arxiv.org/abs/2611.08334v1) |
+| 2026-11-06 | Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation | 待翻译 | [arXiv 2611.08315v1](https://arxiv.org/abs/2611.08315v1) |
+| 2026-11-06 | LLM-Assisted Label Noise Correction for EEG-Based Sleep Stage Classification | 待翻译 | [arXiv 2611.08311v1](https://arxiv.org/abs/2611.08311v1) |
 | 2026-11-05 | A Framework for Context Enrichment and Selective Robustness in LLM Social Agents | 待翻译 | [arXiv 2611.06914v1](https://arxiv.org/abs/2611.06914v1) |
 | 2026-11-05 | BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories | 待翻译 | [arXiv 2611.06911v1](https://arxiv.org/abs/2611.06911v1) |
 | 2026-11-05 | Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure | 待翻译 | [arXiv 2611.06888v1](https://arxiv.org/abs/2611.06888v1) |
