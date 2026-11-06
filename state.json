@@ -60230,11 +60230,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-06T08:58:49.334287+00:00",
-        "run_id": "20261106T085849Z-3eb9db07",
-        "stage": "translation"
+      "title_zh": "StrataFlux：内存层次结构本机低位 LLM 推理",
+      "translation": {
+        "abstract_zh": "量化减少了大型语言模型 (LLM) 推理的内存和带宽需求，但会降低准确性；卸载更高精度的数据反而会阻碍生成。我们引入了 StrataFlux，这是一个挑战这种权衡的框架，它可以恢复因低位权重和键值 (KV) 缓存量化而损失的精度，同时保留量化的内存和速度优势。 StrataFlux 共同设计细化表示、选择和交付，使主机 RAM 和固态驱动器成为额外精度的有用来源。其选择性精度流减少了传输量，将交付与计算重叠，并在解码步骤中重用获取的精度，因此生成无需等待每次传输。我们在专用 GPU 和统一内存平台上评估 2-4 位权重和 2-3 位 KV 缓存。对于 2 位 Llama-3.1-8B-Instruct 权重，StrataFlux 将 WikiText-2 困惑度从 9.46 降低到 8.40，同时在 RTX 5090 上保持 95.4% 的量化基础吞吐量。借助 2 位权重和 KV，StrataFlux 将 Qwen3-8B 的 AIME 2024/2025 准确度从 11.0% 提高在 GPU 内存使用不变的情况下，性能提升至 47.1%。在 128K 环境下，具有 3 位权重和 2 位 KV 的 Llama-3.1-8B-Instruct 在 RTX 5090 上实现了与 vLLM 的 4 位 AWQ 权重和 8 位 KV 相当的复杂度和速度，仅使用大约一半的 GPU 内存。这些结果表明，GPU 驻留精度不需要设置精度上限，卸载层延迟也不需要决定解码速度。",
+        "title_zh": "StrataFlux：内存层次结构本机低位 LLM 推理"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.08363v1"
       ]
