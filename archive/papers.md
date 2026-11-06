@@ -5,7 +5,7 @@
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
 | 2026-11-06 | SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization | SwarmEvolve：用于进化发现和优化的潜在代理群 | [arXiv 2611.08483v1](https://arxiv.org/abs/2611.08483v1) |
-| 2026-11-06 | MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue | 待翻译 | [arXiv 2611.08433v1](https://arxiv.org/abs/2611.08433v1) |
+| 2026-11-06 | MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue | MedGraph：利用图形内存维持患者状态以实现长期医疗对话 | [arXiv 2611.08433v1](https://arxiv.org/abs/2611.08433v1) |
 | 2026-11-06 | The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI | 待翻译 | [arXiv 2611.08428v1](https://arxiv.org/abs/2611.08428v1) |
 | 2026-11-06 | Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks | 待翻译 | [arXiv 2611.08417v1](https://arxiv.org/abs/2611.08417v1) |
 | 2026-11-06 | T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models | 待翻译 | [arXiv 2611.08413v1](https://arxiv.org/abs/2611.08413v1) |
