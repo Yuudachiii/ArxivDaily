@@ -11,7 +11,7 @@
 | 2026-11-06 | T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models | T3R：免训练两阶段代币细化，实现高效、鲁棒的 VLA 模型 | [arXiv 2611.08413v1](https://arxiv.org/abs/2611.08413v1) |
 | 2026-11-06 | FedReason: Large Language Models as Weight-Space Meta-Aggregators for Heterogeneous Federated Learning | FedReason：大型语言模型作为异构联邦学习的权重空间元聚合器 | [arXiv 2611.08383v1](https://arxiv.org/abs/2611.08383v1) |
 | 2026-11-06 | StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference | StrataFlux：内存层次结构本机低位 LLM 推理 | [arXiv 2611.08363v1](https://arxiv.org/abs/2611.08363v1) |
-| 2026-11-06 | Cultural Adaptation within Repeated Social Interactions | 待翻译 | [arXiv 2611.08334v1](https://arxiv.org/abs/2611.08334v1) |
+| 2026-11-06 | Cultural Adaptation within Repeated Social Interactions | 重复社会互动中的文化适应 | [arXiv 2611.08334v1](https://arxiv.org/abs/2611.08334v1) |
 | 2026-11-06 | Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation | 待翻译 | [arXiv 2611.08315v1](https://arxiv.org/abs/2611.08315v1) |
 | 2026-11-06 | LLM-Assisted Label Noise Correction for EEG-Based Sleep Stage Classification | 待翻译 | [arXiv 2611.08311v1](https://arxiv.org/abs/2611.08311v1) |
 | 2026-11-05 | A Framework for Context Enrichment and Selective Robustness in LLM Social Agents | LLM 社交代理的背景丰富和选择性鲁棒性框架 | [arXiv 2611.06914v1](https://arxiv.org/abs/2611.06914v1) |
