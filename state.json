@@ -23,7 +23,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:41:59.424237+00:00",
-    "last_complete_end": "2026-11-05T09:01:26.275855+00:00"
+    "last_complete_end": "2026-11-06T08:58:49.334287+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -93,6 +93,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-06": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -59959,6 +59968,323 @@
       "versions": [
         "2611.06914v1"
       ]
+    },
+    "2611.08311": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-06T08:58:49.334287+00:00",
+      "paper": {
+        "abstract": "Automatic sleep stage classification from electroencephalography (EEG) signals is a critical task in clinical sleep medicine. While deep learning models have shown promising results in this domain, their performance is fundamentally constrained by the quality of training labels, which human experts manually annotate and that are subject to inter-rater disagreement and systematic labeling errors. In this paper, we propose a novel LLM-assisted label-noise filtering pipeline that operates exclusively during training to identify and remove unreliable sleep-stage annotations before retraining the classifier. Specifically, TinySleepNet is first trained on the original dataset to extract per-epoch SoftMax confidence scores, then low-confidence epochs are submitted to LLaMA 3.1 along with their EEG spectral features and surrounding sequence context. The LLM evaluates each epoch against AASM sleep-scoring guidelines and assigns a verdict of RELIABLE or SUSPICIOUS. Suspicious epochs are removed from the training set, and TinySleepNet is retrained on the cleaned data. Evaluated on the Sleep-EDF Expanded dataset using 20-fold cross-validation, our method improves overall accuracy from 81.8% to 84.6% and Macro F1-score from 75.6% to 77.4%, with particularly notable gains in REM detection. Crucially, because the LLM operates only during training, the lightweight TinySleepNet architecture (1.3M parameters) is preserved at inference, making the proposed pipeline suitable for real-time, wearable sleep monitoring applications.",
+        "authors": [
+          "Elmira Salari",
+          "Shruti Kshirsagar"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08311v1",
+        "published": "2026-11-05T17:12:05+00:00",
+        "title": "LLM-Assisted Label Noise Correction for EEG-Based Sleep Stage Classification",
+        "updated": "2026-11-05T17:12:05+00:00",
+        "version_id": "2611.08311v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08311v1"
+      ]
+    },
+    "2611.08315": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-06T08:58:49.334287+00:00",
+      "paper": {
+        "abstract": "Large language models (LLMs) are increasingly used in biomedical and cognitive neuroscience, but their ability to reason reliably over heterogeneous knowledge graphs (KGs) remains unclear. We benchmark five LLMs (GPT-5.1, Gemini 2.0 Pro, Llama 3, Qwen, and BioGPT) across five KGs: DrugBank, NeuroSynth, Cognitive Atlas, Brain Map, and GDPKG. We introduce a multitier query dataset to evaluate reasoning depth and factual accuracy under KG-aware (graph-grounded) and KG-agnostic conditions. Inter-annotator agreement was substantial, with Cohen's kappa of 0.781 (range: 0.753-0.807) and Fleiss' kappa of 0.77. Results show that general-purpose models, particularly GPT-5.1 and Gemini 2.0 Pro, generally outperform domain-specific models on multi-hop and high-level reasoning tasks, although performance declines as query complexity increases. KG grounding reduces hallucination rates across all evaluated models. Contrary to our initial hypothesis, domain-specific models do not consistently outperform general-purpose models on specialized tasks without graph grounding. These findings highlight the value of combining broad language-model capabilities with structured domain knowledge. We provide practical guidance for selecting LLM-KG integration strategies based on task complexity and computational constraints, and discuss hybrid neurosymbolic architectures for personalized medicine, cognitive disorder diagnosis, and explainable AI.",
+        "authors": [
+          "Ali Sarabadani",
+          "Kheirolah Rahsepar Fard",
+          "Tahereh Jeirani"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08315v1",
+        "published": "2026-11-05T17:12:58+00:00",
+        "title": "Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation",
+        "updated": "2026-11-05T17:12:58+00:00",
+        "version_id": "2611.08315v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08315v1"
+      ]
+    },
+    "2611.08334": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-06T08:58:49.334287+00:00",
+      "paper": {
+        "abstract": "Much of human culture is tacit and is typically learned through situated social interaction. As LLMs are deployed as interactive agents across diverse communities, assessing their cultural competence demands moving beyond existing question-answering approaches, shifting from what they know to how they adapt. In this work, we broaden the scope of cultural adaptation in NLP by investigating whether LLMs can adapt through repeated interactions via a sandbox environment. By reframing cultural adaptation as a continuous process of norm assimilation through social interaction, our work demonstrates that memory mechanisms foster longitudinal learning across repeated interactions, facilitate transfer to different social settings, and enable multilingual norm assimilation across five languages. Together, our findings lay the groundwork for continuous, interaction-driven cultural adaptation in LLMs.",
+        "authors": [
+          "Chen Cecilia Liu",
+          "Roi Reichart",
+          "Anna Korhonen"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08334v1",
+        "published": "2026-11-05T17:23:30+00:00",
+        "title": "Cultural Adaptation within Repeated Social Interactions",
+        "updated": "2026-11-05T17:23:30+00:00",
+        "version_id": "2611.08334v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08334v1"
+      ]
+    },
+    "2611.08363": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-06T08:58:49.334287+00:00",
+      "paper": {
+        "abstract": "Quantization reduces the memory and bandwidth demands of large language model (LLM) inference but can degrade accuracy; offloading higher-precision data can instead stall generation. We introduce StrataFlux, a framework that challenges this tradeoff by recovering accuracy lost to low-bit weight and key-value (KV) cache quantization while retaining quantization's memory and speed advantages. StrataFlux co-designs refinement representation, selection, and delivery to make host RAM and solid-state drives useful sources of additional precision. Its selective precision streaming reduces transfer volume, overlaps delivery with computation, and reuses fetched precision across decoding steps so generation need not wait for every transfer. We evaluate 2-4-bit weights and 2-3-bit KV-cache on dedicated GPUs and unified-memory platforms. For 2-bit Llama-3.1-8B-Instruct weights, StrataFlux reduces WikiText-2 perplexity from 9.46 to 8.40 while maintaining 95.4% of the quantized base's throughput on RTX 5090. With 2-bit weights and KV, StrataFlux raises Qwen3-8B's AIME 2024/2025 accuracy from 11.0% to 47.1% at unchanged GPU memory use. At 128K context, Llama-3.1-8B-Instruct with 3-bit weights and 2-bit KV achieves comparable perplexity and speed to vLLM's 4-bit AWQ weights and 8-bit KV on RTX 5090, using approximately half the GPU memory. These results show that GPU-resident precision need not set the accuracy ceiling, nor offloading-tier latency dictate decoding speed.",
+        "authors": [
+          "Jake Hyun",
+          "Ziyu Zhao",
+          "Jae-sun Seo",
+          "Mohamed S. Abdelfattah"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.DC"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08363v1",
+        "published": "2026-11-05T17:42:06+00:00",
+        "title": "StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference",
+        "updated": "2026-11-05T17:42:06+00:00",
+        "version_id": "2611.08363v1"
+      },
+      "rule_hits": [
+        "llm_efficiency",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08363v1"
+      ]
+    },
+    "2611.08383": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-06T08:58:49.334287+00:00",
+      "paper": {
+        "abstract": "Federated learning servers combine client models with a fixed aggregation rule, and each rule in common use is designed for one kind of heterogeneity. We study whether a large language model (LLM) that inspects the client models can choose the rule itself, without any training on the server. In FedReason, the LLM is called every ten rounds. It analyses the weights by running code in a restricted server-side sandbox, sees only the printed results, may score a few candidates on a 500-image proxy set, and submits a short Python aggregation program. The server applies the program until the next call and falls back to FedAvg whenever its output is invalid. Full weight tensors never leave the server. We evaluated FedReason with Claude Opus 5.5 on CIFAR-10 and CIFAR-100 with ResNet-18 under Dirichlet label skew, width-heterogeneous sub-models and Byzantine clients, in 168 runs against 14 baselines. Across 12 paired label-skew runs it beat FedAvg by 1.26 percentage points on average (10 wins), and a control that spends the same per-round proxy budget on choosing among standard rules by 1.08 points. It was the strongest server-side rule on CIFAR-100 but did not beat SCAFFOLD, which changes client training. With three of ten clients malicious, it excluded all sign-flipping clients from the first round and stayed about one point below FLTrust without training a root model. Without proxy feedback, accuracy fell from 73.8% to 38.8% in one seed. A 60-round run cost 0.79 USD in API fees on average.",
+        "authors": [
+          "Ali Mohammadi Ruzbahani",
+          "Abbas Yazdinejad",
+          "Hadis Karimipour"
+        ],
+        "categories": [
+          "cs.CR",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08383v1",
+        "published": "2026-11-05T18:00:58+00:00",
+        "title": "FedReason: Large Language Models as Weight-Space Meta-Aggregators for Heterogeneous Federated Learning",
+        "updated": "2026-11-05T18:00:58+00:00",
+        "version_id": "2611.08383v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08383v1"
+      ]
+    },
+    "2611.08413": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-06T08:58:49.334287+00:00",
+      "paper": {
+        "abstract": "Vision-Language-Action (VLA) models enable end-to-end robot control, but inference is increasingly expensive. Each decision processes hundreds of visual tokens, often across multiple cameras, leading to substantial computation while allowing irrelevant background content to distract action prediction under distribution shift. We argue that these issues stem from two complementary forms of redundancy: many visual tokens are spatially irrelevant, while attention over the remaining tokens is often misallocated. Based on this observation, we propose T3R, a Training-Free Two-Stage Token Refinement framework. In the first stage, segmentation-guided token pruning removes irrelevant visual patches to reduce computation and eliminate distracting context. In the second stage, saliency-guided attention biasing reallocates attention toward action-critical visual regions and language instructions within the retained tokens. Together, pruning produces a cleaner candidate set, while attention biasing further emphasizes the most decision-relevant evidence, yielding a better accuracy-efficiency frontier than either stage alone. On LIBERO-Spatial, T3R removes 85% of scene-camera visual tokens while essentially matching the unpruned success rate, and improves success by up to 7 percentage points under out-of-distribution object-placement perturbations. The timing comparison attributes 7.8 ms per inference call to pruning and attention-bias application. As input resolution increases, LLM-forward profiling shows up to a 3.3x speedup over the unpruned baseline. Evaluations across LIBERO, SIMPLER, and RoboTwin with three VLA backbones show the strongest accuracy-efficiency benefits in multi-camera settings. These results demonstrate that training-free token refinement is a practical approach to efficient and robust VLA inference.",
+        "authors": [
+          "Mohammed Hassan",
+          "Zhenyang Chen",
+          "Zheng Wang",
+          "Zhixin Zhu",
+          "Tianlong Chen",
+          "Yingyan",
+          "Lin",
+          "Chaojian Li"
+        ],
+        "categories": [
+          "cs.RO",
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08413v1",
+        "published": "2026-11-05T18:17:29+00:00",
+        "title": "T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models",
+        "updated": "2026-11-05T18:17:29+00:00",
+        "version_id": "2611.08413v1"
+      },
+      "rule_hits": [
+        "llm_efficiency",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08413v1"
+      ]
+    },
+    "2611.08417": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-06T08:58:49.334287+00:00",
+      "paper": {
+        "abstract": "Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, they can discover valid solutions that existing verifiers reject, while changes to evaluation infrastructure can invalidate assumptions embedded in tasks and tests. We call the resulting accumulation of defects benchmark maintenance debt: a growing gap between benchmark scores and the capabilities they are intended to measure. We introduce a continuous-validation workflow for agentic benchmarks that combines community reports, task artifacts, agent traces, automated oracle checks, and human-gated repairs. We apply this workflow to Terminal-Bench 2.0, a benchmark that underwent extensive human and LM-assisted review and red-teaming before release. Our audit identifies issues in roughly 30% of the benchmark, and we release the resulting repairs as Terminal-Bench 2.1. These repairs change evaluation results: accuracy increased by over 10 percentage points and leaderboard positions move by up to three ranks, even as the overall ranking remains highly correlated (Spearman rho = 0.958).\n  We evaluate how resource allocation shapes benchmark conclusions. We show that fixed wall-clock can materially change agent performance: For example, extending the time limit closes a 20pp harness gap on GPT 5.4 and shrinks a 30 pp gap on GPT 5.4 mini to 5 pp. Benchmark maintenance is therefore not only about repairing task artifacts: resource budgets are part of the measurement specification and must be validated alongside the tasks themselves.\n  More broadly, benchmark maintenance debt is not just accumulated implementation bugs: our results show that as models improve, both evaluation assumptions and resource settings may need to be revalidated.",
+        "authors": [
+          "E. Kelly Buchanan",
+          "Crystal Zhou",
+          "Scott W. Linderman",
+          "Christopher Ré"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08417v1",
+        "published": "2026-11-05T18:18:39+00:00",
+        "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
+        "updated": "2026-11-05T18:18:39+00:00",
+        "version_id": "2611.08417v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08417v1"
+      ]
+    },
+    "2611.08428": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-06T08:58:49.334287+00:00",
+      "paper": {
+        "abstract": "Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of the interface itself and propose a ladder of levels: feature tutoring; metadata, settings, and preference access; retrieval over summaries and messages, confirmed mutation, and full orchestration. Meta access can turn a chat client from many screens into one entry point for finding, navigating, organising, and operating it, while raising risks around grounding, privacy, prompt injection, and trust. General-purpose agentic harnesses are runtimes; because they can change their own settings, meta access becomes reflexive and needs a separate control-plane boundary. We ground this in the Meta Chat prototype of the Chat AI client. It builds bounded context from, e.g., summaries, settings, and relevant messages; links references to conversations, topics, and personas; supports confirmed, reversible changes; offers a browsable tutorial library; and recommends personas as user-started conversations. By exposing application state in structured form, meta access can extend screen readers from widget descriptions to semantic workspace operations. Meta access thus turns chat from a window onto one conversation into a control layer for the whole workspace, extending chat toward agentic capability without surrendering user control. As assistants become embedded in IDEs, dashboards, office suites, and operating systems, AI-era interfaces should expose a structured, permissioned model of their state and capabilities, ideally by opening their existing metamodels through a debugger-like interface.",
+        "authors": [
+          "Julian Kunkel",
+          "Ali Doosthosseini"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08428v1",
+        "published": "2026-11-05T18:22:24+00:00",
+        "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+        "updated": "2026-11-05T18:22:24+00:00",
+        "version_id": "2611.08428v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08428v1"
+      ]
+    },
+    "2611.08433": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-06T08:58:49.334287+00:00",
+      "paper": {
+        "abstract": "LLM-based medical assistants that follow a patient across visits need a memory that keeps the patient's clinical state correct as it changes. We examine the errors of five memory systems on longitudinal medical dialogue and find three recurring causes: the retrieved evidence gives an outdated state, includes another person's health facts, or lacks a safety fact the answer depends on. We present MedGraph, a graph memory built for these three cases. Construction extracts dated facts from each session, attributes each fact to the person it describes, and links medication, diagnosis, and measurement records into chains that keep earlier states. Retrieval ranks the patient's chains as units, reads each chain at the time the question asks about, and adds the original dialogue text; a patient profile lists every recorded safety fact with every question. On MedMemoryBench, MedGraph has the highest overall accuracy with both a GPT and a Qwen backbone, 10.5 and 10.4 points above the strongest of five baselines, with efficient memory construction and answering in the GPT setting.",
+        "authors": [
+          "Donghua Zhang",
+          "Zizheng Wang",
+          "Ze Dong",
+          "Yiding Feng",
+          "Siyu Qian"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08433v1",
+        "published": "2026-11-05T18:27:20+00:00",
+        "title": "MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue",
+        "updated": "2026-11-05T18:27:20+00:00",
+        "version_id": "2611.08433v1"
+      },
+      "rule_hits": [
+        "llm_safety",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08433v1"
+      ]
+    },
+    "2611.08483": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-06T08:58:49.334287+00:00",
+      "paper": {
+        "abstract": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds of low-cost agents per round work in swarms, reason in latent space without decoding to text, and share information by passing KV caches. Each swarm studies the problem from a different angle. A novelty filter keeps the most distinct agent ideas by directly measuring the distances between the agents' hidden state vectors. Crossover of ideas happens naturally in latent space, as a summarizer agent receives the combined KV caches of all swarm members. On 21 problems in mathematical discovery and scientific computing, SwarmEvolve gets the highest average score and needs a median of only 3 to 8 minutes to reach the best scores that other state-of-the-art frameworks reach in 60 minutes. On several problems, SwarmEvolve with Qwen3 8B improves on the solutions that AlphaEvolve first found with frontier LLMs. Our work shows that agent swarms that communicate in latent space offer a fast, low-cost approach to program search for scientific problems.",
+        "authors": [
+          "Qile Jiang",
+          "George Em Karniadakis"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.NE"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08483v1",
+        "published": "2026-11-05T18:59:29+00:00",
+        "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+        "updated": "2026-11-05T18:59:29+00:00",
+        "version_id": "2611.08483v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_agent",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08483v1"
+      ]
     }
   },
   "runs": [
@@ -60251,10 +60577,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-06",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261106T085849Z-3eb9db07",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-06T08:58:00+00:00",
+          "seen": 57,
+          "start": "2026-10-30T08:58:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-06T08:58:49.334287+00:00",
       "window": {
         "end": "2026-11-06T08:58:49.334287+00:00",
