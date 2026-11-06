@@ -12,7 +12,7 @@
 | 2026-11-06 | FedReason: Large Language Models as Weight-Space Meta-Aggregators for Heterogeneous Federated Learning | FedReason：大型语言模型作为异构联邦学习的权重空间元聚合器 | [arXiv 2611.08383v1](https://arxiv.org/abs/2611.08383v1) |
 | 2026-11-06 | StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference | StrataFlux：内存层次结构原生低位LLM推理 | [arXiv 2611.08363v1](https://arxiv.org/abs/2611.08363v1) |
 | 2026-11-06 | Cultural Adaptation within Repeated Social Interactions | 在反复社会互动中的文化适应 | [arXiv 2611.08334v1](https://arxiv.org/abs/2611.08334v1) |
-| 2026-11-06 | Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation | 待翻译 | [arXiv 2611.08315v1](https://arxiv.org/abs/2611.08315v1) |
+| 2026-11-06 | Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation | 在异构认知和生物医学知识图谱上对大型语言模型进行基准测试：图谱落地在多跳推理和幻觉缓解中的作用 | [arXiv 2611.08315v1](https://arxiv.org/abs/2611.08315v1) |
 | 2026-11-06 | LLM-Assisted Label Noise Correction for EEG-Based Sleep Stage Classification | 待翻译 | [arXiv 2611.08311v1](https://arxiv.org/abs/2611.08311v1) |
 | 2026-11-05 | A Framework for Context Enrichment and Selective Robustness in LLM Social Agents | 待翻译 | [arXiv 2611.06914v1](https://arxiv.org/abs/2611.06914v1) |
 | 2026-11-05 | BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories | 待翻译 | [arXiv 2611.06911v1](https://arxiv.org/abs/2611.06911v1) |

@@ -57802,11 +57802,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-06T08:58:48.394714+00:00",
-        "run_id": "20261106T085848Z-385b001e",
-        "stage": "translation"
+      "title_zh": "在异构认知和生物医学知识图谱上对大型语言模型进行基准测试：图谱落地在多跳推理和幻觉缓解中的作用",
+      "translation": {
+        "abstract_zh": "大型语言模型（LLMs）在生物医学和认知神经科学中被越来越广泛地使用，但其在异构知识图谱（KGs）上可靠推理的能力仍不清楚。我们在五个知识图谱（DrugBank、NeuroSynth、Cognitive Atlas、Brain Map 和 GDPKG）上对五个LLMs（GPT-5.1、Gemini 2.0 Pro、Llama 3、Qwen 和 BioGPT）进行了基准测试。我们引入了一个多层次查询数据集，用于评估在 KG 感知（基于图的）和 KG 不感知条件下的推理深度和事实准确性。评审员之间的一致性较高，Cohen 的 kappa 为 0.781（范围：0.753-0.807），Fleiss 的 kappa 为 0.77。结果显示，通用模型，尤其是 GPT-5.1 和 Gemini 2.0 Pro，在多跳和高级推理任务上通常优于领域特定模型，尽管随着查询复杂性的增加，性能有所下降。KG 基础减少了所有评估模型的虚构率。与我们最初的假设相反，领域特定模型并不始终在没有图形基础的情况下，在专业任务上表现优于通用模型。这些发现凸显了将广泛的语言模型能力与结构化领域知识相结合的价值。我们提供了基于任务复杂性和计算约束选择 LLM-KG 集成策略的实用指南，并讨论了用于个性化医疗、认知障碍诊断和可解释人工智能的混合神经符号架构。",
+        "title_zh": "在异构认知和生物医学知识图谱上对大型语言模型进行基准测试：图谱落地在多跳推理和幻觉缓解中的作用"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.08315v1"
       ]
