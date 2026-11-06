@@ -13,7 +13,7 @@
 | 2026-11-06 | StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference | StrataFlux：内存层次结构本机低位 LLM 推理 | [arXiv 2611.08363v1](https://arxiv.org/abs/2611.08363v1) |
 | 2026-11-06 | Cultural Adaptation within Repeated Social Interactions | 重复社会互动中的文化适应 | [arXiv 2611.08334v1](https://arxiv.org/abs/2611.08334v1) |
 | 2026-11-06 | Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation | 在异构认知和生物医学知识图上对大型语言模型进行基准测试：图基础在多跳推理和幻觉缓解中的作用 | [arXiv 2611.08315v1](https://arxiv.org/abs/2611.08315v1) |
-| 2026-11-06 | LLM-Assisted Label Noise Correction for EEG-Based Sleep Stage Classification | 待翻译 | [arXiv 2611.08311v1](https://arxiv.org/abs/2611.08311v1) |
+| 2026-11-06 | LLM-Assisted Label Noise Correction for EEG-Based Sleep Stage Classification | 法学硕士辅助标签噪声校正，用于基于脑电图的睡眠阶段分类 | [arXiv 2611.08311v1](https://arxiv.org/abs/2611.08311v1) |
 | 2026-11-05 | A Framework for Context Enrichment and Selective Robustness in LLM Social Agents | LLM 社交代理的背景丰富和选择性鲁棒性框架 | [arXiv 2611.06914v1](https://arxiv.org/abs/2611.06914v1) |
 | 2026-11-05 | BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories | BEAKER：专家为自动驾驶化学实验室中的实体大脑打造的基准 | [arXiv 2611.06911v1](https://arxiv.org/abs/2611.06911v1) |
 | 2026-11-05 | Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure | 沉闷、肮脏、危险？工作条件和职业人工智能暴露的限制 | [arXiv 2611.06888v1](https://arxiv.org/abs/2611.06888v1) |
