@@ -9,7 +9,7 @@
 | 2026-11-06 | The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI | 未来软件中元访问的力量——在大型语言模型聊天界面和聊天人工智能上的演示 | [arXiv 2611.08428v1](https://arxiv.org/abs/2611.08428v1) |
 | 2026-11-06 | Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks | 作为软件的基准：Terminal-Bench 及持续基准的案例 | [arXiv 2611.08417v1](https://arxiv.org/abs/2611.08417v1) |
 | 2026-11-06 | T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models | T3R：无需训练的两阶段令牌优化，迈向高效且稳健的VLA模型 | [arXiv 2611.08413v1](https://arxiv.org/abs/2611.08413v1) |
-| 2026-11-06 | FedReason: Large Language Models as Weight-Space Meta-Aggregators for Heterogeneous Federated Learning | 待翻译 | [arXiv 2611.08383v1](https://arxiv.org/abs/2611.08383v1) |
+| 2026-11-06 | FedReason: Large Language Models as Weight-Space Meta-Aggregators for Heterogeneous Federated Learning | FedReason：大型语言模型作为异构联邦学习的权重空间元聚合器 | [arXiv 2611.08383v1](https://arxiv.org/abs/2611.08383v1) |
 | 2026-11-06 | StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference | 待翻译 | [arXiv 2611.08363v1](https://arxiv.org/abs/2611.08363v1) |
 | 2026-11-06 | Cultural Adaptation within Repeated Social Interactions | 待翻译 | [arXiv 2611.08334v1](https://arxiv.org/abs/2611.08334v1) |
 | 2026-11-06 | Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation | 待翻译 | [arXiv 2611.08315v1](https://arxiv.org/abs/2611.08315v1) |
