@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-07 | RM-VLM: From Natural-Language Task Descriptions to Vision-Grounded Reward Machines | 待翻译 | [arXiv 2611.08308v1](https://arxiv.org/abs/2611.08308v1) |
+| 2026-11-07 | AutoCompress: Automated Hardware-Guided Model Compression | 待翻译 | [arXiv 2611.08290v1](https://arxiv.org/abs/2611.08290v1) |
+| 2026-11-07 | A Generative Model of Contextual Integrity: Appropriate vs. Inappropriate Information Sharing | 待翻译 | [arXiv 2611.08284v1](https://arxiv.org/abs/2611.08284v1) |
+| 2026-11-07 | Accepted but Wrong: Silent Failures of LLM Code Repairs after API Migrations | 待翻译 | [arXiv 2611.08269v1](https://arxiv.org/abs/2611.08269v1) |
+| 2026-11-07 | Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling | 待翻译 | [arXiv 2611.08237v1](https://arxiv.org/abs/2611.08237v1) |
+| 2026-11-07 | Signals, Evidence, and Context: User Scrutiny in Real-World LLM Conversations | 待翻译 | [arXiv 2611.08232v1](https://arxiv.org/abs/2611.08232v1) |
+| 2026-11-07 | From Twisted Facts to Rogue Agents: Can LLMs Reliably Detect Multi-Dimensional Hallucinations? | 待翻译 | [arXiv 2611.08231v1](https://arxiv.org/abs/2611.08231v1) |
+| 2026-11-07 | Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis | 待翻译 | [arXiv 2611.08219v1](https://arxiv.org/abs/2611.08219v1) |
+| 2026-11-07 | ProQuant: Progressive Quantization-aware Training for Edge MLLMs | 待翻译 | [arXiv 2611.08216v1](https://arxiv.org/abs/2611.08216v1) |
+| 2026-11-07 | SMART: State-based Multi Agent Reasoning Traces for Verification-oriented Problem-Solving | 待翻译 | [arXiv 2611.08196v1](https://arxiv.org/abs/2611.08196v1) |
 | 2026-11-06 | SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization | SwarmEvolve：用于进化发现和优化的潜在智能体群 | [arXiv 2611.08483v1](https://arxiv.org/abs/2611.08483v1) |
 | 2026-11-06 | MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue | MedGraph：通过图记忆维护患者状态以进行长期医疗对话 | [arXiv 2611.08433v1](https://arxiv.org/abs/2611.08433v1) |
 | 2026-11-06 | The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI | 未来软件中元访问的力量——在大型语言模型聊天界面和聊天人工智能上的演示 | [arXiv 2611.08428v1](https://arxiv.org/abs/2611.08428v1) |
