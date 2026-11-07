@@ -58266,11 +58266,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-07T08:25:05.537756+00:00",
-        "run_id": "20261107T082505Z-962dcb54",
-        "stage": "translation"
+      "title_zh": "ProQuant：面向边缘MLLM的渐进量化感知训练",
+      "translation": {
+        "abstract_zh": "具有出色感知和理解能力的多模态大型语言模型（MLLMs）将推动一系列下游应用的发展。然而，它们巨大的计算和内存需求阻碍了在现实世界中的实施，尤其是在资源受限的边缘设备上。量化已成为部署大型模型的有效解决方案。虽然训练后量化（PTQ）在中等比特宽度下（例如 W8A8）能够成功保持性能，但在低比特量化（例如 W4A8）下会出现严重的性能下降，尤其是对于更适合边缘部署的小规模模型。在本文中，我们提出了 ProQuant，一种针对低比特 MLLMs 的新型权重-激活量化感知训练（QAT）框架。首先，为了将有限的微调数据集分布与预训练数据集分布对齐，我们提出了一种自重新标注（SRL）方案，用于重新采样开源多模态模型的响应数据集。其次，我们首次采用解耦视角来看待多模态（MM）理解和语言建模能力。我们提出了一种渐进式块激活（PBA）机制，以优先处理多模态理解恢复。我们还引入了视觉敏感因子$\\vecτ$，有效识别MM关键层。涵盖2B-8B参数模型的多个基准测试的广泛实验表明，ProQuant显著优于现有方法。例如，我们的W4A8 Qwen3-VL-2B-Instruct平均准确率提升了6.6%，性能可与全精度对应者相当，性能下降仅约1%。代码可在 https://github.com/yufeixue-ai/ProQuant/ 获取。",
+        "title_zh": "ProQuant：面向边缘MLLM的渐进量化感知训练"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.08216v1"
       ]

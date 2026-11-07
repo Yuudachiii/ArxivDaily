@@ -12,7 +12,7 @@
 | 2026-11-07 | Signals, Evidence, and Context: User Scrutiny in Real-World LLM Conversations | 信号、证据与背景：现实世界大型语言模型对话中的用户审查 | [arXiv 2611.08232v1](https://arxiv.org/abs/2611.08232v1) |
 | 2026-11-07 | From Twisted Facts to Rogue Agents: Can LLMs Reliably Detect Multi-Dimensional Hallucinations? | 从扭曲的事实到叛逆代理：大型语言模型能否可靠地检测多维幻觉？ | [arXiv 2611.08231v1](https://arxiv.org/abs/2611.08231v1) |
 | 2026-11-07 | Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis | Agent-R$^2$：通过真实数据合成扩展代理以实现现实生产力工作 | [arXiv 2611.08219v1](https://arxiv.org/abs/2611.08219v1) |
-| 2026-11-07 | ProQuant: Progressive Quantization-aware Training for Edge MLLMs | 待翻译 | [arXiv 2611.08216v1](https://arxiv.org/abs/2611.08216v1) |
+| 2026-11-07 | ProQuant: Progressive Quantization-aware Training for Edge MLLMs | ProQuant：面向边缘MLLM的渐进量化感知训练 | [arXiv 2611.08216v1](https://arxiv.org/abs/2611.08216v1) |
 | 2026-11-07 | SMART: State-based Multi Agent Reasoning Traces for Verification-oriented Problem-Solving | 待翻译 | [arXiv 2611.08196v1](https://arxiv.org/abs/2611.08196v1) |
 | 2026-11-06 | SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization | SwarmEvolve：用于进化发现和优化的潜在智能体群 | [arXiv 2611.08483v1](https://arxiv.org/abs/2611.08483v1) |
 | 2026-11-06 | MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue | MedGraph：通过图记忆维护患者状态以进行长期医疗对话 | [arXiv 2611.08433v1](https://arxiv.org/abs/2611.08433v1) |
