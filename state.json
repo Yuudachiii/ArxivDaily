@@ -58194,11 +58194,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-07T08:25:05.537756+00:00",
-        "run_id": "20261107T082505Z-962dcb54",
-        "stage": "translation"
+      "title_zh": "SMART：面向验证问题解决的基于状态的多智能体推理追踪",
+      "translation": {
+        "abstract_zh": "对于上下文有限的复杂问题，例如主张，需要一种获取解决推理所需额外知识的手段。我们提出了一个多智能体框架 SMART，通过捕捉问题上下文中参与实体的隐含状态来获取知识。SMART 使用多种大型语言模型（LLM）和结构化的基于角色的提示策略，将状态知识整理为多样化、互补且对解决方案有意义的前提。利用来自这些经过实际验证的策划前提的知识，SMART 的知识引导解决推理在跨三个数据集的复杂科学主张的验证性能上提高了最多 20%。我们证明，将前提与现实世界知识相结合是必要的，并且可以将性能提高最多 5%。",
+        "title_zh": "SMART：面向验证问题解决的基于状态的多智能体推理追踪"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.08196v1"
       ]
