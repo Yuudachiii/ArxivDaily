@@ -2014,8 +2014,15 @@
       "content_hash": "9b9fddc98eac7d4084237671cebdcbcecbf4e7a2d3eea80170e1d74b3ea38445",
       "created_at": "2026-11-07T08:25:07.629036+00:00",
       "day": "2026-11-07",
+      "delivery": {
+        "detail": "wechat_status",
+        "polls": 1,
+        "pushid": "66749284",
+        "status": "confirmed"
+      },
       "digest_id": "20261107T082507Z-97f13b54-9b9fddc98eac",
       "empty": false,
+      "finished_at": "2026-11-07T08:28:05.817565+00:00",
       "items": [
         {
           "modules": [
@@ -2441,7 +2448,7 @@
       },
       "run_id": "20261107T082507Z-97f13b54",
       "schema_version": 1,
-      "status": "sending"
+      "status": "confirmed"
     }
   },
   "papers": {
@@ -60883,7 +60890,6 @@
       ]
     },
     "2611.08196": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -60911,7 +60917,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -60935,7 +60941,6 @@
         "updated": "2026-11-05T15:51:39+00:00",
         "version_id": "2611.08196v1"
       },
-      "pending_digest": "20261107T082507Z-97f13b54-9b9fddc98eac",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -60955,7 +60960,7 @@
         "llm_agent",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "SMART：基于状态的多代理推理跟踪，用于面向验证的问题解决",
       "translation": {
         "abstract_zh": "上下文有限的复杂问题（例如权利要求）需要一种方法来获取解决方案推理所需的额外知识。我们提出了一个多智能体框架 SMART，通过捕获问题上下文中参与实体的隐式状态来获取知识。 SMART 使用各种法学硕士和基于角色的结构化提示策略，将国家知识作为多样化、互补性和解决方案突出的前提进行管理。利用来自这些现实世界经过验证的策划前提的知识，SMART 的知识引导解决方案推理将跨越 3 个数据集的复杂科学主张的验证性能提高了 20%。我们证明，以现实世界知识为基础的前提是必要的，并且可以将性能提高高达 5%。",
@@ -60968,7 +60973,6 @@
       ]
     },
     "2611.08216": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -60996,7 +61000,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -61026,7 +61030,6 @@
         "updated": "2026-11-05T16:04:31+00:00",
         "version_id": "2611.08216v1"
       },
-      "pending_digest": "20261107T082507Z-97f13b54-9b9fddc98eac",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -61048,7 +61051,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "ProQuant：针对边缘 MLLM 的渐进式量化感知训练",
       "translation": {
         "abstract_zh": "具有令人印象深刻的感知和理解能力的多模态大语言模型（MLLM）将使一系列下游应用成为可能。然而，它们大量的计算和内存要求阻碍了现实世界的实现，特别是对于资源受限的边缘设备。量化已成为部署大型模型的有效解决方案。虽然训练后量化（PTQ）成功地保留了中等位宽（例如 W8A8）下的性能，但在低位量化（例如 W4A8）下其性能严重下降，特别是对于更适合边缘部署的小规模模型。在本文中，我们提出了 ProQuant，一种专为低位 MLLM 量身定制的新型权重激活量化感知训练 (QAT) 框架。首先，为了使有限的微调数据集分布与预训练数据集分布保持一致，我们提出了一种自重新标记（SRL）方案来对开源多模态数据集的响应进行重新采样。其次，我们是第一个对多模态（MM）理解和语言建模能力采取解耦观点的人。我们提出了一种渐进式块激活（PBA）机制来优先考虑 MM 理解恢复。我们还引入了一个视觉敏感因子 $\\vecτ$ ，它可以有效地识别 MM 关键层。跨各种基准的广泛实验（涵盖具有 2B-8B 参数的模型）表明 ProQuant 显着优于现有方法。例如，我们的 W4A8 Qwen3-VL-2B-Instruct 将平均精度提高了 6.6%，令人印象深刻，并且性能与全精度同类产品相当，性能仅下降约 1%。代码可在 https://github.com/yufeixue-ai/ProQuant/ 获取。",
@@ -61061,7 +61064,6 @@
       ]
     },
     "2611.08219": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -61089,7 +61091,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -61118,7 +61120,6 @@
         "updated": "2026-11-05T16:08:05+00:00",
         "version_id": "2611.08219v1"
       },
-      "pending_digest": "20261107T082507Z-97f13b54-9b9fddc98eac",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -61142,7 +61143,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "Agent-R$^2$：通过真实源数据合成扩展代理以实现实际生产力工作",
       "translation": {
         "abstract_zh": "大型语言模型在代理推理和工具使用方面取得了快速进展，提高了人们对能够接管人类现实生产力工作的代理的期望。然而，当前的代理仍然难以完成此类任务，成功需要遵循长期的专业工作流程、理解异构文件上下文并在细粒度的要求下生成可用的可交付成果。一个关键瓶颈是缺乏可反映真实工作意图、真实文件环境和可交付水平评估的可扩展的培训后数据。为了弥补这一差距，我们引入了 Agent-R$^2$，这是一个 $\\textbf{r}$ 真实源数据合成框架，可扩展训练数据以实现 $\\textbf{r}$ 真实的生产力工作。 Agent-R$^2$ 不依赖于手动指定的工作流程或 LLM 生成的文件，而是在整个管道中以真实的职业种子、语料库衍生的工作流程证据和真实的网络来源文件为基础进行合成。 Agent-R$^2$ 从 10k 个网络语料库候选人中提炼出 4k 个任务实例，将真实的多格式附件与细粒度、可交付级别的标准配对。在此数据上，我们通过监督微调和基于规则的强化学习来训练 Agent-R$^2$-4B，从而提高端到端生产力性能和基于文件的推理。仅在 4k 实例上进行训练，Agent-R$^2$-4B 在 GDPval（51.0$\\%$ vs. 48.0$\\%$）和 OfficeQA（14.8$\\%$ vs. 13.8$\\%$）上都超过了 Qwen3-235B-A22B-Thinking-2507。进一步的分析表明，Agent-R$^2$ 减轻了捷径行为，即智能体在充分基础、构建或验证之前产生表面上合理的可交付成果，同时促进持续探索。",
@@ -61155,7 +61156,6 @@
       ]
     },
     "2611.08231": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -61183,7 +61183,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -61211,7 +61211,6 @@
         "updated": "2026-11-05T16:15:18+00:00",
         "version_id": "2611.08231v1"
       },
-      "pending_digest": "20261107T082507Z-97f13b54-9b9fddc98eac",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -61235,7 +61234,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "从扭曲的事实到流氓特工：法学硕士能否可靠地检测多维幻觉？",
       "translation": {
         "abstract_zh": "大型语言模型 (LLM) 广泛用于信息访问、内容生产和基于代理的任务执行，但其输出仍然容易受到微妙的高风险幻觉的影响。为了系统地评估和推进后代幻觉检测，我们引入了 HaluCheck，这是一个大规模的双语基准，包含超过 42k 个实例，涵盖文本中的事实幻觉和代理轨迹中的忠实幻觉。 HaluCheck 具有用于检测、定位和校正的细粒度、多级注释，涵盖不同的任务和扰动程度。对 14 个法学硕士的实验表明，虽然模型显示出基本的样本级检测能力，但它们在细粒度定位、校正和代理幻觉检测方面遇到了困难。进一步的分析表明，思考、网络搜索和监督微调都提供了部分改进，但都没有完全解决问题。因此，HaluCheck 为跨文本和代理场景的 LLM 可靠性基准测试和诊断提供了坚实的基础。",
@@ -61248,7 +61247,6 @@
       ]
     },
     "2611.08232": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -61276,7 +61274,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -61299,7 +61297,6 @@
         "updated": "2026-11-05T16:16:08+00:00",
         "version_id": "2611.08232v1"
       },
-      "pending_digest": "20261107T082507Z-97f13b54-9b9fddc98eac",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -61317,7 +61314,7 @@
         "llm_reasoning",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "信号、证据和背景：现实世界法学硕士对话中的用户审查",
       "translation": {
         "abstract_zh": "大型语言模型 (LLM) 通常会提供综合答案，但其支持证据却易于检查。我们在来自 ShareChat 和 WildChat 的 489,283 个助理用户响应对中研究了这些答案的特征如何与用户随后的接受、检查和质疑相关。宽泛的归因语言出现在 31.9% 的合格回复中，而明确的 URL 只占 1.33%，这揭示了接地性声明与保留的可检查支持之间的差距。归因、不确定性和其他反应线索通常伴随着检查和挑战；只有不确定性表明有一个小的统计上可区分的汇总关联有利于检查。在技​​术帮助中，相对于挑战性，不确定性更倾向于检查；拒绝和推理痕迹有利于寻求信息的挑战。审查集中在某些对话中，而当单独检查对话级别差异和响应顺序时，其明显的回合持久性会变得小得多。这些结果表明，支持验证需要注意可以检查哪些证据、用户试图解决哪个问题以及交互的历史。",
@@ -61330,7 +61327,6 @@
       ]
     },
     "2611.08237": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -61358,7 +61354,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -61385,7 +61381,6 @@
         "updated": "2026-11-05T16:18:35+00:00",
         "version_id": "2611.08237v1"
       },
-      "pending_digest": "20261107T082507Z-97f13b54-9b9fddc98eac",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -61405,7 +61400,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "终端式数学建模平台：第一个可代理、可验证的数学建模基准",
       "translation": {
         "abstract_zh": "数学建模将开放式的现实世界问题转化为假设、模型、解决方案和有说服力的建议，只有当其答案接近可信参考且物理上可行时，它的答案才重要；现有的基准要么对解算器片段进行评分，要么对法学硕士法官的成绩报告进行评分，而对这些数字不加检查。我们推出了 TB-MathModel（终端式数学建模平台），这是第一个使完整竞赛式建模问题同时变得可代理、可验证和终端的基准，超过 18 个真实的 CUMCM 和 MCM 问题（2023--2025）。每项任务都会在集装箱码头中运送逐字陈述、官方附件和数据；代理返回一个 JSON 工件，根据最终问题的数字核心与杰出奖论文的复制品进行评分。两种设计选择使其与众不同：方向感知、片面评分，永远不会惩罚击中锚点，以及两层可行性验证——超过 6 个可判定不变形式的程序化门加上 624 个 Lean~4 义务——以及一个将不可行答案归零的硬门。每项任务都是根据一组人类杰出论文而不是一篇进行评分，因此模型必须接近许多公认的答案；在七个多模式条目（每个三个种子）中，最强的多参考 O-Eval 达到 64.58%，而 2.54 美元的开放模型以 1/100 美元的成本保持 59.81%。 TB-MathModel 将建模的数字核心转化为可重复的、机器可检查的信号，用于测量长期建模能力并收集代理轨迹。源代码可在 https://github.com/wxj630/terminal-bench-math-modeling 获取。",
@@ -61418,7 +61413,6 @@
       ]
     },
     "2611.08269": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -61446,7 +61440,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -61472,7 +61466,6 @@
         "updated": "2026-11-05T16:41:32+00:00",
         "version_id": "2611.08269v1"
       },
-      "pending_digest": "20261107T082507Z-97f13b54-9b9fddc98eac",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -61488,7 +61481,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "已接受但错误：API 迁移后 LLM 代码修复的静默故障",
       "translation": {
         "abstract_zh": "在运行时或 API 迁移之后，LLM 修复的过程可以干净地运行，但会返回错误的结果，并且对典型测试输入进行发布检查。我们报告了一项针对 73 项任务的预注册研究，涵盖 CPython、Node.js 和 SQLite 中的 60 项已记录的更改。每个候选者都是在真实的运行时上根据扣留的合约执行的。在整个修复空间中，典型输入的全断言门释放了 0.410 的错误修复。发行说明中写入的一个边缘输入将此值削减为 0.065，并在 15 个看不见的簇上将其削减为 0.061。一位从未见过该程序的盲人 GPT-5.6-luna 编写者的三个输入达到了 0.070。另外两个冻结阶段将菜单扩大到 1491 个片段，然后添加了 233 个与典型输入的传统输出相匹配的硬干扰项。边缘输入（0.058）和前沿模型编写器（0.058）通过了预先注册的测试。然而，0.168 和 0.153 的严重错误程序仍然通过了。两名本地模特作家未通过预注册测试。在四个模型系列中，边缘输入在所有三个菜单上的所有三个开放权重系列中每次尝试都会减少错误的发布，例如从 0.233 到 0.057，而不会降低正确完成率。自检的帮助较小。人工智能盲目审核将 34 份合同标记为比其要求更严格。放弃有争议的支票改变了 0 个判决，但类别标签争议仍然悬而未决。没有执行模型编写的代码。可根据要求向作者提供工件。",
@@ -61501,7 +61494,6 @@
       ]
     },
     "2611.08284": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -61529,7 +61521,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -61553,7 +61545,6 @@
         "updated": "2026-11-05T16:48:31+00:00",
         "version_id": "2611.08284v1"
       },
-      "pending_digest": "20261107T082507Z-97f13b54-9b9fddc98eac",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -61569,7 +61560,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "上下文完整性的生成模型：适当与不适当的信息共享",
       "translation": {
         "abstract_zh": "上下文完整性（CI）认为适当的信息流取决于上下文特定的规范。相同的公开可能在一种情况下是合适的，而在另一种情况下是不合适的。我们构建了上下文完整性的生成模型，以通过模拟对话来研究信息共享。由大型语言模型扮演的两名演员交换信息，其中一名持有私人信息，另一名则寻求私人信息。我们研究共享和拒绝如何随情况、持有者的决策逻辑、倾向和底层语言模型而变化。参与者在需要时与合法接收者共享信息，但也将其透露给无权接收信息的人。该模型提供了一种方法来研究随着情况和参与者的变化，披露和拒绝如何通过对话发展。",
@@ -61582,7 +61573,6 @@
       ]
     },
     "2611.08290": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -61610,7 +61600,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -61639,7 +61629,6 @@
         "updated": "2026-11-05T16:53:48+00:00",
         "version_id": "2611.08290v1"
       },
-      "pending_digest": "20261107T082507Z-97f13b54-9b9fddc98eac",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -61659,7 +61648,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "AutoCompress：自动硬件引导模型压缩",
       "translation": {
         "abstract_zh": "LLM 修剪必须保持质量，同时满足特定于硬件和工作负载的延迟、吞吐量和内存限制。现有的修剪工作流程通常以参数计数为目标，要求从业者手动选择满足延迟、吞吐量和 GPU 内存限制的模型大小。然而，参数计数本身并不能预测这些指标，这取决于模型架构、工作负载、硬件和服务引擎。我们引入了 AutoCompress，这是一种硬件引导的压缩框架，可以直接将此类约束纳入可微架构搜索中。 AutoCompress 联合优化全局和每层结构，以生成异构架构，并以针对端到端延迟、吞吐量和内存测量进行验证的服务引擎成本模型为指导。我们在长上下文本地编码、批量数据中心服务和延迟敏感的游戏内交互方面评估 AutoCompress。与最先进的 Minitron 修剪框架相比，AutoCompress 在 RTX 5070、RTX 5080 和 H100 上将八个基准测试的平均准确度分别提高了 6.57、2.35 和 0.57 个百分点。 AutoCompress 还将 Nemotron 3.5 Super 从 120B 压缩到 74B 参数，以便在 128K 环境下提供单 B200 BF16 服务，保留其平均基准分数的 95%。",
@@ -61672,7 +61661,6 @@
       ]
     },
     "2611.08308": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -61700,7 +61688,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -61726,7 +61714,6 @@
         "updated": "2026-11-05T17:10:10+00:00",
         "version_id": "2611.08308v1"
       },
-      "pending_digest": "20261107T082507Z-97f13b54-9b9fddc98eac",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -61746,7 +61733,7 @@
         "llm_multimodal",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "RM-VLM：从自然语言任务描述到基于视觉的奖励机器",
       "translation": {
         "abstract_zh": "奖励机（RM）已被提议作为强化学习（RL）中的奖励公式，以捕获信用分配取决于历史的非马尔可夫任务。通过将奖励函数表示为自动机，RM 公开了任务的时间结构，并允许在马尔可夫框架内处理此类奖励。然而，它们假设有一个标签功能，一个基于命题的观察预言机，必须针对每个环境手动设计，限制了它们更广泛的适用性。在这项工作中，我们通过提出 RM-VLM 来解决这一限制，这是一种新颖的方法，其中大型语言模型 (LLM) 从自然语言任务描述生成 RM，视觉语言模型 (VLM) 充当标记函数，在 RM 引导的政策学习期间将 RM 的命题基于基于图像的观察。基于 VLM 的价值函数估计器用于评估智能体在每个 RM 转换方面的进展并得出密集的奖励信号。我们在三个领域评估 RM-VLM，包括非马尔可夫网格世界导航、机器人操作和 3D 对象收集。我们的实验结果表明，在所有测试领域，RM-VLM 始终比现有的基于 VLM 的奖励方法实现更高的任务成功率。",
