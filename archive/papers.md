@@ -13,7 +13,7 @@
 | 2026-11-07 | From Twisted Facts to Rogue Agents: Can LLMs Reliably Detect Multi-Dimensional Hallucinations? | 从扭曲的事实到流氓特工：法学硕士能否可靠地检测多维幻觉？ | [arXiv 2611.08231v1](https://arxiv.org/abs/2611.08231v1) |
 | 2026-11-07 | Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis | Agent-R$^2$：通过真实源数据合成扩展代理以实现实际生产力工作 | [arXiv 2611.08219v1](https://arxiv.org/abs/2611.08219v1) |
 | 2026-11-07 | ProQuant: Progressive Quantization-aware Training for Edge MLLMs | ProQuant：针对边缘 MLLM 的渐进式量化感知训练 | [arXiv 2611.08216v1](https://arxiv.org/abs/2611.08216v1) |
-| 2026-11-07 | SMART: State-based Multi Agent Reasoning Traces for Verification-oriented Problem-Solving | 待翻译 | [arXiv 2611.08196v1](https://arxiv.org/abs/2611.08196v1) |
+| 2026-11-07 | SMART: State-based Multi Agent Reasoning Traces for Verification-oriented Problem-Solving | SMART：基于状态的多代理推理跟踪，用于面向验证的问题解决 | [arXiv 2611.08196v1](https://arxiv.org/abs/2611.08196v1) |
 | 2026-11-06 | SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization | SwarmEvolve：用于进化发现和优化的潜在代理群 | [arXiv 2611.08483v1](https://arxiv.org/abs/2611.08483v1) |
 | 2026-11-06 | MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue | MedGraph：利用图形内存维持患者状态以实现长期医疗对话 | [arXiv 2611.08433v1](https://arxiv.org/abs/2611.08433v1) |
 | 2026-11-06 | The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI | 未来软件中元访问的力量 --- 在 LLM 聊天 UI 和聊天 AI 上展示 | [arXiv 2611.08428v1](https://arxiv.org/abs/2611.08428v1) |
