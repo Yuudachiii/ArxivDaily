@@ -58730,11 +58730,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-07T08:25:05.537756+00:00",
-        "run_id": "20261107T082505Z-962dcb54",
-        "stage": "translation"
+      "title_zh": "自动压缩：自动化硬件指导的模型压缩",
+      "translation": {
+        "abstract_zh": "LLM剪枝必须在保持质量的同时，满足硬件和工作负载对延迟、吞吐量和内存的特定限制。现有的剪枝工作流程通常以参数数量为目标，要求从业者手动选择满足延迟、吞吐量和GPU内存限制的模型大小。然而，仅凭参数数量无法预测这些指标，这些指标取决于模型架构、工作负载、硬件和服务引擎。我们提出了AutoCompress，一种硬件指导的压缩框架，它将这些约束直接纳入可微架构搜索中。AutoCompress联合优化全局和每层结构，以生成异构架构，并通过经过端到端延迟、吞吐量和内存测量验证的服务引擎成本模型进行指导。我们在长上下文本地编码、批量数据中心服务以及延迟敏感的游戏内交互中评估了AutoCompress。与最先进的Minitron剪枝框架相比，AutoCompress 在八个基准测试中的平均准确率分别在 RTX 5070、RTX 5080 和 H100 上提高了 6.57、2.35 和 0.57 个百分点。AutoCompress 还将 Nemotron 3.5 Super 从 120B 参数压缩到 74B 参数，以便在 128K 上下文下进行单 B200 BF16 推理，同时保留其平均基准得分的 95%。",
+        "title_zh": "自动压缩：自动化硬件指导的模型压缩"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.08290v1"
       ]
