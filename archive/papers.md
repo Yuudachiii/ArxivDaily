@@ -9,7 +9,7 @@
 | 2026-11-07 | A Generative Model of Contextual Integrity: Appropriate vs. Inappropriate Information Sharing | 上下文完整性的生成模型：适当与不适当的信息共享 | [arXiv 2611.08284v1](https://arxiv.org/abs/2611.08284v1) |
 | 2026-11-07 | Accepted but Wrong: Silent Failures of LLM Code Repairs after API Migrations | 已接受但错误：API 迁移后 LLM 代码修复的静默故障 | [arXiv 2611.08269v1](https://arxiv.org/abs/2611.08269v1) |
 | 2026-11-07 | Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling | 终端式数学建模平台：第一个可代理、可验证的数学建模基准 | [arXiv 2611.08237v1](https://arxiv.org/abs/2611.08237v1) |
-| 2026-11-07 | Signals, Evidence, and Context: User Scrutiny in Real-World LLM Conversations | 待翻译 | [arXiv 2611.08232v1](https://arxiv.org/abs/2611.08232v1) |
+| 2026-11-07 | Signals, Evidence, and Context: User Scrutiny in Real-World LLM Conversations | 信号、证据和背景：现实世界法学硕士对话中的用户审查 | [arXiv 2611.08232v1](https://arxiv.org/abs/2611.08232v1) |
 | 2026-11-07 | From Twisted Facts to Rogue Agents: Can LLMs Reliably Detect Multi-Dimensional Hallucinations? | 待翻译 | [arXiv 2611.08231v1](https://arxiv.org/abs/2611.08231v1) |
 | 2026-11-07 | Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis | 待翻译 | [arXiv 2611.08219v1](https://arxiv.org/abs/2611.08219v1) |
 | 2026-11-07 | ProQuant: Progressive Quantization-aware Training for Edge MLLMs | 待翻译 | [arXiv 2611.08216v1](https://arxiv.org/abs/2611.08216v1) |
