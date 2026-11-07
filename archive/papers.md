@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | 2026-11-07 | RM-VLM: From Natural-Language Task Descriptions to Vision-Grounded Reward Machines | RM-VLM：从自然语言任务描述到基于视觉的奖励机器 | [arXiv 2611.08308v1](https://arxiv.org/abs/2611.08308v1) |
 | 2026-11-07 | AutoCompress: Automated Hardware-Guided Model Compression | AutoCompress：自动硬件引导模型压缩 | [arXiv 2611.08290v1](https://arxiv.org/abs/2611.08290v1) |
-| 2026-11-07 | A Generative Model of Contextual Integrity: Appropriate vs. Inappropriate Information Sharing | 待翻译 | [arXiv 2611.08284v1](https://arxiv.org/abs/2611.08284v1) |
+| 2026-11-07 | A Generative Model of Contextual Integrity: Appropriate vs. Inappropriate Information Sharing | 上下文完整性的生成模型：适当与不适当的信息共享 | [arXiv 2611.08284v1](https://arxiv.org/abs/2611.08284v1) |
 | 2026-11-07 | Accepted but Wrong: Silent Failures of LLM Code Repairs after API Migrations | 待翻译 | [arXiv 2611.08269v1](https://arxiv.org/abs/2611.08269v1) |
 | 2026-11-07 | Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling | 待翻译 | [arXiv 2611.08237v1](https://arxiv.org/abs/2611.08237v1) |
 | 2026-11-07 | Signals, Evidence, and Context: User Scrutiny in Real-World LLM Conversations | 待翻译 | [arXiv 2611.08232v1](https://arxiv.org/abs/2611.08232v1) |
