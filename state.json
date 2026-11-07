@@ -60609,7 +60609,9 @@
       ]
     },
     "2611.08237": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-07T08:25:07.629036+00:00",
@@ -60638,6 +60640,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-07T08:25:07.629036+00:00",
+        "run_id": "20261107T082507Z-97f13b54",
+        "stage": "selection"
+      },
       "versions": [
         "2611.08237v1"
       ]
