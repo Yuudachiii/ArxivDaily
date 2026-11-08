@@ -59179,11 +59179,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-08T08:39:37.676729+00:00",
-        "run_id": "20261108T083937Z-f6e58667",
-        "stage": "translation"
+      "title_zh": "RouteAlign：将任务要求与模型配置文件相结合以进行 LLM 服务选择",
+      "translation": {
+        "abstract_zh": "LLM 服务选择需要反映当前任务需求的绩效证据。总分掩盖了能力和难度的差异，而语义相关的示例可能涉及不同的技能组合。我们提出了 RouteAlign，它使用任务需求来构建模型性能的测量和服务的选择。任务需求描述了能力需求和难度，从而能够与相应的模型性能测量保持一致。历史要求决定了结果如何有助于全球概况和当地能力估计；传入的需求决定了这些测量如何为当前决策提供信息。共享评分器整合证据，发电成本偏好控制合格服务的选择。对不同任务和异构 LLM 服务的评估表明，RouteAlign 将经验质量成本边界扩展到更高的任务质量。与开放式 Jev 式决策后端的比较显示出一致的质量增益，并且生成成本比其最强的测试配置更低。消融支持本地性能证据的贡献，而目录更新实验证明了通过更新的模型测量有效重用拟合的评分器。",
+        "fallback_provider": "google_free",
+        "title_zh": "RouteAlign：将任务要求与模型配置文件相结合以进行 LLM 服务选择"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.08162v1"
       ]
