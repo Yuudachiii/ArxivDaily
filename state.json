@@ -58678,6 +58678,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-08T08:39:37.676729+00:00",
+      "intended_tier": "translation",
       "model": "rules",
       "paper": {
         "abstract": "Nowadays, large language models produce text at scale, and much of it is redistributed across platforms. A moderator who finds a suspicious comment, post or article may want to know which platform generated it and for which account. In this paper we study attribution over the channel through which such text actually travels, copy-paste, which discards document metadata but keeps Unicode code points. We present KeHoSu, which turns the confusable characters of homoglyph attacks into a keyed attribution channel: the variant chosen for each carrier letter encodes one bit of an identifier made of a platform field, a user field and a truncated authentication tag. Moreover, given that reshared text is often quoted in fragments, and the placement therefore keeps no positional state, we show that KeHoSu is invariant to sentence reordering up to a constant boundary layer and depends on a partial quotation only through the retained length. We characterize the code-point channel by its capacity, removability and detectability, and provide an achievable region that relates the three. We evaluate KeHoSu over a wide range of use cases and show that the mark survived copy-paste across 18 common platforms, attributing the majority of all excerpts to the correct account at 178 letters (about two sentences) on LLM-generated stories and 167 letters (about one sentence) on standard English prose.",
@@ -58697,11 +58698,22 @@
         "updated": "2026-11-05T14:01:01+00:00",
         "version_id": "2611.08046v1"
       },
+      "presentation_modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "presentation_rule_hits": [
+        "llm_core"
+      ],
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "selected",
+      "stage": "ready",
       "versions": [
         "2611.08046v1"
       ]
