@@ -10,7 +10,7 @@
 | 2026-11-08 | Beyond K/V Caches: Cross-Model State Handoff in Hybrid Linear-Attention LLMs | 超越 K/V 缓存：混合线性注意力 LLM 中的跨模型状态切换（谷歌备用翻译） | [arXiv 2611.08133v1](https://arxiv.org/abs/2611.08133v1) |
 | 2026-11-08 | Linguistic boundaries emerge from pressure-constrained processing dynamics | 语言边界源于压力受限的处理动态（谷歌备用翻译） | [arXiv 2611.08085v1](https://arxiv.org/abs/2611.08085v1) |
 | 2026-11-08 | DictLLM: Post-training Compression of Large Language Model with Dictionary Kernels | DictLLM：使用字典内核对大型语言模型进行训练后压缩（谷歌备用翻译） | [arXiv 2611.08082v1](https://arxiv.org/abs/2611.08082v1) |
-| 2026-11-08 | Spatiotemporal Dynamics-Aware Industrial Anomaly Detection and Reasoning | 待翻译 | [arXiv 2611.08080v1](https://arxiv.org/abs/2611.08080v1) |
+| 2026-11-08 | Spatiotemporal Dynamics-Aware Industrial Anomaly Detection and Reasoning | 时空动态感知工业异常检测与推理（谷歌备用翻译） | [arXiv 2611.08080v1](https://arxiv.org/abs/2611.08080v1) |
 | 2026-11-08 | Can an LLM Actually Reason and Program about Neural Network's Weights or is it just memorization on steroids? Exploring "Weight-Space Programming" | 待翻译 | [arXiv 2611.08070v1](https://arxiv.org/abs/2611.08070v1) |
 | 2026-11-08 | KeHoSu: Keyed Homoglyph Substitution for Authenticated Text Provenance over Copy-Paste Channels | 待翻译 | [arXiv 2611.08046v1](https://arxiv.org/abs/2611.08046v1) |
 | 2026-11-08 | Automatic keyphrase extraction and annotation: modern theoretical approaches and practical solutions for text and speech | 待翻译 | [arXiv 2611.08006v1](https://arxiv.org/abs/2611.08006v1) |
