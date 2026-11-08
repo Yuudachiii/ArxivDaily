@@ -13,7 +13,7 @@
 | 2026-11-08 | Spatiotemporal Dynamics-Aware Industrial Anomaly Detection and Reasoning | 时空动态感知工业异常检测与推理 | [arXiv 2611.08080v1](https://arxiv.org/abs/2611.08080v1) |
 | 2026-11-08 | Can an LLM Actually Reason and Program about Neural Network's Weights or is it just memorization on steroids? Exploring "Weight-Space Programming" | 法学硕士实际上可以对神经网络的权重进行推理和编程，还是只是加强记忆？探索“权重空间规划” | [arXiv 2611.08070v1](https://arxiv.org/abs/2611.08070v1) |
 | 2026-11-08 | KeHoSu: Keyed Homoglyph Substitution for Authenticated Text Provenance over Copy-Paste Channels | KeHoSu：通过复制粘贴通道进行键控同形文字替换以验证文本来源 | [arXiv 2611.08046v1](https://arxiv.org/abs/2611.08046v1) |
-| 2026-11-08 | Automatic keyphrase extraction and annotation: modern theoretical approaches and practical solutions for text and speech | 待翻译 | [arXiv 2611.08006v1](https://arxiv.org/abs/2611.08006v1) |
+| 2026-11-08 | Automatic keyphrase extraction and annotation: modern theoretical approaches and practical solutions for text and speech | 自动关键短语提取和注释：文本和语音的现代理论方法和实用解决方案 | [arXiv 2611.08006v1](https://arxiv.org/abs/2611.08006v1) |
 | 2026-11-07 | RM-VLM: From Natural-Language Task Descriptions to Vision-Grounded Reward Machines | RM-VLM：从自然语言任务描述到基于视觉的奖励机器 | [arXiv 2611.08308v1](https://arxiv.org/abs/2611.08308v1) |
 | 2026-11-07 | AutoCompress: Automated Hardware-Guided Model Compression | AutoCompress：自动硬件引导模型压缩 | [arXiv 2611.08290v1](https://arxiv.org/abs/2611.08290v1) |
 | 2026-11-07 | A Generative Model of Contextual Integrity: Appropriate vs. Inappropriate Information Sharing | 上下文完整性的生成模型：适当与不适当的信息共享 | [arXiv 2611.08284v1](https://arxiv.org/abs/2611.08284v1) |
