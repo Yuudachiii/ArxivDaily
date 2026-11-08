@@ -31,7 +31,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:41:59.424237+00:00",
-    "last_complete_end": "2026-11-07T08:25:07.629036+00:00"
+    "last_complete_end": "2026-11-08T08:39:37.596456+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -145,6 +145,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-08": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -60889,6 +60898,322 @@
         "2611.06914v1"
       ]
     },
+    "2611.08006": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-08T08:39:37.596456+00:00",
+      "paper": {
+        "abstract": "The exponential growth of textual and audiovisual information has made the task of automatic keyphrase extraction (KE) increasingly significant. This article provides a comprehensive analysis of contemporary theoretical approaches and practical solutions for KE across both text and speech modalities. The primary contribution of this work is its systematic synthesis of these often-disparate research strands into a unified analytical framework, highlighting the evolution of the field from statistical methods towards large language models (LLMs) and end-to-end speech processing. We examine the stages of KE, the characteristics of keyphrases in written and spoken language, and terminological nuances. Various methods for automatic KE are discussed and analyzed in detail: statistical, hybrid, machine learning-based, and structural. The review dedicates substantial attention to emerging paradigms, including keyphrase generation using LLMs, and provides a detailed overview of methodologies and challenges in automatic corpus annotation. Furthermore, we specifically analyze current directions and inherent difficulties in KE for spoken language, comparing transcript based and end-to-end acoustic approaches. This synthesis leads us to conclude that the field is moving towards a more integrated, context-aware paradigm. Future progress will depend on addressing key challenges such as data scarcity for low-resource languages, effective multimodal fusion, and the nuanced evaluation of generative KE systems.",
+        "authors": [
+          "Daria Guseva",
+          "Olga Mitrofanova"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.HC"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08006v1",
+        "published": "2026-11-05T13:31:35+00:00",
+        "title": "Automatic keyphrase extraction and annotation: modern theoretical approaches and practical solutions for text and speech",
+        "updated": "2026-11-05T13:31:35+00:00",
+        "version_id": "2611.08006v1"
+      },
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08006v1"
+      ]
+    },
+    "2611.08046": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-08T08:39:37.596456+00:00",
+      "paper": {
+        "abstract": "Nowadays, large language models produce text at scale, and much of it is redistributed across platforms. A moderator who finds a suspicious comment, post or article may want to know which platform generated it and for which account. In this paper we study attribution over the channel through which such text actually travels, copy-paste, which discards document metadata but keeps Unicode code points. We present KeHoSu, which turns the confusable characters of homoglyph attacks into a keyed attribution channel: the variant chosen for each carrier letter encodes one bit of an identifier made of a platform field, a user field and a truncated authentication tag. Moreover, given that reshared text is often quoted in fragments, and the placement therefore keeps no positional state, we show that KeHoSu is invariant to sentence reordering up to a constant boundary layer and depends on a partial quotation only through the retained length. We characterize the code-point channel by its capacity, removability and detectability, and provide an achievable region that relates the three. We evaluate KeHoSu over a wide range of use cases and show that the mark survived copy-paste across 18 common platforms, attributing the majority of all excerpts to the correct account at 178 letters (about two sentences) on LLM-generated stories and 167 letters (about one sentence) on standard English prose.",
+        "authors": [
+          "Andrei Alexandru Drăghici",
+          "Sediola Ruko",
+          "Briland Hitaj",
+          "Dorjan Hitaj"
+        ],
+        "categories": [
+          "cs.CR",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08046v1",
+        "published": "2026-11-05T14:01:01+00:00",
+        "title": "KeHoSu: Keyed Homoglyph Substitution for Authenticated Text Provenance over Copy-Paste Channels",
+        "updated": "2026-11-05T14:01:01+00:00",
+        "version_id": "2611.08046v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08046v1"
+      ]
+    },
+    "2611.08070": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-08T08:39:37.596456+00:00",
+      "paper": {
+        "abstract": "Large language models (LLMs) have recently been reported to read and write the raw weights of neural networks directly, a capability termed weight-space programming. We ask whether the reading side of this capability reflects reasoning about weight flows or a combination of local arithmetic at the network's edges and memorized priors over public datasets. We test Claude Opus 5.5 on small convolutional networks of about 125,000 parameters trained on five image datasets, providing every weight as plain text with no tools, no forward passes, and no dataset or class names. The model performs accurate local calculations: batch-normalization statistics lead it to infer about three optimizer steps on networks stopped after three updates, and output-layer sign patterns recover the vehicle/animal split of CIFAR-10. The sessions report reading the first and last layers closely and sampling the middle, and several claims built on partial tracing fail verification, although we did not run a direct forward-pass test. Semantic judgments lean on familiar datasets: the model names CIFAR-10 for CIFAR-10 networks but also for all three fast-food networks, relabels KMNIST as MNIST, reads a 99.57%-accurate SAT-6 network as CIFAR-10 animal photos, and calls \"frog\" the output favored by a feature that fires most on trees. Permuting CIFAR-10's labels preserves the output split at the new indices, but every class pair the model interprets is then wrong, indicating reliance on remembered label order. These are exploratory results from mostly single runs. We conclude that zero-shot weight reading by this model is better described as local arithmetic plus dataset priors than as weight-flow tracing, and we provide a protocol for auditing future weight-space claims.",
+        "authors": [
+          "Nazmus Sakib Ahmed"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08070v1",
+        "published": "2026-11-05T14:23:07+00:00",
+        "title": "Can an LLM Actually Reason and Program about Neural Network's Weights or is it just memorization on steroids? Exploring \"Weight-Space Programming\"",
+        "updated": "2026-11-05T14:23:07+00:00",
+        "version_id": "2611.08070v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08070v1"
+      ]
+    },
+    "2611.08080": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-08T08:39:37.596456+00:00",
+      "paper": {
+        "abstract": "Industrial Anomaly Detection (IAD) is a long-established problem that aims to detect defects in industrial products during manufacturing for quality control. Most existing studies focus on static visual patterns as the basis for detection. However, in real manufacturing environments, many anomalies are dynamics-based, such as irregular movements that cannot be perceived from static cues alone. We observe that even recent Multimodal Large Language Model (MLLM)-based approaches fall short in identifying such dynamic anomalies due to limited temporal modeling capability. To address this, we introduce MUSTARD: MUltimodal SpatioTemporal Anomaly Reasoning and Detection, a framework that equips MLLMs with fine-grained spatiotemporal dynamics awareness for detecting and reasoning about dynamics-based defects. MUSTARD introduces optical-flow-guided keyframe selection and augmented modalities to capture critical motion irregularities through local motion patterns and global dynamic evolution. Its normal pattern-based reasoning pipeline requires only a few normal reference samples as the detection basis, avoiding any model updates. This enables efficient adaptation across various products and provides high decision interpretability. MUSTARD is the first MLLM-based framework for dynamics-based IAD. Experiments demonstrate its superior performance in detecting spatiotemporal anomalies and providing plausible explanations. The code will be made publicly available.",
+        "authors": [
+          "S-Wei Chen",
+          "Siangyu Yang",
+          "Yi-Chen Jan",
+          "Chun-Yi Lee",
+          "Shao-Yuan Lo"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08080v1",
+        "published": "2026-11-05T14:30:20+00:00",
+        "title": "Spatiotemporal Dynamics-Aware Industrial Anomaly Detection and Reasoning",
+        "updated": "2026-11-05T14:30:20+00:00",
+        "version_id": "2611.08080v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_multimodal",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08080v1"
+      ]
+    },
+    "2611.08082": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-08T08:39:37.596456+00:00",
+      "paper": {
+        "abstract": "Efficient deployment of large language models (LLMs) on mobile devices requires balancing performance with compute and memory constraints. Post-training compression is an effective approach to managing this trade-off, while requiring much less computation than in-training counterparts. We propose DictLLM, a dictionary-based compression scheme in which weight matrices within grouped layers are decomposed into a shared dictionary and layer-specific sparse coefficients, directly obtained from a pre-trained model without further training. Specifically, we cast DictLLM as a four-step post-training optimization. First, we obtain shared dictionaries via singular value decomposition (SVD) of input-scaled weight matrices, amortizing rank across grouped layers; second, we sparsify the layer-specific coefficients to the target compression ratio using a dictionary-aware Hessian; and third, we refine the dictionaries given the resulting sparse coefficients. Finally, we aggressively quantize both components using factor-specific Hessian information: input covariance for the dictionaries and the dictionary-aware Hessian for the coefficients. The resulting representation reduces memory footprint by storing a single shared dictionary per layer group, along with sparse layer-specific coefficients. On language modeling and zero-shot reasoning benchmarks, DictLLM consistently outperforms existing post-training low-rank compression methods and pushes the Pareto frontier between model size and performance. DictLLM compresses the original LLaMA-7B model by 5.1x with only a 2.9-point increase in WikiText-2 perplexity, achieving a 3.6x higher compression ratio than the state-of-the-art low-rank method.",
+        "authors": [
+          "Jinho Park",
+          "Se Young Chun",
+          "Mingoo Seok"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08082v1",
+        "published": "2026-11-05T14:31:12+00:00",
+        "title": "DictLLM: Post-training Compression of Large Language Model with Dictionary Kernels",
+        "updated": "2026-11-05T14:31:12+00:00",
+        "version_id": "2611.08082v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_training",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08082v1"
+      ]
+    },
+    "2611.08085": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-08T08:39:37.596456+00:00",
+      "paper": {
+        "abstract": "Human cognition organizes continuous experience into bounded units while maintaining continuity across them. Linguistic elements are also organized into bounded structural units such as words and phrases, with sentence marking the final bound of a grammatical construction process. How do such boundaries emerge? We propose boundaries emerge from interacting demands to maintain unresolved dependencies, integrate completed relations, and update semantic context, with structural completion allowing but not determining closure. First, in a generative simulation without predefined boundary positions or constituent labels, these demands produced sentence-like segment-length distributions and distinct characteristic timescales, with structural completion allowing but not determining closure. Near boundaries, unresolved dependency load declined, integration cost peaked, and accumulated pressure reset. Then, we tested whether same demands predicted human listeners' boundary choices during comprehension. Listeners were more likely to mark boundaries with fewer unresolved dependencies, higher integration cost and semantic mismatch, and elevated preceding memory load, beyond syntactic and prosodic cues. Third, in naturalistic self-paced reading, sentence-final slowing coincided with declining memory load and increasing integration cost and semantic mismatch, broadly consistent with the simulation. Processing same narratives with a large language model revealed increased local intrinsic dimensionality and straighter hidden-state trajectories at sentence endings, followed by larger representational updates. Boundary explained additional variation in reading time and hidden-state geometry beyond processing demands, but considerably less in next-token surprisal. Together, these findings suggest linguistic boundaries emerge as discrete manifestations of transitions in continuous processing dynamics.",
+        "authors": [
+          "Rui He",
+          "Philipp Homan",
+          "Wolfram Hinzen"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08085v1",
+        "published": "2026-11-05T14:33:00+00:00",
+        "title": "Linguistic boundaries emerge from pressure-constrained processing dynamics",
+        "updated": "2026-11-05T14:33:00+00:00",
+        "version_id": "2611.08085v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08085v1"
+      ]
+    },
+    "2611.08133": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-08T08:39:37.596456+00:00",
+      "paper": {
+        "abstract": "Production deployments often use different models to balance cost and quality through cascading, routing, and switching models during long conversations. Context accumulates across turns. Each switch requires the target to repeat prefill over this context. Existing methods transfer full-attention (FA) K/V caches across models. Hybrid linear-attention models also retain recurrent states (REC) and convolution histories (Conv). The interaction between Conv and REC complicates cross-model state transfer. Conv perturbations can change keys and values in recurrent layers and alter REC updates. Conv histories are overwritten, but changes in REC can still affect later outputs. More accurate REC reconstruction need not improve continuation. Building on this, we propose Hybrid State Transfer (HST) for all three state types. It uses structured REC maps and preserves history order during Conv alignment. We calibrate the adapters using the frozen target's outputs during continuation. FA cache map updates are merged offline. Across five benchmarks, Qwen3.5 4B$\\rightarrow$27B and 9B$\\rightarrow$27B achieve mean task retentions of 89.88% and 94.11%, respectively. With source caches already available, separate timing on synthetic 16K inputs yields handoff body speedups of $21.66\\times$ and $21.91\\times$.",
+        "authors": [
+          "Jiacheng Cai",
+          "Tao Zhang",
+          "Siqi Liang",
+          "Yun Dai",
+          "Ziqian Zeng"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08133v1",
+        "published": "2026-11-05T15:00:50+00:00",
+        "title": "Beyond K/V Caches: Cross-Model State Handoff in Hybrid Linear-Attention LLMs",
+        "updated": "2026-11-05T15:00:50+00:00",
+        "version_id": "2611.08133v1"
+      },
+      "rule_hits": [
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08133v1"
+      ]
+    },
+    "2611.08138": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-08T08:39:37.596456+00:00",
+      "paper": {
+        "abstract": "This paper presents a novel task of describing human facial expressions of a facial image in natural language, which captures the nuances of facial actions and emotional states beyond traditional emotion categories or facial action units (AUs). To achieve the facial expression captioning model, we propose a three-stage training framework that trains a vision-to-language model using synthesized image-text pairs and the BLIP-2 pre-training techniques. To overcome the challenge of missing training image-text pairs for facial expression captioning, we propose a strategy that involves synthesizing and combining captions using GPT-3.5 and existing annotations on either emotion categories or AUs. Experiments demonstrate the effectiveness of our method in generating captions that describe details of facial actions and emotions, as well as the inferential relationship between them, even when those emotions are not present in the training data. It is also demonstrated that the vision-to-language task enhances the performance of the intermediate visual features on both AU detection and emotion classification tasks.",
+        "authors": [
+          "Yujian Yuan",
+          "Jiabei Zeng",
+          "Shiguang Shan"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08138v1",
+        "published": "2026-11-05T15:02:05+00:00",
+        "title": "Describe Your Facial Expressions by Linking Image Encoders and Large Language Models",
+        "updated": "2026-11-05T15:02:05+00:00",
+        "version_id": "2611.08138v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08138v1"
+      ]
+    },
+    "2611.08162": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-08T08:39:37.596456+00:00",
+      "paper": {
+        "abstract": "LLM service selection requires performance evidence that reflects the demands of the current task. Aggregate scores obscure differences in capability and difficulty, while semantically related examples can involve different combinations of skills. We present RouteAlign, which uses task requirements to structure both the measurement of model performance and the selection of services. Task requirements describe capability demand and difficulty, enabling alignment with corresponding model performance measurements. Historical requirements determine how outcomes contribute to global profiles and local capability estimates; incoming requirements determine how those measurements inform the current decision. A shared scorer integrates the evidence, and a generation-cost preference controls selection among eligible services. Evaluation across diverse tasks and heterogeneous LLM services shows that RouteAlign extends the empirical quality-cost frontier toward higher task quality. Comparisons with open Jev-style decision backends show consistent quality gains, with lower generation cost than their strongest tested configuration. Ablations support the contribution of local performance evidence, while catalog-update experiments demonstrate effective reuse of the fitted scorer with refreshed model measurements.",
+        "authors": [
+          "Jihao Zhao",
+          "Ding Chen",
+          "Yanfang Chen",
+          "Bo Tang",
+          "Feiyu Xiong",
+          "Junchi Yan",
+          "Zhiyu Li"
+        ],
+        "categories": [
+          "cs.SE",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08162v1",
+        "published": "2026-11-05T15:21:16+00:00",
+        "title": "RouteAlign: Aligning Task Requirements with Model Profiles for LLM Service Selection",
+        "updated": "2026-11-05T15:21:16+00:00",
+        "version_id": "2611.08162v1"
+      },
+      "rule_hits": [
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08162v1"
+      ]
+    },
+    "2611.08175": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-08T08:39:37.596456+00:00",
+      "paper": {
+        "abstract": "Automating printed circuit board (PCB) routing requires coordinating board-level connectivity decisions with geometric execution under strict design rules. Although recent agents can interact with native routing tools, reliable routing on complex boards remains challenging. We present PCBRouteAgent, a multimodal PCB routing agent inspired by how human engineers coordinate global strategy with local execution. A Global Routing Planner combines board images and structured electrical and geometric information to specify connection topology, routing order, corridors, and layer transitions. A Detailed Routing Executor realizes these guides through KiCad's native routing engine and performs bounded local recovery. Unresolved failures are returned as structured feedback, enabling targeted guide revisions while preserving accepted routes. We evaluate PCBRouteAgent on 247 synthetic and real-world boards from four PCBWorld-Bench test splits. It achieves clean-pass rates of 100%, 94.9%, 100%, and 40% on D2, D3-A, D3-B, and D3-C, respectively. On the three real-world subsets, PCBRouteAgent outperforms the best evaluated baseline in clean-pass rate by 13.9, 36, and 10 percentage points, respectively.",
+        "authors": [
+          "Yue Zhang",
+          "Jilei Sun",
+          "Liqiang Jing",
+          "Yijie Wei",
+          "Ruohan Yang"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.08175v1",
+        "published": "2026-11-05T15:31:15+00:00",
+        "title": "PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?",
+        "updated": "2026-11-05T15:31:15+00:00",
+        "version_id": "2611.08175v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.08175v1"
+      ]
+    },
     "2611.08196": {
       "attempts": {
         "selection": 1,
@@ -62953,10 +63278,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-08",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261108T083937Z-19094675",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-08T08:39:00+00:00",
+          "seen": 141,
+          "start": "2026-11-01T08:39:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-08T08:39:37.596456+00:00",
       "window": {
         "end": "2026-11-08T08:39:37.596456+00:00",

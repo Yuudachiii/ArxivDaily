@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-08 | PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers? | 待翻译 | [arXiv 2611.08175v1](https://arxiv.org/abs/2611.08175v1) |
+| 2026-11-08 | RouteAlign: Aligning Task Requirements with Model Profiles for LLM Service Selection | 待翻译 | [arXiv 2611.08162v1](https://arxiv.org/abs/2611.08162v1) |
+| 2026-11-08 | Describe Your Facial Expressions by Linking Image Encoders and Large Language Models | 待翻译 | [arXiv 2611.08138v1](https://arxiv.org/abs/2611.08138v1) |
+| 2026-11-08 | Beyond K/V Caches: Cross-Model State Handoff in Hybrid Linear-Attention LLMs | 待翻译 | [arXiv 2611.08133v1](https://arxiv.org/abs/2611.08133v1) |
+| 2026-11-08 | Linguistic boundaries emerge from pressure-constrained processing dynamics | 待翻译 | [arXiv 2611.08085v1](https://arxiv.org/abs/2611.08085v1) |
+| 2026-11-08 | DictLLM: Post-training Compression of Large Language Model with Dictionary Kernels | 待翻译 | [arXiv 2611.08082v1](https://arxiv.org/abs/2611.08082v1) |
+| 2026-11-08 | Spatiotemporal Dynamics-Aware Industrial Anomaly Detection and Reasoning | 待翻译 | [arXiv 2611.08080v1](https://arxiv.org/abs/2611.08080v1) |
+| 2026-11-08 | Can an LLM Actually Reason and Program about Neural Network's Weights or is it just memorization on steroids? Exploring "Weight-Space Programming" | 待翻译 | [arXiv 2611.08070v1](https://arxiv.org/abs/2611.08070v1) |
+| 2026-11-08 | KeHoSu: Keyed Homoglyph Substitution for Authenticated Text Provenance over Copy-Paste Channels | 待翻译 | [arXiv 2611.08046v1](https://arxiv.org/abs/2611.08046v1) |
+| 2026-11-08 | Automatic keyphrase extraction and annotation: modern theoretical approaches and practical solutions for text and speech | 待翻译 | [arXiv 2611.08006v1](https://arxiv.org/abs/2611.08006v1) |
 | 2026-11-07 | RM-VLM: From Natural-Language Task Descriptions to Vision-Grounded Reward Machines | RM-VLM：从自然语言任务描述到基于视觉的奖励机器 | [arXiv 2611.08308v1](https://arxiv.org/abs/2611.08308v1) |
 | 2026-11-07 | AutoCompress: Automated Hardware-Guided Model Compression | AutoCompress：自动硬件引导模型压缩 | [arXiv 2611.08290v1](https://arxiv.org/abs/2611.08290v1) |
 | 2026-11-07 | A Generative Model of Contextual Integrity: Appropriate vs. Inappropriate Information Sharing | 上下文完整性的生成模型：适当与不适当的信息共享 | [arXiv 2611.08284v1](https://arxiv.org/abs/2611.08284v1) |
