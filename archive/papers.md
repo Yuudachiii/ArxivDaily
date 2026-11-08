@@ -11,7 +11,7 @@
 | 2026-11-08 | Linguistic boundaries emerge from pressure-constrained processing dynamics | 语言边界源于压力受限的处理动态 | [arXiv 2611.08085v1](https://arxiv.org/abs/2611.08085v1) |
 | 2026-11-08 | DictLLM: Post-training Compression of Large Language Model with Dictionary Kernels | DictLLM：使用字典内核对大型语言模型进行训练后压缩 | [arXiv 2611.08082v1](https://arxiv.org/abs/2611.08082v1) |
 | 2026-11-08 | Spatiotemporal Dynamics-Aware Industrial Anomaly Detection and Reasoning | 时空动态感知工业异常检测与推理 | [arXiv 2611.08080v1](https://arxiv.org/abs/2611.08080v1) |
-| 2026-11-08 | Can an LLM Actually Reason and Program about Neural Network's Weights or is it just memorization on steroids? Exploring "Weight-Space Programming" | 待翻译 | [arXiv 2611.08070v1](https://arxiv.org/abs/2611.08070v1) |
+| 2026-11-08 | Can an LLM Actually Reason and Program about Neural Network's Weights or is it just memorization on steroids? Exploring "Weight-Space Programming" | 法学硕士实际上可以对神经网络的权重进行推理和编程，还是只是加强记忆？探索“权重空间规划” | [arXiv 2611.08070v1](https://arxiv.org/abs/2611.08070v1) |
 | 2026-11-08 | KeHoSu: Keyed Homoglyph Substitution for Authenticated Text Provenance over Copy-Paste Channels | 待翻译 | [arXiv 2611.08046v1](https://arxiv.org/abs/2611.08046v1) |
 | 2026-11-08 | Automatic keyphrase extraction and annotation: modern theoretical approaches and practical solutions for text and speech | 待翻译 | [arXiv 2611.08006v1](https://arxiv.org/abs/2611.08006v1) |
 | 2026-11-07 | RM-VLM: From Natural-Language Task Descriptions to Vision-Grounded Reward Machines | RM-VLM：从自然语言任务描述到基于视觉的奖励机器 | [arXiv 2611.08308v1](https://arxiv.org/abs/2611.08308v1) |
