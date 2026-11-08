@@ -8,7 +8,7 @@
 | 2026-11-08 | RouteAlign: Aligning Task Requirements with Model Profiles for LLM Service Selection | RouteAlign：将任务要求与模型配置文件相结合以进行 LLM 服务选择（谷歌备用翻译） | [arXiv 2611.08162v1](https://arxiv.org/abs/2611.08162v1) |
 | 2026-11-08 | Describe Your Facial Expressions by Linking Image Encoders and Large Language Models | 通过链接图像编码器和大型语言模型来描述您的面部表情（谷歌备用翻译） | [arXiv 2611.08138v1](https://arxiv.org/abs/2611.08138v1) |
 | 2026-11-08 | Beyond K/V Caches: Cross-Model State Handoff in Hybrid Linear-Attention LLMs | 超越 K/V 缓存：混合线性注意力 LLM 中的跨模型状态切换（谷歌备用翻译） | [arXiv 2611.08133v1](https://arxiv.org/abs/2611.08133v1) |
-| 2026-11-08 | Linguistic boundaries emerge from pressure-constrained processing dynamics | 待翻译 | [arXiv 2611.08085v1](https://arxiv.org/abs/2611.08085v1) |
+| 2026-11-08 | Linguistic boundaries emerge from pressure-constrained processing dynamics | 语言边界源于压力受限的处理动态（谷歌备用翻译） | [arXiv 2611.08085v1](https://arxiv.org/abs/2611.08085v1) |
 | 2026-11-08 | DictLLM: Post-training Compression of Large Language Model with Dictionary Kernels | 待翻译 | [arXiv 2611.08082v1](https://arxiv.org/abs/2611.08082v1) |
 | 2026-11-08 | Spatiotemporal Dynamics-Aware Industrial Anomaly Detection and Reasoning | 待翻译 | [arXiv 2611.08080v1](https://arxiv.org/abs/2611.08080v1) |
 | 2026-11-08 | Can an LLM Actually Reason and Program about Neural Network's Weights or is it just memorization on steroids? Exploring "Weight-Space Programming" | 待翻译 | [arXiv 2611.08070v1](https://arxiv.org/abs/2611.08070v1) |
