@@ -58927,7 +58927,8 @@
     },
     "2611.08085": {
       "attempts": {
-        "selection": 1
+        "selection": 1,
+        "translation": 1
       },
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
       "decision": {
@@ -58981,6 +58982,11 @@
         "llm_core"
       ],
       "stage": "ready",
+      "stage_started": {
+        "at": "2026-11-08T08:39:37.676729+00:00",
+        "run_id": "20261108T083937Z-f6e58667",
+        "stage": "translation"
+      },
       "versions": [
         "2611.08085v1"
       ]
