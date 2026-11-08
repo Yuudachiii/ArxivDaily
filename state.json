@@ -59048,11 +59048,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-08T08:39:37.676729+00:00",
-        "run_id": "20261108T083937Z-f6e58667",
-        "stage": "translation"
+      "title_zh": "超越 K/V 缓存：混合线性注意力 LLM 中的跨模型状态切换",
+      "translation": {
+        "abstract_zh": "生产部署通常使用不同的模型，通过长时间对话期间的级联、路由和交换模型来平衡成本和质量。上下文会在回合中累积。每个开关都要求目标在此上下文上重复预填充。现有方法跨模型传输全注意力 (FA) K/V 缓存。混合线性注意力模型还保留循环状态（REC）和卷积历史（Conv）。 Conv 和 REC 之间的交互使跨模型状态传输变得复杂。 Conv 扰动可以更改循环层中的键和值并改变 REC 更新。转换历史记录会被覆盖，但 REC 中的更改仍会影响以后的输出。更准确的 REC 重建不需要改善连续性。在此基础上，我们为所有三种状态类型提出混合状态转移（HST）。它使用结构化 REC 映射并在 Conv 对齐期间保留历史顺序。我们在继续过程中使用冻结目标的输出来校准适配器。 FA 缓存映射更新离线合并。在五个基准测试中，Qwen3.5 4B$\\rightarrow$27B 和 9B$\\rightarrow$27B 的平均任务保留率分别为 89.88% 和 94.11%。由于源缓存已经可用，合成 16K 输入上的单独计时可产生 $21.66\\times$ 和 $21.91\\times$ 的切换主体加速。",
+        "fallback_provider": "google_free",
+        "title_zh": "超越 K/V 缓存：混合线性注意力 LLM 中的跨模型状态切换"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.08133v1"
       ]
