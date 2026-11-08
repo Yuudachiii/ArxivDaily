@@ -4,7 +4,7 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
-| 2026-11-08 | PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers? | 待翻译 | [arXiv 2611.08175v1](https://arxiv.org/abs/2611.08175v1) |
+| 2026-11-08 | PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers? | PCBRouteAgent：LLM 代理距离成为 PCB 布线工程师还有多远​​？ | [arXiv 2611.08175v1](https://arxiv.org/abs/2611.08175v1) |
 | 2026-11-08 | RouteAlign: Aligning Task Requirements with Model Profiles for LLM Service Selection | 待翻译 | [arXiv 2611.08162v1](https://arxiv.org/abs/2611.08162v1) |
 | 2026-11-08 | Describe Your Facial Expressions by Linking Image Encoders and Large Language Models | 待翻译 | [arXiv 2611.08138v1](https://arxiv.org/abs/2611.08138v1) |
 | 2026-11-08 | Beyond K/V Caches: Cross-Model State Handoff in Hybrid Linear-Attention LLMs | 待翻译 | [arXiv 2611.08133v1](https://arxiv.org/abs/2611.08133v1) |
