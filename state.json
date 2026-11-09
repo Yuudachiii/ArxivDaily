@@ -62011,11 +62011,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-09T09:13:57.732071+00:00",
-        "run_id": "20261109T091357Z-ce5ff694",
-        "stage": "translation"
+      "title_zh": "BitDecoding-FP4：通过算法-系统协同设计实现原生 FP4 KV 缓存解码",
+      "translation": {
+        "abstract_zh": "在长上下文大型语言模型（LLM）服务中，键值（KV）缓存主导了内存容量和带宽。虽然4位微缩格式（NVFP4、MXFP4）可以缩小缓存并在FP4张量核心上运行注意力机制，但算法量化与系统感知加速之间仍存在根本差距：现有FP4 KV系统使用普通量化，会导致严重的精度下降，而以精度为导向的4位算法依赖向量码本，其查找开销会降低解码吞吐量。我们提出了BitDecoding-FP4，一种用于高精度高效原生FP4 KV解码的算法-系统联合设计。我们缓解了三种误差源：双残差查询量化（Dual-Residual Query Quantization）将查询拆分为两个FP4张量，将查询logit误差从60%降低到1%；防下溢概率缩放（Underflow-Aware Probability Scaling）防止E4M3刻度将长上下文概率舍入为零；异常值感知键量化（Outlier-Aware Key Quantization）结合静态平滑、哈达玛旋转和刻度搜索，在逐标记操作下抑制键的异常值。缩放。在系统层面，我们通过带有融合概率量化的转置 softmax 以及在分页 KV 缓存上的堆叠查询 MMA，消除了 softmax 瓶颈。在具有 GQA 和 MLA 的密集模型和 MoE 模型中，BitDecoding-FP4 在 NVFP4 下的 BF16 KV 精度范围内保持 0.5 点以内（在 MXFP4 下为 1 点），并在 RL 训练 rollout 中跟踪 BF16 KV。在 NVIDIA B300 上对 Qwen3-4B 和 Qwen3-30B-A3B 进行端到端推理时，它提供了比 BF16 KV 高 2.4-3.0 倍的峰值推理吞吐量。实现可在 https://github.com/OpenBitSys/BitDecoding-FP4 获取。",
+        "title_zh": "BitDecoding-FP4：通过算法-系统协同设计实现原生 FP4 KV 缓存解码"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.09825v1"
       ]
