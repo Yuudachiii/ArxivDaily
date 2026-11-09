@@ -62207,11 +62207,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-09T09:13:57.732071+00:00",
-        "run_id": "20261109T091357Z-ce5ff694",
-        "stage": "translation"
+      "title_zh": "CodeQuant2：用于低精度LRM的增强异常值缓解与自适应聚类",
+      "translation": {
+        "abstract_zh": "大型推理模型（LRMs）通过生成更长的中间推理轨迹来提高任务性能，但这会大幅增加推理成本，并使低精度量化变得越来越重要。然而，经过激进量化的模型在推理任务上往往表现不佳。我们观察到在推理的前几个解码步骤中，激活波动较大。忽略这些早期状态的校准可能会错过它们的激活波动。为了解决这些特定于推理的量化挑战，我们提出了\\textbf{CodeQuant2}，这是一种基于聚类的查找表量化框架，适用于低精度大型推理模型。CodeQuant2通过旋转和缩放缓解激活异常值，使用聚类表示非均匀权重分布，并根据每一层的量化难度调整码本大小。基于我们对推理时激活行为的观察，CodeQuant2进一步改进了校准样本的选择，以更好地匹配实际情况。解码统计。结合我们定制的 LUT CUDA 内核，CodeQuant2 在推理基准上提供了显著的精度提升，同时实现了比 BF16 高出最多 $2.85\times$ 的加速。",
+        "title_zh": "CodeQuant2：用于低精度LRM的增强异常值缓解与自适应聚类"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.09868v1"
       ]
