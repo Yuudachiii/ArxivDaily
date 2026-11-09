@@ -1,0 +1,452 @@
+{
+  "alert": false,
+  "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-microsoft/archive/2026/11/09/20261109T091357Z-ce5ff694-63cef9010010.md",
+  "chain_roots": [
+    "20261109T091357Z-ce5ff694-63cef9010010"
+  ],
+  "content_hash": "63cef9010010a353c545e3f61e4bb8e4cbfdb1e18b8707482232867deabdec52",
+  "day": "2026-11-09",
+  "digest_id": "20261109T091357Z-ce5ff694-63cef9010010",
+  "empty": false,
+  "items": [
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Large language models reinvent the wheel all the time. They conflate task-solving with the execution of the solutions, which forces them to solve every problem from scratch. We show that once a task has been reasoned through, the application of its solution to a new problem instance can be done very efficiently and with little involvement from language models. We introduce agentic reasoning caching, a method for constructing robust CPU-executable agentic reasoning caches (ARCs) from LLM reasoning traces. ARCs show on-par performance with frontier LLMs across a range of difficult mathematical and scientific tasks, are fully explainable, continually trainable, robust to input perturbations, and 16-291x cheaper to invoke than the source model.",
+        "authors": [
+          "Peter Belcak",
+          "Greg Heinrich",
+          "Saurav Muralidharan",
+          "Shizhe Diao",
+          "Pavlo Molchanov"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.09891v1",
+        "published": "2026-11-06T18:58:50+00:00",
+        "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+        "updated": "2026-11-06T18:58:50+00:00",
+        "version_id": "2611.09891v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_agent",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "大型语言模型总是在不断地重复发明轮子。它们把任务解决与解决方案的执行混为一谈，这迫使它们每次都必须从头解决每个问题。我们展示了，一旦一个任务已经经过推理，其解决方案应用于新的问题实例可以非常高效，并且几乎不需要语言模型的参与。我们引入了代理推理缓存（agentic reasoning caching），这是一种从LLM推理轨迹构建稳健的CPU可执行代理推理缓存（ARCs）的方法。ARCs在一系列困难的数学和科学任务中表现与前沿LLM相当，完全可解释，可持续训练，对输入扰动具有鲁棒性，而且调用成本比源模型低16到291倍。",
+        "title_zh": "CPU-ARC：用于 CPU 上推理重用的代理推理缓存"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Large reasoning models (LRMs) improve task performance by generating longer intermediate reasoning traces, but this substantially increases inference costs and makes low-precision quantization increasingly important. However, aggressively quantized models often perform poorly on reasoning tasks. We observe larger activation fluctuations during the first decoding steps of reasoning. Calibration that omits these early states may miss their activation fluctuations. To address these reasoning-specific quantization challenges, we propose \\textbf{CodeQuant2}, a clustering-based LUT quantization framework for low-precision large reasoning models. CodeQuant2 mitigates activation outliers with rotation and scaling, uses clustering to represent non-uniform weight distributions, and adapts codebook sizes to the quantization difficulty of each layer. Guided by our observation of reasoning-time activation behavior, CodeQuant2 further improves calibration sample selection to better match actual decoding statistics. Combined with our customized LUT CUDA kernel, CodeQuant2 delivers substantial accuracy improvements on reasoning benchmarks while achieving up to $2.85\\times$ speedup over BF16.",
+        "authors": [
+          "Xingyu Liu",
+          "Xiangyang Yin",
+          "Tianhua Xia",
+          "Haiyu Wang",
+          "Sai Qian Zhang"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.09868v1",
+        "published": "2026-11-06T18:48:04+00:00",
+        "title": "CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs",
+        "updated": "2026-11-06T18:48:04+00:00",
+        "version_id": "2611.09868v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_efficiency",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "大型推理模型（LRMs）通过生成更长的中间推理轨迹来提高任务性能，但这会大幅增加推理成本，并使低精度量化变得越来越重要。然而，经过激进量化的模型在推理任务上往往表现不佳。我们观察到在推理的前几个解码步骤中，激活波动较大。忽略这些早期状态的校准可能会错过它们的激活波动。为了解决这些特定于推理的量化挑战，我们提出了\\textbf{CodeQuant2}，这是一种基于聚类的查找表量化框架，适用于低精度大型推理模型。CodeQuant2通过旋转和缩放缓解激活异常值，使用聚类表示非均匀权重分布，并根据每一层的量化难度调整码本大小。基于我们对推理时激活行为的观察，CodeQuant2进一步改进了校准样本的选择，以更好地匹配实际情况。解码统计。结合我们定制的 LUT CUDA 内核，CodeQuant2 在推理基准上提供了显著的精度提升，同时实现了比 BF16 高出最多 $2.85\times$ 的加速。",
+        "title_zh": "CodeQuant2：用于低精度LRM的增强异常值缓解与自适应聚类"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "This paper describes an approach and use case to estimate the correctness of LLM-generated COBOL summaries without access to human-authored references. The core intuition is that inter-model agreement on semantics is informative about truth, and that an LLM-as-judge can provide higher-fidelity pairwise assessments than traditional string- or embedding-based metrics. We operationalise this intuition with (i) controlled summary generation from diverse models; (ii) a LLM evaluator that compares pairs of summaries and emits structured judgments; and (iii) a calibrated aggregation rule that combines supportive evidence while penalising only corroborated contradictions.",
+        "authors": [
+          "Marco Colombo",
+          "Balaji A Jayaram",
+          "Sowmyakumari Selvaraj",
+          "Sumit Tokkar",
+          "Animesh Kumar",
+          "Aravinda Prasad Sistla",
+          "Ravishankar Shetty",
+          "Rigel Gjomemo"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.PL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.09846v1",
+        "published": "2026-11-06T18:29:48+00:00",
+        "title": "Ensemble Methodology for Reference-Free Confidence Estimation in LLM-based Code Summarization",
+        "updated": "2026-11-06T18:29:48+00:00",
+        "version_id": "2611.09846v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "本文介绍了一种方法及其使用案例，用于在无法获取人工撰写参考文本的情况下估计大型语言模型生成的 COBOL 摘要的正确性。核心直觉是，不同模型在语义上的一致性可以提供关于真实情况的信息，而将大型语言模型作为评判者，可以比传统的基于字符串或嵌入的方法提供更高保真度的成对评估。我们通过以下方式将这种直觉付诸实践：（i）从不同模型生成受控摘要；（ii）使用大型语言模型评估器比较摘要对并输出结构化判断；以及（iii）使用经过校准的聚合规则，将支持性证据结合起来，同时仅惩罚经过证实的矛盾之处。",
+        "title_zh": "用于基于LLM代码摘要的无参考置信度估计的集成方法"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Reinforcement learning (RL) rewards are notoriously difficult to design and control, often leading to the model learning unintended behaviors such as reward hacking. One potential solution is to monitor for reward hacking and penalize it when detected; however, training against a monitor could lead to evasive behavior, and our general understanding of how to apply monitors effectively during training is limited. To study how best to use monitors to mitigate reward hacking, we introduce and open source three realistic environments where Qwen3-4B reward hacks: a coding environment hackable via test overwriting, a medical chat environment hackable via sycophancy, and a biography generation environment hackable via hallucination. We first focus on the coding environment, where we find that: (1) models can learn to evade highly accurate monitors by exploiting systemic flaws in probes and LLM judges; (2) monitors that leak more learning signal during RL suppress reward hacking but are more often evaded; and (3) including easier problems in training can decrease reward hacking. We apply our findings to build better reward hacking monitors for the medical chat and biography generation environments that improve upon naive baselines to reduce reward hacking rates across seeds to before-training levels in some interventions. Our results demonstrate that our takeaways translate to new settings and that better monitor intervention designs are possible.",
+        "authors": [
+          "Aria Wong",
+          "Joshua Engels",
+          "Neel Nanda"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.09828v1",
+        "published": "2026-11-06T18:14:52+00:00",
+        "title": "Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL",
+        "updated": "2026-11-06T18:14:52+00:00",
+        "version_id": "2611.09828v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_safety",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "强化学习（RL）中的奖励设计和控制 notoriously 困难，常常导致模型学习到非预期行为，例如奖励操纵。一种潜在的解决方案是监控奖励操纵并在检测到时进行惩罚；然而，在训练中对抗监控可能导致规避行为，并且我们对于如何在训练过程中有效应用监控的总体理解仍然有限。为了研究如何最好地使用监控来减轻奖励操纵，我们引入并开源了三个 Qwen3-4B 会进行奖励操纵的现实环境：一个可以通过测试覆盖进行操纵的编码环境、一个可以通过谄媚进行操纵的医疗聊天环境，以及一个可以通过幻想进行操纵的传记生成环境。我们首先关注编码环境，在这里我们发现：（1）模型可以通过利用探针和大型语言模型评审者的系统性缺陷来规避高精度监控；（2）在强化学习中泄露更多学习信号的监控可以抑制奖励操纵，但更经常被回避；以及（3）在训练中包括更简单的问题可以减少奖励作弊。我们将研究结果应用于构建更好的奖励作弊监控器，用于医疗聊天和传记生成环境，相对于简单基线，它们在某些干预措施中将奖励作弊率降低到训练前水平。我们的结果表明，我们的经验可以转化到新的环境，并且可以设计出更好的监控干预措施。",
+        "title_zh": "设计有效的基于监控的干预措施以减轻强化学习中的奖励操纵"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "The key-value (KV) cache dominates memory capacity and bandwidth in long-context LLM serving. While 4-bit microscaling formats (NVFP4, MXFP4) shrink the cache and run attention on FP4 Tensor Cores, a fundamental gap remains between algorithmic quantization and system-aware acceleration: existing FP4 KV systems use vanilla quantization that causes severe accuracy drops, whereas accuracy-oriented 4-bit algorithms rely on vector codebooks whose lookup overhead degrades decoding throughput. We present BitDecoding-FP4, an algorithm--system co-design for accurate and efficient native FP4 KV decoding. We mitigate three error sources: Dual-Residual Query Quantization splits queries into two FP4 tensors, cutting query logit error from 60% to 1%; Underflow-Aware Probability Scaling prevents E4M3 scales from rounding long-context probabilities to zero; and Outlier-Aware Key Quantization combines static smoothing, Hadamard rotation, and scale search to suppress key outliers under token-wise scaling. At the system level, we remove the softmax bottleneck via transposed softmax with fused probability quantization and stacked query MMA on paged KV caches. Across dense and MoE models with GQA and MLA, BitDecoding-FP4 stays within 0.5 points of BF16 KV accuracy with NVFP4 (1 point with MXFP4), and tracks BF16 KV in RL training rollouts. In end-to-end serving on NVIDIA B300 with Qwen3-4B and Qwen3-30B-A3B, it delivers 2.4-3.0$\\times$ higher peak serving throughput than BF16 KV. The implementation is available at https://github.com/OpenBitSys/BitDecoding-FP4.",
+        "authors": [
+          "Dayou Du",
+          "Woon Yee Ng",
+          "Guangming Sheng",
+          "Nick Lau",
+          "Jianyi Cheng",
+          "Luo Mai"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.AR",
+          "cs.CL",
+          "cs.PF"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.09825v1",
+        "published": "2026-11-06T18:13:54+00:00",
+        "title": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
+        "updated": "2026-11-06T18:13:54+00:00",
+        "version_id": "2611.09825v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_efficiency",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "在长上下文大型语言模型（LLM）服务中，键值（KV）缓存主导了内存容量和带宽。虽然4位微缩格式（NVFP4、MXFP4）可以缩小缓存并在FP4张量核心上运行注意力机制，但算法量化与系统感知加速之间仍存在根本差距：现有FP4 KV系统使用普通量化，会导致严重的精度下降，而以精度为导向的4位算法依赖向量码本，其查找开销会降低解码吞吐量。我们提出了BitDecoding-FP4，一种用于高精度高效原生FP4 KV解码的算法-系统联合设计。我们缓解了三种误差源：双残差查询量化（Dual-Residual Query Quantization）将查询拆分为两个FP4张量，将查询logit误差从60%降低到1%；防下溢概率缩放（Underflow-Aware Probability Scaling）防止E4M3刻度将长上下文概率舍入为零；异常值感知键量化（Outlier-Aware Key Quantization）结合静态平滑、哈达玛旋转和刻度搜索，在逐标记操作下抑制键的异常值。缩放。在系统层面，我们通过带有融合概率量化的转置 softmax 以及在分页 KV 缓存上的堆叠查询 MMA，消除了 softmax 瓶颈。在具有 GQA 和 MLA 的密集模型和 MoE 模型中，BitDecoding-FP4 在 NVFP4 下的 BF16 KV 精度范围内保持 0.5 点以内（在 MXFP4 下为 1 点），并在 RL 训练 rollout 中跟踪 BF16 KV。在 NVIDIA B300 上对 Qwen3-4B 和 Qwen3-30B-A3B 进行端到端推理时，它提供了比 BF16 KV 高 2.4-3.0 倍的峰值推理吞吐量。实现可在 https://github.com/OpenBitSys/BitDecoding-FP4 获取。",
+        "title_zh": "BitDecoding-FP4：通过算法-系统协同设计实现原生 FP4 KV 缓存解码"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "The timeline by which quantum computers can solve breakthrough problems in science depends on improved quantum algorithms as much as on better hardware. Such algorithmic advances are typically achieved through many years of expert human collaboration. In mathematics and computer science, large language models have accelerated progress through automated discovery loops. However, quantum algorithms can only be evaluated by classical computers on restricted or small instances. Here we demonstrate automated discovery of quantum programs beyond these regimes including order-of-magnitude improvements on scientific applications. To achieve this, we build a quantum program library in the Lean theorem prover in which large language model agents synthesize novel programs against formal problem specifications and verify their correctness and cost. Agent teams collaborate, sharing results and knowledge through wikis and discussing ideas at organized conferences. Our results improve on prior baselines for parallel search (up to 1.4x), quantum arithmetic (290x), and simulations relevant to fusion, photochemistry and drug-metabolism by 11x, 8x and 2.5x respectively. Combining human and artificial intelligence at scale, under the rigor of mathematical proof, lets researchers design algorithms that today's classical and quantum computers cannot test, shortening the path to practical quantum computation.",
+        "authors": [
+          "Sergey Shirobokov",
+          "Ben Jaderberg",
+          "Katerina Hristova",
+          "George Tsoukalas",
+          "Johannes Bausch",
+          "Eric Wieser",
+          "Francisco J. H. Heras",
+          "Nicholas C. Rubin",
+          "Guang Hao Low",
+          "Sébastien Racanière",
+          "Nenad Tomašev",
+          "Lei M. Zhang",
+          "James Watson",
+          "Tanuj Khattar",
+          "Aws Albarghouthi",
+          "Stavan Jain",
+          "Harun Khan",
+          "Leopoldo Sarra",
+          "Andrew W. Senior",
+          "Michael Broughton",
+          "Hussain Masoom",
+          "Sergio Boixo",
+          "Ryan Babbush",
+          "Swarat Chaudhuri",
+          "Pushmeet Kohli"
+        ],
+        "categories": [
+          "quant-ph",
+          "cs.AI",
+          "cs.PL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.09822v1",
+        "published": "2026-11-06T18:08:06+00:00",
+        "title": "Discovering formally verified quantum programs with AI",
+        "updated": "2026-11-06T18:08:06+00:00",
+        "version_id": "2611.09822v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_agent",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "量子计算机解决科学突破性问题的时间表，依赖于改进的量子算法和更好的硬件。此类算法进展通常通过多年的专家合作实现。在数学和计算机科学领域，大型语言模型通过自动发现循环加速了进展。然而，量子算法只能通过经典计算机在受限或小规模实例上进行评估。在这里，我们展示了在这些范围之外自动发现量子程序，包括在科学应用上的数量级改进。为实现这一目标，我们在 Lean 定理证明器中构建了一个量子程序库，其中大型语言模型代理根据形式化问题规范合成新程序，并验证其正确性和成本。代理团队通过维基共享结果和知识，并在有组织的会议上讨论思想进行协作。我们的结果在此前的基础上有所改进平行搜索的基线（最高可达1.4倍）、量子算术（290倍）、以及与聚变、光化学和药物代谢相关的模拟分别提高了11倍、8倍和2.5倍。在数学证明的严格条件下，将人类与人工智能大规模结合，使研究人员能够设计出现今经典计算机和量子计算机无法测试的算法，从而缩短通向实用量子计算的路径。",
+        "title_zh": "用人工智能发现经过正式验证的量子程序"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Laya answers typed multiple-choice questions in one forward pass by scoring a hidden state at one [MASK] marker per option. We re-engineer the checkpoint (421M parameters; a 2-layer option head with no positional tensor; a documented but unused parallel layout) and test whether the answer depends on where an option is listed. Presenting 951 Qwen-verified questions under every cyclic rotation of their options (or six random permutations for 12 options), the released checkpoint changes its answer for 25.8% [22.9-28.7] of questions (19.7% on the 605 English-language items alone); accuracy with the gold option first versus last differs by 10.1 points, and the flips concentrate where the model's own confidence is low (54% versus 8% across confidence terciles). Fine-tuning with Laya's trainer on 2,818 teacher-verified rows with option shuffling cuts the flip rate to 7.2%; the identical rows without shuffling give 11.4%, so shuffling is responsible for 4.2 points of the improvement. A confidence-weighted vote over orderings gives 69.7% against 69.1% for a single base pass at 4.1x the compute. Labels are LLM-made and the test sets are teacher-filtered. We also fine-tune with the authors' parallel layout on the same rows: flip rate 0.5%.",
+        "authors": [
+          "Mohammed Nayeem Khan",
+          "Logesh L"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.09803v1",
+        "published": "2026-11-06T17:54:01+00:00",
+        "title": "Maya a1: Do the Options Read the Model, or Does Their Position? Order Sensitivity in a Non-Autoregressive Decision Model",
+        "updated": "2026-11-06T17:54:01+00:00",
+        "version_id": "2611.09803v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "Laya 通过在每个选项的一个 [MASK] 标记处对隐藏状态进行评分，在一次前向传递中回答多项选择题。我们重新设计了检查点（421M 参数；一个两层选项头且没有位置张量；一个已记录但未使用的并行布局），并测试答案是否取决于选项的排列位置。将 951 个 Qwen 验证的问题在其选项的每一个循环旋转下（或对于 12 个选项的情况，进行六种随机排列）进行呈现后，已发布的检查点在 25.8% [22.9-28.7] 的问题上改变了答案（仅在 605 个英文项目上为 19.7%）；在金标准选项放在首位与末位时，准确率相差 10.1 个百分点，并且答案翻转主要集中在模型自身置信度低的地方（置信度三分位分别为 54% 对 8%）。使用 Laya 的训练器对 2,818 条教师验证的数据行进行选项打乱的微调将翻转率降低到 7.2%；相同数据行不打乱时为 11.4%，因此打乱对改进贡献了 4.2 个百分点。A基于顺序的置信度加权投票给出的结果是69.7%，而单一基础遍的结果为69.1%，计算量是其4.1倍。标签由大语言模型生成，测试集由教师过滤。我们还在相同行的作者并行布局上进行微调：翻转率为0.5%.",
+        "title_zh": "Maya a1：选项是读取模型，还是它们的位置？非自回归决策模型中的顺序敏感性"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "LLM-based coding agents such as Claude Code are guided by repository instruction files (also called context files or agent configuration files) like AGENTS.md and CLAUDE.md, which are read in every agent session. As any documentation artifact, these files can fall behind the code and become stale (e.g., a test folder moves, but the file still points to the old one). In technical debt terms, such a stale instruction is documentation debt, and its interest is the cost it adds to every later agent session. Evaluations that check only task success can miss this cost, and the stale file can persist. In this study, we ask what leads agents to act on a stale instruction, how it affects their behavior and at what cost, and how they recover. We study three real-world stale instructions from active open-source repositories in depth, each a different kind of guidance: a test command, a code location, and a procedure for adding a component. Agents fix 22 maintenance tasks under three versions of each instruction (left stale, corrected to the current path, and removed), with the code and the task held fixed, and we analyze 732 trajectories of two models at the level of individual tool calls. We find that agents follow stale guidance when it is relevant to their tasks, sometimes even when correct information is available elsewhere. On the stale test command, Claude Sonnet 5.5 needed about two extra tool calls per run, a third more than with the corrected command; in the other cases, we could not detect a difference. Although agents generally recovered from the immediate failures, none repaired the underlying instruction file. Correcting the instructions eliminated operations on obsolete paths, while removing them prevented most. Our findings show that task success alone can hide the costs of documentation debt, highlighting the need to evaluate agent behavior beyond final outcomes.",
+        "authors": [
+          "Tural Mehtiyev",
+          "Biruk Tadesse",
+          "Lawrence Arkoh",
+          "Wesley Assunção"
+        ],
+        "categories": [
+          "cs.SE",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.09802v1",
+        "published": "2026-11-06T17:54:01+00:00",
+        "title": "When Instruction Files Go Stale: Documentation Debt and Hidden Cost in Coding Agents",
+        "updated": "2026-11-06T17:54:01+00:00",
+        "version_id": "2611.09802v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "基于大语言模型（LLM）的编码代理，例如 Claude Code，受到仓库指令文件（也称为上下文文件或代理配置文件）的指导，如 AGENTS.md 和 CLAUDE.md，这些文件会在每次代理会话中被读取。像任何文档工件一样，这些文件可能会落后于代码而变得过时（例如，一个测试文件夹移动了，但文件仍指向旧的路径）。从技术债务的角度来看，这种过时的指令就是文档债务，其利息是它给每次后续代理会话增加的成本。只检查任务成功与否的评估可能会忽略这一成本，而且过时的文件可能会持续存在。在这项研究中，我们探讨导致代理执行过时指令的原因、它如何影响代理行为及其成本，以及代理如何恢复。我们深入研究了三个真实世界中来自活跃开源仓库的过时指令，每个指令都是不同类型的指导：一个测试命令、一个代码位置和添加组件的流程。在三种版本下，代理修复了 22 个维护任务每条指令（保持过时状态、改正到当前路径并删除），在代码和任务保持不变的情况下，我们分析了两个模型在单个工具调用层面的 732 条轨迹。我们发现，当过时的指导与任务相关时，代理会遵循它，有时即使其他地方有正确信息也会如此。在过时的测试命令上，Claude Sonnet 5.5 每次运行大约需要额外两次工具调用，比使用更正后的命令多三分之一；在其他情况下，我们未能检测到差异。虽然代理通常能从即时失败中恢复，但没有一个修复了底层的指令文件。纠正指令消除了对过时路径的操作，而删除指令则防止了大部分操作。我们的研究表明，仅凭任务成功可能掩盖文档债务的成本，这凸显了评估代理行为不仅要看最终结果的必要性。",
+        "title_zh": "当指令文件过时：编码代理中的文档债务与隐藏成本"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Competitive programming problems pose distinctive challenges for Large Language Models, as they demand not only proficient code generation but also advanced algorithmic reasoning. This study presents a Retrieval-Augmented Generation approach specifically designed to enhance the capacity of Large Language Models to address such problems. Our approach integrates an embedding-based retrieval mechanism and a similarity search algorithm to identify analogous problems within a knowledge database, employing a dynamically adjusted threshold to mitigate retrieval noise. We conducted an evaluation using the CodeContests dataset, focusing on the test split problems that exhibit similarity to instances from the training split. The experimental framework considered three conditions: (i) problems provided solely with their original descriptions, (ii) problems supplemented with randomly selected examples from the training split, and (iii) problems augmented with similar examples retrieved through the proposed method. In addition, we incorporated a Min-K membership inference analysis to examine whether the generated code solutions were influenced by potential memorization of training data within the evaluated Large Language Models. This complementary perspective enables a deeper understanding of model behavior by distinguishing genuine generalization through retrieval from implicit recall of pretraining samples. Performance was assessed using both pass rates and the CodeForces Elo rating of the problems. The results provide empirical evidence that similarity-based retrieval substantially enhances Large Language Models performance in competitive programming scenarios, offering an scalable framework for improving code generation in algorithmic problem-solving contexts.",
+        "authors": [
+          "Gabriel Souza Baggio",
+          "Gabriel Machado Lunardi",
+          "Guilherme Medeiros Machado",
+          "Subhankar Maity",
+          "Faiza Belbachir",
+          "José Palazzo Moreira de Oliveira"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.HC"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.09791v1",
+        "published": "2026-11-06T17:46:28+00:00",
+        "title": "Assessing the Impact of Retrieval-Augmented Generation on Algorithmic Problem-Solving",
+        "updated": "2026-11-06T17:46:28+00:00",
+        "version_id": "2611.09791v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_training",
+        "llm_rag",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "竞争性编程问题对大型语言模型提出了独特的挑战，因为它们不仅要求熟练的代码生成能力，还要求高级的算法推理能力。本研究提出了一种检索增强生成（Retrieval-Augmented Generation）方法，专门用于提升大型语言模型解决此类问题的能力。我们的方法集成了基于嵌入的检索机制和相似性搜索算法，以在知识数据库中识别类似问题，并采用动态调整的阈值来减轻检索噪声。我们使用 CodeContests 数据集进行评估，重点关注与训练集实例相似的测试集问题。实验框架考虑了三种情况：(i) 仅提供问题的原始描述，(ii) 问题附加来自训练集的随机选取的示例，以及 (iii) 问题通过检索获得的类似示例进行增强所提出的方法。此外，我们还加入了 Min-K 成员推断分析，以检查生成的代码解决方案是否受到评估的大型语言模型中训练数据潜在记忆的影响。这一补充视角通过区分通过检索实现的真实泛化与对预训练样本的隐式回忆，使对模型行为的理解更加深入。性能评估通过通过率和问题的 CodeForces Elo 评分进行。结果提供了实证证据，表明基于相似性的检索显著提升了大型语言模型在竞赛编程场景中的表现，为在算法问题求解背景下改进代码生成提供了可扩展的框架。",
+        "title_zh": "评估检索增强生成对算法问题解决的影响"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "External lexical resources can help large language models (LLMs) translate texts in low-resource languages and specialized domains, but these resources may conflict with models' prior lexical knowledge. To isolate this conflict, we construct a controlled Mandarin-to-English translation task in which familiar source words are assigned new meanings within and across semantic categories. We treat these prompt-supplied meanings as contextual knowledge (CK) and systematically evaluate the effects of word frequency, sentence context, and prompt framing on the translated outputs. Across nine models, CK reliance is greater for less frequent source words and in sentence contexts that support the supplied meanings. Prompt framing can reduce CK reliance, but seven of nine models favor CK even when explicitly instructed to ignore the supplied meanings. Within model families, larger models are more likely than smaller models to utilize CK in their outputs. Three follow-up experiments further show that modal weakening lowers CK reliance, the effect of repetition depends on prompt layout, and the effect of reasoning varies across models. Overall, our controlled study reveals how CK reliance varies across conditions and models, motivating new methods to detect and evaluate lexical conflicts and guide models' lexical choices in LLM-based translation.",
+        "authors": [
+          "Dongxu Wu",
+          "Sara Court",
+          "Micha Elsner"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.09785v1",
+        "published": "2026-11-06T17:44:14+00:00",
+        "title": "Are These Programmers Ripe Enough to Eat? Evaluating How LLMs Handle Lexical Knowledge Conflicts in Translation",
+        "updated": "2026-11-06T17:44:14+00:00",
+        "version_id": "2611.09785v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "外部词汇资源可以帮助大型语言模型（LLMs）翻译低资源语言和专业领域的文本，但这些资源可能与模型已有的词汇知识发生冲突。为了孤立这种冲突，我们构建了一个受控的中文到英文翻译任务，在该任务中，熟悉的源词在语义类别内和跨语义类别被赋予新的含义。我们将这些提示提供的含义视为上下文知识（CK），并系统地评估词频、句子上下文和提示框架对翻译输出的影响。在九个模型中，对于低频源词以及支持所提供含义的句子上下文，CK的依赖性更高。提示框架可以减少CK依赖，但在九个模型中有七个模型即使被明确指示忽略所提供的含义，也倾向于依赖CK。在模型家族内部，较大的模型比较小的模型更可能在输出中利用CK。三项后续实验进一步表明模态削弱降低了对CK的依赖，重复的效果取决于提示布局，而推理的效果在不同模型之间有所不同。总体而言，我们的受控研究揭示了在不同条件和模型下CK依赖的变化，从而促使开发新的方法来检测和评估词汇冲突，并指导模型在基于大语言模型的翻译中的词汇选择。",
+        "title_zh": "这些程序员成熟到可以食用了吗？评估大型语言模型如何处理翻译中的词汇知识冲突"
+      }
+    }
+  ],
+  "notification_hash": "16f49f25002bf7e1be85ecaf847ef182e53d4f3135727f8d4db7db98f78ae207",
+  "recovery_of": [],
+  "rendered": {
+    "2611.09785": "rendered_inline_translation",
+    "2611.09791": "rendered_inline_translation",
+    "2611.09802": "rendered_inline_translation",
+    "2611.09803": "rendered_inline_translation",
+    "2611.09822": "rendered_inline_translation",
+    "2611.09825": "rendered_inline_translation",
+    "2611.09828": "rendered_inline_translation",
+    "2611.09846": "rendered_inline_translation",
+    "2611.09868": "rendered_inline_translation",
+    "2611.09891": "rendered_inline_translation"
+  },
+  "run_id": "20261109T091357Z-ce5ff694",
+  "schema_version": 1
+}
