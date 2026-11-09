@@ -13,7 +13,7 @@
 | 2026-11-09 | Maya a1: Do the Options Read the Model, or Does Their Position? Order Sensitivity in a Non-Autoregressive Decision Model | Maya a1：选项是读取模型，还是它们的位置？非自回归决策模型中的顺序敏感性 | [arXiv 2611.09803v1](https://arxiv.org/abs/2611.09803v1) |
 | 2026-11-09 | When Instruction Files Go Stale: Documentation Debt and Hidden Cost in Coding Agents | 当指令文件过时：编码代理中的文档债务与隐藏成本 | [arXiv 2611.09802v1](https://arxiv.org/abs/2611.09802v1) |
 | 2026-11-09 | Assessing the Impact of Retrieval-Augmented Generation on Algorithmic Problem-Solving | 评估检索增强生成对算法问题解决的影响 | [arXiv 2611.09791v1](https://arxiv.org/abs/2611.09791v1) |
-| 2026-11-09 | Are These Programmers Ripe Enough to Eat? Evaluating How LLMs Handle Lexical Knowledge Conflicts in Translation | 待翻译 | [arXiv 2611.09785v1](https://arxiv.org/abs/2611.09785v1) |
+| 2026-11-09 | Are These Programmers Ripe Enough to Eat? Evaluating How LLMs Handle Lexical Knowledge Conflicts in Translation | 这些程序员成熟到可以食用了吗？评估大型语言模型如何处理翻译中的词汇知识冲突 | [arXiv 2611.09785v1](https://arxiv.org/abs/2611.09785v1) |
 | 2026-11-08 | PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers? | PCBRouteAgent：LLM 代理距离成为 PCB 布线工程师还有多远​​？（谷歌备用翻译） | [arXiv 2611.08175v1](https://arxiv.org/abs/2611.08175v1) |
 | 2026-11-08 | RouteAlign: Aligning Task Requirements with Model Profiles for LLM Service Selection | RouteAlign：将任务要求与模型配置文件相结合以进行 LLM 服务选择（谷歌备用翻译） | [arXiv 2611.08162v1](https://arxiv.org/abs/2611.08162v1) |
 | 2026-11-08 | Describe Your Facial Expressions by Linking Image Encoders and Large Language Models | 通过链接图像编码器和大型语言模型来描述您的面部表情（谷歌备用翻译） | [arXiv 2611.08138v1](https://arxiv.org/abs/2611.08138v1) |
