@@ -61800,7 +61800,8 @@
     },
     "2611.09803": {
       "attempts": {
-        "selection": 1
+        "selection": 1,
+        "translation": 1
       },
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
       "decision": {
@@ -61856,6 +61857,11 @@
         "llm_core"
       ],
       "stage": "ready",
+      "stage_started": {
+        "at": "2026-11-09T09:13:57.732071+00:00",
+        "run_id": "20261109T091357Z-ce5ff694",
+        "stage": "translation"
+      },
       "versions": [
         "2611.09803v1"
       ]
