@@ -61783,7 +61783,9 @@
       ]
     },
     "2611.09825": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-09T09:13:57.732071+00:00",
@@ -61814,6 +61816,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-09T09:13:57.732071+00:00",
+        "run_id": "20261109T091357Z-ce5ff694",
+        "stage": "selection"
+      },
       "versions": [
         "2611.09825v1"
       ]
