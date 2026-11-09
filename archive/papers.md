@@ -9,7 +9,7 @@
 | 2026-11-09 | Ensemble Methodology for Reference-Free Confidence Estimation in LLM-based Code Summarization | 用于基于LLM代码摘要的无参考置信度估计的集成方法 | [arXiv 2611.09846v1](https://arxiv.org/abs/2611.09846v1) |
 | 2026-11-09 | Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL | 设计有效的基于监控的干预措施以减轻强化学习中的奖励操纵 | [arXiv 2611.09828v1](https://arxiv.org/abs/2611.09828v1) |
 | 2026-11-09 | BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design | BitDecoding-FP4：通过算法-系统协同设计实现原生 FP4 KV 缓存解码 | [arXiv 2611.09825v1](https://arxiv.org/abs/2611.09825v1) |
-| 2026-11-09 | Discovering formally verified quantum programs with AI | 待翻译 | [arXiv 2611.09822v1](https://arxiv.org/abs/2611.09822v1) |
+| 2026-11-09 | Discovering formally verified quantum programs with AI | 用人工智能发现经过正式验证的量子程序 | [arXiv 2611.09822v1](https://arxiv.org/abs/2611.09822v1) |
 | 2026-11-09 | Maya a1: Do the Options Read the Model, or Does Their Position? Order Sensitivity in a Non-Autoregressive Decision Model | 待翻译 | [arXiv 2611.09803v1](https://arxiv.org/abs/2611.09803v1) |
 | 2026-11-09 | When Instruction Files Go Stale: Documentation Debt and Hidden Cost in Coding Agents | 待翻译 | [arXiv 2611.09802v1](https://arxiv.org/abs/2611.09802v1) |
 | 2026-11-09 | Assessing the Impact of Retrieval-Augmented Generation on Algorithmic Problem-Solving | 待翻译 | [arXiv 2611.09791v1](https://arxiv.org/abs/2611.09791v1) |
