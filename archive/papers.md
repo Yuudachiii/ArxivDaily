@@ -10,7 +10,7 @@
 | 2026-11-09 | Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL | 设计有效的基于监控的干预措施以减轻强化学习中的奖励操纵 | [arXiv 2611.09828v1](https://arxiv.org/abs/2611.09828v1) |
 | 2026-11-09 | BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design | BitDecoding-FP4：通过算法-系统协同设计实现原生 FP4 KV 缓存解码 | [arXiv 2611.09825v1](https://arxiv.org/abs/2611.09825v1) |
 | 2026-11-09 | Discovering formally verified quantum programs with AI | 用人工智能发现经过正式验证的量子程序 | [arXiv 2611.09822v1](https://arxiv.org/abs/2611.09822v1) |
-| 2026-11-09 | Maya a1: Do the Options Read the Model, or Does Their Position? Order Sensitivity in a Non-Autoregressive Decision Model | 待翻译 | [arXiv 2611.09803v1](https://arxiv.org/abs/2611.09803v1) |
+| 2026-11-09 | Maya a1: Do the Options Read the Model, or Does Their Position? Order Sensitivity in a Non-Autoregressive Decision Model | Maya a1：选项是读取模型，还是它们的位置？非自回归决策模型中的顺序敏感性 | [arXiv 2611.09803v1](https://arxiv.org/abs/2611.09803v1) |
 | 2026-11-09 | When Instruction Files Go Stale: Documentation Debt and Hidden Cost in Coding Agents | 待翻译 | [arXiv 2611.09802v1](https://arxiv.org/abs/2611.09802v1) |
 | 2026-11-09 | Assessing the Impact of Retrieval-Augmented Generation on Algorithmic Problem-Solving | 待翻译 | [arXiv 2611.09791v1](https://arxiv.org/abs/2611.09791v1) |
 | 2026-11-09 | Are These Programmers Ripe Enough to Eat? Evaluating How LLMs Handle Lexical Knowledge Conflicts in Translation | 待翻译 | [arXiv 2611.09785v1](https://arxiv.org/abs/2611.09785v1) |
