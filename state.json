@@ -64555,11 +64555,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-09T09:13:54.846293+00:00",
-        "run_id": "20261109T091354Z-b8f5f637",
-        "stage": "translation"
+      "title_zh": "CPU-ARC：用于 CPU 推理重用的代理推理缓存",
+      "translation": {
+        "abstract_zh": "大型语言模型一直在重新发明轮子。他们将解决任务与执行解决方案混为一谈，这迫使他们从头开始解决每个问题。我们表明，一旦推理完成一项任务，就可以非常有效地将其解决方案应用于新的问题实例，并且几乎不需要语言模型的参与。我们引入了代理推理缓存，这是一种根据 LLM 推理轨迹构建健壮的 CPU 可执行代理推理缓存 (ARC) 的方法。 ARC 在一系列困难的数学和科学任务中表现出与前沿 LLM 相当的性能，完全可解释、可持续训练、对输入扰动具有鲁棒性，并且调用成本比源模型便宜 16-291 倍。",
+        "title_zh": "CPU-ARC：用于 CPU 推理重用的代理推理缓存"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.09891v1"
       ]
