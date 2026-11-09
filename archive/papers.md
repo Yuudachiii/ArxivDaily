@@ -12,7 +12,7 @@
 | 2026-11-09 | Discovering formally verified quantum programs with AI | 利用人工智能发现经过正式验证的量子程序 | [arXiv 2611.09822v1](https://arxiv.org/abs/2611.09822v1) |
 | 2026-11-09 | Maya a1: Do the Options Read the Model, or Does Their Position? Order Sensitivity in a Non-Autoregressive Decision Model | Maya a1：选项读取模型还是其位置？非自回归决策模型中的阶次敏感性 | [arXiv 2611.09803v1](https://arxiv.org/abs/2611.09803v1) |
 | 2026-11-09 | When Instruction Files Go Stale: Documentation Debt and Hidden Cost in Coding Agents | 当指令文件过时：编码代理中的文档债务和隐藏成本 | [arXiv 2611.09802v1](https://arxiv.org/abs/2611.09802v1) |
-| 2026-11-09 | Assessing the Impact of Retrieval-Augmented Generation on Algorithmic Problem-Solving | 待翻译 | [arXiv 2611.09791v1](https://arxiv.org/abs/2611.09791v1) |
+| 2026-11-09 | Assessing the Impact of Retrieval-Augmented Generation on Algorithmic Problem-Solving | 评估检索增强生成对算法问题解决的影响 | [arXiv 2611.09791v1](https://arxiv.org/abs/2611.09791v1) |
 | 2026-11-09 | Are These Programmers Ripe Enough to Eat? Evaluating How LLMs Handle Lexical Knowledge Conflicts in Translation | 待翻译 | [arXiv 2611.09785v1](https://arxiv.org/abs/2611.09785v1) |
 | 2026-11-08 | PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers? | PCBRouteAgent：LLM 代理距离成为 PCB 布线工程师还有多远​​？ | [arXiv 2611.08175v1](https://arxiv.org/abs/2611.08175v1) |
 | 2026-11-08 | RouteAlign: Aligning Task Requirements with Model Profiles for LLM Service Selection | RouteAlign：将任务要求与模型配置文件相结合以进行 LLM 服务选择 | [arXiv 2611.08162v1](https://arxiv.org/abs/2611.08162v1) |
