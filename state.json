@@ -64421,11 +64421,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-09T09:13:54.846293+00:00",
-        "run_id": "20261109T091354Z-b8f5f637",
-        "stage": "translation"
+      "title_zh": "基于 LLM 的代码摘要中无参考置信度估计的集成方法",
+      "translation": {
+        "abstract_zh": "本文描述了一种方法和用例来估计 LLM 生成的 COBOL 摘要的正确性，而无需访问人类撰写的参考文献。核心直觉是，模型间的语义一致性可以提供有关真相的信息，并且作为法官的法学硕士可以提供比传统的基于字符串或嵌入的指标更高保真度的成对评估。我们通过（i）从不同模型生成受控摘要来操作这种直觉； (ii) 法学硕士评估器，比较成对的摘要并发出结构化的判断； (iii) 校准的聚合规则，结合支持性证据，同时仅惩罚已证实的矛盾。",
+        "title_zh": "基于 LLM 的代码摘要中无参考置信度估计的集成方法"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.09846v1"
       ]
