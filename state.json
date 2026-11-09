@@ -63901,6 +63901,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-09T09:13:54.846293+00:00",
+      "intended_tier": "translation",
       "model": "rules",
       "paper": {
         "abstract": "External lexical resources can help large language models (LLMs) translate texts in low-resource languages and specialized domains, but these resources may conflict with models' prior lexical knowledge. To isolate this conflict, we construct a controlled Mandarin-to-English translation task in which familiar source words are assigned new meanings within and across semantic categories. We treat these prompt-supplied meanings as contextual knowledge (CK) and systematically evaluate the effects of word frequency, sentence context, and prompt framing on the translated outputs. Across nine models, CK reliance is greater for less frequent source words and in sentence contexts that support the supplied meanings. Prompt framing can reduce CK reliance, but seven of nine models favor CK even when explicitly instructed to ignore the supplied meanings. Within model families, larger models are more likely than smaller models to utilize CK in their outputs. Three follow-up experiments further show that modal weakening lowers CK reliance, the effect of repetition depends on prompt layout, and the effect of reasoning varies across models. Overall, our controlled study reveals how CK reliance varies across conditions and models, motivating new methods to detect and evaluate lexical conflicts and guide models' lexical choices in LLM-based translation.",
@@ -63919,12 +63920,24 @@
         "updated": "2026-11-06T17:44:14+00:00",
         "version_id": "2611.09785v1"
       },
+      "presentation_modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "presentation_rule_hits": [
+        "llm_reasoning",
+        "llm_core"
+      ],
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_core"
       ],
-      "stage": "selected",
+      "stage": "ready",
       "versions": [
         "2611.09785v1"
       ]
