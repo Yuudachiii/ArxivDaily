@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-09 | CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse | 待翻译 | [arXiv 2611.09891v1](https://arxiv.org/abs/2611.09891v1) |
+| 2026-11-09 | CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs | 待翻译 | [arXiv 2611.09868v1](https://arxiv.org/abs/2611.09868v1) |
+| 2026-11-09 | Ensemble Methodology for Reference-Free Confidence Estimation in LLM-based Code Summarization | 待翻译 | [arXiv 2611.09846v1](https://arxiv.org/abs/2611.09846v1) |
+| 2026-11-09 | Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL | 待翻译 | [arXiv 2611.09828v1](https://arxiv.org/abs/2611.09828v1) |
+| 2026-11-09 | BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design | 待翻译 | [arXiv 2611.09825v1](https://arxiv.org/abs/2611.09825v1) |
+| 2026-11-09 | Discovering formally verified quantum programs with AI | 待翻译 | [arXiv 2611.09822v1](https://arxiv.org/abs/2611.09822v1) |
+| 2026-11-09 | Maya a1: Do the Options Read the Model, or Does Their Position? Order Sensitivity in a Non-Autoregressive Decision Model | 待翻译 | [arXiv 2611.09803v1](https://arxiv.org/abs/2611.09803v1) |
+| 2026-11-09 | When Instruction Files Go Stale: Documentation Debt and Hidden Cost in Coding Agents | 待翻译 | [arXiv 2611.09802v1](https://arxiv.org/abs/2611.09802v1) |
+| 2026-11-09 | Assessing the Impact of Retrieval-Augmented Generation on Algorithmic Problem-Solving | 待翻译 | [arXiv 2611.09791v1](https://arxiv.org/abs/2611.09791v1) |
+| 2026-11-09 | Are These Programmers Ripe Enough to Eat? Evaluating How LLMs Handle Lexical Knowledge Conflicts in Translation | 待翻译 | [arXiv 2611.09785v1](https://arxiv.org/abs/2611.09785v1) |
 | 2026-11-08 | PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers? | PCBRouteAgent：LLM 代理距离成为 PCB 布线工程师还有多远​​？ | [arXiv 2611.08175v1](https://arxiv.org/abs/2611.08175v1) |
 | 2026-11-08 | RouteAlign: Aligning Task Requirements with Model Profiles for LLM Service Selection | RouteAlign：将任务要求与模型配置文件相结合以进行 LLM 服务选择 | [arXiv 2611.08162v1](https://arxiv.org/abs/2611.08162v1) |
 | 2026-11-08 | Describe Your Facial Expressions by Linking Image Encoders and Large Language Models | 通过链接图像编码器和大型语言模型来描述您的面部表情 | [arXiv 2611.08138v1](https://arxiv.org/abs/2611.08138v1) |
