@@ -4,7 +4,7 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
-| 2026-11-09 | CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse | 待翻译 | [arXiv 2611.09891v1](https://arxiv.org/abs/2611.09891v1) |
+| 2026-11-09 | CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse | CPU-ARC：用于 CPU 上推理重用的代理推理缓存 | [arXiv 2611.09891v1](https://arxiv.org/abs/2611.09891v1) |
 | 2026-11-09 | CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs | 待翻译 | [arXiv 2611.09868v1](https://arxiv.org/abs/2611.09868v1) |
 | 2026-11-09 | Ensemble Methodology for Reference-Free Confidence Estimation in LLM-based Code Summarization | 待翻译 | [arXiv 2611.09846v1](https://arxiv.org/abs/2611.09846v1) |
 | 2026-11-09 | Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL | 待翻译 | [arXiv 2611.09828v1](https://arxiv.org/abs/2611.09828v1) |

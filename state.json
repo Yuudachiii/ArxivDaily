@@ -62273,11 +62273,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-09T09:13:57.732071+00:00",
-        "run_id": "20261109T091357Z-ce5ff694",
-        "stage": "translation"
+      "title_zh": "CPU-ARC：用于 CPU 上推理重用的代理推理缓存",
+      "translation": {
+        "abstract_zh": "大型语言模型总是在不断地重复发明轮子。它们把任务解决与解决方案的执行混为一谈，这迫使它们每次都必须从头解决每个问题。我们展示了，一旦一个任务已经经过推理，其解决方案应用于新的问题实例可以非常高效，并且几乎不需要语言模型的参与。我们引入了代理推理缓存（agentic reasoning caching），这是一种从LLM推理轨迹构建稳健的CPU可执行代理推理缓存（ARCs）的方法。ARCs在一系列困难的数学和科学任务中表现与前沿LLM相当，完全可解释，可持续训练，对输入扰动具有鲁棒性，而且调用成本比源模型低16到291倍。",
+        "title_zh": "CPU-ARC：用于 CPU 上推理重用的代理推理缓存"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.09891v1"
       ]
