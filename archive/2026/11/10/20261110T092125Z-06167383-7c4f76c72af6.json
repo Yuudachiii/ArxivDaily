@@ -1,0 +1,468 @@
+{
+  "alert": false,
+  "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-google/archive/2026/11/10/20261110T092125Z-06167383-7c4f76c72af6.md",
+  "chain_roots": [
+    "20261110T092125Z-06167383-7c4f76c72af6"
+  ],
+  "content_hash": "7c4f76c72af6fbd8d19efd02339180aca7f31329b056ec7a09cedb3057ea6234",
+  "day": "2026-11-10",
+  "digest_id": "20261110T092125Z-06167383-7c4f76c72af6",
+  "empty": false,
+  "items": [
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Multimodal large language models (MLLMs) integrate information across modalities, but become unreliable when those modalities disagree. Under conflicting inputs, MLLMs may favor modalities that are not the most reliable for the task, thus motivating inference-time control of modality arbitration. We identify a small set of attention heads, termed arbitration heads, that causally influence whether predictions follow visual or textual evidence. Building on this, we introduce a lightweight, training-free intervention that biases these heads toward a designated trusted modality at inference time. The identified heads are stable across calibration set sizes and generalize across settings, and steering them enables effective bidirectional control of modality reliance across diverse benchmarks. Our findings identify an effective control mechanism to align MLLM predictions with task-specified modality priorities. The code is available at https://github.com/zhaoyingpan/modality-arbitration.",
+        "authors": [
+          "Zhaoying Pan",
+          "Shenyu Lu",
+          "Jun Hui Wong",
+          "Junyi Chai",
+          "Xiaoqian Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12883v1",
+        "published": "2026-11-09T18:59:36+00:00",
+        "title": "Beyond Modality Preference: Controlling Multimodal Arbitration under Modality Conflict in MLLMs",
+        "updated": "2026-11-09T18:59:36+00:00",
+        "version_id": "2611.12883v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_multimodal",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "多模态大语言模型 (MLLM) 集成了跨模态的信息，但当这些模态不一致时就会变得不可靠。在相互冲突的输入下，MLLM 可能会偏向于对任务来说不是最可靠的模态，从而激发模态仲裁的推理时间控制。我们确定了一小部分注意力头，称为仲裁头，它们会因果影响预测是否遵循视觉证据或文本证据。在此基础上，我们引入了一种轻量级、免训练的干预措施，使这些头在推理时偏向指定的可信模式。所识别的头部在校准集大小上是稳定的，并且在设置上是通用的，并且引导它们可以跨不同基准对模态依赖进行有效的双向控制。我们的研究结果确定了一种有效的控制机制，使 MLLM 预测与任务指定的模态优先级保持一致。代码可在 https://github.com/zhaoyingpan/modality- Arbitration 获取。",
+        "title_zh": "超越模态偏好：在 MLLM 模态冲突下控制多模态仲裁"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Large language model agents are increasingly deployed as multi-agent systems rather than as a standalone model operating within a single context. Recent agent harnesses allow the model to instantiate worker agents and to author the executable workflow that coordinates them, shifting the design of system structure from developers to the model at run time. The quality of this organization therefore constitutes a distinct capability, yet existing benchmarks either measure end-to-end task completion or evaluate coordination under structures specified in advance. We formalize this capability as workflow orchestration and introduce WorkflowArena, a benchmark of 145 long-horizon tasks spanning 8 professional domains, from software engineering and formal mathematics to legal analysis and 3D production. Each task specifies an initial workspace and an integrated deliverable composed of interdependent components, which is assessed by a hidden verifier. Agents determine autonomously whether and how to delegate, and all delegation is recorded, enabling joint evaluation of deliverable quality and the organization of the underlying work. Experiments with nine models show that no single configuration performs best across all domains and that systems exhibit distinct delegation strategies: at high effort, Claude models in Claude Code invoke workflows less frequently but with larger worker groups, whereas GPT models in Codex delegate more frequently in smaller units. When the executing model is held fixed on a challenging subset of tasks, workflows authored by Claude Opus 5.5 substantially improve weaker executors, indicating that workflow organization is itself a measurable determinant of task performance.",
+        "authors": [
+          "Zheng Jiang",
+          "Fang Niu",
+          "Bo Peng",
+          "Houde Qian",
+          "Wenyi Li",
+          "Deyao Hong",
+          "Mingju Gao",
+          "Yizhe Chi",
+          "Youjie Zheng",
+          "Kaisen Yang",
+          "Calvin Xiao",
+          "Lifeng Sun",
+          "Huan-ang Gao"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.SE"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12856v1",
+        "published": "2026-11-09T18:45:28+00:00",
+        "title": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
+        "updated": "2026-11-09T18:45:28+00:00",
+        "version_id": "2611.12856v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "大型语言模型代理越来越多地部署为多代理系统，而不是作为在单个上下文中运行的独立模型。最近的代理工具允许模型实例化工作代理并编写协调它们的可执行工作流，从而在运行时将系统结构的设计从开发人员转移到模型。因此，该组织的质量构成了一种独特的能力，但现有的基准要么衡量端到端任务的完成情况，要么评估预先指定的结构下的协调。我们将这种功能正式化为工作流编排，并推出了 WorkflowArena，这是涵盖 8 个专业领域（从软件工程和形式数学到法律分析和 3D 制作）的 145 项长期任务的基准。每个任务指定一个初始工作空间和一个由相互依赖的组件组成的集成可交付成果，由隐藏的验证者进行评估。代理自主决定是否以及如何委派，并且所有委派都会被记录，从而能够对可交付成果的质量和基础工作的组织进行联合评估。对九个模型的实验表明，没有任何一种配置能够在所有领域中表现最佳，并且系统表现出不同的委派策略：在高度努力下，Claude Code 中的 Claude 模型调用工作流的频率较低，但工作组较大，而 Codex 中的 GPT 模型在较小的单元中更频繁地委派。当执行模型固定在具有挑战性的任务子集上时，Claude Opus 5.5 编写的工作流显着改善了较弱的执行器，这表明工作流组织本身就是任务性能的可衡量决定因素。",
+        "title_zh": "WorkflowArena：基于 LLM 的多代理系统中可执行工作流编排的基准测试"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "As large language models become more capable agents, they can exhibit deceptive behaviors, cheating human for higher rewards while appearing helpful. We attribute this failure to evaluation-side partial observability, where models are evaluated mainly from final outcome, without checking the faithfulness of underlying reasoning, tool use, and environmental effects. Prior mitigations address this partial observability by predefined evaluator latent belief space or one-shot monitoring, which do not extend to free-form language space and vulnerable to stronger deceptions that evade simple monitoring. In this work, we formulate deception mitigation as an Evaluation-Side Partially Observable Extensive Form Game (e-PoG), a max-min framework in which an agent maximizes reward, a monitor minimizes the agent's payoff by exposing deception from the full interaction trajectory, and a fixed verifier validates the monitor's claims and converts them into penalties. We define the solution concept as a Subgame-Perfect Oversight Equilibrium (SPOE) between agent and monitor, and prove its existence in finite games. With a perfect verifier, every SPOE is faithful; with an imperfect verifier, the guarantee persists if verifier errors do not reverse the ranking of monitor actions. To achieve faithful SPOE, we derive a two-timescale policy gradient algorithm and enhance the pipeline empirically with NLI verification and deterministic checks. Experiments with Gemma3-4B-IT and Qwen3-4B/8B on Agentic Role-Playing, SearchQA, and WebShop show that e-PoG mitigates multiple emergent deception modes, outperforming the strongest baselines by 26.0% in deception mitigation and by up to 39.8% in task success. These gains persist under weak-to-strong supervision. Code is available at https://github.com/Toyoid/deceptive-agent.",
+        "authors": [
+          "Hanxiao Li",
+          "Shutong Liu",
+          "Yongjia Ma",
+          "Jiaming Ji",
+          "Juntao Dai",
+          "Shuning Zhang",
+          "Kejian Shi",
+          "Kai Chen",
+          "Pu Feng",
+          "Yuqing Ma",
+          "Qi Dou",
+          "Yaodong Yang",
+          "Xianglong Liu",
+          "Simin Li"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12835v1",
+        "published": "2026-11-09T18:33:13+00:00",
+        "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
+        "updated": "2026-11-09T18:33:13+00:00",
+        "version_id": "2611.12835v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "随着大型语言模型变得更有能力，它们可以表现出欺骗行为，欺骗人类以获得更高的奖励，同时看起来很有帮助。我们将这种失败归因于评估方的部分可观察性，其中模型主要根据最终结果进行评估，而不检查潜在推理、工具使用和环境影响的真实性。先前的缓解措施通过预定义的评估者潜在信念空间或一次性监控来解决这种部分可观察性问题，这些方法不会扩展到自由形式的语言空间，并且容易受到逃避简单监控的更强欺骗的影响。在这项工作中，我们将欺骗缓解制定为评估方部分可观察的扩展形式博弈（e-PoG），这是一个最大最小框架，其中代理最大化奖励，监视器通过从完整交互轨迹中暴露欺骗来最小化代理的收益，以及固定验证器验证监视器的声明并将其转换为惩罚。我们将解决方案的概念定义为代理和监视器之间的子博弈完美监督均衡（SPOE），并证明了其在有限博弈中的存在性。拥有完善的验证者，每一个SPOE都是忠实的；对于不完美的验证者，如果验证者错误不会逆转监控操作的排名，则保证仍然存在。为了实现忠实的 SPOE，我们推导了一种双时间尺度的策略梯度算法，并通过 NLI 验证和确定性检查凭经验增强了管道。使用 Gemma3-4B-IT 和 Qwen3-4B/8B 在代理角色扮演、SearchQA 和 WebShop 上进行的实验表明，e-PoG 可以缓解多种紧急欺骗模式，在欺骗缓解方面优于最强基线 26.0%，在任务成功方面优于最强基线 39.8%。这些收益在从弱到强的监管下持续存在。代码可在 https://github.com/Toyoid/deceptive-agent 获取。",
+        "title_zh": "通过评估端部分可观察游戏减轻代理欺骗"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "The push towards circularity and Re-X principles presents a challenge to SMEs, particularly due to increasing product complexity that impedes the adoption of disassembly automation. This paper introduces and compares two frameworks for extracting disassembly instructions from unstructured information sources, such as disassembly manuals. Our goal is to transform natural language text into a structured, curated and machine-readable format. We implemented and tested a rule-based Natural Language Processing (NLP) framework against a generative AI framework leveraging LLMs. The performance of both approaches was compared using real-world disassembly manuals. This work provides the necessary data foundation for developing and automating future disassembly processes.",
+        "authors": [
+          "Tim Schnieders",
+          "Tareq Maximilian Gabriel Ahrari",
+          "Oliver Petrovic",
+          "Christian Brecher"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12816v1",
+        "published": "2026-11-09T18:19:57+00:00",
+        "title": "Automated Knowledge Acquisition Pipeline for Disassembly Instructions: A Comparison of NLP and Generative AI Frameworks",
+        "updated": "2026-11-09T18:19:57+00:00",
+        "version_id": "2611.12816v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "循环性和 Re-X 原则的推动给中小企业带来了挑战，特别是由于产品复杂性的增加阻碍了拆卸自动化的采用。本文介绍并比较了从非结构化信息源（例如反汇编手册）中提取反汇编指令的两种框架。我们的目标是将自然语言文本转换为结构化、精心策划和机器可读的格式。我们针对利用法学硕士的生成式人工智能框架实施并测试了基于规则的自然语言处理 (NLP) 框架。使用现实世界的拆卸手册来比较这两种方法的性能。这项工作为开发和自动化未来的拆卸流程提供了必要的数据基础。",
+        "title_zh": "用于反汇编指令的自动知识获取管道：NLP 和生成式 AI 框架的比较"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Users are asking language models mental health questions and are receiving answers. We audited what 41 language models recommend to users when the same clinical information reaches them from three footings: a clinician describing a patient, a caregiver describing a loved one, or a person describing themselves. Across 19 case vignettes and five questions, we collected 35,055 free-text responses, extracted every intervention named with a validated judge, and had 29 models rate the full option lists on a seven-point Likert scale for the same cases. Models largely recommend what they rate well, with recommendation behavior differing by footing, and many models offering clinicians a consultation-style response and lay users hedged, simplified advice. When asked about recommendations for a specific intervention type, models more often named options they themselves rated below zero as initial choices, usually with conditions attached. We will release the instrument, code, and full corpus on publication as a living audit.",
+        "authors": [
+          "Matthew Flathers",
+          "Jill Noorily",
+          "Phuong Anh Nguyen",
+          "Mark Kalinich",
+          "Mina Fallah",
+          "Victoria Lisowski",
+          "Christine Shi",
+          "Rebekah M. Bodner",
+          "Anna Simms",
+          "Mihika Hete",
+          "Meiting Chen",
+          "Samuel K. Powell",
+          "Tatum Williamson",
+          "Laura Ospina-Pinillos",
+          "Haruka Notsu",
+          "Julian Herpertz",
+          "John Torous"
+        ],
+        "categories": [
+          "cs.CY",
+          "cs.CL",
+          "cs.HC"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12814v1",
+        "published": "2026-11-09T18:19:30+00:00",
+        "title": "Curbside Chatbots: Auditing the Mental Health Interventions Large Language Models Recommend to Clinicians, Caregivers, and Patients",
+        "updated": "2026-11-09T18:19:30+00:00",
+        "version_id": "2611.12814v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "用户向语言模型询问心理健康问题并收到答案。当相同的临床信息从三个角度到达用户时，我们审核了 41 种语言模型向用户推荐的内容：临床医生描述患者、护理人员描述亲人或个人描述自己。在 19 个案例片段和 5 个问题中，我们收集了 35,055 个自由文本回复，提取了由经过验证的法官命名的每项干预措施，并让 29 个模型对相同案例的完整选项列表进行了七点李克特量表的评分。模型主要推荐他们认为好的东西，推荐行为因基础而异，许多模型为临床医生提供咨询式的响应，并为非专业用户提供对冲、简化的建议。当被问及针对特定干预类型的建议时，模型更常将他们自己评分低于零的选项命名为初始选择，通常附加条件。我们将在发布时发布工具、代码和完整语料库作为实时审计。",
+        "title_zh": "路边聊天机器人：审核向临床医生、护理人员和患者推荐的心理健康干预措施"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Reinforcement learning is now the mainstream paradigm for training LLMs on agentic tasks, yet standard practice keeps only the best-validation checkpoint and discards the rest. We show that this is lossy: in GRPO training of LLM agents, the best-validation checkpoint fails on problems that earlier checkpoints from the same run had already solved, and the union of problems solved across checkpoints far exceeds any single one. The discarded checkpoints thus form a teacher pool obtained at no additional training cost, which on-policy distillation (OPD) can mine to recover the lost coverage. Mining this pool raises two challenges: i) which checkpoint to distill from, as no checkpoint dominates the others and complementarity to the student is problem-specific; ii) where to trust it, as even a well-chosen teacher is only locally superior, so indiscriminate distillation overwrites behavior the student has already mastered. We propose Agentic-OPD, which treats the best-validation checkpoint as the student and all saved checkpoints as frozen teacher candidates, using the student's evolving capability gaps to guide both teacher selection and supervision filtering: the HCN policy (Highest Coverage Next) dynamically selects teachers by weighted coverage of the student's unsolved problems, while the LAD module (Locality-Aware Distillation) confines transfer to failed student rollouts on problems where the teacher performs better. Across five agentic task domains and 24 benchmarks and task subsets, Agentic-OPD improves over its initialization checkpoint by up to 7.4 points, with a 4B student surpassing the latest frontier models GPT-5.6 and DeepSeek-V4.1 on deep search. Agentic-OPD recasts a finished RL run as a reusable pool of policies and establishes post-RL capability recovery as a stage orthogonal to improvements in the RL algorithm itself.",
+        "authors": [
+          "Tingcheng Bian",
+          "Kangye Gong",
+          "Jinchang Luo",
+          "MingQuan Cheng",
+          "Feiran Liu",
+          "Ni Li",
+          "Xiaoling Xia",
+          "Haiwei Wang",
+          "Hui Li"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12799v1",
+        "published": "2026-11-09T18:07:42+00:00",
+        "title": "Agentic-OPD: Recovering Forgotten Agent Capabilities via On-Policy Distillation for Agentic Tasks",
+        "updated": "2026-11-09T18:07:42+00:00",
+        "version_id": "2611.12799v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_training",
+        "llm_agent",
+        "llm_efficiency",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "强化学习现在是在代理任务上培训法学硕士的主流范例，但标准实践只保留最佳验证检查点并丢弃其余的。我们证明这是有损的：在 LLM 代理的 GRPO 训练中，最佳验证检查点在同一运行的早期检查点已经解决的问题上失败，并且跨检查点解决的问题的联合远远超过任何单个问题。因此，丢弃的检查点形成了一个无需额外培训成本即可获得的教师池，策略上蒸馏（OPD）可以挖掘该教师池以恢复丢失的覆盖范围。挖掘这个池提出了两个挑战：i）从哪个检查点中提取，因为没有一个检查点支配其他检查点，并且对学生的互补性是针对特定问题的； ii）在哪里信任它，因为即使是精心挑选的老师也只是局部优越，所以不加区别的蒸馏会覆盖学生已经掌握的行为。我们提出 Agentic-OPD，它将最佳验证检查点视为学生，将所有保存的检查点视为冻结的教师候选人，利用学生不断发展的能力差距来指导教师选择和监督过滤：HCN 策略（最高覆盖率其次）通过学生未解决问题的加权覆盖率动态选择教师，而 LAD 模块（局部感知蒸馏）将转移限制为失败的学生在教师表现更好的问题上进行展示。在五个代理任务域和 24 个基准测试和任务子集上，Agentic-OPD 比其初始化检查点提高了高达 7.4 个点，其中 4B 学生在深度搜索上超越了最新的前沿模型 GPT-5.6 和 DeepSeek-V4.1。 Agentic-OPD 将完成的 RL 运行重新构建为可重用的策略池，并将 RL 后的能力恢复建立为与 RL 算法本身的改进正交的阶段。",
+        "title_zh": "Agentic-OPD：通过代理任务的策略蒸馏来恢复被遗忘的代理功能"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Developing effective machine learning models requires complex manual tuning, while current Automated Machine Learning (AutoML) frameworks remain domain-specific and isolate model architecture, training hyperparameter, and data ratio optimization. Here, we bridge this gap by proposing a universal, large language model (LLM)-based AutoML framework that jointly optimizes these configurations for the first time without the need for task-specific fine-tuning. We propose NCode, a unified numerical encoding scheme that translates diverse AutoML design choices into universal discrete sequences and effectively reframes the optimization process as a unified ranking task. Trained solely on optimization trajectories derived from a limited, single-domain vision task, the proposed LLM-based searcher demonstrates impressive cross-task, cross-modality and joint search-space optimization generalizability, achieving state-of-the-art performance across image classification, image segmentation, speaker verification and text-to-image benchmarks. Crucially, it exhibits superior scalability in the large-scale training and joint optimization of a billion-parameter Diffusion Transformer, requiring 896 GPU-days and attaining a state-of-the-art GenEval score of 0.91. By leveraging reinforcement learning to instill Chain-of-Thought reasoning, we provide a systematic way to interpret the LLM-based searcher's internal decision-making mechanisms, revealing its optimization strategy shifted from the early-stage diversity-driven exploration to the late-stage anchor exploitation. Our proposed framework provides a scalable, generalizable, and interpretable pathway toward general-purpose open-world machine learning optimization.",
+        "authors": [
+          "Yuxuan Hu",
+          "Jihao Liu",
+          "Weikang Shi",
+          "Xijie Huang",
+          "Linda Wei",
+          "Mingjie Zhan",
+          "Aojun Zhou",
+          "Rui Liu",
+          "Hongsheng Li"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12791v1",
+        "published": "2026-11-09T17:58:38+00:00",
+        "title": "Large Language Models as a Universal Searcher for Open-World Automated Machine Learning",
+        "updated": "2026-11-09T17:58:38+00:00",
+        "version_id": "2611.12791v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_training",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "开发有效的机器学习模型需要复杂的手动调整，而当前的自动机器学习 (AutoML) 框架仍然是特定于领域的，并且隔离模型架构、训练超参数和数据比率优化。在这里，我们通过提出一种基于通用大语言模型 (LLM) 的 AutoML 框架来弥补这一差距，该框架首次联合优化这些配置，而无需针对特定任务进行微调。我们提出了 NCode，一种统一的数字编码方案，它将不同的 AutoML 设计选择转换为通用的离散序列，并有效地将优化过程重新构建为统一的排名任务。所提出的基于 LLM 的搜索器仅根据来自有限的单域视觉任务的优化轨迹进行训练，展示了令人印象深刻的跨任务、跨模态和联合搜索空间优化的通用性，在图像分类、图像分割、说话人验证和文本到图像基准方面实现了最先进的性能。至关重要的是，它在十亿参数 Diffusion Transformer 的大规模训练和联合优化中表现出了卓越的可扩展性，需要 896 个 GPU 天，并获得了 0.91 的最先进 GenEval 分数。通过利用强化学习灌输思想链推理，我们提供了一种系统的方法来解释基于LLM的搜索者的内部决策机制，揭示其优化策略从早期多样性驱动探索转向后期锚定开发。我们提出的框架为通用开放世界机器学习优化提供了可扩展、可概括和可解释的途径。",
+        "title_zh": "大型语言模型作为开放世界自动化机器学习的通用搜索器"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Log-based anomaly detection is increasingly dominated by large pretrained models, from BERT-scale encoders to 8B-parameter language models, which require GPUs at inference time and are difficult to deploy on the monitoring nodes where logs are produced. We present LogCDM, a compact detector that scores each log session using three complementary signals: the next-event surprise of a small causal Transformer, the distance between a graph-attention embedding of the session's own transition graph and that of a normal reference graph, and a transition-drift statistic that we show is exactly a frequency-weighted chi-squared divergence between transition kernels. The divergence view yields an asymptotic null distribution, a length-standardized score, and a per-edge decomposition that explains each alarm. A sigmoid gate fuses the three signals; under a shared-covariance Gaussian model, this gate is the Bayes posterior, and its learned weights indicate which signal each dataset relies on. With 8.1-8.8M parameters and no GPU required at inference, LogCDM reaches F1 scores of 0.984 on HDFS, 0.870 on chronologically split BGL, and 0.850 on Thunderbird, within 0.013-0.12 of an 8.1B-parameter LLM detector evaluated under the same protocol and above all compact baselines on BGL. It scores a session in 5.5-10.5 ms on a CPU. Ablations show that the structural signals add 0.025-0.030 F1 on BGL and Thunderbird but almost nothing on HDFS, consistent with the learned fusion weights.",
+        "authors": [
+          "Suryansh Talukdar",
+          "Taha Sarwat",
+          "Jin Soung Yoo"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12775v1",
+        "published": "2026-11-09T17:48:31+00:00",
+        "title": "LogCDM: Interpretable Log Anomaly Detection via Behavioral Graph Drift and Adaptive Signal Fusion",
+        "updated": "2026-11-09T17:48:31+00:00",
+        "version_id": "2611.12775v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "基于日志的异常检测越来越以大型预训练模型为主，从 BERT 规模的编码器到 8B 参数语言模型，这些模型在推理时需要 GPU，并且很难部署在产生日志的监控节点上。我们提出了 LogCDM，一个紧凑的检测器，它使用三个互补信号对每个日志会话进行评分：小型因果 Transformer 的下一个事件惊喜、会话自身转换图的图形注意嵌入与正常参考图的图形注意嵌入之间的距离，以及我们显示的转换漂移统计量正是转换内核之间的频率加权卡方散度。散度视图产生渐进零分布、长度标准化分数以及解释每个警报的每边分解。一个 sigmoid 门融合了三个信号；在共享协方差高斯模型下，该门是贝叶斯后验，其学习权重指示每个数据集依赖哪个信号。凭借 8.1-8.8M 参数且推理时无需 GPU，LogCDM 在 HDFS 上达到 F1 分数 0.984，在按时间顺序分割的 BGL 上达到 0.870，在 Thunderbird 上达到 0.850，与在相同协议下评估的 8.1B 参数 LLM 检测器的 0.013-0.12 之内，并且高于 BGL 上的所有紧凑基线。它在 CPU 上的会话得分为 5.5-10.5 毫秒。消融表明，结构信号在 BGL 和 Thunderbird 上增加了 0.025-0.030 F1，但在 HDFS 上几乎没有增加，这与学习到的融合权重一致。",
+        "title_zh": "LogCDM：通过行为图漂移和自适应信号融合进行可解释的日志异常检测"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Preference optimization has become a central approach for aligning large language models with human values, but its effectiveness depends heavily on the quality of preference annotations. In practice, preference data is often noisy due to annotation errors and ambiguity. Existing robust preference optimization methods primarily operate at the sequence level, implicitly treating entire responses as uniformly correct or incorrect. However, rejected responses may still contain informative reasoning steps, while preferred responses can include subtle errors. In this work, we propose \\textbf{P}reference \\textbf{O}ptimization via \\textbf{R}obust \\textbf{T}oken-level reweighting \\textbf{(PORT)}, a fine-grained framework for robust alignment under noisy preferences. PORT performs token-level reweighting using the empirical cumulative distribution function (CDF) of token log-probabilities, yielding an efficient forward-pass-only proxy to gradient-norm penalization that selectively suppresses corrupted tokens without additional backward-pass computation. We provide theoretical analysis showing that PORT reduces the gradient bias from noisy preference labels by minimizing an upper bound on the bias term. Extensive experiments across diverse noise settings demonstrate that PORT consistently improves robustness and outperforms existing sequence-level baselines. The code is available at https://github.com/osu-srml/PORT",
+        "authors": [
+          "Ding Zhu",
+          "Xiukun Wei",
+          "Tian Xie",
+          "Zhihui Zhu",
+          "Xueru Zhang",
+          "Mohammad Mahdi Khalili"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12763v1",
+        "published": "2026-11-09T17:38:16+00:00",
+        "title": "PORT: Preference Optimization via Robust Token-Level Reweighting",
+        "updated": "2026-11-09T17:38:16+00:00",
+        "version_id": "2611.12763v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_safety",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "偏好优化已成为使大型语言模型与人类价值观保持一致的核心方法，但其有效性在很大程度上取决于偏好注释的质量。在实践中，由于注释错误和模糊性，偏好数据常常充满噪音。现有的稳健偏好优化方法主要在序列级别上运行，隐式地将整个响应视为一致正确或错误。然而，被拒绝的响应可能仍然包含信息丰富的推理步骤，而首选的响应可能包含微妙的错误。在这项工作中，我们提出通过 \\textbf{R}obust \\textbf{T}oken 级重新加权 \\textbf{(PORT)} 进行 \\textbf{P}reference \\textbf{O}ptimization，这是一种在噪声偏好下实现鲁棒对齐的细粒度框架。 PORT 使用令牌对数概率的经验累积分布函数 (CDF) 执行令牌级别重新加权，生成梯度范数惩罚的高效仅前向传递代理，可选择性地抑制损坏的令牌，而无需额外的后向传递计算。我们提供的理论分析表明，PORT 通过最小化偏差项的上限来减少噪声偏好标签的梯度偏差。跨不同噪声设置的广泛实验表明，PORT 持续提高稳健性并优于现有的序列级基线。代码可在 https://github.com/osu-srml/PORT 获取",
+        "title_zh": "PORT：通过稳健的代币级别重新加权进行偏好优化"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Large language models (LLMs) increasingly mediate how people seek and consume information, including accounts that differ across languages and regions, especially on contested topics. Supporting diverse information seeking requires models to help users navigate competing narratives across languages and information streams. We define six capabilities necessary for diverse multilingual information seeking: three foundational capabilities for narrative inclusion, narrative exclusion, and missing narrative identification; and three higher-level capabilities for presenting diverse narratives, preserving narrative coverage under confirmatory queries, and maintaining information parity across languages. To guide the development of those information seeking capabilities, we introduce \\textsc{NarrativeBench}, a benchmark comprising 1,333 news articles in 23 publication languages across 23 contested topics and 460 Reddit-grounded queries. Evaluating 14 LLMs across 24 query languages, we find that current models lack the capabilities needed to reliably navigate diverse narratives, limiting users' control over the perspectives they receive and leaving substantial gaps in exposure to competing accounts even when diversity is explicitly requested. Information access also differs across query framings and languages, risking echo chambers, linguistic filter bubbles, and information disparities that weaken the common ground needed for democratic discourse. \\textsc{NarrativeBench} provides a foundation for developing information systems that give users across languages and regions agency to navigate diverse narratives.",
+        "authors": [
+          "Nikhil Sharma",
+          "Kelly Marchisio",
+          "Kenton Murray",
+          "Ziang Xiao"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.HC",
+          "cs.IR"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12750v1",
+        "published": "2026-11-09T17:31:47+00:00",
+        "title": "The Narrative Gap: Can LLMs Help Us Navigate Diverse Narratives Across Languages?",
+        "updated": "2026-11-09T17:31:47+00:00",
+        "version_id": "2611.12750v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "大型语言模型 (LLM) 越来越多地调节人们寻找和消费信息的方式，包括跨语言和地区不同的帐户，尤其是在有争议的主题上。支持多样化的信息搜索需要模型来帮助用户跨语言和信息流导航相互竞争的叙述。我们定义了多样化多语言信息搜索所需的六种能力：叙事包含、叙事排除和缺失叙事识别的三种基本能力；以及三种更高级别的功能，用于呈现不同的叙述、在确认性查询下保留叙述覆盖范围以及维持跨语言的信息对等。为了指导这些信息搜索能力的发展，我们引入了 \\textsc{NarrativeBench}，这是一个基准，包含 23 种出版语言的 1,333 篇新闻文章，涵盖 23 个有争议的主题和 460 个基于 Reddit 的查询。通过评估 24 种查询语言的 14 个法学硕士，我们发现当前模型缺乏可靠地导航不同叙述所需的功能，限制了用户对其接收的观点的控制，并且即使在明确要求多样性的情况下，在竞争账户的曝光度上也留下了巨大的差距。不同查询框架和语言的信息访问也有所不同，存在回声室、语言过滤泡沫和信息差异的风险，从而削弱了民主话语所需的共同点。 \\textsc{NarrativeBench} 为开发信息系统提供了基础，使跨语言和跨地区的用户能够导航不同的叙述。",
+        "title_zh": "叙事鸿沟：法学硕士可以帮助我们驾驭跨语言的多样化叙事吗？"
+      }
+    }
+  ],
+  "notification_hash": "107d14033040fc940d4c25e9ab1cb9a173f0f5ac3df39734ed355e3beb2954dd",
+  "recovery_of": [],
+  "rendered": {
+    "2611.12750": "rendered_inline_translation",
+    "2611.12763": "rendered_inline_translation",
+    "2611.12775": "rendered_inline_translation",
+    "2611.12791": "rendered_inline_translation",
+    "2611.12799": "rendered_inline_translation",
+    "2611.12814": "rendered_inline_translation",
+    "2611.12816": "rendered_inline_translation",
+    "2611.12835": "rendered_inline_translation",
+    "2611.12856": "rendered_inline_translation",
+    "2611.12883": "rendered_inline_translation"
+  },
+  "run_id": "20261110T092125Z-06167383",
+  "schema_version": 1
+}
