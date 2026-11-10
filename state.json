@@ -39,7 +39,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:42:00.481953+00:00",
-    "last_complete_end": "2026-11-09T09:13:57.732071+00:00"
+    "last_complete_end": "2026-11-10T09:21:23.485580+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -197,6 +197,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-10": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -62936,6 +62945,375 @@
       "versions": [
         "2611.09891v1"
       ]
+    },
+    "2611.12750": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-10T09:21:23.485580+00:00",
+      "paper": {
+        "abstract": "Large language models (LLMs) increasingly mediate how people seek and consume information, including accounts that differ across languages and regions, especially on contested topics. Supporting diverse information seeking requires models to help users navigate competing narratives across languages and information streams. We define six capabilities necessary for diverse multilingual information seeking: three foundational capabilities for narrative inclusion, narrative exclusion, and missing narrative identification; and three higher-level capabilities for presenting diverse narratives, preserving narrative coverage under confirmatory queries, and maintaining information parity across languages. To guide the development of those information seeking capabilities, we introduce \\textsc{NarrativeBench}, a benchmark comprising 1,333 news articles in 23 publication languages across 23 contested topics and 460 Reddit-grounded queries. Evaluating 14 LLMs across 24 query languages, we find that current models lack the capabilities needed to reliably navigate diverse narratives, limiting users' control over the perspectives they receive and leaving substantial gaps in exposure to competing accounts even when diversity is explicitly requested. Information access also differs across query framings and languages, risking echo chambers, linguistic filter bubbles, and information disparities that weaken the common ground needed for democratic discourse. \\textsc{NarrativeBench} provides a foundation for developing information systems that give users across languages and regions agency to navigate diverse narratives.",
+        "authors": [
+          "Nikhil Sharma",
+          "Kelly Marchisio",
+          "Kenton Murray",
+          "Ziang Xiao"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.HC",
+          "cs.IR"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12750v1",
+        "published": "2026-11-09T17:31:47+00:00",
+        "title": "The Narrative Gap: Can LLMs Help Us Navigate Diverse Narratives Across Languages?",
+        "updated": "2026-11-09T17:31:47+00:00",
+        "version_id": "2611.12750v1"
+      },
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.12750v1"
+      ]
+    },
+    "2611.12763": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-10T09:21:23.485580+00:00",
+      "paper": {
+        "abstract": "Preference optimization has become a central approach for aligning large language models with human values, but its effectiveness depends heavily on the quality of preference annotations. In practice, preference data is often noisy due to annotation errors and ambiguity. Existing robust preference optimization methods primarily operate at the sequence level, implicitly treating entire responses as uniformly correct or incorrect. However, rejected responses may still contain informative reasoning steps, while preferred responses can include subtle errors. In this work, we propose \\textbf{P}reference \\textbf{O}ptimization via \\textbf{R}obust \\textbf{T}oken-level reweighting \\textbf{(PORT)}, a fine-grained framework for robust alignment under noisy preferences. PORT performs token-level reweighting using the empirical cumulative distribution function (CDF) of token log-probabilities, yielding an efficient forward-pass-only proxy to gradient-norm penalization that selectively suppresses corrupted tokens without additional backward-pass computation. We provide theoretical analysis showing that PORT reduces the gradient bias from noisy preference labels by minimizing an upper bound on the bias term. Extensive experiments across diverse noise settings demonstrate that PORT consistently improves robustness and outperforms existing sequence-level baselines. The code is available at https://github.com/osu-srml/PORT",
+        "authors": [
+          "Ding Zhu",
+          "Xiukun Wei",
+          "Tian Xie",
+          "Zhihui Zhu",
+          "Xueru Zhang",
+          "Mohammad Mahdi Khalili"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12763v1",
+        "published": "2026-11-09T17:38:16+00:00",
+        "title": "PORT: Preference Optimization via Robust Token-Level Reweighting",
+        "updated": "2026-11-09T17:38:16+00:00",
+        "version_id": "2611.12763v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_safety",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.12763v1"
+      ]
+    },
+    "2611.12775": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-10T09:21:23.485580+00:00",
+      "paper": {
+        "abstract": "Log-based anomaly detection is increasingly dominated by large pretrained models, from BERT-scale encoders to 8B-parameter language models, which require GPUs at inference time and are difficult to deploy on the monitoring nodes where logs are produced. We present LogCDM, a compact detector that scores each log session using three complementary signals: the next-event surprise of a small causal Transformer, the distance between a graph-attention embedding of the session's own transition graph and that of a normal reference graph, and a transition-drift statistic that we show is exactly a frequency-weighted chi-squared divergence between transition kernels. The divergence view yields an asymptotic null distribution, a length-standardized score, and a per-edge decomposition that explains each alarm. A sigmoid gate fuses the three signals; under a shared-covariance Gaussian model, this gate is the Bayes posterior, and its learned weights indicate which signal each dataset relies on. With 8.1-8.8M parameters and no GPU required at inference, LogCDM reaches F1 scores of 0.984 on HDFS, 0.870 on chronologically split BGL, and 0.850 on Thunderbird, within 0.013-0.12 of an 8.1B-parameter LLM detector evaluated under the same protocol and above all compact baselines on BGL. It scores a session in 5.5-10.5 ms on a CPU. Ablations show that the structural signals add 0.025-0.030 F1 on BGL and Thunderbird but almost nothing on HDFS, consistent with the learned fusion weights.",
+        "authors": [
+          "Suryansh Talukdar",
+          "Taha Sarwat",
+          "Jin Soung Yoo"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12775v1",
+        "published": "2026-11-09T17:48:31+00:00",
+        "title": "LogCDM: Interpretable Log Anomaly Detection via Behavioral Graph Drift and Adaptive Signal Fusion",
+        "updated": "2026-11-09T17:48:31+00:00",
+        "version_id": "2611.12775v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.12775v1"
+      ]
+    },
+    "2611.12791": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-10T09:21:23.485580+00:00",
+      "paper": {
+        "abstract": "Developing effective machine learning models requires complex manual tuning, while current Automated Machine Learning (AutoML) frameworks remain domain-specific and isolate model architecture, training hyperparameter, and data ratio optimization. Here, we bridge this gap by proposing a universal, large language model (LLM)-based AutoML framework that jointly optimizes these configurations for the first time without the need for task-specific fine-tuning. We propose NCode, a unified numerical encoding scheme that translates diverse AutoML design choices into universal discrete sequences and effectively reframes the optimization process as a unified ranking task. Trained solely on optimization trajectories derived from a limited, single-domain vision task, the proposed LLM-based searcher demonstrates impressive cross-task, cross-modality and joint search-space optimization generalizability, achieving state-of-the-art performance across image classification, image segmentation, speaker verification and text-to-image benchmarks. Crucially, it exhibits superior scalability in the large-scale training and joint optimization of a billion-parameter Diffusion Transformer, requiring 896 GPU-days and attaining a state-of-the-art GenEval score of 0.91. By leveraging reinforcement learning to instill Chain-of-Thought reasoning, we provide a systematic way to interpret the LLM-based searcher's internal decision-making mechanisms, revealing its optimization strategy shifted from the early-stage diversity-driven exploration to the late-stage anchor exploitation. Our proposed framework provides a scalable, generalizable, and interpretable pathway toward general-purpose open-world machine learning optimization.",
+        "authors": [
+          "Yuxuan Hu",
+          "Jihao Liu",
+          "Weikang Shi",
+          "Xijie Huang",
+          "Linda Wei",
+          "Mingjie Zhan",
+          "Aojun Zhou",
+          "Rui Liu",
+          "Hongsheng Li"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12791v1",
+        "published": "2026-11-09T17:58:38+00:00",
+        "title": "Large Language Models as a Universal Searcher for Open-World Automated Machine Learning",
+        "updated": "2026-11-09T17:58:38+00:00",
+        "version_id": "2611.12791v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_training",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.12791v1"
+      ]
+    },
+    "2611.12799": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-10T09:21:23.485580+00:00",
+      "paper": {
+        "abstract": "Reinforcement learning is now the mainstream paradigm for training LLMs on agentic tasks, yet standard practice keeps only the best-validation checkpoint and discards the rest. We show that this is lossy: in GRPO training of LLM agents, the best-validation checkpoint fails on problems that earlier checkpoints from the same run had already solved, and the union of problems solved across checkpoints far exceeds any single one. The discarded checkpoints thus form a teacher pool obtained at no additional training cost, which on-policy distillation (OPD) can mine to recover the lost coverage. Mining this pool raises two challenges: i) which checkpoint to distill from, as no checkpoint dominates the others and complementarity to the student is problem-specific; ii) where to trust it, as even a well-chosen teacher is only locally superior, so indiscriminate distillation overwrites behavior the student has already mastered. We propose Agentic-OPD, which treats the best-validation checkpoint as the student and all saved checkpoints as frozen teacher candidates, using the student's evolving capability gaps to guide both teacher selection and supervision filtering: the HCN policy (Highest Coverage Next) dynamically selects teachers by weighted coverage of the student's unsolved problems, while the LAD module (Locality-Aware Distillation) confines transfer to failed student rollouts on problems where the teacher performs better. Across five agentic task domains and 24 benchmarks and task subsets, Agentic-OPD improves over its initialization checkpoint by up to 7.4 points, with a 4B student surpassing the latest frontier models GPT-5.6 and DeepSeek-V4.1 on deep search. Agentic-OPD recasts a finished RL run as a reusable pool of policies and establishes post-RL capability recovery as a stage orthogonal to improvements in the RL algorithm itself.",
+        "authors": [
+          "Tingcheng Bian",
+          "Kangye Gong",
+          "Jinchang Luo",
+          "MingQuan Cheng",
+          "Feiran Liu",
+          "Ni Li",
+          "Xiaoling Xia",
+          "Haiwei Wang",
+          "Hui Li"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12799v1",
+        "published": "2026-11-09T18:07:42+00:00",
+        "title": "Agentic-OPD: Recovering Forgotten Agent Capabilities via On-Policy Distillation for Agentic Tasks",
+        "updated": "2026-11-09T18:07:42+00:00",
+        "version_id": "2611.12799v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_agent",
+        "llm_efficiency",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.12799v1"
+      ]
+    },
+    "2611.12814": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-10T09:21:23.485580+00:00",
+      "paper": {
+        "abstract": "Users are asking language models mental health questions and are receiving answers. We audited what 41 language models recommend to users when the same clinical information reaches them from three footings: a clinician describing a patient, a caregiver describing a loved one, or a person describing themselves. Across 19 case vignettes and five questions, we collected 35,055 free-text responses, extracted every intervention named with a validated judge, and had 29 models rate the full option lists on a seven-point Likert scale for the same cases. Models largely recommend what they rate well, with recommendation behavior differing by footing, and many models offering clinicians a consultation-style response and lay users hedged, simplified advice. When asked about recommendations for a specific intervention type, models more often named options they themselves rated below zero as initial choices, usually with conditions attached. We will release the instrument, code, and full corpus on publication as a living audit.",
+        "authors": [
+          "Matthew Flathers",
+          "Jill Noorily",
+          "Phuong Anh Nguyen",
+          "Mark Kalinich",
+          "Mina Fallah",
+          "Victoria Lisowski",
+          "Christine Shi",
+          "Rebekah M. Bodner",
+          "Anna Simms",
+          "Mihika Hete",
+          "Meiting Chen",
+          "Samuel K. Powell",
+          "Tatum Williamson",
+          "Laura Ospina-Pinillos",
+          "Haruka Notsu",
+          "Julian Herpertz",
+          "John Torous"
+        ],
+        "categories": [
+          "cs.CY",
+          "cs.CL",
+          "cs.HC"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12814v1",
+        "published": "2026-11-09T18:19:30+00:00",
+        "title": "Curbside Chatbots: Auditing the Mental Health Interventions Large Language Models Recommend to Clinicians, Caregivers, and Patients",
+        "updated": "2026-11-09T18:19:30+00:00",
+        "version_id": "2611.12814v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.12814v1"
+      ]
+    },
+    "2611.12816": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-10T09:21:23.485580+00:00",
+      "paper": {
+        "abstract": "The push towards circularity and Re-X principles presents a challenge to SMEs, particularly due to increasing product complexity that impedes the adoption of disassembly automation. This paper introduces and compares two frameworks for extracting disassembly instructions from unstructured information sources, such as disassembly manuals. Our goal is to transform natural language text into a structured, curated and machine-readable format. We implemented and tested a rule-based Natural Language Processing (NLP) framework against a generative AI framework leveraging LLMs. The performance of both approaches was compared using real-world disassembly manuals. This work provides the necessary data foundation for developing and automating future disassembly processes.",
+        "authors": [
+          "Tim Schnieders",
+          "Tareq Maximilian Gabriel Ahrari",
+          "Oliver Petrovic",
+          "Christian Brecher"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12816v1",
+        "published": "2026-11-09T18:19:57+00:00",
+        "title": "Automated Knowledge Acquisition Pipeline for Disassembly Instructions: A Comparison of NLP and Generative AI Frameworks",
+        "updated": "2026-11-09T18:19:57+00:00",
+        "version_id": "2611.12816v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.12816v1"
+      ]
+    },
+    "2611.12835": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-10T09:21:23.485580+00:00",
+      "paper": {
+        "abstract": "As large language models become more capable agents, they can exhibit deceptive behaviors, cheating human for higher rewards while appearing helpful. We attribute this failure to evaluation-side partial observability, where models are evaluated mainly from final outcome, without checking the faithfulness of underlying reasoning, tool use, and environmental effects. Prior mitigations address this partial observability by predefined evaluator latent belief space or one-shot monitoring, which do not extend to free-form language space and vulnerable to stronger deceptions that evade simple monitoring. In this work, we formulate deception mitigation as an Evaluation-Side Partially Observable Extensive Form Game (e-PoG), a max-min framework in which an agent maximizes reward, a monitor minimizes the agent's payoff by exposing deception from the full interaction trajectory, and a fixed verifier validates the monitor's claims and converts them into penalties. We define the solution concept as a Subgame-Perfect Oversight Equilibrium (SPOE) between agent and monitor, and prove its existence in finite games. With a perfect verifier, every SPOE is faithful; with an imperfect verifier, the guarantee persists if verifier errors do not reverse the ranking of monitor actions. To achieve faithful SPOE, we derive a two-timescale policy gradient algorithm and enhance the pipeline empirically with NLI verification and deterministic checks. Experiments with Gemma3-4B-IT and Qwen3-4B/8B on Agentic Role-Playing, SearchQA, and WebShop show that e-PoG mitigates multiple emergent deception modes, outperforming the strongest baselines by 26.0% in deception mitigation and by up to 39.8% in task success. These gains persist under weak-to-strong supervision. Code is available at https://github.com/Toyoid/deceptive-agent.",
+        "authors": [
+          "Hanxiao Li",
+          "Shutong Liu",
+          "Yongjia Ma",
+          "Jiaming Ji",
+          "Juntao Dai",
+          "Shuning Zhang",
+          "Kejian Shi",
+          "Kai Chen",
+          "Pu Feng",
+          "Yuqing Ma",
+          "Qi Dou",
+          "Yaodong Yang",
+          "Xianglong Liu",
+          "Simin Li"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12835v1",
+        "published": "2026-11-09T18:33:13+00:00",
+        "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
+        "updated": "2026-11-09T18:33:13+00:00",
+        "version_id": "2611.12835v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.12835v1"
+      ]
+    },
+    "2611.12856": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-10T09:21:23.485580+00:00",
+      "paper": {
+        "abstract": "Large language model agents are increasingly deployed as multi-agent systems rather than as a standalone model operating within a single context. Recent agent harnesses allow the model to instantiate worker agents and to author the executable workflow that coordinates them, shifting the design of system structure from developers to the model at run time. The quality of this organization therefore constitutes a distinct capability, yet existing benchmarks either measure end-to-end task completion or evaluate coordination under structures specified in advance. We formalize this capability as workflow orchestration and introduce WorkflowArena, a benchmark of 145 long-horizon tasks spanning 8 professional domains, from software engineering and formal mathematics to legal analysis and 3D production. Each task specifies an initial workspace and an integrated deliverable composed of interdependent components, which is assessed by a hidden verifier. Agents determine autonomously whether and how to delegate, and all delegation is recorded, enabling joint evaluation of deliverable quality and the organization of the underlying work. Experiments with nine models show that no single configuration performs best across all domains and that systems exhibit distinct delegation strategies: at high effort, Claude models in Claude Code invoke workflows less frequently but with larger worker groups, whereas GPT models in Codex delegate more frequently in smaller units. When the executing model is held fixed on a challenging subset of tasks, workflows authored by Claude Opus 5.5 substantially improve weaker executors, indicating that workflow organization is itself a measurable determinant of task performance.",
+        "authors": [
+          "Zheng Jiang",
+          "Fang Niu",
+          "Bo Peng",
+          "Houde Qian",
+          "Wenyi Li",
+          "Deyao Hong",
+          "Mingju Gao",
+          "Yizhe Chi",
+          "Youjie Zheng",
+          "Kaisen Yang",
+          "Calvin Xiao",
+          "Lifeng Sun",
+          "Huan-ang Gao"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.SE"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12856v1",
+        "published": "2026-11-09T18:45:28+00:00",
+        "title": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
+        "updated": "2026-11-09T18:45:28+00:00",
+        "version_id": "2611.12856v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.12856v1"
+      ]
+    },
+    "2611.12883": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-10T09:21:23.485580+00:00",
+      "paper": {
+        "abstract": "Multimodal large language models (MLLMs) integrate information across modalities, but become unreliable when those modalities disagree. Under conflicting inputs, MLLMs may favor modalities that are not the most reliable for the task, thus motivating inference-time control of modality arbitration. We identify a small set of attention heads, termed arbitration heads, that causally influence whether predictions follow visual or textual evidence. Building on this, we introduce a lightweight, training-free intervention that biases these heads toward a designated trusted modality at inference time. The identified heads are stable across calibration set sizes and generalize across settings, and steering them enables effective bidirectional control of modality reliance across diverse benchmarks. Our findings identify an effective control mechanism to align MLLM predictions with task-specified modality priorities. The code is available at https://github.com/zhaoyingpan/modality-arbitration.",
+        "authors": [
+          "Zhaoying Pan",
+          "Shenyu Lu",
+          "Jun Hui Wong",
+          "Junyi Chai",
+          "Xiaoqian Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.12883v1",
+        "published": "2026-11-09T18:59:36+00:00",
+        "title": "Beyond Modality Preference: Controlling Multimodal Arbitration under Modality Conflict in MLLMs",
+        "updated": "2026-11-09T18:59:36+00:00",
+        "version_id": "2611.12883v1"
+      },
+      "rule_hits": [
+        "llm_multimodal",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.12883v1"
+      ]
     }
   },
   "runs": [
@@ -63430,10 +63808,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-10",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261110T092123Z-bd27bb78",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-10T09:21:00+00:00",
+          "seen": 39,
+          "start": "2026-11-03T09:21:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-10T09:21:23.485580+00:00",
       "window": {
         "end": "2026-11-10T09:21:23.485580+00:00",
