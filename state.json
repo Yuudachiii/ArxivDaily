@@ -65368,6 +65368,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-10T09:21:25.328951+00:00",
+      "intended_tier": "translation",
       "model": "rules",
       "paper": {
         "abstract": "Log-based anomaly detection is increasingly dominated by large pretrained models, from BERT-scale encoders to 8B-parameter language models, which require GPUs at inference time and are difficult to deploy on the monitoring nodes where logs are produced. We present LogCDM, a compact detector that scores each log session using three complementary signals: the next-event surprise of a small causal Transformer, the distance between a graph-attention embedding of the session's own transition graph and that of a normal reference graph, and a transition-drift statistic that we show is exactly a frequency-weighted chi-squared divergence between transition kernels. The divergence view yields an asymptotic null distribution, a length-standardized score, and a per-edge decomposition that explains each alarm. A sigmoid gate fuses the three signals; under a shared-covariance Gaussian model, this gate is the Bayes posterior, and its learned weights indicate which signal each dataset relies on. With 8.1-8.8M parameters and no GPU required at inference, LogCDM reaches F1 scores of 0.984 on HDFS, 0.870 on chronologically split BGL, and 0.850 on Thunderbird, within 0.013-0.12 of an 8.1B-parameter LLM detector evaluated under the same protocol and above all compact baselines on BGL. It scores a session in 5.5-10.5 ms on a CPU. Ablations show that the structural signals add 0.025-0.030 F1 on BGL and Thunderbird but almost nothing on HDFS, consistent with the learned fusion weights.",
@@ -65385,11 +65386,22 @@
         "updated": "2026-11-09T17:48:31+00:00",
         "version_id": "2611.12775v1"
       },
+      "presentation_modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "presentation_rule_hits": [
+        "llm_core"
+      ],
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "selected",
+      "stage": "ready",
       "versions": [
         "2611.12775v1"
       ]
