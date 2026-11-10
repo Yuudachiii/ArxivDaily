@@ -13,7 +13,7 @@
 | 2026-11-10 | Large Language Models as a Universal Searcher for Open-World Automated Machine Learning | 大型语言模型作为开放世界自动化机器学习的通用搜索器（谷歌备用翻译） | [arXiv 2611.12791v1](https://arxiv.org/abs/2611.12791v1) |
 | 2026-11-10 | LogCDM: Interpretable Log Anomaly Detection via Behavioral Graph Drift and Adaptive Signal Fusion | LogCDM：通过行为图漂移和自适应信号融合进行可解释的日志异常检测（谷歌备用翻译） | [arXiv 2611.12775v1](https://arxiv.org/abs/2611.12775v1) |
 | 2026-11-10 | PORT: Preference Optimization via Robust Token-Level Reweighting | PORT：通过稳健的代币级别重新加权进行偏好优化（谷歌备用翻译） | [arXiv 2611.12763v1](https://arxiv.org/abs/2611.12763v1) |
-| 2026-11-10 | The Narrative Gap: Can LLMs Help Us Navigate Diverse Narratives Across Languages? | 待翻译 | [arXiv 2611.12750v1](https://arxiv.org/abs/2611.12750v1) |
+| 2026-11-10 | The Narrative Gap: Can LLMs Help Us Navigate Diverse Narratives Across Languages? | 叙事鸿沟：法学硕士可以帮助我们驾驭跨语言的多样化叙事吗？（谷歌备用翻译） | [arXiv 2611.12750v1](https://arxiv.org/abs/2611.12750v1) |
 | 2026-11-09 | CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse | CPU-ARC：用于 CPU 上推理重用的代理推理缓存 | [arXiv 2611.09891v1](https://arxiv.org/abs/2611.09891v1) |
 | 2026-11-09 | CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs | CodeQuant2：用于低精度LRM的增强异常值缓解与自适应聚类 | [arXiv 2611.09868v1](https://arxiv.org/abs/2611.09868v1) |
 | 2026-11-09 | Ensemble Methodology for Reference-Free Confidence Estimation in LLM-based Code Summarization | 用于基于LLM代码摘要的无参考置信度估计的集成方法 | [arXiv 2611.09846v1](https://arxiv.org/abs/2611.09846v1) |
