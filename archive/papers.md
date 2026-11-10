@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-10 | Beyond Modality Preference: Controlling Multimodal Arbitration under Modality Conflict in MLLMs | 待翻译 | [arXiv 2611.12883v1](https://arxiv.org/abs/2611.12883v1) |
+| 2026-11-10 | WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems | 待翻译 | [arXiv 2611.12856v1](https://arxiv.org/abs/2611.12856v1) |
+| 2026-11-10 | Mitigating Agentic Deception via Evaluation-Side Partially Observable Games | 待翻译 | [arXiv 2611.12835v1](https://arxiv.org/abs/2611.12835v1) |
+| 2026-11-10 | Automated Knowledge Acquisition Pipeline for Disassembly Instructions: A Comparison of NLP and Generative AI Frameworks | 待翻译 | [arXiv 2611.12816v1](https://arxiv.org/abs/2611.12816v1) |
+| 2026-11-10 | Curbside Chatbots: Auditing the Mental Health Interventions Large Language Models Recommend to Clinicians, Caregivers, and Patients | 待翻译 | [arXiv 2611.12814v1](https://arxiv.org/abs/2611.12814v1) |
+| 2026-11-10 | Agentic-OPD: Recovering Forgotten Agent Capabilities via On-Policy Distillation for Agentic Tasks | 待翻译 | [arXiv 2611.12799v1](https://arxiv.org/abs/2611.12799v1) |
+| 2026-11-10 | Large Language Models as a Universal Searcher for Open-World Automated Machine Learning | 待翻译 | [arXiv 2611.12791v1](https://arxiv.org/abs/2611.12791v1) |
+| 2026-11-10 | LogCDM: Interpretable Log Anomaly Detection via Behavioral Graph Drift and Adaptive Signal Fusion | 待翻译 | [arXiv 2611.12775v1](https://arxiv.org/abs/2611.12775v1) |
+| 2026-11-10 | PORT: Preference Optimization via Robust Token-Level Reweighting | 待翻译 | [arXiv 2611.12763v1](https://arxiv.org/abs/2611.12763v1) |
+| 2026-11-10 | The Narrative Gap: Can LLMs Help Us Navigate Diverse Narratives Across Languages? | 待翻译 | [arXiv 2611.12750v1](https://arxiv.org/abs/2611.12750v1) |
 | 2026-11-09 | CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse | CPU-ARC：用于 CPU 推理重用的代理推理缓存 | [arXiv 2611.09891v1](https://arxiv.org/abs/2611.09891v1) |
 | 2026-11-09 | CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs | CodeQuant2：针对低精度 LRM 的增强型异常值缓解和自适应聚类 | [arXiv 2611.09868v1](https://arxiv.org/abs/2611.09868v1) |
 | 2026-11-09 | Ensemble Methodology for Reference-Free Confidence Estimation in LLM-based Code Summarization | 基于 LLM 的代码摘要中无参考置信度估计的集成方法 | [arXiv 2611.09846v1](https://arxiv.org/abs/2611.09846v1) |
