@@ -63148,11 +63148,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-10T09:21:23.485580+00:00",
-        "run_id": "20261110T092123Z-bd27bb78",
-        "stage": "translation"
+      "title_zh": "LogCDM：通过行为图漂移和自适应信号融合进行可解释的日志异常检测",
+      "translation": {
+        "abstract_zh": "基于日志的异常检测越来越以大型预训练模型为主，从 BERT 规模的编码器到 8B 参数语言模型，这些模型在推理时需要 GPU，并且很难部署在产生日志的监控节点上。我们提出了 LogCDM，一个紧凑的检测器，它使用三个互补信号对每个日志会话进行评分：小型因果 Transformer 的下一个事件惊喜、会话自身转换图的图形注意嵌入与正常参考图的图形注意嵌入之间的距离，以及我们显示的转换漂移统计量正是转换内核之间的频率加权卡方散度。散度视图产生渐进零分布、长度标准化分数以及解释每个警报的每边分解。一个 sigmoid 门融合了三个信号；在共享协方差高斯模型下，该门是贝叶斯后验，其学习权重指示每个数据集依赖哪个信号。凭借 8.1-8.8M 参数且推理时无需 GPU，LogCDM 在 HDFS 上达到 F1 分数 0.984，在按时间顺序分割的 BGL 上达到 0.870，在 Thunderbird 上达到 0.850，与在相同协议下评估的 8.1B 参数 LLM 检测器的 0.013-0.12 之内，并且高于 BGL 上的所有紧凑基线。它在 CPU 上的会话得分为 5.5-10.5 毫秒。消融表明，结构信号在 BGL 和 Thunderbird 上增加了 0.025-0.030 F1，但在 HDFS 上几乎没有增加，这与学习到的融合权重一致。",
+        "fallback_provider": "google_free",
+        "title_zh": "LogCDM：通过行为图漂移和自适应信号融合进行可解释的日志异常检测"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.12775v1"
       ]
