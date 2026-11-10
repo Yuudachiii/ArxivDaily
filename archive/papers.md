@@ -11,7 +11,7 @@
 | 2026-11-10 | Curbside Chatbots: Auditing the Mental Health Interventions Large Language Models Recommend to Clinicians, Caregivers, and Patients | 路边聊天机器人：审核向临床医生、护理人员和患者推荐的心理健康干预措施 | [arXiv 2611.12814v1](https://arxiv.org/abs/2611.12814v1) |
 | 2026-11-10 | Agentic-OPD: Recovering Forgotten Agent Capabilities via On-Policy Distillation for Agentic Tasks | Agentic-OPD：通过代理任务的策略蒸馏来恢复被遗忘的代理功能 | [arXiv 2611.12799v1](https://arxiv.org/abs/2611.12799v1) |
 | 2026-11-10 | Large Language Models as a Universal Searcher for Open-World Automated Machine Learning | 大型语言模型作为开放世界自动化机器学习的通用搜索器 | [arXiv 2611.12791v1](https://arxiv.org/abs/2611.12791v1) |
-| 2026-11-10 | LogCDM: Interpretable Log Anomaly Detection via Behavioral Graph Drift and Adaptive Signal Fusion | 待翻译 | [arXiv 2611.12775v1](https://arxiv.org/abs/2611.12775v1) |
+| 2026-11-10 | LogCDM: Interpretable Log Anomaly Detection via Behavioral Graph Drift and Adaptive Signal Fusion | LogCDM：通过行为图漂移和自适应信号融合进行可解释的日志异常检测 | [arXiv 2611.12775v1](https://arxiv.org/abs/2611.12775v1) |
 | 2026-11-10 | PORT: Preference Optimization via Robust Token-Level Reweighting | 待翻译 | [arXiv 2611.12763v1](https://arxiv.org/abs/2611.12763v1) |
 | 2026-11-10 | The Narrative Gap: Can LLMs Help Us Navigate Diverse Narratives Across Languages? | 待翻译 | [arXiv 2611.12750v1](https://arxiv.org/abs/2611.12750v1) |
 | 2026-11-09 | CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse | CPU-ARC：用于 CPU 推理重用的代理推理缓存 | [arXiv 2611.09891v1](https://arxiv.org/abs/2611.09891v1) |
