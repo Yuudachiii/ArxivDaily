@@ -7,7 +7,7 @@
 | 2026-11-10 | Beyond Modality Preference: Controlling Multimodal Arbitration under Modality Conflict in MLLMs | 超越模态偏好：在 MLLM 模态冲突下控制多模态仲裁（谷歌备用翻译） | [arXiv 2611.12883v1](https://arxiv.org/abs/2611.12883v1) |
 | 2026-11-10 | WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems | WorkflowArena：基于 LLM 的多代理系统中可执行工作流编排的基准测试（谷歌备用翻译） | [arXiv 2611.12856v1](https://arxiv.org/abs/2611.12856v1) |
 | 2026-11-10 | Mitigating Agentic Deception via Evaluation-Side Partially Observable Games | 通过评估端部分可观察游戏减轻代理欺骗（谷歌备用翻译） | [arXiv 2611.12835v1](https://arxiv.org/abs/2611.12835v1) |
-| 2026-11-10 | Automated Knowledge Acquisition Pipeline for Disassembly Instructions: A Comparison of NLP and Generative AI Frameworks | 待翻译 | [arXiv 2611.12816v1](https://arxiv.org/abs/2611.12816v1) |
+| 2026-11-10 | Automated Knowledge Acquisition Pipeline for Disassembly Instructions: A Comparison of NLP and Generative AI Frameworks | 用于反汇编指令的自动知识获取管道：NLP 和生成式 AI 框架的比较（谷歌备用翻译） | [arXiv 2611.12816v1](https://arxiv.org/abs/2611.12816v1) |
 | 2026-11-10 | Curbside Chatbots: Auditing the Mental Health Interventions Large Language Models Recommend to Clinicians, Caregivers, and Patients | 待翻译 | [arXiv 2611.12814v1](https://arxiv.org/abs/2611.12814v1) |
 | 2026-11-10 | Agentic-OPD: Recovering Forgotten Agent Capabilities via On-Policy Distillation for Agentic Tasks | 待翻译 | [arXiv 2611.12799v1](https://arxiv.org/abs/2611.12799v1) |
 | 2026-11-10 | Large Language Models as a Universal Searcher for Open-World Automated Machine Learning | 待翻译 | [arXiv 2611.12791v1](https://arxiv.org/abs/2611.12791v1) |
