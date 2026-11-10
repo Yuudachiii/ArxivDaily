@@ -65370,11 +65370,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-10T09:21:25.328951+00:00",
-        "run_id": "20261110T092125Z-06167383",
-        "stage": "translation"
+      "title_zh": "PORT：通过稳健的代币级别重新加权进行偏好优化",
+      "translation": {
+        "abstract_zh": "偏好优化已成为使大型语言模型与人类价值观保持一致的核心方法，但其有效性在很大程度上取决于偏好注释的质量。在实践中，由于注释错误和模糊性，偏好数据常常充满噪音。现有的稳健偏好优化方法主要在序列级别上运行，隐式地将整个响应视为一致正确或错误。然而，被拒绝的响应可能仍然包含信息丰富的推理步骤，而首选的响应可能包含微妙的错误。在这项工作中，我们提出通过 \\textbf{R}obust \\textbf{T}oken 级重新加权 \\textbf{(PORT)} 进行 \\textbf{P}reference \\textbf{O}ptimization，这是一种在噪声偏好下实现鲁棒对齐的细粒度框架。 PORT 使用令牌对数概率的经验累积分布函数 (CDF) 执行令牌级别重新加权，生成梯度范数惩罚的高效仅前向传递代理，可选择性地抑制损坏的令牌，而无需额外的后向传递计算。我们提供的理论分析表明，PORT 通过最小化偏差项的上限来减少噪声偏好标签的梯度偏差。跨不同噪声设置的广泛实验表明，PORT 持续提高稳健性并优于现有的序列级基线。代码可在 https://github.com/osu-srml/PORT 获取",
+        "title_zh": "PORT：通过稳健的代币级别重新加权进行偏好优化"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.12763v1"
       ]
