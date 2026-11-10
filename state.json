@@ -63650,11 +63650,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-10T09:21:23.485580+00:00",
-        "run_id": "20261110T092123Z-bd27bb78",
-        "stage": "translation"
+      "title_zh": "超越模态偏好：在 MLLM 模态冲突下控制多模态仲裁",
+      "translation": {
+        "abstract_zh": "多模态大语言模型 (MLLM) 集成了跨模态的信息，但当这些模态不一致时就会变得不可靠。在相互冲突的输入下，MLLM 可能会偏向于对任务来说不是最可靠的模态，从而激发模态仲裁的推理时间控制。我们确定了一小部分注意力头，称为仲裁头，它们会因果影响预测是否遵循视觉证据或文本证据。在此基础上，我们引入了一种轻量级、免训练的干预措施，使这些头在推理时偏向指定的可信模式。所识别的头部在校准集大小上是稳定的，并且在设置上是通用的，并且引导它们可以跨不同基准对模态依赖进行有效的双向控制。我们的研究结果确定了一种有效的控制机制，使 MLLM 预测与任务指定的模态优先级保持一致。代码可在 https://github.com/zhaoyingpan/modality- Arbitration 获取。",
+        "fallback_provider": "google_free",
+        "title_zh": "超越模态偏好：在 MLLM 模态冲突下控制多模态仲裁"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.12883v1"
       ]
