@@ -65274,7 +65274,9 @@
       ]
     },
     "2611.12763": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-10T09:21:25.328951+00:00",
@@ -65304,6 +65306,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-10T09:21:25.328951+00:00",
+        "run_id": "20261110T092125Z-06167383",
+        "stage": "selection"
+      },
       "versions": [
         "2611.12763v1"
       ]
