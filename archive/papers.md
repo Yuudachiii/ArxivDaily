@@ -10,7 +10,7 @@
 | 2026-11-11 | ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows | ReTrace：将使用工具的代理提炼为无需规划的工作流程 | [arXiv 2611.14492v1](https://arxiv.org/abs/2611.14492v1) |
 | 2026-11-11 | Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game | 重新搜索：通过两人提问游戏剖析法学硕士理念 | [arXiv 2611.14487v1](https://arxiv.org/abs/2611.14487v1) |
 | 2026-11-11 | Pterodactyl: Pushing the Limits of Efficient Automated Translation Evaluation | Pterodactyl：突破高效自动化翻译评估的极限 | [arXiv 2611.14480v1](https://arxiv.org/abs/2611.14480v1) |
-| 2026-11-11 | FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking | 待翻译 | [arXiv 2611.14477v1](https://arxiv.org/abs/2611.14477v1) |
+| 2026-11-11 | FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking | FERN：使用冻结检索器和学习排名进行文本到 SQL 的交叉基准表检索 | [arXiv 2611.14477v1](https://arxiv.org/abs/2611.14477v1) |
 | 2026-11-11 | Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning | 待翻译 | [arXiv 2611.14419v1](https://arxiv.org/abs/2611.14419v1) |
 | 2026-11-11 | REAL Loss: Optimizing Real Expected Acceptance Length for Speculative Decoding | 待翻译 | [arXiv 2611.14399v1](https://arxiv.org/abs/2611.14399v1) |
 | 2026-11-11 | Cognitive Mapping of Learning by Thinking Mechanisms in Large Language Models | 待翻译 | [arXiv 2611.14382v1](https://arxiv.org/abs/2611.14382v1) |
