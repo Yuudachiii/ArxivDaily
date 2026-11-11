@@ -39,6 +39,10 @@
     "20261110T092125Z-06167383-7c4f76c72af6": {
       "attempts": 1,
       "created_at": "2026-11-10T09:21:25.328951+00:00"
+    },
+    "20261111T085503Z-857deabe-f7c34a799b7d": {
+      "attempts": 0,
+      "created_at": "2026-11-11T08:55:03.537239+00:00"
     }
   },
   "collection": {
@@ -3921,6 +3925,443 @@
       "run_id": "20261110T092125Z-06167383",
       "schema_version": 1,
       "status": "confirmed"
+    },
+    "20261111T085503Z-857deabe-f7c34a799b7d": {
+      "alert": false,
+      "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-google/archive/2026/11/11/20261111T085503Z-857deabe-f7c34a799b7d.md",
+      "chain_root": "20261111T085503Z-857deabe-f7c34a799b7d",
+      "chain_roots": [
+        "20261111T085503Z-857deabe-f7c34a799b7d"
+      ],
+      "content_hash": "f7c34a799b7d47f8ab5eb52a3ff5de7823537b2ee9a95e054329e7c114102a8a",
+      "created_at": "2026-11-11T08:55:03.537239+00:00",
+      "day": "2026-11-11",
+      "digest_id": "20261111T085503Z-857deabe-f7c34a799b7d",
+      "empty": false,
+      "items": [
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "LLM agents are increasingly used for open-ended, data-driven scientific discovery, yet most of them evaluate hypotheses pointwise, testing an empirical claim $h$ only against its complement $\\neg h$. When evidence rejects $h$, the agent learns that one explanation is unlikely but not which alternative the evidence supports. To recover that alternative, we introduce Contrastive Discovery, which replaces the single hypothesis with a contrast set, a scientific question paired with mutually exclusive and collectively exhaustive competing explanations. Each experiment is scored by how its evidence redistributes belief across the set, and the question is resolved when belief concentrates on one explanation. Because contrast sets change only the unit an agent proposes and scores, an existing agent can use them to re-evaluate evidence it has already collected or to guide its search. Across six domains, $89\\%$ of the pointwise candidates with the largest belief shifts are rejections. On the same evidence, contrast sets resolve $73\\%$ of these candidates to a specific alternative. When contrast sets guide search, the agent resolves $67\\%$ more questions than pointwise surprisal under the same experiment budget. In a blinded study, $38$ human experts chose the same explanation on $78\\%$ of resolved questions and on $82\\%$ of questions where the pointwise agent rejected its hypothesis and stopped. Together, these results support explicit competing explanations as a way for discovery agents to resolve more scientific questions from the same evidence and validation budget.",
+            "authors": [
+              "Ziang Liu",
+              "James J. Kim",
+              "Yijia Dai",
+              "Jennifer J. Sun"
+            ],
+            "categories": [
+              "cs.AI",
+              "cs.CL",
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.14514v1",
+            "published": "2026-11-10T18:58:43+00:00",
+            "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
+            "updated": "2026-11-10T18:58:43+00:00",
+            "version_id": "2611.14514v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "LLM 代理人越来越多地用于开放式、数据驱动的科学发现，但他们中的大多数人逐点评估假设，仅根据其补充 $\\neg h$ 测试经验主张 $h$。当证据拒绝 $h$ 时，智能体了解到一种解释不太可能，但不知道证据支持哪种替代方案。为了恢复这种替代方案，我们引入了对比发现，它用对比集取代了单一假设，这是一个与相互排斥和集体详尽的竞争解释配对的科学问题。每个实验都根据其证据如何在整个集合中重新分配信念来评分，当信念集中于一种解释时，问题就得到了解决。由于对比集仅更改智能体建议和评分的单位，因此现有智能体可以使用它们来重新评估其已收集的证据或指导其搜索。在六个领域中，信念变化最大的逐点候选者中，$89\\%$ 被拒绝。根据相同的证据，对比集将这些候选者中的 $73\\%$ 解析为特定的替代方案。当对比设置引导搜索时，在相同的实验预算下，代理比逐点惊喜多解决了 $67\\%$ 的问题。在一项盲法研究中，$38$ 的人类专家对 $78\\%$ 的已解决问题和 $82\\%$ 的点状代理拒绝其假设并停止的问题选择了相同的解释。总之，这些结果支持明确的竞争性解释，作为发现代理从相同的证据和验证预算中解决更多科学问题的一种方式。",
+            "title_zh": "对比发现：开放式科学发现与竞争性解释的比较"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse protein-ligand complexes. Expert chemists equipped with 3D visualization tools and physics-based scores perform near chance, highlighting the difficulty of interpreting available chemical signals. To investigate automated ranking, we introduce PyriteRep, a structured representation of molecular geometry, protein-ligand interactions, and physicochemical scores, and develop two LLM-based agents: PyriteReasoner, which directly compares poses through text-based reasoning, and PyriteFeaturizer, which generates executable code to construct features for logistic regression, optionally incorporating features derived from LLM subcalls. These agents achieve up to 67% and 74% accuracy, respectively, exceeding observed expert performance. LLM-guided feature discovery generally outperforms direct reasoning, while Group Relative Policy Optimization (GRPO) improves open-weight models, enabling them to match or surpass closed-source frontier models in our evaluations. These results establish Pyrite as a challenging test of pose-ranking ability and highlight LLM-guided feature discovery as a promising approach to interpret and combine the outputs of computational chemistry tools.",
+            "authors": [
+              "Megha Srivastava",
+              "Michael H. Lim",
+              "Allison M. Keys",
+              "Pranav Murugan",
+              "Nate Gruver"
+            ],
+            "categories": [
+              "cs.LG",
+              "q-bio.QM"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.14511v1",
+            "published": "2026-11-10T18:56:32+00:00",
+            "title": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
+            "updated": "2026-11-10T18:56:32+00:00",
+            "version_id": "2611.14511v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_training",
+            "llm_agent",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "预测配体如何与其靶标结合是小分子药物发现的核心。现代折叠模型可以生成不同的候选姿势，但对这些候选姿势进行可靠排名仍然具有挑战性。我们引入了 Pyrite，这是一种成对姿势排名基准，包含跨不同蛋白质-配体复合物的 1,500 个姿势对。配备 3D 可视化工具和基于物理的评分的专业化学家的表现几乎是偶然的，这凸显了解释可用化学信号的难度。为了研究自动排名，我们引入了 PyriteRep（分子几何、蛋白质-配体相互作用和理化评分的结构化表示），并开发了两种基于 LLM 的代理：PyriteReasoner（通过基于文本的推理直接比较姿势）和 PyriteFeaturizer（生成可执行代码来构造逻辑回归的特征），可以选择合并从 LLM 子调用派生的特征。这些代理的准确率分别高达 67% 和 74%，超过了观察到的专家表现。 LLM 引导的特征发现通常优于直接推理，而组相对策略优化 (GRPO) 改进了开放权重模型，使其能够在我们的评估中匹配或超越闭源前沿模型。这些结果使 Pyrite 成为姿势排名能力的一项具有挑战性的测试，并强调 LLM 引导的特征发现是解释和组合计算化学工具输出的一种有前途的方法。",
+            "title_zh": "Pyrite：蛋白质配体姿势排名代理的构建和基准测试"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflows. We present a three-phase comparative study of three evaluation frameworks, each representing a distinct evaluation paradigm (trace-based LLM judging, text-only LLM judging with red-teaming, and deterministic heuristics), applied to two analytics agents in a controlled research setting using frozen execution traces. Phase 1 quantifies evaluation harness stability through repeated measurements, finding that 97% of configurations meet the stability threshold and that stability patterns are agent-independent. Phase 2 measures known risk detection on 72 ground-truth test cases, where the trace-based framework achieves the best precision-recall balance (F1=0.90) while text-only evaluation matches on recall but generates 5x more false alarms. Phase 3 evaluates unknown risk discovery, uncovering 24 novel failures with zero overlap between functional testing and security red-teaming. Our results demonstrate that (1) the information available to the evaluation harness determines evaluation quality, (2) functional and security evaluation are complementary, and (3) LLM-based evaluation harnesses surface subtle errors that human reviewers miss. We recommend a two-framework strategy: trace-based evaluation for functional assessment and adversarial red-teaming for security validation.",
+            "authors": [
+              "Howard Zhang",
+              "Chuck Arvin",
+              "Logan Brown",
+              "Mihir Bhatia",
+              "Neelu Choudhary",
+              "Lily Miao"
+            ],
+            "categories": [
+              "cs.AI",
+              "cs.CL",
+              "cs.LG",
+              "cs.SE"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.14493v1",
+            "published": "2026-11-10T18:50:06+00:00",
+            "title": "Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents",
+            "updated": "2026-11-10T18:50:06+00:00",
+            "version_id": "2611.14493v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_safety",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "在企业环境中部署基于 LLM 的分析代理需要能够跨复杂的多工具工作流程可靠地检测故障的评估框架。我们提出了三个评估框架的三阶段比较研究，每个评估框架代表一种不同的评估范式（基于跟踪的 LLM 判断、带有红队的纯文本 LLM 判断以及确定性启发法），应用于使用冻结执行跟踪的受控研究环境中的两个分析代理。第一阶段通过重复测量来量化评估安全带的稳定性，发现 97% 的配置满足稳定性阈值，并且稳定性模式与代理无关。第 2 阶段测量 72 个真实测试用例的已知风险检测，其中基于跟踪的框架实现了最佳的精确率-召回率平衡 (F1=0.90)，而纯文本评估与召回率相匹配，但产生的误报增加了 5 倍。第 3 阶段评估未知风险发现，发现 24 个新故障，功能测试和安全红队之间的重叠为零。我们的结果表明，(1) 评估工具可用的信息决定了评估质量，(2) 功能和安全评估是互补的，(3) 基于 LLM 的评估工具可以发现人类审阅者会忽略的表面细微错误。我们建议采用两种框架策略：用于功能评估的基于跟踪的评估和用于安全验证的对抗性红队。",
+            "title_zh": "代理评估框架的比较分析：企业分析代理的稳定性、检测和发现"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Business process automation runs the same Standard Operating Procedure (SOP) again and again on new inputs. Large Language Model (LLM) agents can follow an SOP written in natural language, but they call an LLM to choose every step of every run, which adds latency and cost at scale. We present ReTrace, which turns an SOP and a few logged agent runs into a reusable workflow in which code, not an LLM, selects the next step. The agent's reasoning, the explanation it writes with each tool call, often states why it took an action; the tool calls alone do not. ReTrace extracts the condition behind each step, merges these conditions across runs into a compact rule document, and generates an executable workflow from it. Only this last stage depends on the platform, so rule documents can be compiled for different orchestration platforms. On $79$ procedures from our production platform, ReTrace workflows reach $93.8\\%$ completion, against $96.8\\%$ for the agent, at $24\\%$ lower cost per task. On $τ^2$-Bench, they reach $75.8\\%$ task success (agent: $80.6\\%$) and run in $1.3$s instead of $170$s; three rounds of repair on training failures lift $k{=}2$ workflows from $66.7\\%$ to $81.2\\%$. On eight SOP-Bench procedures, ReTrace without repair trails few-shot generation ($80.6\\%$ vs. $83.6\\%$), but repair from labeled training failures lifts it to $87.8\\%$ at $0.40$s per task, compared to $85.5\\%$ in $46.6$s for the agent.",
+            "authors": [
+              "Kaiyuan Hou",
+              "Yang Ping Kuo",
+              "Indranil Bhattacharya",
+              "Rohith Nama",
+              "Arushi Gupta",
+              "Carlos D. Castillo",
+              "Prathap Ramachandra",
+              "Xiaofan Jiang",
+              "Francesco Carbone"
+            ],
+            "categories": [
+              "cs.AI",
+              "cs.LG",
+              "cs.MA"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.14492v1",
+            "published": "2026-11-10T18:49:47+00:00",
+            "title": "ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows",
+            "updated": "2026-11-10T18:49:47+00:00",
+            "version_id": "2611.14492v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "业务流程自动化针对新输入反复运行相同的标准操作程序 (SOP)。大型语言模型 (LLM) 代理可以遵循用自然语言编写的 SOP，但它们调用 LLM 来选择每次运行的每一步，这会大规模增加延迟和成本。我们提出了 ReTrace，它将 SOP 和一些记录的代理运行转变为可重用的工作流程，其中由代码（而不是 LLM）选择下一步。代理的推理，即它在每次工具调用时编写的解释，通常会说明它采取行动的原因；单独的工具调用不会。 ReTrace 提取每个步骤背后的条件，将这些运行条件合并到一个紧凑的规则文档中，并从中生成可执行的工作流程。只有最后一个阶段取决于平台，因此可以为不同的编排平台编译规则文档。在我们生产平台的 79 美元程序中，ReTrace 工作流程的完成度为 93.8 美元\\%$，而代理为 96.8 美元\\%$，每项任务的成本降低了 24\\%$ 美元。在 $τ^2$-Bench 上，他们达到了 $75.8\\%$ 任务成功率（代理：$80.6\\%$），并且运行时间为 $1.3$s，而不是 $170$s；对训练失败的三轮修复将 $k{=}2$ 工作流程从 $66.7\\%$ 提升到 $81.2\\%$。在 8 个 SOP-Bench 程序中，没有修复的 ReTrace 会跟踪少样本生成（$80.6\\%$ 与 $83.6\\%$），但是对标记的训练失败进行修复会将其提升到 $87.8\\%$，每个任务 $0.40$s，而代理的 $85.5\\%$ 则为 $46.6$s。",
+            "title_zh": "ReTrace：将使用工具的代理提炼为无需规划的工作流程"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Research ideation is iterative: researchers refine their ideas step by step based on feedback. Yet existing evaluations obscure this search process, making it difficult to understand how LLMs explore the space of research ideas and what limits their progress. We introduce Re-Search, which adapts the format of Twenty Questions to research ideation: given only the research problem of a published paper, a model must rediscover the paper's core idea by asking yes-or-no questions. Built from 200 ICML 2026 papers, Re-Search tracks how a model's idea evolves as it asks questions and receives binary oracle feedback, isolating ideation from execution. Across six recent LLMs, nearly all progress happens within the first 30 of 100 questions, which largely decide how the game ends; after that, most models plateau. Through controlled interventions on the candidate questions and the hypothesis space, we find that the bottleneck is generation, not judgment: models recognize a good idea or a good question when one is offered, but often cannot produce it on their own. We further analyze the ideation traces and find that models fail by either over-exploiting one direction or over-exploring too many. These findings point to concrete design principles for autoresearch systems: since models can judge candidates they cannot produce, enriching the search with externally sourced ideas and questions may be more effective than improving any single model's generation ability.",
+            "authors": [
+              "Muhan Gao",
+              "Hangxiao Zhu",
+              "Xinqi Su",
+              "Yu Zhang",
+              "Daniel Khashabi",
+              "Kuan-Hao Huang"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.14487v1",
+            "published": "2026-11-10T18:47:22+00:00",
+            "title": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
+            "updated": "2026-11-10T18:47:22+00:00",
+            "version_id": "2611.14487v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "研究构思是迭代的：研究人员根据反馈逐步完善他们的想法。然而，现有的评估掩盖了这一搜索过程，使得人们很难理解法学硕士如何探索研究思想的空间以及是什么限制了他们的进展。我们引入了重新搜索，它将二十个问题的格式适应研究构思：仅给出已发表论文的研究问题，模型必须通过询问是或否问题来重新发现论文的核心思想。 Re-Search 以 200 篇 ICML 2026 论文为基础，跟踪模型的想法在提出问题和接收二进制预言反馈时如何演变，从而将构思与执行隔离开来。在最近的 6 个法学硕士中，几乎所有进展都发生在 100 个问题中的前 30 个问题中，这在很大程度上决定了游戏的结局；此后，大多数模型都趋于稳定。通过对候选问题和假设空间的受控干预，我们发现瓶颈在于生成，而不是判断：模型在提出一个好想法或一个好问题时识别出一个好想法或一个好问题，但通常无法自行生成。我们进一步分析了构思痕迹，发现模型要么过度利用一个方向，要么过度探索太多方向而失败。这些发现指出了自动研究系统的具体设计原则：由于模型可以判断它们无法生成的候选者，因此用外部来源的想法和问题丰富搜索可能比提高任何单个模型的生成能力更有效。",
+            "title_zh": "重新搜索：通过两人提问游戏剖析法学硕士理念"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "In this paper, we present 1020 Group's submission to the WMT26 shared task on automated quality evaluation. Our system, Pterodactyl, was engineered specifically for subtasks 2 and 3, that is, segment-level quality score prediction and the detection of error-free segments. Pterodactyl is a highly customizable, ultra-low cost system optimized for binary classification in translation triage and data curation. It is based on an LLM-as-a-judge approach, with prompt engineering and model selection guided by ROC analysis. We also developed several variants of Pterodactyl that were specifically adapted for subtasks 3.",
+            "authors": [
+              "Evelyn Y. Garland",
+              "Carola F. Berger"
+            ],
+            "categories": [
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.14480v1",
+            "published": "2026-11-10T18:41:37+00:00",
+            "title": "Pterodactyl: Pushing the Limits of Efficient Automated Translation Evaluation",
+            "updated": "2026-11-10T18:41:37+00:00",
+            "version_id": "2611.14480v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "在本文中，我们介绍了 1020 Group 提交给 WMT26 自动化质量评估共享任务的内容。我们的系统 Pterodactyl 是专门为子任务 2 和 3 设计的，即片段级质量得分预测和无错误片段检测。 Pterodactyl 是一个高度可定制、超低成本的系统，针对翻译分类和数据管理中的二元分类进行了优化。它基于法学硕士作为法官的方法，以 ROC 分析为指导进行快速工程和模型选择。我们还开发了几种专门针对子任务 3 的翼手龙变体。",
+            "title_zh": "Pterodactyl：突破高效自动化翻译评估的极限"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Text-to-SQL systems over large pooled catalogs must first retrieve the tables a question needs. We compare against the published table recall of RASL, which uses Claude 3.5 models to extract keywords and select tables, on pooled BIRD, Spider, and Fiben catalogs. FERN (Feature-Engineered Ranking with No generative LLM) instead fuses three frozen retrievers into 100 candidates, describes each with up to 120 features, and reorders them with LightGBM rankers fitted once on BIRD's training questions. On Spider, where it was not fitted, its candidate pool alone reaches RASL's published recall at fifteen tables (98.0), and the ranker raises the share of questions with every gold table in the top five (complete@5) from 83.9% to 95.6%. At five tables, FERN's recall is within one point of RASL's on Spider (96.7 vs 97.0) and on BIRD with its evidence hints (96.6 vs 97.5), and 8.2 points below on BIRD without them (89.3). On 121 real BEAVER questions, without BEAVER fitting, its recall at fifteen (82.1) falls between two BEAVER-trained retrievers (80.8, 84.5), but its complete@15 is below both (49.6 vs 54.5 and 62.0). On Fiben, it falls far short at fifteen tables (54.2 vs 69.2, different question sets), although its recall at fifty is numerically close to RASL's question-only retrieval result (80.7 vs 79.4). On BIRD dev with evidence, non-retrieval features raise complete@5 by 7.7 points over retrieval signals alone. On BIRD dev, median latency is 208 ms per question on one A100, without hosted model calls.",
+            "authors": [
+              "Arjun Rao",
+              "Nishant Gopinath"
+            ],
+            "categories": [
+              "cs.IR",
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.14477v1",
+            "published": "2026-11-10T18:39:49+00:00",
+            "title": "FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking",
+            "updated": "2026-11-10T18:39:49+00:00",
+            "version_id": "2611.14477v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型池目录上的文本到 SQL 系统必须首先检索问题所需的表。我们与 RASL 已发布的表召回率进行比较，RASL 使用 Claude 3.5 模型在汇集的 BIRD、Spider 和 Fiben 目录上提取关键字并选择表。 FERN（无生成 LLM 的特征工程排名）将三个冻结的检索器融合为 100 个候选者，用最多 120 个特征描述每个候选者，并使用在 BIRD 训练问题上安装一次的 LightGBM 排名器对它们重新排序。在没有安装它的 Spider 上，仅其候选池就达到了 RASL 公布的 15 个桌子的召回率 (98.0)，并且排名器将前五名中每个黄金桌子 (complete@5) 的问题比例从 83.9% 提高到 95.6%。在五个表格中，FERN 在 Spider 上（96.7 vs 97.0）和带有证据提示的 BIRD 上（96.6 vs 97.5）的 RASL 召回率仅相差 1 分，而在没有证据提示的 BIRD 上（89.3）则低 8.2 分。在 121 个真实的 BEAVER 问题上，没有 BEAVER 拟合，其 15 的召回率 (82.1) 介于两个经过 BEAVER 训练的检索器 (80.8、84.5) 之间，但其complete@15 低于两者 (49.6 vs 54.5 和 62.0)。在 Fiben 上，它在 15 个表上远远落后（54.2 vs 69.2，不同的问题集），尽管它在 50 个表上的召回率在数字上接近 RASL 的纯问题检索结果（80.7 vs 79.4）。在有证据的 BIRD 开发中，非检索特征比单独的检索信号将 Complete@5 提高了 7.7 分。在 BIRD dev 上，在没有托管模型调用的情况下，一台 A100 上每个问题的平均延迟为 208 毫秒。",
+            "title_zh": "FERN：使用冻结检索器和学习排名进行文本到 SQL 的交叉基准表检索"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Formal world models can support planning, verification, and safety reasoning, but constructing them from open-ended natural-language situations is difficult, particularly in multi-agent settings where several formalizations may be plausible. We study whether five LLMs can generate such world models as partially observable stochastic games and whether mechanical validity is sufficient to establish that the resulting model faithfully represents the intended decision problem. We introduce a benchmark of 44 scenarios spanning game, situational, and cultural settings and evaluate generated world models along three dimensions: mechanical validity, reference-relative structural agreement, and semantic criteria. Across three empirical tracks, we analyze 410 first-pass generations. In the reference-backed game track, 134/135 generated world models pass a strict mechanical audit, yet mean permutation-invariant structural F1 is only 0.366, with just 28/134 mechanically valid models exactly matching the authored reference. In the cultural track, explicitly naming the country changes the generated structural representation for most LLMs while producing only small changes in automated semantic scores. These results show that executability is a necessary but insufficient criterion for LLM-generated world models: models that are mechanically valid can still differ substantially in the structure used by downstream neuro-symbolic reasoning and planning.",
+            "authors": [
+              "Souhaila Djaffal",
+              "Amna Jamal",
+              "Gagana Madhugiri Devaraja",
+              "Anidipta Pal",
+              "Jobst Heitzig"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.14419v1",
+            "published": "2026-11-10T17:58:12+00:00",
+            "title": "Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning",
+            "updated": "2026-11-10T17:58:12+00:00",
+            "version_id": "2611.14419v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_agent",
+            "llm_safety",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "正式的世界模型可以支持规划、验证和安全推理，但从开放式自然语言情况构建它们是很困难的，特别是在多智能体环境中，其中几种形式化可能是合理的。我们研究了五个法学硕士是否可以生成部分可观察的随机博弈这样的世界模型，以及机械有效性是否足以证明所得模型忠实地代表了预期的决策问题。我们引入了涵盖游戏、情境和文化设置的 44 个场景的基准，并从三个维度评估生成的世界模型：机械有效性、参考相对结构一致性和语义标准。我们通过三个实证轨道分析了 410 个首代。在参考支持的游戏轨道中，134/135 个生成的世界模型通过了严格的机械审核，但平均排列不变结构 F1 仅为 0.366，只有 28/134 个机械有效模型与所编写的参考完全匹配。在文化轨道上，明确命名国家会改变大多数法学硕士生成的结构表征，同时只会对自动语义分数产生微小的变化。这些结果表明，可执行性是 LLM 生成的世界模型的必要但不充分的标准：机械上有效的模型在下游神经符号推理和规划所使用的结构中仍然可能存在很大差异。",
+            "title_zh": "评估 LLM 生成的神经符号推理世界模型"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Speculative decoding accelerates LLM inference by having a draft model propose multiple tokens for the target model to verify in one pass. The speedup is governed by the expected acceptance length (EAL), yet standard training objectives such as cross-entropy, KL divergence, and total variation focus only on distribution matching or single-step overlap. Recent studies instead propose block-level training objectives, aiming to optimize EAL directly. However, these objectives remain surrogates rather than exact formulations of EAL. For example, some average later acceptance over target-distributed continuations rather than the verification branches selected by accepted tokens, introducing a covariance gap that can reverse the gradient direction. We analyze this gap and derive REAL, a real EAL training loss that uses path weights for unbiased estimation and Rao-Blackwellization for variance reduction. In a controlled loss-level comparison with a Qwen3.6-35B-A3B target and a Domino drafter, REAL outperforms WTV, VSD, DBLast, and the static LK baseline on probabilistic serving acceptance length across 9 task subsets and 5 evaluation seeds. These gains require only a change to the training loss, with no modification to the drafter architecture or inference procedure, demonstrating the practicality of real EAL training. A reference implementation of the REAL loss is available at https://github.com/King-ty/speculators/tree/real-loss.",
+            "authors": [
+              "Yu Tian"
+            ],
+            "categories": [
+              "cs.LG",
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.14399v1",
+            "published": "2026-11-10T17:45:12+00:00",
+            "title": "REAL Loss: Optimizing Real Expected Acceptance Length for Speculative Decoding",
+            "updated": "2026-11-10T17:45:12+00:00",
+            "version_id": "2611.14399v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_efficiency",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "推测性解码通过让草稿模型为目标模型提出多个标记来一次性验证，从而加速 LLM 推理。加速比由预期接受长度 (EAL) 决定，但交叉熵、KL 散度和总变异等标准训练目标仅关注分布匹配或单步重叠。最近的研究提出了块级训练目标，旨在直接优化 EAL。然而，这些目标仍然是 EAL 的替代目标，而不是 EAL 的精确表述。例如，对目标分布式延续的一些平均后续接受，而不是由接受的令牌选择的验证分支，引入了可以反转梯度方向的协方差间隙。我们分析了这一差距并得出 REAL，这是一种真实的 EAL 训练损失，它使用路径权重进行无偏估计，并使用 Rao-Blackwellization 来减少方差。在与 Qwen3.6-35B-A3B 目标和 Domino 起草者的受控损失水平比较中，REAL 在 9 个任务子集和 5 个评估种子的概率服务接受长度上优于 WTV、VSD、DBLast 和静态 LK 基线。这些收益只需要改变训练损失，无需修改绘图器架构或推理程序，证明了真正的 EAL 训练的实用性。 REAL 损失的参考实现可在 https://github.com/King-ty/speculators/tree/real-loss 获取。",
+            "title_zh": "真实损失：优化推测解码的真实预期接受长度"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language models (LLMs) increasingly exhibit capabilities that resemble human Learning by Thinking (LbT), the acquisition of new insight through internal processes such as explanation and reasoning, without new external input. A systematic account of the cognitive mechanisms behind these capabilities, and of their limits, remains underdeveloped. This paper proposes a Cognitive LbT Framework that maps four mechanisms (Reflective Reasoning, Synthetic Memory Formation, Internal Simulation, and Conceptual Self-Organization) onto computational processes in LLMs. Drawing on representative methods, including chain-of-thought prompting, self-consistency, self-reflection, Tree-of-Thoughts search, Self-Instruct, and self-taught reasoning, the analysis argues that selected methods can functionally approximate aspects of these mechanisms and can improve performance on some tasks without additional labeled examples, although this does not always constitute durable learning in model parameters. For example, Self-Instruct generated approximately 52,000 instructions from 175 seed tasks and reported a 33% absolute improvement on Super-NaturalInstructions (Y. Wang et al., 2023). The same mechanisms also produce characteristic failures, including hallucination diffusion, model collapse, concept drift, and high computational cost. These failures are not isolated technical defects but follow from four structural asymmetries between LLMs and human cognition: the identity of generator and monitor, closed learning loops without external grounding, symbolic rather than sensorimotor simulation, and the cost of inference-time computation. The framework yields testable propositions about when LbT in LLMs should succeed or fail and offers a structured basis for designing more reliable autonomous learning systems.",
+            "authors": [
+              "Dong Han",
+              "Jin Zhang",
+              "Kunyue Yang"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.14382v1",
+            "published": "2026-11-10T17:37:13+00:00",
+            "title": "Cognitive Mapping of Learning by Thinking Mechanisms in Large Language Models",
+            "updated": "2026-11-10T17:37:13+00:00",
+            "version_id": "2611.14382v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_safety",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型 (LLM) 越来越多地表现出类似于人类思维学习 (LbT) 的能力，即通过解释和推理等内部过程获取新的见解，而无需新的外部输入。对这些能力背后的认知机制及其局限性的系统描述仍然不完善。本文提出了一种认知 LbT 框架，将四种机制（反思推理、综合记忆形成、内部模拟和概念自组织）映射到法学硕士的计算过程中。借鉴代表性方法，包括思想链提示、自我一致性、自我反思、思想树搜索、自我指导和自学推理，分析认为所选方法可以在功能上近似这些机制的各个方面，并且可以在没有额外标记示例的情况下提高某些任务的性能，尽管这并不总是构成模型参数的持久学习。例如，Self-Instruct 从 175 个种子任务中生成了大约 52,000 条指令，并报告比 Super-NaturalInstructions 绝对提高了 33%（Y. Wang 等人，2023）。同样的机制也会产生典型的失败，包括幻觉扩散、模型崩溃、概念漂移和高计算成本。这些失败并不是孤立的技术缺陷，而是源于法学硕士和人类认知之间的四种结构性不对称：生成器和监视器的身份、没有外部接地的闭合学习循环、符号模拟而不是感觉运动模拟以及推理时间计算的成本。该框架提出了关于法学硕士 LbT 何时成功或失败的可测试命题，并为设计更可靠的自主学习系统提供了结构化基础。",
+            "title_zh": "大语言模型中思维机制学习的认知图谱"
+          }
+        }
+      ],
+      "notification_hash": "971c839dfe3e5574de5fe93afc9a8505b5469cd3976a1892ee2aaefe99bd9069",
+      "recovery_of": [],
+      "rendered": {
+        "2611.14382": "rendered_inline_translation",
+        "2611.14399": "rendered_inline_translation",
+        "2611.14419": "rendered_inline_translation",
+        "2611.14477": "rendered_inline_translation",
+        "2611.14480": "rendered_inline_translation",
+        "2611.14487": "rendered_inline_translation",
+        "2611.14492": "rendered_inline_translation",
+        "2611.14493": "rendered_inline_translation",
+        "2611.14511": "rendered_inline_translation",
+        "2611.14514": "rendered_inline_translation"
+      },
+      "run_id": "20261111T085503Z-857deabe",
+      "schema_version": 1,
+      "status": "prepared"
     }
   },
   "papers": {
