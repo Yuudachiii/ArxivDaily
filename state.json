@@ -66756,11 +66756,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-11T08:55:03.537239+00:00",
-        "run_id": "20261111T085503Z-857deabe",
-        "stage": "translation"
+      "title_zh": "真实损失：优化推测解码的真实预期接受长度",
+      "translation": {
+        "abstract_zh": "推测性解码通过让草稿模型为目标模型提出多个标记来一次性验证，从而加速 LLM 推理。加速比由预期接受长度 (EAL) 决定，但交叉熵、KL 散度和总变异等标准训练目标仅关注分布匹配或单步重叠。最近的研究提出了块级训练目标，旨在直接优化 EAL。然而，这些目标仍然是 EAL 的替代目标，而不是 EAL 的精确表述。例如，对目标分布式延续的一些平均后续接受，而不是由接受的令牌选择的验证分支，引入了可以反转梯度方向的协方差间隙。我们分析了这一差距并得出 REAL，这是一种真实的 EAL 训练损失，它使用路径权重进行无偏估计，并使用 Rao-Blackwellization 来减少方差。在与 Qwen3.6-35B-A3B 目标和 Domino 起草者的受控损失水平比较中，REAL 在 9 个任务子集和 5 个评估种子的概率服务接受长度上优于 WTV、VSD、DBLast 和静态 LK 基线。这些收益只需要改变训练损失，无需修改绘图器架构或推理程序，证明了真正的 EAL 训练的实用性。 REAL 损失的参考实现可在 https://github.com/King-ty/speculators/tree/real-loss 获取。",
+        "title_zh": "真实损失：优化推测解码的真实预期接受长度"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.14399v1"
       ]
