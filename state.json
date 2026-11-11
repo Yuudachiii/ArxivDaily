@@ -66951,11 +66951,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-11T08:55:03.537239+00:00",
-        "run_id": "20261111T085503Z-857deabe",
-        "stage": "translation"
+      "title_zh": "Pterodactyl：突破高效自动化翻译评估的极限",
+      "translation": {
+        "abstract_zh": "在本文中，我们介绍了 1020 Group 提交给 WMT26 自动化质量评估共享任务的内容。我们的系统 Pterodactyl 是专门为子任务 2 和 3 设计的，即片段级质量得分预测和无错误片段检测。 Pterodactyl 是一个高度可定制、超低成本的系统，针对翻译分类和数据管理中的二元分类进行了优化。它基于法学硕士作为法官的方法，以 ROC 分析为指导进行快速工程和模型选择。我们还开发了几种专门针对子任务 3 的翼手龙变体。",
+        "title_zh": "Pterodactyl：突破高效自动化翻译评估的极限"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.14480v1"
       ]
