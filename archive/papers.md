@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | 2026-11-11 | Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations | 对比发现：开放式科学发现与竞争性解释的比较 | [arXiv 2611.14514v1](https://arxiv.org/abs/2611.14514v1) |
 | 2026-11-11 | Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents | Pyrite：蛋白质配体姿势排名代理的构建和基准测试 | [arXiv 2611.14511v1](https://arxiv.org/abs/2611.14511v1) |
-| 2026-11-11 | Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents | 待翻译 | [arXiv 2611.14493v1](https://arxiv.org/abs/2611.14493v1) |
+| 2026-11-11 | Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents | 代理评估框架的比较分析：企业分析代理的稳定性、检测和发现 | [arXiv 2611.14493v1](https://arxiv.org/abs/2611.14493v1) |
 | 2026-11-11 | ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows | 待翻译 | [arXiv 2611.14492v1](https://arxiv.org/abs/2611.14492v1) |
 | 2026-11-11 | Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game | 待翻译 | [arXiv 2611.14487v1](https://arxiv.org/abs/2611.14487v1) |
 | 2026-11-11 | Pterodactyl: Pushing the Limits of Efficient Automated Translation Evaluation | 待翻译 | [arXiv 2611.14480v1](https://arxiv.org/abs/2611.14480v1) |
