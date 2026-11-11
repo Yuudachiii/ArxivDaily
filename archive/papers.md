@@ -13,7 +13,7 @@
 | 2026-11-11 | FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking | FERN：使用冻结检索器和学习排名进行文本到 SQL 的交叉基准表检索 | [arXiv 2611.14477v1](https://arxiv.org/abs/2611.14477v1) |
 | 2026-11-11 | Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning | 评估 LLM 生成的神经符号推理世界模型 | [arXiv 2611.14419v1](https://arxiv.org/abs/2611.14419v1) |
 | 2026-11-11 | REAL Loss: Optimizing Real Expected Acceptance Length for Speculative Decoding | 真实损失：优化推测解码的真实预期接受长度 | [arXiv 2611.14399v1](https://arxiv.org/abs/2611.14399v1) |
-| 2026-11-11 | Cognitive Mapping of Learning by Thinking Mechanisms in Large Language Models | 待翻译 | [arXiv 2611.14382v1](https://arxiv.org/abs/2611.14382v1) |
+| 2026-11-11 | Cognitive Mapping of Learning by Thinking Mechanisms in Large Language Models | 大语言模型中思维机制学习的认知图谱 | [arXiv 2611.14382v1](https://arxiv.org/abs/2611.14382v1) |
 | 2026-11-10 | Beyond Modality Preference: Controlling Multimodal Arbitration under Modality Conflict in MLLMs | 超越模态偏好：在 MLLM 模态冲突下控制多模态仲裁 | [arXiv 2611.12883v1](https://arxiv.org/abs/2611.12883v1) |
 | 2026-11-10 | WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems | WorkflowArena：基于 LLM 的多代理系统中可执行工作流编排的基准测试 | [arXiv 2611.12856v1](https://arxiv.org/abs/2611.12856v1) |
 | 2026-11-10 | Mitigating Agentic Deception via Evaluation-Side Partially Observable Games | 通过评估端部分可观察游戏减轻代理欺骗 | [arXiv 2611.12835v1](https://arxiv.org/abs/2611.12835v1) |
