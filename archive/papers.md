@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-11 | Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations | 待翻译 | [arXiv 2611.14514v1](https://arxiv.org/abs/2611.14514v1) |
+| 2026-11-11 | Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents | 待翻译 | [arXiv 2611.14511v1](https://arxiv.org/abs/2611.14511v1) |
+| 2026-11-11 | Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents | 待翻译 | [arXiv 2611.14493v1](https://arxiv.org/abs/2611.14493v1) |
+| 2026-11-11 | ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows | 待翻译 | [arXiv 2611.14492v1](https://arxiv.org/abs/2611.14492v1) |
+| 2026-11-11 | Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game | 待翻译 | [arXiv 2611.14487v1](https://arxiv.org/abs/2611.14487v1) |
+| 2026-11-11 | Pterodactyl: Pushing the Limits of Efficient Automated Translation Evaluation | 待翻译 | [arXiv 2611.14480v1](https://arxiv.org/abs/2611.14480v1) |
+| 2026-11-11 | FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking | 待翻译 | [arXiv 2611.14477v1](https://arxiv.org/abs/2611.14477v1) |
+| 2026-11-11 | Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning | 待翻译 | [arXiv 2611.14419v1](https://arxiv.org/abs/2611.14419v1) |
+| 2026-11-11 | REAL Loss: Optimizing Real Expected Acceptance Length for Speculative Decoding | 待翻译 | [arXiv 2611.14399v1](https://arxiv.org/abs/2611.14399v1) |
+| 2026-11-11 | Cognitive Mapping of Learning by Thinking Mechanisms in Large Language Models | 待翻译 | [arXiv 2611.14382v1](https://arxiv.org/abs/2611.14382v1) |
 | 2026-11-10 | Beyond Modality Preference: Controlling Multimodal Arbitration under Modality Conflict in MLLMs | 超越模态偏好：在 MLLM 模态冲突下控制多模态仲裁 | [arXiv 2611.12883v1](https://arxiv.org/abs/2611.12883v1) |
 | 2026-11-10 | WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems | WorkflowArena：基于 LLM 的多代理系统中可执行工作流编排的基准测试 | [arXiv 2611.12856v1](https://arxiv.org/abs/2611.12856v1) |
 | 2026-11-10 | Mitigating Agentic Deception via Evaluation-Side Partially Observable Games | 通过评估端部分可观察游戏减轻代理欺骗 | [arXiv 2611.12835v1](https://arxiv.org/abs/2611.12835v1) |
