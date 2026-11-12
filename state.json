@@ -67134,7 +67134,9 @@
       ]
     },
     "2611.14244": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-12T09:22:29.785958+00:00",
@@ -67159,6 +67161,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-12T09:22:29.785958+00:00",
+        "run_id": "20261112T092229Z-78454964",
+        "stage": "selection"
+      },
       "versions": [
         "2611.14244v1"
       ]
