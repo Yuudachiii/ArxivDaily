@@ -11,7 +11,7 @@
 | 2026-11-12 | Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents | 不要只相信你的记忆：与证据相关的记忆可以减少法学硕士代理中记忆引起的退化 | [arXiv 2611.14320v1](https://arxiv.org/abs/2611.14320v1) |
 | 2026-11-12 | LM-SimBench: A Unified Framework, Dataset, and Benchmark for Large Language Model Training Simulation | LM-SimBench：大型语言模型训练仿真的统一框架、数据集和基准 | [arXiv 2611.14285v1](https://arxiv.org/abs/2611.14285v1) |
 | 2026-11-12 | Chain of Physics: Supporting Fault Diagnosis with Engineering-Inspired Large Language Model Reasoning | 物理链：以工程启发的大语言模型推理支持故障诊断 | [arXiv 2611.14263v1](https://arxiv.org/abs/2611.14263v1) |
-| 2026-11-12 | SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM Serving | 待翻译 | [arXiv 2611.14246v1](https://arxiv.org/abs/2611.14246v1) |
+| 2026-11-12 | SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM Serving | SinkState：用于高效混合 LLM 服务的循环状态的动态 SVD | [arXiv 2611.14246v1](https://arxiv.org/abs/2611.14246v1) |
 | 2026-11-12 | An AI Assistant for Automating Anti-Corruption Expertise of Draft Legislation Based on the TRACE Framework | 待翻译 | [arXiv 2611.14244v1](https://arxiv.org/abs/2611.14244v1) |
 | 2026-11-12 | Stagewise and interpretable emergence of inside-outside computation in Transformer-based language models | 待翻译 | [arXiv 2611.14221v1](https://arxiv.org/abs/2611.14221v1) |
 | 2026-11-11 | Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations | 对比发现：开放式科学发现与竞争性解释的比较 | [arXiv 2611.14514v1](https://arxiv.org/abs/2611.14514v1) |

@@ -67286,11 +67286,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-12T09:22:29.785958+00:00",
-        "run_id": "20261112T092229Z-78454964",
-        "stage": "translation"
+      "title_zh": "SinkState：用于高效混合 LLM 服务的循环状态的动态 SVD",
+      "translation": {
+        "abstract_zh": "混合模型将 softmax 注意力与线性注意力相结合，将历史压缩为固定大小的循环状态，以平衡模型质量和推理效率。然而，线性注意力并没有将这种压缩推向极限：我们发现线性层的查询、键和值集中在一个稳定的低维子空间中，我们将这种现象称为线性注意力池，因此每个状态实际上都是低秩的，并且各个状态的秩不同。然而，现有的服务系统使这些冗余状态保持密集，在每个解码步骤中完整地读取和重写它们，因此它们的内存流量随着批量大小而增长，并主导解码成本。因此，SinkState 在整个推理过程中以自适应低秩形式存储每个循环状态，并使用缓冲更新和仅限于顶部子空间的本地 SVD。 SinkState 进一步在 CPU 上异步整合其余组件。在具有 Mamba-2 和门控 DeltaNet (GDN) 层的四个混合模型上，从 4B 到 120B 参数，与 Mamba-SSM 和 FLA 相比，SinkState 将循环状态的峰值内存减少高达 2.6 倍（平均 1.9 倍），并将解码速度提高高达 1.58 倍（平均 1.25 倍），同时保持准确性。",
+        "title_zh": "SinkState：用于高效混合 LLM 服务的循环状态的动态 SVD"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.14246v1"
       ]
