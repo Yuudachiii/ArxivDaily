@@ -64626,11 +64626,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-12T09:22:29.993224+00:00",
-        "run_id": "20261112T092229Z-c586a0c2",
-        "stage": "translation"
+      "title_zh": "FERN：用于文本到SQL的跨基准表检索，结合冻结检索器与学习排序",
+      "translation": {
+        "abstract_zh": "在大型汇总目录上的文本到SQL系统必须首先检索问题所需的表。我们将其与RASL已发表的表召回率进行比较，RASL使用Claude 3.5模型提取关键词并选择表，在汇总的BIRD、Spider和Fiben目录上进行测试。FERN（无生成型大语言模型的特征工程排序）则将三个冻结的检索器融合成100个候选项，每个候选项最多用120个特征进行描述，并用在BIRD训练问题上拟合一次的LightGBM排序器重新排序。在Spider上，FERN并未进行拟合，其候选池本身就达到了RASL在十五个表上的已公布召回率（98.0），而排序器将每个黄金表都在前五（complete@5）的问题比例从83.9%提升至95.6%。在五个表的情况下，FERN在Spider上的召回率与RASL相差不到一点（96.7比97.0），在BIRD及其证据提示下为（96.6比97.5），而在没有证据提示的BIRD上低8.2点（89.3）。在121个真实的BEAVER问题上，未经BEAVER拟合，其在十五个表上的召回率(82.1) 位于两个 BEAVER 训练的检索器 (80.8, 84.5) 之间，但其 complete@15 低于两者 (49.6 对 54.5 和 62.0)。在 Fiben 上，它在十五张表时大幅落后 (54.2 对 69.2，不同的问题集)，尽管其在五十条数据的召回在数值上接近 RASL 的仅问题检索结果 (80.7 对 79.4)。在 BIRD 开发集带证据下，非检索特征使 complete@5 比仅使用检索信号提高了 7.7 点。在 BIRD 开发集上，单个 A100 每个问题的中位延迟为 208 毫秒，无需托管模型调用。",
+        "title_zh": "FERN：用于文本到SQL的跨基准表检索，结合冻结检索器与学习排序"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.14477v1"
       ]
