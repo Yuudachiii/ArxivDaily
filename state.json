@@ -47,7 +47,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:41:59.424237+00:00",
-    "last_complete_end": "2026-11-11T08:55:03.537239+00:00"
+    "last_complete_end": "2026-11-12T09:22:29.785958+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -249,6 +249,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-12": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -67085,6 +67094,335 @@
         "2611.12883v1"
       ]
     },
+    "2611.14221": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.785958+00:00",
+      "paper": {
+        "abstract": "Variability in syntactic structure and parsing ambiguity are fundamental aspects of natural language which modern LLMs have to learn to deal with proficiently. Previous \"post-mortem\" studies have shown that fully trained Transformers indeed approximate canonical parsing algorithms such as inside-outside, but little is established theoretically about how this is actually learned. Here, we make a first step towards addressing this by studying the learning dynamics in synthetic context-free grammars with variable parse tree topology. The stagewise learning curves are fully interpretable, in the sense that all of the loss stages a) can be computed analytically, and b) can be clearly associated to the representation of a hidden latent tree variable, which allows to lift ambiguity and utilize information from wider contexts. By probing representations, we visualize the emergence of inside-outside computation across depth and during training: while during early stages local (bigram/trigram) information is used and involves only a few initial layers, gradually the Transformer develops an encoder-decoder structure where the most abstract latent information is encoded in the middle, and the latter half of the network is used to progressively refine the final token prediction. This organization of computation is reminiscent of findings in real-world LLMs, and importantly applies here to a synthetic model which allows full analytical control of the data statistics, thus opening the door to theoretical progress.",
+        "authors": [
+          "Jack T. Parley"
+        ],
+        "categories": [
+          "cs.CL",
+          "cond-mat.dis-nn"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14221v1",
+        "published": "2026-11-10T15:39:47+00:00",
+        "title": "Stagewise and interpretable emergence of inside-outside computation in Transformer-based language models",
+        "updated": "2026-11-10T15:39:47+00:00",
+        "version_id": "2611.14221v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14221v1"
+      ]
+    },
+    "2611.14244": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.785958+00:00",
+      "paper": {
+        "abstract": "We present an AI assistant for automating anti-corruption expertise of draft legislation based on the TRACE architecture, designed to screen bills for corruption risks: pinpoint provisions an expert would criticise and name the regulatory defect in each. The pipeline combines a deterministic parsing core, model-guided single-provision qualification, rule-based factor assignment, and external human oversight. To evaluate the assistant, we constructed an open benchmark from the published conclusions of Ukraine's National Agency on Corruption Prevention (NAZK), comprising 132 draft laws with 474 model-extracted findings. A system flag agrees with a finding when it targets a compatible provision and an LLM judge rates the risk as the same (strict) or partly the same (lenient). On 100 draft laws, the pipeline matches 0.28 of the findings within its top ten flags using the local Gemma 4 31B model, 0.30 with Sonnet 5.5, and 0.43-0.46 across all flags (non-blind; the frozen blind baseline achieves 0.21, 95% CI 0.16-0.26). Across all runs, most misses occur on provisions that the system located but qualified as a different risk, and none of the 32 legal-collision findings was matched. On 21 acts held out from tuning, the pipeline outperforms a monolithic prompt containing the full methodology under the strict measure, though not under the lenient one, and Opus 5.5 adds nothing over Sonnet. The reported scores reflect agreement with model-extracted findings rated by an LLM judge whose two access routes agree on 73 of 74 labels, without human expert validation.",
+        "authors": [
+          "Serhii Zabolotnii",
+          "Alina Tarasova"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14244v1",
+        "published": "2026-11-10T15:56:01+00:00",
+        "title": "An AI Assistant for Automating Anti-Corruption Expertise of Draft Legislation Based on the TRACE Framework",
+        "updated": "2026-11-10T15:56:01+00:00",
+        "version_id": "2611.14244v1"
+      },
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14244v1"
+      ]
+    },
+    "2611.14246": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.785958+00:00",
+      "paper": {
+        "abstract": "Hybrid models combine softmax attention with linear attention, which compresses history into fixed-size recurrent states to balance model quality and inference efficiency. However, linear attention has not pushed this compression to its limit: we find that the queries, keys, and values of linear layers concentrate in a stable, low-dimensional subspace, a phenomenon we call the linear attention sink, so each state is effectively low-rank, with a rank that varies across states. Yet existing serving systems keep these redundant states dense, reading and rewriting them in full at every decoding step, so their memory traffic grows with the batch size and dominates the decoding cost. Thus SinkState stores each recurrent state in an adaptive low-rank form throughout inference with buffered updates and a local SVD restricted to the top subspace. SinkState further consolidates the remaining components asynchronously on the CPU. On four hybrid models with Mamba-2 and Gated DeltaNet (GDN) layers, from 4B to 120B parameters, SinkState reduces the peak memory of recurrent states by up to 2.6x (1.9x on average) and speeds up decoding by up to 1.58x (1.25x on average) over Mamba-SSM and FLA, while maintaining accuracy.",
+        "authors": [
+          "Haolin Jiang",
+          "Weihang Li",
+          "Zhongzhu Zhou",
+          "Jinwen Pan",
+          "Santosh Pandey",
+          "Hang Liu"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14246v1",
+        "published": "2026-11-10T15:57:35+00:00",
+        "title": "SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM Serving",
+        "updated": "2026-11-10T15:57:35+00:00",
+        "version_id": "2611.14246v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14246v1"
+      ]
+    },
+    "2611.14263": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.785958+00:00",
+      "paper": {
+        "abstract": "Fault diagnosis in complex systems requires linking observed changes in physical quantities to the failure mechanisms that produce them. Experienced engineers perform this task by combining sensor information with knowledge of system behavior and fault propagation. Large Language Models (LLMs) can support this process, but their diagnostic reasoning depends on the availability of asset-specific engineering knowledge and on how this knowledge is represented and used during inference. This work introduces Chain of Physics (CoP), an LLM-based fault-diagnosis framework built around a Constrained Knowledge Graph (CKG) generated automatically from asset-specific reference documentation. CoP addresses failure-sensor association from textual engineering knowledge. The CKG stores diagnostic chains connecting failure modes, changes in physical quantities, and monitoring sensors. During inference, semantically similar graph paths are retrieved for each question and used as both information and in-context examples for the reasoning process. Candidate failure modes are extracted from the question and analysed independently through dedicated LLM calls, which generate plausible failure-to-observation chains. A final decision module compares these chains with the available answer choices. CoP is evaluated on the FailureSensorIQ benchmark across four industrial asset classes and three LLMs. Compared with direct prompting and conventional Retrieval-Augmented Generation (RAG), CoP improves diagnostic accuracy across all evaluated models, with gains ranging from 7.8 to 19.6 percentage points and from 11.7 to 18.2 percentage points, respectively. The results show that structured engineering knowledge can improve LLM-based diagnostic reasoning when graph retrieval is combined with in-context examples of fault propagation.",
+        "authors": [
+          "Wenqi Zhou",
+          "Leonardo Baldo",
+          "Kai Goebel",
+          "Manuel Arias Chao"
+        ],
+        "categories": [
+          "cs.LG",
+          "eess.SP"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14263v1",
+        "published": "2026-11-10T16:09:44+00:00",
+        "title": "Chain of Physics: Supporting Fault Diagnosis with Engineering-Inspired Large Language Model Reasoning",
+        "updated": "2026-11-10T16:09:44+00:00",
+        "version_id": "2611.14263v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_rag",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14263v1"
+      ]
+    },
+    "2611.14285": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.785958+00:00",
+      "paper": {
+        "abstract": "Evaluating candidate parallelization strategies through distributed training runs makes strategy selection prohibitively expensive at scale. Performance simulation offers a lower cost alternative, yet controlled comparisons among existing simulators remain difficult because they differ in the training stages they model and the workloads on which they are evaluated. We introduce LM-SimBench, a unified framework, profiling dataset, and benchmark for evaluating LLM training simulators. The framework decomposes simulation into functional stages from model compilation to schedule level aggregation, connecting execution representations and cost estimators to measurable evaluation targets. Following this framework, we profile 23 model settings from 10 dense and Mixture-of-Experts (MoE) LLM families on an Ascend Neural Processing Unit (NPU) cluster. The resulting dataset contains 348 feasible configurations that jointly vary five parallelism dimensions and activation recomputation, with six views spanning configuration, rank, operator, event, and kernel granularity. Evaluations of representative training simulators demonstrate how LM-SimBench supports comparisons of prediction accuracy, assessment of configuration selection, and diagnosis of prediction errors. Matched GPU-NPU experiments validate the cross-platform applicability of the collection and evaluation protocol and demonstrate NPU-guided GPU configuration selection.",
+        "authors": [
+          "Yu Dong",
+          "Hong Li",
+          "Qiang Sun",
+          "Xu Zhou",
+          "Jinbiao Huo",
+          "Qixiu Cheng",
+          "Zhiyuan Liu"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14285v1",
+        "published": "2026-11-10T16:26:19+00:00",
+        "title": "LM-SimBench: A Unified Framework, Dataset, and Benchmark for Large Language Model Training Simulation",
+        "updated": "2026-11-10T16:26:19+00:00",
+        "version_id": "2611.14285v1"
+      },
+      "rule_hits": [
+        "llm_efficiency",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14285v1"
+      ]
+    },
+    "2611.14320": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.785958+00:00",
+      "paper": {
+        "abstract": "External memory enables LLM agents to improve from experience by distilling trajectories of past tasks into concise lessons for new tasks. However, memory can also lead to memory-induced degradation, where an agent fails on tasks it would solve without memory, often because it follows a lesson that is incorrect, or misapplies or misreads a valid one. This is because lessons are inferred from trajectories labeled only with task success or failure, yet are typically provided without the trajectories they came from, leaving the agent no way to check them. To address this, we introduce WikiTrace, an evidence-linked memory system designed to let agents check each lesson against its original trajectory. Specifically, motivated by the finding that a trajectory often still holds the evidence needed to catch an erroneous lesson, WikiTrace stores each lesson as a concise insight linked to a summary of why its trajectory succeeded or failed and to the raw trajectory itself. Then, on a new task, the agent starts from all insights and, whenever one lacks details needed to act, conflicts with another, or comes from a failed task, descends through its links with terminal tools to fill in missing details or correct the insight before acting. We validate WikiTrace on five agentic benchmarks, showing that it consistently outperforms existing memory approaches and a baseline given the same insights alone, while also reducing memory-induced degradation. Our code is available at https://github.com/yukyeongleee/wikitrace",
+        "authors": [
+          "Yukyeong Lee",
+          "Yumin Choi",
+          "Jinheon Baek",
+          "Sung Ju Hwang"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.MA"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14320v1",
+        "published": "2026-11-10T16:46:59+00:00",
+        "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+        "updated": "2026-11-10T16:46:59+00:00",
+        "version_id": "2611.14320v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14320v1"
+      ]
+    },
+    "2611.14323": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.785958+00:00",
+      "paper": {
+        "abstract": "Language-model systems use self-judgment to decide which answers to release, review, or recompute. Because intervention is costly, an assurance score must rank errors well at the available budget, not merely over the full ranking. We compare the judge's continuous verdict-token score with a supervised correctness probe trained on attention-head activations from the same prompt. Exact identities link fixed-budget error recall to residual risk and show that AUROC averages recall over all budgets. Across three open 7-12B models on GSM8K and MATH, the probe finds 1.3-22.5 additional percentage points of errors at 5% review in all six model-dataset settings (median 7.4 points). At 10% routing, probe-guided allocation improves accuracy over equal-cost random allocation in both GSM8K experiments, but beats judge-guided routing only for the weaker judge. Cross-dataset transfer lowers probe AUROC for every model in both directions relative to target-domain training. Because dataset, weight precision, and generation budget change together, this measures a joint protocol shift rather than a dataset-only effect. Internal signals can improve supervised, in-domain budget allocation, but are not domain-general confidence estimators.",
+        "authors": [
+          "Mayank Gulati",
+          "Gerhard Wunder"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14323v1",
+        "published": "2026-11-10T16:48:21+00:00",
+        "title": "Auditing the Judge: Internal Signals for LLM Reasoning Assurance",
+        "updated": "2026-11-10T16:48:21+00:00",
+        "version_id": "2611.14323v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14323v1"
+      ]
+    },
+    "2611.14326": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.785958+00:00",
+      "paper": {
+        "abstract": "LLM agents increasingly operate in long-horizon, verifier-rich environments, but current self-improvement mechanisms often write episode-derived lessons directly into memory, making local success an unreliable signal for reusable and safe knowledge. This paper addresses the core question of when an experience-derived behavioral update should be admitted into persistent agent state. We propose Falsification-Gated Self-Evolution (FGSE), a verifier-grounded framework that represents each candidate lesson as a structured hypothesis with an explicit precondition, behavior change, expected effect, and verifier. FGSE applies the hypothesis only in a temporary state, tests it on target-transfer, falsification, and archived-regression probes, and then commits, refines, or rejects it according to measured gain and risk. Across web, app, tool-use, and long-term memory benchmarks, FGSE achieves strong task performance, including 39.8 WebArena success rate, 78.8 AppWorld average completion, and 0.724/0.487 Pass$^1$ on $τ$-Retail/$τ$-Airline, while reducing falsification failures to 5.0%, regression damage to 1.3%, and harmful committed updates to 3.6%. These results suggest that testing memory updates as hypotheses supports more reliable long-term adaptation.",
+        "authors": [
+          "Runxuan Tang",
+          "Haoyu Gao",
+          "Yuyan Ding",
+          "Junyi Yao",
+          "Zihao Zheng",
+          "Zecheng Sheng",
+          "Liwei Hou"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14326v1",
+        "published": "2026-11-10T16:52:25+00:00",
+        "title": "When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents",
+        "updated": "2026-11-10T16:52:25+00:00",
+        "version_id": "2611.14326v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14326v1"
+      ]
+    },
+    "2611.14333": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.785958+00:00",
+      "paper": {
+        "abstract": "Users often complain that AI assistants such as ChatGPT are getting worse. Some versions do change, but human evaluation leaves a second possibility untested: the people judging may change. We separate the two on Chatbot Arena, a public platform where people compare answers from two anonymous large language models (LLMs) and pick the better one or say both are bad. We study 1,260,967 blind votes cast from May 2023 to August 2024 on pairs of models whose versions are fixed: dated vendor snapshots and models with fixed open weights. For the same pair of unchanged models, the share of votes saying \"both are bad\" rises by 1.71 percentage points a month on a mean of 17.1%, and by 1.91 points a month in 2024. In fourteen pairs observed often in both 2023 and 2024, it rose in every one, from 15.5% to 23.3%. The ranking does not trend: in 2024, the stronger model's share of decisive votes is flat. The rise holds within the same voter and on the same pair, and across arrival cohorts from their first recorded vote. It holds with prompt controls, in every major language, for dated vendor snapshots, open-weight models and models with stable answer length, and between interface changes. The drift is shared across models: month effects estimated from other models' pairs remove it from each model's own pairs. Platform-wide, the average model would be expected to score 78% against the 2023 average, yet the share of \"both are bad\" votes ended near where it began. The pattern fits a standard that follows the category's progress, so a product that stands still is judged as declining. Absolute verdicts on AI drifted while relative comparisons held steady, an evaluation drift that matters for LLM leaderboards and for the human feedback used to train models.",
+        "authors": [
+          "Zihan Chen",
+          "Lei Nico Zheng",
+          "Di Zhu"
+        ],
+        "categories": [
+          "cs.HC",
+          "cs.AI",
+          "cs.CL",
+          "cs.CY"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14333v1",
+        "published": "2026-11-10T16:56:16+00:00",
+        "title": "AI Isn't Getting Dumber, We're Getting Pickier: Rising Standards in Human Evaluation of Large Language Models",
+        "updated": "2026-11-10T16:56:16+00:00",
+        "version_id": "2611.14333v1"
+      },
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14333v1"
+      ]
+    },
+    "2611.14356": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.785958+00:00",
+      "paper": {
+        "abstract": "Rapidly evolving LLM architectures and heterogeneous mobile hardware make supporting new models in on-device inference engines a recurring and costly system challenge. Each model may require coordinated changes across conversion, graph construction, operators, and hardware backends. Existing coding agents often miss these cross-layer dependencies and struggle to diagnose failures across host--device execution paths. We present EngineAgent, an agentic system for automating on-device LLM model enablement. Its key insight is to separate reusable engine and hardware knowledge from model-specific implementation. Before enablement, EngineAgent constructs a hierarchy-aware engine index that captures engine abstraction layers and cross-layer dependencies, and pre-validates backend-specific build, execution, and debugging workflows using already supported models. For each new model, a builder uses this knowledge to coordinate cross-layer changes, while an auditor checks implementation completeness and drives iterative debugging through device-side validation. Across 12 tasks spanning three mobile LLMs and four engine--backend pairs on CPUs, GPUs, and NPUs, EngineAgent achieves 75% end-to-end success with either of two underlying LLMs, versus 33.3% for the strongest coding-agent baseline. Success requires compilation, on-device execution, and output-logit agreement with reference implementations. EngineAgent also reduces average per-task time and model-API cost relative to baselines using the same underlying LLMs.",
+        "authors": [
+          "Zhengxiang Huang",
+          "Yujie Sun",
+          "Shengheng Chen",
+          "Zhaode Wang",
+          "Chaoyue Niu",
+          "Zeyu Zhao",
+          "Chengfei Lv",
+          "Fan Wu",
+          "Guihai Chen"
+        ],
+        "categories": [
+          "cs.OS",
+          "cs.AI",
+          "cs.CL",
+          "cs.SE"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14356v1",
+        "published": "2026-11-10T17:16:47+00:00",
+        "title": "EngineAgent: Agentizing On-Device LLM Inference Engines with Inference Stack Hierarchy Awareness and Hardware Abilities",
+        "updated": "2026-11-10T17:16:47+00:00",
+        "version_id": "2611.14356v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14356v1"
+      ]
+    },
     "2611.14382": {
       "attempts": {
         "selection": 1,
@@ -68491,10 +68829,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-12",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261112T092229Z-78454964",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-12T09:22:00+00:00",
+          "seen": 87,
+          "start": "2026-11-05T09:22:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-12T09:22:29.785958+00:00",
       "window": {
         "end": "2026-11-12T09:22:29.785958+00:00",

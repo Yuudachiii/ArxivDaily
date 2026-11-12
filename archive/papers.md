@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-12 | EngineAgent: Agentizing On-Device LLM Inference Engines with Inference Stack Hierarchy Awareness and Hardware Abilities | 待翻译 | [arXiv 2611.14356v1](https://arxiv.org/abs/2611.14356v1) |
+| 2026-11-12 | AI Isn't Getting Dumber, We're Getting Pickier: Rising Standards in Human Evaluation of Large Language Models | 待翻译 | [arXiv 2611.14333v1](https://arxiv.org/abs/2611.14333v1) |
+| 2026-11-12 | When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents | 待翻译 | [arXiv 2611.14326v1](https://arxiv.org/abs/2611.14326v1) |
+| 2026-11-12 | Auditing the Judge: Internal Signals for LLM Reasoning Assurance | 待翻译 | [arXiv 2611.14323v1](https://arxiv.org/abs/2611.14323v1) |
+| 2026-11-12 | Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents | 待翻译 | [arXiv 2611.14320v1](https://arxiv.org/abs/2611.14320v1) |
+| 2026-11-12 | LM-SimBench: A Unified Framework, Dataset, and Benchmark for Large Language Model Training Simulation | 待翻译 | [arXiv 2611.14285v1](https://arxiv.org/abs/2611.14285v1) |
+| 2026-11-12 | Chain of Physics: Supporting Fault Diagnosis with Engineering-Inspired Large Language Model Reasoning | 待翻译 | [arXiv 2611.14263v1](https://arxiv.org/abs/2611.14263v1) |
+| 2026-11-12 | SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM Serving | 待翻译 | [arXiv 2611.14246v1](https://arxiv.org/abs/2611.14246v1) |
+| 2026-11-12 | An AI Assistant for Automating Anti-Corruption Expertise of Draft Legislation Based on the TRACE Framework | 待翻译 | [arXiv 2611.14244v1](https://arxiv.org/abs/2611.14244v1) |
+| 2026-11-12 | Stagewise and interpretable emergence of inside-outside computation in Transformer-based language models | 待翻译 | [arXiv 2611.14221v1](https://arxiv.org/abs/2611.14221v1) |
 | 2026-11-11 | Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations | 对比发现：开放式科学发现与竞争性解释的比较 | [arXiv 2611.14514v1](https://arxiv.org/abs/2611.14514v1) |
 | 2026-11-11 | Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents | Pyrite：蛋白质配体姿势排名代理的构建和基准测试 | [arXiv 2611.14511v1](https://arxiv.org/abs/2611.14511v1) |
 | 2026-11-11 | Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents | 代理评估框架的比较分析：企业分析代理的稳定性、检测和发现 | [arXiv 2611.14493v1](https://arxiv.org/abs/2611.14493v1) |
