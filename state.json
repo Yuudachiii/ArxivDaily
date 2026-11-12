@@ -67683,11 +67683,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-12T09:22:29.785958+00:00",
-        "run_id": "20261112T092229Z-78454964",
-        "stage": "translation"
+      "title_zh": "人工智能并没有变得更笨，而是我们变得更挑剔：人类对大型语言模型的评估标准不断提高",
+      "translation": {
+        "abstract_zh": "Users often complain that AI assistants such as ChatGPT are getting worse. Some versions do change, but human evaluation leaves a second possibility untested: the people judging may change.我们在 Chatbot Arena 上将两者分开，这是一个公共平台，人们可以在该平台上比较两个匿名大语言模型 (LLM) 的答案，然后选择更好的一个或说两个都不好。我们研究了从 2023 年 5 月到 2024 年 8 月对版本固定的模型对进行的 1,260,967 次盲选：过时的供应商快照和具有固定开放权重的模型。对于同一对未改变的型号，表示“两者都不好”的投票比例每月上升 1.71 个百分点，平均为 17.1%，到 2024 年每月上升 1.91 个百分点。在 2023 年和 2024 年经常观察到的 14 对中，每一对的投票比例都上升，从 15.5% 上升到 23.3%。 The ranking does not trend: in 2024, the stronger model's share of decisive votes is flat. The rise holds within the same voter and on the same pair, and across arrival cohorts from their first recorded vote.它支持各种主要语言的提示控制，适用于过时的供应商快照、开放权重模型和具有稳定答案长度的模型以及界面更改之间的模型。 The drift is shared across models: month effects estimated from other models' pairs remove it from each model's own pairs.在整个平台范围内，与 2023 年的平均水平相比，平均模型的得分预计为 78%，但“两者都不好”的投票比例最终接近开始时的水平。 The pattern fits a standard that follows the category's progress, so a product that stands still is judged as declining.对人工智能的绝对判断发生了漂移，而相对比较保持稳定，这种评估漂移对于法学硕士排行榜和用于训练模型的人类反馈至关重要。",
+        "title_zh": "人工智能并没有变得更笨，而是我们变得更挑剔：人类对大型语言模型的评估标准不断提高"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.14333v1"
       ]

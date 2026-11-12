@@ -5,7 +5,7 @@
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
 | 2026-11-12 | EngineAgent: Agentizing On-Device LLM Inference Engines with Inference Stack Hierarchy Awareness and Hardware Abilities | EngineAgent：利用推理堆栈层次结构感知和硬件功能代理设备上 LLM 推理引擎 | [arXiv 2611.14356v1](https://arxiv.org/abs/2611.14356v1) |
-| 2026-11-12 | AI Isn't Getting Dumber, We're Getting Pickier: Rising Standards in Human Evaluation of Large Language Models | 待翻译 | [arXiv 2611.14333v1](https://arxiv.org/abs/2611.14333v1) |
+| 2026-11-12 | AI Isn't Getting Dumber, We're Getting Pickier: Rising Standards in Human Evaluation of Large Language Models | 人工智能并没有变得更笨，而是我们变得更挑剔：人类对大型语言模型的评估标准不断提高 | [arXiv 2611.14333v1](https://arxiv.org/abs/2611.14333v1) |
 | 2026-11-12 | When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents | 待翻译 | [arXiv 2611.14326v1](https://arxiv.org/abs/2611.14326v1) |
 | 2026-11-12 | Auditing the Judge: Internal Signals for LLM Reasoning Assurance | 待翻译 | [arXiv 2611.14323v1](https://arxiv.org/abs/2611.14323v1) |
 | 2026-11-12 | Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents | 待翻译 | [arXiv 2611.14320v1](https://arxiv.org/abs/2611.14320v1) |
