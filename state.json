@@ -43,7 +43,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:42:00.481953+00:00",
-    "last_complete_end": "2026-11-10T09:21:23.485580+00:00"
+    "last_complete_end": "2026-11-12T09:22:29.993224+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -223,6 +223,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-12": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -64349,6 +64358,341 @@
       "versions": [
         "2611.12883v1"
       ]
+    },
+    "2611.14382": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.993224+00:00",
+      "paper": {
+        "abstract": "Large language models (LLMs) increasingly exhibit capabilities that resemble human Learning by Thinking (LbT), the acquisition of new insight through internal processes such as explanation and reasoning, without new external input. A systematic account of the cognitive mechanisms behind these capabilities, and of their limits, remains underdeveloped. This paper proposes a Cognitive LbT Framework that maps four mechanisms (Reflective Reasoning, Synthetic Memory Formation, Internal Simulation, and Conceptual Self-Organization) onto computational processes in LLMs. Drawing on representative methods, including chain-of-thought prompting, self-consistency, self-reflection, Tree-of-Thoughts search, Self-Instruct, and self-taught reasoning, the analysis argues that selected methods can functionally approximate aspects of these mechanisms and can improve performance on some tasks without additional labeled examples, although this does not always constitute durable learning in model parameters. For example, Self-Instruct generated approximately 52,000 instructions from 175 seed tasks and reported a 33% absolute improvement on Super-NaturalInstructions (Y. Wang et al., 2023). The same mechanisms also produce characteristic failures, including hallucination diffusion, model collapse, concept drift, and high computational cost. These failures are not isolated technical defects but follow from four structural asymmetries between LLMs and human cognition: the identity of generator and monitor, closed learning loops without external grounding, symbolic rather than sensorimotor simulation, and the cost of inference-time computation. The framework yields testable propositions about when LbT in LLMs should succeed or fail and offers a structured basis for designing more reliable autonomous learning systems.",
+        "authors": [
+          "Dong Han",
+          "Jin Zhang",
+          "Kunyue Yang"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14382v1",
+        "published": "2026-11-10T17:37:13+00:00",
+        "title": "Cognitive Mapping of Learning by Thinking Mechanisms in Large Language Models",
+        "updated": "2026-11-10T17:37:13+00:00",
+        "version_id": "2611.14382v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_safety",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14382v1"
+      ]
+    },
+    "2611.14399": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.993224+00:00",
+      "paper": {
+        "abstract": "Speculative decoding accelerates LLM inference by having a draft model propose multiple tokens for the target model to verify in one pass. The speedup is governed by the expected acceptance length (EAL), yet standard training objectives such as cross-entropy, KL divergence, and total variation focus only on distribution matching or single-step overlap. Recent studies instead propose block-level training objectives, aiming to optimize EAL directly. However, these objectives remain surrogates rather than exact formulations of EAL. For example, some average later acceptance over target-distributed continuations rather than the verification branches selected by accepted tokens, introducing a covariance gap that can reverse the gradient direction. We analyze this gap and derive REAL, a real EAL training loss that uses path weights for unbiased estimation and Rao-Blackwellization for variance reduction. In a controlled loss-level comparison with a Qwen3.6-35B-A3B target and a Domino drafter, REAL outperforms WTV, VSD, DBLast, and the static LK baseline on probabilistic serving acceptance length across 9 task subsets and 5 evaluation seeds. These gains require only a change to the training loss, with no modification to the drafter architecture or inference procedure, demonstrating the practicality of real EAL training. A reference implementation of the REAL loss is available at https://github.com/King-ty/speculators/tree/real-loss.",
+        "authors": [
+          "Yu Tian"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14399v1",
+        "published": "2026-11-10T17:45:12+00:00",
+        "title": "REAL Loss: Optimizing Real Expected Acceptance Length for Speculative Decoding",
+        "updated": "2026-11-10T17:45:12+00:00",
+        "version_id": "2611.14399v1"
+      },
+      "rule_hits": [
+        "llm_efficiency",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14399v1"
+      ]
+    },
+    "2611.14419": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.993224+00:00",
+      "paper": {
+        "abstract": "Formal world models can support planning, verification, and safety reasoning, but constructing them from open-ended natural-language situations is difficult, particularly in multi-agent settings where several formalizations may be plausible. We study whether five LLMs can generate such world models as partially observable stochastic games and whether mechanical validity is sufficient to establish that the resulting model faithfully represents the intended decision problem. We introduce a benchmark of 44 scenarios spanning game, situational, and cultural settings and evaluate generated world models along three dimensions: mechanical validity, reference-relative structural agreement, and semantic criteria. Across three empirical tracks, we analyze 410 first-pass generations. In the reference-backed game track, 134/135 generated world models pass a strict mechanical audit, yet mean permutation-invariant structural F1 is only 0.366, with just 28/134 mechanically valid models exactly matching the authored reference. In the cultural track, explicitly naming the country changes the generated structural representation for most LLMs while producing only small changes in automated semantic scores. These results show that executability is a necessary but insufficient criterion for LLM-generated world models: models that are mechanically valid can still differ substantially in the structure used by downstream neuro-symbolic reasoning and planning.",
+        "authors": [
+          "Souhaila Djaffal",
+          "Amna Jamal",
+          "Gagana Madhugiri Devaraja",
+          "Anidipta Pal",
+          "Jobst Heitzig"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14419v1",
+        "published": "2026-11-10T17:58:12+00:00",
+        "title": "Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning",
+        "updated": "2026-11-10T17:58:12+00:00",
+        "version_id": "2611.14419v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_agent",
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14419v1"
+      ]
+    },
+    "2611.14477": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.993224+00:00",
+      "paper": {
+        "abstract": "Text-to-SQL systems over large pooled catalogs must first retrieve the tables a question needs. We compare against the published table recall of RASL, which uses Claude 3.5 models to extract keywords and select tables, on pooled BIRD, Spider, and Fiben catalogs. FERN (Feature-Engineered Ranking with No generative LLM) instead fuses three frozen retrievers into 100 candidates, describes each with up to 120 features, and reorders them with LightGBM rankers fitted once on BIRD's training questions. On Spider, where it was not fitted, its candidate pool alone reaches RASL's published recall at fifteen tables (98.0), and the ranker raises the share of questions with every gold table in the top five (complete@5) from 83.9% to 95.6%. At five tables, FERN's recall is within one point of RASL's on Spider (96.7 vs 97.0) and on BIRD with its evidence hints (96.6 vs 97.5), and 8.2 points below on BIRD without them (89.3). On 121 real BEAVER questions, without BEAVER fitting, its recall at fifteen (82.1) falls between two BEAVER-trained retrievers (80.8, 84.5), but its complete@15 is below both (49.6 vs 54.5 and 62.0). On Fiben, it falls far short at fifteen tables (54.2 vs 69.2, different question sets), although its recall at fifty is numerically close to RASL's question-only retrieval result (80.7 vs 79.4). On BIRD dev with evidence, non-retrieval features raise complete@5 by 7.7 points over retrieval signals alone. On BIRD dev, median latency is 208 ms per question on one A100, without hosted model calls.",
+        "authors": [
+          "Arjun Rao",
+          "Nishant Gopinath"
+        ],
+        "categories": [
+          "cs.IR",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14477v1",
+        "published": "2026-11-10T18:39:49+00:00",
+        "title": "FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking",
+        "updated": "2026-11-10T18:39:49+00:00",
+        "version_id": "2611.14477v1"
+      },
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14477v1"
+      ]
+    },
+    "2611.14480": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.993224+00:00",
+      "paper": {
+        "abstract": "In this paper, we present 1020 Group's submission to the WMT26 shared task on automated quality evaluation. Our system, Pterodactyl, was engineered specifically for subtasks 2 and 3, that is, segment-level quality score prediction and the detection of error-free segments. Pterodactyl is a highly customizable, ultra-low cost system optimized for binary classification in translation triage and data curation. It is based on an LLM-as-a-judge approach, with prompt engineering and model selection guided by ROC analysis. We also developed several variants of Pterodactyl that were specifically adapted for subtasks 3.",
+        "authors": [
+          "Evelyn Y. Garland",
+          "Carola F. Berger"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14480v1",
+        "published": "2026-11-10T18:41:37+00:00",
+        "title": "Pterodactyl: Pushing the Limits of Efficient Automated Translation Evaluation",
+        "updated": "2026-11-10T18:41:37+00:00",
+        "version_id": "2611.14480v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14480v1"
+      ]
+    },
+    "2611.14487": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.993224+00:00",
+      "paper": {
+        "abstract": "Research ideation is iterative: researchers refine their ideas step by step based on feedback. Yet existing evaluations obscure this search process, making it difficult to understand how LLMs explore the space of research ideas and what limits their progress. We introduce Re-Search, which adapts the format of Twenty Questions to research ideation: given only the research problem of a published paper, a model must rediscover the paper's core idea by asking yes-or-no questions. Built from 200 ICML 2026 papers, Re-Search tracks how a model's idea evolves as it asks questions and receives binary oracle feedback, isolating ideation from execution. Across six recent LLMs, nearly all progress happens within the first 30 of 100 questions, which largely decide how the game ends; after that, most models plateau. Through controlled interventions on the candidate questions and the hypothesis space, we find that the bottleneck is generation, not judgment: models recognize a good idea or a good question when one is offered, but often cannot produce it on their own. We further analyze the ideation traces and find that models fail by either over-exploiting one direction or over-exploring too many. These findings point to concrete design principles for autoresearch systems: since models can judge candidates they cannot produce, enriching the search with externally sourced ideas and questions may be more effective than improving any single model's generation ability.",
+        "authors": [
+          "Muhan Gao",
+          "Hangxiao Zhu",
+          "Xinqi Su",
+          "Yu Zhang",
+          "Daniel Khashabi",
+          "Kuan-Hao Huang"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14487v1",
+        "published": "2026-11-10T18:47:22+00:00",
+        "title": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
+        "updated": "2026-11-10T18:47:22+00:00",
+        "version_id": "2611.14487v1"
+      },
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14487v1"
+      ]
+    },
+    "2611.14492": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.993224+00:00",
+      "paper": {
+        "abstract": "Business process automation runs the same Standard Operating Procedure (SOP) again and again on new inputs. Large Language Model (LLM) agents can follow an SOP written in natural language, but they call an LLM to choose every step of every run, which adds latency and cost at scale. We present ReTrace, which turns an SOP and a few logged agent runs into a reusable workflow in which code, not an LLM, selects the next step. The agent's reasoning, the explanation it writes with each tool call, often states why it took an action; the tool calls alone do not. ReTrace extracts the condition behind each step, merges these conditions across runs into a compact rule document, and generates an executable workflow from it. Only this last stage depends on the platform, so rule documents can be compiled for different orchestration platforms. On $79$ procedures from our production platform, ReTrace workflows reach $93.8\\%$ completion, against $96.8\\%$ for the agent, at $24\\%$ lower cost per task. On $τ^2$-Bench, they reach $75.8\\%$ task success (agent: $80.6\\%$) and run in $1.3$s instead of $170$s; three rounds of repair on training failures lift $k{=}2$ workflows from $66.7\\%$ to $81.2\\%$. On eight SOP-Bench procedures, ReTrace without repair trails few-shot generation ($80.6\\%$ vs. $83.6\\%$), but repair from labeled training failures lifts it to $87.8\\%$ at $0.40$s per task, compared to $85.5\\%$ in $46.6$s for the agent.",
+        "authors": [
+          "Kaiyuan Hou",
+          "Yang Ping Kuo",
+          "Indranil Bhattacharya",
+          "Rohith Nama",
+          "Arushi Gupta",
+          "Carlos D. Castillo",
+          "Prathap Ramachandra",
+          "Xiaofan Jiang",
+          "Francesco Carbone"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.LG",
+          "cs.MA"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14492v1",
+        "published": "2026-11-10T18:49:47+00:00",
+        "title": "ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows",
+        "updated": "2026-11-10T18:49:47+00:00",
+        "version_id": "2611.14492v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_agent",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14492v1"
+      ]
+    },
+    "2611.14493": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.993224+00:00",
+      "paper": {
+        "abstract": "Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflows. We present a three-phase comparative study of three evaluation frameworks, each representing a distinct evaluation paradigm (trace-based LLM judging, text-only LLM judging with red-teaming, and deterministic heuristics), applied to two analytics agents in a controlled research setting using frozen execution traces. Phase 1 quantifies evaluation harness stability through repeated measurements, finding that 97% of configurations meet the stability threshold and that stability patterns are agent-independent. Phase 2 measures known risk detection on 72 ground-truth test cases, where the trace-based framework achieves the best precision-recall balance (F1=0.90) while text-only evaluation matches on recall but generates 5x more false alarms. Phase 3 evaluates unknown risk discovery, uncovering 24 novel failures with zero overlap between functional testing and security red-teaming. Our results demonstrate that (1) the information available to the evaluation harness determines evaluation quality, (2) functional and security evaluation are complementary, and (3) LLM-based evaluation harnesses surface subtle errors that human reviewers miss. We recommend a two-framework strategy: trace-based evaluation for functional assessment and adversarial red-teaming for security validation.",
+        "authors": [
+          "Howard Zhang",
+          "Chuck Arvin",
+          "Logan Brown",
+          "Mihir Bhatia",
+          "Neelu Choudhary",
+          "Lily Miao"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.LG",
+          "cs.SE"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14493v1",
+        "published": "2026-11-10T18:50:06+00:00",
+        "title": "Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents",
+        "updated": "2026-11-10T18:50:06+00:00",
+        "version_id": "2611.14493v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14493v1"
+      ]
+    },
+    "2611.14511": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.993224+00:00",
+      "paper": {
+        "abstract": "Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse protein-ligand complexes. Expert chemists equipped with 3D visualization tools and physics-based scores perform near chance, highlighting the difficulty of interpreting available chemical signals. To investigate automated ranking, we introduce PyriteRep, a structured representation of molecular geometry, protein-ligand interactions, and physicochemical scores, and develop two LLM-based agents: PyriteReasoner, which directly compares poses through text-based reasoning, and PyriteFeaturizer, which generates executable code to construct features for logistic regression, optionally incorporating features derived from LLM subcalls. These agents achieve up to 67% and 74% accuracy, respectively, exceeding observed expert performance. LLM-guided feature discovery generally outperforms direct reasoning, while Group Relative Policy Optimization (GRPO) improves open-weight models, enabling them to match or surpass closed-source frontier models in our evaluations. These results establish Pyrite as a challenging test of pose-ranking ability and highlight LLM-guided feature discovery as a promising approach to interpret and combine the outputs of computational chemistry tools.",
+        "authors": [
+          "Megha Srivastava",
+          "Michael H. Lim",
+          "Allison M. Keys",
+          "Pranav Murugan",
+          "Nate Gruver"
+        ],
+        "categories": [
+          "cs.LG",
+          "q-bio.QM"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14511v1",
+        "published": "2026-11-10T18:56:32+00:00",
+        "title": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
+        "updated": "2026-11-10T18:56:32+00:00",
+        "version_id": "2611.14511v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_training",
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14511v1"
+      ]
+    },
+    "2611.14514": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-12T09:22:29.993224+00:00",
+      "paper": {
+        "abstract": "LLM agents are increasingly used for open-ended, data-driven scientific discovery, yet most of them evaluate hypotheses pointwise, testing an empirical claim $h$ only against its complement $\\neg h$. When evidence rejects $h$, the agent learns that one explanation is unlikely but not which alternative the evidence supports. To recover that alternative, we introduce Contrastive Discovery, which replaces the single hypothesis with a contrast set, a scientific question paired with mutually exclusive and collectively exhaustive competing explanations. Each experiment is scored by how its evidence redistributes belief across the set, and the question is resolved when belief concentrates on one explanation. Because contrast sets change only the unit an agent proposes and scores, an existing agent can use them to re-evaluate evidence it has already collected or to guide its search. Across six domains, $89\\%$ of the pointwise candidates with the largest belief shifts are rejections. On the same evidence, contrast sets resolve $73\\%$ of these candidates to a specific alternative. When contrast sets guide search, the agent resolves $67\\%$ more questions than pointwise surprisal under the same experiment budget. In a blinded study, $38$ human experts chose the same explanation on $78\\%$ of resolved questions and on $82\\%$ of questions where the pointwise agent rejected its hypothesis and stopped. Together, these results support explicit competing explanations as a way for discovery agents to resolve more scientific questions from the same evidence and validation budget.",
+        "authors": [
+          "Ziang Liu",
+          "James J. Kim",
+          "Yijia Dai",
+          "Jennifer J. Sun"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.14514v1",
+        "published": "2026-11-10T18:58:43+00:00",
+        "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
+        "updated": "2026-11-10T18:58:43+00:00",
+        "version_id": "2611.14514v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.14514v1"
+      ]
     }
   },
   "runs": [
@@ -64886,10 +65230,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-12",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261112T092229Z-c586a0c2",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-12T09:22:00+00:00",
+          "seen": 46,
+          "start": "2026-11-05T09:22:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-12T09:22:29.993224+00:00",
       "window": {
         "end": "2026-11-12T09:22:29.993224+00:00",
