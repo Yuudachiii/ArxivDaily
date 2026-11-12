@@ -64431,11 +64431,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-12T09:22:29.993224+00:00",
-        "run_id": "20261112T092229Z-c586a0c2",
-        "stage": "translation"
+      "title_zh": "大型语言模型中通过思维机制进行学习的认知映射",
+      "translation": {
+        "abstract_zh": "大型语言模型（LLMs）越来越多地展现出类似于人类“通过思考学习”（Learning by Thinking, LbT）的能力，即通过内部过程（如解释和推理）获取新见解，而无需新的外部输入。对于这些能力背后的认知机制及其局限性的系统性研究仍不充分。本文提出了一个认知LbT框架，将四种机制（反思性推理、综合记忆形成、内部模拟和概念自我组织）映射到LLMs中的计算过程。通过借鉴具有代表性的方法，包括思维链提示（chain-of-thought prompting）、自我一致性（self-consistency）、自我反思（self-reflection）、思维树搜索（Tree-of-Thoughts search）、自我指导（Self-Instruct）和自学推理（self-taught reasoning），分析表明，选定的方法可以在功能上近似这些机制的某些方面，并可以在某些任务上在不增加额外标注样本的情况下提高性能，尽管这并不总是意味着模型参数上的持久学习。例如，Self-Instruct 从 175 个种子任务生成了大约 52,000 条指令，并报告在 Super-NaturalInstructions（Y. Wang 等，2023）上实现了 33% 的绝对提升。相同的机制也会产生典型的失败，包括幻觉扩散、模型崩溃、概念漂移以及高计算成本。这些失败并非孤立的技术缺陷，而是源于大型语言模型与人类认知之间的四个结构性不对称：生成者和监控者的身份、没有外部基础的封闭学习循环、符号而非感知运动的模拟以及推理时计算的成本。该框架提出了可检验的命题，用以判断 LLM 中的 LbT 何时应成功或失败，并为设计更可靠的自主学习系统提供了结构化基础。",
+        "title_zh": "大型语言模型中通过思维机制进行学习的认知映射"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.14382v1"
       ]
