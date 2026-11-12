@@ -8,7 +8,7 @@
 | 2026-11-12 | Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents | 黄铁矿：构建和评估蛋白-配体构象排序代理 | [arXiv 2611.14511v1](https://arxiv.org/abs/2611.14511v1) |
 | 2026-11-12 | Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents | 代理评估框架的比较分析：企业分析代理中的稳定性、检测与发现 | [arXiv 2611.14493v1](https://arxiv.org/abs/2611.14493v1) |
 | 2026-11-12 | ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows | ReTrace：将使用工具的代理提炼成无规划器工作流程 | [arXiv 2611.14492v1](https://arxiv.org/abs/2611.14492v1) |
-| 2026-11-12 | Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game | 待翻译 | [arXiv 2611.14487v1](https://arxiv.org/abs/2611.14487v1) |
+| 2026-11-12 | Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game | 再研究：通过双人提问游戏剖析大语言模型的构思 | [arXiv 2611.14487v1](https://arxiv.org/abs/2611.14487v1) |
 | 2026-11-12 | Pterodactyl: Pushing the Limits of Efficient Automated Translation Evaluation | 待翻译 | [arXiv 2611.14480v1](https://arxiv.org/abs/2611.14480v1) |
 | 2026-11-12 | FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking | 待翻译 | [arXiv 2611.14477v1](https://arxiv.org/abs/2611.14477v1) |
 | 2026-11-12 | Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning | 待翻译 | [arXiv 2611.14419v1](https://arxiv.org/abs/2611.14419v1) |
