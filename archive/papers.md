@@ -13,7 +13,7 @@
 | 2026-11-12 | Chain of Physics: Supporting Fault Diagnosis with Engineering-Inspired Large Language Model Reasoning | 物理链：以工程启发的大语言模型推理支持故障诊断 | [arXiv 2611.14263v1](https://arxiv.org/abs/2611.14263v1) |
 | 2026-11-12 | SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM Serving | SinkState：用于高效混合 LLM 服务的循环状态的动态 SVD | [arXiv 2611.14246v1](https://arxiv.org/abs/2611.14246v1) |
 | 2026-11-12 | An AI Assistant for Automating Anti-Corruption Expertise of Draft Legislation Based on the TRACE Framework | 基于TRACE框架的立法草案反腐败专业知识自动化人工智能助手 | [arXiv 2611.14244v1](https://arxiv.org/abs/2611.14244v1) |
-| 2026-11-12 | Stagewise and interpretable emergence of inside-outside computation in Transformer-based language models | 待翻译 | [arXiv 2611.14221v1](https://arxiv.org/abs/2611.14221v1) |
+| 2026-11-12 | Stagewise and interpretable emergence of inside-outside computation in Transformer-based language models | 基于 Transformer 的语言模型中内外计算的阶段性和可解释性出现 | [arXiv 2611.14221v1](https://arxiv.org/abs/2611.14221v1) |
 | 2026-11-11 | Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations | 对比发现：开放式科学发现与竞争性解释的比较 | [arXiv 2611.14514v1](https://arxiv.org/abs/2611.14514v1) |
 | 2026-11-11 | Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents | Pyrite：蛋白质配体姿势排名代理的构建和基准测试 | [arXiv 2611.14511v1](https://arxiv.org/abs/2611.14511v1) |
 | 2026-11-11 | Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents | 代理评估框架的比较分析：企业分析代理的稳定性、检测和发现 | [arXiv 2611.14493v1](https://arxiv.org/abs/2611.14493v1) |
