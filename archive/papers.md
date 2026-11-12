@@ -9,7 +9,7 @@
 | 2026-11-12 | When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents | 代理人应该何时记住？ LLM 代理的证伪门控自我进化 | [arXiv 2611.14326v1](https://arxiv.org/abs/2611.14326v1) |
 | 2026-11-12 | Auditing the Judge: Internal Signals for LLM Reasoning Assurance | 审计法官：法学硕士推理保证的内部信号 | [arXiv 2611.14323v1](https://arxiv.org/abs/2611.14323v1) |
 | 2026-11-12 | Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents | 不要只相信你的记忆：与证据相关的记忆可以减少法学硕士代理中记忆引起的退化 | [arXiv 2611.14320v1](https://arxiv.org/abs/2611.14320v1) |
-| 2026-11-12 | LM-SimBench: A Unified Framework, Dataset, and Benchmark for Large Language Model Training Simulation | 待翻译 | [arXiv 2611.14285v1](https://arxiv.org/abs/2611.14285v1) |
+| 2026-11-12 | LM-SimBench: A Unified Framework, Dataset, and Benchmark for Large Language Model Training Simulation | LM-SimBench：大型语言模型训练仿真的统一框架、数据集和基准 | [arXiv 2611.14285v1](https://arxiv.org/abs/2611.14285v1) |
 | 2026-11-12 | Chain of Physics: Supporting Fault Diagnosis with Engineering-Inspired Large Language Model Reasoning | 待翻译 | [arXiv 2611.14263v1](https://arxiv.org/abs/2611.14263v1) |
 | 2026-11-12 | SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM Serving | 待翻译 | [arXiv 2611.14246v1](https://arxiv.org/abs/2611.14246v1) |
 | 2026-11-12 | An AI Assistant for Automating Anti-Corruption Expertise of Draft Legislation Based on the TRACE Framework | 待翻译 | [arXiv 2611.14244v1](https://arxiv.org/abs/2611.14244v1) |
