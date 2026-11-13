@@ -65949,11 +65949,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-13T09:09:59.138707+00:00",
-        "run_id": "20261113T090959Z-9feac3d3",
-        "stage": "translation"
+      "title_zh": "Ballad：基于 Bandit 的 LLM 路由，用于自动启发式发现",
+      "translation": {
+        "abstract_zh": "现代自动启发式发现 (AHD) 系统通过利用大型语言模型 (LLM) 迭代地改变和完善解决方案，日益与手工制作的启发式方法相媲美。一个自然的假设是，更强大、更昂贵的模型始终会产生更好的启发式方法。我们从经验上挑战了这一点：在多个 NP 难组合优化问题中，我们发现更大、更昂贵的模型没有一致的优势。这就提出了一个更深层次的问题：给定一组跨越前沿和自由托管或开放权重模型的法学硕士池，人们应该如何自适应地选择在搜索的每一步调用哪个模型？挑战并非微不足道。最佳的 LLM 可能会在运行过程中发生变化，并且由于一个 LLM 的输出为后续调用提供了背景，因此每个模型的奖励信号都是非平稳的，并且在启发式群体中纠缠在一起，从而违反了经典在线决策设置的独立性假设。我们通过 Ballad（基于 Bandit 的 LLM Routing for Automated Heuristic Discovery）来解决这个问题，这是一种在线 Bandit 算法，可以学习将 LLM 池编排成一个整体，匹配或超过任何独奏 LLM 单独取得的成绩。这种编排由法学硕士选择政策提供支持，该政策偏向于罕见的高分启发式算法，而不是稳定的平均值，通过启发式总体谱系的基于 DAG 的信用传播机制，以及对陈旧观察结果的折扣以保持与每个模型当前效用的协调。在五个 NP 难组合优化问题以及四个不同功能和成本的模型池中，Ballad 不仅事后看来能够匹配最佳的个体 LLM，而且在某些情况下超越了每个个体模型，同时相对于始终使用最强模型，API 成本降低了高达 65.6%。",
+        "fallback_provider": "google_free",
+        "title_zh": "Ballad：基于 Bandit 的 LLM 路由，用于自动启发式发现"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.17241v1"
       ]
