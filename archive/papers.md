@@ -5,7 +5,7 @@
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
 | 2026-11-13 | ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research | ArchSpace：记录、回顾和引用 LLM 架构研究 | [arXiv 2611.17332v1](https://arxiv.org/abs/2611.17332v1) |
-| 2026-11-13 | Goal Encoding in LLMs | 待翻译 | [arXiv 2611.17297v1](https://arxiv.org/abs/2611.17297v1) |
+| 2026-11-13 | Goal Encoding in LLMs | 法学硕士的目标编码 | [arXiv 2611.17297v1](https://arxiv.org/abs/2611.17297v1) |
 | 2026-11-13 | Negative-Only Policy Optimization for One-Sided Verifiable Rewards | 待翻译 | [arXiv 2611.17287v1](https://arxiv.org/abs/2611.17287v1) |
 | 2026-11-13 | Synthesis Smuggling: Maliciously Hiding Inferred Personal Attributes in LLM Outputs | 待翻译 | [arXiv 2611.17280v1](https://arxiv.org/abs/2611.17280v1) |
 | 2026-11-13 | LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds | 待翻译 | [arXiv 2611.17267v1](https://arxiv.org/abs/2611.17267v1) |
