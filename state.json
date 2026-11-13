@@ -65822,7 +65822,9 @@
       ]
     },
     "2611.17246": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-13T09:09:59.138707+00:00",
@@ -65851,6 +65853,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-13T09:09:59.138707+00:00",
+        "run_id": "20261113T090959Z-9feac3d3",
+        "stage": "selection"
+      },
       "versions": [
         "2611.17246v1"
       ]
