@@ -43,6 +43,10 @@
     "20261112T092229Z-c586a0c2-640de70bd0f1": {
       "attempts": 1,
       "created_at": "2026-11-12T09:22:29.993224+00:00"
+    },
+    "20261113T090959Z-9feac3d3-fce2a4f06017": {
+      "attempts": 0,
+      "created_at": "2026-11-13T09:09:59.138707+00:00"
     }
   },
   "collection": {
@@ -3602,6 +3606,451 @@
       "run_id": "20261112T092229Z-c586a0c2",
       "schema_version": 1,
       "status": "confirmed"
+    },
+    "20261113T090959Z-9feac3d3-fce2a4f06017": {
+      "alert": false,
+      "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-microsoft/archive/2026/11/13/20261113T090959Z-9feac3d3-fce2a4f06017.md",
+      "chain_root": "20261113T090959Z-9feac3d3-fce2a4f06017",
+      "chain_roots": [
+        "20261113T090959Z-9feac3d3-fce2a4f06017"
+      ],
+      "content_hash": "fce2a4f0601742e151ae10def5cbb223a0b15e70398137385dc880e23798161a",
+      "created_at": "2026-11-13T09:09:59.138707+00:00",
+      "day": "2026-11-13",
+      "digest_id": "20261113T090959Z-9feac3d3-fce2a4f06017",
+      "empty": false,
+      "items": [
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Model architecture shapes the scaling behavior, training efficiency, and inference cost of LLMs, making it a central focus of both industry and academia. In industry, teams such as those behind DeepSeek, Qwen, and Kimi routinely introduce architectural innovations, yet public reports rarely document which ideas succeeded, which were abandoned, and why. In academia, limited compute and inconsistent baselines often restrict evaluations to small-scale, single-point comparisons, making it difficult to establish whether improvements hold at larger scales or translate into broader impact. ArchSpace addresses both gaps as a public platform for Recording, Reviewing, and Referencing Architecture Researc}: each proposal is recorded with its experiments and reasoning, reviewed by the community, and referenced by later work. To evaluate ideas before costly large-scale training, ArchSpace leverages scaling laws to predict model loss at larger scales from smaller experiments, a practice widely adopted in industry. We provide initial references that make the platform usable: Qwen3.5 and OLMo3 baselines, fitted scaling laws, and a reusable training recipe. Ideas validated through this review can in turn become new baselines, and ArchSpace thereby aims to broaden the range of ideas that shape the next generation of models.",
+            "authors": [
+              "Jie Wang",
+              "Tong Zhu",
+              "JiaHao Kuang",
+              "Zhe Xu",
+              "Yunkai Chai",
+              "Dehong Zheng",
+              "Yu Cheng",
+              "Tao Ji",
+              "ZhouHan Lin",
+              "Qi Zhang",
+              "Bowen Zhou"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17332v1",
+            "published": "2026-11-12T18:59:52+00:00",
+            "title": "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
+            "updated": "2026-11-12T18:59:52+00:00",
+            "version_id": "2611.17332v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "模型架构决定了法学硕士的扩展行为、训练效率和推理成本，使其成为行业和学术界的焦点。在业界，DeepSeek、Qwen 和 Kimi 等团队经常引入架构创新，但公开报告很少记录哪些想法成功、哪些想法被放弃以及原因。在学术界，有限的计算和不一致的基线通常将评估限制在小规模、单点比较，因此很难确定改进是否能在更大范围内保持或转化为更广泛的影响。 ArchSpace 作为记录、审查和引用架构研究的公共平台解决了这两个问题：每个提案都记录了其实验和推理，由社区审查，并由以后的工作引用。为了在昂贵的大规模训练之前评估想法，ArchSpace 利用缩放定律通过较小的实验来预测较大规模的模型损失，这是业界广泛采用的做法。我们提供使平台可用的初始参考：Qwen3.5 和 OLMo3 基线、拟合缩放法则以及可重复使用的训练配方。通过这次审查验证的想法反过来可以成为新的基线，ArchSpace 的目标是扩大塑造下一代模型的想法范围。",
+            "fallback_provider": "google_free",
+            "title_zh": "ArchSpace：记录、回顾和引用 LLM 架构研究"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "We investigate whether and how LLMs encode goals: internal neural representations that precede and guide action, and that are flexible enough to be realized through many different execution paths. We construct a coding setting with multiple sub-tasks that allows us to evaluate goal-seeking behavior and the selection of sub-goals. In this setting, we localize an encoding of the next sub-goal in the outputs of a sparse set of attention heads. The same heads can be used to decode the LM's future actions in natural language (e.g., \"I'm checking if a word is a palindrome\"). We verify that this encoding is causal for next action and is plastic: transplanting it into a different environment, e.g., another programming language, triggers the same operation realized with a different sequence of tokens. The LM also sustains the encoding throughout the action's execution, which is puzzling because a transformer LM without recurrence cannot carry a state forward for more tokens than it has layers left. We propose that it does not need to. Under a non-recurrent goal-seeking (NRGS) account, the LM frequently re-reads the goal from the task specification, compares it with the progress visible in the growing context, and pursues what remains. We test the predictions of this account with targeted causal interventions.",
+            "authors": [
+              "Arnab Sen Sharma",
+              "Eric Todd",
+              "Sheridan Feucht",
+              "Andy Arditi",
+              "Rohit Gandikota",
+              "Natalie Shapira",
+              "Gabriele Sarti",
+              "Constanza Fierro",
+              "Lisa Schut",
+              "David Bau"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.AI",
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17297v1",
+            "published": "2026-11-12T18:55:06+00:00",
+            "title": "Goal Encoding in LLMs",
+            "updated": "2026-11-12T18:55:06+00:00",
+            "version_id": "2611.17297v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "我们研究法学硕士是否以及如何编码目标：先于并指导行动的内部神经表征，并且足够灵活，可以通过许多不同的执行路径来实现。我们构建了一个具有多个子任务的编码设置，使我们能够评估目标寻求行为和子目标的选择。在这种情况下，我们将下一个子目标的编码定位在一组稀疏注意力头的输出中。相同的头可用于以自然语言解码 LM 的未来动作（例如，“我正在检查一个单词是否是回文”）。我们验证这种编码与下一个动作有因果关系并且是可塑的：将其移植到不同的环境中，例如另一种编程语言，会触发使用不同的令牌序列实现的相同操作。 LM 还在整个操作的执行过程中维持编码，这令人费解，因为没有递归的 Transformer LM 无法将状态向前传送比其剩余层数更多的标记。我们建议不需要。在非经常性目标寻求 (NRGS) 账户下，LM 经常从任务规范中重新读取目标，将其与不断增长的背景中可见的进度进行比较，并追求剩下的目标。我们通过有针对性的因果干预来测试该帐户的预测。",
+            "fallback_provider": "google_free",
+            "title_zh": "法学硕士的目标编码"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Reinforcement learning with verifiable rewards (RLVR) typically relies on a verifier that can reliably judge whether sampled solutions are correct. However, in many realistic settings, complete verification is generally unavailable, while cheap checks can only falsify failures. We formalize this regime as one-sided verifiability (OSV): verified negatives are reliable counterexamples, but verified positives are merely non-falsified candidates and may contain many false positives. This asymmetry makes standard RLVR unreliable, because reinforcing verified positives can directly reward shortcuts that pass partial checks. To address this issue, we propose Negative-Only Policy Optimization (NOPO), which treats verified positives as unlabeled and updates the policy only by suppressing trusted verified negatives. Specifically, NOPO combines a reference-relative negative suppression loss with a group-level adapter that scales each update by the proportion of non-falsified responses. Across unit-test, constraint-check, and LLM self-verifiers, NOPO improves pass@k over baselines on code, logic, and math benchmarks when oracle rewards are unavailable. These gains persist under inference-time scaling and cross-benchmark transfer.",
+            "authors": [
+              "Jiacheng Xu",
+              "Shuo He",
+              "Fuxiang Zhang",
+              "Chaojie Wang",
+              "Bo An"
+            ],
+            "categories": [
+              "cs.LG",
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17287v1",
+            "published": "2026-11-12T18:52:33+00:00",
+            "title": "Negative-Only Policy Optimization for One-Sided Verifiable Rewards",
+            "updated": "2026-11-12T18:52:33+00:00",
+            "version_id": "2611.17287v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "具有可验证奖励的强化学习（RLVR）通常依赖于能够可靠判断采样解决方案是否正确的验证者。然而，在许多现实环境中，完整的验证通常是不可用的，而廉价的检查只能伪造失败。我们将这种制度形式化为单方面可验证性（OSV）：已验证的负例是可靠的反例，但已验证的正例仅仅是非伪造的候选者，并且可能包含许多误报。这种不对称性使得标准 RLVR 不可靠，因为强化已验证的正值可以直接奖励通过部分检查的捷径。为了解决这个问题，我们提出了仅负数策略优化（NOPO），它将已验证的正数视为未标记的，并且仅通过抑制可信的已验证负数来更新策略。具体来说，NOPO 将参考相对负抑制损失与组级适配器相结合，该适配器根据非伪造响应的比例来缩放每次更新。在单元测试、约束检查和 LLM 自我验证程序中，当预言机奖励不可用时，NOPO 可以在代码、逻辑和数学基准的基础上提高 pass@k。这些收益在推理时间缩放和跨基准传输下持续存在。",
+            "fallback_provider": "google_free",
+            "title_zh": "单方面可验证奖励的纯负面政策优化"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "We propose Synthesis Smuggling, a novel threat model in which an adversarial LLM infers sensitive information about a user from routine assistance-seeking interactions and steganographically encodes that into innocuous-looking model-generated content. The user may then unknowingly transmit that information by sharing the generated artifact, say as an email, social-media post, or message, through ordinary communication channels. An adversary monitoring these channels can discover this information. We demonstrate this threat by training two open-weight models to infer gender and age-group labels from conversational cues and encode their predictions using invisible characters or word choices. These results show that user-shared model outputs can become a covert channel for personal inferences, even when the model itself has no direct means of contacting an adversary.",
+            "authors": [
+              "Gautam Galada",
+              "Supreeth Shastri",
+              "Sagnik Ray Choudhury"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17280v1",
+            "published": "2026-11-12T18:51:05+00:00",
+            "title": "Synthesis Smuggling: Maliciously Hiding Inferred Personal Attributes in LLM Outputs",
+            "updated": "2026-11-12T18:51:05+00:00",
+            "version_id": "2611.17280v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "我们提出了 Synthesis Smuggling，这是一种新颖的威胁模型，其中对抗性 LLM 从日常寻求帮助的交互中推断出有关用户的敏感信息，并将其隐写编码为看起来无害的模型生成的内容。然后，用户可能会通过普通通信渠道共享生成的工件（例如电子邮件、社交媒体帖子或消息），从而在不知不觉中传输该信息。监视这些通道的对手可以发现此信息。我们通过训练两个开放权重模型来证明这种威胁，以根据对话线索推断性别和年龄组标签，并使用不可见的字符或单词选择对其预测进行编码。这些结果表明，即使模型本身没有直接联系对手的方式，用户共享的模型输出也可以成为个人推理的隐蔽渠道。",
+            "fallback_provider": "google_free",
+            "title_zh": "综合走私：在 LLM 输出中恶意隐藏推断的个人属性"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "We introduce GeoWorld, a controllable and continuously evolving geographic environment platform for LLM agents, and LiveGeo, a benchmark for evaluating reliable decision-making in real-world geographic environments using GeoWorld. Unlike existing evaluations that largely reason and plan over fixed geographic states, GeoWorld is grounded in real-world geographic structure and allows external world states to evolve along their own temporal processes while preserving verifiable state histories. LiveGeo places geographic tasks within this evolving environment, requiring agents to actively acquire task-relevant information, verify whether the evidence supporting prior decisions remains valid, and revise their plans when necessary. Our results reveal that even frontier LLMs struggle with static tasks, with no model consistently excelling across tasks, while strong static performance does not ensure dynamic reliability. Further analysis identifies a key bottleneck: agents struggle to acquire and translate relevant evidence into valid decisions and maintain their correctness as the world evolves. By releasing LiveGeo together with its GeoWorld platform, we aim to provide the community with a flexible and extensible infrastructure for studying the next generation of agents capable of reliable action in evolving geographic worlds.",
+            "authors": [
+              "Pengcheng Zhou",
+              "Xuanyu Liu",
+              "Yanchen Yin",
+              "Tianjie Ju",
+              "Bobo Li",
+              "Shengqiong Wu",
+              "Hao Fei",
+              "Mong-Li Lee",
+              "Wynne Hsu"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17267v1",
+            "published": "2026-11-12T18:45:58+00:00",
+            "title": "LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds",
+            "updated": "2026-11-12T18:45:58+00:00",
+            "version_id": "2611.17267v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "我们介绍了 GeoWorld，一个用于 LLM 代理的可控且不断发展的地理环境平台，以及 LiveGeo，一个使用 GeoWorld 评估真实地理环境中可靠决策的基准。与主要对固定地理状态进行推理和规划的现有评估不同，GeoWorld 植根于现实世界的地理结构，允许外部世界状态沿着自己的时间过程演变，同时保留可验证的状态历史。 LiveGeo 将地理任务置于这个不断变化的环境中，要求代理主动获取与任务相关的信息，验证支持先前决策的证据是否仍然有效，并在必要时修改他们的计划。我们的结果表明，即使是前沿的法学硕士也难以应对静态任务，没有任何模型能够在任务中始终表现出色，而强大的静态性能并不能确保动态可靠性。进一步的分析发现了一个关键瓶颈：代理努力获取相关证据并将其转化为有效的决策，并随着世界的发展保持其正确性。通过发布 LiveGeo 及其 GeoWorld 平台，我们的目标是为社区提供灵活且可扩展的基础设施，用于研究能够在不断发展的地理世界中采取可靠行动的下一代代理。",
+            "fallback_provider": "google_free",
+            "title_zh": "LiveGeo：在不断发展的世界中对地理代理进行基准测试"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language models (LLMs) have recently demonstrated the ability to generate parameters for variational quantum circuits without conventional optimization. However, the conditions under which this approach is effective remain unclear. Here, we investigate a frozen, general-purpose LLM that generates complete circuit parameter vectors from symbolic circuit and Hamiltonian descriptions, with optional iterative energy feedback. We evaluate the approach on general random Hamiltonians, structured parent Hamiltonians, and molecular systems. For general Hamiltonians, LLM-generated parameters exhibit larger energy errors than conventional Adam optimization, while additional feedback generally provides limited improvement. In contrast, for structured Hamiltonians, the LLM can generate promising low-energy parameter configurations, suggesting that identifiable physical and mathematical structure facilitates parameter inference. We also show that direct LLM predictions of minimum energies can violate the Hamiltonian spectral lower bound, whereas generated circuit parameters allow independent evaluation of physically realizable energy expectation values. Finally, we investigate blind circuit interpretation and find that the LLM can predict measurement outcomes even when it fails to identify the underlying quantum algorithm. These findings highlight the role of problem structure, the limitations of iterative LLM optimization, and the importance of independently verifiable predictions in quantum parameter programming.",
+            "authors": [
+              "Tiago de Souza Farias",
+              "Caio Moraes Porto",
+              "Matheus da Silva Fonseca",
+              "Nicolas Armando Cabrera Carpi",
+              "Anderson de Araujo Oliveira",
+              "Celso Jorge Villas-Boas"
+            ],
+            "categories": [
+              "quant-ph",
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17246v1",
+            "published": "2026-11-12T18:34:23+00:00",
+            "title": "Programming Quantum Circuit Parameters with Large Language Models",
+            "updated": "2026-11-12T18:34:23+00:00",
+            "version_id": "2611.17246v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型（LLM）最近证明了无需传统优化即可为变分量子电路生成参数的能力。然而，这种方法在什么条件下有效仍不清楚。在这里，我们研究了一种冻结的通用 LLM，它可以根据符号电路和哈密顿量描述生成完整的电路参数向量，并具有可选的迭代能量反馈。我们评估了一般随机哈密顿量、结构化父哈密顿量和分子系统的方法。对于一般哈密顿量，LLM 生成的参数表现出比传统 Adam 优化更大的能量误差，而额外的反馈通常提供有限的改进。相比之下，对于结构化哈密顿量，法学硕士可以生成有前景的低能量参数配置，这表明可识别的物理和数学结构有利于参数推断。我们还表明，最小能量的直接 LLM 预测可能会违反哈密顿谱下界，而生成的电路参数允许对物理上可实现的能量期望值进行独立评估。最后，我们研究了盲电路解释，发现法学硕士即使无法识别底层量子算法，也可以预测测量结果。这些发现强调了问题结构的作用、迭代法学硕士优化的局限性以及量子参数编程中独立可验证预测的重要性。",
+            "fallback_provider": "google_free",
+            "title_zh": "使用大型语言模型对量子电路参数进行编程"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Modern automated heuristic discovery (AHD) systems increasingly rival hand-crafted heuristics by leveraging Large Language Models (LLMs) to iteratively mutate and refine solutions. A natural assumption is that more powerful and more expensive models consistently yield better heuristics. We challenge this empirically: across multiple NP-hard combinatorial optimization problems, we find no consistent advantage for larger, costlier models. This raises a deeper question: given a pool of LLMs spanning frontier and freely hosted or open-weight models, how should one adaptively select which model to invoke at each step of the search? The challenge is non-trivial. The optimal LLM may shift over the course of a run, and because one LLM's output seeds the context for subsequent calls, each model's reward signal is non-stationary and entangled across the heuristic population, thus violating the independence assumptions of classical online decision-making settings. We address this through Ballad (Bandit-based LLM Routing for Automated Heuristic Discovery), an online bandit algorithm that learns to orchestrate a pool of LLMs into an ensemble that matches or exceeds what any soloist LLM achieves alone. This orchestration is powered by an LLM selection policy that favors rare, high-scoring heuristics over stable averages, a DAG-based credit propagation mechanism through the genealogy of the heuristic population, and discounting of stale observations to remain attuned to each model's current utility. Across five NP-hard combinatorial optimization problems and a pool of four models of varying capability and cost, Ballad not only matches the best individual LLM in hindsight but, in several cases, surpasses every individual model while reducing API cost by up to 65.6% relative to always using the strongest model.",
+            "authors": [
+              "Samidha Verma",
+              "Ankit Anand",
+              "Sayan Ranu"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17241v1",
+            "published": "2026-11-12T18:28:08+00:00",
+            "title": "Ballad: Bandit-Based LLM Routing for Automated Heuristic Discovery",
+            "updated": "2026-11-12T18:28:08+00:00",
+            "version_id": "2611.17241v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "现代自动启发式发现 (AHD) 系统通过利用大型语言模型 (LLM) 迭代地改变和完善解决方案，日益与手工制作的启发式方法相媲美。一个自然的假设是，更强大、更昂贵的模型始终会产生更好的启发式方法。我们从经验上挑战了这一点：在多个 NP 难组合优化问题中，我们发现更大、更昂贵的模型没有一致的优势。这就提出了一个更深层次的问题：给定一组跨越前沿和自由托管或开放权重模型的法学硕士池，人们应该如何自适应地选择在搜索的每一步调用哪个模型？挑战并非微不足道。最佳的 LLM 可能会在运行过程中发生变化，并且由于一个 LLM 的输出为后续调用提供了背景，因此每个模型的奖励信号都是非平稳的，并且在启发式群体中纠缠在一起，从而违反了经典在线决策设置的独立性假设。我们通过 Ballad（基于 Bandit 的 LLM Routing for Automated Heuristic Discovery）来解决这个问题，这是一种在线 Bandit 算法，可以学习将 LLM 池编排成一个整体，匹配或超过任何独奏 LLM 单独取得的成绩。这种编排由法学硕士选择政策提供支持，该政策偏向于罕见的高分启发式算法，而不是稳定的平均值，通过启发式总体谱系的基于 DAG 的信用传播机制，以及对陈旧观察结果的折扣以保持与每个模型当前效用的协调。在五个 NP 难组合优化问题以及四个不同功能和成本的模型池中，Ballad 不仅事后看来能够匹配最佳的个体 LLM，而且在某些情况下超越了每个个体模型，同时相对于始终使用最强模型，API 成本降低了高达 65.6%。",
+            "fallback_provider": "google_free",
+            "title_zh": "Ballad：基于 Bandit 的 LLM 路由，用于自动启发式发现"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "In interactive systems where users engage with LLMs, users are adaptive and, after observing LLM responses, can change their prompting strategy, as well as the type and difficulty of subsequent tasks. Thus model responses can influence the set of prompts on which the model is subsequently evaluated. We study the implications of this user adaptivity and prompt endogeneity for the evaluation of LLMs. We define two classes of estimands for comparing models: the common-distribution effect, which compares model performance on the same distribution of prompts, and the induced-distribution effect, which compares each model on the prompt distribution generated through user interaction. We show that offline benchmark evaluation and live A/B testing target different quantities, with the standard difference-in-means estimators for the two methods converging to the common-distribution effect and the induced-distribution effect, respectively. This distinction can affect decision-making: the two comparisons can rank models differently and lead to discrepancies in deployment recommendations. We characterize when such ranking reversals occur and provide a sufficient condition under which the rankings are guaranteed to agree. This result provides a practical heuristic for assessing whether offline evaluation is sufficient to reproduce the decision suggested by a live experiment. Third, we show, in a stylized linear model of interactions, that user adaptivity can increase variance in estimation. Finally, we discuss implications of user adaptivity for the interpretation of experiments and show that adaptivity creates a common mechanism leading to common evaluation challenges, such as reward hacking and novelty effects. Together, this work highlights the necessity of measuring both model performance as well as changes in the user behavior that the model induces.",
+            "authors": [
+              "Hannah Li"
+            ],
+            "categories": [
+              "stat.ME",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17239v1",
+            "published": "2026-11-12T18:26:51+00:00",
+            "title": "When Both Sides Adapt: The Challenges of Evaluating Interactive LLM Systems",
+            "updated": "2026-11-12T18:26:51+00:00",
+            "version_id": "2611.17239v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "在用户与法学硕士互动的交互系统中，用户具有适应性，在观察法学硕士的反应后，可以改变他们的提示策略，以及后续任务的类型和难度。因此，模型响应可以影响随后评估模型的提示集。我们研究了这种用户适应性和提示内生性对法学硕士评估的影响。我们定义了两类用于比较模型的估计值：共同分布效应（在相同提示分布上比较模型性能）和诱导分布效应（在通过用户交互生成的提示分布上比较每个模型）。我们表明，离线基准评估和实时 A/B 测试针对不同的数量，两种方法的标准均值差估计量分别收敛于共同分布效应和诱导分布效应。这种区别可能会影响决策：两种比较可能会对模型进行不同的排名，并导致部署建议存在差异。我们描述了这种排名逆转发生的时间，并提供了保证排名一致的充分条件。该结果为评估离线评估是否足以重现现场实验建议的决策提供了实用的启发式方法。第三，我们在交互的程式化线性模型中表明，用户适应性可以增加估计的方差。最后，我们讨论了用户适应性对实验解释的影响，并表明适应性创建了一种通用机制，导致常见的评估挑战，例如奖励黑客和新奇效应。总之，这项工作强调了测量模型性能以及模型引起的用户行为变化的必要性。",
+            "fallback_provider": "google_free",
+            "title_zh": "当双方适应时：评估交互式法学硕士系统的挑战"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "This paper presents Al Ghasali, a computational framework designed to formalize and simulate Islamic jurisprudential (Fiqh) rulings. Building upon recent set theoretic formalizations of al sabr wa al Taqsim that extract minimal operational rules as simple Horn clause logical programs, this work proves that the semantics of closed Fiqh chapters collapse completely to deterministic Finite State Automata (FSA). We establish a formal computational hierarchy, demonstrating that restricting formalization to finite propositional Horn theories guarantees decidability and constant time (O(1)) verdict extraction after offline compilation. The framework formally proves that hierarchical compositions of sub-chapter FSAs preserve this O(1) complexity, and that temporal juristic requirements, such as Tartib (order), are deterministically flattened into static ontological states, preserving the memoryless property of the automaton. To generate human-readable juristic summaries, Al Ghasali incorporates Large Language Models (LLMs) via an architecture where the deterministic FSA strictly controls the probabilistic LLM. Crucially, the paper formulates sufficient design safety conditions for this FSA LLM integration, ensuring strict adherence to the epistemological boundaries of Usul al Fiqh. To neutralize the risk of LLM hallucination, the system employs a Grammar Guided Constrained Decoding mechanism. We formally define the mapping function that dynamically constructs unambiguous right linear grammars from the FSA execution history. The paper mathematically proves that this architecture, augmented by a Bounded Neutral Lexicon and Valence Locking, guarantees the absolute absence of Decisional Hallucination, Juristic Factual Hallucination, and Semantic Inversion reducing the LLM to a pure linguistic transformer of deterministic juristic facts",
+            "authors": [
+              "Elnaserledinellah Mahmoud Abdelwahab"
+            ],
+            "categories": [
+              "cs.AI",
+              "cs.FL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17235v1",
+            "published": "2026-11-12T18:23:56+00:00",
+            "title": "Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models",
+            "updated": "2026-11-12T18:23:56+00:00",
+            "version_id": "2611.17235v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_safety",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "本文介绍了 Al Ghasali，一种旨在形式化和模拟伊斯兰法学 (Fiqh) 裁决的计算框架。这项工作以最近的 al sabr wa al Taqsim 集合理论形式化为基础，将最小的操作规则提取为简单的 Horn 子句逻辑程序，证明封闭式 Fiqh 章节的语义完全崩溃为确定性有限状态自动机 (FSA)。我们建立了一个形式化的计算层次结构，证明将形式化限制为有限命题 Horn 理论可以保证离线编译后的可判定性和恒定时间 (O(1)) 判决提取。该框架正式证明了子章 FSA 的层次结构保留了这种 O(1) 复杂性，并且时间法学要求（例如 Tartib（顺序））被确定性地扁平化为静态本体论状态，从而保留了自动机的无记忆属性。为了生成人类可读的法律摘要，Al Ghasali 通过确定性 FSA 严格控制概率性 LLM 的架构整合了大型语言模型 (LLM)。至关重要的是，本文为 FSA LLM 整合制定了充分的设计安全条件，确保严格遵守 Usul al Fiqh 的认识论边界。为了消除法学硕士幻觉的风险，该系统采用了语法引导约束解码机制。我们正式定义了映射函数，该函数根据 FSA 执行历史动态构造明确的右线性语法。该论文从数学上证明了这种架构，通过有界中性词典和效价锁定来增强，保证绝对不存在决策幻觉、法律事实幻觉和语义倒置，将法学硕士简化为确定性法律事实的纯粹语言转换器",
+            "fallback_provider": "google_free",
+            "title_zh": "Al-Ghasali：通过有限状态自动机和大型语言模型模拟伊斯兰法学裁决的计算框架"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Oral exams are compelling because (1) students can be asked to provide their reasoning for an answer and (2) their interactive nature permits follow-up questions to resolve ambiguous answers. But oral exams scale poorly. In this paper, we present scalable conversational assessment, an LLM-based system that conducts interactive text-based conversations with students to assess their ability to make and support an argument. We use a two-agent architecture to separate concerns and reduce the likelihood that answers are leaked to the student: the interviewer interacts directly with the student, but only receives guidance about the next question to ask the student; the hidden evaluator knows the goals of the whole activity, tracks the student's progress using a rubric, and guides the interviewer on when to follow-up on the current question or proceed to the next question. The system was first tested using a collection of simulated students with LLM personas of a particular ability level or adversarial tactic (e.g., answer-extractors, prompt-injectors, confident fabricators). A novel element of this evaluation was that it required the use of a fictional assessment topic to prevent personas that shouldn't have information from using knowledge present in the LLM's pre-training. The system was also deployed in a small, elective AI literacy course in both formative and summative contexts. Through manual and post-facto AI review of the transcripts we identified opportunities to improve the follow-up question generation and ensure that grading only credited ideas that the student (and not the interviewer) contributed.",
+            "authors": [
+              "Geoffrey Challen",
+              "Craig Zilles"
+            ],
+            "categories": [
+              "cs.CY",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17220v1",
+            "published": "2026-11-12T18:16:37+00:00",
+            "title": "Scalable Conversational Assessment: Chat-Based Exams with a Two-Agent LLM Pipeline",
+            "updated": "2026-11-12T18:16:37+00:00",
+            "version_id": "2611.17220v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_training",
+            "llm_agent",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "口语考试之所以引人注目，是因为（1）可以要求学生提供答案的推理；（2）其互动性允许通过后续问题来解决模棱两可的答案。但口语考试的规模很差。在本文中，我们提出了可扩展的对话评估，这是一个基于法学硕士的系统，可以与学生进行基于文本的交互式对话，以评估他们提出和支持论点的能力。我们使用双代理架构来分离关注点并减少答案泄露给学生的可能性：面试官直接与学生互动，但只接受有关下一个要问学生的问题的指导；隐藏的评估者知道整个活动的目标，使用标题跟踪学生的进度，并指导面试官何时跟进当前问题或继续下一个问题。该系统首先使用一组模拟学生进行测试，这些学生具有特定能力水平或对抗策略的法学硕士角色（例如，答案提取者、提示注入者、自信的制造者）。该评估的一个新颖之处在于，它需要使用虚构的评估主题来防止不应该拥有信息的角色使用法学硕士预培训中存在的知识。该系统还被部署在一个小型选修人工智能素养课程中，包括形成性和总结性背景。通过对成绩单进行手动和事后人工智能审查，我们找到了改进后续问题生成的机会，并确保评分仅记录学生（而不是面试官）贡献的想法。",
+            "fallback_provider": "google_free",
+            "title_zh": "可扩展的对话评估：基于聊天的考试，具有两个代理 LLM 管道"
+          }
+        }
+      ],
+      "notification_hash": "845d20a4fbb71c698e5f4edd0ab6312bb62e5dd09b616341620da9b6621380a9",
+      "recovery_of": [],
+      "rendered": {
+        "2611.17220": "rendered_inline_translation",
+        "2611.17235": "rendered_inline_translation",
+        "2611.17239": "rendered_inline_translation",
+        "2611.17241": "rendered_inline_translation",
+        "2611.17246": "rendered_inline_translation",
+        "2611.17267": "rendered_inline_translation",
+        "2611.17280": "rendered_inline_translation",
+        "2611.17287": "rendered_inline_translation",
+        "2611.17297": "rendered_inline_translation",
+        "2611.17332": "rendered_inline_translation"
+      },
+      "run_id": "20261113T090959Z-9feac3d3",
+      "schema_version": 1,
+      "status": "prepared"
     }
   },
   "papers": {
