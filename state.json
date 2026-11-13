@@ -66146,11 +66146,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-13T09:09:59.138707+00:00",
-        "run_id": "20261113T090959Z-9feac3d3",
-        "stage": "translation"
+      "title_zh": "综合走私：在 LLM 输出中恶意隐藏推断的个人属性",
+      "translation": {
+        "abstract_zh": "我们提出了 Synthesis Smuggling，这是一种新颖的威胁模型，其中对抗性 LLM 从日常寻求帮助的交互中推断出有关用户的敏感信息，并将其隐写编码为看起来无害的模型生成的内容。然后，用户可能会通过普通通信渠道共享生成的工件（例如电子邮件、社交媒体帖子或消息），从而在不知不觉中传输该信息。监视这些通道的对手可以发现此信息。我们通过训练两个开放权重模型来证明这种威胁，以根据对话线索推断性别和年龄组标签，并使用不可见的字符或单词选择对其预测进行编码。这些结果表明，即使模型本身没有直接联系对手的方式，用户共享的模型输出也可以成为个人推理的隐蔽渠道。",
+        "fallback_provider": "google_free",
+        "title_zh": "综合走私：在 LLM 输出中恶意隐藏推断的个人属性"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.17280v1"
       ]
