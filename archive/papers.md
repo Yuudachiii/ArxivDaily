@@ -8,7 +8,7 @@
 | 2026-11-13 | Goal Encoding in LLMs | 法学硕士的目标编码（谷歌备用翻译） | [arXiv 2611.17297v1](https://arxiv.org/abs/2611.17297v1) |
 | 2026-11-13 | Negative-Only Policy Optimization for One-Sided Verifiable Rewards | 单方面可验证奖励的纯负面政策优化（谷歌备用翻译） | [arXiv 2611.17287v1](https://arxiv.org/abs/2611.17287v1) |
 | 2026-11-13 | Synthesis Smuggling: Maliciously Hiding Inferred Personal Attributes in LLM Outputs | 综合走私：在 LLM 输出中恶意隐藏推断的个人属性（谷歌备用翻译） | [arXiv 2611.17280v1](https://arxiv.org/abs/2611.17280v1) |
-| 2026-11-13 | LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds | 待翻译 | [arXiv 2611.17267v1](https://arxiv.org/abs/2611.17267v1) |
+| 2026-11-13 | LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds | LiveGeo：在不断发展的世界中对地理代理进行基准测试（谷歌备用翻译） | [arXiv 2611.17267v1](https://arxiv.org/abs/2611.17267v1) |
 | 2026-11-13 | Programming Quantum Circuit Parameters with Large Language Models | 待翻译 | [arXiv 2611.17246v1](https://arxiv.org/abs/2611.17246v1) |
 | 2026-11-13 | Ballad: Bandit-Based LLM Routing for Automated Heuristic Discovery | 待翻译 | [arXiv 2611.17241v1](https://arxiv.org/abs/2611.17241v1) |
 | 2026-11-13 | When Both Sides Adapt: The Challenges of Evaluating Interactive LLM Systems | 待翻译 | [arXiv 2611.17239v1](https://arxiv.org/abs/2611.17239v1) |

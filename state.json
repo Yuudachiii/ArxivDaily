@@ -66085,11 +66085,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-13T09:09:59.138707+00:00",
-        "run_id": "20261113T090959Z-9feac3d3",
-        "stage": "translation"
+      "title_zh": "LiveGeo：在不断发展的世界中对地理代理进行基准测试",
+      "translation": {
+        "abstract_zh": "我们介绍了 GeoWorld，一个用于 LLM 代理的可控且不断发展的地理环境平台，以及 LiveGeo，一个使用 GeoWorld 评估真实地理环境中可靠决策的基准。与主要对固定地理状态进行推理和规划的现有评估不同，GeoWorld 植根于现实世界的地理结构，允许外部世界状态沿着自己的时间过程演变，同时保留可验证的状态历史。 LiveGeo 将地理任务置于这个不断变化的环境中，要求代理主动获取与任务相关的信息，验证支持先前决策的证据是否仍然有效，并在必要时修改他们的计划。我们的结果表明，即使是前沿的法学硕士也难以应对静态任务，没有任何模型能够在任务中始终表现出色，而强大的静态性能并不能确保动态可靠性。进一步的分析发现了一个关键瓶颈：代理努力获取相关证据并将其转化为有效的决策，并随着世界的发展保持其正确性。通过发布 LiveGeo 及其 GeoWorld 平台，我们的目标是为社区提供灵活且可扩展的基础设施，用于研究能够在不断发展的地理世界中采取可靠行动的下一代代理。",
+        "fallback_provider": "google_free",
+        "title_zh": "LiveGeo：在不断发展的世界中对地理代理进行基准测试"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.17267v1"
       ]
