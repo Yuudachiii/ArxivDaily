@@ -65831,7 +65831,8 @@
     },
     "2611.17239": {
       "attempts": {
-        "selection": 1
+        "selection": 1,
+        "translation": 1
       },
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
       "decision": {
@@ -65888,6 +65889,11 @@
         "llm_core"
       ],
       "stage": "ready",
+      "stage_started": {
+        "at": "2026-11-13T09:09:59.138707+00:00",
+        "run_id": "20261113T090959Z-9feac3d3",
+        "stage": "translation"
+      },
       "versions": [
         "2611.17239v1"
       ]
