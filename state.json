@@ -65826,11 +65826,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-13T09:09:59.138707+00:00",
-        "run_id": "20261113T090959Z-9feac3d3",
-        "stage": "translation"
+      "title_zh": "Al-Ghasali：通过有限状态自动机和大型语言模型模拟伊斯兰法学裁决的计算框架",
+      "translation": {
+        "abstract_zh": "本文介绍了 Al Ghasali，一种旨在形式化和模拟伊斯兰法学 (Fiqh) 裁决的计算框架。这项工作以最近的 al sabr wa al Taqsim 集合理论形式化为基础，将最小的操作规则提取为简单的 Horn 子句逻辑程序，证明封闭式 Fiqh 章节的语义完全崩溃为确定性有限状态自动机 (FSA)。我们建立了一个形式化的计算层次结构，证明将形式化限制为有限命题 Horn 理论可以保证离线编译后的可判定性和恒定时间 (O(1)) 判决提取。该框架正式证明了子章 FSA 的层次结构保留了这种 O(1) 复杂性，并且时间法学要求（例如 Tartib（顺序））被确定性地扁平化为静态本体论状态，从而保留了自动机的无记忆属性。为了生成人类可读的法律摘要，Al Ghasali 通过确定性 FSA 严格控制概率性 LLM 的架构整合了大型语言模型 (LLM)。至关重要的是，本文为 FSA LLM 整合制定了充分的设计安全条件，确保严格遵守 Usul al Fiqh 的认识论边界。为了消除法学硕士幻觉的风险，该系统采用了语法引导约束解码机制。我们正式定义了映射函数，该函数根据 FSA 执行历史动态构造明确的右线性语法。该论文从数学上证明了这种架构，通过有界中性词典和效价锁定来增强，保证绝对不存在决策幻觉、法律事实幻觉和语义倒置，将法学硕士简化为确定性法律事实的纯粹语言转换器",
+        "fallback_provider": "google_free",
+        "title_zh": "Al-Ghasali：通过有限状态自动机和大型语言模型模拟伊斯兰法学裁决的计算框架"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.17235v1"
       ]

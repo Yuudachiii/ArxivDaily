@@ -12,7 +12,7 @@
 | 2026-11-13 | Programming Quantum Circuit Parameters with Large Language Models | 使用大型语言模型对量子电路参数进行编程（谷歌备用翻译） | [arXiv 2611.17246v1](https://arxiv.org/abs/2611.17246v1) |
 | 2026-11-13 | Ballad: Bandit-Based LLM Routing for Automated Heuristic Discovery | Ballad：基于 Bandit 的 LLM 路由，用于自动启发式发现（谷歌备用翻译） | [arXiv 2611.17241v1](https://arxiv.org/abs/2611.17241v1) |
 | 2026-11-13 | When Both Sides Adapt: The Challenges of Evaluating Interactive LLM Systems | 当双方适应时：评估交互式法学硕士系统的挑战（谷歌备用翻译） | [arXiv 2611.17239v1](https://arxiv.org/abs/2611.17239v1) |
-| 2026-11-13 | Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models | 待翻译 | [arXiv 2611.17235v1](https://arxiv.org/abs/2611.17235v1) |
+| 2026-11-13 | Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models | Al-Ghasali：通过有限状态自动机和大型语言模型模拟伊斯兰法学裁决的计算框架（谷歌备用翻译） | [arXiv 2611.17235v1](https://arxiv.org/abs/2611.17235v1) |
 | 2026-11-13 | Scalable Conversational Assessment: Chat-Based Exams with a Two-Agent LLM Pipeline | 待翻译 | [arXiv 2611.17220v1](https://arxiv.org/abs/2611.17220v1) |
 | 2026-11-12 | Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations | 对比发现：在竞争性解释中的开放式科学发现 | [arXiv 2611.14514v1](https://arxiv.org/abs/2611.14514v1) |
 | 2026-11-12 | Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents | 黄铁矿：构建和评估蛋白-配体构象排序代理 | [arXiv 2611.14511v1](https://arxiv.org/abs/2611.14511v1) |
