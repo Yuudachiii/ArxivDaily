@@ -70344,11 +70344,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-14T08:40:02.931920+00:00",
-        "run_id": "20261114T084002Z-0479eb7b",
-        "stage": "translation"
+      "title_zh": "LazyWeights：按需解码边缘法学硕士",
+      "translation": {
+        "abstract_zh": "内存决定边缘设备运行哪些 LLM 以及运行速度：4 美元 GB 的 Jetson Nano 的容量，8 美元 GB 的 Jetson Orin Nano Super 的带宽。部署的格式（GPTQ、AWQ、$\\texttt{llama.cpp}$ 的 K 量子和 I 量子）在矩阵的每个整数代码上花费相同的位，尽管这些代码远非统一。 $\\texttt{LazyWeights}$ 保留这些格式，但调整 GPTQ，以便代码压缩，在交错通道中对它们进行霍夫曼无损编码，并在 DRAM 和 L2 之间的小单元中按需解码它们，因此 GPU 内核运行不变，而 DRAM 仅移动编码字节。在 $1\\%$ 和 $3.5\\%$ 复杂度预算下，编码的 Phi-3-mini、Mistral-7B 和 SmolLM-1.7B 比最佳 $\\texttt{llama.cpp}$ 格式小 $5.7-31.4\\%$。位精确的 $0.21$ mm$^2$ ASIC 解码器单元（$1$ GHz、$7$ nm）将每个代币的 Orin 延迟和能量减少高达 $36\\%$ 和 $38\\%$（通过提示查找推测为 $54\\%$ 和 $44\\%$）。在 Nano 上，$\\texttt{LazyWeights}$ 比 CPU $\\texttt{llama.cpp}$ 少需要 $\\texttt{LazyWeights}$ 的时间和 $53-57\\%$ 的能量，并且以每权重 $3.89$ 位的速度运行流式 Mistral-7B 6.6$\\times$。在同等吞吐量下，霍夫曼解码器在速率和面积方面优于 rANS 解码器； ASIC 解码器单元在 Zynq UltraScale+ FPGA (AMD ZCU102) 上精确运行。",
+        "title_zh": "LazyWeights：按需解码边缘法学硕士"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.17108v1"
       ]
