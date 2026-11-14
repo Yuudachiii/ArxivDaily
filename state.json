@@ -66592,7 +66592,8 @@
     },
     "2611.17053": {
       "attempts": {
-        "selection": 1
+        "selection": 1,
+        "translation": 1
       },
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
       "decision": {
@@ -66649,6 +66650,11 @@
         "llm_core"
       ],
       "stage": "ready",
+      "stage_started": {
+        "at": "2026-11-14T08:39:55.967551+00:00",
+        "run_id": "20261114T083955Z-f4b57ed0",
+        "stage": "translation"
+      },
       "versions": [
         "2611.17053v1"
       ]
