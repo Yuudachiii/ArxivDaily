@@ -4,7 +4,7 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
-| 2026-11-14 | Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents | 待翻译 | [arXiv 2611.17167v1](https://arxiv.org/abs/2611.17167v1) |
+| 2026-11-14 | Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents | 演员、法官还是教师？理解长远决策智能体的决策模型 | [arXiv 2611.17167v1](https://arxiv.org/abs/2611.17167v1) |
 | 2026-11-14 | LazyWeights: Decode-on-Demand Edge LLMs | 待翻译 | [arXiv 2611.17108v1](https://arxiv.org/abs/2611.17108v1) |
 | 2026-11-14 | Discovering Effective Agent Memory Designs through Program Evolution | 待翻译 | [arXiv 2611.17068v1](https://arxiv.org/abs/2611.17068v1) |
 | 2026-11-14 | Evaluating Pretrained Language Semantics for Structured EHR Prediction Tasks | 待翻译 | [arXiv 2611.17053v1](https://arxiv.org/abs/2611.17053v1) |
