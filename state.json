@@ -4102,8 +4102,15 @@
       "content_hash": "a0c50a85d1b8762bf78d6c5ff1339527b0edfc422ecfc57f2f08de6b958f2714",
       "created_at": "2026-11-14T08:39:55.967551+00:00",
       "day": "2026-11-14",
+      "delivery": {
+        "detail": "wechat_status",
+        "polls": 1,
+        "pushid": "68319270",
+        "status": "confirmed"
+      },
       "digest_id": "20261114T083955Z-f4b57ed0-a0c50a85d1b8",
       "empty": false,
+      "finished_at": "2026-11-14T08:43:17.111963+00:00",
       "items": [
         {
           "modules": [
@@ -4546,7 +4553,7 @@
       },
       "run_id": "20261114T083955Z-f4b57ed0",
       "schema_version": 1,
-      "status": "sending"
+      "status": "confirmed"
     }
   },
   "papers": {
@@ -66646,7 +66653,6 @@
       ]
     },
     "2611.17015": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -66674,7 +66680,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -66704,7 +66710,6 @@
         "updated": "2026-11-12T16:08:33+00:00",
         "version_id": "2611.17015v1"
       },
-      "pending_digest": "20261114T083955Z-f4b57ed0-a0c50a85d1b8",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -66724,7 +66729,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "面向生物学家的人工智能：智能代理系统时代基础模型的知识边界",
       "translation": {
         "abstract_zh": "人工智能（AI）正在改变生物学研究的方式。基于生物学的基础模型在数百万个核苷酸、蛋白质和单细胞测量数据上进行训练，可以预测蛋白质结构、突变效应以及细胞对基因扰动的反应。具代理性的系统，即基于大型语言模型构建的人工智能助手，能够从自然语言请求中运行多步骤分析，并且越来越多地将基础模型作为工具调用。然而，这些模型的输出何时可信往往不明确。我们将其框定为模型的知识边界：即其输出可靠的输入、任务和条件范围。本文综述了基础模型的构建方式，并提出五个设计要素（数据、架构、训练方案、评估方案和后分析）界定了这一边界。我们考察了当前模型成功或失败的证据，并提出了模型限制的标准化描述，以便研究人员及为其工作的代理能够使用这些工具可靠地。",
@@ -66737,7 +66742,6 @@
       ]
     },
     "2611.17030": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -66765,7 +66769,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -66790,7 +66794,6 @@
         "updated": "2026-11-12T16:17:08+00:00",
         "version_id": "2611.17030v1"
       },
-      "pending_digest": "20261114T083955Z-f4b57ed0-a0c50a85d1b8",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -66806,7 +66809,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "相似但不冗余：用于高粒度主题模型的嵌入门控优化",
       "translation": {
         "abstract_zh": "高粒度主题建模可以从语料库中提取数百个小众主题，但这种模式很少被研究，通常更常被视为一种失败模式：\"过度聚类\"，即连贯的主题被分裂成冗余的子主题。我们认为，这种表述将真正的冗余与语义相似但意义上有区别的主题混为一谈，而高粒度建模的核心挑战在于区分二者。近期的事后优化方法通过基于嵌入的相似性阈值或由大语言模型（LLM）指导的合并来解决主题冗余问题。我们表明，在高粒度环境下，这些方法都不足以解决问题，并提出了嵌入门控迭代合并（EGIM）方法，这是一种混合方法，能够迭代生成富有上下文的主题表示，利用嵌入相似性在主题空间中提出候选合并，然后应用LLM判断，仅接受真正冗余的对，同时保留小众主题的区别。在两个专利语料库和一个法律语料库中，大型语言模型（LLM）的判决将83%的嵌入识别的候选项拒绝为非冗余项。EGIM在合并主题上的可区分性比先前的迭代LLM基线提高了25-55%，同时更好地保留了原始主题分布。",
@@ -66819,7 +66822,6 @@
       ]
     },
     "2611.17035": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -66847,7 +66849,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -66872,7 +66874,6 @@
         "updated": "2026-11-12T16:21:31+00:00",
         "version_id": "2611.17035v1"
       },
-      "pending_digest": "20261114T083955Z-f4b57ed0-a0c50a85d1b8",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -66888,7 +66889,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "已编辑水印文本的流行率界限：功率包络与校准敏感性",
       "translation": {
         "abstract_zh": "水印检测器用于判断一份文档是否来自带有水印的语言模型。审计人员通常需要另一个数字：语料库中带水印文档的比例。我们研究了在每份文档都可能被未知程度修改的情况下，Gumbel-max 和绿名单（KGW）水印的这一比例。在不限制编辑的情况下，识别集合的上限为 1。通过结合已知的最不利的下一个令牌分布与序列耦合，我们推导出一个权力包络，其由三个预算索引：保留下限、熵预算和就地替换预算，对于 Gumbel-max 来说，使编辑过的位置看起来比人工文本更少水印化。该包络提供了一个对于它所支配的备择方案是精确的识别集合，针对固定语料库的实际比例给出有限样本界限（无论是精确零假设还是基于独立人工样本校准的零假设），以及针对数据流的置信序列。在 Gumbel-max 仿真中，当包络受约束时，这些界限覆盖，而最大化包络和零假设之间差距的阈值通常紧至十二个阈值。在来自 OPT-1.3B 和 Qwen3-1.7B 的文本中，在三个键下对 12,000 份新鲜人类文档评分显示没有明显偏离精确零假设，并且在重新抽样试验中，来自有限文档池且带有随机编辑、替换和改写的所有边界都被覆盖；在份额为 0.2 时，精确零假设边界约为 [0.14,0.38]。这些结果在两方面是脆弱的，我们已精确说明。LLM 改写的 KGW 文档池落在包络之外，但在 2000 份文档时，这些试验中的边界仍然被覆盖。模拟零假设误差 0.01，可与我们在阈值中观察到的最大偏差相比，在 2000 份文档时同样无害，但在 100,000 份文档时会破坏精确零假设的覆盖；在独立人类样本上校准的零假设在此仍保持覆盖，但需要大量参考样本才能保持范围狭窄。",
@@ -66901,7 +66902,6 @@
       ]
     },
     "2611.17042": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -66929,7 +66929,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -66955,7 +66955,6 @@
         "updated": "2026-11-12T16:27:07+00:00",
         "version_id": "2611.17042v1"
       },
-      "pending_digest": "20261114T083955Z-f4b57ed0-a0c50a85d1b8",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -66975,7 +66974,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "可验证人工智能的基础设施：证明成本去向及硬件如何提供帮助",
       "translation": {
         "abstract_zh": "包括由大型语言模型和其他基于Transformer的模型驱动的人工智能服务用户，需要确保推理和训练遵循声明的计算，而不会暴露私有模型或数据。零知识证明可以提供这种保证，但生成证明仍然成本高昂。硬件加速研究通常报告单个加密操作的性能提升，却未明确其对神经网络工作负载尤其是大型Transformer模型的完整证明成本的影响。我们提出了一个四层框架，将可验证的AI工作负载、证明系统、加密内核和硬件平台联系起来，利用它来回顾文献，并新增对六个证明者和七个内核的原始测量，以识别哪些成本在实践中重要。我们的测量显示，占主导的成本随证明系统和输入长度而变化。在低秩微调中，开启固定模型权重承诺的成本仍然存在在输入长度从64到2048之间几乎保持不变，而与中间值相关的工作量则在增加。一个拥有130亿参数的微调配置超出了40GB显卡的容量，但在80GB设备上可以完成，这显示了为什么容量必须与执行时间一起评估。我们的内核分析进一步识别了仅带宽模型无法发现的指令发出和同步限制。我们利用这些发现来评估显卡、可重构逻辑、定制芯片和现有人工智能加速器。由此产生的研究议程将易于证明的数值格式、固定权重承诺的重用、异构执行和共享基准测试与测得的瓶颈联系起来。有效的加速需要围绕目标工作负载的成本特征选择硬件和证明系统优化。",
@@ -66988,7 +66987,6 @@
       ]
     },
     "2611.17048": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -67016,7 +67014,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -67056,7 +67054,6 @@
         "updated": "2026-11-12T16:31:54+00:00",
         "version_id": "2611.17048v1"
       },
-      "pending_digest": "20261114T083955Z-f4b57ed0-a0c50a85d1b8",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -67078,7 +67075,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "AURA 2.0：从用户驱动的响应到模型发起的流媒体视频对话",
       "translation": {
         "abstract_zh": "大多数 AI 助手只有在被提示时才会回应，即使视频流中的事件提供了有意义的对话机会，它们也会保持沉默。为了超越纯粹由用户驱动的互动，我们推出了 AURA 2.0，这是一种流媒体视频大语言模型，相较于 AURA 引入了三项核心升级。关键进展是模型发起对话（Model-Initiated Conversation，MIC），该功能使模型能够识别值得在不断变化的视频流中讨论的主题，并在无需用户查询的适当时刻发起对话。流感知工具调用（Stream-Aware Tool Calling，SATC）使模型能够利用当前的视觉和对话上下文调用外部工具，并将返回的信息整合到正在进行的互动中。交互式视觉定位（Interactive Visual Grounding，IVG）支持对用户输入和模型输出的视觉定位。模型可以识别用户在视频帧上标记的对象，并生成帧对齐的边界框，将其响应与特定对象和区域关联起来。为了开发这些为了增强能力，我们构建了一个专门的流媒体交互数据集，并采用三阶段训练方案，将新的行为整合到AURA现有的流媒体交互能力中。我们进一步引入了长时交互记忆（LHIM），以在长视频流中保持上下文连续性。在公共流媒体基准上的评估显示，AURA 2.0在开源流媒体模型中实现了领先性能，而针对性的评估进一步验证了其新的交互能力。我们开源了模型权重和推理代码。",
@@ -67091,7 +67088,6 @@
       ]
     },
     "2611.17052": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -67119,7 +67115,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -67148,7 +67144,6 @@
         "updated": "2026-11-12T16:33:51+00:00",
         "version_id": "2611.17052v1"
       },
-      "pending_digest": "20261114T083955Z-f4b57ed0-a0c50a85d1b8",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -67168,7 +67163,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "审计人工智能同行评审：基于真实科学论文的基准",
       "translation": {
         "abstract_zh": "基于大型语言模型（LLM）的同行评审现在已在生产规模中使用，但其评估仍然有限。我们引入了一个基准测试，在真实论文中注入四种类型的客观、可定位错误（常规问题、数学、数值、引用），并按照三种严重性水平进行，并按错误类型和严重性衡量每个审稿人的检测率，同时测量其在干净版本上的误报率。我们还提出了 Skepthical，这是一种多代理审稿系统，通过检索引用的论文验证引用支持的论点，用计算机代数验证数学内容，并通过执行代码验证数值声明。我们将该基准测试应用于两个各包含 15 篇近期 arXiv 预印本的语料库，一个是天体物理学领域，一个是机器学习（ML）领域，总共注入 357 个错误，并评估了十二个审稿系统：六个单一 LLM 审稿人，两个 Claude Code 配置，三个公开可用的审稿人，以及 Skepthical。模型选择对检测率的影响最大：在相同提示下，三款前沿不同的大语言模型在两个语料库上的总体检测率相差大约50个百分点。当工具和支撑结构提供模型自身无法提供的能力时，它们会有所帮助。特别是在天体物理学领域，Claude Code 在数学和数值检测方面优于单次 Claude 调用，而强制引用检索使 Skepthical 的引用错误检测率在所有系统中高出很多。然而，这种引用优势在机器学习领域并未体现，在该领域模型似乎对文献的了解更好，Skepthical 的引用检测率与最佳单一大语言模型在统计上没有显著差异。大多数系统的误报率低于10%，但会因提示、模型和支撑结构而有所不同，数学标记是误报的主要来源。评估流程、注入的错误以及裁定日志作为基准已发布。",
@@ -67181,7 +67176,6 @@
       ]
     },
     "2611.17053": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -67209,7 +67203,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -67234,7 +67228,6 @@
         "updated": "2026-11-12T16:34:49+00:00",
         "version_id": "2611.17053v1"
       },
-      "pending_digest": "20261114T083955Z-f4b57ed0-a0c50a85d1b8",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -67252,7 +67245,7 @@
         "llm_training",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "评估预训练语言语义用于结构化电子健康记录预测任务",
       "translation": {
         "abstract_zh": "结构化电子健康记录（EHR）模型通常将每个临床概念视为特定数据集的标记，舍弃了与事件相关的自然语言语义。因此，概念之间的关系在很大程度上必须从EHR共现中学习，而无法直接利用任何先验的语义知识。我们研究了如何通过开发tEHR将预训练的因果语言模型适应于纵向EHR预测。在这里，我们用事件的自然语言描述表示事件，并使用该文本流进行EHR适应的持续预训练，随后使用LoRA进行任务特定的判别微调，将大语言模型（LLM）作为纵向病人编码器。我们在MIMIC-IV数据集上的四个预测任务以及CPRD数据集上的胰腺癌预测（预测范围为1至12个月）中评估了这种方法，其中使用Mistral-7B-v0.3骨干的tEHR实现了最强的整体性能。消融实验显示性能下降当临床描述被移除或错位，当数值被省略，以及当任一适应阶段被移除时，而明确的经过时间描述提供的额外益处很小。对学习到的患者表示的分析进一步揭示了与不同疾病风险模式和临床历史相关的临床一致结构。",
@@ -67265,7 +67258,6 @@
       ]
     },
     "2611.17068": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -67293,7 +67285,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -67323,7 +67315,6 @@
         "updated": "2026-11-12T16:42:04+00:00",
         "version_id": "2611.17068v1"
       },
-      "pending_digest": "20261114T083955Z-f4b57ed0-a0c50a85d1b8",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -67343,7 +67334,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "通过程序演化探索有效的智能体记忆设计",
       "translation": {
         "abstract_zh": "程序进化提供了一种有前景的方法来发现智能体记忆设计并研究其有效性的潜在选择。我们介绍了 MAPE，一个通过标准化生命周期接口和迭代诊断-提议循环，从最小种子演化完整记忆程序的框架。在 LoCoMo 和 LongMemEval 上的实验显示，相对于手工设计的基线模型，在 35% 的服务成本下，绝对准确率提升高达 12%，进一步的评估支持跨服务骨干和基准的迁移。实证分析和消融实验识别并验证了两个重复出现的设计模式：保留原始对话作为可检索的证据，可以保留从提取记忆中遗漏的细节，而根据查询意图组合检索到的证据能够帮助回答模型有效利用这些信息。将组合模块移植到五个现有的记忆系统中，使五者的准确率均有所提升。除了这些模式之外，搜索目标还会影响计算过程如下：在优化服务成本的同时保持准确性，将计算从基于大语言模型的记忆构建转移到查询时的选择性处理，同时保持具有竞争力的准确性。综合来看，这些发现为智能体记忆设计提供了实证经验。代码可在 https://github.com/ash-ding/MAPE 获取。",
@@ -67356,7 +67347,6 @@
       ]
     },
     "2611.17108": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -67384,7 +67374,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -67411,7 +67401,6 @@
         "updated": "2026-11-12T17:03:40+00:00",
         "version_id": "2611.17108v1"
       },
-      "pending_digest": "20261114T083955Z-f4b57ed0-a0c50a85d1b8",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -67427,7 +67416,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "LazyWeights：按需解码的边缘大型语言模型",
       "translation": {
         "abstract_zh": "内存决定边缘设备运行哪些大型语言模型及其速度：4美元GB的Jetson Nano的容量，8美元的GB的Jetson Orin Nano Super的带宽。部署格式（GPTQ、AWQ、$\\texttt{llama.cpp}$的K和I-quants）在矩阵的每个整数码上花费相等比特，尽管代码远非统一。$\\texttt{LazyWeights}$保留这些格式，但调整GPTQ使代码压缩，在交错通道中无损Huffman编码，并在DRAM和L2之间的小单元中按需解码，因此GPU内核不变运行，DRAM仅移动编码字节。在1\\%$和3.5\\%$的复杂度预算下，编码的Phi-3-mini、Mistral-7B和SmolLM-1.7B比最佳$\\texttt{llama.cpp}$格式小5.7-31.4\\%$。一个位精确的0.21美元 mm$^2$ ASIC解码器单元（$1 GHz，$7 nm）可将Orin延迟和功耗降低最多36美元，每个代币可降低38美元（按提示查找推测为$54\\%$和$44\\%$）。在Nano上，$\\texttt{LazyWeights}$每个代币所需时间和能量减少58-64\\%$，每个代币的能量减少53-57\\%$CPU $\texttt{llama.cpp}$，并以每权重 $3.89$ 位的速度运行流式 Mistral-7B，比之前快 6.6 倍。在相同吞吐量下，Huffman 解码器在速率和面积上优于 rANS 解码器；ASIC 解码单元在 Zynq UltraScale+ FPGA（AMD ZCU102）上运行位精确。",
@@ -67440,7 +67429,6 @@
       ]
     },
     "2611.17167": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -67468,7 +67456,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -67500,7 +67488,6 @@
         "updated": "2026-11-12T17:42:46+00:00",
         "version_id": "2611.17167v1"
       },
-      "pending_digest": "20261114T083955Z-f4b57ed0-a0c50a85d1b8",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -67520,7 +67507,7 @@
         "llm_agent",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "演员、法官还是教师？理解长远决策智能体的决策模型",
       "translation": {
         "abstract_zh": "决策模型通过具有类型的输出回答问题，例如在多个选项之间做出选择并为每个选项给出概率，因此一个模型可以选择代理的行动、评估已经采取的行动，或对每个行动进行评分以通过强化学习教授策略。先前的研究主要将它们作为执行者来研究，通过它们执行的效果来判断其有用性。我们提出问题：一个执行很差的决策模型是否仍然可以很好地教授。我们比较了三种决策模型和三种通用大型语言模型（LLM）作为 ALFWorld 上的执行者和评估者，并使用 JEV 作为 ALFWorld 和 WebShop 上的教师。作为执行者，所有六个模型都被一个更容易的子目标吸引，从而偏离必须先完成的子目标。作为能够看到完整轨迹的评估者，同样的模型会对朝向该子目标的步骤给予信用，并通过询问每个动作是否有帮助，而不是任务是否会成功，将有用动作与无用动作区分开来。作为教师，JEV 将 Qwen2.5-1.5B 策略在 ALFWorld 上通过 GRPO 从 72.8% 提升到 82.9% 的成功率，在WebShop。这些结果表明，即使是表现不佳的执行者仍然可以教得很好，因为在情节结束后评判一个动作会揭示表演必须预见的后果。代码可在 https://github.com/ZJU-REAL/decision-agents 获取。",
