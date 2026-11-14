@@ -51,6 +51,10 @@
     "20261113T090957Z-f34f2d17-7b94f371358d": {
       "attempts": 1,
       "created_at": "2026-11-13T09:09:57.756430+00:00"
+    },
+    "20261114T084002Z-0479eb7b-25fbecd8b4da": {
+      "attempts": 0,
+      "created_at": "2026-11-14T08:40:02.931920+00:00"
     }
   },
   "collection": {
@@ -5332,6 +5336,461 @@
       "run_id": "20261113T090957Z-f34f2d17",
       "schema_version": 1,
       "status": "confirmed"
+    },
+    "20261114T084002Z-0479eb7b-25fbecd8b4da": {
+      "alert": false,
+      "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-google/archive/2026/11/14/20261114T084002Z-0479eb7b-25fbecd8b4da.md",
+      "chain_root": "20261114T084002Z-0479eb7b-25fbecd8b4da",
+      "chain_roots": [
+        "20261114T084002Z-0479eb7b-25fbecd8b4da"
+      ],
+      "content_hash": "25fbecd8b4da7b0303f4e7b4f102c8f2fcf3a953bed9c97f15977e7261be7691",
+      "created_at": "2026-11-14T08:40:02.931920+00:00",
+      "day": "2026-11-14",
+      "digest_id": "20261114T084002Z-0479eb7b-25fbecd8b4da",
+      "empty": false,
+      "items": [
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent's actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as actors, judging their usefulness by how well they act. We ask whether a decision model that acts poorly can still teach well. We compare three decision models and three general LLMs as actors and judges on ALFWorld, and use JEV as a teacher on ALFWorld and WebShop. As actors, all six models are pulled away from a subgoal that must come first by an easier one. As judges that see the whole trajectory, the same models credit the steps toward that subgoal, and asking whether each action helped, rather than whether the task will succeed, separates useful from useless actions. As a teacher, JEV raises a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% success on ALFWorld and from 56.8% to 71.4% on WebShop. These results suggest that a poor actor can still teach well, because judging an action after the episode ends reveals the consequences that acting must anticipate. Code is available at https://github.com/ZJU-REAL/decision-agents.",
+            "authors": [
+              "Haochen Liu",
+              "Qianhao Zhu",
+              "Zixuan Wang",
+              "Dingming Li",
+              "Tongbo Chen",
+              "Peng Qiu",
+              "Yingqi Qu",
+              "Weiming Lu",
+              "Jun Xiao",
+              "Yongliang Shen"
+            ],
+            "categories": [
+              "cs.AI",
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17167v1",
+            "published": "2026-11-12T17:42:46+00:00",
+            "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+            "updated": "2026-11-12T17:42:46+00:00",
+            "version_id": "2611.17167v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_training",
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "决策模型通过键入输出来回答问题，例如在选项中进行选择，每个选项都有一个概率，因此一个模型可以选择代理的动作，评估已经采取的动作，或者对每个动作进行评分，以通过强化学习来教授策略。之前的工作主要将他们作为演员进行研究，通过他们的表演来判断他们的用处。我们询问一个表现不佳的决策模型是否仍然可以很好地教学。我们在 ALFWorld 上比较了三个决策模型和三个一般法学硕士作为演员和评委，并使用 JEV 作为 ALFWorld 和 WebShop 上的老师。作为演员，所有六个模型都远离了一个必须首先由一个更简单的目标实现的子目标。作为看到整个轨迹的法官，相同的模型将归功于实现该子目标的步骤，并询问每个行动是否有帮助，而不是任务是否会成功，从而区分有用的行动和无用的行动。作为教师，JEV 将 GRPO 上的 Qwen2.5-1.5B 策略在 ALFWorld 上的成功率从 72.8% 提高到 82.9%，在 WebShop 上的成功率从 56.8% 提高到 71.4%。这些结果表明，一个糟糕的演员仍然可以教得很好，因为在剧集结束后判断一个动作可以揭示表演必须预见的后果。代码可在 https://github.com/ZJU-REAL/decision-agents 获取。",
+            "title_zh": "演员、法官、还是老师？了解长期智能体的决策模型"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Memory decides which LLMs an edge device runs, and how fast: capacity on a $4$ GB Jetson Nano, bandwidth on an $8$ GB Jetson Orin Nano Super. Deployed formats (GPTQ, AWQ, $\\texttt{llama.cpp}$'s K- and I-quants) spend equal bits on every integer code of a matrix, although the codes are far from uniform. $\\texttt{LazyWeights}$ keeps these formats but tunes GPTQ so the codes compress, Huffman-codes them losslessly in interleaved lanes, and decodes them on demand in a small unit between DRAM and L2, so GPU kernels run unchanged and DRAM moves only coded bytes. At $1\\%$ and $3.5\\%$ perplexity budgets, coded Phi-3-mini, Mistral-7B and SmolLM-1.7B are $5.7-31.4\\%$ smaller than the best $\\texttt{llama.cpp}$ format. A bit-exact $0.21$ mm$^2$ ASIC decoder unit ($1$ GHz, $7$ nm) cuts Orin latency and energy per token by up to $36\\%$ and $38\\%$ ($54\\%$ and $44\\%$ with prompt-lookup speculation). On the Nano, $\\texttt{LazyWeights}$ needs $58-64\\%$ less time and $53-57\\%$ less energy per token than CPU $\\texttt{llama.cpp}$, and runs a streamed Mistral-7B 6.6$\\times$ faster at $3.89$ bits per weight. A Huffman decoder beats an rANS decoder in rate and area at equal throughput; the ASIC decoder unit runs bit-exact on a Zynq UltraScale+ FPGA (AMD ZCU102).",
+            "authors": [
+              "Arnab Sanyal",
+              "Gourav Datta",
+              "Sandeep P. Chinchali"
+            ],
+            "categories": [
+              "cs.LG",
+              "cs.AR",
+              "cs.CL",
+              "cs.IT"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17108v1",
+            "published": "2026-11-12T17:03:40+00:00",
+            "title": "LazyWeights: Decode-on-Demand Edge LLMs",
+            "updated": "2026-11-12T17:03:40+00:00",
+            "version_id": "2611.17108v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "内存决定边缘设备运行哪些 LLM 以及运行速度：4 美元 GB 的 Jetson Nano 的容量，8 美元 GB 的 Jetson Orin Nano Super 的带宽。部署的格式（GPTQ、AWQ、$\\texttt{llama.cpp}$ 的 K 量子和 I 量子）在矩阵的每个整数代码上花费相同的位，尽管这些代码远非统一。 $\\texttt{LazyWeights}$ 保留这些格式，但调整 GPTQ，以便代码压缩，在交错通道中对它们进行霍夫曼无损编码，并在 DRAM 和 L2 之间的小单元中按需解码它们，因此 GPU 内核运行不变，而 DRAM 仅移动编码字节。在 $1\\%$ 和 $3.5\\%$ 复杂度预算下，编码的 Phi-3-mini、Mistral-7B 和 SmolLM-1.7B 比最佳 $\\texttt{llama.cpp}$ 格式小 $5.7-31.4\\%$。位精确的 $0.21$ mm$^2$ ASIC 解码器单元（$1$ GHz、$7$ nm）将每个代币的 Orin 延迟和能量减少高达 $36\\%$ 和 $38\\%$（通过提示查找推测为 $54\\%$ 和 $44\\%$）。在 Nano 上，$\\texttt{LazyWeights}$ 比 CPU $\\texttt{llama.cpp}$ 少需要 $\\texttt{LazyWeights}$ 的时间和 $53-57\\%$ 的能量，并且以每权重 $3.89$ 位的速度运行流式 Mistral-7B 6.6$\\times$。在同等吞吐量下，霍夫曼解码器在速率和面积方面优于 rANS 解码器； ASIC 解码器单元在 Zynq UltraScale+ FPGA (AMD ZCU102) 上精确运行。",
+            "title_zh": "LazyWeights：按需解码边缘法学硕士"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Program evolution provides a promising approach to discover agent memory designs and study the choices underlying their effectiveness. We introduce MAPE, a framework that evolves whole memory programs from minimal seeds through a standardized lifecycle interface and an iterative diagnosis-proposal loop. Experiments on LoCoMo and LongMemEval yield an absolute accuracy gain of up to 12% over manually designed baselines at 35% of the serving cost, with further evaluations supporting transfer across serving backbones and benchmarks. Empirical analyses and ablations identify and validate two recurring design patterns: retaining raw conversations as retrievable evidence preserves details omitted from extracted memories, while composing retrieved evidence according to query intent helps the answering model use it effectively. Transplanting the composition module into five existing memory systems improves accuracy across all five. Beyond these patterns, the search objective shapes where computation goes: optimizing serving cost alongside accuracy shifts computation from LLM-based memory construction to selective processing at query time while retaining competitive accuracy. Together, these findings offer empirical lessons for agent memory design. Code is available at https://github.com/ash-ding/MAPE.",
+            "authors": [
+              "Xinheng Ding",
+              "Seyyed Saeid Cheshmi",
+              "Ziyang Zhang",
+              "Tairan Chen",
+              "Wenya Xie",
+              "Yu Hou",
+              "Rui Zhang",
+              "Zirui Liu"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17068v1",
+            "published": "2026-11-12T16:42:04+00:00",
+            "title": "Discovering Effective Agent Memory Designs through Program Evolution",
+            "updated": "2026-11-12T16:42:04+00:00",
+            "version_id": "2611.17068v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "程序进化提供了一种有前景的方法来发现代理内存设计并研究其有效性背后的选择。我们引入了 MAPE，这是一个框架，它通过标准化的生命周期接口和迭代诊断-建议循环从最小种子进化出整个内存程序。 LoCoMo 和 LongMemEval 上的实验以 35% 的服务成本，比手动设计的基线提高了高达 12% 的绝对准确度，并且进一步的评估支持跨服务骨干网和基准的传输。实证分析和消融识别并验证了两种重复出现的设计模式：保留原始对话作为可检索的证据，保留了提取的记忆中遗漏的细节，同时根据查询意图组成检索到的证据，有助于回答模型有效地使用它。将组合模块移植到五个现有的存储系统中可以提高所有五个存储系统的准确性。除了这些模式之外，搜索目标还决定了计算的走向：优化服务成本和准确性，将计算从基于 LLM 的内存构建转变为查询时的选择性处理，同时保持有竞争力的准确性。总之，这些发现为智能体记忆设计提供了经验教训。代码可在 https://github.com/ash-ding/MAPE 获取。",
+            "title_zh": "通过程序演化发现有效的代理内存设计"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Structured Electronic Health Records (EHR) models typically treat each clinical concept as a dataset-specific token, discarding the natural-language semantics associated with the event. As a result, relationships between concepts must largely be learned from EHR co-occurrence, without directly exploiting any prior semantic knowledge. We investigate how pretrained causal language models can be adapted for longitudinal EHR prediction by developing tEHR. Here, we represent events with their natural language description and use this text stream to apply EHR-adaptive continued pretraining, followed by task-specific discriminative fine-tuning using LoRA, utilising the LLM as a longitudinal patient-encoder. We evaluate this approach across four prediction tasks on the MIMIC-IV dataset and pancreatic cancer prediction on the CPRD dataset at 1 to 12 month horizons, with tEHR using the Mistral-7B-v0.3 backbone achieving the strongest overall performance. Ablations show that performance declines when clinical descriptions are removed or misaligned, when numerical values are omitted, and when either stage of adaptation is removed, while explicit elapsed-time descriptions provide little additional benefit. Analysis of the learned patient representations further reveals clinically coherent structure associated with distinct patterns of disease risk and clinical history.",
+            "authors": [
+              "Ashvin Gupta",
+              "Brendan Delaney",
+              "Alessandra Russo"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17053v1",
+            "published": "2026-11-12T16:34:49+00:00",
+            "title": "Evaluating Pretrained Language Semantics for Structured EHR Prediction Tasks",
+            "updated": "2026-11-12T16:34:49+00:00",
+            "version_id": "2611.17053v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_training",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "结构化电子健康记录 (EHR) 模型通常将每个临床概念视为数据集特定的标记，丢弃与事件相关的自然语言语义。因此，概念之间的关系很大程度上必须从 EHR 共现中学习，而不直接利用任何先前的语义知识。我们研究如何通过开发 tEHR 将预训练的因果语言模型应用于纵向 EHR 预测。在这里，我们用自然语言描述来表示事件，并使用该文本流来应用 EHR 自适应持续预训练，然后使用 LoRA 进行特定于任务的判别性微调，利用 LLM 作为纵向患者编码器。我们在 1 至 12 个月的时间范围内，在 MIMIC-IV 数据集上的四个预测任务和 CPRD 数据集上的胰腺癌预测中评估了这种方法，其中使用 Mistral-7B-v0.3 主干的 tEHR 实现了最强的整体性能。消融表明，当临床描述被删除或错位、数值被省略以及任一适应阶段被删除时，性能都会下降，而明确的经过时间描述几乎没有提供额外的好处。对学习到的患者表征的分析进一步揭示了与不同的疾病风险模式和临床病史相关的临床连贯结构。",
+            "title_zh": "评估结构化 EHR 预测任务的预训练语言语义"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "LLM-based peer review is now used at production scale, but its evaluation remains limited. We introduce a benchmark that injects objective, localisable errors of four types (general issues, mathematics, numerics, citations) at three severity levels into real papers and measures each reviewer's detection rate by error type and severity, together with its false-positive rate on clean copies. We also present Skepthical, a multi-agent reviewer that verifies citation-backed claims by retrieving the cited papers, mathematics with computer algebra, and numerical claims with executed code. We apply the benchmark to two corpora of 15 recent arXiv preprints each, one in astrophysics and one in machine learning (ML), injecting a total of 357 errors, and evaluate twelve reviewer systems: six single-LLM reviewers, two Claude Code configurations, three publicly available reviewers, and Skepthical. The choice of model has the largest impact on detection rate: given the same prompt, three frontier LLMs differ by about 50 percentage points in total detection on both corpora. Tools and scaffolding help when they contribute what the model cannot supply on its own. In particular, on astrophysics, Claude Code improves on a single Claude call in mathematics and numerics detection, and enforced citation retrieval gives Skepthical the highest citation error detection rate of all systems by a large margin. This citation lead, however, is not observed on ML, where the models appear to know the literature better and Skepthical's citation detection rate is statistically indistinguishable from that of the best single LLM. False-positive rates are below 10% for most systems, but vary with prompt, model, and scaffolding, with mathematics flags the main source of false positives. The evaluation pipeline, the injected errors, and the adjudication logs are released as a benchmark.",
+            "authors": [
+              "Íñigo Zubeldia",
+              "Boris Bolliet",
+              "Francisco Villaescusa-Navarro",
+              "Pablo Villanueva-Domingo",
+              "Miles Cranmer"
+            ],
+            "categories": [
+              "cs.CL",
+              "astro-ph.IM",
+              "cs.AI",
+              "cs.DL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17052v1",
+            "published": "2026-11-12T16:33:51+00:00",
+            "title": "Auditing AI peer reviewers: a benchmark on real scientific papers",
+            "updated": "2026-11-12T16:33:51+00:00",
+            "version_id": "2611.17052v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "基于法学硕士的同行评审现已在生产规模上使用，但其评估仍然有限。我们引入了一个基准，将三种严重程度的四种类型（一般问题、数学、数字、引文）的客观、可本地化错误注入到真实论文中，并根据错误类型和严重程度测量每个审稿人的检测率，以及干净副本的误报率。我们还推出了 Skepthical，这是一种多智能体审稿器，可以通过检索被引用的论文、计算机代数的数学以及带有执行代码的数值声明来验证引用支持的声明。我们将基准测试应用于两个语料库，每个语料库包含 15 个最近的 arXiv 预印本，一个是天体物理学，一个是机器学习 (ML)，总共注入了 357 个错误，并评估了 12 个审稿人系统：6 个单 LLM 审稿人、2 个 Claude 代码配置、3 个公开可用的审稿人和 Skepthical。模型的选择对检测率影响最大：在相同的提示下，三个前沿法学硕士在两个语料库上的总检测率相差约 50 个百分点。当工具和脚手架贡献模型本身无法提供的东西时，它们会有所帮助。特别是在天体物理学方面，Claude Code 在数学和数值检测方面改进了单个 Claude 调用，而强制引文检索使 Skepthical 大幅领先于所有系统中最高的引文错误检测率。然而，这种引文领先优势在 ML 上并未观察到，其中的模型似乎更了解文献，而且 Skepthical 的引文检测率在统计上与最好的单一法学硕士没有什么区别。大多数系统的误报率低于 10%，但因提示、模型和支架而异，其中数学标记是误报的主要来源。评估管道、注入错误和裁决日志作为基准发布。",
+            "title_zh": "审核人工智能同行评审员：真实科学论文的基准"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Most AI assistants respond only when prompted, remaining silent even when events in the video stream offer meaningful opportunities for conversation. To move beyond purely user-driven interaction, we present AURA 2.0, a streaming video large language model that introduces three core upgrades to AURA. The key advance is Model-Initiated Conversation (MIC), which enables the model to identify topics worth discussing in the evolving visual stream and initiate conversations at appropriate moments without a user query. Stream-Aware Tool Calling (SATC) enables the model to invoke external tools using the current visual and conversational context and incorporate returned information into the ongoing interaction. Interactive Visual Grounding (IVG) supports visual grounding in both user inputs and model outputs. The model can identify objects marked by users on video frames and produce frame-aligned bounding boxes to link its responses to specific objects and regions. To develop these capabilities, we construct a dedicated streaming interaction dataset and adopt a three-stage training scheme to integrate the new behaviors with AURA's existing streaming interaction abilities. We further incorporate Long-Horizon Interaction Memory (LHIM) to maintain contextual continuity over extended video streams. Evaluations on public streaming benchmarks show that AURA 2.0 achieves leading performance among open-source streaming models, while targeted evaluations further validate its new interaction capabilities. We open-source the model weights and inference code.",
+            "authors": [
+              "Shuhan Li",
+              "Huankang Guan",
+              "Xintong Guo",
+              "Yang Bo",
+              "Yuyang He",
+              "Dunyuan Xu",
+              "Jingyan Chen",
+              "Fang Liu",
+              "Tsz Kin Wan",
+              "Jinpeng Chen",
+              "Zhenqi He",
+              "Yuxuan Hu",
+              "Wenbo Li",
+              "Han Gao",
+              "Qijun Li",
+              "Long Chen",
+              "Hongsheng Li",
+              "Rui Liu"
+            ],
+            "categories": [
+              "cs.CV",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17048v1",
+            "published": "2026-11-12T16:31:54+00:00",
+            "title": "AURA 2.0: From User-Driven Responses to Model-Initiated Conversations in Streaming Video",
+            "updated": "2026-11-12T16:31:54+00:00",
+            "version_id": "2611.17048v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_safety",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大多数人工智能助手仅在收到提示时才会做出反应，即使视频流中的事件提供了有意义的对话机会，也保持沉默。为了超越纯粹的用户驱动交互，我们推出了 AURA 2.0，这是一种流视频大语言模型，为 AURA 引入了三个核心升级。关键的进步是模型发起的对话（MIC），它使模型能够识别不断发展的视觉流中值得讨论的主题，并在适当的时刻发起对话，而无需用户查询。流感知工具调用 (SATC) 使模型能够使用当前的视觉和对话上下文调用外部工具，并将返回的信息合并到正在进行的交互中。交互式视觉基础 (IVG) 支持用户输入和模型输出中的视觉基础。该模型可以识别用户在视频帧上标记的对象，并生成帧对齐的边界框，以将其响应链接到特定对象和区域。为了开发这些能力，我们构建了专用的流媒体交互数据集，并采用三阶段训练方案将新行为与AURA现有的流媒体交互能力相结合。我们进一步结合了长视野交互记忆（LHIM）来保持扩展视频流的上下文连续性。公共流媒体基准评测表明，AURA 2.0在开源流媒体模型中取得了领先的性能，而有针对性的评估进一步验证了其新的交互能力。我们开源模型权重和推理代码。",
+            "title_zh": "AURA 2.0：从用户驱动的响应到流视频中模型发起的对话"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Users of artificial intelligence services, including those powered by large language models and other transformer-based models, need assurance that inference and training follow the declared computation without exposing private models or data. Zero-knowledge proofs can provide this assurance, but proof generation remains expensive. Hardware acceleration research often reports gains for individual cryptographic operations, leaving their effect on the full cost of proving neural-network workloads, particularly large transformer models, unclear. We introduce a four-layer framework linking verifiable AI workloads, proof systems, cryptographic kernels and hardware platforms, use it to review the literature, and add original measurements of six provers and seven kernels to identify which costs matter in practice. Our measurements show that the dominant cost changes with the proof system and input length. In low-rank fine-tuning, the cost of opening commitments to fixed model weights remains nearly constant across input lengths from 64 to 2048, while the work associated with intermediate values grows. A 13-billion-parameter fine-tuning configuration exceeds the capacity of a 40-gigabyte graphics processor but completes on an 80-gigabyte device, showing why capacity must be assessed alongside execution time. Our kernel profiling further identifies instruction issue and synchronization limits that a bandwidth-only model misses. We use these findings to assess graphics processors, reconfigurable logic, custom chips and existing artificial intelligence accelerators. The resulting research agenda connects proof-friendly numeric formats, reuse of fixed-weight commitments, heterogeneous execution and shared benchmarks to the measured bottlenecks. Effective acceleration requires selecting hardware and proof-system optimizations around the cost profile of the target workload.",
+            "authors": [
+              "Yihan Xia",
+              "Wenxin Xu",
+              "Taotao Wang"
+            ],
+            "categories": [
+              "cs.AR",
+              "cs.CR",
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17042v1",
+            "published": "2026-11-12T16:27:07+00:00",
+            "title": "Infrastructure for Verifiable AI: Where Proof Costs Go and How Hardware Can Help",
+            "updated": "2026-11-12T16:27:07+00:00",
+            "version_id": "2611.17042v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_training",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "人工智能服务的用户，包括由大型语言模型和其他基于变压器的模型提供支持的服务，需要确保推理和训练遵循声明的计算，而不会暴露私有模型或数据。零知识证明可以提供这种保证，但证明生成仍然昂贵。硬件加速研究经常报告单个加密操作的收益，但它们对证明神经网络工作负载（特别是大型变压器模型）的全部成本的影响尚不清楚。我们引入了一个连接可验证的人工智能工作负载、证明系统、加密内核和硬件平台的四层框架，用它来回顾文献，并添加六个证明者和七个内核的原始测量，以确定哪些成本在实践中很重要。我们的测量表明，主要成本随着证明系统和输入长度的变化而变化。在低阶微调中，从 64 到 2048 的输入长度中，对固定模型权重开放承诺的成本几乎保持不变，而与中间值相关的工作却在增长。 130 亿参数微调配置超过了 40 GB 图形处理器的容量，但在 80 GB 设备上完成，这说明了为什么必须与执行时间一起评估容量。我们的内核分析进一步识别了仅带宽模型错过的指令问题和同步限制。我们利用这些发现来评估图形处理器、可重构逻辑、定制芯片和现有的人工智能加速器。由此产生的研究议程将易于证明的数字格式、固定权重承诺的重用、异构执行和共享基准与测量的瓶颈联系起来。有效的加速需要围绕目标工作负载的成本概况选择硬件和验证系统优化。",
+            "title_zh": "可验证人工智能的基础设施：证明成本去向以及硬件如何提供帮助"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Watermark detectors decide whether one document came from a watermarked language model. Auditors often need a different number: the share of a corpus that did. We study this share for Gumbel-max and green-list (KGW) watermarks when every document may have been edited by an unknown amount. Without restrictions on the edits, the upper end of the identified set is 1. Combining a known least-favourable next-token distribution with a sequential coupling, we derive a power envelope indexed by three budgets: a retention floor, an entropy budget, and a budget for in-place substitutions, which for Gumbel-max make edited positions look less watermarked than human text. The envelope gives an identified set that is sharp for the alternatives it dominates, finite-sample bounds on the realized share of a fixed corpus with either the exact null or a null calibrated on an independent human sample, and confidence sequences for streams. In Gumbel-max simulations where the envelope binds, the bounds cover, and the threshold that maximizes the gap between envelope and null is generally as tight as twelve thresholds. On text from OPT-1.3B and Qwen3-1.7B, 12,000 fresh human documents scored under three keys show no robust departure from the exact null, and all bounds covered in resampling trials from finite pools of documents with random edits, substitutions and paraphrases; at a share of 0.2 the exact-null bound is about [0.14,0.38]. These results are fragile in two ways we make precise. LLM-paraphrased KGW pools fall below the envelope, yet at 2000 documents the bounds still covered in these trials. A simulated null error of 0.01, comparable to the largest deviation we observed at our thresholds, is likewise harmless at 2000 documents but breaks exact-null coverage at 100,000; a null calibrated on an independent human sample keeps coverage there, but needs a large reference sample to stay narrow.",
+            "authors": [
+              "Kuancheng Ye"
+            ],
+            "categories": [
+              "stat.ML",
+              "cs.CL",
+              "cs.CR",
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17035v1",
+            "published": "2026-11-12T16:21:31+00:00",
+            "title": "Prevalence Bounds for Edited Watermarked Text: Power Envelopes and Calibration Sensitivity",
+            "updated": "2026-11-12T16:21:31+00:00",
+            "version_id": "2611.17035v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "水印检测器确定一份文档是否来自带水印的语言模型。审计师通常需要一个不同的数字：这样做的语料库的份额。当每个文档可能被编辑了未知数量时，我们研究了 Gumbel-max 和绿名单 (KGW) 水印的共享。在不限制编辑的情况下，识别集的上限为 1。将已知的最不利的下一个令牌分布与顺序耦合相结合，我们得出由三个预算索引的功率包络：保留下限、熵预算和就地替换预算，对于 Gumbel-max 来说，这使得编辑的位置看起来比人类文本的水印更少。包络给出了一个对其主导的替代方案来说是尖锐的识别集、固定语料库的已实现份额的有限样本边界（具有精确的零值或在独立人类样本上校准的零值）以及流的置信序列。在 Gumbel-max 模拟中，包络线结合、边界覆盖，并且使包络线与零点之间的间隙最大化的阈值通常与 12 个阈值一样严格。在 OPT-1.3B 和 Qwen3-1.7B 的文本上，在三个键下评分的 12,000 个新人类文档显示与精确零值没有明显偏离，并且通过随机编辑、替换和释义从有限文档池中进行重采样试验覆盖了所有界限；当份额为 0.2 时，精确零界限约为 [0.14,0.38]。这些结果在我们精确描述的两个方面是脆弱的。 LLM 释义的 KGW 池低于信封，但在 2000 年记录了这些试验仍然涵盖的范围。模拟零误差为 0.01，与我们在阈值下观察到的最大偏差相当，对于 2000 个文档同样是无害的，但在 100,000 个文档时会破坏精确零覆盖；在独立人体样本上校准的零值可以保持覆盖范围，但需要大量参考样本才能保持狭窄。",
+            "title_zh": "已编辑水印文本的流行范围：功率包络和校准灵敏度"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "High-granularity topic modelling extracts hundreds of niche topics from a corpus, yet this regime is rarely studied and is more commonly framed as a failure mode: \"over-clustering,\" in which coherent themes fragment into redundant subtopics. We argue that this framing conflates genuine redundancy with topics that are semantically similar but meaningfully distinct, and that the central challenge in high-granularity modelling is separating the two. Recent post-hoc refinement methods address topic redundancy through either embedding-based similarity thresholding or LLM-guided merging. We show that neither suffices in high-granularity settings and propose embedding-gated iterative merge (EGIM), a hybrid approach that iteratively generates context-rich topic representations, uses embedding similarity to propose candidate merges across the topic space, then applies LLM judgement to accept only genuinely redundant pairs while preserving niche distinctions. Across two patent corpora and one legal corpus, LLM judgement rejects 83% of embedding-identified candidates as non-redundant. EGIM improves discriminability on merged topics by 25-55% over a prior iterative LLM baseline while better preserving the original topic distribution.",
+            "authors": [
+              "Daniel Denley",
+              "Robert L. Nicol",
+              "Mike J. Chantler"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.IR"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17030v1",
+            "published": "2026-11-12T16:17:08+00:00",
+            "title": "Similar but Not Redundant: Embedding-Gated Refinement for High-Granularity Topic Models",
+            "updated": "2026-11-12T16:17:08+00:00",
+            "version_id": "2611.17030v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "高粒度主题建模从语料库中提取数百个利基主题，但这种机制很少被研究，更常见的是一种失败模式：“过度聚类”，其中连贯的主题碎片化为冗余的子主题。我们认为，这种框架将真正的冗余与语义相似但有意义不同的主题混为一谈，而高粒度建模的核心挑战是将两者分开。最近的事后细化方法通过基于嵌入的相似性阈值或 LLM 引导的合并来解决主题冗余问题。我们表明，这两种方法在高粒度设置中都不够，并提出了嵌入门控迭代合并（EGIM），这是一种迭代生成上下文丰富的主题表示的混合方法，使用嵌入相似性来提出跨主题空间的候选合并，然后应用LLM判断仅接受真正冗余的对，同时保留利基差异。在两个专利语料库和一个法律语料库中，法学硕士判决拒绝了 83% 的嵌入识别候选者，因为它们是非冗余的。与之前的迭代 LLM 基线相比，EGIM 将合并主题的辨别力提高了 25-55%，同时更好地保留了原始主题分布。",
+            "title_zh": "相似但不冗余：高粒度主题模型的嵌入门控细化"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Artificial intelligence (AI) is changing how biological research is done. Biological foundation models trained on millions of nucleotides, protein, and single-cell measurements predict protein structures, mutation effects, and cellular responses to genetic perturbations. Agentic systems, AI assistants built on large language models, can run multistep analyses from plain-language requests and increasingly call foundation models as tools. Yet it is often unclear when these models' outputs can be trusted. We frame this as a model's knowledge boundary: the range of inputs, tasks, and conditions over which its outputs are reliable. This review explains how foundation models are built and proposes that five design elements (data, architecture, training scheme, evaluation scheme, and post-analysis) define this boundary. We examine evidence on where current models succeed or fail and present standardized descriptions of model limits so that researchers, and the agents acting for them, can use these tools reliably.",
+            "authors": [
+              "Tian Cai",
+              "Andrew Kleist",
+              "Jaimin Patel",
+              "Duccio Malinverni",
+              "Alexander K. Taylor",
+              "Malvika Sharan",
+              "Renato Umeton",
+              "M. Madan Babu"
+            ],
+            "categories": [
+              "q-bio.BM",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.17015v1",
+            "published": "2026-11-12T16:08:33+00:00",
+            "title": "AI for Biologists: The Knowledge Boundaries of Foundation Models in the Age of Agentic Systems",
+            "updated": "2026-11-12T16:08:33+00:00",
+            "version_id": "2611.17015v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "人工智能 (AI) 正在改变生物研究的方式。经过数百万个核苷酸、蛋白质和单细胞测量训练的生物基础模型可以预测蛋白质结构、突变效应和细胞对遗传扰动的反应。代理系统是基于大型语言模型构建的人工智能助手，可以根据简单语言请求运行多步骤分析，并越来越多地将基础模型称为工具。然而，通常并不清楚这些模型的输出何时可信。我们将其定义为模型的知识边界：输入、任务的范围以及其输出可靠的条件。这篇综述解释了基础模型是如何构建的，并提出了五个设计元素（数据、架构、训练方案、评估方案和后期分析）来定义这个边界。我们检查有关当前模型成功或失败的证据，并提供模型限制的标准化描述，以便研究人员和代表他们的代理能够可靠地使用这些工具。",
+            "title_zh": "生物学家的人工智能：代理系统时代基础模型的知识边界"
+          }
+        }
+      ],
+      "notification_hash": "5048c36f6bd444fb6c97a935276a7f43fa9311eb41344f3fdb4021ea3aed46c0",
+      "recovery_of": [],
+      "rendered": {
+        "2611.17015": "rendered_inline_translation",
+        "2611.17030": "rendered_inline_translation",
+        "2611.17035": "rendered_inline_translation",
+        "2611.17042": "rendered_inline_translation",
+        "2611.17048": "rendered_inline_translation",
+        "2611.17052": "rendered_inline_translation",
+        "2611.17053": "rendered_inline_translation",
+        "2611.17068": "rendered_inline_translation",
+        "2611.17108": "rendered_inline_translation",
+        "2611.17167": "rendered_inline_translation"
+      },
+      "run_id": "20261114T084002Z-0479eb7b",
+      "schema_version": 1,
+      "status": "prepared"
     }
   },
   "papers": {
