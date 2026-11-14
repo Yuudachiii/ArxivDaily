@@ -9,7 +9,7 @@
 | 2026-11-14 | Discovering Effective Agent Memory Designs through Program Evolution | 通过程序演化发现有效的代理内存设计 | [arXiv 2611.17068v1](https://arxiv.org/abs/2611.17068v1) |
 | 2026-11-14 | Evaluating Pretrained Language Semantics for Structured EHR Prediction Tasks | 评估结构化 EHR 预测任务的预训练语言语义 | [arXiv 2611.17053v1](https://arxiv.org/abs/2611.17053v1) |
 | 2026-11-14 | Auditing AI peer reviewers: a benchmark on real scientific papers | 审核人工智能同行评审员：真实科学论文的基准 | [arXiv 2611.17052v1](https://arxiv.org/abs/2611.17052v1) |
-| 2026-11-14 | AURA 2.0: From User-Driven Responses to Model-Initiated Conversations in Streaming Video | 待翻译 | [arXiv 2611.17048v1](https://arxiv.org/abs/2611.17048v1) |
+| 2026-11-14 | AURA 2.0: From User-Driven Responses to Model-Initiated Conversations in Streaming Video | AURA 2.0：从用户驱动的响应到流视频中模型发起的对话 | [arXiv 2611.17048v1](https://arxiv.org/abs/2611.17048v1) |
 | 2026-11-14 | Infrastructure for Verifiable AI: Where Proof Costs Go and How Hardware Can Help | 待翻译 | [arXiv 2611.17042v1](https://arxiv.org/abs/2611.17042v1) |
 | 2026-11-14 | Prevalence Bounds for Edited Watermarked Text: Power Envelopes and Calibration Sensitivity | 待翻译 | [arXiv 2611.17035v1](https://arxiv.org/abs/2611.17035v1) |
 | 2026-11-14 | Similar but Not Redundant: Embedding-Gated Refinement for High-Granularity Topic Models | 待翻译 | [arXiv 2611.17030v1](https://arxiv.org/abs/2611.17030v1) |
