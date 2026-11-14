@@ -12,7 +12,7 @@
 | 2026-11-14 | AURA 2.0: From User-Driven Responses to Model-Initiated Conversations in Streaming Video | AURA 2.0：从用户驱动的响应到模型发起的流媒体视频对话 | [arXiv 2611.17048v1](https://arxiv.org/abs/2611.17048v1) |
 | 2026-11-14 | Infrastructure for Verifiable AI: Where Proof Costs Go and How Hardware Can Help | 可验证人工智能的基础设施：证明成本去向及硬件如何提供帮助 | [arXiv 2611.17042v1](https://arxiv.org/abs/2611.17042v1) |
 | 2026-11-14 | Prevalence Bounds for Edited Watermarked Text: Power Envelopes and Calibration Sensitivity | 已编辑水印文本的流行率界限：功率包络与校准敏感性 | [arXiv 2611.17035v1](https://arxiv.org/abs/2611.17035v1) |
-| 2026-11-14 | Similar but Not Redundant: Embedding-Gated Refinement for High-Granularity Topic Models | 待翻译 | [arXiv 2611.17030v1](https://arxiv.org/abs/2611.17030v1) |
+| 2026-11-14 | Similar but Not Redundant: Embedding-Gated Refinement for High-Granularity Topic Models | 相似但不冗余：用于高粒度主题模型的嵌入门控优化 | [arXiv 2611.17030v1](https://arxiv.org/abs/2611.17030v1) |
 | 2026-11-14 | AI for Biologists: The Knowledge Boundaries of Foundation Models in the Age of Agentic Systems | 待翻译 | [arXiv 2611.17015v1](https://arxiv.org/abs/2611.17015v1) |
 | 2026-11-13 | ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research | ArchSpace：记录、回顾和引用 LLM 架构研究（谷歌备用翻译） | [arXiv 2611.17332v1](https://arxiv.org/abs/2611.17332v1) |
 | 2026-11-13 | Goal Encoding in LLMs | 法学硕士的目标编码（谷歌备用翻译） | [arXiv 2611.17297v1](https://arxiv.org/abs/2611.17297v1) |
