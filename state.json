@@ -66219,7 +66219,9 @@
       ]
     },
     "2611.17030": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-14T08:39:55.967551+00:00",
@@ -66244,6 +66246,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-14T08:39:55.967551+00:00",
+        "run_id": "20261114T083955Z-f4b57ed0",
+        "stage": "selection"
+      },
       "versions": [
         "2611.17030v1"
       ]
