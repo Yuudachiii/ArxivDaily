@@ -51,7 +51,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:42:00.481953+00:00",
-    "last_complete_end": "2026-11-13T09:09:59.138707+00:00"
+    "last_complete_end": "2026-11-14T08:39:55.967551+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -275,6 +275,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-14": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -66161,6 +66170,359 @@
         "2611.14514v1"
       ]
     },
+    "2611.17015": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-14T08:39:55.967551+00:00",
+      "paper": {
+        "abstract": "Artificial intelligence (AI) is changing how biological research is done. Biological foundation models trained on millions of nucleotides, protein, and single-cell measurements predict protein structures, mutation effects, and cellular responses to genetic perturbations. Agentic systems, AI assistants built on large language models, can run multistep analyses from plain-language requests and increasingly call foundation models as tools. Yet it is often unclear when these models' outputs can be trusted. We frame this as a model's knowledge boundary: the range of inputs, tasks, and conditions over which its outputs are reliable. This review explains how foundation models are built and proposes that five design elements (data, architecture, training scheme, evaluation scheme, and post-analysis) define this boundary. We examine evidence on where current models succeed or fail and present standardized descriptions of model limits so that researchers, and the agents acting for them, can use these tools reliably.",
+        "authors": [
+          "Tian Cai",
+          "Andrew Kleist",
+          "Jaimin Patel",
+          "Duccio Malinverni",
+          "Alexander K. Taylor",
+          "Malvika Sharan",
+          "Renato Umeton",
+          "M. Madan Babu"
+        ],
+        "categories": [
+          "q-bio.BM",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17015v1",
+        "published": "2026-11-12T16:08:33+00:00",
+        "title": "AI for Biologists: The Knowledge Boundaries of Foundation Models in the Age of Agentic Systems",
+        "updated": "2026-11-12T16:08:33+00:00",
+        "version_id": "2611.17015v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.17015v1"
+      ]
+    },
+    "2611.17030": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-14T08:39:55.967551+00:00",
+      "paper": {
+        "abstract": "High-granularity topic modelling extracts hundreds of niche topics from a corpus, yet this regime is rarely studied and is more commonly framed as a failure mode: \"over-clustering,\" in which coherent themes fragment into redundant subtopics. We argue that this framing conflates genuine redundancy with topics that are semantically similar but meaningfully distinct, and that the central challenge in high-granularity modelling is separating the two. Recent post-hoc refinement methods address topic redundancy through either embedding-based similarity thresholding or LLM-guided merging. We show that neither suffices in high-granularity settings and propose embedding-gated iterative merge (EGIM), a hybrid approach that iteratively generates context-rich topic representations, uses embedding similarity to propose candidate merges across the topic space, then applies LLM judgement to accept only genuinely redundant pairs while preserving niche distinctions. Across two patent corpora and one legal corpus, LLM judgement rejects 83% of embedding-identified candidates as non-redundant. EGIM improves discriminability on merged topics by 25-55% over a prior iterative LLM baseline while better preserving the original topic distribution.",
+        "authors": [
+          "Daniel Denley",
+          "Robert L. Nicol",
+          "Mike J. Chantler"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.IR"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17030v1",
+        "published": "2026-11-12T16:17:08+00:00",
+        "title": "Similar but Not Redundant: Embedding-Gated Refinement for High-Granularity Topic Models",
+        "updated": "2026-11-12T16:17:08+00:00",
+        "version_id": "2611.17030v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.17030v1"
+      ]
+    },
+    "2611.17035": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-14T08:39:55.967551+00:00",
+      "paper": {
+        "abstract": "Watermark detectors decide whether one document came from a watermarked language model. Auditors often need a different number: the share of a corpus that did. We study this share for Gumbel-max and green-list (KGW) watermarks when every document may have been edited by an unknown amount. Without restrictions on the edits, the upper end of the identified set is 1. Combining a known least-favourable next-token distribution with a sequential coupling, we derive a power envelope indexed by three budgets: a retention floor, an entropy budget, and a budget for in-place substitutions, which for Gumbel-max make edited positions look less watermarked than human text. The envelope gives an identified set that is sharp for the alternatives it dominates, finite-sample bounds on the realized share of a fixed corpus with either the exact null or a null calibrated on an independent human sample, and confidence sequences for streams. In Gumbel-max simulations where the envelope binds, the bounds cover, and the threshold that maximizes the gap between envelope and null is generally as tight as twelve thresholds. On text from OPT-1.3B and Qwen3-1.7B, 12,000 fresh human documents scored under three keys show no robust departure from the exact null, and all bounds covered in resampling trials from finite pools of documents with random edits, substitutions and paraphrases; at a share of 0.2 the exact-null bound is about [0.14,0.38]. These results are fragile in two ways we make precise. LLM-paraphrased KGW pools fall below the envelope, yet at 2000 documents the bounds still covered in these trials. A simulated null error of 0.01, comparable to the largest deviation we observed at our thresholds, is likewise harmless at 2000 documents but breaks exact-null coverage at 100,000; a null calibrated on an independent human sample keeps coverage there, but needs a large reference sample to stay narrow.",
+        "authors": [
+          "Kuancheng Ye"
+        ],
+        "categories": [
+          "stat.ML",
+          "cs.CL",
+          "cs.CR",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17035v1",
+        "published": "2026-11-12T16:21:31+00:00",
+        "title": "Prevalence Bounds for Edited Watermarked Text: Power Envelopes and Calibration Sensitivity",
+        "updated": "2026-11-12T16:21:31+00:00",
+        "version_id": "2611.17035v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.17035v1"
+      ]
+    },
+    "2611.17042": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-14T08:39:55.967551+00:00",
+      "paper": {
+        "abstract": "Users of artificial intelligence services, including those powered by large language models and other transformer-based models, need assurance that inference and training follow the declared computation without exposing private models or data. Zero-knowledge proofs can provide this assurance, but proof generation remains expensive. Hardware acceleration research often reports gains for individual cryptographic operations, leaving their effect on the full cost of proving neural-network workloads, particularly large transformer models, unclear. We introduce a four-layer framework linking verifiable AI workloads, proof systems, cryptographic kernels and hardware platforms, use it to review the literature, and add original measurements of six provers and seven kernels to identify which costs matter in practice. Our measurements show that the dominant cost changes with the proof system and input length. In low-rank fine-tuning, the cost of opening commitments to fixed model weights remains nearly constant across input lengths from 64 to 2048, while the work associated with intermediate values grows. A 13-billion-parameter fine-tuning configuration exceeds the capacity of a 40-gigabyte graphics processor but completes on an 80-gigabyte device, showing why capacity must be assessed alongside execution time. Our kernel profiling further identifies instruction issue and synchronization limits that a bandwidth-only model misses. We use these findings to assess graphics processors, reconfigurable logic, custom chips and existing artificial intelligence accelerators. The resulting research agenda connects proof-friendly numeric formats, reuse of fixed-weight commitments, heterogeneous execution and shared benchmarks to the measured bottlenecks. Effective acceleration requires selecting hardware and proof-system optimizations around the cost profile of the target workload.",
+        "authors": [
+          "Yihan Xia",
+          "Wenxin Xu",
+          "Taotao Wang"
+        ],
+        "categories": [
+          "cs.AR",
+          "cs.CR",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17042v1",
+        "published": "2026-11-12T16:27:07+00:00",
+        "title": "Infrastructure for Verifiable AI: Where Proof Costs Go and How Hardware Can Help",
+        "updated": "2026-11-12T16:27:07+00:00",
+        "version_id": "2611.17042v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.17042v1"
+      ]
+    },
+    "2611.17048": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-14T08:39:55.967551+00:00",
+      "paper": {
+        "abstract": "Most AI assistants respond only when prompted, remaining silent even when events in the video stream offer meaningful opportunities for conversation. To move beyond purely user-driven interaction, we present AURA 2.0, a streaming video large language model that introduces three core upgrades to AURA. The key advance is Model-Initiated Conversation (MIC), which enables the model to identify topics worth discussing in the evolving visual stream and initiate conversations at appropriate moments without a user query. Stream-Aware Tool Calling (SATC) enables the model to invoke external tools using the current visual and conversational context and incorporate returned information into the ongoing interaction. Interactive Visual Grounding (IVG) supports visual grounding in both user inputs and model outputs. The model can identify objects marked by users on video frames and produce frame-aligned bounding boxes to link its responses to specific objects and regions. To develop these capabilities, we construct a dedicated streaming interaction dataset and adopt a three-stage training scheme to integrate the new behaviors with AURA's existing streaming interaction abilities. We further incorporate Long-Horizon Interaction Memory (LHIM) to maintain contextual continuity over extended video streams. Evaluations on public streaming benchmarks show that AURA 2.0 achieves leading performance among open-source streaming models, while targeted evaluations further validate its new interaction capabilities. We open-source the model weights and inference code.",
+        "authors": [
+          "Shuhan Li",
+          "Huankang Guan",
+          "Xintong Guo",
+          "Yang Bo",
+          "Yuyang He",
+          "Dunyuan Xu",
+          "Jingyan Chen",
+          "Fang Liu",
+          "Tsz Kin Wan",
+          "Jinpeng Chen",
+          "Zhenqi He",
+          "Yuxuan Hu",
+          "Wenbo Li",
+          "Han Gao",
+          "Qijun Li",
+          "Long Chen",
+          "Hongsheng Li",
+          "Rui Liu"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17048v1",
+        "published": "2026-11-12T16:31:54+00:00",
+        "title": "AURA 2.0: From User-Driven Responses to Model-Initiated Conversations in Streaming Video",
+        "updated": "2026-11-12T16:31:54+00:00",
+        "version_id": "2611.17048v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.17048v1"
+      ]
+    },
+    "2611.17052": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-14T08:39:55.967551+00:00",
+      "paper": {
+        "abstract": "LLM-based peer review is now used at production scale, but its evaluation remains limited. We introduce a benchmark that injects objective, localisable errors of four types (general issues, mathematics, numerics, citations) at three severity levels into real papers and measures each reviewer's detection rate by error type and severity, together with its false-positive rate on clean copies. We also present Skepthical, a multi-agent reviewer that verifies citation-backed claims by retrieving the cited papers, mathematics with computer algebra, and numerical claims with executed code. We apply the benchmark to two corpora of 15 recent arXiv preprints each, one in astrophysics and one in machine learning (ML), injecting a total of 357 errors, and evaluate twelve reviewer systems: six single-LLM reviewers, two Claude Code configurations, three publicly available reviewers, and Skepthical. The choice of model has the largest impact on detection rate: given the same prompt, three frontier LLMs differ by about 50 percentage points in total detection on both corpora. Tools and scaffolding help when they contribute what the model cannot supply on its own. In particular, on astrophysics, Claude Code improves on a single Claude call in mathematics and numerics detection, and enforced citation retrieval gives Skepthical the highest citation error detection rate of all systems by a large margin. This citation lead, however, is not observed on ML, where the models appear to know the literature better and Skepthical's citation detection rate is statistically indistinguishable from that of the best single LLM. False-positive rates are below 10% for most systems, but vary with prompt, model, and scaffolding, with mathematics flags the main source of false positives. The evaluation pipeline, the injected errors, and the adjudication logs are released as a benchmark.",
+        "authors": [
+          "Íñigo Zubeldia",
+          "Boris Bolliet",
+          "Francisco Villaescusa-Navarro",
+          "Pablo Villanueva-Domingo",
+          "Miles Cranmer"
+        ],
+        "categories": [
+          "cs.CL",
+          "astro-ph.IM",
+          "cs.AI",
+          "cs.DL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17052v1",
+        "published": "2026-11-12T16:33:51+00:00",
+        "title": "Auditing AI peer reviewers: a benchmark on real scientific papers",
+        "updated": "2026-11-12T16:33:51+00:00",
+        "version_id": "2611.17052v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.17052v1"
+      ]
+    },
+    "2611.17053": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-14T08:39:55.967551+00:00",
+      "paper": {
+        "abstract": "Structured Electronic Health Records (EHR) models typically treat each clinical concept as a dataset-specific token, discarding the natural-language semantics associated with the event. As a result, relationships between concepts must largely be learned from EHR co-occurrence, without directly exploiting any prior semantic knowledge. We investigate how pretrained causal language models can be adapted for longitudinal EHR prediction by developing tEHR. Here, we represent events with their natural language description and use this text stream to apply EHR-adaptive continued pretraining, followed by task-specific discriminative fine-tuning using LoRA, utilising the LLM as a longitudinal patient-encoder. We evaluate this approach across four prediction tasks on the MIMIC-IV dataset and pancreatic cancer prediction on the CPRD dataset at 1 to 12 month horizons, with tEHR using the Mistral-7B-v0.3 backbone achieving the strongest overall performance. Ablations show that performance declines when clinical descriptions are removed or misaligned, when numerical values are omitted, and when either stage of adaptation is removed, while explicit elapsed-time descriptions provide little additional benefit. Analysis of the learned patient representations further reveals clinically coherent structure associated with distinct patterns of disease risk and clinical history.",
+        "authors": [
+          "Ashvin Gupta",
+          "Brendan Delaney",
+          "Alessandra Russo"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17053v1",
+        "published": "2026-11-12T16:34:49+00:00",
+        "title": "Evaluating Pretrained Language Semantics for Structured EHR Prediction Tasks",
+        "updated": "2026-11-12T16:34:49+00:00",
+        "version_id": "2611.17053v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.17053v1"
+      ]
+    },
+    "2611.17068": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-14T08:39:55.967551+00:00",
+      "paper": {
+        "abstract": "Program evolution provides a promising approach to discover agent memory designs and study the choices underlying their effectiveness. We introduce MAPE, a framework that evolves whole memory programs from minimal seeds through a standardized lifecycle interface and an iterative diagnosis-proposal loop. Experiments on LoCoMo and LongMemEval yield an absolute accuracy gain of up to 12% over manually designed baselines at 35% of the serving cost, with further evaluations supporting transfer across serving backbones and benchmarks. Empirical analyses and ablations identify and validate two recurring design patterns: retaining raw conversations as retrievable evidence preserves details omitted from extracted memories, while composing retrieved evidence according to query intent helps the answering model use it effectively. Transplanting the composition module into five existing memory systems improves accuracy across all five. Beyond these patterns, the search objective shapes where computation goes: optimizing serving cost alongside accuracy shifts computation from LLM-based memory construction to selective processing at query time while retaining competitive accuracy. Together, these findings offer empirical lessons for agent memory design. Code is available at https://github.com/ash-ding/MAPE.",
+        "authors": [
+          "Xinheng Ding",
+          "Seyyed Saeid Cheshmi",
+          "Ziyang Zhang",
+          "Tairan Chen",
+          "Wenya Xie",
+          "Yu Hou",
+          "Rui Zhang",
+          "Zirui Liu"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17068v1",
+        "published": "2026-11-12T16:42:04+00:00",
+        "title": "Discovering Effective Agent Memory Designs through Program Evolution",
+        "updated": "2026-11-12T16:42:04+00:00",
+        "version_id": "2611.17068v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.17068v1"
+      ]
+    },
+    "2611.17108": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-14T08:39:55.967551+00:00",
+      "paper": {
+        "abstract": "Memory decides which LLMs an edge device runs, and how fast: capacity on a $4$ GB Jetson Nano, bandwidth on an $8$ GB Jetson Orin Nano Super. Deployed formats (GPTQ, AWQ, $\\texttt{llama.cpp}$'s K- and I-quants) spend equal bits on every integer code of a matrix, although the codes are far from uniform. $\\texttt{LazyWeights}$ keeps these formats but tunes GPTQ so the codes compress, Huffman-codes them losslessly in interleaved lanes, and decodes them on demand in a small unit between DRAM and L2, so GPU kernels run unchanged and DRAM moves only coded bytes. At $1\\%$ and $3.5\\%$ perplexity budgets, coded Phi-3-mini, Mistral-7B and SmolLM-1.7B are $5.7-31.4\\%$ smaller than the best $\\texttt{llama.cpp}$ format. A bit-exact $0.21$ mm$^2$ ASIC decoder unit ($1$ GHz, $7$ nm) cuts Orin latency and energy per token by up to $36\\%$ and $38\\%$ ($54\\%$ and $44\\%$ with prompt-lookup speculation). On the Nano, $\\texttt{LazyWeights}$ needs $58-64\\%$ less time and $53-57\\%$ less energy per token than CPU $\\texttt{llama.cpp}$, and runs a streamed Mistral-7B 6.6$\\times$ faster at $3.89$ bits per weight. A Huffman decoder beats an rANS decoder in rate and area at equal throughput; the ASIC decoder unit runs bit-exact on a Zynq UltraScale+ FPGA (AMD ZCU102).",
+        "authors": [
+          "Arnab Sanyal",
+          "Gourav Datta",
+          "Sandeep P. Chinchali"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AR",
+          "cs.CL",
+          "cs.IT"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17108v1",
+        "published": "2026-11-12T17:03:40+00:00",
+        "title": "LazyWeights: Decode-on-Demand Edge LLMs",
+        "updated": "2026-11-12T17:03:40+00:00",
+        "version_id": "2611.17108v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.17108v1"
+      ]
+    },
+    "2611.17167": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-14T08:39:55.967551+00:00",
+      "paper": {
+        "abstract": "Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent's actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as actors, judging their usefulness by how well they act. We ask whether a decision model that acts poorly can still teach well. We compare three decision models and three general LLMs as actors and judges on ALFWorld, and use JEV as a teacher on ALFWorld and WebShop. As actors, all six models are pulled away from a subgoal that must come first by an easier one. As judges that see the whole trajectory, the same models credit the steps toward that subgoal, and asking whether each action helped, rather than whether the task will succeed, separates useful from useless actions. As a teacher, JEV raises a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% success on ALFWorld and from 56.8% to 71.4% on WebShop. These results suggest that a poor actor can still teach well, because judging an action after the episode ends reveals the consequences that acting must anticipate. Code is available at https://github.com/ZJU-REAL/decision-agents.",
+        "authors": [
+          "Haochen Liu",
+          "Qianhao Zhu",
+          "Zixuan Wang",
+          "Dingming Li",
+          "Tongbo Chen",
+          "Peng Qiu",
+          "Yingqi Qu",
+          "Weiming Lu",
+          "Jun Xiao",
+          "Yongliang Shen"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17167v1",
+        "published": "2026-11-12T17:42:46+00:00",
+        "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+        "updated": "2026-11-12T17:42:46+00:00",
+        "version_id": "2611.17167v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_agent",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.17167v1"
+      ]
+    },
     "2611.17220": {
       "attempts": {
         "selection": 1,
@@ -67639,10 +68001,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-14",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261114T083955Z-f4b57ed0",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-14T08:39:00+00:00",
+          "seen": 91,
+          "start": "2026-11-07T08:39:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-14T08:39:55.967551+00:00",
       "window": {
         "end": "2026-11-14T08:39:55.967551+00:00",
