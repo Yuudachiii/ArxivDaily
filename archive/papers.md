@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | 2026-11-14 | Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents | 演员、法官还是教师？理解长远决策智能体的决策模型 | [arXiv 2611.17167v1](https://arxiv.org/abs/2611.17167v1) |
 | 2026-11-14 | LazyWeights: Decode-on-Demand Edge LLMs | LazyWeights：按需解码的边缘大型语言模型 | [arXiv 2611.17108v1](https://arxiv.org/abs/2611.17108v1) |
-| 2026-11-14 | Discovering Effective Agent Memory Designs through Program Evolution | 待翻译 | [arXiv 2611.17068v1](https://arxiv.org/abs/2611.17068v1) |
+| 2026-11-14 | Discovering Effective Agent Memory Designs through Program Evolution | 通过程序演化探索有效的智能体记忆设计 | [arXiv 2611.17068v1](https://arxiv.org/abs/2611.17068v1) |
 | 2026-11-14 | Evaluating Pretrained Language Semantics for Structured EHR Prediction Tasks | 待翻译 | [arXiv 2611.17053v1](https://arxiv.org/abs/2611.17053v1) |
 | 2026-11-14 | Auditing AI peer reviewers: a benchmark on real scientific papers | 待翻译 | [arXiv 2611.17052v1](https://arxiv.org/abs/2611.17052v1) |
 | 2026-11-14 | AURA 2.0: From User-Driven Responses to Model-Initiated Conversations in Streaming Video | 待翻译 | [arXiv 2611.17048v1](https://arxiv.org/abs/2611.17048v1) |
