@@ -67637,6 +67637,13 @@
         "start": "2026-11-06T09:09:59.138707+00:00",
         "uncovered": []
       }
+    },
+    {
+      "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
+      "coverage_complete": false,
+      "day": "2026-11-14",
+      "run_id": "20261114T083955Z-f4b57ed0",
+      "started_at": "2026-11-14T08:39:55.967551+00:00"
     }
   ],
   "schema_version": 1,
