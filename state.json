@@ -66357,6 +66357,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-14T08:39:55.967551+00:00",
+      "intended_tier": "translation",
       "model": "rules",
       "paper": {
         "abstract": "Users of artificial intelligence services, including those powered by large language models and other transformer-based models, need assurance that inference and training follow the declared computation without exposing private models or data. Zero-knowledge proofs can provide this assurance, but proof generation remains expensive. Hardware acceleration research often reports gains for individual cryptographic operations, leaving their effect on the full cost of proving neural-network workloads, particularly large transformer models, unclear. We introduce a four-layer framework linking verifiable AI workloads, proof systems, cryptographic kernels and hardware platforms, use it to review the literature, and add original measurements of six provers and seven kernels to identify which costs matter in practice. Our measurements show that the dominant cost changes with the proof system and input length. In low-rank fine-tuning, the cost of opening commitments to fixed model weights remains nearly constant across input lengths from 64 to 2048, while the work associated with intermediate values grows. A 13-billion-parameter fine-tuning configuration exceeds the capacity of a 40-gigabyte graphics processor but completes on an 80-gigabyte device, showing why capacity must be assessed alongside execution time. Our kernel profiling further identifies instruction issue and synchronization limits that a bandwidth-only model misses. We use these findings to assess graphics processors, reconfigurable logic, custom chips and existing artificial intelligence accelerators. The resulting research agenda connects proof-friendly numeric formats, reuse of fixed-weight commitments, heterogeneous execution and shared benchmarks to the measured bottlenecks. Effective acceleration requires selecting hardware and proof-system optimizations around the cost profile of the target workload.",
@@ -66376,13 +66377,26 @@
         "updated": "2026-11-12T16:27:07+00:00",
         "version_id": "2611.17042v1"
       },
+      "presentation_modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "presentation_rule_hits": [
+        "llm_training",
+        "llm_eval",
+        "llm_core"
+      ],
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
         "llm_eval",
         "llm_core"
       ],
-      "stage": "selected",
+      "stage": "ready",
       "versions": [
         "2611.17042v1"
       ]
