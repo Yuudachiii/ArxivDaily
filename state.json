@@ -69873,7 +69873,9 @@
       ]
     },
     "2611.17048": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-14T08:40:02.931920+00:00",
@@ -69916,6 +69918,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-14T08:40:02.931920+00:00",
+        "run_id": "20261114T084002Z-0479eb7b",
+        "stage": "selection"
+      },
       "versions": [
         "2611.17048v1"
       ]
