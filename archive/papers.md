@@ -7,7 +7,7 @@
 | 2026-11-15 | Skill Adapter: Personalized Modification and Online Routing of General-Purpose Skills | 技能适配器：通用技能的个性化修改和在线路由 | [arXiv 2611.17007v1](https://arxiv.org/abs/2611.17007v1) |
 | 2026-11-15 | Primer: An AI Framework for Instructor-Centered Educational Simulation Creation | 入门：以教师为中心的教育模拟创建的人工智能框架 | [arXiv 2611.16986v1](https://arxiv.org/abs/2611.16986v1) |
 | 2026-11-15 | S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models | S1-Evo：针对类型化 System-1 决策模型的经验引导证据竞争攻击 | [arXiv 2611.16937v1](https://arxiv.org/abs/2611.16937v1) |
-| 2026-11-15 | SPADE: Soft Prompts for Ai-text DEtection | 待翻译 | [arXiv 2611.16929v1](https://arxiv.org/abs/2611.16929v1) |
+| 2026-11-15 | SPADE: Soft Prompts for Ai-text DEtection | SPADE：Ai 文本检测的软提示 | [arXiv 2611.16929v1](https://arxiv.org/abs/2611.16929v1) |
 | 2026-11-15 | Factored One-sided Adam-Moment for Practical and Scalable SOAP | 待翻译 | [arXiv 2611.16905v1](https://arxiv.org/abs/2611.16905v1) |
 | 2026-11-15 | Human or Synthetic? What a Fixed Budget Buys for Post-Training | 待翻译 | [arXiv 2611.16895v1](https://arxiv.org/abs/2611.16895v1) |
 | 2026-11-15 | Look It Up: Multi-bit LLM Watermarking via Codebook Search | 待翻译 | [arXiv 2611.16890v1](https://arxiv.org/abs/2611.16890v1) |
