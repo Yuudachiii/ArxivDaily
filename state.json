@@ -70296,11 +70296,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-15T08:52:42.444672+00:00",
-        "run_id": "20261115T085242Z-3e70be35",
-        "stage": "translation"
+      "title_zh": "使用 LoRA 进行可持续联合微调：环境影响和性能足迹",
+      "translation": {
+        "abstract_zh": "具有参数高效微调 (PEFT) 的联邦学习 (FL) 可实现大型语言模型 (LLM) 的高效适应，但其跨硬件的能源和碳成本仍知之甚少。我们使用具有 135M/360M 模型和 10/100 局部步骤的 2^2$ 全因子设计，在 NVIDIA A40、RTX 6000 Ada 和 A100 GPU 上评估了联合低秩适应 (LoRA) 微调。 CodeCarbon 跟踪能源和估计的 CO$_2$ 等量排放量。变化的描述性分配将 84.8-91.2% 的能源和排放变化分配给这些范围内的局部步骤。在 A40 和 RTX 6000 Ada 上，采用更少步骤的配置实现了相当的精度，能耗降低了大约 6-8 倍，每千瓦时的精度更高。这些发现支持在评估环境中减少地方预算以进行节能联合微调。",
+        "title_zh": "使用 LoRA 进行可持续联合微调：环境影响和性能足迹"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.16856v1"
       ]
