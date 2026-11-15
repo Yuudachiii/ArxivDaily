@@ -67196,11 +67196,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-15T08:52:47.706636+00:00",
-        "run_id": "20261115T085247Z-ba6e01cc",
-        "stage": "translation"
+      "title_zh": "S1-Evo：针对类型化 System-1 决策模型的经验引导证据竞争攻击",
+      "translation": {
+        "abstract_zh": "类型化 System-1 (S1) 决策模型越来越多地部署在 LLM 代理中，用于路由、审核和授权，以降低推理成本，但不受信任的上下文仍然可以操纵类型化输出并更改执行分支。与自回归 System-2 (S2) 模型不同，S1 接口对动态规则和选项进行评分，无需逐个令牌解码、针对文本延续或显式覆盖命令的不匹配攻击。我们提出S1-Evo，这是一个针对S1基于合约的期权竞争和保证金反馈量身定制的自我进化框架。 S1-Evo 通过契约感知证据通道扰乱不受信任的领域，以诱导与原始任务证据的证据竞争，同时保持事实不变性。在离线种子任务中，它通过定向边距和重新验证引导的反馈搜索来优化候选人，将经过验证的翻转提炼成经验卡。在测试时，S1-Evo 检索相关卡片来为未见过的任务构建扰动。在四个基准测试和三个 S1 模型中，S1-Evo 在 \\texttt{jev-1.14} 上达到 71.99% 平均 ASR 和 57.47% 高置信度 ASR，并导致高达 24.00% E2E 代理违规。",
+        "fallback_provider": "google_free",
+        "title_zh": "S1-Evo：针对类型化 System-1 决策模型的经验引导证据竞争攻击"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.16937v1"
       ]
