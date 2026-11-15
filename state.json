@@ -66673,7 +66673,9 @@
       ]
     },
     "2611.16856": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-15T08:52:47.706636+00:00",
@@ -66702,6 +66704,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-15T08:52:47.706636+00:00",
+        "run_id": "20261115T085247Z-ba6e01cc",
+        "stage": "selection"
+      },
       "versions": [
         "2611.16856v1"
       ]
