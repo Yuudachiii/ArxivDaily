@@ -1,0 +1,443 @@
+{
+  "alert": false,
+  "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-microsoft/archive/2026/11/15/20261115T085247Z-ba6e01cc-12521e2c5a38.md",
+  "chain_roots": [
+    "20261115T085247Z-ba6e01cc-12521e2c5a38"
+  ],
+  "content_hash": "12521e2c5a38f5be11bf0a8a65850bcea6602ef92e40a499f0553f2ae0423b25",
+  "day": "2026-11-15",
+  "digest_id": "20261115T085247Z-ba6e01cc-12521e2c5a38",
+  "empty": false,
+  "items": [
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Large language model (LLM) agents use external skills to reuse task procedures and experience with tools. General-purpose skills describe shared execution procedures, while specific tool choices, operating practices, and output requirements vary across users. In long-horizon tasks, subgoals, available inputs, and environmental states change as execution progresses. Agents must select currently applicable skills from an expanding skill pool and prepare candidates for subsequent steps.\n  We propose Skill Adapter, which enables personalized modification and online routing of general-purpose skills. The system distills local adjustments from user requirements and execution feedback and stores them as Adapters linked to general-purpose skills. The routing agent selects general-purpose skills and applicable Adapters based on the current subtask, execution progress, and environmental feedback, incrementally maintaining a task-level online skill library that the main LLM reads on demand. The system preloads candidates for subsequent nodes and rechecks their applicability once actual inputs are determined. Reinforcement learning optimizes the two types of decisions using modification gains and routing outcomes, respectively.\n  We evaluate Skill Adapter on ALFWorld, WebShop, and SkillsBench. Compared with SkillRL, it improves task success rates by an average of 11.43 percentage points and reduces mean execution time on all three benchmarks. Skill Adapter retains its performance advantage when the skill pool grows to 1,000 skills.",
+        "authors": [
+          "Qijia Zhuang",
+          "Yanyi Gou",
+          "Wenbin Ma",
+          "Yuxiang Ren"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17007v1",
+        "published": "2026-11-12T16:05:23+00:00",
+        "title": "Skill Adapter: Personalized Modification and Online Routing of General-Purpose Skills",
+        "updated": "2026-11-12T16:05:23+00:00",
+        "version_id": "2611.17007v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "大型语言模型 (LLM) 代理使用外部技能来重用任务过程和工具经验。通用技能描述了共享的执行过程，而具体的工具选择、操作实践和输出要求则因用户而异。在长期任务中，子目标、可用输入和环境状态会随着执行的进展而变化。代理必须从不断扩大的技能库中选择当前适用的技能，并为候选人做好后续步骤的准备。\n  我们提出了技能适配器，它可以实现通用技能的个性化修改和在线路由。该系统从用户需求和执行反馈中提取本地调整，并将它们存储为与通用技能相关联的适配器。路由代理根据当前子任务、执行进度和环境反馈来选择通用技能和适用的Adapter，增量维护主LLM按需读取的任务级在线技能库。系统预加载后续节点的候选节点，并在确定实际输入后重新检查其适用性。强化学习分别使用修改增益和路由结果来优化两种类型的决策。\n  我们在 ALFWorld、WebShop 和 SkillsBench 上评估 Skill Adapter。与 SkillRL 相比，它在所有三个基准测试中将任务成功率平均提高了 11.43 个百分点，并减少了平均执行时间。当技能池增长到 1,000 项技能时，技能适配器仍保持其性能优势。",
+        "fallback_provider": "google_free",
+        "title_zh": "技能适配器：通用技能的个性化修改和在线路由"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Educational simulations are a well-established pedagogical technique that gives learners opportunities to apply knowledge, respond to challenges, and reflect on their performance. High-quality simulations, however, are difficult to build, requiring instructor input, scenario design, character development, scaffolding, technical implementation, and repeated revision. This paper presents Primer, an open-source, LLM-agnostic AI-supported system that helps educators create adaptive educational simulations. Educators contribute their knowledge of the subject, lesson, and students, while generative AI produces responsive variations of practice for students. Primer uses a multi-agent system centered around executing educator's instructional intent through the entire learning experience. We hope that by releasing Primer as an open-source system, including its prompts and GitHub repository, we provide a foundation for development and research on educator-in-the-loop AI authoring, multi-agent educational workflows, and simulation-based pedagogy. Further, by allowing the use of various AI models, including local and open source models, we provide the opportunity for implementation under varied governance regimes. Primer points toward a model of educational AI in which instructors can create locally grounded practice opportunities based on their own materials, goals, examples, and knowledge of students.",
+        "authors": [
+          "Ethan Mollick",
+          "Lilach Mollick",
+          "Ben Przystanski",
+          "LJ Ciccarelli",
+          "Natalie Bach",
+          "Laura Zarrow"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16986v1",
+        "published": "2026-11-12T15:50:46+00:00",
+        "title": "Primer: An AI Framework for Instructor-Centered Educational Simulation Creation",
+        "updated": "2026-11-12T15:50:46+00:00",
+        "version_id": "2611.16986v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_agent",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "教育模拟是一种成熟的教学技术，为学习者提供应用知识、应对挑战和反思自己表现的机会。然而，高质量的模拟很难构建，需要教师输入、场景设计、角色开发、脚手架、技术实施和反复修改。本文介绍了 Primer，这是一个与法学硕士无关的人工智能支持的开源系统，可帮助教育工作者创建自适应教育模拟。教育工作者贡献他们对学科、课程和学生的知识，而生成式人工智能则为学生提供响应式的实践变化。 Primer 使用多代理系统，以通过整个学习体验执行教育者的教学意图为中心。我们希望通过将 Primer 作为开源系统发布（包括其提示和 GitHub 存储库），为教育者循环人工智能创作、多代理教育工作流程和基于模拟的教学法的开发和研究提供基础。此外，通过允许使用各种人工智能模型，包括本地和开源模型，我们提供了在不同治理制度下实施的机会。 Primer 指出了一种教育人工智能模型，在该模型中，教师可以根据自己的材料、目标、示例和学生的知识创造本地化的实践机会。",
+        "fallback_provider": "google_free",
+        "title_zh": "入门：以教师为中心的教育模拟创建的人工智能框架"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Typed System-1 (S1) decision models are increasingly deployed in LLM agents for routing, moderation, and authorization to cut inference cost, yet untrusted context can still manipulate typed outputs and alter execution branches. Unlike autoregressive System-2 (S2) models, S1 interfaces score dynamic rules and options without token-by-token decoding, mismatching attacks targeting text continuation or explicit override commands. We propose S1-Evo, a self-evolving framework tailored to S1's contract-based option competition and margin feedback. S1-Evo perturbs untrusted fields via contract-aware evidence channels to induce \\emph{evidence competition} with original task evidence while preserving fact invariance. Offline on seed tasks, it optimizes candidates via feedback search guided by directional margins and re-verification, distilling verified flips into experience cards. At test time, S1-Evo retrieves relevant cards to construct perturbations for unseen tasks. Across four benchmarks and three S1 models, S1-Evo reaches 71.99\\% mean ASR and 57.47\\% high-confidence ASR on \\texttt{jev-1.14}, and causes up to 24.00\\% E2E agent violations.",
+        "authors": [
+          "Kaixiang Wang",
+          "Junjie Li",
+          "Zhaojiacheng Zhou",
+          "Jiong Lou",
+          "Jie Li"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16937v1",
+        "published": "2026-11-12T15:21:44+00:00",
+        "title": "S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models",
+        "updated": "2026-11-12T15:21:44+00:00",
+        "version_id": "2611.16937v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "类型化 System-1 (S1) 决策模型越来越多地部署在 LLM 代理中，用于路由、审核和授权，以降低推理成本，但不受信任的上下文仍然可以操纵类型化输出并更改执行分支。与自回归 System-2 (S2) 模型不同，S1 接口对动态规则和选项进行评分，无需逐个令牌解码、针对文本延续或显式覆盖命令的不匹配攻击。我们提出S1-Evo，这是一个针对S1基于合约的期权竞争和保证金反馈量身定制的自我进化框架。 S1-Evo 通过契约感知证据通道扰乱不受信任的领域，以诱导与原始任务证据的证据竞争，同时保持事实不变性。在离线种子任务中，它通过定向边距和重新验证引导的反馈搜索来优化候选人，将经过验证的翻转提炼成经验卡。在测试时，S1-Evo 检索相关卡片来为未见过的任务构建扰动。在四个基准测试和三个 S1 模型中，S1-Evo 在 \\texttt{jev-1.14} 上达到 71.99% 平均 ASR 和 57.47% 高置信度 ASR，并导致高达 24.00% E2E 代理违规。",
+        "fallback_provider": "google_free",
+        "title_zh": "S1-Evo：针对类型化 System-1 决策模型的经验引导证据竞争攻击"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "The easy access to Large Language Models (LLMs) has made AI-generated texts on the web increasingly ubiquitous, making AI-text detection a crucial task. Prompts greatly influence the generation process, but existing detectors focus solely on the generated texts --- supervised methods learn from labeled texts only, and zero-shot methods rely on the text's probability distributions --- ignoring the underlying generation process, which limits their robustness in open-world scenarios. We introduce SPADE: Soft Prompts for Ai-text DEtection, a novel framework for detecting AI-generated text that transfers better across datasets. Specifically, we measure the prompt's influence and use it as a discriminative signal. We characterize the prompt's influence by introducing a Pointwise Mutual Information (PMI) term that captures how much a prompt explains a text. Based on this quantity, SPADE trains one soft prompt per class to amplify the separation, and predicts the class whose prompt best explains the candidate text. Extensive experiments on several benchmarks against various detectors demonstrate the robustness and effectiveness of our method, achieving state-of-the-art (SOTA) performance on out-of-distribution (OOD) datasets.",
+        "authors": [
+          "Alex Jiang",
+          "Didier Schwab",
+          "Chuyuan Li"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16929v1",
+        "published": "2026-11-12T15:16:19+00:00",
+        "title": "SPADE: Soft Prompts for Ai-text DEtection",
+        "updated": "2026-11-12T15:16:19+00:00",
+        "version_id": "2611.16929v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "大型语言模型 (LLM) 的便捷访问使得人工智能生成的文本在网络上变得越来越普遍，这使得人工智能文本检测成为一项至关重要的任务。提示极大地影响了生成过程，但现有的检测器仅关注生成的文本——监督方法仅从标记文本中学习，而零样本方法依赖于文本的概率分布——忽略了底层的生成过程，这限制了它们在开放世界场景中的鲁棒性。我们介绍 SPADE：用于 Ai-text DEtection 的软提示，这是一种用于检测 AI 生成的文本的新颖框架，可以更好地跨数据集传输。具体来说，我们测量提示的影响并将其用作判别信号。我们通过引入逐点互信息 (PMI) 术语来描述提示的影响力，该术语捕获提示对文本的解释程度。基于这个数量，SPADE 为每个类别训练一个软提示以放大分离，并预测其提示最能解释候选文本的类别。针对各种检测器的多个基准的广泛实验证明了我们的方法的稳健性和有效性，在分布外（OOD）数据集上实现了最先进的（SOTA）性能。",
+        "fallback_provider": "google_free",
+        "title_zh": "SPADE：Ai 文本检测的软提示"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Second-order optimizers (e.g., Shampoo, SOAP) have emerged as compelling alternatives to Adam/AdamW and promise faster per-step convergence than AdamW in transformer training. However, they still remain costly in practice, and even SOAP still pays substantial optimizer-state memory and eigendecomposition overhead. We ask whether the benefits of SOAP can be retained at nearly the efficiency of AdamW. In this paper, we answer yes with a lightweight SOAP variant, Factored One-sided Adam-Moment (FOAM). The path to practical impact is twofold: first, FOAM employs input-only preconditioning, dropping the output-side Kronecker factor to reduce memory and remove one eigendecomposition. The Kronecker structure of the Hessian shows that this is exact for a diagonal output-side curvature and nearly lossless for a near-diagonal one, as we observe empirically. Second, FOAM replaces SOAP's dense rotated second moment with a factored Adam-moment estimator based on row-by-column statistics. Under the K-FAC Fisher assumption with a diagonal output curvature, this estimator exactly recovers SOAP's dense second moment, and we measure only a 15-20% K-FAC violation, with negligible effect on the update. Our empirical results support the claim that FOAM matches strong SOAP and Muon baselines in validation loss across scales of large language model (LLM) pre-training, uses half of SOAP's optimizer state, runs at Muon-class wall-clock time, and retains robustness across a three-fold learning-rate range. The results hold from 124M to 760M parameters, demonstrating that SOAP's gains need not require SOAP's cost. Code: https://github.com/naver-ai/foam",
+        "authors": [
+          "Jaemyung Yu",
+          "Byeongho Heo",
+          "Sangdoo Yun",
+          "Dongyoon Han"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16905v1",
+        "published": "2026-11-12T14:59:01+00:00",
+        "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
+        "updated": "2026-11-12T14:59:01+00:00",
+        "version_id": "2611.16905v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "二阶优化器（例如 Shampoo、SOAP）已成为 Adam/AdamW 的引人注目的替代品，并承诺在变压器训练中比 AdamW 更快的每步收敛速度。然而，它们在实践中仍然成本高昂，甚至 SOAP 仍然支付大量的优化器状态内存和特征分解开销。我们询问是否可以以接近 AdamW 的效率保留 SOAP 的优势。在本文中，我们用一种轻量级 SOAP 变体——因子式单侧 Adam-Moment (FOAM) 来回答“是”。产生实际影响的途径是双重的：首先，FOAM 采用仅输入预处理，降低输出侧克罗内克因子以减少内存并消除一个特征分解。正如我们凭经验观察到的那样，Hessian 的克罗内克结构表明，这对于对角线输出侧曲率来说是精确的，并且对于近对角线输出侧曲率来说几乎是无损的。其次，FOAM 使用基于逐列统计的分解 Adam 矩估计器取代了 SOAP 的密集旋转二阶矩。在具有对角输出曲率的 K-FAC Fisher 假设下，该估计器精确地恢复了 SOAP 的稠密二阶矩，并且我们仅测量了 15-20% 的 K-FAC 违规，对更新的影响可以忽略不计。我们的实证结果支持这样的说法：FOAM 在大型语言模型 (LLM) 预训练规模的验证损失方面与强大的 SOAP 和 Muon 基线相匹配，使用 SOAP 优化器状态的一半，在 Muon 级挂钟时间运行，并在三倍学习率范围内保持鲁棒性。结果包含 124M 到 760M 的参数，表明 SOAP 的收益不需要 SOAP 的成本。代码：https://github.com/naver-ai/foam",
+        "fallback_provider": "google_free",
+        "title_zh": "实用且可扩展的 SOAP 的分解单面 Adam-Moment"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Post-training of large language models typically combines supervised fine-tuning (SFT) with preference-based fine-tuning such as Direct Preference Optimization (DPO). Human-annotated and synthetically generated preference data differ substantially in per-sample cost, but prior work typically holds sample count fixed when comparing the two. In this work, we explicitly study the interplay between cost and performance by comparing the effect of post-training with human and synthetic preference data under a fixed, dollar-matched annotation budget. We train and evaluate multiple base model families across helpfulness and summarization tasks. We find that synthetic data is far more cost-efficient at low-to-moderate budgets, achieving high win rates with as little as \\$200--\\$400. On helpfulness, human data closes the gap only at budgets roughly two orders of magnitude larger; on summarization, it does not close the gap at any tested budget. We also find that human-annotated data varies in reliability: one widely used human preference source substantially underperforms another, and the gap persists even after standard remedies such as domain restriction and deduplication.",
+        "authors": [
+          "Shourik Banerjee",
+          "Ethan Mendes",
+          "Mohit Raghavendra",
+          "Wei Xu",
+          "Alan Ritter"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16895v1",
+        "published": "2026-11-12T14:51:51+00:00",
+        "title": "Human or Synthetic? What a Fixed Budget Buys for Post-Training",
+        "updated": "2026-11-12T14:51:51+00:00",
+        "version_id": "2611.16895v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "大型语言模型的后训练通常将监督微调（SFT）与基于偏好的微调（例如直接偏好优化（DPO））相结合。人工注释和综合生成的偏好数据在每个样本成本方面存在很大差异，但先前的工作在比较两者时通常保持样本数量固定。在这项工作中，我们通过在固定的、与美元匹配的注释预算下将训练后的效果与人类和合成偏好数据进行比较，明确研究了成本和性能之间的相互作用。我们在帮助和总结任务中训练和评估多个基本模型系列。我们发现，在中低预算下，合成数据的成本效益要高得多，只需 200 美元到 400 美元即可实现高获胜率。在有用性方面，人类数据只有在预算大大约两个数量级时才能缩小差距；总而言之，它并没有缩小任何测试预算的差距。我们还发现，人工注释的数据在可靠性方面存在差异：一种广泛使用的人类偏好来源的表现远远低于另一种来源，即使在域限制和重复数据删除等标准补救措施之后，这种差距仍然存在。",
+        "fallback_provider": "google_free",
+        "title_zh": "人类还是合成物？培训后的固定预算可以购买什么"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Attributing short LLM-generated texts to a specific source remains challenging for existing multi-bit watermarking methods, which often require long generations or costly decoding to recover payloads reliably. We propose a codebook-based watermarking scheme that maps an $n$-bit payload to a longer $u$-bit codeword and embeds it during generation through token-level logit biasing. During extraction, the received bit sequence is matched to the nearest codeword in a precomputed secret codebook using Hamming or Levenshtein distance. Experiments show that our method achieves near-perfect recovery for 16-24 bit payloads on 200-token generations and strong performance on 127-token generations for base models. Results are weaker on some instruction-tuned models with very short texts, where low-entropy output distributions reduce embedding reliability. We also study a BCH-based variant that avoids codebook storage but generally reduces robustness. The Levenshtein variant improves resilience to deletions and light paraphrasing, while insertions and stronger rewrites remain challenging. We analyze collision probability, codeword separation, extraction time, tokenization consistency, and text quality, highlighting both the practicality and limitations of codebook-based watermarking for short-form attribution.",
+        "authors": [
+          "Jarosław Janas",
+          "Paweł Morawiecki",
+          "Josef Pieprzyk"
+        ],
+        "categories": [
+          "cs.CR",
+          "cs.AI",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16890v1",
+        "published": "2026-11-12T14:49:23+00:00",
+        "title": "Look It Up: Multi-bit LLM Watermarking via Codebook Search",
+        "updated": "2026-11-12T14:49:23+00:00",
+        "version_id": "2611.16890v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "对于现有的多位水印方法来说，将 LLM 生成的短文本归因于特定源仍然具有挑战性，这些方法通常需要长时间生成或昂贵的解码才能可靠地恢复有效负载。我们提出了一种基于码本的水印方案，将 $n$ 位有效负载映射到更长的 $u$ 位码字，并在生成过程中通过令牌级 logit 偏置将其嵌入。在提取过程中，接收到的比特序列使用汉明距离或编辑距离与预先计算的秘密码本中最近的码字进行匹配。实验表明，我们的方法在 200 个令牌生成上实现了 16-24 位有效负载的近乎完美恢复，并且在基本模型的 127 个令牌生成上实现了强大的性能。在一些文本非常短的指令调整模型上，结果较弱，其中低熵输出分布降低了嵌入可靠性。我们还研究了一种基于 BCH 的变体，它避免了码本存储，但通常会降低鲁棒性。 Levenshtein 变体提高了对删除和轻度释义的恢复能力，而插入和更强的重写仍然具有挑战性。我们分析了冲突概率、码字分离、提取时间、标记化一致性和文本质量，强调了基于码本的水印对于短格式归属的实用性和局限性。",
+        "fallback_provider": "google_free",
+        "title_zh": "查找：通过代码本搜索进行多位 LLM 水印"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Formal verification of complex algorithms requires expertise in program specification, invariant construction, mathematical proof, and the management of automated theorem provers. Although large language models (LLMs) can generate program code and proof fragments, reliably developing complete machine-checked verifications remains challenging: it requires an iterative process of constructing and validating specifications and invariants, building proofs, diagnosing solver failures, and optimizing verification performance. This paper presents a systematic ten-step workflow for LLM-assisted verification of scientific algorithms using the Dafny verification system. The workflow integrates algorithm formalization, contract development, empirical invariant validation, proof construction, bottleneck profiling, and resource-driven proof optimization. We applied the workflow using Antrhopic's Claude Opus 5 and Opus 5.5 models, combining LLM-driven development with automated testing and verification feedback, while retaining human oversight for correctness-critical decisions and strategic interventions. We evaluate the approach on 37 complex algorithms from graph theory and labelled transition systems. Notably, we verified the Hopfcroft-Tarjan triconnectivity test, demonstrating that even highly challenging algorithmic verification tasks can be carried out through a structured LLM-assisted workflow. Many of our machine-checked verifications were obtained within hours to a few days of interactive development. Our results suggest that LLM-assisted workflows can shift the role of the human verifier from detailed proof construction toward supervision, specification review, and strategic guidance.",
+        "authors": [
+          "Wieger Wesselink",
+          "Kees Huizing",
+          "Huub van de Wetering"
+        ],
+        "categories": [
+          "cs.LO",
+          "cs.AI",
+          "cs.SE"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16886v1",
+        "published": "2026-11-12T14:48:38+00:00",
+        "title": "LLM-Assisted Verification in Dafny",
+        "updated": "2026-11-12T14:48:38+00:00",
+        "version_id": "2611.16886v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "复杂算法的形式验证需要程序规范、不变结构、数学证明和自动定理证明器管理方面的专业知识。尽管大型语言模型 (LLM) 可以生成程序代码和证明片段，但可靠地开发完整的机器检查验证仍然具有挑战性：它需要构建和验证规范和不变量、构建证明、诊断求解器故障以及优化验证性能的迭代过程。本文提出了一个系统的十步工作流程，用于使用 Dafny 验证系统对科学算法进行法学硕士辅助验证。该工作流程集成了算法形式化、合约开发、经验不变验证、证明构造、瓶颈分析和资源驱动的证明优化。我们使用 Anthropic 的 Claude Opus 5 和 Opus 5.5 模型应用工作流程，将 LLM 驱动的开发与自动化测试和验证反馈相结合，同时保留对正确性关键决策和战略干预的人工监督。我们根据图论和标记转换系统对 37 种复杂算法评估了该方法。值得注意的是，我们验证了 Hopfcroft-Tarjan 三连通性测试，证明即使是极具挑战性的算法验证任务也可以通过结构化的法学硕士辅助工作流程来执行。我们的许多机器检查验证都是在交互式开发的几小时到几天内获得的。我们的结果表明，法学硕士辅助的工作流程可以将人类验证者的角色从详细的证明构建转变为监督、规范审查和战略指导。",
+        "fallback_provider": "google_free",
+        "title_zh": "达夫尼法学硕士辅助验证"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "While language-model agents excel at long-horizon coding and terminal tasks, this success relies on two conditions: explicit text specifications and immediate execution feedback. However, neither condition holds in real-world problems where critical information exists only in images, leaving it unclear whether long-horizon capability transfers from text to visual reasoning. In such visual settings, because rules and clues resist text transcription and lack test-case feedback, agents must repeatedly inspect images, simulate spatial transformations, and autonomously cross-check clues. Despite this challenge, existing evaluations fail to capture such capability: visual reasoning benchmarks largely reduce tasks to single-turn, short-chain question answering, whereas agent benchmarks focus on text-based environments or interactive states that permit trial-and-error. To bridge this gap, we introduce Visual Cipher Bench, a collection of 40 original visual puzzles across four categories: spatial manipulation and simulation, logical constraints and planning, rule induction, and knowledge-based decoding. Each puzzle provides only one to three black-and-white line drawings and a minimal submission instruction, requiring agents to discover the underlying solving mechanism entirely from the images. Across 29 reasoning-effort configurations of eight frontier models, even the strongest model, GPT-6 Astra (max), achieves only 26.7% accuracy, while five of the eight models score below 1%. Yet on a ten-task subset, providing a single non-spoiler mechanism hint boosts accuracy from 7.8% to 55.6%. This sharp contrast shows that the primary bottleneck of current agents lies not in executing multi-step plans, but in autonomously discovering rules from visual evidence. Visual Cipher Bench thus provides a rigorous benchmark for measuring long-horizon visual reasoning in agents.",
+        "authors": [
+          "Deyao Hong",
+          "Jiayi Jiang",
+          "Yuchun Chen",
+          "Yixuan Shi",
+          "Wenyi Li",
+          "Zheng Jiang",
+          "Chengxing Xie",
+          "Mingyu Su",
+          "Qingle Liu",
+          "Mingju Gao",
+          "Yizhe Chi",
+          "Youjie Zheng",
+          "Calvin Xiao",
+          "Kaisen Yang",
+          "Huan-ang Gao"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16861v1",
+        "published": "2026-11-12T14:33:46+00:00",
+        "title": "Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning",
+        "updated": "2026-11-12T14:33:46+00:00",
+        "version_id": "2611.16861v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "虽然语言模型代理擅长长期编码和终端任务，但这种成功依赖于两个条件：明确的文本规范和即时执行反馈。然而，这两种条件都不适用于现实世界的问题，因为关键信息仅存在于图像中，因此尚不清楚长视野能力是否从文本推理转移到视觉推理。在这种视觉设置中，由于规则和线索阻碍文本转录并且缺乏测试用例反馈，代理必须反复检查图像、模拟空间变换并自动交叉检查线索。尽管存在这一挑战，现有的评估仍无法捕捉到这种能力：视觉推理基准在很大程度上将任务减少为单轮、短链问答，而代理基准则侧重于基于文本的环境或允许试错的交互状态。为了弥补这一差距，我们推出了 Visual Cipher Bench，它是 40 个原创视觉谜题的集合，涵盖四个类别：空间操纵和模拟、逻辑约束和规划、规则归纳和基于知识的解码。每个谜题仅提供一到三张黑白线条图和最少的提交说明，要求代理完全从图像中发现潜在的解决机制。在 8 个前沿模型的 29 个推理工作配置中，即使是最强的模型 GPT-6 Astra（max），也只能达到 26.7% 的准确率，而 8 个模型中有 5 个的得分低于 1%。然而，在十个任务子集上，提供单个非剧透机制提示可将准确度从 7.8% 提高到 55.6%。这种鲜明的对比表明，当前智能体的主要瓶颈不在于执行多步计划，而在于从视觉证据中自主发现规则。因此，Visual Cipher Bench 为测量智能体的长期视觉推理提供了严格的基准。",
+        "fallback_provider": "google_free",
+        "title_zh": "Visual Cipher Bench：对 LLM 代理进行长视野视觉推理基准测试"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Federated Learning (FL) with Parameter-Efficient Fine-Tuning (PEFT) enables efficient adaptation of Large Language Models (LLMs), yet its energy and carbon costs across hardware remain poorly understood. We evaluated federated Low-Rank Adaptation (LoRA) fine-tuning on NVIDIA A40, RTX 6000 Ada, and A100 GPUs using a $2^2$ full factorial design with 135M/360M models and 10/100 local steps. CodeCarbon tracked energy and estimated CO$_2$-equivalent emissions. Descriptive allocation of variation assigned 84.8-91.2% of energy and emissions variation to local steps within these ranges. On A40 and RTX 6000 Ada, configurations with fewer steps achieved comparable accuracy with roughly 6-8-fold lower energy consumption and higher accuracy per kWh. These findings support smaller local budgets for energy-efficient federated fine-tuning within the evaluated setting.",
+        "authors": [
+          "Pedro Augusto Londe Ribeiro",
+          "Rodrigo Moreira",
+          "Larissa Ferreira Rodrigues Moreira",
+          "Joberto S. B. Martins",
+          "Tereza C. Carvalho",
+          "Flávio de Oliveira Silva"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.NI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16856v1",
+        "published": "2026-11-12T14:30:10+00:00",
+        "title": "Sustainable Federated Fine-Tuning with LoRA: Environmental Impact and Performance Footprint",
+        "updated": "2026-11-12T14:30:10+00:00",
+        "version_id": "2611.16856v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "具有参数高效微调 (PEFT) 的联邦学习 (FL) 可实现大型语言模型 (LLM) 的高效适应，但其跨硬件的能源和碳成本仍知之甚少。我们使用具有 135M/360M 模型和 10/100 局部步骤的 2^2$ 全因子设计，在 NVIDIA A40、RTX 6000 Ada 和 A100 GPU 上评估了联合低秩适应 (LoRA) 微调。 CodeCarbon 跟踪能源和估计的 CO$_2$ 等效排放量。变化的描述性分配将 84.8-91.2% 的能源和排放变化分配给这些范围内的局部步骤。在 A40 和 RTX 6000 Ada 上，采用更少步骤的配置实现了相当的精度，能耗降低了大约 6-8 倍，每千瓦时的精度更高。这些发现支持在评估环境中减少地方预算以进行节能联合微调。",
+        "fallback_provider": "google_free",
+        "title_zh": "使用 LoRA 进行可持续联合微调：环境影响和性能足迹"
+      }
+    }
+  ],
+  "notification_hash": "ef0b6ba1651e269d8a9a988bd66fd04296f8b69f9668d2a98c6608a061a09bab",
+  "recovery_of": [],
+  "rendered": {
+    "2611.16856": "rendered_inline_translation",
+    "2611.16861": "rendered_inline_translation",
+    "2611.16886": "rendered_inline_translation",
+    "2611.16890": "rendered_inline_translation",
+    "2611.16895": "rendered_inline_translation",
+    "2611.16905": "rendered_inline_translation",
+    "2611.16929": "rendered_inline_translation",
+    "2611.16937": "rendered_inline_translation",
+    "2611.16986": "rendered_inline_translation",
+    "2611.17007": "rendered_inline_translation"
+  },
+  "run_id": "20261115T085247Z-ba6e01cc",
+  "schema_version": 1
+}
