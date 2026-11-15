@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-15 | Skill Adapter: Personalized Modification and Online Routing of General-Purpose Skills | 待翻译 | [arXiv 2611.17007v1](https://arxiv.org/abs/2611.17007v1) |
+| 2026-11-15 | Primer: An AI Framework for Instructor-Centered Educational Simulation Creation | 待翻译 | [arXiv 2611.16986v1](https://arxiv.org/abs/2611.16986v1) |
+| 2026-11-15 | S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models | 待翻译 | [arXiv 2611.16937v1](https://arxiv.org/abs/2611.16937v1) |
+| 2026-11-15 | SPADE: Soft Prompts for Ai-text DEtection | 待翻译 | [arXiv 2611.16929v1](https://arxiv.org/abs/2611.16929v1) |
+| 2026-11-15 | Factored One-sided Adam-Moment for Practical and Scalable SOAP | 待翻译 | [arXiv 2611.16905v1](https://arxiv.org/abs/2611.16905v1) |
+| 2026-11-15 | Human or Synthetic? What a Fixed Budget Buys for Post-Training | 待翻译 | [arXiv 2611.16895v1](https://arxiv.org/abs/2611.16895v1) |
+| 2026-11-15 | Look It Up: Multi-bit LLM Watermarking via Codebook Search | 待翻译 | [arXiv 2611.16890v1](https://arxiv.org/abs/2611.16890v1) |
+| 2026-11-15 | LLM-Assisted Verification in Dafny | 待翻译 | [arXiv 2611.16886v1](https://arxiv.org/abs/2611.16886v1) |
+| 2026-11-15 | Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning | 待翻译 | [arXiv 2611.16861v1](https://arxiv.org/abs/2611.16861v1) |
+| 2026-11-15 | Sustainable Federated Fine-Tuning with LoRA: Environmental Impact and Performance Footprint | 待翻译 | [arXiv 2611.16856v1](https://arxiv.org/abs/2611.16856v1) |
 | 2026-11-14 | Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents | 演员、法官还是教师？理解长远决策智能体的决策模型 | [arXiv 2611.17167v1](https://arxiv.org/abs/2611.17167v1) |
 | 2026-11-14 | LazyWeights: Decode-on-Demand Edge LLMs | LazyWeights：按需解码的边缘大型语言模型 | [arXiv 2611.17108v1](https://arxiv.org/abs/2611.17108v1) |
 | 2026-11-14 | Discovering Effective Agent Memory Designs through Program Evolution | 通过程序演化探索有效的智能体记忆设计 | [arXiv 2611.17068v1](https://arxiv.org/abs/2611.17068v1) |

@@ -55,7 +55,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:42:00.481953+00:00",
-    "last_complete_end": "2026-11-14T08:39:55.967551+00:00"
+    "last_complete_end": "2026-11-15T08:52:47.706636+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -301,6 +301,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-15": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -66652,6 +66661,340 @@
         "2611.14514v1"
       ]
     },
+    "2611.16856": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-15T08:52:47.706636+00:00",
+      "paper": {
+        "abstract": "Federated Learning (FL) with Parameter-Efficient Fine-Tuning (PEFT) enables efficient adaptation of Large Language Models (LLMs), yet its energy and carbon costs across hardware remain poorly understood. We evaluated federated Low-Rank Adaptation (LoRA) fine-tuning on NVIDIA A40, RTX 6000 Ada, and A100 GPUs using a $2^2$ full factorial design with 135M/360M models and 10/100 local steps. CodeCarbon tracked energy and estimated CO$_2$-equivalent emissions. Descriptive allocation of variation assigned 84.8-91.2% of energy and emissions variation to local steps within these ranges. On A40 and RTX 6000 Ada, configurations with fewer steps achieved comparable accuracy with roughly 6-8-fold lower energy consumption and higher accuracy per kWh. These findings support smaller local budgets for energy-efficient federated fine-tuning within the evaluated setting.",
+        "authors": [
+          "Pedro Augusto Londe Ribeiro",
+          "Rodrigo Moreira",
+          "Larissa Ferreira Rodrigues Moreira",
+          "Joberto S. B. Martins",
+          "Tereza C. Carvalho",
+          "Flávio de Oliveira Silva"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.NI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16856v1",
+        "published": "2026-11-12T14:30:10+00:00",
+        "title": "Sustainable Federated Fine-Tuning with LoRA: Environmental Impact and Performance Footprint",
+        "updated": "2026-11-12T14:30:10+00:00",
+        "version_id": "2611.16856v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.16856v1"
+      ]
+    },
+    "2611.16861": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-15T08:52:47.706636+00:00",
+      "paper": {
+        "abstract": "While language-model agents excel at long-horizon coding and terminal tasks, this success relies on two conditions: explicit text specifications and immediate execution feedback. However, neither condition holds in real-world problems where critical information exists only in images, leaving it unclear whether long-horizon capability transfers from text to visual reasoning. In such visual settings, because rules and clues resist text transcription and lack test-case feedback, agents must repeatedly inspect images, simulate spatial transformations, and autonomously cross-check clues. Despite this challenge, existing evaluations fail to capture such capability: visual reasoning benchmarks largely reduce tasks to single-turn, short-chain question answering, whereas agent benchmarks focus on text-based environments or interactive states that permit trial-and-error. To bridge this gap, we introduce Visual Cipher Bench, a collection of 40 original visual puzzles across four categories: spatial manipulation and simulation, logical constraints and planning, rule induction, and knowledge-based decoding. Each puzzle provides only one to three black-and-white line drawings and a minimal submission instruction, requiring agents to discover the underlying solving mechanism entirely from the images. Across 29 reasoning-effort configurations of eight frontier models, even the strongest model, GPT-6 Astra (max), achieves only 26.7% accuracy, while five of the eight models score below 1%. Yet on a ten-task subset, providing a single non-spoiler mechanism hint boosts accuracy from 7.8% to 55.6%. This sharp contrast shows that the primary bottleneck of current agents lies not in executing multi-step plans, but in autonomously discovering rules from visual evidence. Visual Cipher Bench thus provides a rigorous benchmark for measuring long-horizon visual reasoning in agents.",
+        "authors": [
+          "Deyao Hong",
+          "Jiayi Jiang",
+          "Yuchun Chen",
+          "Yixuan Shi",
+          "Wenyi Li",
+          "Zheng Jiang",
+          "Chengxing Xie",
+          "Mingyu Su",
+          "Qingle Liu",
+          "Mingju Gao",
+          "Yizhe Chi",
+          "Youjie Zheng",
+          "Calvin Xiao",
+          "Kaisen Yang",
+          "Huan-ang Gao"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16861v1",
+        "published": "2026-11-12T14:33:46+00:00",
+        "title": "Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning",
+        "updated": "2026-11-12T14:33:46+00:00",
+        "version_id": "2611.16861v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.16861v1"
+      ]
+    },
+    "2611.16886": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-15T08:52:47.706636+00:00",
+      "paper": {
+        "abstract": "Formal verification of complex algorithms requires expertise in program specification, invariant construction, mathematical proof, and the management of automated theorem provers. Although large language models (LLMs) can generate program code and proof fragments, reliably developing complete machine-checked verifications remains challenging: it requires an iterative process of constructing and validating specifications and invariants, building proofs, diagnosing solver failures, and optimizing verification performance. This paper presents a systematic ten-step workflow for LLM-assisted verification of scientific algorithms using the Dafny verification system. The workflow integrates algorithm formalization, contract development, empirical invariant validation, proof construction, bottleneck profiling, and resource-driven proof optimization. We applied the workflow using Antrhopic's Claude Opus 5 and Opus 5.5 models, combining LLM-driven development with automated testing and verification feedback, while retaining human oversight for correctness-critical decisions and strategic interventions. We evaluate the approach on 37 complex algorithms from graph theory and labelled transition systems. Notably, we verified the Hopfcroft-Tarjan triconnectivity test, demonstrating that even highly challenging algorithmic verification tasks can be carried out through a structured LLM-assisted workflow. Many of our machine-checked verifications were obtained within hours to a few days of interactive development. Our results suggest that LLM-assisted workflows can shift the role of the human verifier from detailed proof construction toward supervision, specification review, and strategic guidance.",
+        "authors": [
+          "Wieger Wesselink",
+          "Kees Huizing",
+          "Huub van de Wetering"
+        ],
+        "categories": [
+          "cs.LO",
+          "cs.AI",
+          "cs.SE"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16886v1",
+        "published": "2026-11-12T14:48:38+00:00",
+        "title": "LLM-Assisted Verification in Dafny",
+        "updated": "2026-11-12T14:48:38+00:00",
+        "version_id": "2611.16886v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.16886v1"
+      ]
+    },
+    "2611.16890": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-15T08:52:47.706636+00:00",
+      "paper": {
+        "abstract": "Attributing short LLM-generated texts to a specific source remains challenging for existing multi-bit watermarking methods, which often require long generations or costly decoding to recover payloads reliably. We propose a codebook-based watermarking scheme that maps an $n$-bit payload to a longer $u$-bit codeword and embeds it during generation through token-level logit biasing. During extraction, the received bit sequence is matched to the nearest codeword in a precomputed secret codebook using Hamming or Levenshtein distance. Experiments show that our method achieves near-perfect recovery for 16-24 bit payloads on 200-token generations and strong performance on 127-token generations for base models. Results are weaker on some instruction-tuned models with very short texts, where low-entropy output distributions reduce embedding reliability. We also study a BCH-based variant that avoids codebook storage but generally reduces robustness. The Levenshtein variant improves resilience to deletions and light paraphrasing, while insertions and stronger rewrites remain challenging. We analyze collision probability, codeword separation, extraction time, tokenization consistency, and text quality, highlighting both the practicality and limitations of codebook-based watermarking for short-form attribution.",
+        "authors": [
+          "Jarosław Janas",
+          "Paweł Morawiecki",
+          "Josef Pieprzyk"
+        ],
+        "categories": [
+          "cs.CR",
+          "cs.AI",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16890v1",
+        "published": "2026-11-12T14:49:23+00:00",
+        "title": "Look It Up: Multi-bit LLM Watermarking via Codebook Search",
+        "updated": "2026-11-12T14:49:23+00:00",
+        "version_id": "2611.16890v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.16890v1"
+      ]
+    },
+    "2611.16895": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-15T08:52:47.706636+00:00",
+      "paper": {
+        "abstract": "Post-training of large language models typically combines supervised fine-tuning (SFT) with preference-based fine-tuning such as Direct Preference Optimization (DPO). Human-annotated and synthetically generated preference data differ substantially in per-sample cost, but prior work typically holds sample count fixed when comparing the two. In this work, we explicitly study the interplay between cost and performance by comparing the effect of post-training with human and synthetic preference data under a fixed, dollar-matched annotation budget. We train and evaluate multiple base model families across helpfulness and summarization tasks. We find that synthetic data is far more cost-efficient at low-to-moderate budgets, achieving high win rates with as little as \\$200--\\$400. On helpfulness, human data closes the gap only at budgets roughly two orders of magnitude larger; on summarization, it does not close the gap at any tested budget. We also find that human-annotated data varies in reliability: one widely used human preference source substantially underperforms another, and the gap persists even after standard remedies such as domain restriction and deduplication.",
+        "authors": [
+          "Shourik Banerjee",
+          "Ethan Mendes",
+          "Mohit Raghavendra",
+          "Wei Xu",
+          "Alan Ritter"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16895v1",
+        "published": "2026-11-12T14:51:51+00:00",
+        "title": "Human or Synthetic? What a Fixed Budget Buys for Post-Training",
+        "updated": "2026-11-12T14:51:51+00:00",
+        "version_id": "2611.16895v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.16895v1"
+      ]
+    },
+    "2611.16905": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-15T08:52:47.706636+00:00",
+      "paper": {
+        "abstract": "Second-order optimizers (e.g., Shampoo, SOAP) have emerged as compelling alternatives to Adam/AdamW and promise faster per-step convergence than AdamW in transformer training. However, they still remain costly in practice, and even SOAP still pays substantial optimizer-state memory and eigendecomposition overhead. We ask whether the benefits of SOAP can be retained at nearly the efficiency of AdamW. In this paper, we answer yes with a lightweight SOAP variant, Factored One-sided Adam-Moment (FOAM). The path to practical impact is twofold: first, FOAM employs input-only preconditioning, dropping the output-side Kronecker factor to reduce memory and remove one eigendecomposition. The Kronecker structure of the Hessian shows that this is exact for a diagonal output-side curvature and nearly lossless for a near-diagonal one, as we observe empirically. Second, FOAM replaces SOAP's dense rotated second moment with a factored Adam-moment estimator based on row-by-column statistics. Under the K-FAC Fisher assumption with a diagonal output curvature, this estimator exactly recovers SOAP's dense second moment, and we measure only a 15-20% K-FAC violation, with negligible effect on the update. Our empirical results support the claim that FOAM matches strong SOAP and Muon baselines in validation loss across scales of large language model (LLM) pre-training, uses half of SOAP's optimizer state, runs at Muon-class wall-clock time, and retains robustness across a three-fold learning-rate range. The results hold from 124M to 760M parameters, demonstrating that SOAP's gains need not require SOAP's cost. Code: https://github.com/naver-ai/foam",
+        "authors": [
+          "Jaemyung Yu",
+          "Byeongho Heo",
+          "Sangdoo Yun",
+          "Dongyoon Han"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16905v1",
+        "published": "2026-11-12T14:59:01+00:00",
+        "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
+        "updated": "2026-11-12T14:59:01+00:00",
+        "version_id": "2611.16905v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.16905v1"
+      ]
+    },
+    "2611.16929": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-15T08:52:47.706636+00:00",
+      "paper": {
+        "abstract": "The easy access to Large Language Models (LLMs) has made AI-generated texts on the web increasingly ubiquitous, making AI-text detection a crucial task. Prompts greatly influence the generation process, but existing detectors focus solely on the generated texts --- supervised methods learn from labeled texts only, and zero-shot methods rely on the text's probability distributions --- ignoring the underlying generation process, which limits their robustness in open-world scenarios. We introduce SPADE: Soft Prompts for Ai-text DEtection, a novel framework for detecting AI-generated text that transfers better across datasets. Specifically, we measure the prompt's influence and use it as a discriminative signal. We characterize the prompt's influence by introducing a Pointwise Mutual Information (PMI) term that captures how much a prompt explains a text. Based on this quantity, SPADE trains one soft prompt per class to amplify the separation, and predicts the class whose prompt best explains the candidate text. Extensive experiments on several benchmarks against various detectors demonstrate the robustness and effectiveness of our method, achieving state-of-the-art (SOTA) performance on out-of-distribution (OOD) datasets.",
+        "authors": [
+          "Alex Jiang",
+          "Didier Schwab",
+          "Chuyuan Li"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16929v1",
+        "published": "2026-11-12T15:16:19+00:00",
+        "title": "SPADE: Soft Prompts for Ai-text DEtection",
+        "updated": "2026-11-12T15:16:19+00:00",
+        "version_id": "2611.16929v1"
+      },
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.16929v1"
+      ]
+    },
+    "2611.16937": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-15T08:52:47.706636+00:00",
+      "paper": {
+        "abstract": "Typed System-1 (S1) decision models are increasingly deployed in LLM agents for routing, moderation, and authorization to cut inference cost, yet untrusted context can still manipulate typed outputs and alter execution branches. Unlike autoregressive System-2 (S2) models, S1 interfaces score dynamic rules and options without token-by-token decoding, mismatching attacks targeting text continuation or explicit override commands. We propose S1-Evo, a self-evolving framework tailored to S1's contract-based option competition and margin feedback. S1-Evo perturbs untrusted fields via contract-aware evidence channels to induce \\emph{evidence competition} with original task evidence while preserving fact invariance. Offline on seed tasks, it optimizes candidates via feedback search guided by directional margins and re-verification, distilling verified flips into experience cards. At test time, S1-Evo retrieves relevant cards to construct perturbations for unseen tasks. Across four benchmarks and three S1 models, S1-Evo reaches 71.99\\% mean ASR and 57.47\\% high-confidence ASR on \\texttt{jev-1.14}, and causes up to 24.00\\% E2E agent violations.",
+        "authors": [
+          "Kaixiang Wang",
+          "Junjie Li",
+          "Zhaojiacheng Zhou",
+          "Jiong Lou",
+          "Jie Li"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16937v1",
+        "published": "2026-11-12T15:21:44+00:00",
+        "title": "S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models",
+        "updated": "2026-11-12T15:21:44+00:00",
+        "version_id": "2611.16937v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.16937v1"
+      ]
+    },
+    "2611.16986": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-15T08:52:47.706636+00:00",
+      "paper": {
+        "abstract": "Educational simulations are a well-established pedagogical technique that gives learners opportunities to apply knowledge, respond to challenges, and reflect on their performance. High-quality simulations, however, are difficult to build, requiring instructor input, scenario design, character development, scaffolding, technical implementation, and repeated revision. This paper presents Primer, an open-source, LLM-agnostic AI-supported system that helps educators create adaptive educational simulations. Educators contribute their knowledge of the subject, lesson, and students, while generative AI produces responsive variations of practice for students. Primer uses a multi-agent system centered around executing educator's instructional intent through the entire learning experience. We hope that by releasing Primer as an open-source system, including its prompts and GitHub repository, we provide a foundation for development and research on educator-in-the-loop AI authoring, multi-agent educational workflows, and simulation-based pedagogy. Further, by allowing the use of various AI models, including local and open source models, we provide the opportunity for implementation under varied governance regimes. Primer points toward a model of educational AI in which instructors can create locally grounded practice opportunities based on their own materials, goals, examples, and knowledge of students.",
+        "authors": [
+          "Ethan Mollick",
+          "Lilach Mollick",
+          "Ben Przystanski",
+          "LJ Ciccarelli",
+          "Natalie Bach",
+          "Laura Zarrow"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.16986v1",
+        "published": "2026-11-12T15:50:46+00:00",
+        "title": "Primer: An AI Framework for Instructor-Centered Educational Simulation Creation",
+        "updated": "2026-11-12T15:50:46+00:00",
+        "version_id": "2611.16986v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.16986v1"
+      ]
+    },
+    "2611.17007": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-15T08:52:47.706636+00:00",
+      "paper": {
+        "abstract": "Large language model (LLM) agents use external skills to reuse task procedures and experience with tools. General-purpose skills describe shared execution procedures, while specific tool choices, operating practices, and output requirements vary across users. In long-horizon tasks, subgoals, available inputs, and environmental states change as execution progresses. Agents must select currently applicable skills from an expanding skill pool and prepare candidates for subsequent steps.\n  We propose Skill Adapter, which enables personalized modification and online routing of general-purpose skills. The system distills local adjustments from user requirements and execution feedback and stores them as Adapters linked to general-purpose skills. The routing agent selects general-purpose skills and applicable Adapters based on the current subtask, execution progress, and environmental feedback, incrementally maintaining a task-level online skill library that the main LLM reads on demand. The system preloads candidates for subsequent nodes and rechecks their applicability once actual inputs are determined. Reinforcement learning optimizes the two types of decisions using modification gains and routing outcomes, respectively.\n  We evaluate Skill Adapter on ALFWorld, WebShop, and SkillsBench. Compared with SkillRL, it improves task success rates by an average of 11.43 percentage points and reduces mean execution time on all three benchmarks. Skill Adapter retains its performance advantage when the skill pool grows to 1,000 skills.",
+        "authors": [
+          "Qijia Zhuang",
+          "Yanyi Gou",
+          "Wenbin Ma",
+          "Yuxiang Ren"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.17007v1",
+        "published": "2026-11-12T16:05:23+00:00",
+        "title": "Skill Adapter: Personalized Modification and Online Routing of General-Purpose Skills",
+        "updated": "2026-11-12T16:05:23+00:00",
+        "version_id": "2611.17007v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.17007v1"
+      ]
+    },
     "2611.17015": {
       "attempts": {
         "selection": 1,
@@ -69040,10 +69383,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-15",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261115T085247Z-ba6e01cc",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-15T08:52:00+00:00",
+          "seen": 126,
+          "start": "2026-11-08T08:52:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-15T08:52:47.706636+00:00",
       "window": {
         "end": "2026-11-15T08:52:47.706636+00:00",
