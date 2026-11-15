@@ -12,7 +12,7 @@
 | 2026-11-15 | Human or Synthetic? What a Fixed Budget Buys for Post-Training | 人类还是合成物？培训后的固定预算可以购买什么 | [arXiv 2611.16895v1](https://arxiv.org/abs/2611.16895v1) |
 | 2026-11-15 | Look It Up: Multi-bit LLM Watermarking via Codebook Search | 查找：通过代码本搜索进行多位 LLM 水印 | [arXiv 2611.16890v1](https://arxiv.org/abs/2611.16890v1) |
 | 2026-11-15 | LLM-Assisted Verification in Dafny | 达夫尼法学硕士辅助验证 | [arXiv 2611.16886v1](https://arxiv.org/abs/2611.16886v1) |
-| 2026-11-15 | Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning | 待翻译 | [arXiv 2611.16861v1](https://arxiv.org/abs/2611.16861v1) |
+| 2026-11-15 | Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning | Visual Cipher Bench：对 LLM 代理进行长视野视觉推理基准测试 | [arXiv 2611.16861v1](https://arxiv.org/abs/2611.16861v1) |
 | 2026-11-15 | Sustainable Federated Fine-Tuning with LoRA: Environmental Impact and Performance Footprint | 待翻译 | [arXiv 2611.16856v1](https://arxiv.org/abs/2611.16856v1) |
 | 2026-11-14 | Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents | 演员、法官、还是老师？了解长期智能体的决策模型 | [arXiv 2611.17167v1](https://arxiv.org/abs/2611.17167v1) |
 | 2026-11-14 | LazyWeights: Decode-on-Demand Edge LLMs | LazyWeights：按需解码边缘法学硕士 | [arXiv 2611.17108v1](https://arxiv.org/abs/2611.17108v1) |
