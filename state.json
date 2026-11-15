@@ -67067,11 +67067,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-15T08:52:47.706636+00:00",
-        "run_id": "20261115T085247Z-ba6e01cc",
-        "stage": "translation"
+      "title_zh": "实用且可扩展的 SOAP 的分解单面 Adam-Moment",
+      "translation": {
+        "abstract_zh": "二阶优化器（例如 Shampoo、SOAP）已成为 Adam/AdamW 的引人注目的替代品，并承诺在变压器训练中比 AdamW 更快的每步收敛速度。然而，它们在实践中仍然成本高昂，甚至 SOAP 仍然支付大量的优化器状态内存和特征分解开销。我们询问是否可以以接近 AdamW 的效率保留 SOAP 的优势。在本文中，我们用一种轻量级 SOAP 变体——因子式单侧 Adam-Moment (FOAM) 来回答“是”。产生实际影响的途径是双重的：首先，FOAM 采用仅输入预处理，降低输出侧克罗内克因子以减少内存并消除一个特征分解。正如我们凭经验观察到的那样，Hessian 的克罗内克结构表明，这对于对角线输出侧曲率来说是精确的，并且对于近对角线输出侧曲率来说几乎是无损的。其次，FOAM 使用基于逐列统计的分解 Adam 矩估计器取代了 SOAP 的密集旋转二阶矩。在具有对角输出曲率的 K-FAC Fisher 假设下，该估计器精确地恢复了 SOAP 的稠密二阶矩，并且我们仅测量了 15-20% 的 K-FAC 违规，对更新的影响可以忽略不计。我们的实证结果支持这样的说法：FOAM 在大型语言模型 (LLM) 预训练规模的验证损失方面与强大的 SOAP 和 Muon 基线相匹配，使用 SOAP 优化器状态的一半，在 Muon 级挂钟时间运行，并在三倍学习率范围内保持鲁棒性。结果包含 124M 到 760M 的参数，表明 SOAP 的收益不需要 SOAP 的成本。代码：https://github.com/naver-ai/foam",
+        "fallback_provider": "google_free",
+        "title_zh": "实用且可扩展的 SOAP 的分解单面 Adam-Moment"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.16905v1"
       ]
