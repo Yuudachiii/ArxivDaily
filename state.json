@@ -67130,11 +67130,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-15T08:52:47.706636+00:00",
-        "run_id": "20261115T085247Z-ba6e01cc",
-        "stage": "translation"
+      "title_zh": "SPADE：Ai 文本检测的软提示",
+      "translation": {
+        "abstract_zh": "大型语言模型 (LLM) 的便捷访问使得人工智能生成的文本在网络上变得越来越普遍，这使得人工智能文本检测成为一项至关重要的任务。提示极大地影响了生成过程，但现有的检测器仅关注生成的文本——监督方法仅从标记文本中学习，而零样本方法依赖于文本的概率分布——忽略了底层的生成过程，这限制了它们在开放世界场景中的鲁棒性。我们介绍 SPADE：用于 Ai-text DEtection 的软提示，这是一种用于检测 AI 生成的文本的新颖框架，可以更好地跨数据集传输。具体来说，我们测量提示的影响并将其用作判别信号。我们通过引入逐点互信息 (PMI) 术语来描述提示的影响力，该术语捕获提示对文本的解释程度。基于这个数量，SPADE 为每个类别训练一个软提示以放大分离，并预测其提示最能解释候选文本的类别。针对各种检测器的多个基准的广泛实验证明了我们的方法的稳健性和有效性，在分布外（OOD）数据集上实现了最先进的（SOTA）性能。",
+        "fallback_provider": "google_free",
+        "title_zh": "SPADE：Ai 文本检测的软提示"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.16929v1"
       ]
