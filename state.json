@@ -73650,11 +73650,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-16T09:04:20.895266+00:00",
-        "run_id": "20261116T090420Z-e1f43e10",
-        "stage": "translation"
+      "title_zh": "常见数据元素的代理归纳和从肉瘤病例报告摘要中提取信息",
+      "translation": {
+        "abstract_zh": "通用数据元素 (CDE) 支持临床数据可比性，但通常是手动定义的。我们研究了大型语言模型代理是否可以从肉瘤病例报告摘要中导出 CDE 模式并大规模应用它。代理人从 24,588 份 PubMed 摘要中提出了 72,909 份候选 CDE；代理整合产生了 1,570 个 CDE。 We retained 53 supported by at least 50 abstracts and attempted evidence-linked extraction across the corpus. Processing succeeded for all retained CDEs in 79.2% of abstracts, including responses indicating non-mention. Two human reviewers approved 83.0% of retained CDEs for relevance, 67.9% for clarity, and 56.6% for correctness.在 100 个抽样摘要中，1,116 对非空答案中与法学硕士提取的值的精确一致性为 94.9%（摘要级引导 95% CI，93.0-96.4%）。 Errors concentrated in anatomical and temporal fields. These findings support agent-assisted schema drafting followed by expert curation before large-scale extraction.",
+        "title_zh": "常见数据元素的代理归纳和从肉瘤病例报告摘要中提取信息"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.18506v1"
       ]
