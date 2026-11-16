@@ -9,7 +9,7 @@
 | 2026-11-16 | Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination | 机械可解释性可以帮助解释 LLM 代理失败吗？网页元素幻觉案例研究（谷歌备用翻译） | [arXiv 2611.18514v1](https://arxiv.org/abs/2611.18514v1) |
 | 2026-11-16 | MeReader: An Offline, Privacy-Preserving, Progress-Aware AI Assistant for Narrative eBook Reading | MeReader：用于叙事电子书阅读的离线、隐私保护、进度感知人工智能助手（谷歌备用翻译） | [arXiv 2611.18513v1](https://arxiv.org/abs/2611.18513v1) |
 | 2026-11-16 | Agentic induction of common data elements and information extraction from sarcoma case report abstracts | 常见数据元素的代理归纳和从肉瘤病例报告摘要中提取信息（谷歌备用翻译） | [arXiv 2611.18506v1](https://arxiv.org/abs/2611.18506v1) |
-| 2026-11-16 | Agentic AI for Discovering Fault-Tolerant Quantum Circuits | 待翻译 | [arXiv 2611.18504v1](https://arxiv.org/abs/2611.18504v1) |
+| 2026-11-16 | Agentic AI for Discovering Fault-Tolerant Quantum Circuits | 用于发现容错量子电路的代理人工智能（谷歌备用翻译） | [arXiv 2611.18504v1](https://arxiv.org/abs/2611.18504v1) |
 | 2026-11-16 | TradeGauntlet: Evaluating Compliance Controls for Autonomous Trading Agents | 待翻译 | [arXiv 2611.18493v1](https://arxiv.org/abs/2611.18493v1) |
 | 2026-11-16 | Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation | 待翻译 | [arXiv 2611.18471v1](https://arxiv.org/abs/2611.18471v1) |
 | 2026-11-16 | Black-Box Uncertainty Quantification for Large Language Models via Ensemble-of-Ensembles | 待翻译 | [arXiv 2611.18453v1](https://arxiv.org/abs/2611.18453v1) |
