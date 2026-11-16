@@ -11,7 +11,7 @@
 | 2026-11-16 | Agentic induction of common data elements and information extraction from sarcoma case report abstracts | 常见数据元素的代理归纳和从肉瘤病例报告摘要中提取信息（谷歌备用翻译） | [arXiv 2611.18506v1](https://arxiv.org/abs/2611.18506v1) |
 | 2026-11-16 | Agentic AI for Discovering Fault-Tolerant Quantum Circuits | 用于发现容错量子电路的代理人工智能（谷歌备用翻译） | [arXiv 2611.18504v1](https://arxiv.org/abs/2611.18504v1) |
 | 2026-11-16 | TradeGauntlet: Evaluating Compliance Controls for Autonomous Trading Agents | TradeGauntlet：评估自主交易代理的合规控制（谷歌备用翻译） | [arXiv 2611.18493v1](https://arxiv.org/abs/2611.18493v1) |
-| 2026-11-16 | Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation | 待翻译 | [arXiv 2611.18471v1](https://arxiv.org/abs/2611.18471v1) |
+| 2026-11-16 | Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation | 验证者的判断是否能够在抽象中幸存下来？测量 LLM 代理评估的验证传输（谷歌备用翻译） | [arXiv 2611.18471v1](https://arxiv.org/abs/2611.18471v1) |
 | 2026-11-16 | Black-Box Uncertainty Quantification for Large Language Models via Ensemble-of-Ensembles | 待翻译 | [arXiv 2611.18453v1](https://arxiv.org/abs/2611.18453v1) |
 | 2026-11-16 | LECAT: Measuring LLM Category Learning from Pretraining Data | 待翻译 | [arXiv 2611.18419v1](https://arxiv.org/abs/2611.18419v1) |
 | 2026-11-15 | Skill Adapter: Personalized Modification and Online Routing of General-Purpose Skills | 技能适配器：通用技能的个性化修改和在线路由（谷歌备用翻译） | [arXiv 2611.17007v1](https://arxiv.org/abs/2611.17007v1) |
