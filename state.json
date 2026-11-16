@@ -6314,8 +6314,15 @@
       "content_hash": "9bdf6e9f9b14c288e2294d33449a83f06f2cca1e7ac5058b6dcb5eb61c047083",
       "created_at": "2026-11-16T09:04:20.895266+00:00",
       "day": "2026-11-16",
+      "delivery": {
+        "detail": "wechat_status",
+        "polls": 1,
+        "pushid": "68724228",
+        "status": "confirmed"
+      },
       "digest_id": "20261116T090420Z-e1f43e10-9bdf6e9f9b14",
       "empty": false,
+      "finished_at": "2026-11-16T09:07:47.113809+00:00",
       "items": [
         {
           "modules": [
@@ -6728,7 +6735,7 @@
       },
       "run_id": "20261116T090420Z-e1f43e10",
       "schema_version": 1,
-      "status": "sending"
+      "status": "confirmed"
     }
   },
   "papers": {
@@ -73700,7 +73707,6 @@
       ]
     },
     "2611.18419": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -73728,7 +73734,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -73752,7 +73758,6 @@
         "updated": "2026-11-13T16:59:46+00:00",
         "version_id": "2611.18419v1"
       },
-      "pending_digest": "20261116T090420Z-e1f43e10-9bdf6e9f9b14",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -73770,7 +73775,7 @@
         "llm_training",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "LECAT：通过预训练数据衡量法学硕士类别学习",
       "translation": {
         "abstract_zh": "人类知道飞机速度很快，这也适用于红色飞机，但不适用于破损的飞机。法学硕士如何获得人类轻松学习和应用的类别知识？我们介绍 LeCat，一个由两部分组成的框架，用于分析 LLM 的类别知识学习。首先，我们使用 LeCat 来评估模型学习类别知识的能力，区分三种情况：领域内类别知识的记忆、对未见过的实例的泛化以及在适当上下文中灵活使用知识的能力。然后，我们使用 LeCat 来追踪如何在预训练中从文本中学习这些知识，这些文本可能以各种方式编码类别知识，例如逐字重复或例外，我们将其称为“知识表达”的形式。我们首先使用 199 个精选的类别特征对评估开源预训练模型，并分析它们的训练数据。我们的研究结果表明，加强上下文和类别特征共现可能性（PMI）可以改善对更大模型的学习，而逐字规则式的陈述会削弱灵活的类别学习。为了系统地隔离这些影响，我们从头开始训练一个 68M 模型，精确控制每个人在训练数据中看到的分类信息，确认逐字重复会降低灵活学习，但不同知识表达的混合会带来更稳健的类别学习。总之，我们的研究结果强调，虽然上下文灵活性对于模型来说一直很困难，但预训练中类别知识的表达方式极大地影响了模型对稳健类别知识的获取。",
@@ -73783,7 +73788,6 @@
       ]
     },
     "2611.18453": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -73811,7 +73815,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -73839,7 +73843,6 @@
         "updated": "2026-11-13T17:26:39+00:00",
         "version_id": "2611.18453v1"
       },
-      "pending_digest": "20261116T090420Z-e1f43e10-9bdf6e9f9b14",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -73859,7 +73862,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "通过 Ensemble-of-Ensembles 对大型语言模型进行黑盒不确定性量化",
       "translation": {
         "abstract_zh": "大型语言模型 (LLM) 的可靠使用需要不确定性估计，将提示固有的歧义与真正的知识差距区分开来。贝叶斯和深度集成方法原则上提供了这种任意/认知分解，但在法学硕士规模上计算量巨大，并且需要白盒访问。相比之下，现有的黑盒方法总结为无法区分的单个标量。我们引入了一个两级集成来弥补这一差距。固定提示的随机解码形成内部系综；提示的保留意义的语义扰动形成了外部整体。变异性是在连续嵌入空间中测量的，总协方差定律给出了精确的扰动内/扰动间分解，以估计任意和认知不确定性（AU/EU）；它只需要黑盒采样访问。在这个估计器之上，我们贡献了三个支撑该框架的理论结果：（i）嵌套蒙特卡罗的有限样本偏差恒等式和封闭式偏差校正认知估计器； (ii) 界定扰动总体 AU/EU 与贝叶斯目标之间差距的贝叶斯桥梁； (iii) 分离结果，识别一类故障模式，在基于扰动的 EU 检测时，任何纯一致性黑盒方法都可能会遗漏。在跨越两个系列和两个尺度的五个简短的 QA 基准和四个指令调整的 LLM 中，我们的估计器与强大的白盒基线具有竞争力，并且在匹配的生成预算下，它在分解 AU 和 EU 的同时，在错误排名方面与领先的黑盒方法相匹配；受控配对干预表明，非盟和欧盟有选择性地应对不同的、可采取行动的失败来源：提示模糊性和模型知识差距； NQ 长答案拆分的长格式试点表明，该框架无需重新训练即可扩展到主张级别的事实性。",
@@ -73872,7 +73875,6 @@
       ]
     },
     "2611.18471": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -73900,7 +73902,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -73924,7 +73926,6 @@
         "updated": "2026-11-13T17:44:01+00:00",
         "version_id": "2611.18471v1"
       },
-      "pending_digest": "20261116T090420Z-e1f43e10-9bdf6e9f9b14",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -73944,7 +73945,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "验证者的判断是否能够在抽象中幸存下来？测量 LLM 代理评估的验证传输",
       "translation": {
         "abstract_zh": "基于 LLM 的验证器越来越多地用于评估代理执行，但它们的可靠性通常是在轨迹的单一表示下进行测量的。在部署的代理系统中，相同的执行可能通过组合工具、委托边界或压缩历史公开，从而改变验证者可以直接观察到的执行证据。因此，尚不清楚正确的验证者判断是否能够跨越这种抽象边界。我们引入了验证传输，这是一种可靠性测试，用于测量抽象引起的执行可观察性变化下的判断稳定性。我们构建相同冻结执行的匹配的本机、抽象和恢复视图，同时保持任务、实现的轨迹、结果、基本事实、评估标准和验证者固定。在四个代理评估基准、七个验证者主干、四个验证协议和三个抽象边界中，我们发现大量传输失败，在宏观抽象和委托下达到约 31%。验证协议表现出不同的失败模式：直接验证更经常产生错误的判决，而基于证据和协商的协议往往在可观察性有限的情况下放弃。这表明较低的运输故障率并不一定意味着更高的可靠性。恢复相应的执行来源可以恢复 85.5% 的传输故障，而当来源丢失或不可用时，恢复率较低。这些结果表明，当执行证据跨越抽象边界时，仅本机视图准确性不足以表征验证者的可靠性。",
@@ -73957,7 +73958,6 @@
       ]
     },
     "2611.18493": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -73985,7 +73985,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -74012,7 +74012,6 @@
         "updated": "2026-11-13T18:05:23+00:00",
         "version_id": "2611.18493v1"
       },
-      "pending_digest": "20261116T090420Z-e1f43e10-9bdf6e9f9b14",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -74030,7 +74029,7 @@
         "llm_agent",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "TradeGauntlet：评估自主交易代理的合规控制",
       "translation": {
         "abstract_zh": "自主交易代理需要控制措施来防止有问题的订单，同时又不会使合法任务变得不切实际。我们使用 TradeGauntlet 研究代理合规性的这一方面，TradeGauntlet 是一个可重玩的限价订单簿模拟器，可将检测、预防和执行成本分开。在 Claude Haiku 5.5 和 Sonnet 5.5 的 1,680 次模拟会话中，所有行为警报都是自我匹配。盖茨通过拒绝自交叉订单消除了这些警报，而聚合门条件则将 Sonnet 的两侧填充减少了约 15%。行为提醒降低了十四行诗的警报率，但减少了俳句的填充，但没有明显的警报益处。这些结果说明了为什么仅靠零警报并不能确定代理的合规性。脚本化探针和两种搜索方法测试了法学硕士运行中观察到的弱点。搜索发现了规避已实施的行为规则的拆分订单时间表；学习基线捕获了所有 2,400 个测试搜索片段，但也标记了大型制作者会话的 15%。总上限不均匀地减少了响应相关的增益，当仅接近接触深度影响价格时，减少幅度较小。对五只纳斯达克股票的响应和单独的 ABIDES 实验揭示了这些估计对市场假设的依赖性。一个明显的对抗性提示导致 Sonnet 在所有 240 轮比赛中都被拒绝，没有产生可供评估的候选策略。 TradeGauntlet 提供围绕交易代理的可重复的控制测试；这些实验并没有建立法律合规性或真实市场检测的准确性。",
@@ -74043,7 +74042,6 @@
       ]
     },
     "2611.18504": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -74071,7 +74069,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -74095,7 +74093,6 @@
         "updated": "2026-11-13T18:20:23+00:00",
         "version_id": "2611.18504v1"
       },
-      "pending_digest": "20261116T090420Z-e1f43e10-9bdf6e9f9b14",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -74115,7 +74112,7 @@
         "llm_agent",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "用于发现容错量子电路的代理人工智能",
       "translation": {
         "abstract_zh": "目前，将量子计算扩展到实际量子优势受到对量子纠错码编码信息进行操作的电路效率的限制。量子计算的完整堆栈包含多项任务：逻辑代码状态的准备、逻辑门的实现、编码量子位上的逻辑例程等。然而，这些电路很大程度上是针对个别情况手工设计的，最近的一些工作在某些方面结合了机器学习。我们将这个问题表述为代理进化程序综合，其中一个大型语言模型利用其预训练知识和工具使用熟练程度，并在电路验证器的指导下，进化出一个程序，该程序定义了 Clifford 电路，用于各种策划任务，如逻辑状态准备、逻辑门设计和逻辑例程，如代码切换、代码增长等。我们的方法一致地为所有这些任务找到容错电路，每个任务都通过对错误的详尽检查来验证。",
@@ -74128,7 +74125,6 @@
       ]
     },
     "2611.18506": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -74156,7 +74152,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -74183,7 +74179,6 @@
         "updated": "2026-11-13T18:23:11+00:00",
         "version_id": "2611.18506v1"
       },
-      "pending_digest": "20261116T090420Z-e1f43e10-9bdf6e9f9b14",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -74201,7 +74196,7 @@
         "llm_agent",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "常见数据元素的代理归纳和从肉瘤病例报告摘要中提取信息",
       "translation": {
         "abstract_zh": "通用数据元素 (CDE) 支持临床数据可比性，但通常是手动定义的。我们研究了大型语言模型代理是否可以从肉瘤病例报告摘要中导出 CDE 模式并大规模应用它。代理人从 24,588 份 PubMed 摘要中提出了 72,909 份候选 CDE；代理整合产生了 1,570 个 CDE。 We retained 53 supported by at least 50 abstracts and attempted evidence-linked extraction across the corpus. Processing succeeded for all retained CDEs in 79.2% of abstracts, including responses indicating non-mention. Two human reviewers approved 83.0% of retained CDEs for relevance, 67.9% for clarity, and 56.6% for correctness.在 100 个抽样摘要中，1,116 对非空答案中与法学硕士提取的值的精确一致性为 94.9%（摘要级引导 95% CI，93.0-96.4%）。 Errors concentrated in anatomical and temporal fields. These findings support agent-assisted schema drafting followed by expert curation before large-scale extraction.",
@@ -74214,7 +74209,6 @@
       ]
     },
     "2611.18513": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -74242,7 +74236,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -74268,7 +74262,6 @@
         "updated": "2026-11-13T18:29:51+00:00",
         "version_id": "2611.18513v1"
       },
-      "pending_digest": "20261116T090420Z-e1f43e10-9bdf6e9f9b14",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -74284,7 +74277,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "MeReader：用于叙事电子书阅读的离线、隐私保护、进度感知人工智能助手",
       "translation": {
         "abstract_zh": "本文介绍了 MeReader，这是一种隐私保护、离线且具有进度感知能力的人工智能助手，旨在充当消费类硬件上叙事阅读的上下文伴侣。与传统的基于大语言模型 (LLM) 的系统以一次性处理所有文本的方式在线处理文档/书籍（从而存在叙事剧透的风险）不同，MeReader 将检索和生成限制在读者在文本中的不同位置。该系统集成了混合检索架构，结合了向量相似度、BM25 和摘要嵌入，以确保对读者当前上下文的高保真度。我们使用定量理解指标和基于法学硕士的定性独立判断来评估古典英语书籍的系统。结果确定了质量延迟边界，表明中型本地模型 (2b-4b) 可以实现与大型模型 (5b+) 相同的理解能力，同时保持可接受的响应质量。重要的是，所提出的进度感知边界机制可以防止未来的内容泄漏，而不会影响检索质量和正确性。这些发现表明，以隐私为中心的本地化方法可以增强而不是取代数字阅读体验，为依赖云的服务提供了良好的替代方案。其中，仍然缺乏将进度感知、隐私保护、叙事电子书阅读与人工智能支持结合起来的合并系统。正是在这个间隙，MeReader 的开发应运而生。将所述线索合成为离线的、受书籍限制的助手，重点是在不损害叙述连续性或用户隐私的情况下增强理解能力。",
@@ -74297,7 +74290,6 @@
       ]
     },
     "2611.18514": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -74325,7 +74317,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -74351,7 +74343,6 @@
         "updated": "2026-11-13T18:30:58+00:00",
         "version_id": "2611.18514v1"
       },
-      "pending_digest": "20261116T090420Z-e1f43e10-9bdf6e9f9b14",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -74371,7 +74362,7 @@
         "llm_safety",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "机械可解释性可以帮助解释 LLM 代理失败吗？网页元素幻觉案例研究",
       "translation": {
         "abstract_zh": "机械可解释性（MI）在解释大型语言模型（LLM）的内部计算方面取得了重大进展；然而，这些进展在解释法学硕士代理人的决策过程方面尚未取得可比的成功。本文探讨了 MI 工具在应用于实际代理故障时所面临的挑战。我们关注这样一种失败：网络代理产生网站上不可用的幻觉操作。当 Qwen2.5-7B-Instruct 与实时网站交互时，我们对其进行了一系列机械分析。我们发现，在最后一个提示标记上训练的线性探针可以在生成开始之前预测幻觉（0.80 AUC），并且沿着探针方向转向可以纠正 85% 的幻觉，但会破坏 7% 的有效动作。然而，这些结果仅部分解释了特工产生幻觉的原因。探测方向对提示格式很敏感，在对动作表示方式进行微小更改后会失去大部分转向效果。此外，电路识别可能很困难，因为计算分布在多个组件和位置上，并且代理所依赖的信息因示例而异。我们讨论这些观察结果如何挑战用于​​电路发现和特征识别的标准 MI 方法的假设，并概述了使这些方法更适合解释基于 LLM 的代理中的故障的未来方向。",
@@ -74384,7 +74375,6 @@
       ]
     },
     "2611.18527": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -74412,7 +74402,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -74440,7 +74430,6 @@
         "updated": "2026-11-13T18:41:44+00:00",
         "version_id": "2611.18527v1"
       },
-      "pending_digest": "20261116T090420Z-e1f43e10-9bdf6e9f9b14",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -74458,7 +74447,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "WaferTetris：晶圆级加速器上的高效自由映射",
       "translation": {
         "abstract_zh": "晶圆级加速器通过单个晶圆上互连的数十万个处理元件 (PE) 提供巨大的计算能力，但要实现这一潜力需要高效的应用映射。它们的规模使得对这些系统进行编程并将应用程序映射到它们上具有挑战性。现有方法依赖基于模板的映射来保持生产力，但这些模板限制了映射设计空间。特别是，它们在 PE 网格上强加固定的几何布局，通常导致计算和内存资源未得到充分利用。\n  在这项工作中，我们提出了 WaferTetris，这是一个通过自由形式映射消除这些几何限制的系统。其类似俄罗斯方块的策略灵活地将计算打包到晶圆上，提高 PE 利用率和可用内存容量，同时保留 PE 任务代码。我们开发了一个基于循环的吞吐量模型，该模型捕获分支和连接依赖性以指导空间并行性，以及一个具有每颜色门的架构模型，使现有的 FPGA 布局布线算法能够强制执行 WSE 布线约束。\n  我们使用 LLM 解码和科学模板基准在 Cerebras WSE-3 上评估 WaferTetris。对于 LLM 解码，它在相同结构尺寸上实现的系统吞吐量高达基于模板的自动映射基线的 4.42 倍。与手动优化的 WaferLLM 相比，WaferTetris 支持 LLaMA3.1-8B 的上下文长度 $1.8\\times$（80k 与 44k），同时在匹配的上下文长度下提供相同或更高的每用户吞吐量，最高可达 $1.10\\times$。",
@@ -74471,7 +74460,6 @@
       ]
     },
     "2611.18553": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -74499,7 +74487,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -74524,7 +74512,6 @@
         "updated": "2026-11-13T18:58:08+00:00",
         "version_id": "2611.18553v1"
       },
-      "pending_digest": "20261116T090420Z-e1f43e10-9bdf6e9f9b14",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -74544,7 +74531,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "WeightBench：作为权重空间程序员评估语言模型",
       "translation": {
         "abstract_zh": "最近的工作表明，大型语言模型（LLM）可以直接对其他神经网络的参数进行操作。他们可以读取网络的训练目的，修复失败的网络，并从头开始编写工作网络，所有这些都不需要梯度下降。这种能力被称为权重空间规划（WSP）。系统地探索这种新范式需要强大的基准。我们推出了 WEIGHTBENCH，这是一个基准，用于评估法学硕士在 42 个 WSP 任务上的能力提升，涉及五个方面：读取、修复和写入权重、识别不可能的编辑以及无数据压缩。法学硕士读取和编辑权重的网络范围从 2K 参数控制策略到 7B 参数语言模型。实验基准测试结果表明，前沿代理已经可以读取小型网络并编写工作控制策略，而无需运行它们，但还无法修补语言模型，在没有数据的情况下压缩它们，或者区分不可能的编辑和困难的编辑。在所有 42 项任务中，Claude Opus 5.5 的宏观得分为 0.535（Sonnet 5.5 0.466、Haiku 5.5 0.402、DeepSeek v4-flash 0.215）；在运行的 38 个任务中，GPT-6.1-sol 达到 0.568，而 Opus 为 0.546。代码、任务注册表、操作系统级沙箱工具和实时排行榜均可在 https://github.com/Aayush-Marasini/WeightBench 上公开获取。",
