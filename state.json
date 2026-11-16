@@ -69834,9 +69834,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-16T09:04:28.714814+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Autonomous trading agents need controls that prevent problematic orders without making legitimate tasks impractical. We study this aspect of agentic compliance with TradeGauntlet, a replayable limit-order-book simulator that separates detection, prevention, and execution cost. In 1,680 simulated sessions with Claude Haiku 5.5 and Sonnet 5.5, all conduct alerts were self-matches. Gates eliminated those alerts by rejecting self-crossing orders, while the aggregate-gate condition reduced Sonnet's two-sided fills by about 15%. A conduct reminder reduced Sonnet's alert rate but reduced Haiku's fills without a detectable alert benefit. These results show why zero alerts alone do not establish an agent's compliance. Scripted probes and two search methods test weaknesses beyond those observed in the LLM runs. The searches find split-order schedules that evade the implemented conduct rules; a learned baseline catches all 2,400 tested searched episodes but also flags 15% of a large maker's sessions. Aggregate caps reduce the response-dependent gain unevenly, with smaller reductions when only near-touch depth affects prices. A response fitted to five Nasdaq stocks and a separate ABIDES experiment expose the dependence of these estimates on market assumptions. A distinct adversarial prompt elicited refusals from Sonnet in all 240 rounds, yielding no candidate strategies to evaluate. TradeGauntlet provides reproducible tests of controls around trading agents; the experiments do not establish legal compliance or real-market detection accuracy.",
         "authors": [
@@ -69856,16 +69872,12 @@
         "updated": "2026-11-13T18:05:23+00:00",
         "version_id": "2611.18493v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-16T09:04:28.714814+00:00",
-        "run_id": "20261116T090428Z-10a2f157",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.18493v1"
       ]
