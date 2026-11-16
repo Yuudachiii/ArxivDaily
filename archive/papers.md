@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-16 | WeightBench: Evaluating Language Models as Weight-Space Programmers | 待翻译 | [arXiv 2611.18553v1](https://arxiv.org/abs/2611.18553v1) |
+| 2026-11-16 | WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators | 待翻译 | [arXiv 2611.18527v1](https://arxiv.org/abs/2611.18527v1) |
+| 2026-11-16 | Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination | 待翻译 | [arXiv 2611.18514v1](https://arxiv.org/abs/2611.18514v1) |
+| 2026-11-16 | MeReader: An Offline, Privacy-Preserving, Progress-Aware AI Assistant for Narrative eBook Reading | 待翻译 | [arXiv 2611.18513v1](https://arxiv.org/abs/2611.18513v1) |
+| 2026-11-16 | Agentic induction of common data elements and information extraction from sarcoma case report abstracts | 待翻译 | [arXiv 2611.18506v1](https://arxiv.org/abs/2611.18506v1) |
+| 2026-11-16 | Agentic AI for Discovering Fault-Tolerant Quantum Circuits | 待翻译 | [arXiv 2611.18504v1](https://arxiv.org/abs/2611.18504v1) |
+| 2026-11-16 | TradeGauntlet: Evaluating Compliance Controls for Autonomous Trading Agents | 待翻译 | [arXiv 2611.18493v1](https://arxiv.org/abs/2611.18493v1) |
+| 2026-11-16 | Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation | 待翻译 | [arXiv 2611.18471v1](https://arxiv.org/abs/2611.18471v1) |
+| 2026-11-16 | Black-Box Uncertainty Quantification for Large Language Models via Ensemble-of-Ensembles | 待翻译 | [arXiv 2611.18453v1](https://arxiv.org/abs/2611.18453v1) |
+| 2026-11-16 | LECAT: Measuring LLM Category Learning from Pretraining Data | 待翻译 | [arXiv 2611.18419v1](https://arxiv.org/abs/2611.18419v1) |
 | 2026-11-15 | Skill Adapter: Personalized Modification and Online Routing of General-Purpose Skills | 技能适配器：通用技能的个性化修改和在线路由（谷歌备用翻译） | [arXiv 2611.17007v1](https://arxiv.org/abs/2611.17007v1) |
 | 2026-11-15 | Primer: An AI Framework for Instructor-Centered Educational Simulation Creation | 入门：以教师为中心的教育模拟创建的人工智能框架（谷歌备用翻译） | [arXiv 2611.16986v1](https://arxiv.org/abs/2611.16986v1) |
 | 2026-11-15 | S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models | S1-Evo：针对类型化 System-1 决策模型的经验引导证据竞争攻击（谷歌备用翻译） | [arXiv 2611.16937v1](https://arxiv.org/abs/2611.16937v1) |
