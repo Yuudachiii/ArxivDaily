@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | 2026-11-16 | WeightBench: Evaluating Language Models as Weight-Space Programmers | WeightBench：作为权重空间程序员评估语言模型（谷歌备用翻译） | [arXiv 2611.18553v1](https://arxiv.org/abs/2611.18553v1) |
 | 2026-11-16 | WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators | WaferTetris：晶圆级加速器上的高效自由映射（谷歌备用翻译） | [arXiv 2611.18527v1](https://arxiv.org/abs/2611.18527v1) |
-| 2026-11-16 | Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination | 待翻译 | [arXiv 2611.18514v1](https://arxiv.org/abs/2611.18514v1) |
+| 2026-11-16 | Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination | 机械可解释性可以帮助解释 LLM 代理失败吗？网页元素幻觉案例研究（谷歌备用翻译） | [arXiv 2611.18514v1](https://arxiv.org/abs/2611.18514v1) |
 | 2026-11-16 | MeReader: An Offline, Privacy-Preserving, Progress-Aware AI Assistant for Narrative eBook Reading | 待翻译 | [arXiv 2611.18513v1](https://arxiv.org/abs/2611.18513v1) |
 | 2026-11-16 | Agentic induction of common data elements and information extraction from sarcoma case report abstracts | 待翻译 | [arXiv 2611.18506v1](https://arxiv.org/abs/2611.18506v1) |
 | 2026-11-16 | Agentic AI for Discovering Fault-Tolerant Quantum Circuits | 待翻译 | [arXiv 2611.18504v1](https://arxiv.org/abs/2611.18504v1) |
