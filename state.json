@@ -70378,11 +70378,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-16T09:04:28.714814+00:00",
-        "run_id": "20261116T090428Z-10a2f157",
-        "stage": "translation"
+      "title_zh": "WeightBench：作为权重空间程序员评估语言模型",
+      "translation": {
+        "abstract_zh": "最近的工作表明，大型语言模型（LLM）可以直接对其他神经网络的参数进行操作。他们可以读取网络的训练目的，修复失败的网络，并从头开始编写工作网络，所有这些都不需要梯度下降。这种能力被称为权重空间规划（WSP）。系统地探索这种新范式需要强大的基准。我们推出了 WEIGHTBENCH，这是一个基准，用于评估法学硕士在 42 个 WSP 任务上的能力提升，涉及五个方面：读取、修复和写入权重、识别不可能的编辑以及无数据压缩。法学硕士读取和编辑权重的网络范围从 2K 参数控制策略到 7B 参数语言模型。实验基准测试结果表明，前沿代理已经可以读取小型网络并编写工作控制策略，而无需运行它们，但还无法修补语言模型，在没有数据的情况下压缩它们，或者区分不可能的编辑和困难的编辑。在所有 42 项任务中，Claude Opus 5.5 的宏观得分为 0.535（Sonnet 5.5 0.466、Haiku 5.5 0.402、DeepSeek v4-flash 0.215）；在运行的 38 个任务中，GPT-6.1-sol 达到 0.568，而 Opus 为 0.546。代码、任务注册表、操作系统级沙箱工具和实时排行榜均可在 https://github.com/Aayush-Marasini/WeightBench 上公开获取。",
+        "fallback_provider": "google_free",
+        "title_zh": "WeightBench：作为权重空间程序员评估语言模型"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.18553v1"
       ]
