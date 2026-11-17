@@ -7,7 +7,7 @@
 | 2026-11-17 | FaceJev: Direct Visual Decisions for Face Forgery Detection | FaceJev：用于人脸伪造检测的直接视觉决策（谷歌备用翻译） | [arXiv 2611.21604v1](https://arxiv.org/abs/2611.21604v1) |
 | 2026-11-17 | ScenarioForge: Resource-Grounded Generation and Execution Validation of Cyber Exercises | ScenarioForge：网络演习的基于资源的生成和执行验证（谷歌备用翻译） | [arXiv 2611.21579v1](https://arxiv.org/abs/2611.21579v1) |
 | 2026-11-17 | When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents | 当工具名称不是身份时：测量基于 MCP 的 AI 代理中的提供者错误绑定（谷歌备用翻译） | [arXiv 2611.21577v1](https://arxiv.org/abs/2611.21577v1) |
-| 2026-11-17 | Right Reason, Wrong Advice: Evaluating Recourse in LLM Explanations of Denied Requests | 待翻译 | [arXiv 2611.21545v1](https://arxiv.org/abs/2611.21545v1) |
+| 2026-11-17 | Right Reason, Wrong Advice: Evaluating Recourse in LLM Explanations of Denied Requests | 正确的理由，错误的建议：评估法学硕士拒绝请求解释中的追索权（谷歌备用翻译） | [arXiv 2611.21545v1](https://arxiv.org/abs/2611.21545v1) |
 | 2026-11-17 | Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle | 待翻译 | [arXiv 2611.21538v1](https://arxiv.org/abs/2611.21538v1) |
 | 2026-11-17 | Evaluating Cultural Reasoning and Robustness in LLMs for Spanish Political Discourse | 待翻译 | [arXiv 2611.21535v1](https://arxiv.org/abs/2611.21535v1) |
 | 2026-11-17 | RESILAGENT: A Three-Pillar Architecture for Cyber-Physical Resilience in Electrical Power and Energy Systems | 待翻译 | [arXiv 2611.21480v1](https://arxiv.org/abs/2611.21480v1) |
