@@ -71311,11 +71311,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-17T10:16:31.742283+00:00",
-        "run_id": "20261117T101631Z-7b8f1fac",
-        "stage": "translation"
+      "title_zh": "RESILAGENT：电力和能源系统中网络物理弹性的三支柱架构",
+      "translation": {
+        "abstract_zh": "电力和能源系统面临着网络入侵、物理破坏和气候驱动压力的混合威胁，并且通常超过当今孤立的监控堆栈。我们提出了 RESILAGENT，这是一种围绕三个运营支柱（传感和数据智能、弹性分析和报告以及事件响应和恢复）组织的概念架构，由基于云的协调器协调，并通过封闭的检测-模拟-决策-签名循环进行执行。该框架融合了用于跨模式检测的代理人工智能和多模式大语言模型、用于假设模拟的实时数字孪生，以及用于防篡改威胁情报和 CER/NIS2 一致证据的许可区块链锚点。我们在两种场景中进行实例化，即传输运营商受到协调的网络破坏、破坏和热浪的影响，以及配电运营商在暴风雨期间遭受供应链破坏的情况，并报告了一个 IEEE 总线微基准，该基准通过虚假数据注入攻击检测、网络物理融合提升、N-1 应急筛选和锚定成本来量化每个支柱。",
+        "fallback_provider": "google_free",
+        "title_zh": "RESILAGENT：电力和能源系统中网络物理弹性的三支柱架构"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.21480v1"
       ]
