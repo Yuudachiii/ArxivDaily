@@ -71704,11 +71704,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-17T10:16:31.742283+00:00",
-        "run_id": "20261117T101631Z-7b8f1fac",
-        "stage": "translation"
+      "title_zh": "FaceJev：用于人脸伪造检测的直接视觉决策",
+      "translation": {
+        "abstract_zh": "人脸伪造检测方法通常在可见的操作上表现良好，但对于不可见的操作则泛化能力较差。多模态大语言模型 (MLLM) 可以识别面部部位并评估其视觉合理性。现有的基于 MLLM 的方法通常通过文本解释来表达这些判断，但很少将单个部分决策视为明确的学习目标。我们提出 FaceJev，一种基于 MLLM 的方法，通过直接视觉决策进行人脸伪造检测。按照 Jev 公式，FaceJev 使用共享图像编码回答有关面部部位的八个独立问题，并从本机答案逻辑中读取异常概率。如果预测到面部的任何部分异常，则将面部分类为伪造，将检测结果直接与部分决策联系起来。我们构建了 PartForensics，这是一个包含大约 16 万张图像的数据集，其中包含八个面部部位的二进制异常目标，以监督这些决策。我们进一步提出 FS-GRPO，它使用检测和部分奖励，通过与其替代方案进行精确奖励比较来优化每个部分决策。 FaceJev 在未见的操纵方面比最强基线高出 7.25 个百分点。广泛的消融研究验证了我们的设计选择和主要组件的有效性。",
+        "fallback_provider": "google_free",
+        "title_zh": "FaceJev：用于人脸伪造检测的直接视觉决策"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.21604v1"
       ]

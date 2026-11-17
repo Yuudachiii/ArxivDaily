@@ -4,7 +4,7 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
-| 2026-11-17 | FaceJev: Direct Visual Decisions for Face Forgery Detection | 待翻译 | [arXiv 2611.21604v1](https://arxiv.org/abs/2611.21604v1) |
+| 2026-11-17 | FaceJev: Direct Visual Decisions for Face Forgery Detection | FaceJev：用于人脸伪造检测的直接视觉决策（谷歌备用翻译） | [arXiv 2611.21604v1](https://arxiv.org/abs/2611.21604v1) |
 | 2026-11-17 | ScenarioForge: Resource-Grounded Generation and Execution Validation of Cyber Exercises | 待翻译 | [arXiv 2611.21579v1](https://arxiv.org/abs/2611.21579v1) |
 | 2026-11-17 | When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents | 待翻译 | [arXiv 2611.21577v1](https://arxiv.org/abs/2611.21577v1) |
 | 2026-11-17 | Right Reason, Wrong Advice: Evaluating Recourse in LLM Explanations of Denied Requests | 待翻译 | [arXiv 2611.21545v1](https://arxiv.org/abs/2611.21545v1) |
