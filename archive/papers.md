@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-17 | FaceJev: Direct Visual Decisions for Face Forgery Detection | 待翻译 | [arXiv 2611.21604v1](https://arxiv.org/abs/2611.21604v1) |
+| 2026-11-17 | ScenarioForge: Resource-Grounded Generation and Execution Validation of Cyber Exercises | 待翻译 | [arXiv 2611.21579v1](https://arxiv.org/abs/2611.21579v1) |
+| 2026-11-17 | When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents | 待翻译 | [arXiv 2611.21577v1](https://arxiv.org/abs/2611.21577v1) |
+| 2026-11-17 | Right Reason, Wrong Advice: Evaluating Recourse in LLM Explanations of Denied Requests | 待翻译 | [arXiv 2611.21545v1](https://arxiv.org/abs/2611.21545v1) |
+| 2026-11-17 | Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle | 待翻译 | [arXiv 2611.21538v1](https://arxiv.org/abs/2611.21538v1) |
+| 2026-11-17 | Evaluating Cultural Reasoning and Robustness in LLMs for Spanish Political Discourse | 待翻译 | [arXiv 2611.21535v1](https://arxiv.org/abs/2611.21535v1) |
+| 2026-11-17 | RESILAGENT: A Three-Pillar Architecture for Cyber-Physical Resilience in Electrical Power and Energy Systems | 待翻译 | [arXiv 2611.21480v1](https://arxiv.org/abs/2611.21480v1) |
+| 2026-11-17 | Generative AI and the Crisis of Higher Education Assessments: Examining 'AI-Proofing' Strategies for College-Level Assessments | 待翻译 | [arXiv 2611.21476v1](https://arxiv.org/abs/2611.21476v1) |
+| 2026-11-17 | Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing | 待翻译 | [arXiv 2611.21457v1](https://arxiv.org/abs/2611.21457v1) |
+| 2026-11-17 | Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers | 待翻译 | [arXiv 2611.21449v1](https://arxiv.org/abs/2611.21449v1) |
 | 2026-11-16 | WeightBench: Evaluating Language Models as Weight-Space Programmers | WeightBench：作为权重空间程序员评估语言模型（谷歌备用翻译） | [arXiv 2611.18553v1](https://arxiv.org/abs/2611.18553v1) |
 | 2026-11-16 | WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators | WaferTetris：晶圆级加速器上的高效自由映射（谷歌备用翻译） | [arXiv 2611.18527v1](https://arxiv.org/abs/2611.18527v1) |
 | 2026-11-16 | Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination | 机械可解释性可以帮助解释 LLM 代理失败吗？网页元素幻觉案例研究（谷歌备用翻译） | [arXiv 2611.18514v1](https://arxiv.org/abs/2611.18514v1) |
