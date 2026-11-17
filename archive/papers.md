@@ -12,7 +12,7 @@
 | 2026-11-17 | Evaluating Cultural Reasoning and Robustness in LLMs for Spanish Political Discourse | 评估西班牙政治话语法学硕士的文化推理和稳健性（谷歌备用翻译） | [arXiv 2611.21535v1](https://arxiv.org/abs/2611.21535v1) |
 | 2026-11-17 | RESILAGENT: A Three-Pillar Architecture for Cyber-Physical Resilience in Electrical Power and Energy Systems | RESILAGENT：电力和能源系统中网络物理弹性的三支柱架构（谷歌备用翻译） | [arXiv 2611.21480v1](https://arxiv.org/abs/2611.21480v1) |
 | 2026-11-17 | Generative AI and the Crisis of Higher Education Assessments: Examining 'AI-Proofing' Strategies for College-Level Assessments | 生成式人工智能和高等教育评估的危机：检查大学水平评估的“人工智能校对”策略（谷歌备用翻译） | [arXiv 2611.21476v1](https://arxiv.org/abs/2611.21476v1) |
-| 2026-11-17 | Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing | 待翻译 | [arXiv 2611.21457v1](https://arxiv.org/abs/2611.21457v1) |
+| 2026-11-17 | Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing | 走出视线，进入记忆：紧凑的视觉潜伏在超高分辨率遥感中保留本地证据（谷歌备用翻译） | [arXiv 2611.21457v1](https://arxiv.org/abs/2611.21457v1) |
 | 2026-11-17 | Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers | 待翻译 | [arXiv 2611.21449v1](https://arxiv.org/abs/2611.21449v1) |
 | 2026-11-16 | WeightBench: Evaluating Language Models as Weight-Space Programmers | WeightBench：作为权重空间程序员评估语言模型（谷歌备用翻译） | [arXiv 2611.18553v1](https://arxiv.org/abs/2611.18553v1) |
 | 2026-11-16 | WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators | WaferTetris：晶圆级加速器上的高效自由映射（谷歌备用翻译） | [arXiv 2611.18527v1](https://arxiv.org/abs/2611.18527v1) |
