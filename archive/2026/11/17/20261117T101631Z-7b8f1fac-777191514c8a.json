@@ -1,0 +1,443 @@
+{
+  "alert": false,
+  "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-microsoft/archive/2026/11/17/20261117T101631Z-7b8f1fac-777191514c8a.md",
+  "chain_roots": [
+    "20261117T101631Z-7b8f1fac-777191514c8a"
+  ],
+  "content_hash": "777191514c8ab6a2b6b70a359838e6d7d62ea522475b1cf263280872ab74d246",
+  "day": "2026-11-17",
+  "digest_id": "20261117T101631Z-7b8f1fac-777191514c8a",
+  "empty": false,
+  "items": [
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Face forgery detection methods often perform well on seen manipulations but generalize poorly to unseen ones. Multimodal Large Language Models (MLLMs) can recognize facial parts and assess their visual plausibility. Existing MLLM-based methods typically express these judgments through textual explanations, but seldom treat individual part decisions as explicit learning targets. We present FaceJev, an MLLM-based method for face forgery detection through direct visual decisions. Following the Jev formulation, FaceJev answers eight independent questions about facial parts using a shared image encoding and reads anomaly probabilities from the native answer logits. A face is classified as forged if any part is predicted to be abnormal, directly linking the detection result to the part decisions. We construct PartForensics, a dataset of approximately 160k images with binary anomaly targets for the eight facial parts, to supervise these decisions. We further propose FS-GRPO, which optimizes each part decision through an exact reward comparison with its alternative, using both detection and part rewards. FaceJev outperforms the strongest baseline by 7.25 percentage points on unseen manipulations. Extensive ablation studies validate our design choices and the effectiveness of the main components.",
+        "authors": [
+          "Siran Peng",
+          "Tianshuo Zhang",
+          "Yibo Xue",
+          "Ajian Liu",
+          "Haoyuan Zhang",
+          "Weisong Zhao",
+          "Shuhuan Chen",
+          "Xiangyu Zhu",
+          "Zhen Lei"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.21604v1",
+        "published": "2026-11-16T18:59:04+00:00",
+        "title": "FaceJev: Direct Visual Decisions for Face Forgery Detection",
+        "updated": "2026-11-16T18:59:04+00:00",
+        "version_id": "2611.21604v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_training",
+        "llm_multimodal",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "人脸伪造检测方法通常在可见的操作上表现良好，但对于不可见的操作则泛化能力较差。多模态大语言模型 (MLLM) 可以识别面部部位并评估其视觉合理性。现有的基于 MLLM 的方法通常通过文本解释来表达这些判断，但很少将单个部分决策视为明确的学习目标。我们提出 FaceJev，一种基于 MLLM 的方法，通过直接视觉决策进行人脸伪造检测。按照 Jev 公式，FaceJev 使用共享图像编码回答有关面部部位的八个独立问题，并从本机答案逻辑中读取异常概率。如果预测到面部的任何部分异常，则将面部分类为伪造，将检测结果直接与部分决策联系起来。我们构建了 PartForensics，这是一个包含大约 16 万张图像的数据集，其中包含八个面部部位的二进制异常目标，以监督这些决策。我们进一步提出 FS-GRPO，它使用检测和部分奖励，通过与其替代方案进行精确奖励比较来优化每个部分决策。 FaceJev 在未见的操纵方面比最强基线高出 7.25 个百分点。广泛的消融研究验证了我们的设计选择和主要组件的有效性。",
+        "fallback_provider": "google_free",
+        "title_zh": "FaceJev：用于人脸伪造检测的直接视觉决策"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Cyber-range and capture-the-flag scenario construction remains labor-intensive because authors must coordinate infrastructure, vulnerable services, attack paths, artifacts, and success conditions. LLMs can propose detailed exercises, but plausible descriptions do not guarantee deployable software or verifiable objectives. We present ScenarioForge, which turns high-level requirements into resource-grounded topologies, services, traffic, segmentation, and challenge chains, then instantiates and validates them in the Common Open Research Emulator (CORE). The ScenarioForge Execution Dataset contains 226 materialized scenarios covering 294 Vulhub images and all 85 custom-built challenge-resource generators developed with our AI-assisted scaffolding. All 226 passed construction, preview, sequencing, deployment, strict runtime validation, and live artifact checks; their 867 steps, each an individually verifiable challenge objective, comprise 457 vulnerability-backed and 410 generated-resource-backed instances. In a separate 50-prompt matched benchmark, ScenarioForge+Qwen3.8 and ScenarioForge+GPT5.6 each achieved 50/50 (100%) topology/build success and 160/160 intent fields; direct frontier generation reached 41/50 builds and 147/160 fields only with the full cumulative scaffold: structure, vocabulary, policy, and container-image guidance. The test still omitted ScenarioForge's downstream challenge-resource generation, dependency/flag sequencing, deployment, and live validation. The artifacts support operationally rich, reproducible exercises for training and evaluation.",
+        "authors": [
+          "Jaime C. Acosta",
+          "Anantaa Kotal",
+          "Aritran Piplai"
+        ],
+        "categories": [
+          "cs.CR",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.21579v1",
+        "published": "2026-11-16T18:49:56+00:00",
+        "title": "ScenarioForge: Resource-Grounded Generation and Execution Validation of Cyber Exercises",
+        "updated": "2026-11-16T18:49:56+00:00",
+        "version_id": "2611.21579v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "网络靶场和夺旗场景构建仍然是劳动密集型的，因为作者必须协调基础设施、易受攻击的服务、攻击路径、工件和成功条件。法学硕士可以提出详细的练习，但合理的描述并不能保证可部署的软件或可验证的目标。我们提出了 ScenarioForge，它将高级需求转化为基于资源的拓扑、服务、流量、分段和挑战链，然后在通用开放研究模拟器 (CORE) 中实例化和验证它们。 ScenarioForge 执行数据集包含 226 个具体化场景，涵盖 294 个 Vulhub 图像以及使用我们的 AI 辅助脚手架开发的所有 85 个定制挑战资源生成器。所有 226 个都通过了构建、预览、排序、部署、严格的运行时验证和实时工件检查；他们的 867 个步骤，每个步骤都是一个可单独验证的挑战目标，包括 457 个漏洞支持的实例和 410 个生成资源支持的实例。在单独的 50 提示匹配基准中，ScenarioForge+Qwen3.8 和 ScenarioForge+GPT5.6 各自实现了 50/50 (100%) 拓扑/构建成功和 160/160 意图字段；仅使用完整的累积支架：结构、词汇、策略和容器图像指导，直接前沿生成就达到了 41/50 构建和 147/160 字段。该测试仍然省略了 ScenarioForge 的下游挑战资源生成、依赖项/标志排序、部署和实时验证。这些工件支持操作丰富、可重复的训练和评估练习。",
+        "fallback_provider": "google_free",
+        "title_zh": "ScenarioForge：网络演习的基于资源的生成和执行验证"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Large language model (LLM) applications increasingly act as agents that select and invoke external tools. The Model Context Protocol (MCP) standardizes this interaction by allowing clients to compose tools advertised by multiple servers. However, tool metadata used for discovery and selection is not, by itself, necessarily bound to a verified provider identity. This paper studies this gap as tool-provider misbinding: a failure in which a request intended for a legitimate provider is instead resolved to an attacker-controlled tool. The attacker does not compromise the host, LLM, legitimate server, or network channel; it only operates another MCP server that advertises tools with chosen metadata. We formulate tool provider misbinding as an attacker-controlled tool-selection optimization problem and evaluate it in a controlled MCP environment across five LLM-based clients. The results show that interactions drive misbinding. The strongest failures occur when exact-name collision, task-aligned description, and compatible schema reinforce one another, but authority-enhanced descriptions with compatible schema can also cause wrong-provider execution or unresolved provider ambiguity without name collision. Different models expose the same provider-binding weakness differently, including attacker-controlled provider selection, clarification requests, and unstable or inconsistent provider resolution.",
+        "authors": [
+          "Zeynab Anbiaee",
+          "Sajjad Dadkhah",
+          "Ali A. Ghorbani"
+        ],
+        "categories": [
+          "cs.CR",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.21577v1",
+        "published": "2026-11-16T18:49:37+00:00",
+        "title": "When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents",
+        "updated": "2026-11-16T18:49:37+00:00",
+        "version_id": "2611.21577v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_agent",
+        "llm_safety",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "大型语言模型 (LLM) 应用程序越来越多地充当选择和调用外部工具的代理。模型上下文协议 (MCP) 通过允许客户端组合由多个服务器通告的工具来标准化此交互。然而，用于发现和选择的工具元数据本身不一定与经过验证的提供者身份绑定。本文将这一差距研究为工具提供者错误绑定：针对合法提供者的请求被解析为攻击者控制的工具的故障。攻击者不会破坏主机、LLM、合法服务器或网络通道；它只运行另一个 MCP 服务器，该服务器使用所选元数据来宣传工具。我们将工具提供者错误绑定表述为攻击者控制的工具选择优化问题，并在五个基于 LLM 的客户端的受控 MCP 环境中对其进行评估。结果表明，相互作用会导致错误结合。当精确名称冲突、任务对齐描述和兼容模式相互加强时，就会发生最严重的失败，但是具有兼容模式的权威增强描述也可能导致错误的提供程序执行或未解决的提供程序歧义而没有名称冲突。不同的模型以不同的方式暴露相同的提供者绑定弱点，包括攻击者控制的提供者选择、澄清请求以及不稳定或不一致的提供者解析。",
+        "fallback_provider": "google_free",
+        "title_zh": "当工具名称不是身份时：测量基于 MCP 的 AI 代理中的提供者错误绑定"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Language models increasingly write the explanations people receive when a rule system denies their request. If several rules deny the request independently, an explanation can name a true reason and still leave the person denied after they fix it. We call the missing property recourse validity: changing what the explanation cites, without changing what was asked for, can flip the decision. We compute it exactly, and a hitting-set argument predicts from the policy alone when a correct reason fails. In six of seven rule systems ported from access control and US benefit eligibility, a single correct reason almost never gives recourse when several reasons apply. Across 20 LLMs, checks of whether the cited reasons are correct, computed or asked of an LLM judge, are close to chance at spotting this failure, as the argument predicts. A strong judge asked whether acting on the explanation would work does spot it. Stronger and reasoning models do better but still fail on many denials with four or more independent reasons. Asking for every rule helps every open model with room to improve. Explanations of eligibility decisions should be built from the decision function and judged by whether acting on them works.",
+        "authors": [
+          "Arunkumar V"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.CY"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.21545v1",
+        "published": "2026-11-16T18:30:11+00:00",
+        "title": "Right Reason, Wrong Advice: Evaluating Recourse in LLM Explanations of Denied Requests",
+        "updated": "2026-11-16T18:30:11+00:00",
+        "version_id": "2611.21545v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "当规则系统拒绝人们的请求时，语言模型越来越多地编写人们收到的解释。如果多个规则独立地拒绝请求，则解释可以说出真正的原因，并且在解决问题后仍然会让该人被拒绝。我们将缺失的财产追索有效性称为：改变解释所引用的内容，而不改变所要求的内容，可以改变决定。我们精确地计算它，并且当正确的原因失败时，命中集参数仅根据策略进行预测。在从访问控制和美国福利资格移植的七个规则系统中，有六个规则系统在多个原因适用时几乎不会提供追索权。正如论证所预测的那样，在 20 个法学硕士中，检查所引用的原因是否正确、经过计算或询问法学硕士法官，很可能会发现这种失败。一位强硬的法官询问，根据这一解释采取行动是否有效，确实能发现这一点。更强的推理模型做得更好，但在有四个或更多独立原因的许多否认中仍然失败。询问每条规则有助于每个开放模型都有改进的空间。资格决策的解释应根据决策函数构建，并根据对其采取行动是否有效来判断。",
+        "fallback_provider": "google_free",
+        "title_zh": "正确的理由，错误的建议：评估法学硕士拒绝请求解释中的追索权"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Reinforcement learning from verifiable rewards inherits whatever its verifier gets wrong. Outside mathematics and code the verifier is a proxy, a rubric, a learned judge or a hand-written checker, and its distance from the true objective is never measured, so a rising reward cannot be told apart from a hack. We build a setting where the true reward is exactly computable at the process level: executable authorization policies over 124,416 contexts admit an oracle that lists every minimal sufficient reason for every decision. We compile these policies into exact process rewards, degrade the verifier along seven realistic axes (outcome-only, sufficiency, recall-only, extraction noise, coarse taxonomy, stale policy, LLM judge), and train against each while the exact verifier scores every rollout. Four phenotypes appear. Optimistic verifiers are hacked by padding: the sufficiency proxy ends at 0.940 while true faithfulness falls from 0.731 to 0.667 on 96 held-out episodes. Outcome-only verifiers saturate and stop teaching, noise dilutes, and ranking-preserving gaps do no harm. A model-free audit of the verifier, its selection error and gap sign, together with a short saturation pilot, anticipates which phenotype a run will produce. Across nine configurations spanning two frameworks, two model vendors, two adapter sizes, three precisions, two initialisations and two seeds, the phenotypes recur, sufficiency damage is positive in all 10 replication cells and beyond two standard errors in 7, and optimistic gaps remain the steeper branch. The damage magnitude does not replicate, and five pre-registered attempts to explain it are reported as they fell. We release the testbed, the training instrumentation, and 14 real public policies (Cedar, OPA, Gatekeeper) ported to executable oracles.",
+        "authors": [
+          "Arunkumar V",
+          "Manoranjan Gandhudi",
+          "Gangadharan G. R.",
+          "Arun Prakash",
+          "S. Senthilkumar"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.21538v1",
+        "published": "2026-11-16T18:25:42+00:00",
+        "title": "Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle",
+        "updated": "2026-11-16T18:25:42+00:00",
+        "version_id": "2611.21538v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "从可验证的奖励中进行强化学习会继承验证者犯的任何错误。在数学和代码之外，验证者是一个代理、一个标题、一个博学的法官或一个手写的检查者，它与真实目标的距离永远无法测量，因此不断增加的奖励不能与黑客区别开来。我们构建了一个设置，其中真正的奖励在流程级别上是完全可计算的：超过 124,416 个上下文的可执行授权策略承认一个预言机，它列出了每个决策的每个最小充分理由。我们将这些策略编译成精确的过程奖励，沿着七个现实轴（仅结果、充分性、仅召回、提取噪声、粗分类、陈旧策略、法学硕士法官）对验证者进行降级，并针对每个轴进行训练，同时精确验证者对每次推出进行评分。出现四种表型。乐观验证者受到填充攻击：充分性代理以 0.940 结束，而真实可信度在 96 个保留片段中从 0.731 下降到 0.667。只注重结果的验证者会饱和并停止教学，噪音会减弱，排名保持差距也不会造成任何损害。对验证器、其选择误差和间隙符号的无模型审核以及简短的饱和试验，可以预测运行将产生哪种表型。在跨越两个框架、两个模型供应商、两种适配器大小、三种精度、两种初始化和两种种子的九种配置中，表型重复出现，所有 10 个复制单元中的充分性损伤均为正，7 个复制单元中的充分性损伤超过两个标准误差，并且乐观差距仍然是更陡峭的分支。损坏程度无法复制，并且在坠落时报告了五次预先登记的解释尝试。我们发布了测试床、训练工具以及移植到可执行预言机的 14 个真实公共策略（Cedar、OPA、Gatekeeper）。",
+        "fallback_provider": "google_free",
+        "title_zh": "乐观验证者遭到黑客攻击：在精确流程 Oracle 下奖励黑客攻击"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Large language models (LLMs) are increasingly used to interpret, generate, and mediate public-facing language, which makes their reliability especially consequential in politically sensitive settings. Although sentiment analysis is a common task in this area, affective meaning in social media discourse is often conveyed through culturally situated and pragmatically indirect cues that are not well captured by label-centric evaluation alone. In this paper, we evaluate the robustness of LLMs for sentiment analysis of Spanish political discourse from social media, with emphasis on culturally situated affective interpretation. We introduce a diagnostic protocol that combines three independent human annotation views into Gold and Ambiguous subsets, and extends the corpus with a Synthetic subset built from sentiment-flipped counterfactuals selected through model-conditioned perplexity and LLM-as-a-judge criteria. Using this framework, we compare proprietary and open-weight models under zero-shot and few-shot prompting, focusing on predictive robustness across human agreement conditions and counterfactual shift. Our results show that annotation ambiguity and counterfactual perturbation reveal failure modes that conventional evaluation on the original corpus tends to obscure. GPT-4.1-mini remains the most stable among the evaluated models, whereas the two smaller open-weight models degrade more markedly under synthetic perturbations, and few-shot prompting provides only limited gains. Overall, the paper contributes a reproducible protocol for robustness-oriented evaluation in political sentiment analysis, an empirical characterization of model behavior under ambiguity and sentiment-flipped counterfactuals, and a publicly available Spanish social media dataset with three-way human sentiment annotations.",
+        "authors": [
+          "Jorge Valverde-Rebaza",
+          "Nathan Garcia-Larios",
+          "Karime Ruvalcaba-Perez",
+          "Alejandro Rendon",
+          "Santiago Sanchez-Ballesteros",
+          "Alejandro Martin del Campo"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.CY",
+          "cs.SI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.21535v1",
+        "published": "2026-11-16T18:24:48+00:00",
+        "title": "Evaluating Cultural Reasoning and Robustness in LLMs for Spanish Political Discourse",
+        "updated": "2026-11-16T18:24:48+00:00",
+        "version_id": "2611.21535v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "大型语言模型 (LLM) 越来越多地用于解释、生成和调解面向公众的语言，这使得它们的可靠性在政治敏感环境中尤其重要。尽管情感分析是该领域的一项常见任务，但社交媒体话语中的情感意义通常是通过文化定位和实用的间接线索来传达的，而仅以标签为中心的评估无法很好地捕获这些线索。在本文中，我们评估了法学硕士对社交媒体上的西班牙政治话语进行情感分析的稳健性，重点是文化背景下的情感解释。我们引入了一种诊断协议，它将三个独立的人类注释视图组合成黄金子集和模糊子集，并使用根据模型条件的困惑和法学硕士作为法官标准选择的情绪翻转的反事实构建的合成子集扩展语料库。使用这个框架，我们在零样本和少样本提示下比较专有模型和开放权重模型，重点关注跨人类协议条件和反事实转变的预测稳健性。我们的结果表明，注释歧义和反事实扰动揭示了对原始语料库的常规评估往往会掩盖的故障模式。 GPT-4.1-mini 仍然是评估的模型中最稳定的，而两个较小的开放权重模型在合成扰动下退化更明显，并且少数样本提示仅提供有限的增益。总体而言，本文为政治情绪分析中的鲁棒性评估提供了一个可重复的协议，在模糊性和情绪翻转的反事实下对模型行为进行了实证表征，并提供了一个公开的具有三向人类情绪注释的西班牙社交媒体数据集。",
+        "fallback_provider": "google_free",
+        "title_zh": "评估西班牙政治话语法学硕士的文化推理和稳健性"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Electrical Power and Energy Systems face hybrid threats that combine cyber intrusions, physical sabotage and climate-driven stress, and routinely outpace today's siloed monitoring stacks. We present RESILAGENT, a concept architecture organised around three operational pillars, Sensing & Data Intelligence, Resilience Analytics & Reporting, and Incident Response & Recovery, mediated by a Cloud-based Orchestrator and exercised through a closed Detect-Simulate-Decide-Sign loop. The framework fuses agentic artificial intelligence and multimodal large language models for cross-modal detection, real-time digital twins for what-if simulation, and a permissioned blockchain anchor for tamper-evident threat intelligence and CER/NIS2-aligned evidence. We instantiate it on two scenarios, a transmission operator under coordinated cyber compromise, sabotage and heatwave, and a distribution operator under a supply-chain compromise during a storm, and report an IEEE-bus micro-benchmark that quantifies each pillar through false-data-injection attack detection, cyber-physical fusion lift, N-1 contingency screening and anchor cost.",
+        "authors": [
+          "Nikolaos Kekatos",
+          "Georgios Koutidis",
+          "Konstantinos Antonakopoulos",
+          "Stylianos Basagiannis",
+          "Sokratis Katsikas",
+          "Georgios Kavallieratos",
+          "Alexios Lekidis",
+          "Tom Nianios",
+          "Elpiniki Papageorgiou"
+        ],
+        "categories": [
+          "cs.CR",
+          "cs.AI",
+          "eess.SY"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.21480v1",
+        "published": "2026-11-16T17:51:46+00:00",
+        "title": "RESILAGENT: A Three-Pillar Architecture for Cyber-Physical Resilience in Electrical Power and Energy Systems",
+        "updated": "2026-11-16T17:51:46+00:00",
+        "version_id": "2611.21480v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_agent",
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "电力和能源系统面临着网络入侵、物理破坏和气候驱动压力的混合威胁，并且通常超过当今孤立的监控堆栈。我们提出了 RESILAGENT，这是一种围绕三个运营支柱（传感和数据智能、弹性分析和报告以及事件响应和恢复）组织的概念架构，由基于云的协调器协调，并通过封闭的检测-模拟-决策-签名循环进行执行。该框架融合了用于跨模式检测的代理人工智能和多模式大语言模型、用于假设模拟的实时数字孪生，以及用于防篡改威胁情报和 CER/NIS2 一致证据的许可区块链锚点。我们在两种场景中进行实例化，即传输运营商受到协调的网络破坏、破坏和热浪的影响，以及配电运营商在暴风雨期间遭受供应链破坏的情况，并报告了一个 IEEE 总线微基准，该基准通过虚假数据注入攻击检测、网络物理融合提升、N-1 应急筛选和锚定成本来量化每个支柱。",
+        "fallback_provider": "google_free",
+        "title_zh": "RESILAGENT：电力和能源系统中网络物理弹性的三支柱架构"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Higher education is confronting an academic-integrity challenge unlike any in its history. Students can now outsource homework, take-home assignments, and online examinations to large language models (LLMs) that complete them in seconds. Existing research on evaluating LLM performance on academic assessments has focused largely on standardized examinations, or on questions from college-level courses drawn from a single discipline. Far less is known about how LLMs perform on college-level assessment questions spanning multiple disciplines, that instructors have purposely designed to be AI-resistant, and about which features of such questions, if any, meaningfully constrain LLM performance. We address this gap by collecting 75 questions from authentic college coursework assessments, spanning 17 disciplines, which were contributed by 37 faculty members from ten U.S. universities and one U.K. university. Of these, 61 questions were intentionally designed by faculty members to be 'LLM-proof', while the remaining 14 questions were sourced from online courses. We then (i) evaluate three state-of-the-art LLMs' ability to correctly answer these questions with and without supplementary course materials; (ii) identify five strategies, through thematic analysis, that faculty used to make their questions harder for LLMs to solve; and (iii) test whether these strategies impact LLMs' ability to answer the questions accurately. Our experimental results show that the best-performing model scored approximately 83% without supplementary course materials and 85% with them, and we observed noteworthy differences across models, answer formats, and instructor tweaking strategies. We discuss implications for assessment design, academic-integrity policy, and the broader ethics of deploying LLMs in educational settings.",
+        "authors": [
+          "Bonam Mingole",
+          "Davis Yadav",
+          "Hui Min Lee",
+          "S. Shyam Sundar",
+          "Amulya Yadav"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.21476v1",
+        "published": "2026-11-16T17:50:14+00:00",
+        "title": "Generative AI and the Crisis of Higher Education Assessments: Examining 'AI-Proofing' Strategies for College-Level Assessments",
+        "updated": "2026-11-16T17:50:14+00:00",
+        "version_id": "2611.21476v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "高等教育正面临着历史上从未有过的学术诚信挑战。学生现在可以将家庭作业、带回家的作业和在线考试外包给大型语言模型 (LLM)，这些模型可以在几秒钟内完成。现有的评估法学硕士学术评估表现的研究主要集中在标准化考试或来自单一学科的大学水平课程的问题上。人们对法学硕士在跨多个学科的大学水平评估问题上的表现、教师故意设计的人工智能抵抗性以及此类问题的哪些特征（如果有的话）有意义地限制法学硕士的表现知之甚少。我们从真实的大学课程作业评估中收集了 75 个问题，涵盖 17 个学科，弥补了这一差距，这些问题由来自 10 所美国大学和一所英国大学的 37 名教职人员贡献。其中，61 个问题是由教师特意设计的“LLM 证明”，而其余 14 个问题则来自在线课程。然后，我们（i）评估三位最先进的法学硕士在有或没有补充课程材料的情况下正确回答这些问题的能力； (ii) 通过主题分析，确定教师用来使法学硕士更难解决问题的五种策略； (iii) 测试这些策略是否影响法学硕士准确回答问题的能力。我们的实验结果表明，在没有补充课程材料的情况下，表现最好的模型得分约为 83%，在有补充课程材料的情况下得分为 85%，并且我们观察到模型、答案格式和教师调整策略之间存在显着差异。我们讨论了对评估设计、学术诚信政策以及在教育环境中部署法学硕士的更广泛道德的影响。",
+        "fallback_provider": "google_free",
+        "title_zh": "生成式人工智能和高等教育评估的危机：检查大学水平评估的“人工智能校对”策略"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Question answering over ultra-high-resolution (UHR) remote sensing scenes poses a tension for multimodal large language models: global overviews obscure small objects and local attributes, whereas detailed crops consume substantial context. Compressing inspected crops into short sequences of continuous visual latents offers a compact memory once crop tokens are discarded, yet diagnostic studies on natural images find that models often ignore latent content, leaving unclear whether compact latents can retain fine-grained targets lost in downsampled UHR remote sensing scenes. To isolate evidence retention from region selection, we encode high-resolution crops into latent memory tokens for frozen backbones and evaluate both their predictive utility and content dependence. Across two generations of Qwen-VL on LRS-GRO, a 64-token memory achieves 7.6- to 9.9-fold compression of retained crop tokens and improves accuracy by 2.5 to 4.8 percentage points over the downsampled global image alone, recovering most of the high-resolution crop gain with consistent behavior on XLRS-Bench. Substituting memory from another image or another region of the same scene reduces accuracy by 5.8 to 7.4 percentage points and yields lower accuracy than removing memory altogether, demonstrating that predictions depend on the encoded regional evidence. Restoring the source crop within the same model reduces the accuracy loss caused by zeroing or removing memory. These findings establish that compact visual latents retain useful local evidence in UHR remote sensing and identify evidence availability as a key factor governing their contribution.",
+        "authors": [
+          "Meng Tang",
+          "Siyuan Du",
+          "Yuxin Liu",
+          "Shuaishuai Cao",
+          "Di Wang",
+          "Haonan Guo"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.21457v1",
+        "published": "2026-11-16T17:42:12+00:00",
+        "title": "Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing",
+        "updated": "2026-11-16T17:42:12+00:00",
+        "version_id": "2611.21457v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "超高分辨率（UHR）遥感场景的问答给多模态大语言模型带来了压力：全局概览模糊了小物体和局部属性，而详细的作物消耗了大量的上下文。一旦作物标记被丢弃，将检查的作物压缩成连续视觉潜在的短序列可以提供紧凑的记忆，但对自然图像的诊断研究发现模型经常忽略潜在内容，从而不清楚紧凑的潜在是否可以保留在下采样的UHR遥感场景中丢失的细粒度目标。为了将证据保留与区域选择分开，我们将高分辨率作物编码成冻结主干的潜在记忆标记，并评估它们的预测效用和内容依赖性。在 LRS-GRO 上的两代 Qwen-VL 中，64 个令牌内存实现了保留裁剪令牌的 7.6 至 9.9 倍压缩，并且仅比下采样全局图像的精度提高了 2.5 至 4.8 个百分点，恢复了大部分高分辨率裁剪增益，并在 XLRS-Bench 上保持一致的行为。用另一张图像或同一场景的另一个区域替换记忆会降低准确度 5.8 到 7.4 个百分点，并且比完全删除记忆产生的准确度更低，这表明预测取决于编码的区域证据。在同一模型中恢复源裁剪可减少因归零或删除内存而导致的精度损失。这些发现表明，紧凑的视觉潜伏在 UHR 遥感中保留了有用的本地证据，并将证据可用性确定为控制其贡献的关键因素。",
+        "fallback_provider": "google_free",
+        "title_zh": "走出视线，进入记忆：紧凑的视觉潜伏在超高分辨率遥感中保留本地证据"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Researchers at MIT recently reported that GPT-6 Astra, a frontier large language model (LLM), can write the weights of small neural networks directly in a single reply, and can read the raw weights of small networks to say what they were trained to do. In a three-day sprint, we replicated and extended these results. Our four findings: (1) Writing weights reproduces. Astra's networks for the game Breakout scored 514, 550 and 307 (versus MIT's 517), and scored just as well on two modified versions of Breakout. Claude Opus 5.5 can also write working networks, but often runs out of output tokens. (2) What is new is translating programs into weights. Earlier models could write a good policy as code a generation before they could write network weights, and the networks the models write behave like compiled programs: two models independently decompiled Astra's Breakout network into Python matching its actions in all tested states. On classifying handwritten digits, Astra's networks scored 50% on average, below a simple classifier (82%). (3) Reading weights is mostly reading the input layer. Astra and Opus 5.5 identify which game a network plays almost perfectly, but on three new games we designed and trained ourselves, Astra recovered where things are on the board, while mostly missing how the game works. (4) Auditing from weights alone is possible but shallow. Without executing code, Astra picked out a small language model poisoned during training in 10 of 10 runs, one poisoned by extra training afterwards in 7 of 10, and a malicious adapter in 23 of 32 cases, but never identified the trigger or malicious behaviour. Open-weight models lag behind. From this early study, we conclude that LLMs can read and write small networks, but that this currently amounts to compiling hand-designed programs and reading the layout of the input layer. It is a promising but early tool for interpretability.",
+        "authors": [
+          "Roksana Goworek",
+          "Alexander Hickey",
+          "Federico Nanni",
+          "Martin O'Reilly"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.21449v1",
+        "published": "2026-11-16T17:35:18+00:00",
+        "title": "Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers",
+        "updated": "2026-11-16T17:35:18+00:00",
+        "version_id": "2611.21449v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "麻省理工学院的研究人员最近报告称，GPT-6 Astra是一种前沿大语言模型（LLM），可以直接在单个回复中写入小型神经网络的权重，并且可以读取小型网络的原始权重来说出它们被训练的目的。在为期三天的冲刺中，我们复制并扩展了这些结果。我们的四个发现：（1）书写重量可再现。 Astra 的游戏 Breakout 网络得分为 514、550 和 307（相对于 MIT 的 517），并且在 Breakout 的两个修改版本上得分同样好。 Claude Opus 5.5 也可以编写工作网络，但经常会耗尽输出令牌。 (2)新的是将程序转化为权重。早期的模型可以在编写网络权重之前将良好的策略编写为代码，并且模型编写的网络的行为就像编译的程序：两个模型独立地将 Astra 的 Breakout 网络反编译为 Python，匹配其在所有测试状态下的操作。在对手写数字进行分类时，Astra 的网络平均得分为 50%，低于简单分类器 (82%)。 (3)读取权重主要是读取输入层。 Astra 和 Opus 5.5 几乎可以完美地识别网络玩的游戏，但在我们自己设计和训练的三款新游戏中，Astra 恢复了棋盘上的位置，但大部分都忽略了游戏的运作方式。 (4) 仅根据权重进行审核是可能的，但很浅薄。在不执行代码的情况下，Astra 在 10 次运行中发现了 10 次在训练期间中毒的小型语言模型，在 10 次运行中的 7 次中发现了一个在训练后中毒的小型语言模型，在 32 次运行中的 23 次中发现了恶意适配器，但从未识别出触发器或恶意行为。开放重量模型落后。从这项早期研究中，我们得出结论，法学硕士可以读写小型网络，但这目前相当于编译手工设计的程序并读取输入层的布局。它是一个很有前途但早期的可解释性工具。",
+        "fallback_provider": "google_free",
+        "title_zh": "复制和扩展权重空间编程：前沿法学硕士将程序编译为权重并读取输入层"
+      }
+    }
+  ],
+  "notification_hash": "08523c30008fa6aad6bb37f1b0f094bed42204f73c4dceecdb261f9cedeaa503",
+  "recovery_of": [],
+  "rendered": {
+    "2611.21449": "translation_archive_link_only",
+    "2611.21457": "rendered_inline_translation",
+    "2611.21476": "rendered_inline_translation",
+    "2611.21480": "rendered_inline_translation",
+    "2611.21535": "rendered_inline_translation",
+    "2611.21538": "rendered_inline_translation",
+    "2611.21545": "rendered_inline_translation",
+    "2611.21577": "rendered_inline_translation",
+    "2611.21579": "rendered_inline_translation",
+    "2611.21604": "rendered_inline_translation"
+  },
+  "run_id": "20261117T101631Z-7b8f1fac",
+  "schema_version": 1
+}
