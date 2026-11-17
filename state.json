@@ -71634,11 +71634,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-17T10:16:31.742283+00:00",
-        "run_id": "20261117T101631Z-7b8f1fac",
-        "stage": "translation"
+      "title_zh": "ScenarioForge：网络演习的基于资源的生成和执行验证",
+      "translation": {
+        "abstract_zh": "网络靶场和夺旗场景构建仍然是劳动密集型的，因为作者必须协调基础设施、易受攻击的服务、攻击路径、工件和成功条件。法学硕士可以提出详细的练习，但合理的描述并不能保证可部署的软件或可验证的目标。我们提出了 ScenarioForge，它将高级需求转化为基于资源的拓扑、服务、流量、分段和挑战链，然后在通用开放研究模拟器 (CORE) 中实例化和验证它们。 ScenarioForge 执行数据集包含 226 个具体化场景，涵盖 294 个 Vulhub 图像以及使用我们的 AI 辅助脚手架开发的所有 85 个定制挑战资源生成器。所有 226 个都通过了构建、预览、排序、部署、严格的运行时验证和实时工件检查；他们的 867 个步骤，每个步骤都是一个可单独验证的挑战目标，包括 457 个漏洞支持的实例和 410 个生成资源支持的实例。在单独的 50 提示匹配基准中，ScenarioForge+Qwen3.8 和 ScenarioForge+GPT5.6 各自实现了 50/50 (100%) 拓扑/构建成功和 160/160 意图字段；仅使用完整的累积支架：结构、词汇、策略和容器图像指导，直接前沿生成就达到了 41/50 构建和 147/160 字段。该测试仍然省略了 ScenarioForge 的下游挑战资源生成、依赖项/标志排序、部署和实时验证。这些工件支持操作丰富、可重复的训练和评估练习。",
+        "fallback_provider": "google_free",
+        "title_zh": "ScenarioForge：网络演习的基于资源的生成和执行验证"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.21579v1"
       ]
