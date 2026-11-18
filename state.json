@@ -74627,7 +74627,8 @@
     },
     "2611.23124": {
       "attempts": {
-        "selection": 1
+        "selection": 1,
+        "translation": 1
       },
       "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
       "decision": {
@@ -74687,6 +74688,11 @@
         "llm_core"
       ],
       "stage": "ready",
+      "stage_started": {
+        "at": "2026-11-18T09:48:26.024262+00:00",
+        "run_id": "20261118T094826Z-fe3cfaec",
+        "stage": "translation"
+      },
       "versions": [
         "2611.23124v1"
       ]
