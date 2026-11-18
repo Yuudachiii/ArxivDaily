@@ -72520,9 +72520,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-18T09:48:26.782474+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Video question answering under tight frame budgets requires preserving localized motion and event order, yet current video multimodal large language models (MLLMs) reduce comprehension to static multi-image reasoning by discarding unselected frames and encoding keyframes independently: (1) Spatially, whole-frame pooling dilutes small moving targets into static backgrounds; (2) Temporally, dropping intermediate frames or averaging tokens erases inter-frame motion, confusing direction, speed, and order. We propose VIVID (Visual Inter-frame Variations and Individual Dynamics), which moves beyond static snapshots like human vision: keyframes capture core states while inter-frame Patch Diffs preserve neighboring changes within $K_f$ keyframes. Autonomous Delta-Driven Keyframe Planning (ADKP) selects anchors from a $3\\text{ fps}$ pool and feeds surrounding patch differences into Dual-Road Change Memory (DRCM), forming Dynamic Tokens at zero extra anchor tokens alongside a camera-stabilized Active Motion Region of Interest (ROI) and chronological Entity State Chains. Adding $0.22\\%$ trainable parameters to a frozen $27\\text{B}$ backbone, VIVID-Small ($50$ examples, $\\sim 1.5$ GPU hours) beats all eleven baselines in overall accuracy across $8,083$ questions and trails only VIVID-Large ($3,600$ examples), which leads on MotionBench, Video-MME, and TempCompass.",
         "authors": [
@@ -72547,16 +72563,12 @@
         "updated": "2026-11-17T18:05:51+00:00",
         "version_id": "2611.23153v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-18T09:48:26.782474+00:00",
-        "run_id": "20261118T094826Z-5af4f741",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.23153v1"
       ]
