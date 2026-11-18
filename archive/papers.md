@@ -13,7 +13,7 @@
 | 2026-11-18 | Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance | 注意差距：用于文档维护的已部署多代理系统（谷歌备用翻译） | [arXiv 2611.23142v1](https://arxiv.org/abs/2611.23142v1) |
 | 2026-11-18 | RSI-Prime: Training Models to Train Models | RSI-Prime：训练模型来训练模型（谷歌备用翻译） | [arXiv 2611.23138v1](https://arxiv.org/abs/2611.23138v1) |
 | 2026-11-18 | Get Hint-Augmented GRPO Done Right Through Activation Steering | 通过激活指导正确完成提示增强的 GRPO（谷歌备用翻译） | [arXiv 2611.23124v1](https://arxiv.org/abs/2611.23124v1) |
-| 2026-11-18 | Dynamic Task Allocation with Dialogue | 待翻译 | [arXiv 2611.23119v1](https://arxiv.org/abs/2611.23119v1) |
+| 2026-11-18 | Dynamic Task Allocation with Dialogue | 对话动态任务分配（谷歌备用翻译） | [arXiv 2611.23119v1](https://arxiv.org/abs/2611.23119v1) |
 | 2026-11-17 | FaceJev: Direct Visual Decisions for Face Forgery Detection | FaceJev：用于人脸伪造检测的直接视觉决策（谷歌备用翻译） | [arXiv 2611.21604v1](https://arxiv.org/abs/2611.21604v1) |
 | 2026-11-17 | ScenarioForge: Resource-Grounded Generation and Execution Validation of Cyber Exercises | ScenarioForge：网络演习的基于资源的生成和执行验证（谷歌备用翻译） | [arXiv 2611.21579v1](https://arxiv.org/abs/2611.21579v1) |
 | 2026-11-17 | When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents | 当工具名称不是身份时：测量基于 MCP 的 AI 代理中的提供者错误绑定（谷歌备用翻译） | [arXiv 2611.21577v1](https://arxiv.org/abs/2611.21577v1) |
