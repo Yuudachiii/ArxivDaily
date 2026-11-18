@@ -8,7 +8,7 @@
 | 2026-11-18 | Do LLM Agents Still Need to Be Told How to Self-Improve? | LLM代理人还需要被告知如何自我提高吗？（谷歌备用翻译） | [arXiv 2611.23219v1](https://arxiv.org/abs/2611.23219v1) |
 | 2026-11-18 | What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution | 偏置头测量什么？高层偏见归因中的不可识别性（谷歌备用翻译） | [arXiv 2611.23218v1](https://arxiv.org/abs/2611.23218v1) |
 | 2026-11-18 | MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study | MoE--LoRA 多语言适应方法：系统实证研究（谷歌备用翻译） | [arXiv 2611.23158v1](https://arxiv.org/abs/2611.23158v1) |
-| 2026-11-18 | Learning Stratified Policies for Inference-Time Objectives | 待翻译 | [arXiv 2611.23154v1](https://arxiv.org/abs/2611.23154v1) |
+| 2026-11-18 | Learning Stratified Policies for Inference-Time Objectives | 学习推理时间目标的分层策略（谷歌备用翻译） | [arXiv 2611.23154v1](https://arxiv.org/abs/2611.23154v1) |
 | 2026-11-18 | VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs | 待翻译 | [arXiv 2611.23153v1](https://arxiv.org/abs/2611.23153v1) |
 | 2026-11-18 | Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance | 待翻译 | [arXiv 2611.23142v1](https://arxiv.org/abs/2611.23142v1) |
 | 2026-11-18 | RSI-Prime: Training Models to Train Models | 待翻译 | [arXiv 2611.23138v1](https://arxiv.org/abs/2611.23138v1) |
