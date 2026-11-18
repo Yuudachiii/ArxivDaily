@@ -72715,11 +72715,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-18T09:48:26.782474+00:00",
-        "run_id": "20261118T094826Z-5af4f741",
-        "stage": "translation"
+      "title_zh": "VIVID：超越静态多图像推理，具有视频 MLLM 中的局部视觉差异和文本实体动态",
+      "translation": {
+        "abstract_zh": "在紧张的帧预算下进行视频问答需要保留局部运动和事件顺序，但当前的视频多模态大语言模型（MLLM）通过丢弃未选择的帧并独立编码关键帧来减少对静态多图像推理的理解：（1）在空间上，全帧池化将小型移动目标稀释为静态背景； (2) 暂时地，丢弃中间帧或平均令牌会消除帧间运动、混乱的方向、速度和顺序。我们提出了 VIVID（视觉帧间变化和个体动态），它超越了人类视觉等静态快照：关键帧捕获核心状态，而帧间补丁差异保留 $K_f$ 关键帧内的相邻变化。自主增量驱动关键帧规划 (ADKP) 从 $3\\text{ fps}$ 池中选择锚点，并将周围的补丁差异馈送到双路更改内存 (DRCM) 中，在零额外锚点标记处形成动态标记，以及相机稳定的主动运动感兴趣区域 (ROI) 和按时间顺序排列的实体状态链。将 $0.22\\%$ 可训练参数添加到冻结的 $27\\text{B}$ 主干中，VIVID-Small（$50$ 示例，$\\sim 1.5$ GPU 小时）在 $8,083$ 问题的总体准确度上击败了所有 11 个基线，并且仅落后于 VIVID-Large（$3,600$ 示例），后者领先于 MotionBench、Video-MME 和 TempCompass。",
+        "fallback_provider": "google_free",
+        "title_zh": "VIVID：超越静态多图像推理，具有视频 MLLM 中的局部视觉差异和文本实体动态"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.23153v1"
       ]
