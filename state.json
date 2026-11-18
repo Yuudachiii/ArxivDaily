@@ -72581,11 +72581,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-18T09:48:26.782474+00:00",
-        "run_id": "20261118T094826Z-5af4f741",
-        "stage": "translation"
+      "title_zh": "RSI-Prime：训练模型来训练模型",
+      "translation": {
+        "abstract_zh": "使大型语言模型（LLM）能够自主进行训练并改进目标模型是递归自我改进（RSI）的重要基础。随着法学硕士将其角色从接受培训扩大到进行培训，他们的模型培训能力值得专门研究和系统开发。为此，我们构建了 RSI-Prime，这是一个用于提高模型训练能力的数据集，包含跨七个任务类别的 350 个完整的实验轨迹。为了帮助法学硕士从培训实践中学习做出高质量的实验决策，我们执行细粒度的决策识别和质量注释，然后应用决策级损失屏蔽来排除对低质量行为的监督。在 PostTrainBench（自主后训练基准）上使用 GLM-5.3 进行的实验表明，与原始 GLM-5.3 相比，在 RSI-Prime 上进行训练的整体性能相对提高了 31.95%，这凸显了通向未来 RSI 系统的道路，其中模型可以自主维持自身的进步。",
+        "fallback_provider": "google_free",
+        "title_zh": "RSI-Prime：训练模型来训练模型"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.23138v1"
       ]
