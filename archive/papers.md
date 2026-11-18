@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | 2026-11-18 | Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching | 环境法学硕士：通过温度匹配进行数据高效的监督微调 | [arXiv 2611.23229v1](https://arxiv.org/abs/2611.23229v1) |
 | 2026-11-18 | Do LLM Agents Still Need to Be Told How to Self-Improve? | LLM代理人还需要被告知如何自我提升吗？ | [arXiv 2611.23219v1](https://arxiv.org/abs/2611.23219v1) |
-| 2026-11-18 | What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution | 待翻译 | [arXiv 2611.23218v1](https://arxiv.org/abs/2611.23218v1) |
+| 2026-11-18 | What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution | 偏置头测量什么？高层偏见归因中的不可识别性 | [arXiv 2611.23218v1](https://arxiv.org/abs/2611.23218v1) |
 | 2026-11-18 | MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study | 待翻译 | [arXiv 2611.23158v1](https://arxiv.org/abs/2611.23158v1) |
 | 2026-11-18 | Learning Stratified Policies for Inference-Time Objectives | 待翻译 | [arXiv 2611.23154v1](https://arxiv.org/abs/2611.23154v1) |
 | 2026-11-18 | VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs | 待翻译 | [arXiv 2611.23153v1](https://arxiv.org/abs/2611.23153v1) |
