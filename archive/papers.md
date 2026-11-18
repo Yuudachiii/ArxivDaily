@@ -12,7 +12,7 @@
 | 2026-11-18 | VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs | VIVID：超越静态多图像推理，具有视频 MLLM 中的局部视觉差异和文本实体动态（谷歌备用翻译） | [arXiv 2611.23153v1](https://arxiv.org/abs/2611.23153v1) |
 | 2026-11-18 | Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance | 注意差距：用于文档维护的已部署多代理系统（谷歌备用翻译） | [arXiv 2611.23142v1](https://arxiv.org/abs/2611.23142v1) |
 | 2026-11-18 | RSI-Prime: Training Models to Train Models | RSI-Prime：训练模型来训练模型（谷歌备用翻译） | [arXiv 2611.23138v1](https://arxiv.org/abs/2611.23138v1) |
-| 2026-11-18 | Get Hint-Augmented GRPO Done Right Through Activation Steering | 待翻译 | [arXiv 2611.23124v1](https://arxiv.org/abs/2611.23124v1) |
+| 2026-11-18 | Get Hint-Augmented GRPO Done Right Through Activation Steering | 通过激活指导正确完成提示增强的 GRPO（谷歌备用翻译） | [arXiv 2611.23124v1](https://arxiv.org/abs/2611.23124v1) |
 | 2026-11-18 | Dynamic Task Allocation with Dialogue | 待翻译 | [arXiv 2611.23119v1](https://arxiv.org/abs/2611.23119v1) |
 | 2026-11-17 | FaceJev: Direct Visual Decisions for Face Forgery Detection | FaceJev：用于人脸伪造检测的直接视觉决策（谷歌备用翻译） | [arXiv 2611.21604v1](https://arxiv.org/abs/2611.21604v1) |
 | 2026-11-17 | ScenarioForge: Resource-Grounded Generation and Execution Validation of Cyber Exercises | ScenarioForge：网络演习的基于资源的生成和执行验证（谷歌备用翻译） | [arXiv 2611.21579v1](https://arxiv.org/abs/2611.21579v1) |

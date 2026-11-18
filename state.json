@@ -72514,11 +72514,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-18T09:48:26.782474+00:00",
-        "run_id": "20261118T094826Z-5af4f741",
-        "stage": "translation"
+      "title_zh": "通过激活指导正确完成提示增强的 GRPO",
+      "translation": {
+        "abstract_zh": "GRPO 已成为使用可验证奖励来激发法学硕士推理能力的主要强化学习方法。然而，它遇到了一个基本的失败模式：当训练问题超过基础模型的当前能力时，所有生成的响应都会失败并获得零奖励，不会产生梯度信号并阻碍进一步的能力扩展。一类新兴的 GRPO 扩展被称为提示增强 GRPO (HA-GRPO)，它向上下文添加“提示”以降低问题的难度，从而产生可用的梯度信号。然而，现有的 HA-GRPO 方法有一个关键问题：在推理时没有可用的提示来附加到问题中，从而造成训练-推理上下文不匹配，从而导致性能增益不一致。在这项工作中，我们重新解释了提示的功能——不是降低问题难度，而是引导模型行为——并提出了 ASH (Activation Steering for Hinting)，一种基于此观点的新颖的 HA-GRPO 方法。在训练过程中，向模型提出暗示问题和普通问题，同时优化可训练的引导向量，以扩大模型相对于普通版本对暗示版本的响应的生成概率之间的裕度，从而捕获由提示引起的行为转变的问题不可知部分。在推理过程中，经过训练的引导向量被直接注入到模型的激活中，再现提示条件行为，而不需要上下文中的任何提示。对四个法学硕士（Qwen3-1.7B/4B-Base、Llama-3.2-1B/3B-Instruct）进行的实验表明，ASH 在竞赛级数学基准（AMC、OlympiadBench、AIME24、AIME25）和分布外基准（Minerva、GPQA-Diamond）上持续提高 pass@$k$。值得注意的是，它将 Qwen3-1.7B-Base 和 Qwen3-4B-Base 的平均 pass@8 提高了 \\textbf{2.60}\\% 和 \\textbf{2.21}\\%。",
+        "fallback_provider": "google_free",
+        "title_zh": "通过激活指导正确完成提示增强的 GRPO"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.23124v1"
       ]
