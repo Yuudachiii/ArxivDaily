@@ -13,7 +13,7 @@
 | 2026-11-18 | Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance | 注意差距：用于文档维护的已部署多代理系统 | [arXiv 2611.23142v1](https://arxiv.org/abs/2611.23142v1) |
 | 2026-11-18 | RSI-Prime: Training Models to Train Models | RSI-Prime：训练模型来训练模型 | [arXiv 2611.23138v1](https://arxiv.org/abs/2611.23138v1) |
 | 2026-11-18 | Get Hint-Augmented GRPO Done Right Through Activation Steering | 通过激活指导正确完成提示增强的 GRPO | [arXiv 2611.23124v1](https://arxiv.org/abs/2611.23124v1) |
-| 2026-11-18 | Dynamic Task Allocation with Dialogue | 待翻译 | [arXiv 2611.23119v1](https://arxiv.org/abs/2611.23119v1) |
+| 2026-11-18 | Dynamic Task Allocation with Dialogue | 对话动态任务分配 | [arXiv 2611.23119v1](https://arxiv.org/abs/2611.23119v1) |
 | 2026-11-16 | WeightBench: Evaluating Language Models as Weight-Space Programmers | WeightBench：作为权重空间程序员评估语言模型 | [arXiv 2611.18553v1](https://arxiv.org/abs/2611.18553v1) |
 | 2026-11-16 | WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators | WaferTetris：晶圆级加速器上的高效自由映射 | [arXiv 2611.18527v1](https://arxiv.org/abs/2611.18527v1) |
 | 2026-11-16 | Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination | 机械可解释性可以帮助解释 LLM 代理失败吗？网页元素幻觉案例研究 | [arXiv 2611.18514v1](https://arxiv.org/abs/2611.18514v1) |
