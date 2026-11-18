@@ -11,7 +11,7 @@
 | 2026-11-18 | Learning Stratified Policies for Inference-Time Objectives | 学习推理时间目标的分层策略 | [arXiv 2611.23154v1](https://arxiv.org/abs/2611.23154v1) |
 | 2026-11-18 | VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs | VIVID：超越静态多图像推理，具有视频 MLLM 中的局部视觉差异和文本实体动态 | [arXiv 2611.23153v1](https://arxiv.org/abs/2611.23153v1) |
 | 2026-11-18 | Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance | 注意差距：用于文档维护的已部署多代理系统 | [arXiv 2611.23142v1](https://arxiv.org/abs/2611.23142v1) |
-| 2026-11-18 | RSI-Prime: Training Models to Train Models | 待翻译 | [arXiv 2611.23138v1](https://arxiv.org/abs/2611.23138v1) |
+| 2026-11-18 | RSI-Prime: Training Models to Train Models | RSI-Prime：训练模型来训练模型 | [arXiv 2611.23138v1](https://arxiv.org/abs/2611.23138v1) |
 | 2026-11-18 | Get Hint-Augmented GRPO Done Right Through Activation Steering | 待翻译 | [arXiv 2611.23124v1](https://arxiv.org/abs/2611.23124v1) |
 | 2026-11-18 | Dynamic Task Allocation with Dialogue | 待翻译 | [arXiv 2611.23119v1](https://arxiv.org/abs/2611.23119v1) |
 | 2026-11-16 | WeightBench: Evaluating Language Models as Weight-Space Programmers | WeightBench：作为权重空间程序员评估语言模型 | [arXiv 2611.18553v1](https://arxiv.org/abs/2611.18553v1) |
