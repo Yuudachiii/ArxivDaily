@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-18 | Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching | 待翻译 | [arXiv 2611.23229v1](https://arxiv.org/abs/2611.23229v1) |
+| 2026-11-18 | Do LLM Agents Still Need to Be Told How to Self-Improve? | 待翻译 | [arXiv 2611.23219v1](https://arxiv.org/abs/2611.23219v1) |
+| 2026-11-18 | What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution | 待翻译 | [arXiv 2611.23218v1](https://arxiv.org/abs/2611.23218v1) |
+| 2026-11-18 | MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study | 待翻译 | [arXiv 2611.23158v1](https://arxiv.org/abs/2611.23158v1) |
+| 2026-11-18 | Learning Stratified Policies for Inference-Time Objectives | 待翻译 | [arXiv 2611.23154v1](https://arxiv.org/abs/2611.23154v1) |
+| 2026-11-18 | VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs | 待翻译 | [arXiv 2611.23153v1](https://arxiv.org/abs/2611.23153v1) |
+| 2026-11-18 | Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance | 待翻译 | [arXiv 2611.23142v1](https://arxiv.org/abs/2611.23142v1) |
+| 2026-11-18 | RSI-Prime: Training Models to Train Models | 待翻译 | [arXiv 2611.23138v1](https://arxiv.org/abs/2611.23138v1) |
+| 2026-11-18 | Get Hint-Augmented GRPO Done Right Through Activation Steering | 待翻译 | [arXiv 2611.23124v1](https://arxiv.org/abs/2611.23124v1) |
+| 2026-11-18 | Dynamic Task Allocation with Dialogue | 待翻译 | [arXiv 2611.23119v1](https://arxiv.org/abs/2611.23119v1) |
 | 2026-11-16 | WeightBench: Evaluating Language Models as Weight-Space Programmers | WeightBench：作为权重空间程序员评估语言模型 | [arXiv 2611.18553v1](https://arxiv.org/abs/2611.18553v1) |
 | 2026-11-16 | WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators | WaferTetris：晶圆级加速器上的高效自由映射 | [arXiv 2611.18527v1](https://arxiv.org/abs/2611.18527v1) |
 | 2026-11-16 | Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination | 机械可解释性可以帮助解释 LLM 代理失败吗？网页元素幻觉案例研究 | [arXiv 2611.18514v1](https://arxiv.org/abs/2611.18514v1) |
