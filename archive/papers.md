@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-18 | Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching | 待翻译 | [arXiv 2611.23229v1](https://arxiv.org/abs/2611.23229v1) |
+| 2026-11-18 | Do LLM Agents Still Need to Be Told How to Self-Improve? | 待翻译 | [arXiv 2611.23219v1](https://arxiv.org/abs/2611.23219v1) |
+| 2026-11-18 | What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution | 待翻译 | [arXiv 2611.23218v1](https://arxiv.org/abs/2611.23218v1) |
+| 2026-11-18 | MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study | 待翻译 | [arXiv 2611.23158v1](https://arxiv.org/abs/2611.23158v1) |
+| 2026-11-18 | Learning Stratified Policies for Inference-Time Objectives | 待翻译 | [arXiv 2611.23154v1](https://arxiv.org/abs/2611.23154v1) |
+| 2026-11-18 | VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs | 待翻译 | [arXiv 2611.23153v1](https://arxiv.org/abs/2611.23153v1) |
+| 2026-11-18 | Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance | 待翻译 | [arXiv 2611.23142v1](https://arxiv.org/abs/2611.23142v1) |
+| 2026-11-18 | RSI-Prime: Training Models to Train Models | 待翻译 | [arXiv 2611.23138v1](https://arxiv.org/abs/2611.23138v1) |
+| 2026-11-18 | Get Hint-Augmented GRPO Done Right Through Activation Steering | 待翻译 | [arXiv 2611.23124v1](https://arxiv.org/abs/2611.23124v1) |
+| 2026-11-18 | Dynamic Task Allocation with Dialogue | 待翻译 | [arXiv 2611.23119v1](https://arxiv.org/abs/2611.23119v1) |
 | 2026-11-17 | FaceJev: Direct Visual Decisions for Face Forgery Detection | FaceJev：用于人脸伪造检测的直接视觉决策（谷歌备用翻译） | [arXiv 2611.21604v1](https://arxiv.org/abs/2611.21604v1) |
 | 2026-11-17 | ScenarioForge: Resource-Grounded Generation and Execution Validation of Cyber Exercises | ScenarioForge：网络演习的基于资源的生成和执行验证（谷歌备用翻译） | [arXiv 2611.21579v1](https://arxiv.org/abs/2611.21579v1) |
 | 2026-11-17 | When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents | 当工具名称不是身份时：测量基于 MCP 的 AI 代理中的提供者错误绑定（谷歌备用翻译） | [arXiv 2611.21577v1](https://arxiv.org/abs/2611.21577v1) |

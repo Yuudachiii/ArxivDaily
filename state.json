@@ -67,7 +67,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:42:00.481953+00:00",
-    "last_complete_end": "2026-11-17T10:16:31.742283+00:00"
+    "last_complete_end": "2026-11-18T09:48:26.782474+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -379,6 +379,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-18": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -72368,6 +72377,331 @@
       "versions": [
         "2611.21604v1"
       ]
+    },
+    "2611.23119": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-18T09:48:26.782474+00:00",
+      "paper": {
+        "abstract": "Effective multi-agent collaboration requires agents to adapt task allocation as goals and responsibilities evolve. Prior task-allocation frameworks often assume static goals, full observability, or rely on large language models (LLMs) without explicit, verifiable beliefs about task allocation or intent. These assumptions limit their applicability to real-world collaboration, where agents often lack full information about each other's actions, progress, or local environment. To support dynamic task allocation under partial observability, we introduce a communication-augmented Bayesian task-allocation framework. Our agent uses dialogue to reduce uncertainty about the environment and collaborators, while keeping decisions grounded in explicit probabilistic beliefs. We evaluate our framework in an Overcooked domain extended with dynamically arriving tasks under both full and partial object-space observability. Our communication agent consistently outperforms a vanilla LLM agent in both settings. Additionally, our framework performs comparably to a non-communicating task-allocation baseline under full observability, but substantially outperforms it under partial observability as task complexity increases by an average speed up of 0.585 and completes on average 18 timesteps faster. These results indicate that our agent is more efficient in dynamic task allocation than baselines in partially observable environments, and that communication is important as available information decreases.",
+        "authors": [
+          "Matthew Groholski",
+          "Weiwei Gu",
+          "Nakul Gopalan"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.23119v1",
+        "published": "2026-11-17T17:37:17+00:00",
+        "title": "Dynamic Task Allocation with Dialogue",
+        "updated": "2026-11-17T17:37:17+00:00",
+        "version_id": "2611.23119v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.23119v1"
+      ]
+    },
+    "2611.23124": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-18T09:48:26.782474+00:00",
+      "paper": {
+        "abstract": "GRPO has become the dominant reinforcement learning method for eliciting reasoning capability in LLMs using verifiable rewards. However, it suffers from a fundamental failure mode: when a training question exceeds the base model's current capability, all generated responses fail and receive zero reward, yielding no gradient signal and stalling further capability expansion. An emerging class of GRPO extensions, termed Hint-Augmented GRPO (HA-GRPO), adds a \"hint\" to the context to reduce the difficulty of the question, thereby producing a usable gradient signal. Nevertheless, existing HA-GRPO methods share a key issue: no hint is available at inference time to append to the question, creating a training-inference context mismatch that leads to inconsistent performance gains. In this work, we reinterpret the function of hinting -- not as reducing question difficulty, but as steering model behavior -- and propose ASH (Activation Steering for Hinting), a novel HA-GRPO method built on this view. During training, the model is presented with both hinted and plain questions, while a trainable steering vector is optimized to widen the margins between the model's generation probabilities for responses to the hinted version relative to the plain version, thereby capturing the question-agnostic component of the behavioral shift induced by the hint. During inference, the trained steering vector is directly injected into the model's activation, reproducing the hint-conditioned behavior without requiring any hint in the context. Experiments with four LLMs (Qwen3-1.7B/4B-Base, Llama-3.2-1B/3B-Instruct) show that ASH consistently improves pass@$k$ on competition-level mathematics benchmarks (AMC, OlympiadBench, AIME24, AIME25) and out-of-distribution benchmarks (Minerva, GPQA-Diamond). Notably, it improves average pass@8 of Qwen3-1.7B-Base and Qwen3-4B-Base by \\textbf{2.60}\\% and \\textbf{2.21}\\%.",
+        "authors": [
+          "Khiem Le",
+          "Ting Hua",
+          "Nitesh V. Chawla"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.23124v1",
+        "published": "2026-11-17T17:43:28+00:00",
+        "title": "Get Hint-Augmented GRPO Done Right Through Activation Steering",
+        "updated": "2026-11-17T17:43:28+00:00",
+        "version_id": "2611.23124v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_training",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.23124v1"
+      ]
+    },
+    "2611.23138": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-18T09:48:26.782474+00:00",
+      "paper": {
+        "abstract": "Enabling large language models (LLMs) to autonomously conduct training and improve target models is an important foundation for recursive self-improvement (RSI). As LLMs expand their role from being trained to conducting training, their model-training capability warrants dedicated study and systematic development. To this end, we construct RSI-Prime, a dataset for improving model-training capability, comprising 350 complete experimental trajectories across seven task categories. To help LLMs learn to make high-quality experimental decisions from training practice, we perform fine-grained decision identification and quality annotation, then apply decision-level loss masking to exclude supervision on low-quality behavior. Experiments with GLM-5.3 on PostTrainBench, a benchmark for autonomous post-training, show that training on RSI-Prime yields a 31.95% relative improvement in overall performance over the original GLM-5.3, highlighting a path toward future RSI systems in which models autonomously sustain their own advancement.",
+        "authors": [
+          "Dewu Zheng",
+          "Yang Ye",
+          "Hongyu Zhang",
+          "Jun Yu",
+          "Yanlin Wang"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.23138v1",
+        "published": "2026-11-17T17:55:30+00:00",
+        "title": "RSI-Prime: Training Models to Train Models",
+        "updated": "2026-11-17T17:55:30+00:00",
+        "version_id": "2611.23138v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.23138v1"
+      ]
+    },
+    "2611.23142": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-18T09:48:26.782474+00:00",
+      "paper": {
+        "abstract": "The \"AI revolution\" has enabled teams across the technology industry to deliver software features at unprecedented velocity. While code evolves faster than ever, customer-facing documentation often struggles to stay up to speed. As users increasingly rely on LLM-based agents that consume documentation as their primary interface, the impact of this documentation gap worsens: stale information propagates and is treated as authoritative. Signals for identifying where documentation has fallen behind already exist in abundance, both explicit (e.g., resolved support tickets revealing what documentation lacks) and implicit (e.g., code-documentation discrepancies detectable from automated loops). We deploy a multi-agent system, built around a triage agent we call \"TriAgent,\" that continuously extracts these signals and repairs documentation drift. Over 43 days of shadow-mode operation, our system triaged 499 tickets and surfaced 92 gaps in the documentation. Using a panel of LLM judges from independent model families, 81.1% of TriAgent's verifiable assertions were correct (245 of the 302 assertions the human resolution addresses; majority of three judges); on length-comparable pairs the panel preferred TriAgent's response in 70.5% of pairs and the human engineer's in 23.2% (the rest had no judge majority). Importantly, agent- and human-sourced replies tended to be complementary, with the human often surfacing insights that were either buried within the existing documentation or missing from it entirely; our system turns each such insight into a documentation gap and, after human review, a fix. Repairing a gap measurably improved the agent's later answer: when the agent re-answered the same ticket after the repair, blinded judges preferred the post-repair answer over its own pre-repair answer 71.4% of the time (n=35). A blinded human audit confirms strong alignment on self-improvement.",
+        "authors": [
+          "Lorenzo Masoero"
+        ],
+        "categories": [
+          "cs.SE",
+          "cs.AI",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.23142v1",
+        "published": "2026-11-17T17:59:13+00:00",
+        "title": "Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance",
+        "updated": "2026-11-17T17:59:13+00:00",
+        "version_id": "2611.23142v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_safety",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.23142v1"
+      ]
+    },
+    "2611.23153": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-18T09:48:26.782474+00:00",
+      "paper": {
+        "abstract": "Video question answering under tight frame budgets requires preserving localized motion and event order, yet current video multimodal large language models (MLLMs) reduce comprehension to static multi-image reasoning by discarding unselected frames and encoding keyframes independently: (1) Spatially, whole-frame pooling dilutes small moving targets into static backgrounds; (2) Temporally, dropping intermediate frames or averaging tokens erases inter-frame motion, confusing direction, speed, and order. We propose VIVID (Visual Inter-frame Variations and Individual Dynamics), which moves beyond static snapshots like human vision: keyframes capture core states while inter-frame Patch Diffs preserve neighboring changes within $K_f$ keyframes. Autonomous Delta-Driven Keyframe Planning (ADKP) selects anchors from a $3\\text{ fps}$ pool and feeds surrounding patch differences into Dual-Road Change Memory (DRCM), forming Dynamic Tokens at zero extra anchor tokens alongside a camera-stabilized Active Motion Region of Interest (ROI) and chronological Entity State Chains. Adding $0.22\\%$ trainable parameters to a frozen $27\\text{B}$ backbone, VIVID-Small ($50$ examples, $\\sim 1.5$ GPU hours) beats all eleven baselines in overall accuracy across $8,083$ questions and trails only VIVID-Large ($3,600$ examples), which leads on MotionBench, Video-MME, and TempCompass.",
+        "authors": [
+          "Chengqian Ma",
+          "Yuanze Zeng",
+          "Hongyu Wang",
+          "Mingfeng Lin",
+          "YiCheng Xiao",
+          "Yu Chen",
+          "Pengyu Li",
+          "WenHao Wang",
+          "Yuexiao Ma",
+          "Xiawu Zheng",
+          "Fei Chao"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.23153v1",
+        "published": "2026-11-17T18:05:51+00:00",
+        "title": "VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs",
+        "updated": "2026-11-17T18:05:51+00:00",
+        "version_id": "2611.23153v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.23153v1"
+      ]
+    },
+    "2611.23154": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-18T09:48:26.782474+00:00",
+      "paper": {
+        "abstract": "Inference-time scaling improves the performance of large language models by sampling multiple responses and evaluating their collective utility. However, many existing approaches obtain these samples by repeatedly sampling from a single policy. In this work, we study if the sample budget at inference time can instead be allocated across a population of policies. We introduce stratified policies, where each of $k$ learned policies contributes one response to a $k$-sample inference-time objective. We realize this policy population using separate LoRA adapters on a shared language model backbone and optimize it for pass@$k$. We theoretically motivate the approach by analyzing the linear setting; a population of LoRAs can achieve zero best-of-$k$ approximation error in settings where every single LoRA has strictly positive prediction error. Empirically, we demonstrate that stratified policies consistently improve pass@$k$ over a single-policy baseline across multiple reasoning tasks. Overall, our results highlight how distributing samples across complementary policies can be a more effective use of sample budget than repeated i.i.d. sampling from a single policy at inference time.",
+        "authors": [
+          "Mridul Mahajan",
+          "Xuezhou Zhang",
+          "Aldo Pacchiano"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.23154v1",
+        "published": "2026-11-17T18:06:12+00:00",
+        "title": "Learning Stratified Policies for Inference-Time Objectives",
+        "updated": "2026-11-17T18:06:12+00:00",
+        "version_id": "2611.23154v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.23154v1"
+      ]
+    },
+    "2611.23158": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-18T09:48:26.782474+00:00",
+      "paper": {
+        "abstract": "Routed low-rank adapters offer a parameter-efficient means to improve the performance of large language models (LLMs) across tasks. Hence, it is assumed that they can also be used to improve the support of low-resource languages in LLMs, which currently serve English far better than the thousands of other languages spoken worldwide. However, this assumption has never been verified empirically under a shared multilingual evaluation protocol. We address exactly this gap by comparing eight low-rank adaptation (LoRA) methods on a frozen base model using 200 unique languages in more than 9{,}000 evaluation settings. Our results suggest that a reduced-scale search can identify viable configurations of LoRA methods but does not reliably predict their relative performance, as the top-ranking configuration is never best at scale. LoRA reliably improves language-model fit on translation data, consistently degrades reading comprehension, and benefits low-resource languages most. These findings suggest that LoRA methods should be regarded as targeted tools rather than general-purpose means for improving the multilingual capabilities of LLMs.",
+        "authors": [
+          "Nikit Srivastava",
+          "Joel Dag",
+          "René Speck",
+          "Axel-Cyrille Ngonga Ngomo"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.23158v1",
+        "published": "2026-11-17T18:11:42+00:00",
+        "title": "MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study",
+        "updated": "2026-11-17T18:11:42+00:00",
+        "version_id": "2611.23158v1"
+      },
+      "rule_hits": [
+        "llm_efficiency",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.23158v1"
+      ]
+    },
+    "2611.23218": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-18T09:48:26.782474+00:00",
+      "paper": {
+        "abstract": "Methods that localise social bias in large language models to individual attention heads and remove it by ablation are validated by their effect on a fairness metric, never by evidence that the statistic selecting the heads measures bias. We audit this on Qwen-2.5-7B-Instruct and Llama-3.1-8B-Instruct. The head map correlates at $ρ= -0.950$ and $-0.768$ with a label-blind response-length map, apparently identifying a surface confound. An intervention that breaks the length-label coupling rejects this reading: with the prompt held fixed, response length explains 1% of the statistic's variance. What does explain it is prompt identity, at 64% of variance, in an ordering that is not monotonic in length. Within any fixed prompt the fairness label, response length and the presence of a protected-group token are collinear at $φ= 0.95$, partly by definition of the labelling rule, so no observational analysis can attribute the map to any of them, and no method in this family performs an experiment that could. The substantive claims fail independently: bias selectivity is not late-layer-concentrated on either model under either reference reading, and no head set we tested reduces the unfairness rate when ablated. Its complement, scored on the opposite label, reliably destroys refusal behaviour ($p = 2.7\\times10^{-5}$), demonstrating that the pipeline detects effects at this scale.",
+        "authors": [
+          "S. M Seefat Alam"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.23218v1",
+        "published": "2026-11-17T18:57:08+00:00",
+        "title": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
+        "updated": "2026-11-17T18:57:08+00:00",
+        "version_id": "2611.23218v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.23218v1"
+      ]
+    },
+    "2611.23219": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-18T09:48:26.782474+00:00",
+      "paper": {
+        "abstract": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-improve? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for context-based optimization. Using the setting of gameplay as a testbed, a frozen LLM agent is given a compute budget and tools for collecting experience and updating text documents, and allowed to freely experiment without an externally imposed loop or access to real-world data. We find that sufficiently capable models do self-improve under these conditions, demonstrating strategies that align with classic cognitive frameworks for self-regulated learning and constructs from machine learning literature on self-generated curricula. Furthermore, we study the extent to which the learned text artifacts transfer to external benchmarks, observing improvement across different game horizons, mechanics, and 3D navigation.",
+        "authors": [
+          "Shobhita Sundaram",
+          "Cansu Sancaktar",
+          "Phillip Isola"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.23219v1",
+        "published": "2026-11-17T18:57:10+00:00",
+        "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+        "updated": "2026-11-17T18:57:10+00:00",
+        "version_id": "2611.23219v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.23219v1"
+      ]
+    },
+    "2611.23229": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-18T09:48:26.782474+00:00",
+      "paper": {
+        "abstract": "Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challenging. Consequently, Supervised Fine-Tuning (SFT) is typically applied to datasets significantly smaller than those used for pre-training, which leads to overfitting and the catastrophic forgetting of the tails of the data distribution. To prevent this collapse, we introduce Ambient SFT, a principled framework for leveraging imperfect predictions to augment the fine-tuning set. In our method, a \"frozen\" version of the pre-trained model serves as a noisy teacher that the fine-tuned model must match at a coarse level. In particular, we require that the high-temperature versions of the conditional distributions produced by the post-training model should match the high-temperature versions of the pre-training ones. The temperature hyperparameter controls the level of trust in the pre-trained model, with the limit $T\\to \\infty$ reverting back to regular SFT and $T=1$ to knowledge distillation. We demonstrate that our approach outperforms standard SFT across domain adaptation, instruction-tuning, and reasoning, leading for up to $21\\%$ average relative improvement to standard SFT.",
+        "authors": [
+          "Giannis Daras",
+          "Marios Papachristou",
+          "Adam Klivans",
+          "Antonio Torralba",
+          "Constantinos Daskalakis"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.23229v1",
+        "published": "2026-11-17T18:59:37+00:00",
+        "title": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
+        "updated": "2026-11-17T18:59:37+00:00",
+        "version_id": "2611.23229v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_training",
+        "llm_efficiency",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.23229v1"
+      ]
     }
   },
   "runs": [
@@ -73163,10 +73497,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-18",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261118T094826Z-5af4f741",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-18T09:48:00+00:00",
+          "seen": 42,
+          "start": "2026-11-11T09:48:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-18T09:48:26.782474+00:00",
       "window": {
         "end": "2026-11-18T09:48:26.782474+00:00",
