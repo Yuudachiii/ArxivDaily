@@ -75910,7 +75910,9 @@
       ]
     },
     "2611.24830": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-19T09:56:35.658037+00:00",
@@ -75939,6 +75941,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-19T09:56:35.658037+00:00",
+        "run_id": "20261119T095635Z-a35705d3",
+        "stage": "selection"
+      },
       "versions": [
         "2611.24830v1"
       ]
