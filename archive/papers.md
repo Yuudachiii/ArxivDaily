@@ -10,7 +10,7 @@
 | 2026-11-19 | Who are you? The Personal Imitation Game | 你是谁？个人模仿游戏 | [arXiv 2611.24888v1](https://arxiv.org/abs/2611.24888v1) |
 | 2026-11-19 | Ground, Iterate, Trace: Decomposing AI Research Ideation | 基础、迭代、追踪：分解人工智能研究构思 | [arXiv 2611.24887v1](https://arxiv.org/abs/2611.24887v1) |
 | 2026-11-19 | Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws | 仅通过查询使用大型语言模型审计黑箱临床预测模型：带有植入缺陷的盲测 | [arXiv 2611.24877v1](https://arxiv.org/abs/2611.24877v1) |
-| 2026-11-19 | Can Programs Replace LLM Judges? Executable Program Judges for Scalable and Efficient Relevance Labeling | 待翻译 | [arXiv 2611.24849v1](https://arxiv.org/abs/2611.24849v1) |
+| 2026-11-19 | Can Programs Replace LLM Judges? Executable Program Judges for Scalable and Efficient Relevance Labeling | 程序能取代大型语言模型审稿人吗？可执行程序审稿人用于可扩展且高效的相关性标签 | [arXiv 2611.24849v1](https://arxiv.org/abs/2611.24849v1) |
 | 2026-11-19 | Atomic MathReasoner: Instance-Level Composition of Atomic Reasoning Skills for Mathematical LLMs | 待翻译 | [arXiv 2611.24846v1](https://arxiv.org/abs/2611.24846v1) |
 | 2026-11-19 | A Foundation Model to Measure and Predict Human Behaviour | 待翻译 | [arXiv 2611.24830v1](https://arxiv.org/abs/2611.24830v1) |
 | 2026-11-19 | Ultimate3D: Teaching Multimodal LLMs 3D Camera-Object Relations by Large-Scale Visual Instruction Data | 待翻译 | [arXiv 2611.24795v1](https://arxiv.org/abs/2611.24795v1) |
