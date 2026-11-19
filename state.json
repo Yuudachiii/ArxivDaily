@@ -74114,11 +74114,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-19T09:56:36.523516+00:00",
-        "run_id": "20261119T095636Z-adedd38e",
-        "stage": "translation"
+      "title_zh": "基础、迭代、追踪：分解人工智能研究构思",
+      "translation": {
+        "abstract_zh": "大型语言模型已被广泛用于生成合理的研究想法，但自动化创意的有效性来源及生成的新颖提案如何从已有科学工作中产生仍不清楚。我们提出了创造性人工智能研究员（Creative AI Researcher，CAR），这是一个结合文献基础、迭代开发和显性概念操作的自主框架。CAR 从检索的文献中构建语义知识图谱，并为创意代理配备图谱检索工具以及四种操作器：双结合（bisociation）、类比（analogy）、探索（exploration）和阐述（elaboration）。每次操作调用都会根据结构接受条件进行检查并记录，从而生成中间转换和声明文献来源的轨迹。我们使用两个语言模型骨干在 40 个 LiveIdeaBench 研究主题和两个执行基准上评估 CAR。CAR 在方法创新性（MN）方面显著优于单次提示方法和 AI 科学家（The AI Scientist）。其方法创新性并不与研究创意代理有显著不同，同时其在两个主干模型上的可行性评分更高。通过共享实验执行器，CAR 在 FML-bench-Lite 和 BioXArena 上的评估 AI 方法中实现了最高的成对胜率。在十条件消融研究中，MN 点估计在两个主干模型上都偏向 CAR 而非一步提议，但没有 MN 对比在多重比较校正后存活。结果并未确立显式操作符相比自由迭代具有一致的质量提升。CAR 使操作序列和声明的文献来源可检视，将评判出的创意质量与程序可追溯性分开。",
+        "title_zh": "基础、迭代、追踪：分解人工智能研究构思"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.24887v1"
       ]
