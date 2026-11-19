@@ -67,6 +67,10 @@
     "20261118T094826Z-5af4f741-fded0a1e8893": {
       "attempts": 1,
       "created_at": "2026-11-18T09:48:26.782474+00:00"
+    },
+    "20261119T095636Z-adedd38e-07bf875bd55a": {
+      "attempts": 0,
+      "created_at": "2026-11-19T09:56:36.523516+00:00"
     }
   },
   "collection": {
@@ -6482,6 +6486,452 @@
       "run_id": "20261118T094826Z-5af4f741",
       "schema_version": 1,
       "status": "confirmed"
+    },
+    "20261119T095636Z-adedd38e-07bf875bd55a": {
+      "alert": false,
+      "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-microsoft/archive/2026/11/19/20261119T095636Z-adedd38e-07bf875bd55a.md",
+      "chain_root": "20261119T095636Z-adedd38e-07bf875bd55a",
+      "chain_roots": [
+        "20261119T095636Z-adedd38e-07bf875bd55a"
+      ],
+      "content_hash": "07bf875bd55ad4de9b932d293bba44ca37319ee9c47fc2b857361e94608e4cdb",
+      "created_at": "2026-11-19T09:56:36.523516+00:00",
+      "day": "2026-11-19",
+      "digest_id": "20261119T095636Z-adedd38e-07bf875bd55a",
+      "empty": false,
+      "items": [
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Jailbreak attempts and harmful prompts remain a challenge for the safe deployment of large language models. We study whether contrastively learned representations can support safety detection without training an additional downstream classifier. We propose Jailbreak Detection with Prototype Inference (JDPI), which uses binary safety labels to construct harmful and benign prototypes and makes predictions from relative prototype distances. JDPI uses only binary safety labels for encoder adaptation, prototype construction, and validation. In our setup, it uses fewer labeled examples than the classifier baseline (Method A) by avoiding the separate split used to train the downstream classifier. Across four benchmarks covering different input formats, contrastive fine-tuning improves JDPI's detection accuracy by 9.1-18.0 percentage points. Using the same encoder, JDPI achieves slightly higher ROC-AUC on one benchmark and stays within 0.017 of the baseline across all four. With dataset-specific adaptation, JDPI exceeds the released Llama Guard 3-8B baseline by 0.173-0.310 in ROC-AUC across the four benchmarks. In multi-turn replay on TomGibbs, JDPI uses accumulated user history as the conversation unfolds, achieving higher conversation-level accuracy than when it uses the current turn alone. Across 12 directed transfers, JDPI outperforms the classifier by an average of 1.59 percentage points in accuracy, demonstrating stronger cross-dataset robustness.",
+            "authors": [
+              "Yan Qiu",
+              "Yuanyuan Li"
+            ],
+            "categories": [
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.24936v1",
+            "published": "2026-11-18T18:56:12+00:00",
+            "title": "Jailbreak Detection on Large Language Models via Contrastive Prototype Structures",
+            "updated": "2026-11-18T18:56:12+00:00",
+            "version_id": "2611.24936v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_training",
+            "llm_safety",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "越狱尝试和有害提示仍然是大规模语言模型安全部署的一大挑战。我们研究了对比学习表示是否能够在不训练额外下游分类器的情况下支持安全性检测。我们提出了基于原型推理的越狱检测（JDPI），它使用二元安全标签来构建有害和良性原型，并根据相对原型距离进行预测。JDPI仅使用二元安全标签进行编码器调整、原型构建和验证。在我们的设置中，它通过避免用于训练下游分类器的单独拆分，使用的标记样本比分类器基线（方法A）更少。在涵盖不同输入格式的四个基准测试中，对比微调提高了JDPI的检测准确率9.1-18.0个百分点。使用相同的编码器，JDPI在一个基准测试上实现了略高的ROC-AUC，并在四个基准测试中始终与基线保持在0.017之内。在特定数据集的适应中，JDPI 在四个基准测试中的 ROC-AUC 超过了已发布的 Llama Guard 3-8B 基线 0.173-0.310。在 TomGibbs 的多轮重放中，JDPI 随着对话的进行使用累积的用户历史，比仅使用当前轮次时实现了更高的对话级准确率。在 12 次定向迁移中，JDPI 在准确率上平均比分类器高出 1.59 个百分点，展示了更强的跨数据集鲁棒性。",
+            "title_zh": "通过对比原型结构检测大型语言模型的越狱"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "In this paper, we propose a Unified Law for Visual Tasks, which could be further divided into Four Laws of Computer Vision, with the goal of enabling a single framework or method to uniformly train on and perform nearly all visual tasks. Our starting point is an inspiration and hypothesis: if the world information is encoded into image, which we call World Snapshots, then image processing is world processing, and image generation is World Snapshot generation. Furthermore, if all visual and visualization tasks can be reformulated as generation tasks, then a unified method, World Snapshot Models (WSMs), can perform the vast majority of visual tasks, much as large language models have largely unified natural language processing. This paper validates these laws across more than 1,000 trained and evaluated visual tasks (defined by distinct input-output mappings) and presents a unified training framework for future visual-task research and applications.",
+            "authors": [
+              "Sen Fang",
+              "Yalin Feng",
+              "Yancheng Zhang",
+              "Yanxin Zhang",
+              "Zonglin Lyu",
+              "Hongbin Zhong",
+              "Liwei Che",
+              "Rui Wu",
+              "Chen Chen",
+              "Dimitris N. Metaxas"
+            ],
+            "categories": [
+              "cs.CV"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.24917v1",
+            "published": "2026-11-18T18:48:38+00:00",
+            "title": "Unified Law for Visual Tasks (The Four Laws of Computer Vision)",
+            "updated": "2026-11-18T18:48:38+00:00",
+            "version_id": "2611.24917v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "在本文中，我们提出了一个用于视觉任务的统一法则，这一法则可以进一步细分为计算机视觉的四条规律，目标是使单一的框架或方法能够统一地训练并执行几乎所有的视觉任务。我们的出发点是一个灵感和假设：如果世界信息被编码到图像中，我们称之为“世界快照”，那么图像处理就是世界处理，图像生成就是世界快照生成。此外，如果所有视觉和可视化任务都可以重新表述为生成任务，那么一种统一的方法——世界快照模型（WSMs）——就可以执行绝大多数视觉任务，就像大型语言模型在很大程度上统一了自然语言处理一样。本文在超过1000个已训练和评估的视觉任务（由不同的输入-输出映射定义）中验证了这些规律，并提出了一个用于未来视觉任务研究和应用的统一训练框架。",
+            "title_zh": "视觉任务统一法则（计算机视觉四法则）"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "A fixed dispatch rate for LLM inference becomes stale as serving fleets resize and request sizes change. Generative output length is unknown at admission, and shared provider pools can lose capacity. We present Cap-and-Track, a design for asynchronous inference across provider capacity and internal GPUs. Meta's traffic shaper implements Cap-and-Track for post and live-video understanding. Refusals signal the backend's current admission ceiling. Durable priority queues hold excess work outside execution, including refused requests for retry. Cap is a fail-fast admission check at the saturated resource that refuses work before a long wait. Using only those refusals, the Track dispatcher probes upward and backs off. It follows the ceiling without output-length prediction or a fleet-level rate to retune. In a concurrent same-traffic production A/B, the shaper ran per-replica Cap plus Track. It served a classifier on 43% fewer H100s than its queued, fixed-rate precursor, though lower-priority work waited longer at backfill peaks. In steady-capacity real-engine replay, Track ran within 1% of the goodput of a fixed rate tuned above measured capacity, with about a quarter of that rate's refusal share. The shaper carries more than 300 million online requests and hundreds of terabytes of media a day. During a backfill, it handled 1.1 billion requests in its busiest 24 hours. Lessons include keeping queues inside inference engines just long enough to fill batches, steering dispatch by capacity refusals alone, keeping dispatch stateful, and sizing fleets by how long low-priority work can wait.",
+            "authors": [
+              "Benjamin Novotny",
+              "Doug Szeto",
+              "Chang Wang",
+              "Shicheng Chen",
+              "George Zhihua Yuan",
+              "Bob Kamma",
+              "Michael Ge",
+              "John Xin Zhou",
+              "Andrea Olgiati"
+            ],
+            "categories": [
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.24891v1",
+            "published": "2026-11-18T18:34:10+00:00",
+            "title": "Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity",
+            "updated": "2026-11-18T18:34:10+00:00",
+            "version_id": "2611.24891v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "固定的 LLM 推理分发速率会随着服务队列的大小调整和请求规模的变化而变得陈旧。生成输出的长度在接入时是未知的，并且共享的提供商池可能会失去容量。我们提出了 Cap-and-Track，这是一种在提供商容量和内部 GPU 上进行异步推理的设计。Meta 的流量调节器为帖子和实时视频理解实现了 Cap-and-Track。拒绝信号表示后台当前的接入上限。持久化优先队列将超出执行的多余工作保留，包括用于重试的被拒绝请求。Cap 是在饱和资源上的快速失败接入检查，会在长时间等待之前拒绝工作。仅使用这些拒绝，Track 调度器向上探测并逐步回退。它遵循上限，无需输出长度预测或重新调整车队级别速率。在同时同流量的生产 A/B 测试中，流量调节器在每个副本上运行 Cap 加 Track。它在比其排队、固定速率的前身少 43% H100 的情况下服务了一个分类器，尽管低优先级工作在填充高峰期间等待更长时间。在稳态容量实际引擎重放中，Track 的运行效率在固定速率（高于测量容量的调优速率）吞吐量的 1% 以内，而拒绝率大约为该固定速率的四分之一。该整形器每天处理超过 3 亿在线请求和数百 TB 的媒体数据。在一次填充期间，其在最繁忙的 24 小时内处理了 11 亿请求。经验教训包括：保持推理引擎内的队列长度仅足够填满批次；仅通过容量拒绝来引导调度；保持调度状态；以及根据低优先级工作能够等待的时间来确定服务器集群规模。",
+            "title_zh": "封顶与跟踪：优化大语言模型推理请求在变化容量下的调度"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large Language Models (LLMs) now perform strongly on Alan Turing's 1950 Imitation Game, so we propose a harder challenge, the Personal Imitation Game, which asks whether a machine can replicate a specific individual in conversation rather than a generic human. Testing with 30 participants, we establish a human baseline and report the identity signals interrogators rely on: stylometric features, personality traits, and biographical facts. To demonstrate the framework, we design an LLM-based system that plays the game for one of the paper's authors, drawing on an autoethnographic dataset spanning ten years of personal digital communication. In a 20-person deception study, interrogators choose our system over the author's own friends in 7 of 10 rounds, and the author over our system in 13 of 20; neither rate is distinguishable from chance at this sample size. We consider design improvements, applications of personal AI agents, and implications for identity and privacy.",
+            "authors": [
+              "Muhammad Rizky Wellyanto",
+              "Hajara-Yasmin Isa",
+              "Kexin Xue",
+              "Vishal Ravichandran",
+              "Wenpeng Lu",
+              "Jerry O. Talton",
+              "Ranjitha Kumar"
+            ],
+            "categories": [
+              "cs.HC",
+              "cs.AI",
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.24888v1",
+            "published": "2026-11-18T18:32:14+00:00",
+            "title": "Who are you? The Personal Imitation Game",
+            "updated": "2026-11-18T18:32:14+00:00",
+            "version_id": "2611.24888v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型（LLMs）现在在艾伦·图灵1950年的模仿游戏中表现出色，因此我们提出了一个更难的挑战——个人模仿游戏，该游戏旨在测试机器是否能够在对话中复制特定个体，而不仅仅是一般人类。通过对30名参与者的测试，我们建立了人类基线，并报告了审问者依赖的身份信号：文体特征、个性特征和传记事实。为了展示这一框架，我们设计了一个基于LLM的系统，该系统为论文的一位作者参与游戏，利用涵盖十年个人数字通信的自我民族志数据集。在一项20人的欺骗研究中，审问者在10轮中有7轮选择了我们的系统而非作者的朋友，而作者在20轮中有13轮识别出我们的系统；在此样本量下，这两种识别率均无法与偶然概率区分开来。我们讨论了设计改进、个人AI代理的应用以及对身份和隐私的影响。",
+            "title_zh": "你是谁？个人模仿游戏"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language models have been widely used to generate plausible research ideas, yet it remains unclear what makes automated ideation effective and how generated novel proposals arise from prior scientific work. We introduce the Creative AI Researcher (CAR), an agentic framework combining literature grounding, iterative development and explicit conceptual operators. CAR constructs a semantic knowledge graph from retrieved literature and equips an ideation agent with graph-retrieval tools and four operators: bisociation, analogy, exploration and elaboration. Each operator call is checked against structural acceptance conditions and recorded, producing a trace of intermediate transformations and declared literature sources. We evaluate CAR with two language-model backbones across 40 LiveIdeaBench research topics and two execution benchmarks. CAR achieves significantly higher methodological novelty (MN) than single-shot prompting and The AI Scientist. Its methodological novelty does not differ significantly from the Research Ideation Agent, while its feasibility scores are higher on both backbones. With a shared experiment executor, CAR achieves the highest pairwise win rate among the evaluated AI methods on FML-bench-Lite and BioXArena. In a ten-condition ablation study, MN point estimates favor CAR over one-step proposal on both backbones, but no MN contrast survives correction for multiple comparisons. The results do not establish a consistent quality benefit from explicit operators beyond free-form iteration. CAR makes the sequence of operations and declared literature sources inspectable, separating judged idea quality from procedural traceability.",
+            "authors": [
+              "Samson Yu",
+              "Qiran Zou",
+              "Jing Yu Lim",
+              "Rushi Shah",
+              "Anirudh Goyal",
+              "Dianbo Liu"
+            ],
+            "categories": [
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.24887v1",
+            "published": "2026-11-18T18:31:37+00:00",
+            "title": "Ground, Iterate, Trace: Decomposing AI Research Ideation",
+            "updated": "2026-11-18T18:31:37+00:00",
+            "version_id": "2611.24887v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_agent",
+            "llm_rag",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型已被广泛用于生成合理的研究想法，但自动化创意的有效性来源及生成的新颖提案如何从已有科学工作中产生仍不清楚。我们提出了创造性人工智能研究员（Creative AI Researcher，CAR），这是一个结合文献基础、迭代开发和显性概念操作的自主框架。CAR 从检索的文献中构建语义知识图谱，并为创意代理配备图谱检索工具以及四种操作器：双结合（bisociation）、类比（analogy）、探索（exploration）和阐述（elaboration）。每次操作调用都会根据结构接受条件进行检查并记录，从而生成中间转换和声明文献来源的轨迹。我们使用两个语言模型骨干在 40 个 LiveIdeaBench 研究主题和两个执行基准上评估 CAR。CAR 在方法创新性（MN）方面显著优于单次提示方法和 AI 科学家（The AI Scientist）。其方法创新性并不与研究创意代理有显著不同，同时其在两个主干模型上的可行性评分更高。通过共享实验执行器，CAR 在 FML-bench-Lite 和 BioXArena 上的评估 AI 方法中实现了最高的成对胜率。在十条件消融研究中，MN 点估计在两个主干模型上都偏向 CAR 而非一步提议，但没有 MN 对比在多重比较校正后存活。结果并未确立显式操作符相比自由迭代具有一致的质量提升。CAR 使操作序列和声明的文献来源可检视，将评判出的创意质量与程序可追溯性分开。",
+            "title_zh": "基础、迭代、追踪：分解人工智能研究构思"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language models (LLMs) are used to explain clinical prediction models, on the promise that they can say what a model computes, find its faults and even reveal new knowledge in it. We tested the three promises where the answers could be checked. From the International Stroke Trial we trained four kinds of model (logistic regression, explainable boosting machine, gradient-boosted trees, neural network) for two outcomes on patients randomised earlier, planted one flaw in each of 24 copies (an under-predicted subgroup, a reversed risk factor or an implausible step) and mixed them with the 8 clean models. GPT-6 Astra audited each model three times, blind, through a tool that only returned the model's predictions; the judging rules were committed before any run and applied by program. Its surrogate models, with a median of 128 terms, reproduced the audited models' log-odds with a mean $R^2$ of 0.976 (0.959 for an additive surrogate of 42 terms fitted by an analyst). It found the planted flaw in 69 of 72 runs (96%; 95% CI 80% to 99%); a script written for the purpose found all 24. It also reported many more problems: 60% of 1,089 checkable reports failed the pre-specified check against the model's average behaviour; post hoc, most of these were real but small steps, and 15% of the checkable reports were not found in the model. Of 601 unexpected relationships it read out of the clean models, 11% held in patients randomised later (random pairs 6%; a regression scan's shorter list of its strongest candidates, 28%); after a check on the training data, 33% against 30%. With query access alone, an LLM can describe a black-box model faithfully and find nearly every planted flaw, as a purpose-written script also did; its reports of problems must be checked on the model and its discoveries on data.",
+            "authors": [
+              "Zhiyu Liu",
+              "Xinyu Yang"
+            ],
+            "categories": [
+              "cs.LG",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.24877v1",
+            "published": "2026-11-18T18:24:54+00:00",
+            "title": "Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws",
+            "updated": "2026-11-18T18:24:54+00:00",
+            "version_id": "2611.24877v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型（LLMs）被用来解释临床预测模型，基于它们可以说明模型的计算过程、发现其缺陷甚至揭示其中的新知识的承诺。我们测试了在能够验证答案的情况下的这三项承诺。从国际卒中试验中，我们对早期随机分配的患者训练了四种模型（逻辑回归、可解释提升机、梯度提升树、神经网络）以预测两个结果，在24个模型副本中各植入一个缺陷（低预测的亚组、反转的风险因素或不合理的步骤），并将它们与8个干净模型混合。GPT-6 Astra通过一个仅返回模型预测结果的工具对每个模型进行了三次盲审；评判规则在任何运行之前就已确定，并通过程序应用。它的代理模型中位项数为128项，重现了审核模型的对数几率，平均$R^2$为0.976（由分析员拟合的42项加性代理模型为0.959）。它发现了在72次运行中植入的缺陷有69次被检测出（96%；95% 置信区间 80% 至 99%）；为此目的而编写的脚本找到了全部24个缺陷。它还报告了更多问题：在1,089份可检查报告中，有60%未通过针对模型平均行为的预先设定检查；事后分析，大多数问题确实存在但都是小步骤，并且有15%的可检查报告在模型中未被发现。在从干净模型中读取的601个意外关系中，11%在随后随机分组的患者中成立（随机配对6%；回归扫描的最强候选者列表较短，则为28%）；经对训练数据的检查后，对比为33% 对 30%。仅通过查询访问，LLM就可以忠实描述一个黑箱模型并发现几乎所有植入的缺陷，就像为此编写的脚本一样；其问题报告必须在模型上进行验证，其在数据上的发现也需要被检查。",
+            "title_zh": "仅通过查询使用大型语言模型审计黑箱临床预测模型：带有植入缺陷的盲测"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language model (LLM) judges have become a common way to create large-scale relevance judgments for retrieval evaluation. However, each judgment requires a potentially expensive call to a frontier model, and the judgments are hard to interpret and may not be reproducible. In this paper, we ask whether an LLM can write a readable program for each topic that replaces its per-document judgments. To address these issues, we propose ExecJudges, a method for generating fast, inspectable and scalable judges for automatic relevance labeling. Specifically, ExecJudges uses a frontier LLM to turn assessment guidelines into executable programs, which rely only on lexical matching, standard NLP libraries like parsers, and pool statistics. An ExecJudges-L variant also uses examples of human labels if available. We evaluate ExecJudges on seven TREC collections by comparing the produced labels with trained NIST assessors, frontier LLM judges, and recently proposed per-topic classifiers. Our results show that ExecJudges agrees with NIST assessors at the level of the Claude Sonnet 5.5 LLM judges on TREC DL 2019-2021. With a small number of human labels per topic, the ExecJudges-L variant agrees with NIST more than per-topic classifiers with the same labels on all seven collections, and either exceeds the agreement of LLM judges provided the same labels or is within about 0.05 of it in Krippendorff's alpha. The labels rank the official TREC DL runs with Kendall's tau of 0.87 to 0.94, and writing the programs incurs a one-time cost of $0.17 to $0.49 per topic, with no additional costs for grading. Our results suggest that ExecJudges offers a reproducible, inspectable, efficient and cost-effective alternative to LLM judges for labeling deep result pools for system evaluation or ranking improvements.",
+            "authors": [
+              "Eugene Agichtein",
+              "Charles L. A. Clarke",
+              "Kaustubh Dhole",
+              "William Stern"
+            ],
+            "categories": [
+              "cs.IR",
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.24849v1",
+            "published": "2026-11-18T18:09:16+00:00",
+            "title": "Can Programs Replace LLM Judges? Executable Program Judges for Scalable and Efficient Relevance Labeling",
+            "updated": "2026-11-18T18:09:16+00:00",
+            "version_id": "2611.24849v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大语言模型（LLM）评审已经成为创建大规模相关性判断用于检索评估的常用方式。然而，每一次判断都可能需要调用昂贵的前沿模型，并且这些判断难以解释，也可能无法复现。在本文中，我们探讨了LLM是否可以为每个主题编写可读程序，以取代其逐文档的判断。为了解决这些问题，我们提出了ExecJudges，这是一种生成快速、可检查且可扩展的自动相关性标注评审的方法。具体而言，ExecJudges使用前沿LLM将评估指南转换为可执行程序，这些程序仅依赖词汇匹配、标准NLP库（如解析器）以及集合统计信息。如果有可用的人类标注示例，ExecJudges-L变体也会使用这些示例。我们通过将ExecJudges生成的标签与受过训练的NIST评估者、前沿LLM评审者以及最近提出的每主题分类器进行比较，在七个TREC集合上评估了ExecJudges的表现。我们的结果显示，ExecJudges 与 NIST 评估员在 TREC DL 2019-2021 上的 Claude Sonnet 5.5 LLM 评审员水平上达成一致。在每个主题只有少量人工标签的情况下，ExecJudges-L 变体与 NIST 的一致性高于对所有七个合集使用相同标签的每主题分类器，并且要么超过 LLM 评审员在相同标签下的一致性，要么在 Krippendorff 的 alpha 系数上与其相差约 0.05。标签以 Kendall 的 tau 系数 0.87 到 0.94 排列官方 TREC DL 运行程序，编写程序的单次成本为每个主题 $0.17 至 $0.49，评分没有额外费用。我们的结果表明，ExecJudges 提供了一种可复现、可检查、高效且具有成本效益的替代方案，可用于标记深度结果池以进行系统评估或排名改进。",
+            "title_zh": "程序能取代大型语言模型审稿人吗？可执行程序审稿人用于可扩展且高效的相关性标签"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Most existing approaches enhance mathematical reasoning in large language models (LLMs) as a monolithic capability, despite the fact that different mathematical problems require different reasoning skills. Recent work has explored a more fine-grained perspective by decomposing mathematical reasoning into atomic skills and developing specialized modules for individual capabilities. However, how to effectively utilize these atomic abilities remains underexplored. To address this challenge, we propose Atomic MathReasoner (AMR), an instance-level framework for composing atomic reasoning skills. AMR first trains a library of capability-specific LoRA experts and performs gradient-free optimization over held-out validation subsets to discover a diverse set of low-loss composition prototypes. It evaluates the preference of each prototype using the token-level negative log-likelihood of reference solutions, filters ambiguous assignments through a confidence margin, and distills the resulting pseudo-labels into a lightweight router. During inference, the router selects an appropriate composition prototype for each problem, enabling problem-specific utilization of atomic skills without costly online optimization. Experiments on the AtomicMath benchmark across general and mathematics-specialized LLMs demonstrate consistent improvements. On Qwen2.5-Math-Instruct-7B, AMR increases average field accuracy from 64.4% to 68.1% at Level 1 and from 59.3% to 63.7% at Level 2, while improving average logical reasoning performance from 39.4% to 46.8%. These results demonstrate that effectively composing specialized atomic skills provides a promising approach to strengthening mathematical reasoning in LLMs.",
+            "authors": [
+              "Jiashu Li",
+              "Tianyu Gao",
+              "Qinglong Liu",
+              "Jinping Wang",
+              "Ye Wei",
+              "Zhiqiang Gao"
+            ],
+            "categories": [
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.24846v1",
+            "published": "2026-11-18T18:08:08+00:00",
+            "title": "Atomic MathReasoner: Instance-Level Composition of Atomic Reasoning Skills for Mathematical LLMs",
+            "updated": "2026-11-18T18:08:08+00:00",
+            "version_id": "2611.24846v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大多数现有方法都是将大语言模型（LLMs）中的数学推理能力作为一个整体来增强，尽管不同的数学问题需要不同的推理技能。近期的工作通过将数学推理分解为原子技能并为各个能力开发专门模块，探索了更细粒度的视角。然而，如何有效利用这些原子能力仍然研究不足。为了解决这一挑战，我们提出了原子数学推理器（Atomic MathReasoner, AMR），一个用于组合原子推理技能的实例级框架。AMR 首先训练一组针对特定能力的 LoRA 专家库，并在保留的验证子集上进行无梯度优化，以发现多样化的低损失组合原型。它使用参考解的 token 级负对数似然评估每个原型的偏好，通过置信度边界过滤不明确的分配，并蒸馏由此产生的结果将伪标签引入轻量级路由器。在推理过程中，路由器为每个问题选择一个合适的组合原型，从而在无需昂贵的在线优化的情况下，实现针对问题的原子技能利用。在通用和数学专业化大语言模型上对 AtomicMath 基准进行的实验表明，性能有稳定的提升。在 Qwen2.5-Math-Instruct-7B 上，AMR 将一级的平均领域准确率从 64.4% 提升至 68.1%，二级从 59.3% 提升至 63.7%，同时将平均逻辑推理性能从 39.4% 提升至 46.8%。这些结果表明，有效组合专业化的原子技能为增强大语言模型的数学推理能力提供了一种有前景的方法。",
+            "title_zh": "原子数学推理器：用于数学大型语言模型的原子推理技能实例级组合"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language models (LLMs) are increasingly used to infer psychological attributes, predict individual behaviour, and simulate human populations. However, despite generating plausible responses, they often misrepresent individuals and distort population statistics. Here we introduce Chiron, a foundation model to measure and predict human behaviour. We jointly fine-tune an LLM to represent psychological constructs, predict individual behaviour, and align population response distributions with human statistics. The training and evaluation data span 36 behavioural domains and 78 social science experiments, comprising 288,307 person records, 1,411,750 atomic behavioural decisions, and 99,953 psychometric assessments over 109 psychological constructs. In our evaluations, Chiron's psychological measurements agree more closely with human self-reports and exhibit fewer biases that undermine psychometric validity. It predicts individual behaviour more accurately than frontier LLMs (up to 28.4% relative improvement). In simulations of social science experiments, it more accurately captures the direction and magnitude of human experimental effects (82.2--94.3% lower effect-size estimation error). Together, these results establish Chiron as a unified computational instrument for measuring and predicting human behaviour.",
+            "authors": [
+              "Haoran Ye",
+              "Tianrui Huo",
+              "Hangzhen Li",
+              "Xin Zhang",
+              "Guojie Song"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.AI",
+              "cs.HC"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.24830v1",
+            "published": "2026-11-18T17:59:08+00:00",
+            "title": "A Foundation Model to Measure and Predict Human Behaviour",
+            "updated": "2026-11-18T17:59:08+00:00",
+            "version_id": "2611.24830v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型（LLMs）越来越多地用于推断心理属性、预测个体行为以及模拟人类群体。然而，尽管它们能够生成看似合理的响应，但往往会错误描述个体并扭曲群体统计数据。在此，我们介绍 Chiron，一种用于衡量和预测人类行为的基础模型。我们联合微调 LLM，以表示心理构念、预测个体行为，并使群体响应分布与人类统计数据保持一致。训练和评估数据涵盖 36 个行为领域和 78 个社会科学实验，包括 288,307 个个体记录、1,411,750 次原子行为决策，以及 99,953 个涵盖 109 个心理构念的心理测量评估。在我们的评估中，Chiron 的心理测量与人类自我报告的吻合度更高，并表现出较少破坏心理测量有效性的偏差。它比前沿 LLM 更准确地预测个体行为（最高至28.4%的相对改进)。在社会科学实验的模拟中，它更准确地捕捉了人类实验效应的方向和幅度（效果量估计误差降低了82.2%至94.3%）。综合来看，这些结果确立了Chiron作为一个统一的计算工具，用于测量和预测人类行为。",
+            "title_zh": "一个用于衡量和预测人类行为的基础模型"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Multimodal Large Language Models (MLLMs) struggle with accurately capturing camera-object relations, especially for object orientation, camera viewpoint, and camera shots. This stems from the fact that existing MLLMs are trained on images with limited diverse camera-object relations and corresponding textual descriptions. To address this, we propose a synthetic generation pipeline to create large-scale 3D visual instruction datasets. Our framework takes 3D assets as input and uses rendering and diffusion-based image generation models to create photorealistic images preserving precise camera-object relations. Additionally, large language models (LLMs) are used to generate text prompts for guiding visual instruction tuning and controlling image generation. We create Ultimate3D, a large-scale 3D-grounded 2D visual instruction dataset. Ultimate3D consists of 240K VQAs with precise camera-object annotations, and corresponding benchmark. MLLMs fine-tuned on our proposed dataset outperform commercial models by a large margin, achieving an average accuracy improvement of 29.7% on camera-object relation recognition tasks. Our code, dataset, and benchmark will contribute to broad MLLM applications.",
+            "authors": [
+              "Liu He",
+              "Yizhi Song",
+              "Ruiqi Xu",
+              "Baris Sarper Tezcan",
+              "Xiao Zeng",
+              "Albert Y. C. Chen",
+              "Lu Xia",
+              "Shashwat Verma",
+              "Sankalp Dayal",
+              "Min Sun",
+              "Cheng-Hao Kuo",
+              "Daniel Aliaga"
+            ],
+            "categories": [
+              "cs.CV"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.24795v1",
+            "published": "2026-11-18T17:39:54+00:00",
+            "title": "Ultimate3D: Teaching Multimodal LLMs 3D Camera-Object Relations by Large-Scale Visual Instruction Data",
+            "updated": "2026-11-18T17:39:54+00:00",
+            "version_id": "2611.24795v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_training",
+            "llm_multimodal",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "多模态大语言模型（MLLMs）在准确捕捉摄像机与物体之间的关系方面存在困难，尤其是在物体方向、摄像机视角和摄像机拍摄方式方面。这主要是由于现有的MLLMs训练所使用的图像在摄像机与物体关系及相应文本描述上多样性有限。为了解决这一问题，我们提出了一个合成生成流程，用于创建大规模3D视觉指令数据集。我们的框架以3D资产为输入，并使用基于渲染和扩散的图像生成模型创建保留精确摄像机-物体关系的逼真图像。此外，还使用大语言模型（LLMs）生成文本提示，以指导视觉指令微调和控制图像生成。我们创建了Ultimate3D，一个大规模基于3D的二维视觉指令数据集。Ultimate3D包含240K个具有精确摄像机-物体标注的视觉问答（VQA）及相应基准测试。在我们提出的数据集上微调的MLLMs表现优于在相机-物体关系识别任务上，本模型以很大优势超过了商业模型，平均准确率提高了29.7%。我们的代码、数据集和基准将有助于广泛的多模态大模型应用。",
+            "title_zh": "Ultimate3D：通过大规模视觉指令数据教授多模态大语言模型三维相机-物体关系"
+          }
+        }
+      ],
+      "notification_hash": "3f0d948a90c286ee11c26a88a6de8eb9ccdff33f7018f66e4399ab1c9f10f32c",
+      "recovery_of": [],
+      "rendered": {
+        "2611.24795": "rendered_inline_translation",
+        "2611.24830": "rendered_inline_translation",
+        "2611.24846": "rendered_inline_translation",
+        "2611.24849": "rendered_inline_translation",
+        "2611.24877": "rendered_inline_translation",
+        "2611.24887": "rendered_inline_translation",
+        "2611.24888": "rendered_inline_translation",
+        "2611.24891": "rendered_inline_translation",
+        "2611.24917": "rendered_inline_translation",
+        "2611.24936": "rendered_inline_translation"
+      },
+      "run_id": "20261119T095636Z-adedd38e",
+      "schema_version": 1,
+      "status": "prepared"
     }
   },
   "papers": {
