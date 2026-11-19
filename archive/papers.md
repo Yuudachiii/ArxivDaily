@@ -12,7 +12,7 @@
 | 2026-11-19 | Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws | 仅通过查询审核具有大型语言模型的黑盒临床预测模型：带有植入缺陷的盲测 | [arXiv 2611.24877v1](https://arxiv.org/abs/2611.24877v1) |
 | 2026-11-19 | Can Programs Replace LLM Judges? Executable Program Judges for Scalable and Efficient Relevance Labeling | 项目可以取代法学硕士法官吗？可执行程序判断可扩展且高效的相关性标签 | [arXiv 2611.24849v1](https://arxiv.org/abs/2611.24849v1) |
 | 2026-11-19 | Atomic MathReasoner: Instance-Level Composition of Atomic Reasoning Skills for Mathematical LLMs | Atomic MathReasoner：数学法学硕士原子推理技能的实例级组合 | [arXiv 2611.24846v1](https://arxiv.org/abs/2611.24846v1) |
-| 2026-11-19 | A Foundation Model to Measure and Predict Human Behaviour | 待翻译 | [arXiv 2611.24830v1](https://arxiv.org/abs/2611.24830v1) |
+| 2026-11-19 | A Foundation Model to Measure and Predict Human Behaviour | 测量和预测人类行为的基础模型 | [arXiv 2611.24830v1](https://arxiv.org/abs/2611.24830v1) |
 | 2026-11-19 | Ultimate3D: Teaching Multimodal LLMs 3D Camera-Object Relations by Large-Scale Visual Instruction Data | 待翻译 | [arXiv 2611.24795v1](https://arxiv.org/abs/2611.24795v1) |
 | 2026-11-18 | Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching | 环境法学硕士：通过温度匹配进行数据高效的监督微调 | [arXiv 2611.23229v1](https://arxiv.org/abs/2611.23229v1) |
 | 2026-11-18 | Do LLM Agents Still Need to Be Told How to Self-Improve? | LLM代理人还需要被告知如何自我提升吗？ | [arXiv 2611.23219v1](https://arxiv.org/abs/2611.23219v1) |
