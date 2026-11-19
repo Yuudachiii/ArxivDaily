@@ -9,7 +9,7 @@
 | 2026-11-19 | Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity | Cap-and-Track：跨转移容量优化 LLM 推理请求调度 | [arXiv 2611.24891v1](https://arxiv.org/abs/2611.24891v1) |
 | 2026-11-19 | Who are you? The Personal Imitation Game | 你是谁？个人模仿游戏 | [arXiv 2611.24888v1](https://arxiv.org/abs/2611.24888v1) |
 | 2026-11-19 | Ground, Iterate, Trace: Decomposing AI Research Ideation | 基础、迭代、追踪：分解人工智能研究理念 | [arXiv 2611.24887v1](https://arxiv.org/abs/2611.24887v1) |
-| 2026-11-19 | Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws | 待翻译 | [arXiv 2611.24877v1](https://arxiv.org/abs/2611.24877v1) |
+| 2026-11-19 | Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws | 仅通过查询审核具有大型语言模型的黑盒临床预测模型：带有植入缺陷的盲测 | [arXiv 2611.24877v1](https://arxiv.org/abs/2611.24877v1) |
 | 2026-11-19 | Can Programs Replace LLM Judges? Executable Program Judges for Scalable and Efficient Relevance Labeling | 待翻译 | [arXiv 2611.24849v1](https://arxiv.org/abs/2611.24849v1) |
 | 2026-11-19 | Atomic MathReasoner: Instance-Level Composition of Atomic Reasoning Skills for Mathematical LLMs | 待翻译 | [arXiv 2611.24846v1](https://arxiv.org/abs/2611.24846v1) |
 | 2026-11-19 | A Foundation Model to Measure and Predict Human Behaviour | 待翻译 | [arXiv 2611.24830v1](https://arxiv.org/abs/2611.24830v1) |
