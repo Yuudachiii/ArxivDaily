@@ -76013,9 +76013,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-19T09:56:35.658037+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Large language models (LLMs) are used to explain clinical prediction models, on the promise that they can say what a model computes, find its faults and even reveal new knowledge in it. We tested the three promises where the answers could be checked. From the International Stroke Trial we trained four kinds of model (logistic regression, explainable boosting machine, gradient-boosted trees, neural network) for two outcomes on patients randomised earlier, planted one flaw in each of 24 copies (an under-predicted subgroup, a reversed risk factor or an implausible step) and mixed them with the 8 clean models. GPT-6 Astra audited each model three times, blind, through a tool that only returned the model's predictions; the judging rules were committed before any run and applied by program. Its surrogate models, with a median of 128 terms, reproduced the audited models' log-odds with a mean $R^2$ of 0.976 (0.959 for an additive surrogate of 42 terms fitted by an analyst). It found the planted flaw in 69 of 72 runs (96%; 95% CI 80% to 99%); a script written for the purpose found all 24. It also reported many more problems: 60% of 1,089 checkable reports failed the pre-specified check against the model's average behaviour; post hoc, most of these were real but small steps, and 15% of the checkable reports were not found in the model. Of 601 unexpected relationships it read out of the clean models, 11% held in patients randomised later (random pairs 6%; a regression scan's shorter list of its strongest candidates, 28%); after a check on the training data, 33% against 30%. With query access alone, an LLM can describe a black-box model faithfully and find nearly every planted flaw, as a purpose-written script also did; its reports of problems must be checked on the model and its discoveries on data.",
         "authors": [
@@ -76032,15 +76048,11 @@
         "updated": "2026-11-18T18:24:54+00:00",
         "version_id": "2611.24877v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-19T09:56:35.658037+00:00",
-        "run_id": "20261119T095635Z-a35705d3",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.24877v1"
       ]
