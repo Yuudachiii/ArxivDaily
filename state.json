@@ -7238,8 +7238,15 @@
       "content_hash": "e460f3279f10e63ef46cf511532900169274509ba7be208124754d7b4bd5c723",
       "created_at": "2026-11-19T09:56:35.658037+00:00",
       "day": "2026-11-19",
+      "delivery": {
+        "detail": "wechat_status",
+        "polls": 1,
+        "pushid": "69465856",
+        "status": "confirmed"
+      },
       "digest_id": "20261119T095635Z-a35705d3-e460f3279f10",
       "empty": false,
+      "finished_at": "2026-11-19T10:00:09.843146+00:00",
       "items": [
         {
           "modules": [
@@ -7673,7 +7680,7 @@
       },
       "run_id": "20261119T095635Z-a35705d3",
       "schema_version": 1,
-      "status": "sending"
+      "status": "confirmed"
     }
   },
   "papers": {
@@ -76324,7 +76331,6 @@
       ]
     },
     "2611.24795": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -76352,7 +76358,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -76385,7 +76391,6 @@
         "updated": "2026-11-18T17:39:54+00:00",
         "version_id": "2611.24795v1"
       },
-      "pending_digest": "20261119T095635Z-a35705d3-e460f3279f10",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -76407,7 +76412,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "Ultimate3D：通过大规模视觉指令数据教授多模态法学硕士 3D 相机-物体关系",
       "translation": {
         "abstract_zh": "多模态大语言模型 (MLLM) 很难准确捕捉相机与物体的关系，尤其是物体方向、相机视点和相机镜头。这是因为现有的 MLLM 是在具有有限的多样化相机-对象关系和相应文本描述的图像上进行训练的。为了解决这个问题，我们提出了一种合成生成管道来创建大规模 3D 视觉指令数据集。我们的框架以 3D 资产作为输入，并使用基于渲染和扩散的图像生成模型来创建逼真的图像，并保留精确的相机-对象关系。此外，大语言模型（LLM）用于生成文本提示，以指导视觉指令调整和控制图像生成。我们创建了 Ultimate3D，一个基于 3D 的大规模 2D 视觉指令数据集。 Ultimate3D 由 240K VQA 组成，具有精确的相机对象注释和相应的基准。在我们提出的数据集上进行微调的 MLLM 大幅优于商业模型，在相机-物体关系识别任务上实现了 29.7% 的平均准确度提升。我们的代码、数据集和基准测试将为广泛的 MLLM 应用做出贡献。",
@@ -76420,7 +76425,6 @@
       ]
     },
     "2611.24830": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -76448,7 +76452,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -76476,7 +76480,6 @@
         "updated": "2026-11-18T17:59:08+00:00",
         "version_id": "2611.24830v1"
       },
-      "pending_digest": "20261119T095635Z-a35705d3-e460f3279f10",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -76494,7 +76497,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "测量和预测人类行为的基础模型",
       "translation": {
         "abstract_zh": "大型语言模型 (LLM) 越来越多地用于推断心理属性、预测个人行为和模拟人群。然而，尽管产生了看似合理的反应，但它们经常歪曲个人并扭曲人口统计数据。在这里，我们介绍 Chiron，一个测量和预测人类行为的基础模型。我们共同对法学硕士进行微调，以代表心理结构、预测个人行为，并使人口反应分布与人类统计数据保持一致。训练和评估数据涵盖 36 个行为领域和 78 个社会科学实验，包括 288,307 条人员记录、1,411,750 个原子行为决策以及超过 109 个心理结构的 99,953 项心理测量评估。在我们的评估中，Chiron 的心理测量结果与人类的自我报告更加一致，并且表现出更少的破坏心理测量有效性的偏见。它比前沿法学硕士更准确地预测个人行为（相对提高高达 28.4%）。在社会科学实验的模拟中，它可以更准确地捕捉人类实验效果的方向和大小（效果大小估计误差降低 82.2--94.3%）。总之，这些结果使 Chiron 成为测量和预测人类行为的统一计算工具。",
@@ -76507,7 +76510,6 @@
       ]
     },
     "2611.24846": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -76535,7 +76537,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -76562,7 +76564,6 @@
         "updated": "2026-11-18T18:08:08+00:00",
         "version_id": "2611.24846v1"
       },
-      "pending_digest": "20261119T095635Z-a35705d3-e460f3279f10",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -76582,7 +76583,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "Atomic MathReasoner：数学法学硕士原子推理技能的实例级组合",
       "translation": {
         "abstract_zh": "尽管不同的数学问题需要不同的推理技能，但大多数现有方法都将大型语言模型（LLM）中的数学推理增强为整体功能。最近的工作通过将数学推理分解为原子技能并为个人能力开发专门的模块，探索了更细粒度的视角。然而，如何有效利用这些原子能力仍有待探索。为了应对这一挑战，我们提出了 Atomic MathReasoner (AMR)，这是一个用于组合原子推理技能的实例级框架。 AMR 首先训练特定功能的 LoRA 专家库，并对保留的验证子集执行无梯度优化，以发现一组多样化的低损耗组合原型。它使用参考解决方案的令牌级负对数似然来评估每个原型的偏好，通过置信裕度过滤不明确的分配，并将生成的伪标签提取到轻量级路由器中。在推理过程中，路由器为每个问题选择合适的组合原型，从而能够针对特定问题利用原子技能，而无需昂贵的在线优化。普通法学硕士和数学专业法学硕士对 AtomicMath 基准的实验证明了持续的改进。在 Qwen2.5-Math-Instruct-7B 上，AMR 将 1 级的平均字段准确率从 64.4% 提高到 68.1%，将 2 级的平均字段准确率从 59.3% 提高到 63.7%，同时将平均逻辑推理性能从 39.4% 提高到 46.8%。这些结果表明，有效地组合专业的原子技能为加强法学硕士的数学推理提供了一种有前途的方法。",
@@ -76595,7 +76596,6 @@
       ]
     },
     "2611.24849": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -76623,7 +76623,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -76649,7 +76649,6 @@
         "updated": "2026-11-18T18:09:16+00:00",
         "version_id": "2611.24849v1"
       },
-      "pending_digest": "20261119T095635Z-a35705d3-e460f3279f10",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -76667,7 +76666,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "项目可以取代法学硕士法官吗？可执行程序判断可扩展且高效的相关性标签",
       "translation": {
         "abstract_zh": "大型语言模型（LLM）判断器已成为为检索评估创建大规模相关性判断的常用方法。然而，每个判断都需要对前沿模型进行潜在昂贵的调用，并且判断很难解释并且可能无法重现。在本文中，我们询问法学硕士是否可以为每个主题编写一个可读的程序来取代其对每个文档的判断。为了解决这些问题，我们提出了 ExecJudges，一种为自动相关性标签生成快速、可检查和可扩展的判断的方法。具体来说，ExecJudges 使用前沿 LLM 将评估指南转化为可执行程序，该程序仅依赖于词汇匹配、标准 NLP 库（如解析器）和池统计数据。 ExecJudges-L 变体还使用人类标签的示例（如果有）。我们通过将生成的标签与训练有素的 NIST 评估员、前沿 LLM 法官和最近提出的每个主题分类器进行比较，对七个 TREC 集合上的 ExecJudges 进行评估。我们的结果表明，ExecJudges 在 TREC DL 2019-2021 上与 NIST 评估员的 Claude Sonnet 5.5 LLM 法官水平一致。由于每个主题的人工标签数量较少，ExecJudges-L 变体与 NIST 的一致性高于在所有七个集合上具有相同标签的每个主题分类器，并且超出了提供相同标签的 LLM 法官的一致性，或者在 Krippendorff 的 alpha 中与 NIST 的一致性在 0.05 左右。标签对官方 TREC DL 运行的 Kendall tau 评分为 0.87 至 0.94，编写程序的一次性成本为每个主题 0.17 至 0.49 美元，无需额外的评分费用。我们的结果表明，ExecJudges 为 LLM 法官提供了一种可重复、可检查、高效且具有成本效益的替代方案，用于标记深层结果池以进行系统评估或排名改进。",
@@ -76680,7 +76679,6 @@
       ]
     },
     "2611.24877": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -76708,7 +76706,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -76732,7 +76730,6 @@
         "updated": "2026-11-18T18:24:54+00:00",
         "version_id": "2611.24877v1"
       },
-      "pending_digest": "20261119T095635Z-a35705d3-e460f3279f10",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -76748,7 +76745,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "仅通过查询审核具有大型语言模型的黑盒临床预测模型：带有植入缺陷的盲测",
       "translation": {
         "abstract_zh": "大语言模型 (LLM) 用于解释临床预测模型，承诺它们可以说出模型计算的内容、发现模型的错误，甚至揭示模型中的新知识。我们测试了三个 Promise，可以检查答案。根据国际中风试验，我们针对早期随机化患者的两种结果训练了四种模型（逻辑回归、可解释的增强机、梯度增强树、神经网络），在 24 个副本中的每一个中植入一个缺陷（预测不足的亚组、逆转的风险因素或难以置信的步骤），并将它们与 8 个干净的模型混合。 GPT-6 Astra 通过仅返回模型预测的工具对每个模型进行了三次盲审；评审规则在任何运行之前就已确定并由程序应用。其中位数为 128 项的替代模型再现了审计模型的对数赔率，平均 $R^2$ 为 0.976（分析师拟合的 42 项的加性替代为 0.959）。它在 72 次运行中的 69 次中发现了植入的缺陷（96%；95% CI 80% 至 99%）；为此目的编写的脚本找到了全部 24 个。它还报告了更多问题：1,089 个可检查报告中的 60% 未能通过针对模型平均行为的预先指定检查；事后看来，其中大部分都是真实的但很小的步骤，并且 15% 的可检查报告在模型中没有找到。它从干净的模型中读出了 601 种意想不到的关系，其中 11% 存在于后来随机分组的患者中（随机配对 6%；回归扫描的最强候选者列表较短，28%）；检查训练数据后，结果是 33% 对 30%。仅通过查询访问，法学硕士就可以忠实地描述黑盒模型并找到几乎每一个植入的缺陷，就像专门编写的脚本一样；必须根据模型及其发现的数据来检查其问题报告。",
@@ -76761,7 +76758,6 @@
       ]
     },
     "2611.24887": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -76789,7 +76785,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -76816,7 +76812,6 @@
         "updated": "2026-11-18T18:31:37+00:00",
         "version_id": "2611.24887v1"
       },
-      "pending_digest": "20261119T095635Z-a35705d3-e460f3279f10",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -76840,7 +76835,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "基础、迭代、追踪：分解人工智能研究理念",
       "translation": {
         "abstract_zh": "大型语言模型已被广泛用于生成看似合理的研究想法，但目前尚不清楚是什么使自动构思有效，以及如何从先前的科学工作中产生新颖的建议。我们引入了创意人工智能研究员（CAR），这是一个结合文献基础、迭代开发和明确概念运算符的代理框架。 CAR 从检索到的文献中构建语义知识图，并为构思代理配备图检索工具和四个运算符：二元关联、类比、探索和阐述。每个操作员调用都会根据结构验收条件进行检查并记录，从而产生中间转换和声明的文献来源的痕迹。我们使用跨 40 个 LiveIdeaBench 研究主题的两个语言模型主干和两个执行基准来评估 CAR。与单次提示和人工智能科学家相比，CAR 实现了显着更高的方法新颖性 (MN)。其方法新颖性与研究构思代理没有显着差异，而其在两个主干上的可行性得分都较高。通过共享实验执行器，CAR 在 FML-bench-Lite 和 BioXArena 上评估的 AI 方法中实现了最高的配对获胜率。在一项十条件消融研究中，在两个主干上，MN 点估计优于 CAR，而不是一步建议，但没有 MN 对比能够通过多重比较的校正。结果并没有从自由形式迭代之外的显式运算符中建立一致的质量优势。 CAR 使操作顺序和声明的文献来源可检查，将判断的想法质量与程序可追溯性分开。",
@@ -76853,7 +76848,6 @@
       ]
     },
     "2611.24888": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -76881,7 +76875,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -76911,7 +76905,6 @@
         "updated": "2026-11-18T18:32:14+00:00",
         "version_id": "2611.24888v1"
       },
-      "pending_digest": "20261119T095635Z-a35705d3-e460f3279f10",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -76929,7 +76922,7 @@
         "llm_agent",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "你是谁？个人模仿游戏",
       "translation": {
         "abstract_zh": "大型语言模型 (LLM) 现在在艾伦图灵 1950 年的模仿游戏中表现强劲，因此我们提出了一个更难的挑战，即个人模仿游戏，该挑战询问机器是否可以复制对话中的特定个体而不是一般人类。我们对 30 名参与者进行了测试，建立了人类基线并报告询问者所依赖的身份信号：风格特征、人格特征和传记事实。为了演示该框架，我们设计了一个基于法学硕士的系统，该系统利用涵盖十年个人数字通信的自民族志数据集为论文作者之一玩游戏。在一项 20 人的欺骗研究中，审讯者在 10 轮中有 7 轮选择我们的系统而不是作者自己的朋友，在 20 轮中有 13 轮选择作者而不是我们的系统；在这个样本量下，这两个比率都无法与概率区分开来。我们考虑设计改进、个人人工智能代理的应用以及对身份和隐私的影响。",
@@ -76942,7 +76935,6 @@
       ]
     },
     "2611.24891": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -76970,7 +76962,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -77000,7 +76992,6 @@
         "updated": "2026-11-18T18:34:10+00:00",
         "version_id": "2611.24891v1"
       },
-      "pending_digest": "20261119T095635Z-a35705d3-e460f3279f10",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -77016,7 +77007,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "Cap-and-Track：跨转移容量优化 LLM 推理请求调度",
       "translation": {
         "abstract_zh": "随着服务队列的规模调整和请求大小的变化，LLM 推理的固定调度率会变得过时。生成输出长度在入场时未知，并且共享提供者池可能会损失容量。我们推出了 Cap-and-Track，这是一种跨提供商容量和内部 GPU 进行异步推理的设计。 Meta 的流量整形器实现了用于后期和实时视频理解的 Cap-and-Track。拒绝表明后端当前的准入上限。持久优先级队列保留执行之外的多余工作，包括拒绝的重试请求。 Cap 是对饱和资源的快速失败准入检查，在长时间等待之前拒绝工作。仅使用这些拒绝，轨道调度员就会向上探测并后退。它遵循上限，无需输出长度预测或舰队级别的重新调整率。在并发的相同流量生产 A/B 中，整形器运行每个副本 Cap 加 Track。与排队的固定速率前体相比，它为分类器提供的 H100 数量减少了 43%，尽管较低优先级的工作在回填高峰时等待的时间更长。在稳定容量的真实引擎重放中，Track 的运行速度在高于测量容量的固定速率的吞吐量的 1% 范围内，大约为该速率的拒绝份额的四分之一。 Shaper 每天承载超过 3 亿个在线请求和数百 TB 的媒体。在回填期间，它在最繁忙的 24 小时内处理了 11 亿个请求。经验教训包括将推理引擎内的队列保持足够长以填充批次、仅通过容量拒绝来引导调度、保持调度状态以及根据低优先级工作可以等待的时间来调整队列大小。",
@@ -77029,7 +77020,6 @@
       ]
     },
     "2611.24917": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -77057,7 +77047,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -77088,7 +77078,6 @@
         "updated": "2026-11-18T18:48:38+00:00",
         "version_id": "2611.24917v1"
       },
-      "pending_digest": "20261119T095635Z-a35705d3-e460f3279f10",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -77104,7 +77093,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "视觉任务统一定律（计算机视觉四大定律）",
       "translation": {
         "abstract_zh": "在本文中，我们提出了视觉任务统一定律，它可以进一步分为计算机视觉四大定律，目标是使单个框架或方法能够统一训练和执行几乎所有视觉任务。我们的出发点是一个灵感和假设：如果把世界信息编码成图像，我们称之为世界快照，那么图像处理就是世界处理，图像生成就是世界快照生成。此外，如果所有视觉和可视化任务都可以重新表述为生成任务，那么统一的方法，即世界快照模型（WSM），就可以执行绝大多数视觉任务，就像大型语言模型在很大程度上统一了自然语言处理一样。本文在 1,000 多个经过训练和评估的视觉任务（由不同的输入输出映射定义）中验证了这些定律，并为未来的视觉任务研究和应用提供了一个统一的训练框架。",
@@ -77117,7 +77106,6 @@
       ]
     },
     "2611.24936": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -77145,7 +77133,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -77168,7 +77156,6 @@
         "updated": "2026-11-18T18:56:12+00:00",
         "version_id": "2611.24936v1"
       },
-      "pending_digest": "20261119T095635Z-a35705d3-e460f3279f10",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -77190,7 +77177,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "通过对比原型结构对大型语言模型进行越狱检测",
       "translation": {
         "abstract_zh": "越狱尝试和有害提示仍然是大型语言模型安全部署的挑战。我们研究对比学习的表示是否可以支持安全检测，而无需训练额外的下游分类器。我们提出了基于原型推断的越狱检测（JDPI），它使用二进制安全标签来构建有害和良性的原型，并根据相对原型距离进行预测。 JDPI 仅使用二进制安全标签进行编码器适配、原型构建和验证。在我们的设置中，它通过避免用于训练下游分类器的单独分割，使用比分类器基线（方法 A）更少的标记示例。在涵盖不同输入格式的四个基准测试中，对比微调将 JDPI 的检测精度提高了 9.1-18.0 个百分点。使用相同的编码器，JDPI 在一个基准上实现了略高的 ROC-AUC，并且在所有四个基准上都保持在基准的 0.017 以内。通过针对数据集的特定调整，JDPI 在四个基准的 ROC-AUC 上超出了已发布的 Llama Guard 3-8B 基线 0.173-0.310。在 TomGibbs 上的多回合重播中，JDPI 在对话展开时使用累积的用户历史记录，比单独使用当前回合时实现更高的对话级别准确度。在 12 个定向传输中，JDPI 的准确率平均优于分类器 1.59 个百分点，表现出更强的跨数据集鲁棒性。",
