@@ -7,7 +7,7 @@
 | 2026-11-19 | Jailbreak Detection on Large Language Models via Contrastive Prototype Structures | 通过对比原型结构检测大型语言模型的越狱 | [arXiv 2611.24936v1](https://arxiv.org/abs/2611.24936v1) |
 | 2026-11-19 | Unified Law for Visual Tasks (The Four Laws of Computer Vision) | 视觉任务统一法则（计算机视觉四法则） | [arXiv 2611.24917v1](https://arxiv.org/abs/2611.24917v1) |
 | 2026-11-19 | Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity | 封顶与跟踪：优化大语言模型推理请求在变化容量下的调度 | [arXiv 2611.24891v1](https://arxiv.org/abs/2611.24891v1) |
-| 2026-11-19 | Who are you? The Personal Imitation Game | 待翻译 | [arXiv 2611.24888v1](https://arxiv.org/abs/2611.24888v1) |
+| 2026-11-19 | Who are you? The Personal Imitation Game | 你是谁？个人模仿游戏 | [arXiv 2611.24888v1](https://arxiv.org/abs/2611.24888v1) |
 | 2026-11-19 | Ground, Iterate, Trace: Decomposing AI Research Ideation | 待翻译 | [arXiv 2611.24887v1](https://arxiv.org/abs/2611.24887v1) |
 | 2026-11-19 | Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws | 待翻译 | [arXiv 2611.24877v1](https://arxiv.org/abs/2611.24877v1) |
 | 2026-11-19 | Can Programs Replace LLM Judges? Executable Program Judges for Scalable and Efficient Relevance Labeling | 待翻译 | [arXiv 2611.24849v1](https://arxiv.org/abs/2611.24849v1) |
