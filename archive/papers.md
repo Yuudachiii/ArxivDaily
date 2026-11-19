@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | 2026-11-19 | Jailbreak Detection on Large Language Models via Contrastive Prototype Structures | 通过对比原型结构对大型语言模型进行越狱检测 | [arXiv 2611.24936v1](https://arxiv.org/abs/2611.24936v1) |
 | 2026-11-19 | Unified Law for Visual Tasks (The Four Laws of Computer Vision) | 视觉任务统一定律（计算机视觉四大定律） | [arXiv 2611.24917v1](https://arxiv.org/abs/2611.24917v1) |
-| 2026-11-19 | Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity | 待翻译 | [arXiv 2611.24891v1](https://arxiv.org/abs/2611.24891v1) |
+| 2026-11-19 | Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity | Cap-and-Track：跨转移容量优化 LLM 推理请求调度 | [arXiv 2611.24891v1](https://arxiv.org/abs/2611.24891v1) |
 | 2026-11-19 | Who are you? The Personal Imitation Game | 待翻译 | [arXiv 2611.24888v1](https://arxiv.org/abs/2611.24888v1) |
 | 2026-11-19 | Ground, Iterate, Trace: Decomposing AI Research Ideation | 待翻译 | [arXiv 2611.24887v1](https://arxiv.org/abs/2611.24887v1) |
 | 2026-11-19 | Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws | 待翻译 | [arXiv 2611.24877v1](https://arxiv.org/abs/2611.24877v1) |
