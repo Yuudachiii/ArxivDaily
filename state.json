@@ -76137,11 +76137,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-19T09:56:35.658037+00:00",
-        "run_id": "20261119T095635Z-a35705d3",
-        "stage": "translation"
+      "title_zh": "项目可以取代法学硕士法官吗？可执行程序判断可扩展且高效的相关性标签",
+      "translation": {
+        "abstract_zh": "大型语言模型（LLM）判断器已成为为检索评估创建大规模相关性判断的常用方法。然而，每个判断都需要对前沿模型进行潜在昂贵的调用，并且判断很难解释并且可能无法重现。在本文中，我们询问法学硕士是否可以为每个主题编写一个可读的程序来取代其对每个文档的判断。为了解决这些问题，我们提出了 ExecJudges，一种为自动相关性标签生成快速、可检查和可扩展的判断的方法。具体来说，ExecJudges 使用前沿 LLM 将评估指南转化为可执行程序，该程序仅依赖于词汇匹配、标准 NLP 库（如解析器）和池统计数据。 ExecJudges-L 变体还使用人类标签的示例（如果有）。我们通过将生成的标签与训练有素的 NIST 评估员、前沿 LLM 法官和最近提出的每个主题分类器进行比较，对七个 TREC 集合上的 ExecJudges 进行评估。我们的结果表明，ExecJudges 在 TREC DL 2019-2021 上与 NIST 评估员的 Claude Sonnet 5.5 LLM 法官水平一致。由于每个主题的人工标签数量较少，ExecJudges-L 变体与 NIST 的一致性高于在所有七个集合上具有相同标签的每个主题分类器，并且超出了提供相同标签的 LLM 法官的一致性，或者在 Krippendorff 的 alpha 中与 NIST 的一致性在 0.05 左右。标签对官方 TREC DL 运行的 Kendall tau 评分为 0.87 至 0.94，编写程序的一次性成本为每个主题 0.17 至 0.49 美元，无需额外的评分费用。我们的结果表明，ExecJudges 为 LLM 法官提供了一种可重复、可检查、高效且具有成本效益的替代方案，用于标记深层结果池以进行系统评估或排名改进。",
+        "title_zh": "项目可以取代法学硕士法官吗？可执行程序判断可扩展且高效的相关性标签"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.24849v1"
       ]
