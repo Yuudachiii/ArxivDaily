@@ -76319,6 +76319,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-19T09:56:35.658037+00:00",
+      "intended_tier": "translation",
       "model": "rules",
       "paper": {
         "abstract": "In this paper, we propose a Unified Law for Visual Tasks, which could be further divided into Four Laws of Computer Vision, with the goal of enabling a single framework or method to uniformly train on and perform nearly all visual tasks. Our starting point is an inspiration and hypothesis: if the world information is encoded into image, which we call World Snapshots, then image processing is world processing, and image generation is World Snapshot generation. Furthermore, if all visual and visualization tasks can be reformulated as generation tasks, then a unified method, World Snapshot Models (WSMs), can perform the vast majority of visual tasks, much as large language models have largely unified natural language processing. This paper validates these laws across more than 1,000 trained and evaluated visual tasks (defined by distinct input-output mappings) and presents a unified training framework for future visual-task research and applications.",
@@ -76343,11 +76344,22 @@
         "updated": "2026-11-18T18:48:38+00:00",
         "version_id": "2611.24917v1"
       },
+      "presentation_modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "presentation_rule_hits": [
+        "llm_core"
+      ],
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "selected",
+      "stage": "ready",
       "versions": [
         "2611.24917v1"
       ]
