@@ -4,7 +4,7 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
-| 2026-11-19 | Jailbreak Detection on Large Language Models via Contrastive Prototype Structures | 待翻译 | [arXiv 2611.24936v1](https://arxiv.org/abs/2611.24936v1) |
+| 2026-11-19 | Jailbreak Detection on Large Language Models via Contrastive Prototype Structures | 通过对比原型结构检测大型语言模型的越狱 | [arXiv 2611.24936v1](https://arxiv.org/abs/2611.24936v1) |
 | 2026-11-19 | Unified Law for Visual Tasks (The Four Laws of Computer Vision) | 待翻译 | [arXiv 2611.24917v1](https://arxiv.org/abs/2611.24917v1) |
 | 2026-11-19 | Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity | 待翻译 | [arXiv 2611.24891v1](https://arxiv.org/abs/2611.24891v1) |
 | 2026-11-19 | Who are you? The Personal Imitation Game | 待翻译 | [arXiv 2611.24888v1](https://arxiv.org/abs/2611.24888v1) |
