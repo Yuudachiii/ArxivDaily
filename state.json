@@ -73924,9 +73924,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_agent、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_agent",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-19T09:56:36.523516+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Large Language Models (LLMs) now perform strongly on Alan Turing's 1950 Imitation Game, so we propose a harder challenge, the Personal Imitation Game, which asks whether a machine can replicate a specific individual in conversation rather than a generic human. Testing with 30 participants, we establish a human baseline and report the identity signals interrogators rely on: stylometric features, personality traits, and biographical facts. To demonstrate the framework, we design an LLM-based system that plays the game for one of the paper's authors, drawing on an autoethnographic dataset spanning ten years of personal digital communication. In a 20-person deception study, interrogators choose our system over the author's own friends in 7 of 10 rounds, and the author over our system in 13 of 20; neither rate is distinguishable from chance at this sample size. We consider design improvements, applications of personal AI agents, and implications for identity and privacy.",
         "authors": [
@@ -73949,16 +73965,12 @@
         "updated": "2026-11-18T18:32:14+00:00",
         "version_id": "2611.24888v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-19T09:56:36.523516+00:00",
-        "run_id": "20261119T095636Z-adedd38e",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.24888v1"
       ]
