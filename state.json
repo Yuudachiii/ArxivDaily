@@ -75584,7 +75584,8 @@
     },
     "2611.26601": {
       "attempts": {
-        "selection": 1
+        "selection": 1,
+        "translation": 1
       },
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
       "decision": {
@@ -75645,6 +75646,11 @@
         "llm_core"
       ],
       "stage": "ready",
+      "stage_started": {
+        "at": "2026-11-20T09:44:17.987428+00:00",
+        "run_id": "20261120T094417Z-56572410",
+        "stage": "translation"
+      },
       "versions": [
         "2611.26601v1"
       ]
