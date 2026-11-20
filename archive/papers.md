@@ -5,7 +5,7 @@
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
 | 2026-11-20 | TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming | TideCache：具有透明缓存管理和分层流传输的高效混合 LLM 服务 | [arXiv 2611.26619v1](https://arxiv.org/abs/2611.26619v1) |
-| 2026-11-20 | SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research | 待翻译 | [arXiv 2611.26601v1](https://arxiv.org/abs/2611.26601v1) |
+| 2026-11-20 | SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research | SoK：评估软件漏洞研究中法学硕士能力的演变 | [arXiv 2611.26601v1](https://arxiv.org/abs/2611.26601v1) |
 | 2026-11-20 | Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards | 待翻译 | [arXiv 2611.26588v1](https://arxiv.org/abs/2611.26588v1) |
 | 2026-11-20 | Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI) | 待翻译 | [arXiv 2611.26553v1](https://arxiv.org/abs/2611.26553v1) |
 | 2026-11-20 | The Geometry of Lies: Knowledge and Persona Directions for Detecting Deception in Large Language Models | 待翻译 | [arXiv 2611.26545v1](https://arxiv.org/abs/2611.26545v1) |
