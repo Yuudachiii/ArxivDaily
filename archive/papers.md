@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-20 | TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming | 待翻译 | [arXiv 2611.26619v1](https://arxiv.org/abs/2611.26619v1) |
+| 2026-11-20 | SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research | 待翻译 | [arXiv 2611.26601v1](https://arxiv.org/abs/2611.26601v1) |
+| 2026-11-20 | Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards | 待翻译 | [arXiv 2611.26588v1](https://arxiv.org/abs/2611.26588v1) |
+| 2026-11-20 | Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI) | 待翻译 | [arXiv 2611.26553v1](https://arxiv.org/abs/2611.26553v1) |
+| 2026-11-20 | The Geometry of Lies: Knowledge and Persona Directions for Detecting Deception in Large Language Models | 待翻译 | [arXiv 2611.26545v1](https://arxiv.org/abs/2611.26545v1) |
+| 2026-11-20 | LLM GerryMandering: Separating Interactions from Additive Effects in LLM Audits | 待翻译 | [arXiv 2611.26538v1](https://arxiv.org/abs/2611.26538v1) |
+| 2026-11-20 | Cost-Aware Agentic Feature Optimization System for Fleet-Scale Ranking Models | 待翻译 | [arXiv 2611.26531v1](https://arxiv.org/abs/2611.26531v1) |
+| 2026-11-20 | AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher | 待翻译 | [arXiv 2611.26510v1](https://arxiv.org/abs/2611.26510v1) |
+| 2026-11-20 | Multimodal Error Detection in Chest X-ray Reports: A Large Language Model Reading Image Evidence | 待翻译 | [arXiv 2611.26492v1](https://arxiv.org/abs/2611.26492v1) |
+| 2026-11-20 | A new algorithmic approach for finding flat minima: critically damped Polyak stepsizes | 待翻译 | [arXiv 2611.26475v1](https://arxiv.org/abs/2611.26475v1) |
 | 2026-11-19 | Jailbreak Detection on Large Language Models via Contrastive Prototype Structures | 通过对比原型结构对大型语言模型进行越狱检测 | [arXiv 2611.24936v1](https://arxiv.org/abs/2611.24936v1) |
 | 2026-11-19 | Unified Law for Visual Tasks (The Four Laws of Computer Vision) | 视觉任务统一定律（计算机视觉四大定律） | [arXiv 2611.24917v1](https://arxiv.org/abs/2611.24917v1) |
 | 2026-11-19 | Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity | Cap-and-Track：跨转移容量优化 LLM 推理请求调度 | [arXiv 2611.24891v1](https://arxiv.org/abs/2611.24891v1) |
