@@ -9,7 +9,7 @@
 | 2026-11-20 | Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards | 验证验证者：基于规范的 LLM 交叉检查是否存在 UVM 记分板的错误（谷歌备用翻译） | [arXiv 2611.26588v1](https://arxiv.org/abs/2611.26588v1) |
 | 2026-11-20 | Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI) | 代理安全事件的复制：审计和调查 (ROGUE-AI)（谷歌备用翻译） | [arXiv 2611.26553v1](https://arxiv.org/abs/2611.26553v1) |
 | 2026-11-20 | The Geometry of Lies: Knowledge and Persona Directions for Detecting Deception in Large Language Models | 谎言的几何：在大型语言模型中检测欺骗的知识和角色方向（谷歌备用翻译） | [arXiv 2611.26545v1](https://arxiv.org/abs/2611.26545v1) |
-| 2026-11-20 | LLM GerryMandering: Separating Interactions from Additive Effects in LLM Audits | 待翻译 | [arXiv 2611.26538v1](https://arxiv.org/abs/2611.26538v1) |
+| 2026-11-20 | LLM GerryMandering: Separating Interactions from Additive Effects in LLM Audits | LLM GerryMandering：将 LLM 审计中的相互作用与加性效应分开（谷歌备用翻译） | [arXiv 2611.26538v1](https://arxiv.org/abs/2611.26538v1) |
 | 2026-11-20 | Cost-Aware Agentic Feature Optimization System for Fleet-Scale Ranking Models | 待翻译 | [arXiv 2611.26531v1](https://arxiv.org/abs/2611.26531v1) |
 | 2026-11-20 | AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher | 待翻译 | [arXiv 2611.26510v1](https://arxiv.org/abs/2611.26510v1) |
 | 2026-11-20 | Multimodal Error Detection in Chest X-ray Reports: A Large Language Model Reading Image Evidence | 待翻译 | [arXiv 2611.26492v1](https://arxiv.org/abs/2611.26492v1) |
