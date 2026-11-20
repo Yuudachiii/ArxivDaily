@@ -75579,11 +75579,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-20T09:44:17.987428+00:00",
-        "run_id": "20261120T094417Z-56572410",
-        "stage": "translation"
+      "title_zh": "验证验证者：基于规范的 LLM 交叉检查是否存在 UVM 记分板的错误",
+      "translation": {
+        "abstract_zh": "通过 UVM 回归表明设计与记分板检查的参考模型一致，而不是表明它符合规范。通过所有测试但违反规范的错误（称为记分板逃逸）可以在成熟的测试平台中生存下来。我们提出了Verify the Verifier，据我们所知，这是第一个框架，其基于LLM的异常交叉检查器根据规范检查通过回归的痕迹。在四个 OpenTitan IP 中插入的 564 个错误中，有 68 个是候选记分板逃逸：非等效，已通过测试，但已通过。该框架确认了 41 为记分板逃逸，断言在错误设计上失败并在原始版本中得到了验证。",
+        "fallback_provider": "google_free",
+        "title_zh": "验证验证者：基于规范的 LLM 交叉检查是否存在 UVM 记分板的错误"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.26588v1"
       ]
