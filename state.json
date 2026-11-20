@@ -75913,6 +75913,13 @@
         "start": "2026-11-12T09:56:36.523516+00:00",
         "uncovered": []
       }
+    },
+    {
+      "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
+      "coverage_complete": false,
+      "day": "2026-11-20",
+      "run_id": "20261120T094417Z-56572410",
+      "started_at": "2026-11-20T09:44:17.987428+00:00"
     }
   ],
   "schema_version": 1,
