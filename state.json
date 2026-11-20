@@ -77866,11 +77866,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-20T09:44:07.325641+00:00",
-        "run_id": "20261120T094407Z-b677a543",
-        "stage": "translation"
+      "title_zh": "TideCache：具有透明缓存管理和分层流传输的高效混合 LLM 服务",
+      "translation": {
+        "abstract_zh": "混合架构已成为开放权重语言模型的主流。它们的全局注意力和有界状态层维护异构缓存，其需求随着上下文长度和并发性而变化。我们推出了 TideCache，这是一个基于 CPU-GPU 超级芯片的服务系统，具有三个组件，用于在缓存之间分配 GPU 内存并管理它们在 GPU 和主机内存之间的驻留。透明缓存池在固定虚拟地址后面的缓存组件之间重新分配物理页，保留缓存布局和后端接口。 Cache Streamer 使用有界状态层提供的计算间隔将下一个全局注意层的前缀预取到全局注意层之间共享的 GPU 插槽中，从而减少 GPU 驻留，同时将分层传输与计算重叠。生成的 KV 仍然驻留。请求调度器根据请求大小和队列状态选择驻留或流式执行并触发容量调整。它们共同让通过流式发布的 HBM 容纳其他缓存组件和额外的请求。与采用 HiCache 的 SGLang 相比，TideCache 在 SGLang 中实施，并在 GB300 和 GH200 上跨七种模型/平台配置进行评估，完成的代理轮次最多为 2.04 倍，每个令牌的总体 P50 延迟降低了 20--59%，并将代理 P50 TTFT 提高了 1.40--3.05 倍。",
+        "title_zh": "TideCache：具有透明缓存管理和分层流传输的高效混合 LLM 服务"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.26619v1"
       ]
