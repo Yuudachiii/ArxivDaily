@@ -73,7 +73,7 @@
       "created_at": "2026-11-19T09:56:35.658037+00:00"
     },
     "20261120T094407Z-b677a543-c32e379ec431": {
-      "attempts": 0,
+      "attempts": 1,
       "created_at": "2026-11-20T09:44:07.325641+00:00"
     }
   },
@@ -439,7 +439,9 @@
     "2026-11-20": {
       "alerts": [],
       "full_ids": [],
-      "normal_digests": [],
+      "normal_digests": [
+        "20261120T094407Z-b677a543-c32e379ec431"
+      ],
       "paper_ids": [
         "2611.26619",
         "2611.26601",
@@ -454,7 +456,7 @@
       ],
       "query_reservations": 0,
       "review_ids": [],
-      "send_attempts": 0
+      "send_attempts": 1
     }
   },
   "digests": {
@@ -7709,6 +7711,8 @@
     "20261120T094407Z-b677a543-c32e379ec431": {
       "alert": false,
       "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-google/archive/2026/11/20/20261120T094407Z-b677a543-c32e379ec431.md",
+      "attempt_run": "20261120T094407Z-b677a543",
+      "attempt_started": "2026-11-20T09:47:17.636612+00:00",
       "chain_root": "20261120T094407Z-b677a543-c32e379ec431",
       "chain_roots": [
         "20261120T094407Z-b677a543-c32e379ec431"
@@ -8128,6 +8132,7 @@
         }
       ],
       "notification_hash": "c20c0e70cf521659aa168bebe4d45f2dba4be20d5e691e542e491b59e3ad9e4e",
+      "quota_day": "2026-11-20",
       "recovery_of": [],
       "rendered": {
         "2611.26475": "rendered_inline_translation",
@@ -8143,7 +8148,7 @@
       },
       "run_id": "20261120T094407Z-b677a543",
       "schema_version": 1,
-      "status": "prepared"
+      "status": "sending"
     }
   },
   "papers": {
@@ -77653,6 +77658,7 @@
       ]
     },
     "2611.26475": {
+      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -77672,7 +77678,18 @@
         "transfer_evidence": false,
         "uncertainty": []
       },
-      "events": [],
+      "delivery_chain": "20261120T094407Z-b677a543-c32e379ec431",
+      "events": [
+        {
+          "at": "2026-11-20T09:47:17.636612+00:00",
+          "digest_id": "20261120T094407Z-b677a543-c32e379ec431",
+          "kind": "normal",
+          "recovery_of": "",
+          "rendered": "rendered_inline_translation",
+          "status": "sending",
+          "tier": "translation"
+        }
+      ],
       "failures": {},
       "first_discovered": "2026-11-20T09:44:07.325641+00:00",
       "intended_tier": "translation",
@@ -77695,6 +77712,7 @@
         "updated": "2026-11-19T17:35:37+00:00",
         "version_id": "2611.26475v1"
       },
+      "pending_digest": "20261120T094407Z-b677a543-c32e379ec431",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -77725,6 +77743,7 @@
       ]
     },
     "2611.26492": {
+      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -77744,7 +77763,18 @@
         "transfer_evidence": false,
         "uncertainty": []
       },
-      "events": [],
+      "delivery_chain": "20261120T094407Z-b677a543-c32e379ec431",
+      "events": [
+        {
+          "at": "2026-11-20T09:47:17.636612+00:00",
+          "digest_id": "20261120T094407Z-b677a543-c32e379ec431",
+          "kind": "normal",
+          "recovery_of": "",
+          "rendered": "rendered_inline_translation",
+          "status": "sending",
+          "tier": "translation"
+        }
+      ],
       "failures": {},
       "first_discovered": "2026-11-20T09:44:07.325641+00:00",
       "intended_tier": "translation",
@@ -77765,6 +77795,7 @@
         "updated": "2026-11-19T17:46:42+00:00",
         "version_id": "2611.26492v1"
       },
+      "pending_digest": "20261120T094407Z-b677a543-c32e379ec431",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -77797,6 +77828,7 @@
       ]
     },
     "2611.26510": {
+      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -77816,7 +77848,18 @@
         "transfer_evidence": false,
         "uncertainty": []
       },
-      "events": [],
+      "delivery_chain": "20261120T094407Z-b677a543-c32e379ec431",
+      "events": [
+        {
+          "at": "2026-11-20T09:47:17.636612+00:00",
+          "digest_id": "20261120T094407Z-b677a543-c32e379ec431",
+          "kind": "normal",
+          "recovery_of": "",
+          "rendered": "rendered_inline_translation",
+          "status": "sending",
+          "tier": "translation"
+        }
+      ],
       "failures": {},
       "first_discovered": "2026-11-20T09:44:07.325641+00:00",
       "intended_tier": "translation",
@@ -77840,6 +77883,7 @@
         "updated": "2026-11-19T17:57:59+00:00",
         "version_id": "2611.26510v1"
       },
+      "pending_digest": "20261120T094407Z-b677a543-c32e379ec431",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -77874,6 +77918,7 @@
       ]
     },
     "2611.26531": {
+      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -77893,7 +77938,18 @@
         "transfer_evidence": false,
         "uncertainty": []
       },
-      "events": [],
+      "delivery_chain": "20261120T094407Z-b677a543-c32e379ec431",
+      "events": [
+        {
+          "at": "2026-11-20T09:47:17.636612+00:00",
+          "digest_id": "20261120T094407Z-b677a543-c32e379ec431",
+          "kind": "normal",
+          "recovery_of": "",
+          "rendered": "rendered_inline_translation",
+          "status": "sending",
+          "tier": "translation"
+        }
+      ],
       "failures": {},
       "first_discovered": "2026-11-20T09:44:07.325641+00:00",
       "intended_tier": "translation",
@@ -77922,6 +77978,7 @@
         "updated": "2026-11-19T18:12:04+00:00",
         "version_id": "2611.26531v1"
       },
+      "pending_digest": "20261120T094407Z-b677a543-c32e379ec431",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -77952,6 +78009,7 @@
       ]
     },
     "2611.26538": {
+      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -77971,7 +78029,18 @@
         "transfer_evidence": false,
         "uncertainty": []
       },
-      "events": [],
+      "delivery_chain": "20261120T094407Z-b677a543-c32e379ec431",
+      "events": [
+        {
+          "at": "2026-11-20T09:47:17.636612+00:00",
+          "digest_id": "20261120T094407Z-b677a543-c32e379ec431",
+          "kind": "normal",
+          "recovery_of": "",
+          "rendered": "rendered_inline_translation",
+          "status": "sending",
+          "tier": "translation"
+        }
+      ],
       "failures": {},
       "first_discovered": "2026-11-20T09:44:07.325641+00:00",
       "intended_tier": "translation",
@@ -77994,6 +78063,7 @@
         "updated": "2026-11-19T18:16:40+00:00",
         "version_id": "2611.26538v1"
       },
+      "pending_digest": "20261120T094407Z-b677a543-c32e379ec431",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78024,6 +78094,7 @@
       ]
     },
     "2611.26545": {
+      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78043,7 +78114,18 @@
         "transfer_evidence": false,
         "uncertainty": []
       },
-      "events": [],
+      "delivery_chain": "20261120T094407Z-b677a543-c32e379ec431",
+      "events": [
+        {
+          "at": "2026-11-20T09:47:17.636612+00:00",
+          "digest_id": "20261120T094407Z-b677a543-c32e379ec431",
+          "kind": "normal",
+          "recovery_of": "",
+          "rendered": "rendered_inline_translation",
+          "status": "sending",
+          "tier": "translation"
+        }
+      ],
       "failures": {},
       "first_discovered": "2026-11-20T09:44:07.325641+00:00",
       "intended_tier": "translation",
@@ -78067,6 +78149,7 @@
         "updated": "2026-11-19T18:20:01+00:00",
         "version_id": "2611.26545v1"
       },
+      "pending_digest": "20261120T094407Z-b677a543-c32e379ec431",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78097,6 +78180,7 @@
       ]
     },
     "2611.26553": {
+      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78116,7 +78200,18 @@
         "transfer_evidence": false,
         "uncertainty": []
       },
-      "events": [],
+      "delivery_chain": "20261120T094407Z-b677a543-c32e379ec431",
+      "events": [
+        {
+          "at": "2026-11-20T09:47:17.636612+00:00",
+          "digest_id": "20261120T094407Z-b677a543-c32e379ec431",
+          "kind": "normal",
+          "recovery_of": "",
+          "rendered": "rendered_inline_translation",
+          "status": "sending",
+          "tier": "translation"
+        }
+      ],
       "failures": {},
       "first_discovered": "2026-11-20T09:44:07.325641+00:00",
       "intended_tier": "translation",
@@ -78140,6 +78235,7 @@
         "updated": "2026-11-19T18:23:35+00:00",
         "version_id": "2611.26553v1"
       },
+      "pending_digest": "20261120T094407Z-b677a543-c32e379ec431",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78172,6 +78268,7 @@
       ]
     },
     "2611.26588": {
+      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78191,7 +78288,18 @@
         "transfer_evidence": false,
         "uncertainty": []
       },
-      "events": [],
+      "delivery_chain": "20261120T094407Z-b677a543-c32e379ec431",
+      "events": [
+        {
+          "at": "2026-11-20T09:47:17.636612+00:00",
+          "digest_id": "20261120T094407Z-b677a543-c32e379ec431",
+          "kind": "normal",
+          "recovery_of": "",
+          "rendered": "rendered_inline_translation",
+          "status": "sending",
+          "tier": "translation"
+        }
+      ],
       "failures": {},
       "first_discovered": "2026-11-20T09:44:07.325641+00:00",
       "intended_tier": "translation",
@@ -78216,6 +78324,7 @@
         "updated": "2026-11-19T18:45:54+00:00",
         "version_id": "2611.26588v1"
       },
+      "pending_digest": "20261120T094407Z-b677a543-c32e379ec431",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78244,6 +78353,7 @@
       ]
     },
     "2611.26601": {
+      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78263,7 +78373,18 @@
         "transfer_evidence": false,
         "uncertainty": []
       },
-      "events": [],
+      "delivery_chain": "20261120T094407Z-b677a543-c32e379ec431",
+      "events": [
+        {
+          "at": "2026-11-20T09:47:17.636612+00:00",
+          "digest_id": "20261120T094407Z-b677a543-c32e379ec431",
+          "kind": "normal",
+          "recovery_of": "",
+          "rendered": "rendered_inline_translation",
+          "status": "sending",
+          "tier": "translation"
+        }
+      ],
       "failures": {},
       "first_discovered": "2026-11-20T09:44:07.325641+00:00",
       "intended_tier": "translation",
@@ -78289,6 +78410,7 @@
         "updated": "2026-11-19T18:54:19+00:00",
         "version_id": "2611.26601v1"
       },
+      "pending_digest": "20261120T094407Z-b677a543-c32e379ec431",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78319,6 +78441,7 @@
       ]
     },
     "2611.26619": {
+      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78338,7 +78461,18 @@
         "transfer_evidence": false,
         "uncertainty": []
       },
-      "events": [],
+      "delivery_chain": "20261120T094407Z-b677a543-c32e379ec431",
+      "events": [
+        {
+          "at": "2026-11-20T09:47:17.636612+00:00",
+          "digest_id": "20261120T094407Z-b677a543-c32e379ec431",
+          "kind": "normal",
+          "recovery_of": "",
+          "rendered": "rendered_inline_translation",
+          "status": "sending",
+          "tier": "translation"
+        }
+      ],
       "failures": {},
       "first_discovered": "2026-11-20T09:44:07.325641+00:00",
       "intended_tier": "translation",
@@ -78363,6 +78497,7 @@
         "updated": "2026-11-19T18:58:31+00:00",
         "version_id": "2611.26619v1"
       },
+      "pending_digest": "20261120T094407Z-b677a543-c32e379ec431",
       "presentation_modules": [
         "title",
         "title_translation",
