@@ -75116,11 +75116,14 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-20T09:44:17.987428+00:00",
-        "run_id": "20261120T094417Z-56572410",
-        "stage": "translation"
+      "title_zh": "寻找平坦最小值的新算法方法：临界阻尼 Polyak 步长",
+      "translation": {
+        "abstract_zh": "我们提出了一种新的自适应步长规则，该规则在理论和实践中使梯度下降偏向更平坦的最小值，并为广泛的局部二次目标的锐度和损失减少建立了第一个统一的时间保证。我们的临界阻尼 Polyak (CDP) 步长将经典 Polyak 规则乘以 4 美元和温和的阻尼系数。因子 $4$ 至关重要，因为它会在最小化流形 $\\mathcal{M}$ 周围产生等振荡至前序。阻尼可证明推动收敛到 $\\mathcal{M}$。因此，CDP 通过调整其步长来适应局部曲率，从而在稳定的边缘运行。一旦损失很小，它的预测迭代就会遵循 $\\log{λ_1(\\nabla^2 \\mathcal{L})}$ 上的梯度下降，沿着 $\\mathcal{M}$ 到前导顺序，与归一化梯度下降的平坦度偏差平行（Arora 等人，2022）。与归一化梯度下降不同，CDP 步长随着到 $\\mathcal{M}$ 的距离而缩小，从而能够收敛到在有限学习率下局部最小化锐度的插值解决方案。我们建立了针对一类广泛的非负损失的理论，其局部二次 Morse-Bott 结构接近 $\\mathcal{M}$，捕获平滑超参数化神经网络中的规则插值机制。根据经验，CDP 步长会产生类似于锐度感知最小化（SAM，Foret 等人，2021）的平坦化效果，即使在超出我们理论的设置中也能降低锐度，包括非线性师生网络和预训练 LLM 的微调。",
+        "fallback_provider": "google_free",
+        "title_zh": "寻找平坦最小值的新算法方法：临界阻尼 Polyak 步长"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.26475v1"
       ]

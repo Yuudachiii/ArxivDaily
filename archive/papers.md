@@ -13,7 +13,7 @@
 | 2026-11-20 | Cost-Aware Agentic Feature Optimization System for Fleet-Scale Ranking Models | 适用于舰队规模排名模型的成本感知代理特征优化系统（谷歌备用翻译） | [arXiv 2611.26531v1](https://arxiv.org/abs/2611.26531v1) |
 | 2026-11-20 | AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher | AutoMaster：自主后期训练，让同一个模型成为更好的老师（谷歌备用翻译） | [arXiv 2611.26510v1](https://arxiv.org/abs/2611.26510v1) |
 | 2026-11-20 | Multimodal Error Detection in Chest X-ray Reports: A Large Language Model Reading Image Evidence | 胸部 X 光报告中的多模态错误检测：读取图像证据的大型语言模型（谷歌备用翻译） | [arXiv 2611.26492v1](https://arxiv.org/abs/2611.26492v1) |
-| 2026-11-20 | A new algorithmic approach for finding flat minima: critically damped Polyak stepsizes | 待翻译 | [arXiv 2611.26475v1](https://arxiv.org/abs/2611.26475v1) |
+| 2026-11-20 | A new algorithmic approach for finding flat minima: critically damped Polyak stepsizes | 寻找平坦最小值的新算法方法：临界阻尼 Polyak 步长（谷歌备用翻译） | [arXiv 2611.26475v1](https://arxiv.org/abs/2611.26475v1) |
 | 2026-11-19 | Jailbreak Detection on Large Language Models via Contrastive Prototype Structures | 通过对比原型结构检测大型语言模型的越狱 | [arXiv 2611.24936v1](https://arxiv.org/abs/2611.24936v1) |
 | 2026-11-19 | Unified Law for Visual Tasks (The Four Laws of Computer Vision) | 视觉任务统一法则（计算机视觉四法则） | [arXiv 2611.24917v1](https://arxiv.org/abs/2611.24917v1) |
 | 2026-11-19 | Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity | 封顶与跟踪：优化大语言模型推理请求在变化容量下的调度 | [arXiv 2611.24891v1](https://arxiv.org/abs/2611.24891v1) |
