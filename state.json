@@ -75257,7 +75257,9 @@
       ]
     },
     "2611.26553": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-20T09:44:17.987428+00:00",
@@ -75286,6 +75288,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-20T09:44:17.987428+00:00",
+        "run_id": "20261120T094417Z-56572410",
+        "stage": "selection"
+      },
       "versions": [
         "2611.26553v1"
       ]
