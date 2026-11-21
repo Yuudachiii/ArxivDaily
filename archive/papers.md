@@ -9,7 +9,7 @@
 | 2026-11-21 | Training Vision Models for LLM-Driven Weight-Space Programming | 针对大型语言模型驱动的权重空间编程训练视觉模型 | [arXiv 2611.26408v1](https://arxiv.org/abs/2611.26408v1) |
 | 2026-11-21 | EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning | EgoCaptioner：迈向全面且细粒度的自我视角视频字幕生成 | [arXiv 2611.26380v1](https://arxiv.org/abs/2611.26380v1) |
 | 2026-11-21 | HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs | HiSA：在大型语言模型中对RoPE注意力的隐藏维度进行稀疏化 | [arXiv 2611.26363v1](https://arxiv.org/abs/2611.26363v1) |
-| 2026-11-21 | How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents | 待翻译 | [arXiv 2611.26361v1](https://arxiv.org/abs/2611.26361v1) |
+| 2026-11-21 | How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents | 一个代理应该记住多少？来自自我蒸馏记忆对大型语言模型代理的部署经验 | [arXiv 2611.26361v1](https://arxiv.org/abs/2611.26361v1) |
 | 2026-11-21 | Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation | 待翻译 | [arXiv 2611.26349v1](https://arxiv.org/abs/2611.26349v1) |
 | 2026-11-21 | Training LLMs to Follow Reasoning Instructions with Minimal Edits | 待翻译 | [arXiv 2611.26342v1](https://arxiv.org/abs/2611.26342v1) |
 | 2026-11-21 | Sirius-Tiamat: How Small Can a One-Pass Decision Encoder Get Before Its Decisions Change? | 待翻译 | [arXiv 2611.26339v1](https://arxiv.org/abs/2611.26339v1) |
