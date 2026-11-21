@@ -75,6 +75,10 @@
     "20261120T094417Z-56572410-80e8d86bf5ff": {
       "attempts": 1,
       "created_at": "2026-11-20T09:44:17.987428+00:00"
+    },
+    "20261121T091625Z-6b793b40-e6056f800d43": {
+      "attempts": 0,
+      "created_at": "2026-11-21T09:16:25.139309+00:00"
     }
   },
   "collection": {
@@ -7449,6 +7453,458 @@
       "run_id": "20261120T094417Z-56572410",
       "schema_version": 1,
       "status": "confirmed"
+    },
+    "20261121T091625Z-6b793b40-e6056f800d43": {
+      "alert": false,
+      "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-microsoft/archive/2026/11/21/20261121T091625Z-6b793b40-e6056f800d43.md",
+      "chain_root": "20261121T091625Z-6b793b40-e6056f800d43",
+      "chain_roots": [
+        "20261121T091625Z-6b793b40-e6056f800d43"
+      ],
+      "content_hash": "e6056f800d43fb97464160c3703eee26ad8ec96974bdff69787fd1d5e8295bca",
+      "created_at": "2026-11-21T09:16:25.139309+00:00",
+      "day": "2026-11-21",
+      "digest_id": "20261121T091625Z-6b793b40-e6056f800d43",
+      "empty": false,
+      "items": [
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Pretrained language models (LMs) remain unreliable on exact multi-digit arithmetic without gradient fine-tuning or external tool interpreters. We introduce closed-form, zero-gradient circuit-grafting primitives that compile deterministic computation directly into pretrained LM weights using zero training examples and zero runtime hooks, while bounding per-layer normalization drift and preserving natural-language (NL) competence. Our construction combines three analytical mechanisms: (1) two-layer Mellin-GLU quadrature over bias-free SwiGLU/GeGLU layers, turning unknown per-token RMSNorm scaling into translation along a log-spaced gate grid ($>250\\times$ dynamic range) with IEEE 754 error bounds; (2) cross-token scale cancellation via signed Chebyshev Indefinite-RoPE self-sink attention and memoryless SiLU-antisymmetric GatedDeltaNet shifts; and (3) axis-aligned width extension ($d \\to d+K$) with $\\sqrt{d/(d+K)}$ norm compensation, Base-1000 canonical BPE emission, and differential $(+254,-256)$ tied unembeddings. An automated 5-stage compiler synthesizes 4-8 digit signed $\\{+,-,\\times\\}$ circuits in constant $\\mathsf{TC}^0$ depth alongside 3-literal Boolean (100%, $N=1{,}728$; plus 42-layer Gemma 4 E4B audits) and 5-bit Majority/Parity (100%) circuits. On 6-digit arithmetic ($N=1{,}200$, BF16), IBM Granite 4.2 3B (1.07M-1.33M active non-zeros, $\\le 0.036\\%$) and Alibaba Qwen 3.5 4B (2.25M-2.39M non-zeros, $\\le 0.057\\%$) reach 99.17% and 100.00% ALU-prefix accuracy (100% with an FP32 sidecar) and 98%-100% mid-sentence resumption, outperforming 12.8K-sample LoRA (42.2% / 61.7%, 0% inline continuation). A factorized block-sparse sidecar holds A100 memory at 7.89 / 10.65 GiB (4.60 / 8.14 GiB under INT8/INT4 + FP32 sidecar) while passing all 14/14 pre-registered $>2$K-token Tango splits ($N=4{,}392$; 0/11,134 OOD triggers).",
+            "authors": [
+              "Tanmay Sah"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.26450v1",
+            "published": "2026-11-19T17:18:38+00:00",
+            "title": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
+            "updated": "2026-11-19T17:18:38+00:00",
+            "version_id": "2611.26450v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_training",
+            "llm_safety",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "预训练语言模型（LM）在没有梯度微调或外部工具解释器的情况下，在精确多位数算术上仍然不可靠。我们引入了闭式、零梯度电路嫁接原语，这些模型使用零训练示例和零运行时钩子，将确定性计算直接编译为预训练的LM权重，同时限制每层归一化漂移并保持自然语言（NL）能力。我们的构造结合了三种分析机制：（1） 在无偏置的 SwiGLU/GeGLU 层上实现两层 Mellin-GLU 求积，将未知的每令牌 RMSNorm 缩放转换为沿对数间隔门栅格（$>250\\times$ 动态范围）的转换，且具有 IEEE 754 误差界限;（2）通过带符号切比雪夫无限RoPE自汇注意力和无内存SiLU-反对称门控DeltaNet移位实现跨令牌尺度消除;以及（3）轴对齐宽度扩展（$d \\ d+K$），并采用$\\sqrt{d/（d+K）}$范数补偿、基数1000的典范BPE发射和微分$（+254，-256）$ 绑定的未嵌入。一个自动化的五级编译器在常数深度的 $\\mathsf{TC}^0$ 中合成 4-8 位带符号的 $\\{+,-,\\times\\}$ 电路，并与三字面布尔（100%，$N=1{，}728$;加上 42 层 Gemma 4 E4B 审计）以及 5 位多数/奇偶校验电路（100%）合成。在6位数算术（$N=1{，}200$，BF16）中，IBM Granite 4.2 3B（1.07M-1.33M活跃非零，$$0.036\\%$）和阿里Qwen 3.5 4B（2.25M-2.39M非零，$\\le 0.057\\%$）达到99.17%和100.00%的ALU前缀准确率（FP32侧车为100%），句中恢复率98%-100%，优于12.8K样本LoRA（42.2% / 61.7%，0%内联延续）。分解区块稀疏侧车在 7.89 / 10.65 GiB（INT8/INT4 + FP32 边车下为 4.60 / 8.14 GiB）时将 A100 内存保留在 7.89 / 10.65 GiB（INT8/INT4 + FP32 边车下），同时通过所有 14/14 个预注册的 $>2$K-K-token Tango分割（$N=4{，}392$;0/11,134 个 OOD 触发）。",
+            "title_zh": "大型语言模型中的 CPU：将精确电路零梯度编译到预训练权重中"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language models (LLMs) can generate Q-matrices for diagnostic classification models that approximate expert specifications, but evaluations have focused on the final matrices, leaving the basis of individual item-attribute assignments unexamined. This opacity limits the responsible use of AI in measurement. We propose Reasoning-Trace Analysis (RTA), a framework in which an LLM generates attribute-labeled reasoning steps through chain-of-thought (CoT) prompting and these steps are analyzed to reconstruct, compare, and inspect each assignment. RTA is intended to supplement expert review and empirical validation. In a simulation study with perturbed fraction subtraction items, four LLMs recovered the required attributes and withheld attributes the items did not require. In an empirical study with 11 fraction subtraction items, responses from 536 examinees, four LLMs, up to three temperatures, and 100 replications per condition, CoT-derived Q-matrices overlapped substantially with the reference Q-matrix (mean overlap .809) but less than directly generated Q-matrices (.877), and they varied more across replications. Inspection of the traces linked disagreements to item-type coding, labeling rules, and how operations were expressed as steps. Q-matrices with similar overlap differed in fit to examinee responses. RTA provides inspectable evidence that matrix-level agreement and fit do not.",
+            "authors": [
+              "Jihong Zhang",
+              "Zijing Jin",
+              "Mingfeng Xue"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.26422v1",
+            "published": "2026-11-19T17:03:16+00:00",
+            "title": "Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction",
+            "updated": "2026-11-19T17:03:16+00:00",
+            "version_id": "2611.26422v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型（LLMs）可以为诊断分类模型生成近似专家规范的Q矩阵，但评估通常集中在最终矩阵上，而对单个题目属性分配的基础未加以检验。这种不透明性限制了在测量中负责任地使用人工智能。我们提出了推理跟踪分析（RTA）框架，其中LLM通过链式思维（CoT）提示生成带属性标签的推理步骤，并分析这些步骤以重构、比较和检查每个分配。RTA旨在补充专家审查和实证验证。在一个带有扰动分数减法题目的模拟研究中，四个LLM恢复了所需的属性，并排除了题目不需要的属性。在一个包含11个分数减法题目的实证研究中，涉及536名考生、四个LLM、最多三种温度、每个条件100次重复，CoT生成的Q矩阵与参考 Q 矩阵（平均重叠 0.809），但低于直接生成的 Q 矩阵（0.877），并且在重复实验中变化更大。对痕迹的检查将分歧与题型编码、标记规则以及操作表示为步骤的方式联系起来。具有相似重叠的 Q 矩阵在对考生反应的拟合度上有所不同。RTA 提供了可检查的证据，表明矩阵级别的一致性和拟合度并非一致。",
+            "title_zh": "使用大型语言模型进行可解释 Q 矩阵构建的推理追踪分析"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "It has been demonstrated that, in certain settings, large language models can perform weight-space programming to directly modify the weights of neural networks. However, it is unknown how dedicated training of these networks can contribute to the successes of weight-space programming. We present a benchmark of LLM-driven weight-space programming on vision models, in which five LLMs edit convolutional networks and vision transformers on relabeling and error-correction tasks on Waterbirds, CIFAR-100, PACS and Entity-30. We report more than 2,600 such edit processes, whereby each edit is scored on held-out images for success, side effects and accuracy loss. We compare standard training with label smoothing, gradient-based editable training, and our Edit-Ready Training (ERT), a novel method that rehearses the direct, closed-form weight edits LLMs perform. We show that preparing networks for editing raises the success of LLM edits substantially where standard networks are hard to edit. ERT further achieves the highest mean score for GPT-6 Astra and Claude Opus 5.5 across all evaluated baselines. We will release our LLM testing framework alongside all tasks, editing trajectories and scores. Project page: https://viscom.uni-ulm.de/wsp",
+            "authors": [
+              "Timo Ropinski",
+              "Sebastian Kranz"
+            ],
+            "categories": [
+              "cs.CV"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.26408v1",
+            "published": "2026-11-19T16:56:27+00:00",
+            "title": "Training Vision Models for LLM-Driven Weight-Space Programming",
+            "updated": "2026-11-19T16:56:27+00:00",
+            "version_id": "2611.26408v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "已有研究表明，在某些环境下，大型语言模型可以执行权重空间编程，直接修改神经网络的权重。然而，目前尚不清楚这些网络的专门训练如何对权重空间编程的成功做出贡献。我们提出了一个基于LLM驱动的权重空间编程在视觉模型上的基准，其中五个LLM在Waterbirds、CIFAR-100、PACS和Entity-30上的重新标注和错误纠正任务中编辑卷积网络和视觉Transformer。我们报告了超过2,600个此类编辑过程，每次编辑都在保留的图像上评分，以评估成功率、副作用和准确率损失。我们比较了标准训练（使用标签平滑）、基于梯度的可编辑训练以及我们的Edit-Ready训练（ERT），这是一种新方法，它模拟LLM执行的直接闭式权重编辑。我们表明，为编辑准备网络可以大幅提高LLM编辑的成功率，而标准网络难以进行编辑。ERT进一步在所有评估基线中实现了 GPT-6 Astra 和 Claude Opus 5.5 的最高平均分。我们将发布我们的 LLM 测试框架，以及所有任务、编辑轨迹和分数。项目页面：https://viscom.uni-ulm.de/wsp",
+            "title_zh": "针对大型语言模型驱动的权重空间编程训练视觉模型"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Egocentric video captioning requires fine-grained detail and accurate timing, yet current multimodal large language models (MLLMs) often miss brief actions, confuse their order, or misinterpret the wearer's motion. Existing caption formats also offer limited support for combining detailed narration with precise timing. We present EgoCaptioner, which pairs a video-level overview of the setting, participants, and the wearer's overall activity with timed steps whose narration adapts to varying perceptual demands and marks key moments at specific timestamps. We develop a coarse-to-fine annotation pipeline that establishes event structure before expanding step descriptions, yielding 50,000 training examples from eight egocentric video sources. Complementary rewards assess factual accuracy and coverage, measure step-level temporal alignment, and penalize fragmented or redundant narration, guiding caption refinement through Group Relative Policy Optimization (GRPO). To improve the reliability of factual supervision, we supplement caption references with pose-derived motion facts when sensor data are available. Across five egocentric benchmarks, EgoCaptioner achieves leading performance among evaluated open-source models in caption quality, caption-conditioned question answering, and temporal alignment. It also surpasses Gemini 3.1 Pro on PhysCapBench and all evaluated proprietary baselines on Minerva-Ego under the caption-to-QA protocol. Ablations support the complementary roles of factual and temporal rewards and show that coarse-to-fine annotation provides more effective supervision than single-pass annotation.",
+            "authors": [
+              "Yuqi Tang",
+              "Yang Shi",
+              "Yuran Wang",
+              "Tengfei Liu",
+              "Rundong Wang",
+              "Zongyang Qiu",
+              "Qixun Wang",
+              "Zhuoran Zhang",
+              "Xuanyu Zhu",
+              "Yifan Xu",
+              "Yiyan Ji",
+              "Shujie Li",
+              "Shixuan Liu",
+              "Haotian Wang",
+              "Yuanxing Zhang",
+              "Pengfei Wan",
+              "Chengwei Qin"
+            ],
+            "categories": [
+              "cs.CV"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.26380v1",
+            "published": "2026-11-19T16:39:59+00:00",
+            "title": "EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning",
+            "updated": "2026-11-19T16:39:59+00:00",
+            "version_id": "2611.26380v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_training",
+            "llm_safety",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "以自我视角的视频字幕需要精细的细节和准确的时序，但当前的多模态大语言模型（MLLMs）常常遗漏短暂的动作、混淆动作顺序，或误解佩戴者的运动。现有的字幕格式在将详细叙述与精确时间结合方面也支持有限。我们提出了 EgoCaptioner，它将视频级别的场景、参与者以及佩戴者的整体活动概览，与按时间步骤排列的叙述结合，叙述可根据不同的感知需求进行调整，并在特定时间戳标记关键时刻。我们开发了一个粗到细的注释流程，先建立事件结构，再扩展步骤描述，从八个自我视角视频来源中生成 50,000 个训练示例。辅助奖励用于评估事实准确性和覆盖度，衡量步骤级时间对齐，并惩罚碎片化或冗余的叙述，通过群体相对策略优化（GRPO）指导字幕优化。为提高可靠性在事实监督方面，当传感器数据可用时，我们使用姿态派生的运动事实来补充字幕参考。在五个自我中心的基准测试中，EgoCaptioner 在字幕质量、基于字幕的问答和时间对齐方面，在评估的开源模型中表现领先。它在 PhysCapBench 上也超过了 Gemini 3.1 Pro，并且在 Minerva-Ego 的字幕到问答协议下超过了所有评估的专有基线。消融实验支持事实奖励和时间奖励的互补作用，并显示粗到细的标注比单次标注提供更有效的监督。",
+            "title_zh": "EgoCaptioner：迈向全面且细粒度的自我视角视频字幕生成"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Attention in large language models (LLMs) scores every query against every key with a full dot product. We investigate whether this dot product must be computed completely for attention to be effective. We propose Hidden Sparse Attention (HiSA), which keeps the query and key projections intact but only computes a partial dot product, following a static, parameter-free rule set by the token positions: attention becomes sparse in the hidden (feature) dimension, an axis much less explored than token sparsity, rather than over tokens as in almost all sparse attention methods. Based on the structure of rotary position embeddings (RoPE), we decompose keys and queries into parts which can be omitted when computing attention. By training LLMs from scratch with HiSA, we find that this partial dot product does not hurt but improves performance compared with the complete product while computing only about a third of the query-key products. During inference HiSA improves decoding speed and shrinks memory footprint. We also extend HiSA to FlashAttention-3 kernels for training and inference. Finally, we motivate our approach by showing that dense attention learns to suppress the attention score parts that HiSA drops. Code is available at https://github.com/ambroise-b/hisa.",
+            "authors": [
+              "Ambroise Borbely",
+              "Mathieu Salzmann",
+              "Olivier Verscheure"
+            ],
+            "categories": [
+              "cs.LG",
+              "cs.CL"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.26363v1",
+            "published": "2026-11-19T16:31:46+00:00",
+            "title": "HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs",
+            "updated": "2026-11-19T16:31:46+00:00",
+            "version_id": "2611.26363v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_efficiency",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型（LLMs）中的注意力机制会通过完整的点积对每个查询与每个键进行评分。我们研究了这种点积是否必须完全计算才能使注意力机制有效。我们提出了隐藏稀疏注意力（HiSA），它保持查询和键的投影不变，但仅计算部分点积，遵循由标记位置设定的静态、无参数规则：注意力在隐藏（特征）维度上变得稀疏——这是一个比标记稀疏性更少被探索的轴，而几乎所有稀疏注意力方法关注的都是标记稀疏性。基于旋转位置嵌入（RoPE）的结构，我们将键和值查询分解成在计算注意力时可以省略的部分。通过使用HiSA从零开始训练LLM，我们发现这种部分点积不仅不会损害性能，反而提升了性能，同时只计算大约三分之一的查询-键乘积。在推理过程中，HiSA提高了解码速度并减少了内存占用。我们还将 HiSA 扩展到用于训练和推理的 FlashAttention-3 内核。最后，我们通过展示密集注意力学习抑制 HiSA 丢弃的注意力分数部分来说明我们方法的动机。代码可在 https://github.com/ambroise-b/hisa 获取。",
+            "title_zh": "HiSA：在大型语言模型中对RoPE注意力的隐藏维度进行稀疏化"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "LLM agents on long-horizon tasks fail in recurring, procedural ways. They mis-paginate an API, resolve the wrong entity, or answer when no answer was asked. We built a pipeline that lets an agent learn from its own history. It first mines short \\emph{lessons} from the agent's own trajectories, one to three per episode. It then consolidates those lessons into a smaller set of \\emph{guidelines}, where each guideline records how many lessons it merged. At inference the agent receives either all guidelines or a selected subset. The pipeline ships in the open-source altk-evolve library and is deployed in IBM's CUGA agent and watsonx Orchestrate platform. We report what we learned building, measuring, and productizing it. Our primary instrument is the AppWorld benchmark, across models spanning 40--92\\% baseline task completion. The central finding is that the right amount of memory is a property of the model, not the memory. A strong model keeps improving as guidelines are added. DeepSeek-V3.2 gains +9.5 points of task completion and +16.1 points of scenario completion with its full 191-guideline set. A weak model gains less from the same full set than from a small selected subset. gpt-oss-120b starts at 39.9\\% task completion. It reaches 51.2\\% with all 199 of its guidelines but 55.4\\% (mean of two runs) with a selected subset of about 29. Around that result we report what went wrong: a high-support guideline that backfired, provenance silently dropped during consolidation, a swallowed API error that failed every task while producing a plausible log, and a baseline confound that nearly produced a misleading comparison with a prior method. We distill these into recommendations for teams deploying agent memory.",
+            "authors": [
+              "K. R. Jayaram",
+              "Vatche Isahagian",
+              "Aswath Vaithinathan Aravindan",
+              "Vinod Muthusamy",
+              "Punleuk Oum",
+              "Gaodan Fang",
+              "Michal Ulewicz",
+              "Gegi Thomas",
+              "Evelyn Duesterwald"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.26361v1",
+            "published": "2026-11-19T16:29:16+00:00",
+            "title": "How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents",
+            "updated": "2026-11-19T16:29:16+00:00",
+            "version_id": "2611.26361v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_efficiency",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "在长期任务中，LLM 代理会以重复的、程序化的方式失败。它们会错误地对 API 进行分页、解析错误的实体，或者在没有提出问题时给出答案。我们构建了一个管道，让代理可以从自己的历史中学习。它首先从代理的轨迹中挖掘简短的\\emph{教训}，每集一至三个。然后，它将这些教训整合为更少的一组\\emph{指导方针}，每条指导方针记录合并了多少条教训。在推理时，代理会接收所有指导方针或选定的子集。该管道已在开源的 altk-evolve 库中发布，并部署在 IBM 的 CUGA 代理和 watsonx Orchestrate 平台中。我们报告了在构建、测量和产品化过程中所学到的经验。我们的主要工具是 AppWorld 基准测试，涵盖了任务完成率从 40% 到 92% 的不同模型。主要发现是，适当的记忆量是模型的属性，而不是记忆本身。强大的模型会随着指导方针的增加而持续改善。DeepSeek-V3.2 在完整的 191 条指导原则下，任务完成度提升了 9.5 分，场景完成度提升了 16.1 分。一个弱模型在同样的完整指导集下获得的提升比从一个小的精选子集获得的提升要少。gpt-oss-120b 的任务完成度起始为 39.9%。使用其全部 199 条指导原则可达到 51.2%，但使用大约 29 条的精选子集则可达到 55.4%（两次运行的平均值）。在该结果周围，我们报告了出现的问题：一个高支持度的指导原则适得其反，在整合过程中信息来源被默默丢弃，一个吞掉的 API 错误导致每项任务都失败但生成了合理的日志，以及一个基线混淆几乎导致与先前方法的误导性比较。我们将这些总结为对部署代理记忆的团队的建议。",
+            "title_zh": "一个代理应该记住多少？来自自我蒸馏记忆对大型语言模型代理的部署经验"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "First-principles structural relaxation and band calculations require substantial computation and expertise. Here we present Perfumer, a large language model-based agentic framework that couples Quantum ESPRESSO with two predictive models. Across tested structures, pre-relaxation with Perfumer-relax model followed by QE refinement yielded a 2.75-fold overall speedup over QE alone. Perfumer-band model combines a periodic graph neural network with a latent Hermitian spectral head returns 12 band energies at any requested wavevector, preserving reciprocal lattice periodicity and time-reversal symmetry without constructing Hamiltonian. Trained on 125,153 self-curated band structures, Perfumer-band model reaches a median per-material mean absolute error of 0.157 eV on 2,607 test materials, including lanthanide, actinide and magnetic compounds, from held-out composition families spanning 85 elements, taking about 97 ms per material on two consumer CPU cores. The agent turns natural-language requests into relaxation-to-band workflows, from a single uploaded structure to automatically constructed new candidates and returns predicted properties.",
+            "authors": [
+              "Zhiwei Li",
+              "Yuhao Zhou",
+              "Yikai Yang",
+              "Haonan Wang",
+              "Qing Ye",
+              "Jiancheng Lv",
+              "Kazunari Matsuda"
+            ],
+            "categories": [
+              "cond-mat.mtrl-sci",
+              "cs.LG"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.26349v1",
+            "published": "2026-11-19T16:23:33+00:00",
+            "title": "Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation",
+            "updated": "2026-11-19T16:23:33+00:00",
+            "version_id": "2611.26349v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_agent",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "从第一性原理进行结构弛豫和能带计算需要大量的计算资源和专业知识。在这里，我们介绍 Perfumer，这是一个基于大语言模型的自主框架，将 Quantum ESPRESSO 与两个预测模型相结合。在测试的结构中，先使用 Perfumer-relax 模型进行预弛豫，然后再进行 QE 精炼，相比单独使用 QE，总体速度提高了 2.75 倍。Perfumer-band 模型结合了周期性图神经网络和潜在的 Hermitian 光谱头，在不构建哈密顿量的情况下，可在任意请求的波矢处返回 12 个能带能量，同时保持倒易晶格周期性和时间反演对称性。在 125,153 个自我策划的能带结构上进行训练后，Perfumer-band 模型在 2,607 个测试材料（包括镧系、锕系和磁性化合物，来自涵盖 85 种元素的保留组成家族）上达到每种材料中位平均绝对误差为 0.157 eV，使用两核消费级 CPU 每个材料约需 97 毫秒。该智能体能够处理自然语言将请求转换为从单个上传结构到自动构建的新候选结构并返回预测属性的放松到带工作流。",
+            "title_zh": "Perfumer：一种基于大型语言模型的代理框架，加速结构弛豫和电子能带预测的第一性原理计算"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Large language models increasingly rely on extended reasoning traces, yet the training signals used to shape this behavior remain coarse. Supervised fine-tuning on full trajectories forces the model to imitate an entire demonstration, overconstraining its output distribution, while trajectory-level reinforcement learning provides only weak credit assignment, rewarding or penalizing whole completions without identifying where they succeed or fail. We propose edit-based training, a general framework for learning from a model's own trajectories via localized textual corrections. Given a sampled completion, an editor identifies the first point of failure under a specified criterion and proposes a minimal replacement span. The model is then supervised only on these edited spans. By design, this concentrates supervision where the model's reasoning first breaks down and aims to preserve its existing reasoning patterns elsewhere. The method applies both offline and online, with the latter continually adapting supervision to the model's evolving failure modes. We instantiate this approach on reasoning instruction following with Qwen3-32B on the ReasonIF benchmark. Compared to full-trajectory imitation and trajectory-level reinforcement learning baselines, edit-based training substantially improves compliance with the reasoning instruction while largely preserving the model's skills on untargeted tasks. These results suggest that localized correction is an effective complement to these approaches for shaping how LLMs reason.",
+            "authors": [
+              "Alexandra Yakovleva",
+              "Luat Gia Khoi Nguyen",
+              "Juho Kannala",
+              "Harri Valpola",
+              "Alexander Ilin"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.26342v1",
+            "published": "2026-11-19T16:18:25+00:00",
+            "title": "Training LLMs to Follow Reasoning Instructions with Minimal Edits",
+            "updated": "2026-11-19T16:18:25+00:00",
+            "version_id": "2611.26342v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_reasoning",
+            "llm_training",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "大型语言模型越来越依赖于扩展的推理路径，但用于塑造这种行为的训练信号仍然很粗略。对完整轨迹进行监督微调会迫使模型模仿整个演示，从而过度限制其输出分布，而轨迹级强化学习仅提供弱的信用分配，对整个完成给予奖励或惩罚，却无法识别其成功或失败的具体位置。我们提出了基于编辑的训练，这是一种通过局部文本修改从模型自身轨迹中学习的通用框架。在给定一个采样完成后，编辑器会根据指定标准识别第一个失败点，并提出最小替换范围。模型随后只在这些修改过的范围上进行监督。从设计上看，这将监督集中在模型推理首次出错的地方，并旨在保留其他地方其现有的推理模式。该方法可离线和在线应用，后者持续将监督适应模型不断变化的失败模式。我们在 ReasonIF 基准上使用 Qwen3-32B 对推理指令跟随进行实例化这种方法。与全轨迹模仿和轨迹级强化学习基线相比，基于编辑的训练显著提高了对推理指令的遵从性，同时在很大程度上保持了模型在非目标任务上的能力。这些结果表明，局部修正是塑造大型语言模型推理方式的这些方法的有效补充。",
+            "title_zh": "训练大型语言模型以遵循推理指令并进行最小修改"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "A one-pass decision encoder reads a text, a question and several named options, and returns a probability for each option in a single forward pass. We ask how far Laya, a 421M-parameter encoder of this kind, can be compressed before its decisions change. We count decisions that differ from Laya's own full-precision (fp32) answer, and track calibration (how well confidence matches accuracy, measured by expected calibration error, ECE), on 1,221 synthetic items with the training schemas, 273 with an unseen schema, and 800 out-of-family questions from ARC, MMLU and HellaSwag. Layer pruning of a related model family is known; we add flips, calibration, held-out data and retraining. bf16 changes 0.2% of in-family decisions but 2.2% out of family; 6-bit grouped rounding 1.3% and 5.9%; deleting 6 layers 0.9% and 9.1%, while ECE rises from 5.9% to 39.2%. One fitted temperature, needing no labels, restores it to 3.6%. One scale per tensor fails below six bits, and CPU dynamic int8 changes 30% of decisions, nearly all through one layer. Total variation tracks flips for rounding but not for deletion, and an early exit saves layers over a static cut only if its confidence gate is first recalibrated. Distilling a 16-layer student cuts its in-family flips from 44% to 9% (45% out of family). At equal stored size, rounding flips fewer decisions than deletion. Data are synthetic and LLM-labelled, for one architecture.",
+            "authors": [
+              "Mohammed Nayeem Khan",
+              "Vrishank Tiwari"
+            ],
+            "categories": [
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.26339v1",
+            "published": "2026-11-19T16:17:13+00:00",
+            "title": "Sirius-Tiamat: How Small Can a One-Pass Decision Encoder Get Before Its Decisions Change?",
+            "updated": "2026-11-19T16:17:13+00:00",
+            "version_id": "2611.26339v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_efficiency",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "一种单次决策编码器读取文本、问题和多个命名选项，并在一次前向传递中返回每个选项的概率。我们想知道这种类型的 421M 参数编码器 Laya 在其决策改变之前可以压缩到多大程度。我们统计与 Laya 自身的全精度（fp32）答案不同的决策，并在 1,221 个使用训练模式的合成项、273 个未见过的模式，以及 800 个来自 ARC、MMLU 和 HellaSwag 的非同系列问题上跟踪校准（即置信度与准确度的匹配程度，通过期望校准误差 ECE 测量）。已知相关模型家族的层裁剪；我们增加了翻转、校准、保留数据和再训练。bf16 改变了 0.2% 的同系列决策，但改变了 2.2% 的非同系列决策；6 位分组四舍五入改变 1.3% 和 5.9%；删除 6 层改变 0.9% 和 9.1%，同时 ECE 从 5.9% 上升到 39.2%。使用一个拟合的温度，无需标签，可将其恢复到 3.6%。每个张量一个缩放在低于六位时失败，而 CPU 动态 int8 改变了 30%几乎所有的决策都是通过一个层完成的。总体变化跟踪四舍五入的翻转，但不跟踪删除，而提前退出仅在其置信门首先重新校准时才比静态剪枝节省层数。蒸馏一个16层的学生模型可以将其族内翻转从44%降至9%（族外为45%）。在相同存储大小下，四舍五入比删除翻转的决策更少。数据是合成的并由大语言模型标注，针对一种架构。",
+            "title_zh": "Sirius-Tiamat：一次性决策编码器在决策发生变化之前可以有多小？"
+          }
+        },
+        {
+          "modules": [
+            "title",
+            "title_translation",
+            "abstract",
+            "abstract_translation",
+            "source",
+            "screening_routes"
+          ],
+          "paper": {
+            "abstract": "Hallucination research in low-resource languages fragments easily: each newly named failure mode prompts its own dataset, spending scarce annotators on incomparable resources. We argue for consolidation and test it at community scale. Alikbachan is a Bengali hallucination-detection benchmark stratified along three crossed axes: a human-validated cultural-distance band, six task types, and a five-family, 32-mode hallucination taxonomy. It comprises a harvested 2,516-item test set (Phase 1) and a quota-constructed, gold-labeled 5,000-item set (Phase 2). The stratification is diagnostic. Four zero-shot LLM judges vary by over 30 macro-F1 points across strata, and the item-level predictions of 99 Phase-1 and 32 Phase-2 competition systems reproduce the profile: discourse-level omission defeats judges and most teams alike, whereas only a minority over-flag negative controls. The judges' verdict probabilities rank items well (ROC-AUC 0.74-0.95) but are overconfident (ECE 0.04-0.29). An open competition on Alikbachan drew 222 teams and 3,566 submissions, and a single-prompt 32B judge reaches the 57th percentile. Of the 25 teams in both phases, 24 regress on Phase 2 (mean $-17.6$ points) while every zero-shot judge improves, and Phase-1 rank barely predicts Phase-2 rank (Spearman $ρ=0.35$), so a Phase-1 leaderboard alone would have crowned a different winner.",
+            "authors": [
+              "Asif Shahriyar Sushmit",
+              "Shefayat E Shams Adib",
+              "Abdullah Al Jubaer Gem",
+              "Ahmed Shafin Ruhan",
+              "MD. Nazmuddoha Ansary",
+              "Biplab Kumar Sarkar",
+              "Syed Rifat Raiyan",
+              "Ajwad Abrar",
+              "Abdullah Bin Hasan",
+              "Adib Sakhawat",
+              "M. Sakeef Hossain",
+              "Ahmed Alfey Sani",
+              "Arefin Mizan",
+              "Sourab Chakma",
+              "Quazi Adibur Rahman Adib",
+              "Wassie Haque",
+              "Sanjay Kumar Sen",
+              "Saad Tahmid",
+              "Mohammad Mamun Or Rashid"
+            ],
+            "categories": [
+              "cs.CL",
+              "cs.AI"
+            ],
+            "pdf_url": "https://arxiv.org/pdf/2611.26336v1",
+            "published": "2026-11-19T16:15:38+00:00",
+            "title": "One Framework to Diagnose Them All: A Stratified Benchmark for Bengali LLM Hallucination",
+            "updated": "2026-11-19T16:15:38+00:00",
+            "version_id": "2611.26336v1"
+          },
+          "recovery_of": "",
+          "rule_hits": [
+            "llm_safety",
+            "llm_eval",
+            "llm_core"
+          ],
+          "summary": null,
+          "tier": "translation",
+          "translation": {
+            "abstract_zh": "低资源语言的幻觉研究容易分散：每一种新命名的失败模式都会产生自己的数据集，消耗稀缺的标注人员在不可比较的资源上。我们主张整合并在社区规模上进行测试。Alikbachan 是一个孟加拉语幻觉检测基准，沿三个交叉轴进行分层：经过人工验证的文化距离带，六种任务类型，以及五个家族、32 种模式的幻觉分类法。它包含一个收集的 2,516 项测试集（第 1 阶段）和一个按配额构建、金标准标注的 5,000 项数据集（第 2 阶段）。这种分层具有诊断意义。四个零样本大语言模型评审在各分层之间的宏 F1 分数差异超过 30 点，第 1 阶段的 99 个和第 2 阶段的 32 个竞赛系统的项目级预测再现了这一特征：话语层面的省略使评审和大部分团队均无法检出，而只有少数团队会对负面控件标记过度。评审的判决概率能很好地对项目进行排名（ROC-AUC 0.74-0.95），但其置信度过高（ECE 0.04-0.29）。一个开放阿里巴巴创意大赛吸引了222支队伍和3,566份提交，一个单提示的32B评审达到第57百分位。在两个阶段都有参与的25支队伍中，有24支在第二阶段表现回退（平均下降17.6分），而每个零-shot评审都有进步，而且第一阶段的排名几乎无法预测第二阶段的排名（斯皮尔曼ρ=0.35），因此仅凭第一阶段的排行榜本会冠以不同的冠军。",
+            "title_zh": "一个框架诊断所有问题：孟加拉语大语言模型幻觉的分层基准"
+          }
+        }
+      ],
+      "notification_hash": "4aa093f33ba7ff2f714a2bb8db9191685448800265caf429b505120c42c178b1",
+      "recovery_of": [],
+      "rendered": {
+        "2611.26336": "rendered_inline_translation",
+        "2611.26339": "rendered_inline_translation",
+        "2611.26342": "rendered_inline_translation",
+        "2611.26349": "rendered_inline_translation",
+        "2611.26361": "rendered_inline_translation",
+        "2611.26363": "rendered_inline_translation",
+        "2611.26380": "rendered_inline_translation",
+        "2611.26408": "rendered_inline_translation",
+        "2611.26422": "rendered_inline_translation",
+        "2611.26450": "rendered_inline_translation"
+      },
+      "run_id": "20261121T091625Z-6b793b40",
+      "schema_version": 1,
+      "status": "prepared"
     }
   },
   "papers": {
