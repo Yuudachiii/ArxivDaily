@@ -13,7 +13,7 @@
 | 2026-11-21 | Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation | Perfumer：一种基于大型语言模型的代理框架，加速结构弛豫和电子能带预测的第一性原理计算 | [arXiv 2611.26349v1](https://arxiv.org/abs/2611.26349v1) |
 | 2026-11-21 | Training LLMs to Follow Reasoning Instructions with Minimal Edits | 训练大型语言模型以遵循推理指令并进行最小修改 | [arXiv 2611.26342v1](https://arxiv.org/abs/2611.26342v1) |
 | 2026-11-21 | Sirius-Tiamat: How Small Can a One-Pass Decision Encoder Get Before Its Decisions Change? | Sirius-Tiamat：一次性决策编码器在决策发生变化之前可以有多小？ | [arXiv 2611.26339v1](https://arxiv.org/abs/2611.26339v1) |
-| 2026-11-21 | One Framework to Diagnose Them All: A Stratified Benchmark for Bengali LLM Hallucination | 待翻译 | [arXiv 2611.26336v1](https://arxiv.org/abs/2611.26336v1) |
+| 2026-11-21 | One Framework to Diagnose Them All: A Stratified Benchmark for Bengali LLM Hallucination | 一个框架诊断所有问题：孟加拉语大语言模型幻觉的分层基准 | [arXiv 2611.26336v1](https://arxiv.org/abs/2611.26336v1) |
 | 2026-11-20 | TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming | TideCache：具有透明缓存管理和分层流传输的高效混合 LLM 服务（谷歌备用翻译） | [arXiv 2611.26619v1](https://arxiv.org/abs/2611.26619v1) |
 | 2026-11-20 | SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research | SoK：评估软件漏洞研究中法学硕士能力的演变（谷歌备用翻译） | [arXiv 2611.26601v1](https://arxiv.org/abs/2611.26601v1) |
 | 2026-11-20 | Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards | 验证验证者：基于规范的 LLM 交叉检查是否存在 UVM 记分板的错误（谷歌备用翻译） | [arXiv 2611.26588v1](https://arxiv.org/abs/2611.26588v1) |
