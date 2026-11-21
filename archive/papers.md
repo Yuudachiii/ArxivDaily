@@ -5,7 +5,7 @@
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
 | 2026-11-21 | A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights | 大型语言模型中的 CPU：将精确电路零梯度编译到预训练权重中 | [arXiv 2611.26450v1](https://arxiv.org/abs/2611.26450v1) |
-| 2026-11-21 | Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction | 待翻译 | [arXiv 2611.26422v1](https://arxiv.org/abs/2611.26422v1) |
+| 2026-11-21 | Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction | 使用大型语言模型进行可解释 Q 矩阵构建的推理追踪分析 | [arXiv 2611.26422v1](https://arxiv.org/abs/2611.26422v1) |
 | 2026-11-21 | Training Vision Models for LLM-Driven Weight-Space Programming | 待翻译 | [arXiv 2611.26408v1](https://arxiv.org/abs/2611.26408v1) |
 | 2026-11-21 | EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning | 待翻译 | [arXiv 2611.26380v1](https://arxiv.org/abs/2611.26380v1) |
 | 2026-11-21 | HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs | 待翻译 | [arXiv 2611.26363v1](https://arxiv.org/abs/2611.26363v1) |
