@@ -76090,11 +76090,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-21T09:16:25.139309+00:00",
-        "run_id": "20261121T091625Z-6b793b40",
-        "stage": "translation"
+      "title_zh": "针对大型语言模型驱动的权重空间编程训练视觉模型",
+      "translation": {
+        "abstract_zh": "已有研究表明，在某些环境下，大型语言模型可以执行权重空间编程，直接修改神经网络的权重。然而，目前尚不清楚这些网络的专门训练如何对权重空间编程的成功做出贡献。我们提出了一个基于LLM驱动的权重空间编程在视觉模型上的基准，其中五个LLM在Waterbirds、CIFAR-100、PACS和Entity-30上的重新标注和错误纠正任务中编辑卷积网络和视觉Transformer。我们报告了超过2,600个此类编辑过程，每次编辑都在保留的图像上评分，以评估成功率、副作用和准确率损失。我们比较了标准训练（使用标签平滑）、基于梯度的可编辑训练以及我们的Edit-Ready训练（ERT），这是一种新方法，它模拟LLM执行的直接闭式权重编辑。我们表明，为编辑准备网络可以大幅提高LLM编辑的成功率，而标准网络难以进行编辑。ERT进一步在所有评估基线中实现了 GPT-6 Astra 和 Claude Opus 5.5 的最高平均分。我们将发布我们的 LLM 测试框架，以及所有任务、编辑轨迹和分数。项目页面：https://viscom.uni-ulm.de/wsp",
+        "title_zh": "针对大型语言模型驱动的权重空间编程训练视觉模型"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.26408v1"
       ]
