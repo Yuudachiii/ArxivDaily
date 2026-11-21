@@ -75949,11 +75949,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-21T09:16:25.139309+00:00",
-        "run_id": "20261121T091625Z-6b793b40",
-        "stage": "translation"
+      "title_zh": "HiSA：在大型语言模型中对RoPE注意力的隐藏维度进行稀疏化",
+      "translation": {
+        "abstract_zh": "大型语言模型（LLMs）中的注意力机制会通过完整的点积对每个查询与每个键进行评分。我们研究了这种点积是否必须完全计算才能使注意力机制有效。我们提出了隐藏稀疏注意力（HiSA），它保持查询和键的投影不变，但仅计算部分点积，遵循由标记位置设定的静态、无参数规则：注意力在隐藏（特征）维度上变得稀疏——这是一个比标记稀疏性更少被探索的轴，而几乎所有稀疏注意力方法关注的都是标记稀疏性。基于旋转位置嵌入（RoPE）的结构，我们将键和值查询分解成在计算注意力时可以省略的部分。通过使用HiSA从零开始训练LLM，我们发现这种部分点积不仅不会损害性能，反而提升了性能，同时只计算大约三分之一的查询-键乘积。在推理过程中，HiSA提高了解码速度并减少了内存占用。我们还将 HiSA 扩展到用于训练和推理的 FlashAttention-3 内核。最后，我们通过展示密集注意力学习抑制 HiSA 丢弃的注意力分数部分来说明我们方法的动机。代码可在 https://github.com/ambroise-b/hisa 获取。",
+        "title_zh": "HiSA：在大型语言模型中对RoPE注意力的隐藏维度进行稀疏化"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "microsoft_free",
       "versions": [
         "2611.26363v1"
       ]
