@@ -8,7 +8,7 @@
 | 2026-11-22 | OceanCoder: A Verification-Guided Large Language Model for Automated Simulation Modelling in Ocean Engineering | OceanCoder：一种用于海洋工程自动化仿真建模的验证引导大型语言模型 | [arXiv 2611.26333v1](https://arxiv.org/abs/2611.26333v1) |
 | 2026-11-22 | Rigel-Ladon: An Option-Count Law for a One-Pass Decision Encoder, Tested on Held-Out Option Counts and Held-Out Schemas | Rigel-Ladon：一种针对单次决策编码器的选项计数法，已在保留的选项计数和保留的模式上进行测试 | [arXiv 2611.26332v1](https://arxiv.org/abs/2611.26332v1) |
 | 2026-11-22 | Client Exits - A Way to Increase LLM Transparency on the Client Side | 客户端退出——一种提高客户端大型语言模型透明度的方法 | [arXiv 2611.26309v1](https://arxiv.org/abs/2611.26309v1) |
-| 2026-11-22 | SKILL.PNG: Learning Agent Skills in Pixel Space | 待翻译 | [arXiv 2611.26296v1](https://arxiv.org/abs/2611.26296v1) |
+| 2026-11-22 | SKILL.PNG: Learning Agent Skills in Pixel Space | SKILL.PNG：像素空间中的学习代理技能 | [arXiv 2611.26296v1](https://arxiv.org/abs/2611.26296v1) |
 | 2026-11-22 | Twice-Told Critiques: Claim-Level Homogenization of Peer Review in the LLM Era | 待翻译 | [arXiv 2611.26286v1](https://arxiv.org/abs/2611.26286v1) |
 | 2026-11-22 | What If Chain-of-Thought Is Not Enough? | 待翻译 | [arXiv 2611.26282v1](https://arxiv.org/abs/2611.26282v1) |
 | 2026-11-22 | A Statistical Framework for Training Data Auditing of Large Language Models | 待翻译 | [arXiv 2611.26264v1](https://arxiv.org/abs/2611.26264v1) |
