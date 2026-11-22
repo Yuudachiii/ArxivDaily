@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-22 | A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights | 待翻译 | [arXiv 2611.26450v1](https://arxiv.org/abs/2611.26450v1) |
+| 2026-11-22 | Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction | 待翻译 | [arXiv 2611.26422v1](https://arxiv.org/abs/2611.26422v1) |
+| 2026-11-22 | Training Vision Models for LLM-Driven Weight-Space Programming | 待翻译 | [arXiv 2611.26408v1](https://arxiv.org/abs/2611.26408v1) |
+| 2026-11-22 | EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning | 待翻译 | [arXiv 2611.26380v1](https://arxiv.org/abs/2611.26380v1) |
+| 2026-11-22 | HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs | 待翻译 | [arXiv 2611.26363v1](https://arxiv.org/abs/2611.26363v1) |
+| 2026-11-22 | How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents | 待翻译 | [arXiv 2611.26361v1](https://arxiv.org/abs/2611.26361v1) |
+| 2026-11-22 | Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation | 待翻译 | [arXiv 2611.26349v1](https://arxiv.org/abs/2611.26349v1) |
+| 2026-11-22 | Training LLMs to Follow Reasoning Instructions with Minimal Edits | 待翻译 | [arXiv 2611.26342v1](https://arxiv.org/abs/2611.26342v1) |
+| 2026-11-22 | Sirius-Tiamat: How Small Can a One-Pass Decision Encoder Get Before Its Decisions Change? | 待翻译 | [arXiv 2611.26339v1](https://arxiv.org/abs/2611.26339v1) |
+| 2026-11-22 | One Framework to Diagnose Them All: A Stratified Benchmark for Bengali LLM Hallucination | 待翻译 | [arXiv 2611.26336v1](https://arxiv.org/abs/2611.26336v1) |
 | 2026-11-20 | TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming | TideCache：具有透明缓存管理和分层流传输的高效混合 LLM 服务 | [arXiv 2611.26619v1](https://arxiv.org/abs/2611.26619v1) |
 | 2026-11-20 | SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research | SoK：评估软件漏洞研究中法学硕士能力的演变 | [arXiv 2611.26601v1](https://arxiv.org/abs/2611.26601v1) |
 | 2026-11-20 | Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards | 验证验证者：基于规范的 LLM 交叉检查是否存在 UVM 记分板的错误 | [arXiv 2611.26588v1](https://arxiv.org/abs/2611.26588v1) |
