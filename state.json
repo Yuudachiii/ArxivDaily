@@ -77958,11 +77958,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-22T09:26:24.664425+00:00",
-        "run_id": "20261122T092624Z-1638b161",
-        "stage": "translation"
+      "title_zh": "Perfumer：基于大型语言模型的代理框架，加速第一原理计算的结构松弛和电子频带预测",
+      "translation": {
+        "abstract_zh": "第一原理结构松弛和能带计算需要大量的计算和专业知识。在这里，我们介绍 Perfumer，一个基于大型语言模型的代理框架，它将 Quantum ESPRESSO 与两个预测模型结合起来。在测试的结构中，使用 Perfumer-relax 模型进行预松弛，然后进行 QE 细化，其总体加速比单独使用 QE 提高了 2.75 倍。 Perfumer-band 模型将周期图神经网络与潜在 Hermitian 谱头相结合，在任何请求的波矢量处返回 12 个能带能量，保留倒数晶格周期性和时间反转对称性，而无需构造哈密顿量。在 125,153 个自行设计的能带结构上进行训练后，Perfumer-band 模型在 2,607 种测试材料（包括镧系元素、锕系元素和磁性化合物）上达到了 0.157 eV 的每种材料平均绝对误差中值，这些测试材料来自跨越 85 个元素的保留成分族，每种材料在两个消费级 CPU 内核上花费了约 97 毫秒。该代理将自然语言请求转变为松弛带工作流程，从单个上传的结构到自动构建的新候选并返回预测的属性。",
+        "title_zh": "Perfumer：基于大型语言模型的代理框架，加速第一原理计算的结构松弛和电子频带预测"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.26349v1"
       ]
