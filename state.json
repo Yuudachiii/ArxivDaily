@@ -77949,9 +77949,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_eval、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_eval",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-22T09:26:24.664425+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "It has been demonstrated that, in certain settings, large language models can perform weight-space programming to directly modify the weights of neural networks. However, it is unknown how dedicated training of these networks can contribute to the successes of weight-space programming. We present a benchmark of LLM-driven weight-space programming on vision models, in which five LLMs edit convolutional networks and vision transformers on relabeling and error-correction tasks on Waterbirds, CIFAR-100, PACS and Entity-30. We report more than 2,600 such edit processes, whereby each edit is scored on held-out images for success, side effects and accuracy loss. We compare standard training with label smoothing, gradient-based editable training, and our Edit-Ready Training (ERT), a novel method that rehearses the direct, closed-form weight edits LLMs perform. We show that preparing networks for editing raises the success of LLM edits substantially where standard networks are hard to edit. ERT further achieves the highest mean score for GPT-6 Astra and Claude Opus 5.5 across all evaluated baselines. We will release our LLM testing framework alongside all tasks, editing trajectories and scores. Project page: https://viscom.uni-ulm.de/wsp",
         "authors": [
@@ -77967,16 +77983,12 @@
         "updated": "2026-11-19T16:56:27+00:00",
         "version_id": "2611.26408v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_eval",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-22T09:26:24.664425+00:00",
-        "run_id": "20261122T092624Z-1638b161",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.26408v1"
       ]
