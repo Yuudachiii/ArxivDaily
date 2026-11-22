@@ -8,7 +8,7 @@
 | 2026-11-22 | Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction | 使用大型语言模型进行推理跟踪分析以构建可解释的 Q 矩阵 | [arXiv 2611.26422v1](https://arxiv.org/abs/2611.26422v1) |
 | 2026-11-22 | Training Vision Models for LLM-Driven Weight-Space Programming | 训练 LLM 驱动的权重空间规划的视觉模型 | [arXiv 2611.26408v1](https://arxiv.org/abs/2611.26408v1) |
 | 2026-11-22 | EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning | EgoCaptioner：迈向全面且细粒度的以自我为中心的视频字幕 | [arXiv 2611.26380v1](https://arxiv.org/abs/2611.26380v1) |
-| 2026-11-22 | HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs | 待翻译 | [arXiv 2611.26363v1](https://arxiv.org/abs/2611.26363v1) |
+| 2026-11-22 | HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs | HiSA：稀疏化法学硕士 RoPE 注意力的隐藏维度 | [arXiv 2611.26363v1](https://arxiv.org/abs/2611.26363v1) |
 | 2026-11-22 | How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents | 待翻译 | [arXiv 2611.26361v1](https://arxiv.org/abs/2611.26361v1) |
 | 2026-11-22 | Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation | 待翻译 | [arXiv 2611.26349v1](https://arxiv.org/abs/2611.26349v1) |
 | 2026-11-22 | Training LLMs to Follow Reasoning Instructions with Minimal Edits | 待翻译 | [arXiv 2611.26342v1](https://arxiv.org/abs/2611.26342v1) |
