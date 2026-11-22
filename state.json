@@ -76253,9 +76253,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_core",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Laya is a small neural network that reads a text, a question and K written options, and returns one probability per option in a single pass. We ask how its accuracy falls as K grows from 2 to 35 and whether that can be predicted. We score nested option sets (every K-option question contains the smaller ones) on four question pools, for the released model (Base) and our fine-tune (FT), and score every item against each single rival. FT trained on one 12-option topic question (in-family); a 12-option HR (department-routing) question is out-of-family. Logit accuracy (the log of correct over incorrect answers) is linear in log(K-1) with slope 0.68 to 0.88. Fitted on K up to 6, the law predicts K=7 to 12 within 0.6 points and K up to 24 within 1.2 (a log-linear rule: 1.6 and 6.7). Taking the slope from the topic question and measuring only two-option accuracy on HR predicts its other K within 0.3 points (FT) and 0.7 (Base). On a 35-label pool of five schemas the law fails (5 to 11 points). Independence of irrelevant alternatives is rejected: the gold-versus-rival log-odds shifts by +0.24 to +2.07 nats per doubling of K, yet pairwise answers reproduce K-way accuracy within 4.7 points. Order averaging (averaging over several orderings of the options), shortlists, a temperature law and calibrated prediction sets did not transfer (FT's 90% sets cover 84% on HR). 2 of 10 predictions made in advance held. Caveats: one model family and LLM-labelled synthetic text.",
         "authors": [
@@ -76272,15 +76288,11 @@
         "updated": "2026-11-19T16:12:55+00:00",
         "version_id": "2611.26332v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-22T09:26:25.047442+00:00",
-        "run_id": "20261122T092625Z-25b445ae",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.26332v1"
       ]
