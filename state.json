@@ -76050,6 +76050,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "intended_tier": "translation",
       "model": "rules",
       "paper": {
         "abstract": "Programs increasingly call large language models (LLMs), filling prompt placeholders with program values and consuming the output. Such a call crosses the boundary between natural language and programming language (NL/PL). To follow data across it, an analysis needs a data-flow summary of which placeholders the output uses, but no code describes what the model does. Analyses of these LLM-integrated applications therefore taint every output with every input, creating spurious flows, or ask a second model to label each call, which is costly. We prove, and mechanize in Lean 4, that a placeholder flows to the output of a transformer, to first order, only through the attention that reads it (no reading, no flow), and that a faint reading or sensitivity cannot certify that a placeholder does not flow. Unlike reading, the log-probability gradients and Fisher signals of existing methods vanish on confident outputs, and single-span removal fails on duplicated content. Our tool, Sightline, reads a recorded call in one forward pass, learns from labels which reads are uses, and calibrates the pruning to miss at most a chosen fraction $α$ of true flows, on average over call sites, when deployment is exchangeable with calibration. On 2,103 unseen repository families and four models, Sightline is the most accurate summary against the seven closest methods and a hidden-state probe. Calibrated at $α$ = 1%, it misses about 1% of true flows and prunes 43.9-65.6% of spurious flows, 1.6 to 2.6 times as many as the best baseline, and still 43.8-60.1% when calibrated on another collection. Through an open surrogate, it reads models treated as closed about as accurately as they read themselves, without their labels. In the information-flow control of an LLM agent, it removes about half of the labels from inputs that do not flow.",
@@ -76069,13 +76070,26 @@
         "updated": "2026-11-19T15:00:25+00:00",
         "version_id": "2611.26221v1"
       },
+      "presentation_modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "presentation_rule_hits": [
+        "llm_agent",
+        "llm_efficiency",
+        "llm_core"
+      ],
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_agent",
         "llm_efficiency",
         "llm_core"
       ],
-      "stage": "selected",
+      "stage": "ready",
       "versions": [
         "2611.26221v1"
       ]
