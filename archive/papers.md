@@ -10,7 +10,7 @@
 | 2026-11-22 | Client Exits - A Way to Increase LLM Transparency on the Client Side | 客户端退出——一种提高客户端大型语言模型透明度的方法 | [arXiv 2611.26309v1](https://arxiv.org/abs/2611.26309v1) |
 | 2026-11-22 | SKILL.PNG: Learning Agent Skills in Pixel Space | SKILL.PNG：像素空间中的学习代理技能 | [arXiv 2611.26296v1](https://arxiv.org/abs/2611.26296v1) |
 | 2026-11-22 | Twice-Told Critiques: Claim-Level Homogenization of Peer Review in the LLM Era | 二次叙述批评：大型语言模型时代同行评审的论点级同质化 | [arXiv 2611.26286v1](https://arxiv.org/abs/2611.26286v1) |
-| 2026-11-22 | What If Chain-of-Thought Is Not Enough? | 待翻译 | [arXiv 2611.26282v1](https://arxiv.org/abs/2611.26282v1) |
+| 2026-11-22 | What If Chain-of-Thought Is Not Enough? | 如果链式思维还不够怎么办？ | [arXiv 2611.26282v1](https://arxiv.org/abs/2611.26282v1) |
 | 2026-11-22 | A Statistical Framework for Training Data Auditing of Large Language Models | 待翻译 | [arXiv 2611.26264v1](https://arxiv.org/abs/2611.26264v1) |
 | 2026-11-22 | SkillBridge: Cost-Aware Diagnosis and Repair of Cross-OS Compatibility Defects in Agent Skills | 待翻译 | [arXiv 2611.26256v1](https://arxiv.org/abs/2611.26256v1) |
 | 2026-11-22 | Sightline: Calibrated Data-Flow Summaries for LLM-Integrated Applications | 待翻译 | [arXiv 2611.26221v1](https://arxiv.org/abs/2611.26221v1) |
