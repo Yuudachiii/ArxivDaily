@@ -4,7 +4,7 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
-| 2026-11-22 | ClosureBench: A Benchmark for Reasoning under Closure Assumptions | 待翻译 | [arXiv 2611.26335v1](https://arxiv.org/abs/2611.26335v1) |
+| 2026-11-22 | ClosureBench: A Benchmark for Reasoning under Closure Assumptions | ClosureBench：闭包假设下推理的基准测试 | [arXiv 2611.26335v1](https://arxiv.org/abs/2611.26335v1) |
 | 2026-11-22 | OceanCoder: A Verification-Guided Large Language Model for Automated Simulation Modelling in Ocean Engineering | 待翻译 | [arXiv 2611.26333v1](https://arxiv.org/abs/2611.26333v1) |
 | 2026-11-22 | Rigel-Ladon: An Option-Count Law for a One-Pass Decision Encoder, Tested on Held-Out Option Counts and Held-Out Schemas | 待翻译 | [arXiv 2611.26332v1](https://arxiv.org/abs/2611.26332v1) |
 | 2026-11-22 | Client Exits - A Way to Increase LLM Transparency on the Client Side | 待翻译 | [arXiv 2611.26309v1](https://arxiv.org/abs/2611.26309v1) |
