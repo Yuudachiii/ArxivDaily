@@ -78239,7 +78239,8 @@
     },
     "2611.26422": {
       "attempts": {
-        "selection": 1
+        "selection": 1,
+        "translation": 1
       },
       "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
       "decision": {
@@ -78297,6 +78298,11 @@
         "llm_core"
       ],
       "stage": "ready",
+      "stage_started": {
+        "at": "2026-11-22T09:26:24.664425+00:00",
+        "run_id": "20261122T092624Z-1638b161",
+        "stage": "translation"
+      },
       "versions": [
         "2611.26422v1"
       ]
