@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-22 | ClosureBench: A Benchmark for Reasoning under Closure Assumptions | 待翻译 | [arXiv 2611.26335v1](https://arxiv.org/abs/2611.26335v1) |
+| 2026-11-22 | OceanCoder: A Verification-Guided Large Language Model for Automated Simulation Modelling in Ocean Engineering | 待翻译 | [arXiv 2611.26333v1](https://arxiv.org/abs/2611.26333v1) |
+| 2026-11-22 | Rigel-Ladon: An Option-Count Law for a One-Pass Decision Encoder, Tested on Held-Out Option Counts and Held-Out Schemas | 待翻译 | [arXiv 2611.26332v1](https://arxiv.org/abs/2611.26332v1) |
+| 2026-11-22 | Client Exits - A Way to Increase LLM Transparency on the Client Side | 待翻译 | [arXiv 2611.26309v1](https://arxiv.org/abs/2611.26309v1) |
+| 2026-11-22 | SKILL.PNG: Learning Agent Skills in Pixel Space | 待翻译 | [arXiv 2611.26296v1](https://arxiv.org/abs/2611.26296v1) |
+| 2026-11-22 | Twice-Told Critiques: Claim-Level Homogenization of Peer Review in the LLM Era | 待翻译 | [arXiv 2611.26286v1](https://arxiv.org/abs/2611.26286v1) |
+| 2026-11-22 | What If Chain-of-Thought Is Not Enough? | 待翻译 | [arXiv 2611.26282v1](https://arxiv.org/abs/2611.26282v1) |
+| 2026-11-22 | A Statistical Framework for Training Data Auditing of Large Language Models | 待翻译 | [arXiv 2611.26264v1](https://arxiv.org/abs/2611.26264v1) |
+| 2026-11-22 | SkillBridge: Cost-Aware Diagnosis and Repair of Cross-OS Compatibility Defects in Agent Skills | 待翻译 | [arXiv 2611.26256v1](https://arxiv.org/abs/2611.26256v1) |
+| 2026-11-22 | Sightline: Calibrated Data-Flow Summaries for LLM-Integrated Applications | 待翻译 | [arXiv 2611.26221v1](https://arxiv.org/abs/2611.26221v1) |
 | 2026-11-21 | A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights | 大型语言模型中的 CPU：将精确电路零梯度编译到预训练权重中 | [arXiv 2611.26450v1](https://arxiv.org/abs/2611.26450v1) |
 | 2026-11-21 | Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction | 使用大型语言模型进行可解释 Q 矩阵构建的推理追踪分析 | [arXiv 2611.26422v1](https://arxiv.org/abs/2611.26422v1) |
 | 2026-11-21 | Training Vision Models for LLM-Driven Weight-Space Programming | 针对大型语言模型驱动的权重空间编程训练视觉模型 | [arXiv 2611.26408v1](https://arxiv.org/abs/2611.26408v1) |

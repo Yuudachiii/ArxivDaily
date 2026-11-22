@@ -83,7 +83,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:42:00.481953+00:00",
-    "last_complete_end": "2026-11-21T09:16:25.139309+00:00"
+    "last_complete_end": "2026-11-22T09:26:25.047442+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -483,6 +483,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-22": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -76008,6 +76017,323 @@
         "2611.24936v1"
       ]
     },
+    "2611.26221": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "paper": {
+        "abstract": "Programs increasingly call large language models (LLMs), filling prompt placeholders with program values and consuming the output. Such a call crosses the boundary between natural language and programming language (NL/PL). To follow data across it, an analysis needs a data-flow summary of which placeholders the output uses, but no code describes what the model does. Analyses of these LLM-integrated applications therefore taint every output with every input, creating spurious flows, or ask a second model to label each call, which is costly. We prove, and mechanize in Lean 4, that a placeholder flows to the output of a transformer, to first order, only through the attention that reads it (no reading, no flow), and that a faint reading or sensitivity cannot certify that a placeholder does not flow. Unlike reading, the log-probability gradients and Fisher signals of existing methods vanish on confident outputs, and single-span removal fails on duplicated content. Our tool, Sightline, reads a recorded call in one forward pass, learns from labels which reads are uses, and calibrates the pruning to miss at most a chosen fraction $α$ of true flows, on average over call sites, when deployment is exchangeable with calibration. On 2,103 unseen repository families and four models, Sightline is the most accurate summary against the seven closest methods and a hidden-state probe. Calibrated at $α$ = 1%, it misses about 1% of true flows and prunes 43.9-65.6% of spurious flows, 1.6 to 2.6 times as many as the best baseline, and still 43.8-60.1% when calibrated on another collection. Through an open surrogate, it reads models treated as closed about as accurately as they read themselves, without their labels. In the information-flow control of an LLM agent, it removes about half of the labels from inputs that do not flow.",
+        "authors": [
+          "Zihao Xu",
+          "Yuekang Li",
+          "Ruitao Feng",
+          "Haifeng Shen"
+        ],
+        "categories": [
+          "cs.PL",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.26221v1",
+        "published": "2026-11-19T15:00:25+00:00",
+        "title": "Sightline: Calibrated Data-Flow Summaries for LLM-Integrated Applications",
+        "updated": "2026-11-19T15:00:25+00:00",
+        "version_id": "2611.26221v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_efficiency",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.26221v1"
+      ]
+    },
+    "2611.26256": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "paper": {
+        "abstract": "LLM agents increasingly reuse executable capabilities through skills, but a skill that works on one OS may fail on another because OS assumptions are spread across guide text, scripts, metadata, install contracts, and local entrypoints. Diagnosing such failures by running every skill on every OS is expensive: many executions spend model tokens, runner time, and review effort before revealing whether the failure is truly OS-related. We present SkillBridge, a contract-based workflow with three stages: static analysis, dynamic validation, and repair. SkillBridge first screens 3,270 skill-target-OS cases, covering 1,090 skills across Linux, macOS, and Windows, to find OS-sensitive contract evidence. It then runs dynamic tasks and root-cause review on selected cases to confirm whether a failure is caused by an OS assumption, and repairs the contract field that caused the failure, such as guide text, package scripts, dependencies, or platform declarations. Repair raises the reviewer-judged target-task pass rate from 30.6% to 38.4%, a gain of 7.8 percentage points. A retrospective Linux/macOS budget analysis further shows the efficiency effect: SkillBridge reaches 38 confirmed OS issues with 185 dynamic validations, where uniform random selection would require about 865 validations in expectation.",
+        "authors": [
+          "Anjie Xu",
+          "Zixing Wang",
+          "Yifeng Cai",
+          "Leye Wang"
+        ],
+        "categories": [
+          "cs.SE",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.26256v1",
+        "published": "2026-11-19T15:30:28+00:00",
+        "title": "SkillBridge: Cost-Aware Diagnosis and Repair of Cross-OS Compatibility Defects in Agent Skills",
+        "updated": "2026-11-19T15:30:28+00:00",
+        "version_id": "2611.26256v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.26256v1"
+      ]
+    },
+    "2611.26264": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "paper": {
+        "abstract": "Training-data auditing asks whether data of interest were used to train a large language model (LLM), a question central to privacy auditing, copyright protection, and benchmark-contamination detection. These concerns are particularly relevant to the use of copyrighted books and scientific papers in pre-training, as well as synthetic text and medical question-answer records in fine-tuning. In practice, training membership signals may be concentrated in only a few passages of a long document, making it important to aggregate evidence within each document without diluting these localized signals. Beyond individual documents, auditing a target collection requires an overall assessment based on the document-level evidence. In this paper, we propose a unified statistical framework for document-level membership inference, target-collection global auditing, and suspicious-subset identification. We integrate complementary chunk-level membership evidence with Cauchy combination to construct document scores for document-level membership inference. The document scores and their calibrated p-values further enable an overall assessment of training-data collection use and the identification of suspicious documents through multiple testing. Under the stated exchangeability conditions, we establish finite-sample validity of document-level p-values, type-I error control for global auditing, and false discovery rate control for subset identification. Case studies on BookTection, Pile-arXiv, Cosmopedia, and HealthCareMagic demonstrate the effectiveness and reliability of the proposed framework in auditing pre-training and fine-tuning data.",
+        "authors": [
+          "Shengjie Niu",
+          "Yeheng Ge",
+          "Jian Huang"
+        ],
+        "categories": [
+          "stat.ML",
+          "cs.LG",
+          "stat.AP"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.26264v1",
+        "published": "2026-11-19T15:34:44+00:00",
+        "title": "A Statistical Framework for Training Data Auditing of Large Language Models",
+        "updated": "2026-11-19T15:34:44+00:00",
+        "version_id": "2611.26264v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.26264v1"
+      ]
+    },
+    "2611.26282": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "paper": {
+        "abstract": "Reasoning capabilities in large language models have evolved from prompting-based methods to internalized model behaviors. In this paper, we investigate whether the internal thinking model of an LLM can be deliberately changed and whether such a change is beneficial. Instead of relying on Chain-of-Thought, we train models to follow Question--Option--Criteria (QOC), a structured decision process that decomposes a task into explicit questions, competing options, and evaluation criteria. We present a three-generation development pipeline that ranges from a basic QOC decision core to richer answer synthesis and statistically enriched QOC reasoning. We then evaluate the resulting models with respect to both internal consistency and output quality. Across the reported experiments, QOC-based fine-tuning improves answer quality relative to non-fine-tuned base models and yields particularly strong gains once models are large enough to execute the underlying QOC computations reliably. The results suggest that the internal thinking model of an LLM is trainable and that structured alternatives to Chain-of-Thought can provide a promising path toward more reliable, interpretable, and task-adapted decision support.",
+        "authors": [
+          "Marc Jansen"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.26282v1",
+        "published": "2026-11-19T15:43:51+00:00",
+        "title": "What If Chain-of-Thought Is Not Enough?",
+        "updated": "2026-11-19T15:43:51+00:00",
+        "version_id": "2611.26282v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_training",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.26282v1"
+      ]
+    },
+    "2611.26286": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "paper": {
+        "abstract": "Peer review relies on several readers finding different problems. We measure critique overlap in conference and journal reviews. At ICLR, measured overlap rose from 12.0% in 2026 to 21.3% in 2027, in reviews from the same stage of the review process, with year-on-year rises at NeurIPS, ICML and the F1000 and PLOS journals. A third ICLR review of a paper added 5.46 new problems to the other two in 2027, against 6.12 in 2026. We apply MELD, a detector of LLM-generated text, to all reviews. Within a paper, two reviews that MELD flags overlap more than two unflagged reviews: by 3.0 points at ICLR in 2024-2025, by 4.5 points in 2026-2027, and by 5.4 points across five journal sources. These results provide evidence that LLM-flagged reviews of one paper are less distinct from each other than unflagged reviews, and suggest that the diversity of critiques among reviews of a single paper is falling.",
+        "authors": [
+          "Ilya Gusev"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.DL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.26286v1",
+        "published": "2026-11-19T15:45:51+00:00",
+        "title": "Twice-Told Critiques: Claim-Level Homogenization of Peer Review in the LLM Era",
+        "updated": "2026-11-19T15:45:51+00:00",
+        "version_id": "2611.26286v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.26286v1"
+      ]
+    },
+    "2611.26296": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "paper": {
+        "abstract": "AI agents are commonly specialized for new tasks and domains using skills, i.e. natural language instructions placed in their context. However, the discrete nature of textual skills prevents continuous optimization. Gradient-based approaches such as finetuning, on the other hand, are typically model-specific, preventing skill transfer across different agents. Since many agents today are built on vision-language models (VLMs), we can address these limitations by introducing Skill.png: a method for obtaining skill-like image inputs whose pixels are optimized with gradient descent through the vision encoder of a frozen VLM. Image skills are compatible with any VLM, and a single image can be optimized jointly for an ensemble of models. We show that Skill.png significantly outperforms state-of-the-art textual skills optimized using frontier LLMs in 9 of 16 settings (across 4 VLMs and 4 benchmarks) while requiring only 64 to 256 image tokens instead of roughly 900 to 2000 text tokens at inference time. Hybrid skills, i.e. text and image skills jointly optimized, further improve agent performance. Moreover, an image optimized with an ensemble of VLMs can successfully transfer across the models in the ensemble. Skill.png thus presents the first agent skill that can be optimized with gradient descent while retaining transfer benefits of text skills. Our code is available at: https://github.com/omseeth/skill.png",
+        "authors": [
+          "Maximilian Seeth",
+          "Chengzhi Martin Hu",
+          "Marie Kempkes",
+          "Paul Röttger",
+          "Leo Schwinn"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.26296v1",
+        "published": "2026-11-19T15:51:03+00:00",
+        "title": "SKILL.PNG: Learning Agent Skills in Pixel Space",
+        "updated": "2026-11-19T15:51:03+00:00",
+        "version_id": "2611.26296v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_agent",
+        "llm_multimodal",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.26296v1"
+      ]
+    },
+    "2611.26309": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "paper": {
+        "abstract": "Textual recommendations generated by large language models (LLMs) can be difficult to inspect. This paper introduces \\emph{Client Exits}, a lightweight mechanism for enriching LLM responses while separating semantic intent from client-specific presentation. The model inserts predefined, machine-interpretable markers into its output, and the receiving client decides whether and how to realize the corresponding enrichments. This allows supplementary information to be presented as graphics, text, speech, or other modalities without prescribing a concrete interface. We implement a prototype combining a finetuned Qwen model with a modified LibreChat client. Using the Question--Option--Criteria (QOC) approach including three XML-based client exits. We evaluate two QOC-oriented model variants trained on essentially the same examples, with client-exit annotations added for one variant. Across 100 test questions, the client-exit model includes all three markers in every response. An LLM judge, informed about the mechanism without being instructed to favor it, prefers this model's answers in 66\\% of the comparisons. These results demonstrate successful marker generation on the evaluated test set and support the feasibility of client-controlled enrichment.",
+        "authors": [
+          "Marc Jansen"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.26309v1",
+        "published": "2026-11-19T15:58:09+00:00",
+        "title": "Client Exits - A Way to Increase LLM Transparency on the Client Side",
+        "updated": "2026-11-19T15:58:09+00:00",
+        "version_id": "2611.26309v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.26309v1"
+      ]
+    },
+    "2611.26332": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "paper": {
+        "abstract": "Laya is a small neural network that reads a text, a question and K written options, and returns one probability per option in a single pass. We ask how its accuracy falls as K grows from 2 to 35 and whether that can be predicted. We score nested option sets (every K-option question contains the smaller ones) on four question pools, for the released model (Base) and our fine-tune (FT), and score every item against each single rival. FT trained on one 12-option topic question (in-family); a 12-option HR (department-routing) question is out-of-family. Logit accuracy (the log of correct over incorrect answers) is linear in log(K-1) with slope 0.68 to 0.88. Fitted on K up to 6, the law predicts K=7 to 12 within 0.6 points and K up to 24 within 1.2 (a log-linear rule: 1.6 and 6.7). Taking the slope from the topic question and measuring only two-option accuracy on HR predicts its other K within 0.3 points (FT) and 0.7 (Base). On a 35-label pool of five schemas the law fails (5 to 11 points). Independence of irrelevant alternatives is rejected: the gold-versus-rival log-odds shifts by +0.24 to +2.07 nats per doubling of K, yet pairwise answers reproduce K-way accuracy within 4.7 points. Order averaging (averaging over several orderings of the options), shortlists, a temperature law and calibrated prediction sets did not transfer (FT's 90% sets cover 84% on HR). 2 of 10 predictions made in advance held. Caveats: one model family and LLM-labelled synthetic text.",
+        "authors": [
+          "Mohammed Nayeem Khan",
+          "Vrishank Tiwari",
+          "Navin Kumar R"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.26332v1",
+        "published": "2026-11-19T16:12:55+00:00",
+        "title": "Rigel-Ladon: An Option-Count Law for a One-Pass Decision Encoder, Tested on Held-Out Option Counts and Held-Out Schemas",
+        "updated": "2026-11-19T16:12:55+00:00",
+        "version_id": "2611.26332v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.26332v1"
+      ]
+    },
+    "2611.26333": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "paper": {
+        "abstract": "Numerical simulation is important in ocean engineering, but model construction requires expert knowledge. Large language models support automated modelling, but code syntax and successful execution alone do not establish whether generated models and results meet engineering requirements. We present OceanCoder, a Qwen3-8B-based large language model for automated simulation modelling in ocean engineering. To address specialised programming requirements and scarce training data, we develop an extensible data construction pipeline producing 12,000 verified supervised fine-tuning (SFT) examples across 12 engineering task categories. A three-layer verification framework checks model inputs against engineering parameters and task constraints, verifies completion of required simulation analyses, and assesses the engineering plausibility of computed outputs. Its outcomes provide graded rewards for group relative policy optimisation (GRPO), guiding the model towards engineering task completion. We also construct the first benchmark for automated modelling in ocean engineering, covering out-of-distribution tasks and real-world engineering cases. Experiments and ablation studies demonstrate the effectiveness of the data pipeline, verification framework and reward design. OceanCoder outperforms both base models and the closed-source comparison, with Pass@1 increasing from 0% for the base model to 46.77% after SFT and 51.43% after GRPO. These results support engineering verification as a training signal for automated simulation modelling.",
+        "authors": [
+          "Can Xue",
+          "Changhong He",
+          "Ziyi Sun",
+          "Anliang Ge",
+          "Shimin Yu",
+          "Bingchen Liang"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.SE"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.26333v1",
+        "published": "2026-11-19T16:13:20+00:00",
+        "title": "OceanCoder: A Verification-Guided Large Language Model for Automated Simulation Modelling in Ocean Engineering",
+        "updated": "2026-11-19T16:13:20+00:00",
+        "version_id": "2611.26333v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.26333v1"
+      ]
+    },
+    "2611.26335": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-22T09:26:25.047442+00:00",
+      "paper": {
+        "abstract": "AI agents built on large language models (LLMs) often answer questions from incomplete records. Missing information might be interpreted as unknown or false, depending on the completeness of the source. Current evaluations fail to distinguish these two aspects, as they are usually interwoven with other reasoning demands. We present ClosureBench, a benchmark that tests whether LLMs follow the stated rules for dealing with missing information. Every base scenario is tested under OWA, CWA, and LCWA, and only the treatment of missing information changes between variants. ClosureBench provides a verified base benchmark as well as agent extensions for action choice, source scope, and updates. A model is considered correct on a base scenario only if it provides correct answers in all of its closure variants. Across 960 instances, overall accuracy can mask substantial closure mistakes. Models achieve overall accuracy from 71.18% to 99.86% across replicated runs, but their core switch accuracy, measured on the scenarios whose gold label actually changes with the contract, varies between 18.23% and 99.31%. Large discrepancies emerge under LCWA. For example, some agents choose unknown despite the prompt indicating that missing information should be treated as false. Our findings demonstrate that evaluations of AI agents should not only measure whether agents can reason over existing facts but also whether they use the appropriate assumption when information is absent.",
+        "authors": [
+          "Francesco Belardinelli",
+          "Flavio Corradini",
+          "Matteo Leonesi"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.26335v1",
+        "published": "2026-11-19T16:15:04+00:00",
+        "title": "ClosureBench: A Benchmark for Reasoning under Closure Assumptions",
+        "updated": "2026-11-19T16:15:04+00:00",
+        "version_id": "2611.26335v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.26335v1"
+      ]
+    },
     "2611.26336": {
       "attempts": {
         "selection": 1,
@@ -78703,10 +79029,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-22",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261122T092625Z-25b445ae",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-22T09:26:00+00:00",
+          "seen": 134,
+          "start": "2026-11-15T09:26:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-22T09:26:25.047442+00:00",
       "window": {
         "end": "2026-11-22T09:26:25.047442+00:00",
