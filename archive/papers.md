@@ -13,7 +13,7 @@
 | 2026-11-22 | What If Chain-of-Thought Is Not Enough? | 如果链式思维还不够怎么办？ | [arXiv 2611.26282v1](https://arxiv.org/abs/2611.26282v1) |
 | 2026-11-22 | A Statistical Framework for Training Data Auditing of Large Language Models | 大语言模型训练数据审计的统计框架 | [arXiv 2611.26264v1](https://arxiv.org/abs/2611.26264v1) |
 | 2026-11-22 | SkillBridge: Cost-Aware Diagnosis and Repair of Cross-OS Compatibility Defects in Agent Skills | SkillBridge：面向成本的跨操作系统代理技能兼容性缺陷诊断与修复 | [arXiv 2611.26256v1](https://arxiv.org/abs/2611.26256v1) |
-| 2026-11-22 | Sightline: Calibrated Data-Flow Summaries for LLM-Integrated Applications | 待翻译 | [arXiv 2611.26221v1](https://arxiv.org/abs/2611.26221v1) |
+| 2026-11-22 | Sightline: Calibrated Data-Flow Summaries for LLM-Integrated Applications | 视线：面向大语言模型集成应用的校准数据流摘要 | [arXiv 2611.26221v1](https://arxiv.org/abs/2611.26221v1) |
 | 2026-11-21 | A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights | 大型语言模型中的 CPU：将精确电路零梯度编译到预训练权重中 | [arXiv 2611.26450v1](https://arxiv.org/abs/2611.26450v1) |
 | 2026-11-21 | Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction | 使用大型语言模型进行可解释 Q 矩阵构建的推理追踪分析 | [arXiv 2611.26422v1](https://arxiv.org/abs/2611.26422v1) |
 | 2026-11-21 | Training Vision Models for LLM-Driven Weight-Space Programming | 针对大型语言模型驱动的权重空间编程训练视觉模型 | [arXiv 2611.26408v1](https://arxiv.org/abs/2611.26408v1) |
