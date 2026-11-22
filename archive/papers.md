@@ -11,7 +11,7 @@
 | 2026-11-22 | HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs | HiSA：稀疏化法学硕士 RoPE 注意力的隐藏维度 | [arXiv 2611.26363v1](https://arxiv.org/abs/2611.26363v1) |
 | 2026-11-22 | How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents | 代理人应该记住多少？ LLM 代理的自蒸馏内存部署经验教训 | [arXiv 2611.26361v1](https://arxiv.org/abs/2611.26361v1) |
 | 2026-11-22 | Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation | Perfumer：基于大型语言模型的代理框架，加速第一原理计算的结构松弛和电子频带预测 | [arXiv 2611.26349v1](https://arxiv.org/abs/2611.26349v1) |
-| 2026-11-22 | Training LLMs to Follow Reasoning Instructions with Minimal Edits | 待翻译 | [arXiv 2611.26342v1](https://arxiv.org/abs/2611.26342v1) |
+| 2026-11-22 | Training LLMs to Follow Reasoning Instructions with Minimal Edits | 培训法学硕士遵循推理说明并进行最少的编辑 | [arXiv 2611.26342v1](https://arxiv.org/abs/2611.26342v1) |
 | 2026-11-22 | Sirius-Tiamat: How Small Can a One-Pass Decision Encoder Get Before Its Decisions Change? | 待翻译 | [arXiv 2611.26339v1](https://arxiv.org/abs/2611.26339v1) |
 | 2026-11-22 | One Framework to Diagnose Them All: A Stratified Benchmark for Bengali LLM Hallucination | 待翻译 | [arXiv 2611.26336v1](https://arxiv.org/abs/2611.26336v1) |
 | 2026-11-20 | TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming | TideCache：具有透明缓存管理和分层流传输的高效混合 LLM 服务 | [arXiv 2611.26619v1](https://arxiv.org/abs/2611.26619v1) |
