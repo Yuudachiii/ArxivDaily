@@ -8195,8 +8195,15 @@
       "content_hash": "351b082642c70e1eaea5caa05e25a0d799a11e51b890b570f465f7c493c4a08b",
       "created_at": "2026-11-22T09:26:24.664425+00:00",
       "day": "2026-11-22",
+      "delivery": {
+        "detail": "wechat_status",
+        "polls": 1,
+        "pushid": "70070749",
+        "status": "confirmed"
+      },
       "digest_id": "20261122T092624Z-1638b161-351b082642c7",
       "empty": false,
+      "finished_at": "2026-11-22T09:29:21.003901+00:00",
       "items": [
         {
           "modules": [
@@ -8636,7 +8643,7 @@
       },
       "run_id": "20261122T092624Z-1638b161",
       "schema_version": 1,
-      "status": "sending"
+      "status": "confirmed"
     }
   },
   "papers": {
@@ -78146,7 +78153,6 @@
       ]
     },
     "2611.26336": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78174,7 +78180,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -78215,7 +78221,6 @@
         "updated": "2026-11-19T16:15:38+00:00",
         "version_id": "2611.26336v1"
       },
-      "pending_digest": "20261122T092624Z-1638b161-351b082642c7",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78235,7 +78240,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "诊断所有问题的一个框架：孟加拉法学硕士幻觉的分层基准",
       "translation": {
         "abstract_zh": "低资源语言的幻觉研究很容易支离破碎：每个新命名的故障模式都会提示自己的数据集，将稀缺的注释器花费在无与伦比的资源上。我们主张整合并在社区规模上进行测试。 Alikbachan 是孟加拉幻觉检测基准，沿三个交叉轴分层：经过人类验证的文化距离带、六种任务类型以及 5 个家庭、32 种模式的幻觉分类法。它包括一个包含 2,516 个项目的测试集（第一阶段）和一个配额构建的、带有黄金标签的 5,000 个项目集（第二阶段）。分层是诊断性的。四位零样本法学硕士评委在不同层次之间相差超过 30 个宏观 F1 点，99 个第一阶段和 32 个第二阶段竞赛系统的项目级预测再现了这一概况：话语层面的遗漏击败了评委和大多数团队，而只有少数人过度标记负面控制。法官的判决概率对项目进行了很好的排名（ROC-AUC 0.74-0.95），但过于自信（ECE 0.04-0.29）。 Alikbachan 上的公开比赛吸引了 222 支队伍参赛，提交了 3,566 份参赛作品，单提示 32B 评委达到了第 57 个百分点。在两个阶段的 25 支球队中，有 24 支球队在第 2 阶段退步（平均 $-17.6$ 分），而每个零镜头裁判都在进步，并且第 1 阶段排名几乎无法预测第 2 阶段排名（Spearman $ρ=0.35$），因此仅第 1 阶段排行榜就可以加冕不同的获胜者。",
@@ -78248,7 +78253,6 @@
       ]
     },
     "2611.26339": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78276,7 +78280,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -78299,7 +78303,6 @@
         "updated": "2026-11-19T16:17:13+00:00",
         "version_id": "2611.26339v1"
       },
-      "pending_digest": "20261122T092624Z-1638b161-351b082642c7",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78317,7 +78320,7 @@
         "llm_efficiency",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "Sirius-Tiamat：单通道决策编码器在决策改变之前可以变得多小？",
       "translation": {
         "abstract_zh": "一次性决策编码器读取文本、问题和几个命名选项，并在一次前向传递中返回每个选项的概率。我们询问 Laya（此类 421M 参数的编码器）在其决策改变之前可以压缩到什么程度。我们计算了与 Laya 自己的全精度 (fp32) 答案不同的决策，并跟踪校准（通过预期校准误差 ECE 测量的置信度与准确性的匹配程度），针对 1,221 个具有训练模式的合成项目、273 个具有未见模式的项目以及来自 ARC、MMLU 和 HellaSwag 的 800 个非家庭问题。相关模型族的层修剪是已知的；我们添加翻转、校准、保留数据和重新训练。 bf16 改变了 0.2% 的家庭内决策，但改变了 2.2% 的家庭外决策； 6 位分组舍入 1.3% 和 5.9%；删除6层0.9%和9.1%，而ECE则从5.9%上升到39.2%。无需任何标签，只需设定一个温度即可将其恢复至 3.6%。每个张量的一个比例在六位以下失败，并且 CPU 动态 int8 改变了 30% 的决策，几乎全部通过一层。总变化轨迹会翻转以进行舍入，但不会进行删除，并且只有在首先重新校准其置信门时，提前退出才能比静态剪切保存图层。蒸馏一名 16 层学生将其家庭内翻转率从 44% 减少到 9%（家庭外翻转率 45%）。在相同的存储大小下，舍入翻转的决策少于删除。对于一种架构，数据是合成的并带有 LLM 标签。",
@@ -78330,7 +78333,6 @@
       ]
     },
     "2611.26342": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78358,7 +78360,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -78384,7 +78386,6 @@
         "updated": "2026-11-19T16:18:25+00:00",
         "version_id": "2611.26342v1"
       },
-      "pending_digest": "20261122T092624Z-1638b161-351b082642c7",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78406,7 +78407,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "培训法学硕士遵循推理说明并进行最少的编辑",
       "translation": {
         "abstract_zh": "大型语言模型越来越依赖于扩展推理轨迹，但用于塑造这种行为的训练信号仍然很粗糙。对完整轨迹的监督微调迫使模型模仿整个演示，过度限制其输出分布，而轨迹级强化学习仅提供较弱的信用分配，奖励或惩罚整个完成，而无法确定其成功或失败的位置。我们提出基于编辑的训练，这是一个通过本地化文本修正从模型自身轨迹中学习的通用框架。给定抽样完成情况，编辑人员会根据指定标准确定第一个故障点，并提出最小的更换范围。然后仅在这些编辑过的范围内监督模型。按照设计，这将监督集中在模型推理首先出现故障的地方，并旨在在其他地方保留其现有的推理模式。该方法适用于离线和在线，后者不断调整监督以适应模型不断变化的故障模式。我们在 ReasonIF 基准测试中使用 Qwen3-32B 在推理指令上实例化了这种方法。与全轨迹模仿和轨迹级强化学习基线相比，基于编辑的训练极大地提高了对推理指令的遵从性，同时在很大程度上保留了模型在非目标任务上的技能。这些结果表明，局部校正是对这些塑造法学硕士推理方式的方法的有效补充。",
@@ -78419,7 +78420,6 @@
       ]
     },
     "2611.26349": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78447,7 +78447,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -78476,7 +78476,6 @@
         "updated": "2026-11-19T16:23:33+00:00",
         "version_id": "2611.26349v1"
       },
-      "pending_digest": "20261122T092624Z-1638b161-351b082642c7",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78494,7 +78493,7 @@
         "llm_agent",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "Perfumer：基于大型语言模型的代理框架，加速第一原理计算的结构松弛和电子频带预测",
       "translation": {
         "abstract_zh": "第一原理结构松弛和能带计算需要大量的计算和专业知识。在这里，我们介绍 Perfumer，一个基于大型语言模型的代理框架，它将 Quantum ESPRESSO 与两个预测模型结合起来。在测试的结构中，使用 Perfumer-relax 模型进行预松弛，然后进行 QE 细化，其总体加速比单独使用 QE 提高了 2.75 倍。 Perfumer-band 模型将周期图神经网络与潜在 Hermitian 谱头相结合，在任何请求的波矢量处返回 12 个能带能量，保留倒数晶格周期性和时间反转对称性，而无需构造哈密顿量。在 125,153 个自行设计的能带结构上进行训练后，Perfumer-band 模型在 2,607 种测试材料（包括镧系元素、锕系元素和磁性化合物）上达到了 0.157 eV 的每种材料平均绝对误差中值，这些测试材料来自跨越 85 个元素的保留成分族，每种材料在两个消费级 CPU 内核上花费了约 97 毫秒。该代理将自然语言请求转变为松弛带工作流程，从单个上传的结构到自动构建的新候选并返回预测的属性。",
@@ -78507,7 +78506,6 @@
       ]
     },
     "2611.26361": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78535,7 +78533,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -78565,7 +78563,6 @@
         "updated": "2026-11-19T16:29:16+00:00",
         "version_id": "2611.26361v1"
       },
-      "pending_digest": "20261122T092624Z-1638b161-351b082642c7",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78587,7 +78584,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "代理人应该记住多少？ LLM 代理的自蒸馏内存部署经验教训",
       "translation": {
         "abstract_zh": "执行长期任务的法学硕士代理人会以反复出现的、程序性的方式失败。他们对 API 进行错误分页、解析错误的实体，或者在未询问答案时进行回答。我们建立了一个管道，让代理可以从自己的历史中学习。它首先从智能体自己的轨迹中挖掘简短的\\emph{教训}，每集一到三个。然后，它将这些课程合并为较小的一组 \\emph{guidelines}，其中每个指南记录它合并了多少课程。在推理时，代理接收所有指南或选定的子集。该管道包含在开源 altk-evolve 库中，并部署在 IBM 的 CUGA 代理和 watsonx Orchestrate 平台中。我们报告我们在构建、测量和产品化过程中学到的知识。我们的主要工具是 AppWorld 基准，跨模型涵盖 40--92% 的基线任务完成情况。主要发现是，适量的内存是模型的属性，而不是内存的属性。随着指南的添加，强大的模型会不断改进。 DeepSeek-V3.2 凭借其完整的 191 条指南集，使任务完成度提高了 9.5 分，场景完成度提高了 16.1 分。弱模型从相同的完整集合中获得的收益比从选定的小子集中获得的收益要少。 gpt-oss-120b 在 39.9\\% 任务完成时启动。所有 199 条指南的得分达到 51.2\\%，但选定的大约 29 条子集达到 55.4\\%（两次运行的平均值）。围绕该结果，我们报告出了什么问题：高支持指南适得其反，出处在整合过程中悄然下降，吞没的 API 错误导致每项任务失败，同时生成看似合理的日志，基线混淆几乎与之前的方法产生了误导性的比较。我们将这些提炼成针对部署代理内存的团队的建议。",
@@ -78600,7 +78597,6 @@
       ]
     },
     "2611.26363": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78628,7 +78624,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -78653,7 +78649,6 @@
         "updated": "2026-11-19T16:31:46+00:00",
         "version_id": "2611.26363v1"
       },
-      "pending_digest": "20261122T092624Z-1638b161-351b082642c7",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78671,7 +78666,7 @@
         "llm_efficiency",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "HiSA：稀疏化法学硕士 RoPE 注意力的隐藏维度",
       "translation": {
         "abstract_zh": "大型语言模型 (LLM) 中的注意力通过全点积对针对每个键的每个查询进行评分。我们研究是否必须完全计算该点积才能使注意力有效。我们提出隐藏稀疏注意力（HiSA），它保持查询和关键投影完整，但只计算部分点积，遵循令牌位置设置的静态、无参数规则：注意力在隐藏（特征）维度中变得稀疏，这是一个比令牌稀疏性更少探索的轴，而不是像几乎所有稀疏注意力方法那样在令牌上进行探索。基于旋转位置嵌入（RoPE）的结构，我们将键和查询分解为在计算注意力时可以省略的部分。通过使用 HiSA 从头开始​​训练 LLM，我们发现与完整产品相比，这种部分点积不会损害反而提高了性能，同时仅计算大约三分之一的查询键乘积。在推理过程中，HiSA 提高了解码速度并缩小了内存占用。我们还将 HiSA 扩展到 FlashAttention-3 内核以进行训练和推理。最后，我们通过证明密集注意力学会抑制 HiSA 下降的注意力分数部分来激发我们的方法。代码可在 https://github.com/ambroise-b/hisa 获取。",
@@ -78684,7 +78679,6 @@
       ]
     },
     "2611.26380": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78712,7 +78706,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -78750,7 +78744,6 @@
         "updated": "2026-11-19T16:39:59+00:00",
         "version_id": "2611.26380v1"
       },
-      "pending_digest": "20261122T092624Z-1638b161-351b082642c7",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78772,7 +78765,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "EgoCaptioner：迈向全面且细粒度的以自我为中心的视频字幕",
       "translation": {
         "abstract_zh": "以自我为中心的视频字幕需要细粒度的细节和准确的计时，但当前的多模态大语言模型 (MLLM) 经常会错过简短的动作、混淆它们的顺序或误解佩戴者的动作。现有的字幕格式也为将详细叙述与精确计时相结合提供了有限的支持。我们推出了 EgoCaptioner，它将场景、参与者和佩戴者的整体活动的视频级概述与定时步骤配对，其旁白适应不同的感知需求并标记特定时间戳的关键时刻。我们开发了一个从粗到细的注释管道，该管道在扩展步骤描述之前建立事件结构，从八个以自我为中心的视频源生成 50,000 个训练示例。补充奖励评估事实准确性和覆盖范围，衡量步骤级时间对齐，并惩罚零散或冗余的叙述，通过组相对策略优化 (GRPO) 指导字幕细化。为了提高事实监督的可靠性，当传感器数据可用时，我们用姿势导出的运动事实来补充字幕参考。在五个以自我为中心的基准测试中，EgoCaptioner 在字幕质量、字幕条件问答和时间对齐方面在评估的开源模型中实现了领先的性能。它还在 PhysCapBench 上超越了 Gemini 3.1 Pro，并在 Minerva-Ego 上根据标题到 QA 协议评估了所有专有基线。消融支持事实奖励和时间奖励的互补作用，并表明从粗到细的注释比单遍注释提供了更有效的监督。",
@@ -78785,7 +78778,6 @@
       ]
     },
     "2611.26408": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78813,7 +78805,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -78836,7 +78828,6 @@
         "updated": "2026-11-19T16:56:27+00:00",
         "version_id": "2611.26408v1"
       },
-      "pending_digest": "20261122T092624Z-1638b161-351b082642c7",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78854,7 +78845,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "训练 LLM 驱动的权重空间规划的视觉模型",
       "translation": {
         "abstract_zh": "已经证明，在某些设置下，大型语言模型可以执行权重空间编程来直接修改神经网络的权重。然而，尚不清楚这些网络的专门训练如何有助于权重空间编程的成功。我们提出了基于视觉模型的法学硕士驱动的权重空间编程基准，其中五个法学硕士在 Waterbirds、CIFAR-100、PACS 和 Entity-30 上的重新标记和纠错任务上编辑卷积网络和视觉转换器。我们报告了超过 2,600 个这样的编辑过程，每次编辑都会对保留的图像进行评分，以确定成功、副作用和准确性损失。我们将标准训练与标签平滑、基于梯度的可编辑训练以及我们的编辑就绪训练 (ERT) 进行比较，这是一种排练法学硕士执行的直接、封闭形式权重编辑的新颖方法。我们表明，在标准网络难以编辑的情况下，准备网络进行编辑可以大大提高 LLM 编辑的成功率。 ERT 在所有评估的基线中进一步实现了 GPT-6 Astra 和 Claude Opus 5.5 的最高平均分。我们将发布我们的 LLM 测试框架以及所有任务、编辑轨迹和分数。项目页面：https://viscom.uni-ulm.de/wsp",
@@ -78867,7 +78858,6 @@
       ]
     },
     "2611.26422": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78895,7 +78885,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -78919,7 +78909,6 @@
         "updated": "2026-11-19T17:03:16+00:00",
         "version_id": "2611.26422v1"
       },
-      "pending_digest": "20261122T092624Z-1638b161-351b082642c7",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -78939,7 +78928,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "使用大型语言模型进行推理跟踪分析以构建可解释的 Q 矩阵",
       "translation": {
         "abstract_zh": "大型语言模型 (LLM) 可以为诊断分类模型生成近似专家规范的 Q 矩阵，但评估集中在最终矩阵上，而未检查单个项目属性分配的基础。这种不透明性限制了人工智能在测量中的负责任使用。我们提出了推理追踪分析（RTA），这是一个框架，其中法学硕士通过思想链（CoT）提示生成属性标记的推理步骤，并对这些步骤进行分析以重建、比较和检查每个作业。 RTA 旨在补充专家评审和实证验证。在一项对扰动分数减法项目的模拟研究中，四名法学硕士恢复了所需的属性并保留了项目不需要的属性。在一项包含 11 个分数减法项目、来自 536 名考生、4 位法学硕士、最多 3 个温度以及每个条件 100 次重复的反应的实证研究中，CoT 派生的 Q 矩阵与参考 Q 矩阵显着重叠（平均重叠 0.809），但小于直接生成的 Q 矩阵 (0.877)，并且它们在重复之间变化更大。对痕迹的检查将分歧与项目类型编码、标签规则以及操作如何表达为步骤联系起来。具有相似重叠的 Q 矩阵与受试者反应的拟合程度不同。 RTA 提供了矩阵级一致性和拟合所没有的可检查证据。",
@@ -78952,7 +78941,6 @@
       ]
     },
     "2611.26450": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -78980,7 +78968,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -79002,7 +78990,6 @@
         "updated": "2026-11-19T17:18:38+00:00",
         "version_id": "2611.26450v1"
       },
-      "pending_digest": "20261122T092624Z-1638b161-351b082642c7",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -79022,7 +79009,7 @@
         "llm_safety",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "LLM 内的 CPU：将精确电路零梯度编译为预训练权重",
       "translation": {
         "abstract_zh": "如果没有梯度微调或外部工具解释器，预训练语言模型 (LM) 在精确的多位算术上仍然不可靠。我们引入了封闭形式的零梯度电路移植原语，使用零训练示例和零运行时挂钩将确定性计算直接编译为预训练的 LM 权重，同时限制每层归一化漂移并保留自然语言 (NL) 能力。我们的构造结合了三种分析机制：（1）无偏差 SwiGLU/GeGLU 层上的两层 Mellin-GLU 求积，将未知的每个标记 RMSNorm 缩放转换为沿对数间隔门网格（$>250\\times$ 动态范围）与 IEEE 754 误差范围的转换； (2) 通过签名 Chebyshev 不定-RoPE 自沉注意力和无记忆 SiLU-反对称 GatedDeltaNet 移位来消除跨代币规模； (3) 轴对齐宽度扩展 ($d \\to d+K$)，具有 $\\sqrt{d/(d+K)}$ 范数补偿、Base-1000 规范 BPE 发射和差分 $(+254,-256)$ 绑定非嵌入。自动 5 阶段编译器以恒定 $\\mathsf{TC}^0$ 深度合成 4-8 位有符号 $\\{+,-,\\times\\}$ 电路以及 3 文字布尔值（100%，$N=1{,}728$；加上 42 层 Gemma 4 E4B 审核）和 5 位多数/奇偶校验 (100%) 电路。在 6 位算术上（$N=1{,}200$, BF16），IBM Granite 4.2 3B（1.07M-1.33M 有效非零值，$\\le 0.036\\%$）和阿里巴巴 Qwen 3.5 4B（2.25M-2.39M 非零值，$\\le 0.057\\%$）达到 99.17% 100.00% ALU 前缀准确度（使用 FP32 sidecar 为 100%）和 98%-100% 句子中间恢复，优于 12.8K 样本 LoRA（42.2% / 61.7%，0% 内联延续）。因式分解的块稀疏 sidecar 将 A100 内存保持在 7.89 / 10.65 GiB（INT8/INT4 + FP32 sidecar 下为 4.60 / 8.14 GiB），同时传递所有 14/14 预先注册的 $>2$K 代币 Tango 拆分（$N=4{,}392$；0/11,134 OOD 触发器）。",
