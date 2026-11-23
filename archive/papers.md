@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-23 | MemOnce: A Scalable Memory Architecture for Large Language Models | 待翻译 | [arXiv 2611.27973v1](https://arxiv.org/abs/2611.27973v1) |
+| 2026-11-23 | QuantStream3D: Geometry-Aligned Low-Bit KV Cache Quantization for Streaming Visual Geometry Transformers | 待翻译 | [arXiv 2611.27901v1](https://arxiv.org/abs/2611.27901v1) |
+| 2026-11-23 | The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search | 待翻译 | [arXiv 2611.27899v1](https://arxiv.org/abs/2611.27899v1) |
+| 2026-11-23 | LesionAgent: Training-Free Agentic Tumor Tracking and Response Assessment in Longitudinal CT | 待翻译 | [arXiv 2611.27876v1](https://arxiv.org/abs/2611.27876v1) |
+| 2026-11-23 | Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks | 待翻译 | [arXiv 2611.27860v1](https://arxiv.org/abs/2611.27860v1) |
+| 2026-11-23 | Beyond Self-Critique: Epistemic Convergence Control for Multi-Agent Research Verification | 待翻译 | [arXiv 2611.27839v1](https://arxiv.org/abs/2611.27839v1) |
+| 2026-11-23 | Auditable Financial Knowledge Graphs: Schema-Driven Construction and Intrinsic Quality Evaluation | 待翻译 | [arXiv 2611.27835v1](https://arxiv.org/abs/2611.27835v1) |
+| 2026-11-23 | DistDNA: Language Model Fingerprinting under Stochastic Decoding | 待翻译 | [arXiv 2611.27831v1](https://arxiv.org/abs/2611.27831v1) |
+| 2026-11-23 | Evaluating Prompting Strategies for Zero-Shot Multilingual Aspect-Based Sentiment Analysis with Large Language Models | 待翻译 | [arXiv 2611.27807v1](https://arxiv.org/abs/2611.27807v1) |
+| 2026-11-23 | ChildAI-Gov: An Evidence-Linked AI System for Assessing EdTech Policies Against Children's Digital Rights | 待翻译 | [arXiv 2611.27799v1](https://arxiv.org/abs/2611.27799v1) |
 | 2026-11-22 | A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights | LLM 内的 CPU：将精确电路零梯度编译为预训练权重 | [arXiv 2611.26450v1](https://arxiv.org/abs/2611.26450v1) |
 | 2026-11-22 | Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction | 使用大型语言模型进行推理跟踪分析以构建可解释的 Q 矩阵 | [arXiv 2611.26422v1](https://arxiv.org/abs/2611.26422v1) |
 | 2026-11-22 | Training Vision Models for LLM-Driven Weight-Space Programming | 训练 LLM 驱动的权重空间规划的视觉模型 | [arXiv 2611.26408v1](https://arxiv.org/abs/2611.26408v1) |
