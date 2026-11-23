@@ -4,7 +4,7 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
-| 2026-11-23 | MemOnce: A Scalable Memory Architecture for Large Language Models | 待翻译 | [arXiv 2611.27973v1](https://arxiv.org/abs/2611.27973v1) |
+| 2026-11-23 | MemOnce: A Scalable Memory Architecture for Large Language Models | MemOnce：适用于大型语言模型的可扩展内存架构 | [arXiv 2611.27973v1](https://arxiv.org/abs/2611.27973v1) |
 | 2026-11-23 | QuantStream3D: Geometry-Aligned Low-Bit KV Cache Quantization for Streaming Visual Geometry Transformers | 待翻译 | [arXiv 2611.27901v1](https://arxiv.org/abs/2611.27901v1) |
 | 2026-11-23 | The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search | 待翻译 | [arXiv 2611.27899v1](https://arxiv.org/abs/2611.27899v1) |
 | 2026-11-23 | LesionAgent: Training-Free Agentic Tumor Tracking and Response Assessment in Longitudinal CT | 待翻译 | [arXiv 2611.27876v1](https://arxiv.org/abs/2611.27876v1) |
