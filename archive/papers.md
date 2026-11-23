@@ -12,7 +12,7 @@
 | 2026-11-23 | Beyond Self-Critique: Epistemic Convergence Control for Multi-Agent Research Verification | 超越自我批评：多智能体研究验证的认知收敛控制 | [arXiv 2611.27839v1](https://arxiv.org/abs/2611.27839v1) |
 | 2026-11-23 | Auditable Financial Knowledge Graphs: Schema-Driven Construction and Intrinsic Quality Evaluation | 可审计的金融知识图：模式驱动的构建和内在质量评估 | [arXiv 2611.27835v1](https://arxiv.org/abs/2611.27835v1) |
 | 2026-11-23 | DistDNA: Language Model Fingerprinting under Stochastic Decoding | DistDNA：随机解码下的语言模型指纹 | [arXiv 2611.27831v1](https://arxiv.org/abs/2611.27831v1) |
-| 2026-11-23 | Evaluating Prompting Strategies for Zero-Shot Multilingual Aspect-Based Sentiment Analysis with Large Language Models | 待翻译 | [arXiv 2611.27807v1](https://arxiv.org/abs/2611.27807v1) |
+| 2026-11-23 | Evaluating Prompting Strategies for Zero-Shot Multilingual Aspect-Based Sentiment Analysis with Large Language Models | 使用大型语言模型评估零样本多语言基于方面的情感分析的提示策略 | [arXiv 2611.27807v1](https://arxiv.org/abs/2611.27807v1) |
 | 2026-11-23 | ChildAI-Gov: An Evidence-Linked AI System for Assessing EdTech Policies Against Children's Digital Rights | 待翻译 | [arXiv 2611.27799v1](https://arxiv.org/abs/2611.27799v1) |
 | 2026-11-22 | A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights | LLM 内的 CPU：将精确电路零梯度编译为预训练权重 | [arXiv 2611.26450v1](https://arxiv.org/abs/2611.26450v1) |
 | 2026-11-22 | Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction | 使用大型语言模型进行推理跟踪分析以构建可解释的 Q 矩阵 | [arXiv 2611.26422v1](https://arxiv.org/abs/2611.26422v1) |
