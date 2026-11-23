@@ -8683,8 +8683,15 @@
       "content_hash": "8547c8c3b488897e7bc97720be2179bbf0f30bad64d6b06afb96ac0a85b71692",
       "created_at": "2026-11-23T10:22:30.470077+00:00",
       "day": "2026-11-23",
+      "delivery": {
+        "detail": "wechat_status",
+        "polls": 1,
+        "pushid": "70315760",
+        "status": "confirmed"
+      },
       "digest_id": "20261123T102230Z-fa60efdc-8547c8c3b488",
       "empty": false,
+      "finished_at": "2026-11-23T10:26:02.709633+00:00",
       "items": [
         {
           "modules": [
@@ -9113,7 +9120,7 @@
       },
       "run_id": "20261123T102230Z-fa60efdc",
       "schema_version": 1,
-      "status": "sending"
+      "status": "confirmed"
     }
   },
   "papers": {
@@ -80342,7 +80349,6 @@
       ]
     },
     "2611.27799": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -80370,7 +80376,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "translation_archive_link_only",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -80394,7 +80400,6 @@
         "updated": "2026-11-20T16:30:05+00:00",
         "version_id": "2611.27799v1"
       },
-      "pending_digest": "20261123T102230Z-fa60efdc-8547c8c3b488",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -80414,7 +80419,7 @@
         "llm_safety",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "ChildAI-Gov：用于评估针对儿童数字权利的教育科技政策的循证人工智能系统",
       "translation": {
         "abstract_zh": "我们推出了 ChildAI-Gov，这是一个可解释的人工智能系统，用于评估教育技术 (EdTech) 政策是否尊重儿童的数字权利。生成式人工智能进入儿童教育的速度快于其治理的步伐，但检查儿童权利的工具仍然是手动的、依赖专家的且缓慢。我们提出了儿童权利影响评分（CRIS），这是一种横跨五个维度的证据相关衡量标准：安全、隐私、透明度、自主性和非歧视。 ChildAI-Gov 读取 EdTech 工具的隐私或 AI 政策，并通过将大型语言模型判断 (gpt-4o-mini) 与确定性规则检查相结合来对每个维度进行评分。检索增强生成 (RAG) 组件将管理条款中的每个分数作为基础，从儿童权利框架（欧盟人工智能法案、联合国儿童基金会指南等）的精选知识库中检索，因此每个分数都与其背后的证据相关联，审核员可以追踪它所依据的条款。我们还构建了 AIPolicy-EdTech，这是一个包含 57 项真实 EdTech 政策的数据集。在其上，五个维度结合为一个单一的衡量标准（Cronbach's alpha = 0.79），并且接地使评分更加严格，同时保留了排名；没有根据的基线要宽松得多，通过了近一半的政策，而 ChildAI-Gov 则没有通过。它为书面承诺提供与证据相关的决策支持，而不是对现实世界行为的观察或法律合规性的确定。",
@@ -80427,7 +80432,6 @@
       ]
     },
     "2611.27807": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -80455,7 +80459,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -80478,7 +80482,6 @@
         "updated": "2026-11-20T16:34:21+00:00",
         "version_id": "2611.27807v1"
       },
-      "pending_digest": "20261123T102230Z-fa60efdc-8547c8c3b488",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -80502,7 +80505,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "使用大型语言模型评估零样本多语言基于方面的情感分析的提示策略",
       "translation": {
         "abstract_zh": "虽然大型语言模型 (LLM) 具有先进的自然语言理解能力，但它们在零样本多语言设置中执行复杂的目标方面情感检测 (TASD)（基于方面的情感分析 (ABSA) 中的一项关键任务）的能力仍未得到充分探索。现有的 ABSA 研究主要集中在英语或依赖于微调的特定任务模型，在理解开放权重法学硕士如何处理跨不同语言家族和领域的复合情感三元组提取方面存在差距。我们使用七个指令调整的开放权重模型（跨密集和专家混合 (MoE) 架构，从 8B 到 35B 参数）在四种提示范式下对 12 种语言和 3 个领域的零样本多语言 TASD 进行了系统评估：单一、思想链、顺序和顺序细化。我们的结果表明，直接整体提示实现了强大的零样本性能，优于多步管道，而密集模型始终优于稀疏 MoE 架构。通过细粒度的错误分类分析和步骤级管道跟踪，我们证明初始方面术语回忆形成了硬瓶颈，而多步骤分解会降低提取质量；迭代细化只能部分恢复较大模型上的这种损失，同时会导致较小架构上的净负过度细化。最后，生成量分析表明，多步骤策略在没有 F1 增益的情况下会产生高达 2.38 倍的代币开销，从而将整体提示确立为多语言 ABSA 最有效和高效的范例。",
@@ -80515,7 +80518,6 @@
       ]
     },
     "2611.27831": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -80543,7 +80545,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -80569,7 +80571,6 @@
         "updated": "2026-11-20T16:52:51+00:00",
         "version_id": "2611.27831v1"
       },
-      "pending_digest": "20261123T102230Z-fa60efdc-8547c8c3b488",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -80585,7 +80586,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "DistDNA：随机解码下的语言模型指纹",
       "translation": {
         "abstract_zh": "行为指纹根据对一组共享提示的响应来识别大型语言模型 (LLM)，从而支持验证部署的模型是否与其声称的检查点相对应等应用程序。然而，部署的模型通常采用随机解码，在这种解码下，同一模型可能会对相同的提示产生不同的响应，具体取决于未知的温度和 top-$p$ 设置。现有的表征（例如 LLM DNA）对这种变异的处理有限。一种自然的补救措施是通过响应分布来表征模型，但这提出了两个挑战。首先，每个分布必须仅根据少量抽样响应来估计。其次，解码设置的改变可以改变响应，其程度与检查点的改变相同。因此，指纹距离本身无法为模型身份提供完整的基础，并且识别通常依赖于对来自许多检查点的指纹进行联合训练的分类器。我们提出了 DistDNA，它通过即时条件响应分布来表示模型，并通过即时最大平均差异（MMD）来比较模型。正在检查的模型被分配给已知的检查点，其在多个解码设置下收集的参考指纹最接近其自身的指纹，而无需训练分类器。我们表明，有限采样将方差相关项添加到预期的指纹平方距离中，对于相同的响应计数，这些项减少为 $O(1/R)$，其中 $R$ 是每个提示的响应数。跨 115 个模型检查点条目的实验表明，与最强基线 LLM DNA 相比，DistDNA 的识别准确度提高了 10.36%。",
@@ -80598,7 +80599,6 @@
       ]
     },
     "2611.27835": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -80626,7 +80626,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -80651,7 +80651,6 @@
         "updated": "2026-11-20T16:54:47+00:00",
         "version_id": "2611.27835v1"
       },
-      "pending_digest": "20261123T102230Z-fa60efdc-8547c8c3b488",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -80671,7 +80670,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "可审计的金融知识图：模式驱动的构建和内在质量评估",
       "translation": {
         "abstract_zh": "财务文档结合了叙述性披露、会计指标、公司结构、管理评论和时间相关事实，这使得它们很难使用传统的基于块的检索增强生成系统来表示。本文提出了一种可审计的、模式驱动的方法，用于从使用通用文档智能服务解析的页面分隔文档构建时态金融知识图。重叠的文档窗口经历结构实体、定量观察和特定领域关系的分阶段大语言模型提取。候选图元素根据预定义模式进行验证，并通过范围感知的精确、标准化、模糊、基于嵌入和 LLM 辅助的实体解析进行整合。时间合并约束、确定性边缘重复数据删除、冲突感知属性管理和细粒度来源可保留发行人身份、报告期有效性和源证据的可追溯性。这项工作的贡献包括提出的金融知识图构建方法、从异构金融文档创建基于证据的时间知识图，以及评估结果图质量的内在框架。该评估框架评估七个加权维度、两个硬验证门和结构诊断。通过将图质量评估与下游检索和答案生成分开，该框架支持所构建图的系统诊断和迭代细化。",
@@ -80684,7 +80683,6 @@
       ]
     },
     "2611.27839": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -80712,7 +80710,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -80735,7 +80733,6 @@
         "updated": "2026-11-20T16:56:17+00:00",
         "version_id": "2611.27839v1"
       },
-      "pending_digest": "20261123T102230Z-fa60efdc-8547c8c3b488",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -80755,7 +80752,7 @@
         "llm_safety",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "超越自我批评：多智能体研究验证的认知收敛控制",
       "translation": {
         "abstract_zh": "用于科学主张验证的多智能体系统越来越依赖于角色结构的法学硕士辩论来对假设进行压力测试。然而，当辩论代理从相同的底层基础模型实例化时，它们共享相同的潜在表示，使得自我批评偏见在结构上不可避免。静态固定迭代协议通过在证据稳定之前过早停止或在收敛后浪费推理计算来加剧这种情况。我们提出 \\sys{}，一个解决这两种故障模式的多代理研究验证框架。首先，我们引入了一种非对称角色架构，包括具有相反认知指令的倡导者、怀疑论者和仲裁者，产生显着较低的角色嵌入相似性（对称多代理辩论 [MAD] 为 0.852 vs.\\ 0.918，$p = 5.82 \\times 10^{-8}$），并呈现更多有争议的主张（22.0\\% vs.\\ 15.4\\%）。其次，我们提出了 Belief-Delta ($\\DB$) 收敛标准，这是一种基于证据的停止规则，可以消除过度迭代（Fixed-$3$ 为 0.0\\% vs.\\ 62.5\\%），同时将 LLM 调用减少 2.4$\\times$。第三，每个支持的主张都基于由独立 NLI 分类器审核的逐字文献片段，实现了 21.7% 的幻觉率（与 Self-Refine 批评家的 25.9% 相比，$p = 0.61$），同时建立了可审核的证据基础。在使用 DeepSeek-R1-32B 评估的 40 个研究假设的 200 次运行中，\\sys{} 在计算效率与严格的认知验证之间取得了平衡。",
@@ -80768,7 +80765,6 @@
       ]
     },
     "2611.27860": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -80796,7 +80792,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -80822,7 +80818,6 @@
         "updated": "2026-11-20T17:09:10+00:00",
         "version_id": "2611.27860v1"
       },
-      "pending_digest": "20261123T102230Z-fa60efdc-8547c8c3b488",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -80842,7 +80837,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "谁给代理人评分？ Coding-Agent 基准的权限分离",
       "translation": {
         "abstract_zh": "基于人工智能的编码代理的基准是当前人工智能领域的主要内容，因为它们是衡量法学硕士表现的主要方法。他们的分数指导商业和研究决策。评估编码代理具有挑战性，因为它们能够操纵其评估基础设施来人为地获得更好的分数。对代理的解决方案进行评分通常需要运行其代码，然后可以操纵评估过程。 BenchJack 是一名自动基准审核员，最近在 10 个流行的代理基准测试中的 9 个上取得了近乎完美的分数，而没有实际解决他们的任务。正如 OpenAI 2026 年 7 月的 Hugging Face 事件所表明的那样，特工们已经在无提示的情况下这样做了。\n  基于安全系统设计，我们引入了 SplitBench，这是一个用于评估编码代理的权限分离框架，也是科学文献中第一个将运行任务测试与判断其结果分开的框架。即使代码接管整个测试环境的代理也无法伪造通行证，因为受信任的评分者掌握着预期的答案。我们表明，现实世界的基准（例如，Terminal-Bench、DeepSWE）可以以最少的努力和高保真度移植到 SplitBench 框架：202 个任务中的 180 个进行转换，SplitBench 在 98.7% 的代理尝试上与本地评分者一致。我们在最坏的情况下攻击转换后的任务，其中敌对代理可以读取所有评分代码，但无法读取预期答案。 SplitBench 阻止了 75% 的尝试；其余的大部分揭示了原始任务测试中的弱点，而不是 SplitBench 中的缺陷。",
@@ -80855,7 +80850,6 @@
       ]
     },
     "2611.27876": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -80883,7 +80877,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -80913,7 +80907,6 @@
         "updated": "2026-11-20T17:21:36+00:00",
         "version_id": "2611.27876v1"
       },
-      "pending_digest": "20261123T102230Z-fa60efdc-8547c8c3b488",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -80931,7 +80924,7 @@
         "llm_agent",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "LesionAgent：纵向 CT 中的免培训代理肿瘤跟踪和反应评估",
       "translation": {
         "abstract_zh": "每隔几个月，癌症患者的 CT 扫描就会决定是否继续治疗。 3D 基础模型现在可以检测、分割、记录和跟踪病变，但它们都不能像放射科医生那样读取扫描结果。放射科医生决定哪些发现是病变，哪些是几个月后的相同病变，以及新的斑点是否意味着进展，并根据临床指南的广泛规则检查每个决定。我们引入了 LesionAgent，这是一种 LLM 代理，无需特定于任务的培训即可执行端到端的读取。它将冻结的 3D 模型作为工具进行操作，通过坐标标记视图以 3D 方式进行操作，记住注册表中访问期间的每个病变，验证其依赖的每个模型输出，并将每个数字留给确定性指南引擎。在四个公共纵向 CT 数据集上，LesionAgent 跟踪更多病变并比每个自动基线更准确地测量它们，并且由固定规则链接的相同 3D 模型在 56 个随访中的 33 个中错误地调用了进展，它这样做了两次。在临床随访 CT 上，它在 23 次随访中的 20 次中与放射科医生的反应一致，包括反应的每一次变化，并且在没有经过 DeepLesion 训练的情况下，它检索到的病灶比每个接受过训练的跟踪器都多（89.0% 与 87.4%）。是它的线束，而不是它的法学硕士，造成了差异：给定相同的法学硕士和 3D 模型，但没有线束，Claude Code 的检测 F1 达到 41%，LesionAgent 达到 78%，而可以在医院内运行的开放式法学硕士则从 6% 上升到 73%。 LesionAgent 和适用于任何法学硕士的 napari 阅读应用程序可在 https://github.com/MIC-DKFZ/LesionAgent 上找到。",
@@ -80944,7 +80937,6 @@
       ]
     },
     "2611.27899": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -80972,7 +80964,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -81007,7 +80999,6 @@
         "updated": "2026-11-20T17:38:26+00:00",
         "version_id": "2611.27899v1"
       },
-      "pending_digest": "20261123T102230Z-fa60efdc-8547c8c3b488",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -81027,7 +81018,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "双层情感框架：网络搜索中可扩展的多模式用户体验归因",
       "translation": {
         "abstract_zh": "在大规模网络搜索中维持用户体验 (UX) 质量需要可扩展的评估。传统调查速度缓慢，并且阻碍了快速 A/B 测试，而自动化指标通常缺乏诊断视觉空间用户体验异常的粒度。为了解决这个问题，我们引入了双层情感框架，这是一种用于自动用户体验归因的新颖工业架构。第 1 层（宏系统）充当可扩展的用户情绪回归检测器，利用遥测功能上的微调编码器-解码器 LLM（基于 Gemini XS）。通过多任务正则化和上下文特征工程，该层在超过 500,000 个保留记录上实现了 +9.8% 的 PR-AUC 增益，将所有经过验证的回归的基线召回率与 12 个保留实验中 $\\sim$20% 的相对精度增益相匹配。在生产中，它将测量延迟从数周缩短至数小时，并将调查开销减少 40% 以上。第 2 层（微系统）通过采用多模式 LLM (Gemini 3.0 Pro) 来提供精细诊断，以本地评估 Web 结果块的视觉渲染和空间布局，将“用户辛苦”量化为达到满意结果所需的估计工作量。通过基于 RL 的自动提示优化和 AI 判断输赢模式的增强，MLLM 的 F1 分数提高了 6.5% 以上，提供了对内容质量和布局摩擦的深入洞察。最终，该框架实现了可扩展、准确和诊断性的 UX 归因，每天处理 O(100k) 次实时实验查询。",
@@ -81040,7 +81031,6 @@
       ]
     },
     "2611.27901": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -81068,7 +81058,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -81099,7 +81089,6 @@
         "updated": "2026-11-20T17:38:48+00:00",
         "version_id": "2611.27901v1"
       },
-      "pending_digest": "20261123T102230Z-fa60efdc-8547c8c3b488",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -81121,7 +81110,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "QuantStream3D：用于流式视觉几何变换器的几何对齐低位 KV 缓存量化",
       "translation": {
         "abstract_zh": "流式视觉几何变换器保留历史键值（KV）状态作为跨视图几何内存，但不断增长的缓存限制了长序列推理。我们系统地表征了流几何中的 KV 量化，并揭示了两个相关的挑战：非均匀几何灵敏度和缓存几何不匹配。量化灵敏度因精度选择和缓存位置而异，而扰动检索会改变几何头输入并通过后续预测和 KV 写入进行传播。在这些发现的指导下，我们提出了 QuantStream3D，据我们所知，这是第一个用于流式视觉几何变换器的专用 KV 量化框架。几何引导混合精度 KV 量化可保护敏感的交叉视图证据，而几何对齐量化感知蒸馏则根据学生生成的量化历史共同调整变压器块和几何头。在五个基准测试和两个骨干网中，QuantStream3D 在大多数主要使用 2 位 KV 缓存的设置中实现了近乎无损的几何精度，并且许多配置超越了非量化推理。与面向LLM的KV量化器相比，它分别将TUM绝对轨迹误差和NeuralRGBD完整性误差降低了高达57.4%和69.7%。与现有本机缓存修剪方法的集成进一步推动压缩，同时提高 NeuralRGBD 的重建质量。我们优化的 StreamVGGT 后端在批量大小为 1 时实现了 5.05 美元\\次$物理 KV 压缩和 23.1% 的延迟降低。在同一 GPU 上的固定内存预算下，它支持 $5.4\\times$ 最大批量大小，以及高达 $1.67\\times$ 的非量化推理峰值吞吐量。代码和预训练检查点将公开。",
@@ -81134,7 +81123,6 @@
       ]
     },
     "2611.27973": {
-      "_pre_attempt_chain": null,
       "attempts": {
         "selection": 1,
         "translation": 1
@@ -81162,7 +81150,7 @@
           "kind": "normal",
           "recovery_of": "",
           "rendered": "rendered_inline_translation",
-          "status": "sending",
+          "status": "confirmed",
           "tier": "translation"
         }
       ],
@@ -81188,7 +81176,6 @@
         "updated": "2026-11-20T18:51:29+00:00",
         "version_id": "2611.27973v1"
       },
-      "pending_digest": "20261123T102230Z-fa60efdc-8547c8c3b488",
       "presentation_modules": [
         "title",
         "title_translation",
@@ -81208,7 +81195,7 @@
         "llm_efficiency",
         "llm_core"
       ],
-      "stage": "ready",
+      "stage": "delivered",
       "title_zh": "MemOnce：适用于大型语言模型的可扩展内存架构",
       "translation": {
         "abstract_zh": "在长期和持续交互中部署大型语言模型 (LLM) 需要维护可重用的内存状态以供未来推理，这对现有架构提出了挑战。标准 Transformer 累积分层、令牌级 KV 缓存，随着上下文扩展，会导致 GPU 内存线性增长和二次计算复杂性。相比之下，线性时间架构将历史压缩为固定大小的状态，但很难保留细粒度的细节。我们引入 MemOnce，这是一种学习语言模型可扩展内存状态的基础架构。 MemOnce 基于两个核心设计：（a）内存编码器-解码器：它仅将最终层隐藏状态的一小部分缓存为紧凑的内存表示，并将它们动态解码回 KV 缓存以用于注意层； (b) 内存稀疏注意力：对于每个连续输入，MemOnce 自适应地检索相关的内存表示，稀疏索引仅跨层计算一次。将这两种设计结合起来可以实现高效的动态内存加载和 KV 缓存解码，从而大大减少 GPU 内存占用并实现线性时间复杂度。我们进行了大量的实验，证明 MemOnce 在不同的模型大小、上下文长度和训练范例（训练前和训练后适应）方面优于 Transformer 和其他架构。特别是，在 Qwen3.5-4B 上采用 MemOnce，在 1M 上下文中，内存状态缓存减少了 1313$\\times$，预填充延迟减少了 6.9$\\times$，吞吐量提高了 3.5$\\times$，整体内存性能提高了 +5.77%。最后，MemOnce 将零样本推广到下游表示任务，实现了与专用模型竞争的结果。",
