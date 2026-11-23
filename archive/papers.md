@@ -10,7 +10,7 @@
 | 2026-11-23 | LesionAgent: Training-Free Agentic Tumor Tracking and Response Assessment in Longitudinal CT | LesionAgent：纵向 CT 中的免培训代理肿瘤跟踪和反应评估 | [arXiv 2611.27876v1](https://arxiv.org/abs/2611.27876v1) |
 | 2026-11-23 | Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks | 谁给代理人评分？ Coding-Agent 基准的权限分离 | [arXiv 2611.27860v1](https://arxiv.org/abs/2611.27860v1) |
 | 2026-11-23 | Beyond Self-Critique: Epistemic Convergence Control for Multi-Agent Research Verification | 超越自我批评：多智能体研究验证的认知收敛控制 | [arXiv 2611.27839v1](https://arxiv.org/abs/2611.27839v1) |
-| 2026-11-23 | Auditable Financial Knowledge Graphs: Schema-Driven Construction and Intrinsic Quality Evaluation | 待翻译 | [arXiv 2611.27835v1](https://arxiv.org/abs/2611.27835v1) |
+| 2026-11-23 | Auditable Financial Knowledge Graphs: Schema-Driven Construction and Intrinsic Quality Evaluation | 可审计的金融知识图：模式驱动的构建和内在质量评估 | [arXiv 2611.27835v1](https://arxiv.org/abs/2611.27835v1) |
 | 2026-11-23 | DistDNA: Language Model Fingerprinting under Stochastic Decoding | 待翻译 | [arXiv 2611.27831v1](https://arxiv.org/abs/2611.27831v1) |
 | 2026-11-23 | Evaluating Prompting Strategies for Zero-Shot Multilingual Aspect-Based Sentiment Analysis with Large Language Models | 待翻译 | [arXiv 2611.27807v1](https://arxiv.org/abs/2611.27807v1) |
 | 2026-11-23 | ChildAI-Gov: An Evidence-Linked AI System for Assessing EdTech Policies Against Children's Digital Rights | 待翻译 | [arXiv 2611.27799v1](https://arxiv.org/abs/2611.27799v1) |
