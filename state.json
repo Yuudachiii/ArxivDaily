@@ -79923,7 +79923,9 @@
       ]
     },
     "2611.27807": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-23T10:22:30.470077+00:00",
@@ -79950,6 +79952,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-23T10:22:30.470077+00:00",
+        "run_id": "20261123T102230Z-fa60efdc",
+        "stage": "selection"
+      },
       "versions": [
         "2611.27807v1"
       ]
