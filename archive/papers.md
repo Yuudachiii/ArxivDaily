@@ -8,7 +8,7 @@
 | 2026-11-23 | QuantStream3D: Geometry-Aligned Low-Bit KV Cache Quantization for Streaming Visual Geometry Transformers | QuantStream3D：用于流式视觉几何变换器的几何对齐低位 KV 缓存量化 | [arXiv 2611.27901v1](https://arxiv.org/abs/2611.27901v1) |
 | 2026-11-23 | The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search | 双层情感框架：网络搜索中可扩展的多模式用户体验归因 | [arXiv 2611.27899v1](https://arxiv.org/abs/2611.27899v1) |
 | 2026-11-23 | LesionAgent: Training-Free Agentic Tumor Tracking and Response Assessment in Longitudinal CT | LesionAgent：纵向 CT 中的免培训代理肿瘤跟踪和反应评估 | [arXiv 2611.27876v1](https://arxiv.org/abs/2611.27876v1) |
-| 2026-11-23 | Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks | 待翻译 | [arXiv 2611.27860v1](https://arxiv.org/abs/2611.27860v1) |
+| 2026-11-23 | Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks | 谁给代理人评分？ Coding-Agent 基准的权限分离 | [arXiv 2611.27860v1](https://arxiv.org/abs/2611.27860v1) |
 | 2026-11-23 | Beyond Self-Critique: Epistemic Convergence Control for Multi-Agent Research Verification | 待翻译 | [arXiv 2611.27839v1](https://arxiv.org/abs/2611.27839v1) |
 | 2026-11-23 | Auditable Financial Knowledge Graphs: Schema-Driven Construction and Intrinsic Quality Evaluation | 待翻译 | [arXiv 2611.27835v1](https://arxiv.org/abs/2611.27835v1) |
 | 2026-11-23 | DistDNA: Language Model Fingerprinting under Stochastic Decoding | 待翻译 | [arXiv 2611.27831v1](https://arxiv.org/abs/2611.27831v1) |
