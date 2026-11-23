@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | 2026-11-23 | MemOnce: A Scalable Memory Architecture for Large Language Models | MemOnce：适用于大型语言模型的可扩展内存架构 | [arXiv 2611.27973v1](https://arxiv.org/abs/2611.27973v1) |
 | 2026-11-23 | QuantStream3D: Geometry-Aligned Low-Bit KV Cache Quantization for Streaming Visual Geometry Transformers | QuantStream3D：用于流式视觉几何变换器的几何对齐低位 KV 缓存量化 | [arXiv 2611.27901v1](https://arxiv.org/abs/2611.27901v1) |
-| 2026-11-23 | The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search | 待翻译 | [arXiv 2611.27899v1](https://arxiv.org/abs/2611.27899v1) |
+| 2026-11-23 | The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search | 双层情感框架：网络搜索中可扩展的多模式用户体验归因 | [arXiv 2611.27899v1](https://arxiv.org/abs/2611.27899v1) |
 | 2026-11-23 | LesionAgent: Training-Free Agentic Tumor Tracking and Response Assessment in Longitudinal CT | 待翻译 | [arXiv 2611.27876v1](https://arxiv.org/abs/2611.27876v1) |
 | 2026-11-23 | Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks | 待翻译 | [arXiv 2611.27860v1](https://arxiv.org/abs/2611.27860v1) |
 | 2026-11-23 | Beyond Self-Critique: Epistemic Convergence Control for Multi-Agent Research Verification | 待翻译 | [arXiv 2611.27839v1](https://arxiv.org/abs/2611.27839v1) |
