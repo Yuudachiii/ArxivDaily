@@ -165,7 +165,7 @@
 | 2026-11-06 | Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation | 在异构认知和生物医学知识图谱上对大型语言模型进行基准测试：图谱落地在多跳推理和幻觉缓解中的作用 | [arXiv 2611.08315v1](https://arxiv.org/abs/2611.08315v1) |
 | 2026-11-06 | LLM-Assisted Label Noise Correction for EEG-Based Sleep Stage Classification | 用于基于EEG的睡眠分期分类的LLM辅助标签噪声校正 | [arXiv 2611.08311v1](https://arxiv.org/abs/2611.08311v1) |
 | 2026-11-05 | A Framework for Context Enrichment and Selective Robustness in LLM Social Agents | 待翻译 | [arXiv 2611.06914v1](https://arxiv.org/abs/2611.06914v1) |
-| 2026-11-05 | BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories | 待翻译 | [arXiv 2611.06911v1](https://arxiv.org/abs/2611.06911v1) |
+| 2026-11-05 | BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories | BEAKER：用于自驾化学实验室具身智能体的专家策划基准 | [arXiv 2611.06911v1](https://arxiv.org/abs/2611.06911v1) |
 | 2026-11-05 | Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure | 乏味、肮脏、危险？工作条件与职业人工智能接触的限制 | [arXiv 2611.06888v1](https://arxiv.org/abs/2611.06888v1) |
 | 2026-11-05 | SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification | SpecCompact：通过槽并行语义推测验证加速大型语言模型代理上下文压缩 | [arXiv 2611.06876v1](https://arxiv.org/abs/2611.06876v1) |
 | 2026-11-05 | On Turn-Level Best-of-N Sampling for Scaling LLM Agents | 针对扩展大语言模型代理的回合级最佳采样 | [arXiv 2611.06868v1](https://arxiv.org/abs/2611.06868v1) |
