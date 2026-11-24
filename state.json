@@ -514,7 +514,13 @@
       "alerts": [],
       "full_ids": [],
       "normal_digests": [],
-      "paper_ids": [],
+      "paper_ids": [
+        "2611.03641",
+        "2611.03633",
+        "2611.03627",
+        "2611.03617",
+        "2611.03602"
+      ],
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 0
