@@ -168,7 +168,7 @@
 | 2026-11-05 | BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories | 待翻译 | [arXiv 2611.06911v1](https://arxiv.org/abs/2611.06911v1) |
 | 2026-11-05 | Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure | 待翻译 | [arXiv 2611.06888v1](https://arxiv.org/abs/2611.06888v1) |
 | 2026-11-05 | SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification | 待翻译 | [arXiv 2611.06876v1](https://arxiv.org/abs/2611.06876v1) |
-| 2026-11-05 | On Turn-Level Best-of-N Sampling for Scaling LLM Agents | 待翻译 | [arXiv 2611.06868v1](https://arxiv.org/abs/2611.06868v1) |
+| 2026-11-05 | On Turn-Level Best-of-N Sampling for Scaling LLM Agents | 针对扩展大语言模型代理的回合级最佳采样 | [arXiv 2611.06868v1](https://arxiv.org/abs/2611.06868v1) |
 | 2026-11-05 | CompressionBench: How can your coding agents compress LLMs? | 待翻译 | [arXiv 2611.06858v1](https://arxiv.org/abs/2611.06858v1) |
 | 2026-11-05 | Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs | 待翻译 | [arXiv 2611.06848v1](https://arxiv.org/abs/2611.06848v1) |
 | 2026-11-05 | Where to Connect? Boosting MLLMs via Dynamic Gated Pathways across ALL ViT and LLM Layers | 待翻译 | [arXiv 2611.06844v1](https://arxiv.org/abs/2611.06844v1) |

@@ -64959,11 +64959,6 @@
       },
       "events": [],
       "failures": {
-        "title_translation": {
-          "attempts": 1,
-          "error": "translation_request_failed",
-          "last_at": "2026-11-05T09:01:26.382980+00:00"
-        },
         "translation": {
           "attempts": 1,
           "error": "translation_request_failed",
@@ -65013,11 +65008,8 @@
         "llm_core"
       ],
       "stage": "presentation_pending",
-      "stage_started": {
-        "at": "2026-11-24T12:04:13.375149+00:00",
-        "run_id": "20261124T120413Z-376dc4fd",
-        "stage": "title_translation"
-      },
+      "title_translation_prompt_fingerprint": "microsoft_free",
+      "title_zh": "针对扩展大语言模型代理的回合级最佳采样",
       "versions": [
         "2611.06868v1"
       ]
