@@ -509,6 +509,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-24": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -82186,10 +82195,30 @@
       }
     },
     {
+      "collection_errors": [
+        "incomplete collection shard 202611171204..202611241204 (cs.CL,cs.LG,cs.AI,cs.CV): HTTPError"
+      ],
       "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
       "coverage_complete": false,
       "day": "2026-11-24",
+      "discovered_candidates": 0,
+      "discovered_papers": 0,
       "run_id": "20261124T120411Z-a7d0991e",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-24T12:04:00+00:00",
+          "error": "HTTPError",
+          "seen": 0,
+          "start": "2026-11-17T12:04:00+00:00",
+          "status": "failed"
+        }
+      ],
       "started_at": "2026-11-24T12:04:11.972312+00:00",
       "window": {
         "end": "2026-11-24T12:04:11.972312+00:00",
