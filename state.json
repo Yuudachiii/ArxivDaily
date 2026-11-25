@@ -79314,7 +79314,9 @@
       ]
     },
     "2611.33119": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-25T10:55:19.284466+00:00",
@@ -79339,6 +79341,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-25T10:55:19.284466+00:00",
+        "run_id": "20261125T105519Z-daa8632b",
+        "stage": "selection"
+      },
       "versions": [
         "2611.33119v1"
       ]
