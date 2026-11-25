@@ -13,7 +13,7 @@
 | 2026-11-25 | FOL-Proof: Verifying LLM Text-to-Logic Translations via Deterministic Semantics | FOL-Proof：通过确定性语义验证 LLM 文本到逻辑的翻译 | [arXiv 2611.33078v1](https://arxiv.org/abs/2611.33078v1) |
 | 2026-11-25 | Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges | 审计法官：法学硕士法官中人为偏见的发现、量化和缓解 | [arXiv 2611.33065v1](https://arxiv.org/abs/2611.33065v1) |
 | 2026-11-25 | U-Statistics-Powered LLM Reasoning | U-统计驱动的法学硕士推理 | [arXiv 2611.33064v1](https://arxiv.org/abs/2611.33064v1) |
-| 2026-11-25 | Understanding Clipping In Zeroth-Order Optimization | 待翻译 | [arXiv 2611.33062v1](https://arxiv.org/abs/2611.33062v1) |
+| 2026-11-25 | Understanding Clipping In Zeroth-Order Optimization | 了解零阶优化中的裁剪 | [arXiv 2611.33062v1](https://arxiv.org/abs/2611.33062v1) |
 | 2026-11-23 | MemOnce: A Scalable Memory Architecture for Large Language Models | MemOnce：适用于大型语言模型的可扩展内存架构 | [arXiv 2611.27973v1](https://arxiv.org/abs/2611.27973v1) |
 | 2026-11-23 | QuantStream3D: Geometry-Aligned Low-Bit KV Cache Quantization for Streaming Visual Geometry Transformers | QuantStream3D：用于流式视觉几何变换器的几何对齐低位 KV 缓存量化 | [arXiv 2611.27901v1](https://arxiv.org/abs/2611.27901v1) |
 | 2026-11-23 | The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search | 双层情感框架：网络搜索中可扩展的多模式用户体验归因 | [arXiv 2611.27899v1](https://arxiv.org/abs/2611.27899v1) |
