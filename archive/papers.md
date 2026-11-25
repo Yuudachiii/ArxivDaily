@@ -11,7 +11,7 @@
 | 2026-11-25 | AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design | AIChipBench：自动化 AI 加速器设计的 LLM 代理基准测试 | [arXiv 2611.33093v1](https://arxiv.org/abs/2611.33093v1) |
 | 2026-11-25 | Shifter Quantization: Compact Representations for Native Integer Computation | 移位器量化：本机整数计算的紧凑表示 | [arXiv 2611.33080v1](https://arxiv.org/abs/2611.33080v1) |
 | 2026-11-25 | FOL-Proof: Verifying LLM Text-to-Logic Translations via Deterministic Semantics | FOL-Proof：通过确定性语义验证 LLM 文本到逻辑的翻译 | [arXiv 2611.33078v1](https://arxiv.org/abs/2611.33078v1) |
-| 2026-11-25 | Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges | 待翻译 | [arXiv 2611.33065v1](https://arxiv.org/abs/2611.33065v1) |
+| 2026-11-25 | Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges | 审计法官：法学硕士法官中人为偏见的发现、量化和缓解 | [arXiv 2611.33065v1](https://arxiv.org/abs/2611.33065v1) |
 | 2026-11-25 | U-Statistics-Powered LLM Reasoning | 待翻译 | [arXiv 2611.33064v1](https://arxiv.org/abs/2611.33064v1) |
 | 2026-11-25 | Understanding Clipping In Zeroth-Order Optimization | 待翻译 | [arXiv 2611.33062v1](https://arxiv.org/abs/2611.33062v1) |
 | 2026-11-23 | MemOnce: A Scalable Memory Architecture for Large Language Models | MemOnce：适用于大型语言模型的可扩展内存架构 | [arXiv 2611.27973v1](https://arxiv.org/abs/2611.27973v1) |
