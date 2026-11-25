@@ -5,7 +5,7 @@
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
 | 2026-11-25 | DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning | DiaCap：共同学习谁在何时发言以进行视听对话字幕 | [arXiv 2611.33153v1](https://arxiv.org/abs/2611.33153v1) |
-| 2026-11-25 | SAG-Mem-1.0 Technical Report | 待翻译 | [arXiv 2611.33124v1](https://arxiv.org/abs/2611.33124v1) |
+| 2026-11-25 | SAG-Mem-1.0 Technical Report | SAG-Mem-1.0技术报告 | [arXiv 2611.33124v1](https://arxiv.org/abs/2611.33124v1) |
 | 2026-11-25 | MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing | 待翻译 | [arXiv 2611.33119v1](https://arxiv.org/abs/2611.33119v1) |
 | 2026-11-25 | Draft Calibration for Speculative Decoding: Accelerating LLM Serving by Matching Draft and Target Distributions | 待翻译 | [arXiv 2611.33111v1](https://arxiv.org/abs/2611.33111v1) |
 | 2026-11-25 | AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design | 待翻译 | [arXiv 2611.33093v1](https://arxiv.org/abs/2611.33093v1) |
