@@ -81601,11 +81601,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-25T10:55:17.410238+00:00",
-        "run_id": "20261125T105517Z-e08a2120",
-        "stage": "translation"
+      "title_zh": "移位器量化：本机整数计算的紧凑表示",
+      "translation": {
+        "abstract_zh": "LLM 量化中使用分组量化来提高低位宽下的精度，但分组权重使标准整数 MMA 无法跨越全点积以实现高效的 GPU 推理。我们开发了一种新的量化方法，移位量化（SQ），它通过附加和移位共享位来重建本机宽度整数操作数。为了进一步提高效率，我们开发了 SQ 的特殊变体，移位整数 (SHI)，以使用 INT4 内核。我们表明，SQ 和 SHI 格式在质量（通过投影误差和 KL 散度测量）以及推理速度（在解码和预填充期间测量）方面表现优于标准分组量化。对于 2 位量化等低精度，SQ2 和 SHI2 在 Q2_K 检查点上实现了 llama.cpp 4,096 个令牌预填充吞吐量的 2.71-3.77 倍，并将 WikiText-2 KL 减少了 6.6-7.8%。对于 4 位量化等中等精度，SQ4 在测试模型和提示长度中实现了 NInfer 分组整数基线的 1.43-2.47 倍预填充吞吐量，KL 比 NInfer 基线低 24-40%。对于 8 位量化等高精度，SQ8 的批量一预填充吞吐量比 vLLM 的在线 FP8 高 27.4%，KL 低 72.7%。",
+        "title_zh": "移位器量化：本机整数计算的紧凑表示"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.33080v1"
       ]
