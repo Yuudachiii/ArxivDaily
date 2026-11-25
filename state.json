@@ -81541,11 +81541,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-25T10:55:17.410238+00:00",
-        "run_id": "20261125T105517Z-e08a2120",
-        "stage": "translation"
+      "title_zh": "FOL-Proof：通过确定性语义验证 LLM 文本到逻辑的翻译",
+      "translation": {
+        "abstract_zh": "大型语言模型 (LLM) 越来越多地用于将自然语言语句转换为一阶逻辑 (FOL) 以改进推理。然而，LLM 很容易出错，因此语义上不忠实的 FOL 公式可能会破坏下游推理。我们提出了 FOL-Proof，一种语义防火墙管道，可根据独立派生的语言解释来验证 LLM 生成的 FOL 翻译。 FOL-Proof 的运行方式是通过语义分析工具（例如英语资源语法和最小递归语义）确定性地获取候选翻译池；然后应用 SMT 求解器检查每个导出的读数与 LLM 生成的公式的逻辑等价性。如果翻译忠实，则被接受；否则，它会被拒绝，或者可以选择通过重复调用 LLM 来修复。该程序是保守的：不完整的搜索、不受支持的结构或不确定的检查会产生弃权而不是错误拒绝。我们根据既定基准（ProofWriter、RuleTaker 和 PrOntoQA）以及新的对抗性基准（LongFaithCheck）评估了 FOL-Proof。我们的实验表明，FOL-Proof 达到了近乎完美的选择准确性，而直接 LLM 法官和往返基线的性能则要差得多。",
+        "title_zh": "FOL-Proof：通过确定性语义验证 LLM 文本到逻辑的翻译"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.33078v1"
       ]
