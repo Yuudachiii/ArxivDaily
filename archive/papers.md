@@ -13,7 +13,7 @@
 | 2026-11-25 | FOL-Proof: Verifying LLM Text-to-Logic Translations via Deterministic Semantics | FOL-Proof：通过确定性语义验证 LLM 文本到逻辑的翻译（谷歌备用翻译） | [arXiv 2611.33078v1](https://arxiv.org/abs/2611.33078v1) |
 | 2026-11-25 | Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges | 审计法官：法学硕士法官中人为偏见的发现、量化和缓解（谷歌备用翻译） | [arXiv 2611.33065v1](https://arxiv.org/abs/2611.33065v1) |
 | 2026-11-25 | U-Statistics-Powered LLM Reasoning | U-统计驱动的法学硕士推理（谷歌备用翻译） | [arXiv 2611.33064v1](https://arxiv.org/abs/2611.33064v1) |
-| 2026-11-25 | Understanding Clipping In Zeroth-Order Optimization | 待翻译 | [arXiv 2611.33062v1](https://arxiv.org/abs/2611.33062v1) |
+| 2026-11-25 | Understanding Clipping In Zeroth-Order Optimization | 了解零阶优化中的裁剪（谷歌备用翻译） | [arXiv 2611.33062v1](https://arxiv.org/abs/2611.33062v1) |
 | 2026-11-22 | ClosureBench: A Benchmark for Reasoning under Closure Assumptions | ClosureBench：闭包假设下推理的基准测试 | [arXiv 2611.26335v1](https://arxiv.org/abs/2611.26335v1) |
 | 2026-11-22 | OceanCoder: A Verification-Guided Large Language Model for Automated Simulation Modelling in Ocean Engineering | OceanCoder：一种用于海洋工程自动化仿真建模的验证引导大型语言模型 | [arXiv 2611.26333v1](https://arxiv.org/abs/2611.26333v1) |
 | 2026-11-22 | Rigel-Ladon: An Option-Count Law for a One-Pass Decision Encoder, Tested on Held-Out Option Counts and Held-Out Schemas | Rigel-Ladon：一种针对单次决策编码器的选项计数法，已在保留的选项计数和保留的模式上进行测试 | [arXiv 2611.26332v1](https://arxiv.org/abs/2611.26332v1) |
