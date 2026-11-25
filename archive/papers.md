@@ -8,7 +8,7 @@
 | 2026-11-25 | SAG-Mem-1.0 Technical Report | SAG-Mem-1.0技术报告 | [arXiv 2611.33124v1](https://arxiv.org/abs/2611.33124v1) |
 | 2026-11-25 | MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing | MetaFORGE：并行计算自动代码生成中利用优化的元学习框架 | [arXiv 2611.33119v1](https://arxiv.org/abs/2611.33119v1) |
 | 2026-11-25 | Draft Calibration for Speculative Decoding: Accelerating LLM Serving by Matching Draft and Target Distributions | 推测性解码的草稿校准：通过匹配草稿和目标分布来加速 LLM 服务 | [arXiv 2611.33111v1](https://arxiv.org/abs/2611.33111v1) |
-| 2026-11-25 | AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design | 待翻译 | [arXiv 2611.33093v1](https://arxiv.org/abs/2611.33093v1) |
+| 2026-11-25 | AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design | AIChipBench：自动化 AI 加速器设计的 LLM 代理基准测试 | [arXiv 2611.33093v1](https://arxiv.org/abs/2611.33093v1) |
 | 2026-11-25 | Shifter Quantization: Compact Representations for Native Integer Computation | 待翻译 | [arXiv 2611.33080v1](https://arxiv.org/abs/2611.33080v1) |
 | 2026-11-25 | FOL-Proof: Verifying LLM Text-to-Logic Translations via Deterministic Semantics | 待翻译 | [arXiv 2611.33078v1](https://arxiv.org/abs/2611.33078v1) |
 | 2026-11-25 | Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges | 待翻译 | [arXiv 2611.33065v1](https://arxiv.org/abs/2611.33065v1) |
