@@ -81930,11 +81930,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-25T10:55:17.410238+00:00",
-        "run_id": "20261125T105517Z-e08a2120",
-        "stage": "translation"
+      "title_zh": "DiaCap：共同学习谁在何时发言以进行视听对话字幕",
+      "translation": {
+        "abstract_zh": "我们推出 DiaCap，一种用于全面对话字幕的视听法学硕士，它可以为视频中的每句话生成文字记录、时间戳和讲话者的视觉描述。考虑到话语计时和视听二化是紧密耦合的，DiaCap 将任务统一在一个模型中，并在两个互补的阶段进行训练。首先，我们在 225K 个精选剪辑上训练 DiaCap，使用密集地详细标记每个话语的合成字幕。其次，我们通过对 2.9K 人工校正剪辑进行强化学习，使用直接评估说话时间、说话者分组和说话者绑定的细粒度反馈来进一步完善模型。在 DiaDemBench 上，我们通过话语级时间戳和字幕编辑进行了扩展，具有现成转录本的 DiaCap 及其端到端变体 DiaCap-E2E 都取得了出色的结果。具体来说，DiaCap 在视听二值化方面的表现与 Gemini 4 Argon 相当，而在时间戳精度方面则明显优于 Gemini 4 Argon（76.59 与 42.76 TIME）。它还对多语言和一分钟长的视频保持强烈的分类，并转移到视听问答。",
+        "title_zh": "DiaCap：共同学习谁在何时发言以进行视听对话字幕"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.33153v1"
       ]
