@@ -10,7 +10,7 @@
 | 2026-11-25 | Draft Calibration for Speculative Decoding: Accelerating LLM Serving by Matching Draft and Target Distributions | 推测性解码的草稿校准：通过匹配草稿和目标分布来加速 LLM 服务（谷歌备用翻译） | [arXiv 2611.33111v1](https://arxiv.org/abs/2611.33111v1) |
 | 2026-11-25 | AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design | AIChipBench：自动化 AI 加速器设计的 LLM 代理基准测试（谷歌备用翻译） | [arXiv 2611.33093v1](https://arxiv.org/abs/2611.33093v1) |
 | 2026-11-25 | Shifter Quantization: Compact Representations for Native Integer Computation | 移位器量化：本机整数计算的紧凑表示（谷歌备用翻译） | [arXiv 2611.33080v1](https://arxiv.org/abs/2611.33080v1) |
-| 2026-11-25 | FOL-Proof: Verifying LLM Text-to-Logic Translations via Deterministic Semantics | 待翻译 | [arXiv 2611.33078v1](https://arxiv.org/abs/2611.33078v1) |
+| 2026-11-25 | FOL-Proof: Verifying LLM Text-to-Logic Translations via Deterministic Semantics | FOL-Proof：通过确定性语义验证 LLM 文本到逻辑的翻译（谷歌备用翻译） | [arXiv 2611.33078v1](https://arxiv.org/abs/2611.33078v1) |
 | 2026-11-25 | Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges | 待翻译 | [arXiv 2611.33065v1](https://arxiv.org/abs/2611.33065v1) |
 | 2026-11-25 | U-Statistics-Powered LLM Reasoning | 待翻译 | [arXiv 2611.33064v1](https://arxiv.org/abs/2611.33064v1) |
 | 2026-11-25 | Understanding Clipping In Zeroth-Order Optimization | 待翻译 | [arXiv 2611.33062v1](https://arxiv.org/abs/2611.33062v1) |
