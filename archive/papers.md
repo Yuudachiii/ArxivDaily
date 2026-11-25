@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-25 | DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning | 待翻译 | [arXiv 2611.33153v1](https://arxiv.org/abs/2611.33153v1) |
+| 2026-11-25 | SAG-Mem-1.0 Technical Report | 待翻译 | [arXiv 2611.33124v1](https://arxiv.org/abs/2611.33124v1) |
+| 2026-11-25 | MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing | 待翻译 | [arXiv 2611.33119v1](https://arxiv.org/abs/2611.33119v1) |
+| 2026-11-25 | Draft Calibration for Speculative Decoding: Accelerating LLM Serving by Matching Draft and Target Distributions | 待翻译 | [arXiv 2611.33111v1](https://arxiv.org/abs/2611.33111v1) |
+| 2026-11-25 | AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design | 待翻译 | [arXiv 2611.33093v1](https://arxiv.org/abs/2611.33093v1) |
+| 2026-11-25 | Shifter Quantization: Compact Representations for Native Integer Computation | 待翻译 | [arXiv 2611.33080v1](https://arxiv.org/abs/2611.33080v1) |
+| 2026-11-25 | FOL-Proof: Verifying LLM Text-to-Logic Translations via Deterministic Semantics | 待翻译 | [arXiv 2611.33078v1](https://arxiv.org/abs/2611.33078v1) |
+| 2026-11-25 | Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges | 待翻译 | [arXiv 2611.33065v1](https://arxiv.org/abs/2611.33065v1) |
+| 2026-11-25 | U-Statistics-Powered LLM Reasoning | 待翻译 | [arXiv 2611.33064v1](https://arxiv.org/abs/2611.33064v1) |
+| 2026-11-25 | Understanding Clipping In Zeroth-Order Optimization | 待翻译 | [arXiv 2611.33062v1](https://arxiv.org/abs/2611.33062v1) |
 | 2026-11-23 | MemOnce: A Scalable Memory Architecture for Large Language Models | MemOnce：适用于大型语言模型的可扩展内存架构 | [arXiv 2611.27973v1](https://arxiv.org/abs/2611.27973v1) |
 | 2026-11-23 | QuantStream3D: Geometry-Aligned Low-Bit KV Cache Quantization for Streaming Visual Geometry Transformers | QuantStream3D：用于流式视觉几何变换器的几何对齐低位 KV 缓存量化 | [arXiv 2611.27901v1](https://arxiv.org/abs/2611.27901v1) |
 | 2026-11-23 | The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search | 双层情感框架：网络搜索中可扩展的多模式用户体验归因 | [arXiv 2611.27899v1](https://arxiv.org/abs/2611.27899v1) |

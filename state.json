@@ -91,7 +91,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:41:59.424237+00:00",
-    "last_complete_end": "2026-11-23T10:22:30.470077+00:00"
+    "last_complete_end": "2026-11-25T10:55:17.410238+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -530,6 +530,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-25": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -81262,6 +81271,332 @@
       "versions": [
         "2611.27973v1"
       ]
+    },
+    "2611.33062": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-25T10:55:17.410238+00:00",
+      "paper": {
+        "abstract": "Zeroth-order optimization has emerged as a resource-efficient alternative to Stochastic Gradient Descent (SGD) when fine-tuning LLMs, thanks to the inherent low dimensionality of the loss landscape. It relies on a two-point estimate of the gradient that only accesses the function value and not the gradient, bypassing the resource-heavy backpropagation. Recently, it was accidentally discovered that per-sample clipping can improve the performance of the trained model, while running a differentially private version of zeroth-order optimization \\cite{zhang2024dpzero} with a very large privacy parameter $ε$ (corresponding to very little privacy). In this paper, we systematically investigate this phenomenon and demonstrate that ($i$) the optimal choice of learning rate $η$ is inversely proportional to the clipping threshold $c$, satisfying $ηc =$ constant; ($ii$) clipping drives the zeroth-order optimization to a different solution with higher test accuracy; and ($iii$) this phenomenon is only observed with per-sample clipped zeroth-order optimization and not other zeroth-order alternatives that also provide robust estimates of the gradient. Further analyses with artificially injected label noise reveals that clipping leads to more robust predictions, which stems from the implicit down weighting of hard-to-fit training examples. Our code is available at https://github.com/SewoongLab/ClipZero",
+        "authors": [
+          "Saket Gollapudi",
+          "Elisa Bertino",
+          "Sewoong Oh"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.33062v1",
+        "published": "2026-11-24T18:03:57+00:00",
+        "title": "Understanding Clipping In Zeroth-Order Optimization",
+        "updated": "2026-11-24T18:03:57+00:00",
+        "version_id": "2611.33062v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.33062v1"
+      ]
+    },
+    "2611.33064": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-25T10:55:17.410238+00:00",
+      "paper": {
+        "abstract": "Since its introduction by DeepSeek, group relative policy optimization (GRPO) has been widely adopted for training large reasoning models and agents, spurring a proliferation of its variants. Yet the group size, a crucial hyperparameter in these GRPO-type algorithms, remains largely chosen by trial and error. Exploiting the U-statistic structure of GRPO's policy gradient, we recast the selection of the group size as a classical statistical problem of variance ratio estimation. This problem is particularly challenging when the denominator of the ratio is small, rendering naive plug-in estimators unstable. To address this challenge, we propose a pessimistic ratio estimator that accounts for the denominator's estimation uncertainty. We characterise the statistical properties of this estimator across three sample-size regimes. Empirically, using %a jackknife-based pessimistic rule on synthetic tasks from Reasoning Gym and real-world benchmarks covering both mathematical reasoning and code generation, we show that our adaptive group size selection reduces the mean squared error of the resulting policy gradient and improves policy optimisation over fixed-group-size baselines, with modest additional computational cost.",
+        "authors": [
+          "Shijin Gong",
+          "Kai Ye",
+          "Victor Chernozhukov",
+          "Xinyu Zhang",
+          "Chengchun Shi"
+        ],
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.33064v1",
+        "published": "2026-11-24T18:05:01+00:00",
+        "title": "U-Statistics-Powered LLM Reasoning",
+        "updated": "2026-11-24T18:05:01+00:00",
+        "version_id": "2611.33064v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_training",
+        "llm_agent",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.33064v1"
+      ]
+    },
+    "2611.33065": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-25T10:55:17.410238+00:00",
+      "paper": {
+        "abstract": "While Large Language Models (LLMs) are increasingly deployed as automated evaluators in evaluation and training pipelines, their judgements are often affected by systematic biases that conflict with human preferences. Although prior work has identified various biases and proposed methods for detecting and mitigating them, less attention has been paid to using human preferences to inform bias identification and mitigation. Moreover, these approaches rely heavily on pre-discovered bias lists, overlook bias strength, and depend on costly interventions. In this work, we propose HUB-J, an integrated framework based on human-derived bias factors that detects, quantifies, and mitigates biases in LLM-as-a-Judge systems. Our approach leverages human-LLM judgement disagreement cases to automatically discover interpretable bias factors, and utilizes agreement cases to quantify bias strength through controlled input modifications and resulting shifts in model decisions. Finally, building on these quantified biases, we introduce a lightweight, training-free regression-based mitigation strategy that estimates the influence of each bias factor on model judgments and corrects bias-influenced decisions by removing its estimated effect. Empirical results show that HUB-J uncovers both known and novel bias factors, reveals meaningful differences in model susceptibility, and consistently reduces bias-driven decision flips while generalizing across models.",
+        "authors": [
+          "Hamin Koo",
+          "Chanjoo Jung",
+          "Fangzhao Wu",
+          "Jaehyung Kim"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.33065v1",
+        "published": "2026-11-24T18:05:47+00:00",
+        "title": "Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges",
+        "updated": "2026-11-24T18:05:47+00:00",
+        "version_id": "2611.33065v1"
+      },
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.33065v1"
+      ]
+    },
+    "2611.33078": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-25T10:55:17.410238+00:00",
+      "paper": {
+        "abstract": "Large Language Models (LLMs) are increasingly used to translate natural-language statements into first-order logic (FOL) to improve reasoning. However, LLMs are prone to errors, and so a semantically unfaithful FOL formula could corrupt downstream reasoning. We present FOL-Proof, a semantic firewall pipeline that validates LLM-generated FOL translations against independently derived linguistic interpretations. FOL-Proof operates by deterministically obtaining a pool of candidate translations via semantic analysis tools, such as the English Resource Grammar and Minimal Recursion Semantics; then applying an SMT solver to check each derived reading for logical equivalence to the LLM-generated formula. If the translation is faithful it is accepted; otherwise, it is rejected, or optionally repaired via repeated invocations to the LLM. The procedure is conservative: incomplete search, unsupported constructions, or inconclusive checks yield abstention rather than false rejection. We evaluated FOL-Proof on established benchmarks (ProofWriter, RuleTaker and PrOntoQA), and also on a new adversarial benchmark (LongFaithCheck). Our experiments show that FOL-Proof attains near perfect selective accuracy, while direct LLM judges and round-trip baselines show substantially worse performance.",
+        "authors": [
+          "Yisrael Clark",
+          "Guy Katz"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.LO"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.33078v1",
+        "published": "2026-11-24T18:13:28+00:00",
+        "title": "FOL-Proof: Verifying LLM Text-to-Logic Translations via Deterministic Semantics",
+        "updated": "2026-11-24T18:13:28+00:00",
+        "version_id": "2611.33078v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.33078v1"
+      ]
+    },
+    "2611.33080": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-25T10:55:17.410238+00:00",
+      "paper": {
+        "abstract": "Groupwise quantization is used in LLM quantization to improve accuracy at low bit widths, but grouping weights keeps standard integer MMA from spanning the full dot product for efficient GPU inference. We develop a new quantization method, Shifter Quantization (SQ), that reconstructs native-width integer operands by appending and shifting shared bits. To further extend the efficiency, we develop a special variant of SQ, Shifter Integer (SHI), to use INT4 kernels. We show that SQ and SHI formats perform better than standard groupwise quantization in quality, as measured by projection error and KL divergence, and in inference speed, as measured during decoding and prefill. For low precision like 2-bit quantization, SQ2 and SHI2 achieve 2.71-3.77x the 4,096-token prefill throughput of llama.cpp on a Q2_K checkpoint and reduce WikiText-2 KL by 6.6-7.8%. For mid precision like 4-bit quantization, SQ4 achieves 1.43-2.47x the prefill throughput of NInfer's groupwise-integer baselines across the tested models and prompt lengths, with 24-40% lower KL than the NInfer baselines. For high precision like 8-bit quantization, SQ8 achieves 27.4% higher batch-one prefill throughput and 72.7% lower KL than vLLM's online FP8.",
+        "authors": [
+          "Yufeng Huang"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.33080v1",
+        "published": "2026-11-24T18:14:52+00:00",
+        "title": "Shifter Quantization: Compact Representations for Native Integer Computation",
+        "updated": "2026-11-24T18:14:52+00:00",
+        "version_id": "2611.33080v1"
+      },
+      "rule_hits": [
+        "llm_efficiency",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.33080v1"
+      ]
+    },
+    "2611.33093": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-25T10:55:17.410238+00:00",
+      "paper": {
+        "abstract": "A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthesizable register-transfer-level (RTL) code against an executable integer reference that specifies the outputs and the stored state at every decoding step. They debug against public tests under fixed budgets; their frozen designs are graded on held-out token sequences, resets, memory stalls, and synthesis, and a second track asks them to speed up a correct design at nearly fixed area. Across 9,136 attempts by four coding agents, the difficulty lies in stored state. Feedback that points to the first state mismatch raises acceptance over output-only feedback in all 12 agent--task cells of a matched study, by 25.0 to 46.9 percentage points, and halves the agent-hours per accepted design. Regraded on new sequences and conditions, 45 of 69 accepted designs fail within the 32 steps their tests required. More than a third of attempts to speed up a correct design end without one. An overall score ranks Sol 5.6 and Fable 5.1 above Astra 6 and Opus 5.5, and both halves of the instances give this order in all 200 random splits. Hardware agents therefore need debugging feedback that exposes stored state, and their benchmarks need final tests well beyond the development cases.",
+        "authors": [
+          "Guangyuan Wang",
+          "Chengran Li",
+          "Minchen Luo",
+          "Jichen Feng",
+          "Mengdi Wang",
+          "Yifan Zhang"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.33093v1",
+        "published": "2026-11-24T18:28:41+00:00",
+        "title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
+        "updated": "2026-11-24T18:28:41+00:00",
+        "version_id": "2611.33093v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_efficiency",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.33093v1"
+      ]
+    },
+    "2611.33111": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-25T10:55:17.410238+00:00",
+      "paper": {
+        "abstract": "Speculative decoding accelerates large language model (LLM) inference by employing a lightweight draft model to propose draft tokens and allowing the target model to verify the new tokens in parallel to improve inference-time compute utilization. The speedup relies on the acceptance probability of draft tokens in target verification, which is directly related to the gap $\\|p-q\\|_1$ between the target distribution $p$ and the draft distribution $q$. In this paper, we study draft calibration of speculative decoding to improve the speedup of speculative decoding, where we employ post-hoc methods to calibrate the draft distribution to mitigate the distribution gap. We observe that though current community open-source draft models may learn the top candidate token correctly, they are generally underconfident compared to the target model, suggesting a consistent distribution mismatch. To mitigate the effect of this mismatch on the acceptance rate of the draft models, we try various post-hoc calibration methods, including standard temperature scaling and token-wise calibration. Our results suggest that a standard temperature scaling applied to the draft distribution improves the acceptance length by up to approximately 10\\% with almost no additional cost across different tasks. Throughput analysis further verifies that this improvement in serving efficiency. Analysis of more general calibration methods reveals further potential room for improvement.",
+        "authors": [
+          "Yuxing Liu",
+          "Wei Zuo",
+          "Walid Krichene",
+          "Tong Zhang",
+          "Li Zhang"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.33111v1",
+        "published": "2026-11-24T18:41:59+00:00",
+        "title": "Draft Calibration for Speculative Decoding: Accelerating LLM Serving by Matching Draft and Target Distributions",
+        "updated": "2026-11-24T18:41:59+00:00",
+        "version_id": "2611.33111v1"
+      },
+      "rule_hits": [
+        "llm_efficiency",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.33111v1"
+      ]
+    },
+    "2611.33119": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-25T10:55:17.410238+00:00",
+      "paper": {
+        "abstract": "Large language models (LLMs) can generate parallel programs, but their correctness and performance depend strongly on the instructions that guide generation. We present \\textsc{MetaFORGE}, an execution-grounded meta-learning framework that iteratively optimizes persistent natural-language skill specifications for MPI C code generation. \\textsc{MetaFORGE} combines correctness testing, compiler diagnostics, static-analysis findings, runtime measurements, and rank-level load-imbalance profiles into a scalar reward that drives textual-gradient refinement, while an external memory distills and retrieves reward-supported optimization knowledge across runs.\n  Across six MPI tasks and three workload sizes, \\textsc{MetaFORGE} improves static-analysis quality, runtime, and load balance relative to zero-shot generation and generally exceeds the evaluated \\textsc{TextGrad} iterative baseline. A model-matched refinement ablation shows that the MetaFORGE advantage persists when its refinement model is reduced to \\texttt{gpt-4o}. An expanded retrieval ablation across all 18 task--workload configurations shows consistent runtime benefit and broad static-analysis and load-balance benefit from retrieved context. Leakage-controlled held-out and zero-update experiments further provide evidence that optimization knowledge persists in both the transferred skill and external memory under the evaluated protocol.",
+        "authors": [
+          "Scott Piersall",
+          "Yang Gao",
+          "Shenyang Liu",
+          "Liqiang Wang"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.33119v1",
+        "published": "2026-11-24T18:49:19+00:00",
+        "title": "MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing",
+        "updated": "2026-11-24T18:49:19+00:00",
+        "version_id": "2611.33119v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.33119v1"
+      ]
+    },
+    "2611.33124": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-25T10:55:17.410238+00:00",
+      "paper": {
+        "abstract": "Long-term conversational memory requires retrieving complementary facts scattered across dialogue sessions, including intermediate evidence with limited similarity to the original question. Existing approaches often rely on derived memory representations or persistent relational structures, introducing construction costs and potentially losing source details. We present SAG-Mem, a conversational memory framework that preserves complete dialogue messages in non-overlapping chunks and discovers complementary evidence through query-time lexical expansion. Memory construction requires no model inference, using a lexical index without LLM-based extraction, summarization, or semantic relation construction. At query time, BM25 retrieves initial candidates, an evidence evaluator identifies useful chunks, and lexical cues from selected evidence guide an additional retrieval round. Retrieved dialogue is further annotated with calendar interpretations of supported relative-time expressions, preserving the original wording and temporal granularity. We also introduce SAG-Mem-Lite, an alternative configuration that replaces evidence scoring with embedding-based candidate scoring, achieving lower operational cost than Full Context and all memory-based baselines across both benchmarks with low query latency. On LoCoMo and LongMemEval, SAG-Mem achieves overall scores of 83.08 and 80.20, respectively, the highest among the evaluated methods on both benchmarks. On LongMemEval, it exceeds the strongest compared baseline by 7.20 points. SAG-Mem-Lite achieves scores of 77.09 and 77.20, respectively. These results support dialogue preservation and evidence-guided retrieval expansion as an effective design for long-term conversational memory.",
+        "authors": [
+          "Yuchao Wu",
+          "XingCheng Liang",
+          "Xuanze Wang",
+          "Yini Huang",
+          "Yue Wu"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.IR"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.33124v1",
+        "published": "2026-11-24T18:51:29+00:00",
+        "title": "SAG-Mem-1.0 Technical Report",
+        "updated": "2026-11-24T18:51:29+00:00",
+        "version_id": "2611.33124v1"
+      },
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.33124v1"
+      ]
+    },
+    "2611.33153": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-25T10:55:17.410238+00:00",
+      "paper": {
+        "abstract": "We present DiaCap, an audiovisual LLM for comprehensive dialogue captioning, which produces the transcript, timestamps, and a visual description of the speaker for every utterance in a video. Considering that utterance timing and audiovisual diarization are tightly coupled, DiaCap unifies the tasks in a single model, trained in two complementary stages. First, we train DiaCap on 225K curated clips, using synthetic captions that densely label every utterance in detail. Second, we further refine the model via reinforcement learning on 2.9K human-corrected clips, using fine-grained feedback that directly evaluates utterance timing, speaker grouping, and speaker binding. On DiaDemBench, which we extend with utterance-level timestamps and subtitle redaction, both DiaCap with off-the-shelf transcripts and its end-to-end variant DiaCap-E2E achieve strong results. Specifically, DiaCap performs on par with Gemini 4 Argon in audiovisual diarization while clearly outperforming it in timestamp accuracy (76.59 vs. 42.76 TIME). It also maintains strong diarization on multilingual and minute-long videos, and transfers to audiovisual question answering.",
+        "authors": [
+          "Binfei Ji",
+          "Zhiwen Cao",
+          "Anqi Yang",
+          "Prem Seetharaman",
+          "Shuo Yang",
+          "Ratheesh Kalarot",
+          "Yingyan Celine Lin",
+          "Mingze Xu"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.CL",
+          "cs.MM",
+          "cs.SD"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.33153v1",
+        "published": "2026-11-24T18:59:08+00:00",
+        "title": "DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning",
+        "updated": "2026-11-24T18:59:08+00:00",
+        "version_id": "2611.33153v1"
+      },
+      "rule_hits": [
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.33153v1"
+      ]
     }
   },
   "runs": [
@@ -82296,10 +82631,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-25",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261125T105517Z-e08a2120",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-25T10:55:00+00:00",
+          "seen": 32,
+          "start": "2026-11-18T10:55:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-25T10:55:17.410238+00:00",
       "window": {
         "end": "2026-11-25T10:55:17.410238+00:00",
