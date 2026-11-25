@@ -81797,11 +81797,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-25T10:55:17.410238+00:00",
-        "run_id": "20261125T105517Z-e08a2120",
-        "stage": "translation"
+      "title_zh": "MetaFORGE：并行计算自动代码生成中利用优化的元学习框架",
+      "translation": {
+        "abstract_zh": "大型语言模型 (LLM) 可以生成并行程序，但其正确性和性能在很大程度上取决于指导生成的指令。我们提出了 \\textsc{MetaFORGE}，一个基于执行的元学习框架，它迭代地优化 MPI C 代码生成的持久自然语言技能规范。 \\textsc{MetaFORGE} 将正确性测试、编译器诊断、静态分析结果、运行时测量和排名级别负载不平衡配置文件结合到一个标量奖励中，驱动文本梯度细化，同时外部存储器在运行过程中提取和检索奖励支持的优化知识。\n  在六个 MPI 任务和三个工作负载大小中，相对于零样本生成，\\textsc{MetaFORGE} 提高了静态分析质量、运行时间和负载平衡，并且通常超过了评估的 \\textsc{TextGrad} 迭代基线。模型匹配的细化消融表明，当其细化模型简化为 \\texttt{gpt-4o} 时，MetaFORGE 的优势仍然存在。跨所有 18 个任务工作负载配置的扩展检索消融显示了一致的运行时优势以及检索上下文带来的广泛静态分析和负载平衡优势。泄漏控制的保留和零更新实验进一步提供了证据，证明在评估的协议下，优化知识在转移的技能和外部记忆中持续存在。",
+        "title_zh": "MetaFORGE：并行计算自动代码生成中利用优化的元学习框架"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.33119v1"
       ]
