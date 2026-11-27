@@ -80579,6 +80579,11 @@
       },
       "events": [],
       "failures": {
+        "title_translation": {
+          "attempts": 1,
+          "error": "translation_request_failed",
+          "last_at": "2026-11-27T10:35:01.449540+00:00"
+        },
         "translation": {
           "attempts": 1,
           "error": "translation_request_failed",
@@ -80623,11 +80628,6 @@
         "llm_core"
       ],
       "stage": "presentation_pending",
-      "stage_started": {
-        "at": "2026-11-27T10:35:01.449540+00:00",
-        "run_id": "20261127T103501Z-a8acbfee",
-        "stage": "title_translation"
-      },
       "versions": [
         "2611.34832v1"
       ]
