@@ -82814,9 +82814,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_safety、llm_multimodal、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_safety",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-27T10:35:00.827991+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Processing long videos with multimodal large language models (MLLMs) is prohibitively expensive, making informative frame selection essential for accurate video understanding. The default uniform sampling often misses task-relevant keyframes, while recent training-free selectors instead pick frames by how well each one matches the question under an image-text alignment (ITA) score. However, we show that ITA signals correspond poorly with the MLLM's true needs: their rankings correlate weakly with downstream accuracy and are even negatively correlated on over 40% of questions, whereas the MLLM's internal yes/no judgment yields a much stronger signal. We present ProbFaS, a training- and label-free probabilistic pipeline that fuses both signals for key frame selection. ProbFaS treats dense ITA scores as cheap, biased measurements and sparse MLLM judgments as accurate, costly ones, unifying them via co-kriging, a multi-fidelity Gaussian process, to calibrate relevance across all frames. A temporal determinantal point process then selects frames capturing relevance peaks while preserving temporal coverage. Across Video-MME, MLVU and LongVideoBench, ProbFaS is the most accurate among fourteen state-of-the-art training-free selectors and uniform sampling in 13 of 15 settings (8-128 frames), outperforming the strongest baseline by up to 3.1 percentage points. On MLVU and LongVideoBench, 32 ProbFaS frames match or surpass the top baseline at 128 frames and uniform sampling with up to 768 frames.",
         "authors": [
@@ -82835,17 +82851,13 @@
         "updated": "2026-11-25T18:53:10+00:00",
         "version_id": "2611.34903v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_safety",
         "llm_multimodal",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-27T10:35:00.827991+00:00",
-        "run_id": "20261127T103500Z-9003ea35",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.34903v1"
       ]
