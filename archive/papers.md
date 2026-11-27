@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-27 | Diverse Alternative Reasoning Traces for Hard Math Problems | 待翻译 | [arXiv 2611.34928v1](https://arxiv.org/abs/2611.34928v1) |
+| 2026-11-27 | Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation | 待翻译 | [arXiv 2611.34907v1](https://arxiv.org/abs/2611.34907v1) |
+| 2026-11-27 | ProbFaS: Probabilistic Video Frame Selection for MLLMs via Multi-Fidelity Calibration | 待翻译 | [arXiv 2611.34903v1](https://arxiv.org/abs/2611.34903v1) |
+| 2026-11-27 | Stranger Things: When Objects Appear Without Their Typical Neighbors | 待翻译 | [arXiv 2611.34881v1](https://arxiv.org/abs/2611.34881v1) |
+| 2026-11-27 | A Survey of Security, Privacy, and Ethics of Large Language Models in Telecom | 待翻译 | [arXiv 2611.34868v1](https://arxiv.org/abs/2611.34868v1) |
+| 2026-11-27 | Put the World Back: Timestamps Matter in Time Series Reasoning | 待翻译 | [arXiv 2611.34848v1](https://arxiv.org/abs/2611.34848v1) |
+| 2026-11-27 | Knowledge-Base Gradient Descent: Self-Structuring Learning through Question Answering | 待翻译 | [arXiv 2611.34841v1](https://arxiv.org/abs/2611.34841v1) |
+| 2026-11-27 | Proverbs As A Window On Collective Prescriptions | 待翻译 | [arXiv 2611.34832v1](https://arxiv.org/abs/2611.34832v1) |
+| 2026-11-27 | Repairing the Trustworthiness of Distilled Language Models | 待翻译 | [arXiv 2611.34831v1](https://arxiv.org/abs/2611.34831v1) |
+| 2026-11-27 | Routeability Before Routing: Routeability Audit Protocol (RAP) and RouteabilityBench for Audited LLM Model Selection | 待翻译 | [arXiv 2611.34825v1](https://arxiv.org/abs/2611.34825v1) |
 | 2026-11-25 | DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning | DiaCap：共同学习谁在何时发言以进行视听对话字幕（谷歌备用翻译） | [arXiv 2611.33153v1](https://arxiv.org/abs/2611.33153v1) |
 | 2026-11-25 | SAG-Mem-1.0 Technical Report | SAG-Mem-1.0技术报告（谷歌备用翻译） | [arXiv 2611.33124v1](https://arxiv.org/abs/2611.33124v1) |
 | 2026-11-25 | MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing | MetaFORGE：并行计算自动代码生成中利用优化的元学习框架（谷歌备用翻译） | [arXiv 2611.33119v1](https://arxiv.org/abs/2611.33119v1) |
