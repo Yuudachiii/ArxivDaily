@@ -80481,9 +80481,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_reasoning、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_reasoning",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-27T10:35:01.449540+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Proverbs, as repositories of traditional wisdom, have informed human reasoning for millennia. Yet the collective prescriptions they encode have remained largely unquantified. We introduce a computational framework to analyze nearly 50,000 English-language proverbs. Using large language models, validated against human judgments, we map the topical landscape of proverbs, assess their prescriptive power, and quantify their recommendations on key dimensions of human judgment and behavior. We find that most proverbs are prescriptive, offering guidance in domains under individual control, such as preparation and prudent action, whereas proverbs about uncontrollable circumstances, such as fate and mortality, tend to describe rather than prescribe. When prescriptive proverbs take a consistent stance, they favor caution over risk, long-term over short-term outcomes, honesty over deception, and kindness over malice, and show a moderate tendency toward suspicion over trust. On dimensions involving genuine trade-offs, especially autonomy versus compliance, proverbs provide contradicting advice rather than a single recommendation. This analysis provides a quantitative map of the collective prescriptions in a culture's proverbial wisdom, revealing a core of prudent, honest, and forward-looking guidance alongside varied advice where circumstances dictate the best course of action.",
         "authors": [
@@ -80501,16 +80517,12 @@
         "updated": "2026-11-25T18:12:23+00:00",
         "version_id": "2611.34832v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_reasoning",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-27T10:35:01.449540+00:00",
-        "run_id": "20261127T103501Z-a8acbfee",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.34832v1"
       ]
