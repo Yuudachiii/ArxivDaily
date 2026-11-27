@@ -83098,11 +83098,13 @@
         "llm_core"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-27T10:35:00.827991+00:00",
-        "run_id": "20261127T103500Z-9003ea35",
-        "stage": "translation"
+      "title_zh": "ProbFaS：通过多保真度校准进行 MLLM 的概率视频帧选择",
+      "translation": {
+        "abstract_zh": "使用多模态大语言模型 (MLLM) 处理长视频的成本极高，因此信息丰富的帧选择对于准确的视频理解至关重要。默认的统一采样经常会错过与任务相关的关键帧，而最近的免训练选择器则根据图像文本对齐（ITA）分数下每个帧与问题的匹配程度来选择帧。然而，我们发现 ITA 信号与 MLLM 的真实需求不太相符：它们的排名与下游准确度相关性较弱，甚至与超过 40% 的问题呈负相关，而 MLLM 的内部是/否判断会产生更强的信号。我们提出了 ProbFaS，这是一种无需训练和无需标签的概率管道，可以融合两个信号以进行关键帧选择。 ProbFaS 将密集的 ITA 分数视为廉价的、有偏差的测量，将稀疏的 MLLM 判断视为准确的、昂贵的测量，通过联合克里金法（一种多保真高斯过程）将它们统一起来，以校准所有帧的相关性。然后，时间行列点过程选择捕获相关性峰值的帧，同时保留时间覆盖范围。在 Video-MME、MLVU 和 LongVideoBench 中，ProbFaS 是 14 个最先进的免训练选择器中最准确的，并且在 15 个设置中的 13 个设置（8-128 帧）中进行均匀采样，其性能比最强的基线高出高达 3.1 个百分点。在 MLVU 和 LongVideoBench 上，32 个 ProbFaS 帧匹配或超过 128 帧的顶部基线，并且均匀采样高达 768 帧。",
+        "title_zh": "ProbFaS：通过多保真度校准进行 MLLM 的概率视频帧选择"
       },
+      "translation_prompt_fingerprint": "google_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.34903v1"
       ]
