@@ -93,7 +93,7 @@
       "created_at": "2026-11-25T10:55:19.284466+00:00"
     },
     "20261127T103501Z-a8acbfee-alert-f63f800b302b": {
-      "attempts": 0,
+      "attempts": 1,
       "created_at": "2026-11-27T10:35:01.449540+00:00"
     }
   },
@@ -562,7 +562,9 @@
       "send_attempts": 1
     },
     "2026-11-27": {
-      "alerts": [],
+      "alerts": [
+        "20261127T103501Z-a8acbfee-alert-f63f800b302b"
+      ],
       "full_ids": [],
       "normal_digests": [],
       "paper_ids": [
@@ -579,7 +581,7 @@
       ],
       "query_reservations": 0,
       "review_ids": [],
-      "send_attempts": 0
+      "send_attempts": 1
     }
   },
   "digests": {
@@ -8925,6 +8927,8 @@
     "20261127T103501Z-a8acbfee-alert-f63f800b302b": {
       "alert": true,
       "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-microsoft/archive/2026/11/27/20261127T103501Z-a8acbfee-alert-f63f800b302b.md",
+      "attempt_run": "20261127T103501Z-a8acbfee",
+      "attempt_started": "2026-11-27T10:47:13.495223+00:00",
       "chain_root": "20261127T103501Z-a8acbfee-alert-f63f800b302b",
       "chain_roots": [
         "20261127T103501Z-a8acbfee-alert-f63f800b302b"
@@ -8936,11 +8940,12 @@
       "empty": false,
       "items": [],
       "notification_hash": "e435482841df353e330fc1c0a1264f2c8806fe4d327c62ce99ef2b8b1a1ab7fc",
+      "quota_day": "2026-11-27",
       "recovery_of": [],
       "rendered": {},
       "run_id": "20261127T103501Z-a8acbfee",
       "schema_version": 1,
-      "status": "prepared"
+      "status": "sending"
     }
   },
   "papers": {
