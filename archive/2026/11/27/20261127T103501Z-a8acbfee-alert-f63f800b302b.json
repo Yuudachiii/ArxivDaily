@@ -1,0 +1,17 @@
+{
+  "alert": true,
+  "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-microsoft/archive/2026/11/27/20261127T103501Z-a8acbfee-alert-f63f800b302b.md",
+  "chain_roots": [
+    "20261127T103501Z-a8acbfee-alert-f63f800b302b"
+  ],
+  "content_hash": "f63f800b302be8b610243263f390252305a970baf460f53ba10c60c350b70ce2",
+  "day": "2026-11-27",
+  "digest_id": "20261127T103501Z-a8acbfee-alert-f63f800b302b",
+  "empty": false,
+  "items": [],
+  "notification_hash": "e435482841df353e330fc1c0a1264f2c8806fe4d327c62ce99ef2b8b1a1ab7fc",
+  "recovery_of": [],
+  "rendered": {},
+  "run_id": "20261127T103501Z-a8acbfee",
+  "schema_version": 1
+}
