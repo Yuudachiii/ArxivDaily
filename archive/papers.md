@@ -13,7 +13,7 @@
 | 2026-11-27 | Knowledge-Base Gradient Descent: Self-Structuring Learning through Question Answering | 知识库梯度下降：通过问答进行自我结构化学习 | [arXiv 2611.34841v1](https://arxiv.org/abs/2611.34841v1) |
 | 2026-11-27 | Proverbs As A Window On Collective Prescriptions | 谚语是集体处方的窗口 | [arXiv 2611.34832v1](https://arxiv.org/abs/2611.34832v1) |
 | 2026-11-27 | Repairing the Trustworthiness of Distilled Language Models | 修复蒸馏语言模型的可信度 | [arXiv 2611.34831v1](https://arxiv.org/abs/2611.34831v1) |
-| 2026-11-27 | Routeability Before Routing: Routeability Audit Protocol (RAP) and RouteabilityBench for Audited LLM Model Selection | 待翻译 | [arXiv 2611.34825v1](https://arxiv.org/abs/2611.34825v1) |
+| 2026-11-27 | Routeability Before Routing: Routeability Audit Protocol (RAP) and RouteabilityBench for Audited LLM Model Selection | 路由前的可路由性：可路由性审核协议 (RAP) 和用于审核 LLM 模型选择的 RouteabilityBench | [arXiv 2611.34825v1](https://arxiv.org/abs/2611.34825v1) |
 | 2026-11-25 | DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning | DiaCap：共同学习谁在何时发言以进行视听对话字幕 | [arXiv 2611.33153v1](https://arxiv.org/abs/2611.33153v1) |
 | 2026-11-25 | SAG-Mem-1.0 Technical Report | SAG-Mem-1.0技术报告 | [arXiv 2611.33124v1](https://arxiv.org/abs/2611.33124v1) |
 | 2026-11-25 | MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing | MetaFORGE：并行计算自动代码生成中利用优化的元学习框架 | [arXiv 2611.33119v1](https://arxiv.org/abs/2611.33119v1) |
