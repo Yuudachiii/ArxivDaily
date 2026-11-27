@@ -11,7 +11,7 @@
 | 2026-11-27 | A Survey of Security, Privacy, and Ethics of Large Language Models in Telecom | 电信大型语言模型的安全、隐私和道德调查 | [arXiv 2611.34868v1](https://arxiv.org/abs/2611.34868v1) |
 | 2026-11-27 | Put the World Back: Timestamps Matter in Time Series Reasoning | 让世界回归：时间戳在时间序列推理中很重要 | [arXiv 2611.34848v1](https://arxiv.org/abs/2611.34848v1) |
 | 2026-11-27 | Knowledge-Base Gradient Descent: Self-Structuring Learning through Question Answering | 知识库梯度下降：通过问答进行自我结构化学习 | [arXiv 2611.34841v1](https://arxiv.org/abs/2611.34841v1) |
-| 2026-11-27 | Proverbs As A Window On Collective Prescriptions | 待翻译 | [arXiv 2611.34832v1](https://arxiv.org/abs/2611.34832v1) |
+| 2026-11-27 | Proverbs As A Window On Collective Prescriptions | 谚语是集体处方的窗口 | [arXiv 2611.34832v1](https://arxiv.org/abs/2611.34832v1) |
 | 2026-11-27 | Repairing the Trustworthiness of Distilled Language Models | 待翻译 | [arXiv 2611.34831v1](https://arxiv.org/abs/2611.34831v1) |
 | 2026-11-27 | Routeability Before Routing: Routeability Audit Protocol (RAP) and RouteabilityBench for Audited LLM Model Selection | 待翻译 | [arXiv 2611.34825v1](https://arxiv.org/abs/2611.34825v1) |
 | 2026-11-25 | DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning | DiaCap：共同学习谁在何时发言以进行视听对话字幕 | [arXiv 2611.33153v1](https://arxiv.org/abs/2611.33153v1) |
