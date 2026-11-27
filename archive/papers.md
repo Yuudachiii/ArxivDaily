@@ -9,7 +9,7 @@
 | 2026-11-27 | ProbFaS: Probabilistic Video Frame Selection for MLLMs via Multi-Fidelity Calibration | ProbFaS：通过多保真度校准进行 MLLM 的概率视频帧选择 | [arXiv 2611.34903v1](https://arxiv.org/abs/2611.34903v1) |
 | 2026-11-27 | Stranger Things: When Objects Appear Without Their Typical Neighbors | 怪奇物语：当物体在没有典型邻居的情况下出现时 | [arXiv 2611.34881v1](https://arxiv.org/abs/2611.34881v1) |
 | 2026-11-27 | A Survey of Security, Privacy, and Ethics of Large Language Models in Telecom | 电信大型语言模型的安全、隐私和道德调查 | [arXiv 2611.34868v1](https://arxiv.org/abs/2611.34868v1) |
-| 2026-11-27 | Put the World Back: Timestamps Matter in Time Series Reasoning | 待翻译 | [arXiv 2611.34848v1](https://arxiv.org/abs/2611.34848v1) |
+| 2026-11-27 | Put the World Back: Timestamps Matter in Time Series Reasoning | 让世界回归：时间戳在时间序列推理中很重要 | [arXiv 2611.34848v1](https://arxiv.org/abs/2611.34848v1) |
 | 2026-11-27 | Knowledge-Base Gradient Descent: Self-Structuring Learning through Question Answering | 待翻译 | [arXiv 2611.34841v1](https://arxiv.org/abs/2611.34841v1) |
 | 2026-11-27 | Proverbs As A Window On Collective Prescriptions | 待翻译 | [arXiv 2611.34832v1](https://arxiv.org/abs/2611.34832v1) |
 | 2026-11-27 | Repairing the Trustworthiness of Distilled Language Models | 待翻译 | [arXiv 2611.34831v1](https://arxiv.org/abs/2611.34831v1) |
