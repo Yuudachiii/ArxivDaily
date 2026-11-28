@@ -1,0 +1,431 @@
+{
+  "alert": false,
+  "archive_url": "https://raw.githubusercontent.com/Yuudachiii/ArxivDaily/arxivdaily-state-google/archive/2026/11/28/20261128T095114Z-064ba6e4-c2720ca46789.md",
+  "chain_roots": [
+    "20261128T095114Z-064ba6e4-c2720ca46789"
+  ],
+  "content_hash": "c2720ca46789860a8d46f58cd5afeffee0802e79ec9a0fc093788d5273289760",
+  "day": "2026-11-28",
+  "digest_id": "20261128T095114Z-064ba6e4-c2720ca46789",
+  "empty": false,
+  "items": [
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Many languages of instruction in low- and middle-income countries (LMICs) are poorly represented in the data used to train language models. Before these models can support early-grade literacy in such languages, we need to know whether they hold the linguistic knowledge of each language that literacy teaching relies on. To test this, we present the Linguistic Knowledge Benchmark and the reproducible, largely automated pipeline that turns curriculum documents, teacher guides and pupil books into a vetted question set organised on a fixed grid of nine linguistic domains and seven grade levels. The pipeline combines LLM-driven source survey, feature consolidation, item generation and quality control with an item-selection step inspired by item response theory and a final expert review. We instantiate it for Kiswahili (Kenya; 135 items) and English (United Kingdom; 137 items) and evaluate 121 and 119 models respectively. Frontier models exceed 90% accuracy in both languages, but accuracy falls steeply for smaller and cheaper models, and more so in Kiswahili. The two best models under 10 billion parameters reach 91.7% and 73.0% in English but only 51.9% and 40.7% in Kiswahili, and the mean accuracy of models deployable on mobile and tablet hardware is 47% in English against 24% in Kiswahili. The models most practical for low-resource classrooms are therefore the least capable in the languages they would serve. We release a 20-item sample per language, all pipeline prompts, open-source code, and a public leaderboard. This is the first rung of a three-level evaluation ladder for measuring and generating decodable text to support foundational literacy.",
+        "authors": [
+          "Maxime Lelièvre",
+          "Alasdair Mackintosh",
+          "Dominic Andrews",
+          "Tobias Murray",
+          "Moritz Boos",
+          "Oliver G. B. Garrod"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34823v1",
+        "published": "2026-11-25T18:07:44+00:00",
+        "title": "The Linguistic Knowledge Benchmark: Do Language Models Know the Foundations of Early-Grade Literacy?",
+        "updated": "2026-11-25T18:07:44+00:00",
+        "version_id": "2611.34823v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "低收入和中等收入国家 (LMIC) 的许多教学语言在用于训练语言模型的数据中表现不佳。在这些模型能够支持此类语言的早期识字之前，我们需要知道它们是否拥有识字教学所依赖的每种语言的语言知识。为了测试这一点，我们提出了语言知识基准和可重复的、高度自动化的管道，将课程文档、教师指南和学生书籍转变为经过审查的问题集，该问题集组织在由九个语言领域和七个年级组成的固定网格上。该流程将法学硕士驱动的来源调查、特征整合、项目生成和质量控制与受项目响应理论和最终专家评审启发的项目选择步骤相结合。我们将其实例化为斯瓦希里语（肯尼亚；135 项）和英语（英国；137 项），并分别评估 121 和 119 个模型。 Frontier 模型在两种语言中的准确率均超过 90%，但对于较小和较便宜的模型，准确率急剧下降，在斯瓦希里语中更是如此。 100 亿个参数下的两个最佳模型在英语中达到 91.7% 和 73.0%，但在斯瓦希里语中仅为 51.9% 和 40.7%，而可部署在手机和平​​板电脑硬件上的模型的平均准确率在英语中为 47%，而在斯瓦希里语中为 24%。因此，对于资源匮乏的教室来说最实用的模型在其所服务的语言方面能力最差。我们发布了每种语言 20 项示例、所有管道提示、开源代码和公共排行榜。这是三级评估阶梯的第一级，用于测量和生成可解码文本以支持基础读写能力。",
+        "title_zh": "语言知识基准：语言模型知道早期识字的基础吗？"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Emotionally supportive interactions require large language models not only to avoid overtly harmful content, but also to recognize vulnerability-related risk, regulate their relational stance, preserve user agency, and provide context-appropriate support. Existing safety benchmarks often measure isolated violations, leaving unclear what underlying response competence their scores represent. We introduce VulnSafe, a Chinese capability assessment centered on Vulnerability-Aware Response Competence (VARC). VARC organizes relational safety into five complementary constructs: Risk Perception, Safety Preservation, Autonomy Protection, Supportive Response, and Boundary Management. Following an evidence-centered design, 41 scenarios elicit construct-relevant behavior through 2,050 balanced prompts and scenario-specific scoring rubrics. The assessment further separates proactive should-do behavior from prohibitive should-not behavior. Across eight representative LLMs, results show distinct competence profiles and larger disparities than prohibitive requirements. VulnSafe therefore makes relational safety interpretable as a multidimensional model capability rather than as refusal compliance alone.",
+        "authors": [
+          "Jiaming Luo",
+          "Jiacheng Ji",
+          "Haoan Jin",
+          "Xiaoning Sun",
+          "Qiuzhi Xiong",
+          "Yuxin Zhang",
+          "Hanhui Xu",
+          "Mengyue Wu"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34819v1",
+        "published": "2026-11-25T18:03:09+00:00",
+        "title": "VulnSafe: Measuring Vulnerability-Aware Relational Safety in Large Language Models",
+        "updated": "2026-11-25T18:03:09+00:00",
+        "version_id": "2611.34819v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "情感支持交互需要大型语言模型，不仅要避免明显有害的内容，还要识别与漏洞相关的风险、调节其关系立场、保护用户代理并提供适合上下文的支持。现有的安全基准通常衡量孤立的违规行为，从而不清楚它们的分数代表了什么潜在的响应能力。我们推出VulnSafe，一个以漏洞感知响应能力（VARC）为核心的中国能力评估。 VARC 将关系安全分为五个互补的结构：风险感知、安全保护、自主保护、支持响应和边界管理。遵循以证据为中心的设计，41 个场景通过 2,050 个平衡提示和特定于场景的评分标准来引发构建相关行为。该评估进一步区分了主动的“应该做”行为和禁止性的“不应该”行为。在八个具有代表性的法学硕士中，结果显示出不同的能力概况和比禁止性要求更大的差异。因此，VulnSafe 使关系安全可以解释为多维模型功能，而不仅仅是拒绝合规性。",
+        "title_zh": "VulnSafe：测量大型语言模型中的漏洞感知关系安全性"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Large language models increasingly replace real people in the AI development pipeline, as they are used to generate training dialogues at scale and to drive alignment and evaluation. However, out-of-the-box models produce monolingual and stylistically flat texts as synthetic user prompts, failing to replicate the real user-AI communication mechanics. We present PersonaFactory, an end-to-end pipeline that generates detailed user personas and uses them to augment existing user prompts from their point of view, producing a bank of over 740000 structured synthetic personas detailing their background and communication behaviors, and a corpus of roughly 1.24 million persona-styled synthetic conversations spanning 85 languages. We evaluate the effect of personal features on style adoption and intent preservation, using an LLM-judge and heuristic metrics to assess augmentation fidelity together with the downstream impact on assistant persona control through training data. Results show that our structured, attribute-based style representation enables per-axis control and better intent preservation at comparable style fidelity than free-text persona descriptions used in existing methods. A human expert evaluation found the augmented conversations plausible, with favorable ratings for intent preservation, style naturalness, and multilingual authenticity. Finally, PersonaFactory conversations achieve comparable performance to original training data on capability benchmarks, are preferred on real user prompts at equal reply length, and adapt their reply style more closely to users without explicit steering.",
+        "authors": [
+          "Bich Ngoc Doan",
+          "Hanna Yukhymenko",
+          "Imanol Schlag"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34785v1",
+        "published": "2026-11-25T17:42:31+00:00",
+        "title": "PersonaFactory: Stylistic User Prompt Augmentation with Synthetic Persona Bank",
+        "updated": "2026-11-25T17:42:31+00:00",
+        "version_id": "2611.34785v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "大型语言模型越来越多地取代人工智能开发流程中的真人，因为它们被用来大规模生成训练对话并驱动对齐和评估。然而，开箱即用的模型会根据合成用户提示生成单语且风格扁平的文本，无法复制真实的用户人工智能通信机制。我们推出了 PersonaFactory，这是一个端到端管道，可以生成详细的用户角色，并使用它们从用户的角度增强现有的用户提示，生成超过 740000 个详细描述其背景和通信行为的结构化合成角色库，以及涵盖 85 种语言的大约 124 万个角色风格的合成对话的语料库。我们评估个人特征对风格采用和意图保留的影响，使用法学硕士法官和启发式指标来评估增强保真度以及通过训练数据对助理角色控制的下游影响。结果表明，与现有方法中使用的自由文本角色描述相比，我们的结构化、基于属性的样式表示能够在相当的样式保真度下实现每轴控制和更好的意图保存。人类专家评估发现增强对话是合理的，在意图保留、风格自然性和多语言真实性方面获得了良好的评价。最后，PersonaFactory 对话在能力基准上实现了与原始训练数据相当的性能，在相同回复长度的真实用户提示上更受青睐，并且在没有明确指导的情况下更接近用户地调整其回复风格。",
+        "title_zh": "PersonaFactory：使用合成角色库增强风格用户提示"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Large language models (LLMs) are transforming the economics of intrusion by reducing the attacker's cost to scan and adapt, while tempting defenders into unbounded compute. We argue that cyber deception should be judged by the cost exchange it imposes, not by realism or detection, and that the primitive making that exchange favorable is adversary-specific persistent state. Rather than a honeypot that resets or merges sessions, each recognized adversary re-enters the world it believes it has compromised, kept coherent with its own past actions and isolated from every other adversary, while the language model acts only as a constrained renderer of explicit state, never as its store. We formalize the trade-off as a Deception Exchange Rate (DER), relating mission-weighted adversary effort burned to defender resources spent, and instantiate it in an SSH honeypot pairing Cowrie with a local LLM. In this paper, we focus on the defender-side evaluation of that exchange, while specifying, but not yet measuring, per-adversary state and the adversary side of the DER. Across five open-weight models, deterministic-layer and prompt optimizations cut per-session defender cost by around 63% against a naive all-LLM decoy.",
+        "authors": [
+          "Alessandro Cantelli-Forti",
+          "Isabella Marasco",
+          "Hosam Alamleh",
+          "Giada Boschi",
+          "Michele Colajanni"
+        ],
+        "categories": [
+          "cs.CR",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34770v1",
+        "published": "2026-11-25T17:35:27+00:00",
+        "title": "Make the Adversary Spend More: Stateful Deception as a Cost-Exchange Primitive for AI-Era Cyber Defense",
+        "updated": "2026-11-25T17:35:27+00:00",
+        "version_id": "2611.34770v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "大型语言模型 (LLM) 正在通过降低攻击者扫描和适应的成本来改变入侵的经济性，同时吸引防御者进行无限计算。我们认为，网络欺骗应该通过其所施加的成本交换来判断，而不是通过现实性或检测来判断，并且使这种交换有利的原始是对手特定的持久状态。每个公认的对手不是重置或合并会话的蜜罐，而是重新进入它认为已经妥协的世界，与自己过去的行为保持一致，并与所有其他对手隔离，而语言模型仅充当显式状态的受限呈现器，而不是其存储。我们将这种权衡形式化为欺骗汇率（DER），将任务加权的对手消耗的努力与消耗的防御资源联系起来，并在将 Cowrie 与当地法学硕士配对的 SSH 蜜罐中实例化它。在本文中，我们重点关注防御方对该交换的评估，同时指定但尚未测量每个对手的状态和 DER 的对手方。在五个开放权重模型中，确定性层和即时优化将每个会话的防御者成本降低了约 63%，而这与单纯的全 LLM 诱饵相比。",
+        "title_zh": "让对手花费更多：状态欺骗作为人工智能时代网络防御的成本交换原语"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "LLM agents increasingly rely on external memory, yet they still hallucinate about what they remember. Often the correct memory is retrieved and placed in the prompt, but the answer contradicts it or the memory is applied to the wrong question. We call these use-time memory hallucinations. Across five open models, we find that they arise from the conflict between parametric knowledge and external memory and take three forms: memory-ignoring, where the model returns to a stale fact in its weights (up to 46% of queries); memory-misapplying, where it attributes the memory to unrelated entities (up to 24%, and 49% when retrieval is combined with weight editing); and version confusion, where 53% of answers about revised facts assert the superseded value when both versions remain stored. We propose TASK memory, which goes beyond text-only memory by combining a Text note with Activation Steering and Knowledge editing that share one in-model address. The text holds the content. A removable knowledge edit supplies the address through its subject key and supports multi-hop composition. A pair of steering vectors decides, query by query, whether the model adopts the memory or keeps its own answer; the vectors store no content and control how the text memory is used. On frozen models under a pre-registered, test-once protocol, TASK reduces memory-ignoring hallucinations to at most 1.5% in all ten model-dataset cells and cuts neighbour misuse from 39.2% to 7.5% (+10.8 pp composite on CounterFact). It improves a 300-memory library over BM25 RAG by 16.4 pp, an advantage that holds at 3,000 memories, resolves fact revisions without fact IDs, and adds 7.5 pp of multi-hop accuracy on MQuAKE. 21 of 23 cross-model comparisons (8B-27B, four families) are significant, and TASK beats three recent context-steering methods in 9 of 10 model-dataset cells.",
+        "authors": [
+          "Jinkun Zhao",
+          "Wenjun Wu"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34762v1",
+        "published": "2026-11-25T17:30:37+00:00",
+        "title": "TASK Memory: Beyond Text-Only Memory with Activation Steering and Knowledge Editing against Memory Hallucination",
+        "updated": "2026-11-25T17:30:37+00:00",
+        "version_id": "2611.34762v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_agent",
+        "llm_rag",
+        "llm_safety",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "法学硕士代理人越来越依赖外部记忆，但他们仍然对自己记忆的内容产生幻觉。通常，正确的记忆会被检索并放入提示中，但答案与之相矛盾，或者记忆被应用于错误的问题。我们将这些称为使用时记忆幻觉。在五个开放模型中，我们发现它们源于参数化知识和外部记忆之间的冲突，并采取三种形式：记忆忽略，模型在其权重中返回陈旧的事实（高达 46% 的查询）；记忆误用，它将记忆归因于不相关的实体（高达 24%，当检索与权重编辑相结合时高达 49%）；版本混乱，其中 53% 有关修订事实的答案在两个版本均保留存储时断言被取代的值。我们提出了任务记忆，它超越了纯文本记忆，将文本注释与共享一个模型内地址的激活引导和知识编辑相结合。文本包含内容。可移动的知识编辑通过其主题密钥提供地址并支持多跳组合。一对引导向量逐个查询决定模型是采用记忆还是保留自己的答案；矢量不存储内容并控制文本内存的使用方式。在预先注册的一次性测试协议下的冻结模型上，TASK 将所有 10 个模型数据集单元中忽略记忆的幻觉减少到最多 1.5%，并将邻居误用从 39.2% 减少到 7.5%（CounterFact 上的综合结果+10.8 pp）。与 BM25 RAG 相比，它将 300 内存库提高了 16.4 pp，这一优势可保持 3,000 内存，解决没有事实 ID 的事实修订问题，并在 MQuAKE 上增加 7.5 pp 的多跳精度。 23 个跨模型比较中的 21 个（8B-27B，四个系列）是显着的，并且 TASK 在 10 个模型数据集单元中的 9 个中击败了最近的三种上下文引导方法。",
+        "title_zh": "任务记忆：超越纯文本记忆，通过激活引导和知识编辑来对抗记忆幻觉"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Preference-aligned LLMs can exhibit mode collapse, concentrating their output distributions around a narrow set of high-reward responses. This limits creative generation, which requires quality, novelty, and diversity. Existing test-time methods often emphasize diversity, giving less attention to whether individual responses are both high-quality and novel. This distinction matters in practical use, where users may seek a single compelling, original response. We formalize creative generation as a multi-objective distributional optimization problem and introduce SEPO, a training-free framework for System Prompt Ensemble Optimization. The framework combines prompt evolution with greedy max-min selection to identify behaviorally distinct system prompts under a quality constraint, then uniformly samples one prompt per response at inference time. Across four creative generation tasks with increasing quality requirements and three open-weight models, SEPO ranks first in 8 of 12 settings on the harmonic mean of quality, diversity, and novelty, while no baseline leads in more than two. On average, it raises LLM-judged diversity from 1.92 to 3.43 and novelty from 1.00 to 3.34 over base sampling (1-5 scale), with quality decreasing from 3.72 to 3.30. We further show that expanding the optimized ensemble increases separation among prompt-conditioned response distributions. These results support system prompt ensemble optimization as a promising approach to improving LLM creativity at inference time.",
+        "authors": [
+          "Daiwei Chen",
+          "Anda He",
+          "Binwei Yao",
+          "Junjie Hu",
+          "Ramya Korlakai Vinayak"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34760v1",
+        "published": "2026-11-25T17:29:33+00:00",
+        "title": "One Model, Many Modes: Evolving System Prompt Ensembles for Creative Generation",
+        "updated": "2026-11-25T17:29:33+00:00",
+        "version_id": "2611.34760v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_safety",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "偏好一致的法学硕士可能会表现出模式崩溃，将其输出分布集中在一组狭窄的高回报响应上。这限制了创造性的产生，而创造性的产生需要质量、新颖性和多样性。现有的测试方法通常强调多样性，而较少关注个体反应是否高质量和新颖。这种区别在实际使用中很重要，用户可能会寻求单一令人信服的原创响应。我们将创意生成形式化为多目标分布优化问题，并引入 SEPO，这是一种用于系统提示集成优化的免训练框架。该框架将提示进化与贪婪最大-最小选择相结合，以在质量约束下识别行为不同的系统提示，然后在推理时对每个响应统一采样一个提示。在质量要求不断提高的四项创意生成任务和三个开放权重模型中，SEPO 在质量、多样性和新颖性的调和平均值方面在 12 个设置中的 8 个设置中排名第一，而没有基线领先超过两个。平均而言，与基础抽样（1-5 级）相比，LLM 判断的多样性从 1.92 提高到 3.43，新颖性从 1.00 提高到 3.34，质量从 3.72 降低到 3.30。我们进一步表明，扩展优化的集成会增加提示条件响应分布之间的分离。这些结果支持系统提示集成优化是提高 LLM 推理时创造力的有前途的方法。",
+        "title_zh": "一种模型，多种模式：不断发展的系统提示集成以实现创意生成"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Mathematicians solve problems faster when they know the right theory. We ask how much a stated theory is worth to a large language model (LLM) solver, and whether a model can write that theory itself. In a length-matched protocol, adding the right theory to the context of Qwen3-14B raises pass@1 on pattern waiting-time problems from 0.37 to 0.83 and cuts the median tokens of correct solutions from 10.2k to 6.3k, while worked examples of the same length do not help. The gain shrinks as the solver and its token budget grow (+0.46, +0.26, +0.07), and at a long budget it comes almost entirely from finishing within budget: solutions that finish are correct 98--100\\% of the time in every condition. To separate induction from recall, we plant unpublished theorems in custom probability families and measure how much of the oracle theory's gain an induced theory recovers. A strong open model, required to explore the training problems with code before writing, recovers 60\\% of the gain on one planted family, 48\\% on a second, and almost none on a third, where it finds the right form but not the condition that makes the form computable. No single induced note is complete, but a strong model that merges several notes recovers 61\\% of the gain on the classic family, above the best single note (47\\%). Theories are worth the reasoning they save, and models can find their pieces before they can assemble them.",
+        "authors": [
+          "Jun Gao",
+          "Shuchao Bi"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34751v1",
+        "published": "2026-11-25T17:25:56+00:00",
+        "title": "What Is a Theory Worth to an LLM Solver? Measuring, Inducing, and Merging Theories in Context",
+        "updated": "2026-11-25T17:25:56+00:00",
+        "version_id": "2611.34751v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "当数学家知道正确的理论时，他们可以更快地解决问题。我们询问一个既定理论对于大型语言模型（LLM）求解器来说价值多少，以及模型是否可以自己编写该理论。在长度匹配协议中，将正确的理论添加到 Qwen3-14B 的上下文中会将模式等待时间问题的 pass@1 从 0.37 提高到 0.83，并将正确解决方案的中值标记从 10.2k 削减到 6.3k，而相同长度的工作示例则无济于事。随着求解器及其代币预算的增长（+0.46、+0.26、+0.07），增益会缩小，并且在较长的预算下，增益几乎完全来自于在预算内完成：在每种情况下，完成的解决方案在 98--100% 的时间内都是正确的。为了将归纳与回忆分开，我们将未发表的定理放入自定义概率族中，并测量归纳理论恢复了多少预言理论的增益。一个强大的开放模型，需要在编写代码之前探索代码的训练问题，在一个种植族上恢复了 60% 的增益，在第二个族上恢复了 48% 的增益，在第三个族上几乎没有恢复，它找到了正确的形式，但没有找到使形式可计算的条件。没有一个单一的诱导音符是完整的，但合并多个音符的强大模型可以恢复经典系列的 61\\% 增益，高于最佳单一音符 (47\\%)。理论值得他们保存推理，模型可以在组装之前找到它们的碎片。",
+        "title_zh": "理论对 LLM 求解者有何价值？在上下文中测量、归纳和融合理论"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "LLM agents have made remarkable progress in robot manipulation, yet they suffer from expensive inference, dense step-by-step control, and tool bottlenecks. We introduce SOLVE, a training-free, versatile and efficient agent policy: a multimodal LLM agent writes a sparse, ordered sequence of 6-DoF end-effector keyposes per call, observes the result, and writes the next, while a motion planner interpolates between them. The agent decides the number and spacing of keyposes for both fast long-range motion and fine-grained manipulation. This granularity matches the sparsity of teleoperated manipulation: most demonstrations in DROID can be compressed into a few keyposes instead of dense actions. SOLVE grounds keyposes with sparse depth queries answered by noisy sources, such as multi-view triangulation, stereo, or monocular depth, and copes with that noise itself. It also improves from execution feedback, reflecting on its own rollouts and distilling a few rules per task. SOLVE reaches state-of-the-art performance of 74.5% on RoboDojo and 84.5% on RoboLab, with only $1.7 per episode on average, 12x less than previous dense-control agent policies. On a real robot, the same agent achieves an 88% success rate (75 of 85 episodes) over 16 challenging zero-shot tasks. Our project page is at https://serenos.github.io/solve-website.",
+        "authors": [
+          "Xiang Li",
+          "Hongyu Zhou",
+          "Ya-Li Li",
+          "Tao Li",
+          "Rui Zhang",
+          "Junjie Lai",
+          "Weihua Zhang",
+          "Shengjin Wang"
+        ],
+        "categories": [
+          "cs.RO",
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34750v1",
+        "published": "2026-11-25T17:25:17+00:00",
+        "title": "SOLVE: Sparse, Ordered Keyposes Make LLM Agents Versatile and Efficient Robot Manipulator",
+        "updated": "2026-11-25T17:25:17+00:00",
+        "version_id": "2611.34750v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_agent",
+        "llm_multimodal",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "LLM 代理在机器人操作方面取得了显着进展，但它们面临昂贵的推理、密集的逐步控制和工具瓶颈。我们引入了 SOLVE，这是一种免训练、多功能且高效的代理策略：多模态 LLM 代理每次调用都会写入稀疏、有序的 6-DoF 末端执行器关键姿势序列，观察结果并写入下一个结果，同时运动规划器在它们之间进行插值。代理决定快速长距离运动和细粒度操作的关键姿势的数量和间距。这种粒度与远程操作的稀疏性相匹配：DROID 中的大多数演示都可以压缩为几个关键动作，而不是密集的动作。 SOLVE 通过由噪声源（例如多视图三角测量、立体或单目深度）回答的稀疏深度查询来确定关键点，并处理噪声本身。它还从执行反馈中进行改进，反思自己的部署并提炼每个任务的一些规则。 SOLVE 在 RoboDojo 上达到了 74.5% 的最先进性能，在 RoboLab 上达到了 84.5% 的最先进性能，平均每集只需 1.7 美元，比以前的密集控制代理策略低 12 倍。在真实的机器人上，同一智能体在 16 个具有挑战性的零样本任务中实现了 88% 的成功率（85 集中的 75 集）。我们的项目页面位于 https://serenos.github.io/solve-website。",
+        "title_zh": "解决：稀疏、有序的按键使 LLM 代理成为多功能且高效的机器人操纵器"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Remote sensing scene understanding requires multimodal large language models (MLLMs) to interpret queried targets in relation to nearby objects and surrounding structures, which serve as spatial references or define the scope of an answer. However, standard answers and bounding boxes often leave these contextual relationships implicit. Thus, we construct GeoContext-5K to make them explicit in 5,394 training pairs for visual question answering (VQA), with spatial cues, visual facts, and supporting regions. GeOPD uses these annotations for on-policy distillation, guiding a frozen teacher with region marks on the full image and a visual fact while preserving surrounding spatial references. It prioritizes teacher corrections that agree with the shift in the student's next token distribution when evidence is restored. A complementary objective weights the contrast between the student's scores on the two views by how much masking lowers the teacher's log probability for the same sampled token. Experiments on five remote sensing VQA benchmarks show that GeOPD outperforms the evaluated open-source MLLMs and matched post-training baselines, improving over the 4B and 9B base models by 5.81 and 2.97 percentage points on average. The dataset and code will be publicly released at https://github.com/YeeCharm/GeOPD.",
+        "authors": [
+          "Yichang Luo",
+          "Hourun Zhu",
+          "Shixiong Liu",
+          "Kan Wei",
+          "Shi Liang",
+          "Yidan Zhang",
+          "Lei Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34700v1",
+        "published": "2026-11-25T16:58:12+00:00",
+        "title": "Seeing the Right Context: Grounded On-Policy Distillation for Remote Sensing",
+        "updated": "2026-11-25T16:58:12+00:00",
+        "version_id": "2611.34700v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_training",
+        "llm_efficiency",
+        "llm_eval",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "遥感场景理解需要多模态大语言模型 (MLLM) 来解释与附近物体和周围结构相关的查询目标，这些目标用作空间参考或定义答案的范围。然而，标准答案和边界框通常会隐含这些上下文关系。因此，我们构建了 GeoContext-5K，使它们在 5,394 个视觉问答 (VQA) 训练对中变得明确，并具有空间线索、视觉事实和支持区域。 GeOPD 使用这些注释进行策略蒸馏，通过完整图像上的区域标记和视觉事实来指导冻结的教师，同时保留周围的空间参考。当证据恢复时，它会优先考虑与学生下一个令牌分布的变化一致的教师更正。补充目标通过掩蔽降低教师对同一采样标记的对数概率的程度来衡量学生在两个视图上的分数之间的对比。对五个遥感 VQA 基准的实验表明，GeOPD 的性能优于评估的开源 MLLM 并匹配训练后基线，比 4B 和 9B 基本模型平均提高了 5.81 和 2.97 个百分点。数据集和代码将在https://github.com/YeeCharm/GeOPD公开发布。",
+        "title_zh": "看到正确的背景：遥感的基础政策蒸馏"
+      }
+    },
+    {
+      "modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "paper": {
+        "abstract": "Compression based on singular value decomposition (SVD) often requires subsequent fine-tuning or weight correction to mitigate performance degradation. Budget-specific optimization must be repeated for different compression ratios. We introduce LLift, which prepares a pretrained model for SVD compression across ratios without further fine-tuning. LLift fine-tunes a low-rank approximation at a single ratio using the original model as a teacher. We merge the learned updates into the original weights while preserving the complementary components excluded from the training forward pass. We apply SVD to the prepared model's target matrices and reuse the decompositions at different truncation ranks. On LLaMA-7B, we demonstrate accuracy gains across three compression ratios using a single prepared model. The gains extend across model families, model sizes, and SVD compression operators. We analyze gradients and an early training update to provide local evidence that updates learned at one ratio can benefit compression at other ratios. These results show that LLift can improve compression across deployment budgets without fine-tuning each compressed model separately.",
+        "authors": [
+          "Chenyue Fang",
+          "Danila Mishin",
+          "Babak Falsafi"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34667v1",
+        "published": "2026-11-25T16:35:40+00:00",
+        "title": "Learning to Be Truncated: Preparing LLM Checkpoints for SVD Compression",
+        "updated": "2026-11-25T16:35:40+00:00",
+        "version_id": "2611.34667v1"
+      },
+      "recovery_of": "",
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "summary": null,
+      "tier": "translation",
+      "translation": {
+        "abstract_zh": "基于奇异值分解 (SVD) 的压缩通常需要后续微调或权重校正以减轻性能下降。必须针对不同的压缩比重复针对预算的优化。我们引入了 LLift，它为跨比率的 SVD 压缩准备了一个预训练模型，无需进一步微调。 LLift 使用原始模型作为教师，以单一比率微调低秩近似。我们将学习到的更新合并到原始权重中，同时保留从训练前向传递中排除的补充组件。我们将 SVD 应用于准备好的模型的目标矩阵，并在不同的截断等级上重用分解。在 LLaMA-7B 上，我们使用单个准备好的模型展示了三种压缩比的精度增益。收益涵盖模型系列、模型大小和 SVD 压缩运算符。我们分析梯度和早期训练更新，以提供局部证据，证明以一种比率学习的更新可以有利于其他比率的压缩。这些结果表明，LLift 可以改进部署预算的压缩，而无需单独微调每个压缩模型。",
+        "title_zh": "学习被截断：为 SVD 压缩准备 LLM 检查点"
+      }
+    }
+  ],
+  "notification_hash": "0d2e546f185c411bb817b4e78fd8df3c155030b6fbd9e88b437ab706b8807f5d",
+  "recovery_of": [],
+  "rendered": {
+    "2611.34667": "rendered_inline_translation",
+    "2611.34700": "rendered_inline_translation",
+    "2611.34750": "rendered_inline_translation",
+    "2611.34751": "rendered_inline_translation",
+    "2611.34760": "rendered_inline_translation",
+    "2611.34762": "rendered_inline_translation",
+    "2611.34770": "rendered_inline_translation",
+    "2611.34785": "rendered_inline_translation",
+    "2611.34819": "rendered_inline_translation",
+    "2611.34823": "rendered_inline_translation"
+  },
+  "run_id": "20261128T095114Z-064ba6e4",
+  "schema_version": 1
+}
