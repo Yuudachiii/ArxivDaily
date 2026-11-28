@@ -83385,7 +83385,8 @@
     },
     "2611.34762": {
       "attempts": {
-        "selection": 1
+        "selection": 1,
+        "translation": 1
       },
       "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
       "decision": {
@@ -83444,6 +83445,11 @@
         "llm_core"
       ],
       "stage": "ready",
+      "stage_started": {
+        "at": "2026-11-28T09:51:14.932488+00:00",
+        "run_id": "20261128T095114Z-064ba6e4",
+        "stage": "translation"
+      },
       "versions": [
         "2611.34762v1"
       ]
