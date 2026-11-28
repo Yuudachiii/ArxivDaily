@@ -99,7 +99,7 @@
   },
   "collection": {
     "initial_floor": "2026-11-02T02:41:59.424237+00:00",
-    "last_complete_end": "2026-11-27T10:35:00.827991+00:00"
+    "last_complete_end": "2026-11-28T09:51:14.932488+00:00"
   },
   "daily": {
     "2026-11-03": {
@@ -582,6 +582,15 @@
       "query_reservations": 0,
       "review_ids": [],
       "send_attempts": 1
+    },
+    "2026-11-28": {
+      "alerts": [],
+      "full_ids": [],
+      "normal_digests": [],
+      "paper_ids": [],
+      "query_reservations": 0,
+      "review_ids": [],
+      "send_attempts": 0
     }
   },
   "digests": {
@@ -83034,6 +83043,338 @@
         "2611.33153v1"
       ]
     },
+    "2611.34667": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "paper": {
+        "abstract": "Compression based on singular value decomposition (SVD) often requires subsequent fine-tuning or weight correction to mitigate performance degradation. Budget-specific optimization must be repeated for different compression ratios. We introduce LLift, which prepares a pretrained model for SVD compression across ratios without further fine-tuning. LLift fine-tunes a low-rank approximation at a single ratio using the original model as a teacher. We merge the learned updates into the original weights while preserving the complementary components excluded from the training forward pass. We apply SVD to the prepared model's target matrices and reuse the decompositions at different truncation ranks. On LLaMA-7B, we demonstrate accuracy gains across three compression ratios using a single prepared model. The gains extend across model families, model sizes, and SVD compression operators. We analyze gradients and an early training update to provide local evidence that updates learned at one ratio can benefit compression at other ratios. These results show that LLift can improve compression across deployment budgets without fine-tuning each compressed model separately.",
+        "authors": [
+          "Chenyue Fang",
+          "Danila Mishin",
+          "Babak Falsafi"
+        ],
+        "categories": [
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34667v1",
+        "published": "2026-11-25T16:35:40+00:00",
+        "title": "Learning to Be Truncated: Preparing LLM Checkpoints for SVD Compression",
+        "updated": "2026-11-25T16:35:40+00:00",
+        "version_id": "2611.34667v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.34667v1"
+      ]
+    },
+    "2611.34700": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "paper": {
+        "abstract": "Remote sensing scene understanding requires multimodal large language models (MLLMs) to interpret queried targets in relation to nearby objects and surrounding structures, which serve as spatial references or define the scope of an answer. However, standard answers and bounding boxes often leave these contextual relationships implicit. Thus, we construct GeoContext-5K to make them explicit in 5,394 training pairs for visual question answering (VQA), with spatial cues, visual facts, and supporting regions. GeOPD uses these annotations for on-policy distillation, guiding a frozen teacher with region marks on the full image and a visual fact while preserving surrounding spatial references. It prioritizes teacher corrections that agree with the shift in the student's next token distribution when evidence is restored. A complementary objective weights the contrast between the student's scores on the two views by how much masking lowers the teacher's log probability for the same sampled token. Experiments on five remote sensing VQA benchmarks show that GeOPD outperforms the evaluated open-source MLLMs and matched post-training baselines, improving over the 4B and 9B base models by 5.81 and 2.97 percentage points on average. The dataset and code will be publicly released at https://github.com/YeeCharm/GeOPD.",
+        "authors": [
+          "Yichang Luo",
+          "Hourun Zhu",
+          "Shixiong Liu",
+          "Kan Wei",
+          "Shi Liang",
+          "Yidan Zhang",
+          "Lei Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34700v1",
+        "published": "2026-11-25T16:58:12+00:00",
+        "title": "Seeing the Right Context: Grounded On-Policy Distillation for Remote Sensing",
+        "updated": "2026-11-25T16:58:12+00:00",
+        "version_id": "2611.34700v1"
+      },
+      "rule_hits": [
+        "llm_training",
+        "llm_efficiency",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.34700v1"
+      ]
+    },
+    "2611.34750": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "paper": {
+        "abstract": "LLM agents have made remarkable progress in robot manipulation, yet they suffer from expensive inference, dense step-by-step control, and tool bottlenecks. We introduce SOLVE, a training-free, versatile and efficient agent policy: a multimodal LLM agent writes a sparse, ordered sequence of 6-DoF end-effector keyposes per call, observes the result, and writes the next, while a motion planner interpolates between them. The agent decides the number and spacing of keyposes for both fast long-range motion and fine-grained manipulation. This granularity matches the sparsity of teleoperated manipulation: most demonstrations in DROID can be compressed into a few keyposes instead of dense actions. SOLVE grounds keyposes with sparse depth queries answered by noisy sources, such as multi-view triangulation, stereo, or monocular depth, and copes with that noise itself. It also improves from execution feedback, reflecting on its own rollouts and distilling a few rules per task. SOLVE reaches state-of-the-art performance of 74.5% on RoboDojo and 84.5% on RoboLab, with only $1.7 per episode on average, 12x less than previous dense-control agent policies. On a real robot, the same agent achieves an 88% success rate (75 of 85 episodes) over 16 challenging zero-shot tasks. Our project page is at https://serenos.github.io/solve-website.",
+        "authors": [
+          "Xiang Li",
+          "Hongyu Zhou",
+          "Ya-Li Li",
+          "Tao Li",
+          "Rui Zhang",
+          "Junjie Lai",
+          "Weihua Zhang",
+          "Shengjin Wang"
+        ],
+        "categories": [
+          "cs.RO",
+          "cs.CV"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34750v1",
+        "published": "2026-11-25T17:25:17+00:00",
+        "title": "SOLVE: Sparse, Ordered Keyposes Make LLM Agents Versatile and Efficient Robot Manipulator",
+        "updated": "2026-11-25T17:25:17+00:00",
+        "version_id": "2611.34750v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_multimodal",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.34750v1"
+      ]
+    },
+    "2611.34751": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "paper": {
+        "abstract": "Mathematicians solve problems faster when they know the right theory. We ask how much a stated theory is worth to a large language model (LLM) solver, and whether a model can write that theory itself. In a length-matched protocol, adding the right theory to the context of Qwen3-14B raises pass@1 on pattern waiting-time problems from 0.37 to 0.83 and cuts the median tokens of correct solutions from 10.2k to 6.3k, while worked examples of the same length do not help. The gain shrinks as the solver and its token budget grow (+0.46, +0.26, +0.07), and at a long budget it comes almost entirely from finishing within budget: solutions that finish are correct 98--100\\% of the time in every condition. To separate induction from recall, we plant unpublished theorems in custom probability families and measure how much of the oracle theory's gain an induced theory recovers. A strong open model, required to explore the training problems with code before writing, recovers 60\\% of the gain on one planted family, 48\\% on a second, and almost none on a third, where it finds the right form but not the condition that makes the form computable. No single induced note is complete, but a strong model that merges several notes recovers 61\\% of the gain on the classic family, above the best single note (47\\%). Theories are worth the reasoning they save, and models can find their pieces before they can assemble them.",
+        "authors": [
+          "Jun Gao",
+          "Shuchao Bi"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34751v1",
+        "published": "2026-11-25T17:25:56+00:00",
+        "title": "What Is a Theory Worth to an LLM Solver? Measuring, Inducing, and Merging Theories in Context",
+        "updated": "2026-11-25T17:25:56+00:00",
+        "version_id": "2611.34751v1"
+      },
+      "rule_hits": [
+        "llm_reasoning",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.34751v1"
+      ]
+    },
+    "2611.34760": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "paper": {
+        "abstract": "Preference-aligned LLMs can exhibit mode collapse, concentrating their output distributions around a narrow set of high-reward responses. This limits creative generation, which requires quality, novelty, and diversity. Existing test-time methods often emphasize diversity, giving less attention to whether individual responses are both high-quality and novel. This distinction matters in practical use, where users may seek a single compelling, original response. We formalize creative generation as a multi-objective distributional optimization problem and introduce SEPO, a training-free framework for System Prompt Ensemble Optimization. The framework combines prompt evolution with greedy max-min selection to identify behaviorally distinct system prompts under a quality constraint, then uniformly samples one prompt per response at inference time. Across four creative generation tasks with increasing quality requirements and three open-weight models, SEPO ranks first in 8 of 12 settings on the harmonic mean of quality, diversity, and novelty, while no baseline leads in more than two. On average, it raises LLM-judged diversity from 1.92 to 3.43 and novelty from 1.00 to 3.34 over base sampling (1-5 scale), with quality decreasing from 3.72 to 3.30. We further show that expanding the optimized ensemble increases separation among prompt-conditioned response distributions. These results support system prompt ensemble optimization as a promising approach to improving LLM creativity at inference time.",
+        "authors": [
+          "Daiwei Chen",
+          "Anda He",
+          "Binwei Yao",
+          "Junjie Hu",
+          "Ramya Korlakai Vinayak"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34760v1",
+        "published": "2026-11-25T17:29:33+00:00",
+        "title": "One Model, Many Modes: Evolving System Prompt Ensembles for Creative Generation",
+        "updated": "2026-11-25T17:29:33+00:00",
+        "version_id": "2611.34760v1"
+      },
+      "rule_hits": [
+        "llm_safety",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.34760v1"
+      ]
+    },
+    "2611.34762": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "paper": {
+        "abstract": "LLM agents increasingly rely on external memory, yet they still hallucinate about what they remember. Often the correct memory is retrieved and placed in the prompt, but the answer contradicts it or the memory is applied to the wrong question. We call these use-time memory hallucinations. Across five open models, we find that they arise from the conflict between parametric knowledge and external memory and take three forms: memory-ignoring, where the model returns to a stale fact in its weights (up to 46% of queries); memory-misapplying, where it attributes the memory to unrelated entities (up to 24%, and 49% when retrieval is combined with weight editing); and version confusion, where 53% of answers about revised facts assert the superseded value when both versions remain stored. We propose TASK memory, which goes beyond text-only memory by combining a Text note with Activation Steering and Knowledge editing that share one in-model address. The text holds the content. A removable knowledge edit supplies the address through its subject key and supports multi-hop composition. A pair of steering vectors decides, query by query, whether the model adopts the memory or keeps its own answer; the vectors store no content and control how the text memory is used. On frozen models under a pre-registered, test-once protocol, TASK reduces memory-ignoring hallucinations to at most 1.5% in all ten model-dataset cells and cuts neighbour misuse from 39.2% to 7.5% (+10.8 pp composite on CounterFact). It improves a 300-memory library over BM25 RAG by 16.4 pp, an advantage that holds at 3,000 memories, resolves fact revisions without fact IDs, and adds 7.5 pp of multi-hop accuracy on MQuAKE. 21 of 23 cross-model comparisons (8B-27B, four families) are significant, and TASK beats three recent context-steering methods in 9 of 10 model-dataset cells.",
+        "authors": [
+          "Jinkun Zhao",
+          "Wenjun Wu"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34762v1",
+        "published": "2026-11-25T17:30:37+00:00",
+        "title": "TASK Memory: Beyond Text-Only Memory with Activation Steering and Knowledge Editing against Memory Hallucination",
+        "updated": "2026-11-25T17:30:37+00:00",
+        "version_id": "2611.34762v1"
+      },
+      "rule_hits": [
+        "llm_agent",
+        "llm_rag",
+        "llm_safety",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.34762v1"
+      ]
+    },
+    "2611.34770": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "paper": {
+        "abstract": "Large language models (LLMs) are transforming the economics of intrusion by reducing the attacker's cost to scan and adapt, while tempting defenders into unbounded compute. We argue that cyber deception should be judged by the cost exchange it imposes, not by realism or detection, and that the primitive making that exchange favorable is adversary-specific persistent state. Rather than a honeypot that resets or merges sessions, each recognized adversary re-enters the world it believes it has compromised, kept coherent with its own past actions and isolated from every other adversary, while the language model acts only as a constrained renderer of explicit state, never as its store. We formalize the trade-off as a Deception Exchange Rate (DER), relating mission-weighted adversary effort burned to defender resources spent, and instantiate it in an SSH honeypot pairing Cowrie with a local LLM. In this paper, we focus on the defender-side evaluation of that exchange, while specifying, but not yet measuring, per-adversary state and the adversary side of the DER. Across five open-weight models, deterministic-layer and prompt optimizations cut per-session defender cost by around 63% against a naive all-LLM decoy.",
+        "authors": [
+          "Alessandro Cantelli-Forti",
+          "Isabella Marasco",
+          "Hosam Alamleh",
+          "Giada Boschi",
+          "Michele Colajanni"
+        ],
+        "categories": [
+          "cs.CR",
+          "cs.AI"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34770v1",
+        "published": "2026-11-25T17:35:27+00:00",
+        "title": "Make the Adversary Spend More: Stateful Deception as a Cost-Exchange Primitive for AI-Era Cyber Defense",
+        "updated": "2026-11-25T17:35:27+00:00",
+        "version_id": "2611.34770v1"
+      },
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.34770v1"
+      ]
+    },
+    "2611.34785": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "paper": {
+        "abstract": "Large language models increasingly replace real people in the AI development pipeline, as they are used to generate training dialogues at scale and to drive alignment and evaluation. However, out-of-the-box models produce monolingual and stylistically flat texts as synthetic user prompts, failing to replicate the real user-AI communication mechanics. We present PersonaFactory, an end-to-end pipeline that generates detailed user personas and uses them to augment existing user prompts from their point of view, producing a bank of over 740000 structured synthetic personas detailing their background and communication behaviors, and a corpus of roughly 1.24 million persona-styled synthetic conversations spanning 85 languages. We evaluate the effect of personal features on style adoption and intent preservation, using an LLM-judge and heuristic metrics to assess augmentation fidelity together with the downstream impact on assistant persona control through training data. Results show that our structured, attribute-based style representation enables per-axis control and better intent preservation at comparable style fidelity than free-text persona descriptions used in existing methods. A human expert evaluation found the augmented conversations plausible, with favorable ratings for intent preservation, style naturalness, and multilingual authenticity. Finally, PersonaFactory conversations achieve comparable performance to original training data on capability benchmarks, are preferred on real user prompts at equal reply length, and adapt their reply style more closely to users without explicit steering.",
+        "authors": [
+          "Bich Ngoc Doan",
+          "Hanna Yukhymenko",
+          "Imanol Schlag"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34785v1",
+        "published": "2026-11-25T17:42:31+00:00",
+        "title": "PersonaFactory: Stylistic User Prompt Augmentation with Synthetic Persona Bank",
+        "updated": "2026-11-25T17:42:31+00:00",
+        "version_id": "2611.34785v1"
+      },
+      "rule_hits": [
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.34785v1"
+      ]
+    },
+    "2611.34819": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "paper": {
+        "abstract": "Emotionally supportive interactions require large language models not only to avoid overtly harmful content, but also to recognize vulnerability-related risk, regulate their relational stance, preserve user agency, and provide context-appropriate support. Existing safety benchmarks often measure isolated violations, leaving unclear what underlying response competence their scores represent. We introduce VulnSafe, a Chinese capability assessment centered on Vulnerability-Aware Response Competence (VARC). VARC organizes relational safety into five complementary constructs: Risk Perception, Safety Preservation, Autonomy Protection, Supportive Response, and Boundary Management. Following an evidence-centered design, 41 scenarios elicit construct-relevant behavior through 2,050 balanced prompts and scenario-specific scoring rubrics. The assessment further separates proactive should-do behavior from prohibitive should-not behavior. Across eight representative LLMs, results show distinct competence profiles and larger disparities than prohibitive requirements. VulnSafe therefore makes relational safety interpretable as a multidimensional model capability rather than as refusal compliance alone.",
+        "authors": [
+          "Jiaming Luo",
+          "Jiacheng Ji",
+          "Haoan Jin",
+          "Xiaoning Sun",
+          "Qiuzhi Xiong",
+          "Yuxin Zhang",
+          "Hanhui Xu",
+          "Mengyue Wu"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34819v1",
+        "published": "2026-11-25T18:03:09+00:00",
+        "title": "VulnSafe: Measuring Vulnerability-Aware Relational Safety in Large Language Models",
+        "updated": "2026-11-25T18:03:09+00:00",
+        "version_id": "2611.34819v1"
+      },
+      "rule_hits": [
+        "llm_safety",
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.34819v1"
+      ]
+    },
+    "2611.34823": {
+      "attempts": {},
+      "events": [],
+      "failures": {},
+      "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "paper": {
+        "abstract": "Many languages of instruction in low- and middle-income countries (LMICs) are poorly represented in the data used to train language models. Before these models can support early-grade literacy in such languages, we need to know whether they hold the linguistic knowledge of each language that literacy teaching relies on. To test this, we present the Linguistic Knowledge Benchmark and the reproducible, largely automated pipeline that turns curriculum documents, teacher guides and pupil books into a vetted question set organised on a fixed grid of nine linguistic domains and seven grade levels. The pipeline combines LLM-driven source survey, feature consolidation, item generation and quality control with an item-selection step inspired by item response theory and a final expert review. We instantiate it for Kiswahili (Kenya; 135 items) and English (United Kingdom; 137 items) and evaluate 121 and 119 models respectively. Frontier models exceed 90% accuracy in both languages, but accuracy falls steeply for smaller and cheaper models, and more so in Kiswahili. The two best models under 10 billion parameters reach 91.7% and 73.0% in English but only 51.9% and 40.7% in Kiswahili, and the mean accuracy of models deployable on mobile and tablet hardware is 47% in English against 24% in Kiswahili. The models most practical for low-resource classrooms are therefore the least capable in the languages they would serve. We release a 20-item sample per language, all pipeline prompts, open-source code, and a public leaderboard. This is the first rung of a three-level evaluation ladder for measuring and generating decodable text to support foundational literacy.",
+        "authors": [
+          "Maxime Lelièvre",
+          "Alasdair Mackintosh",
+          "Dominic Andrews",
+          "Tobias Murray",
+          "Moritz Boos",
+          "Oliver G. B. Garrod"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2611.34823v1",
+        "published": "2026-11-25T18:07:44+00:00",
+        "title": "The Linguistic Knowledge Benchmark: Do Language Models Know the Foundations of Early-Grade Literacy?",
+        "updated": "2026-11-25T18:07:44+00:00",
+        "version_id": "2611.34823v1"
+      },
+      "rule_hits": [
+        "llm_eval",
+        "llm_core"
+      ],
+      "stage": "candidate",
+      "versions": [
+        "2611.34823v1"
+      ]
+    },
     "2611.34825": {
       "attempts": {
         "selection": 1,
@@ -84997,10 +85338,27 @@
       }
     },
     {
+      "collection_errors": [],
       "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
-      "coverage_complete": false,
+      "coverage_complete": true,
       "day": "2026-11-28",
+      "discovered_candidates": 10,
+      "discovered_papers": 10,
       "run_id": "20261128T095114Z-064ba6e4",
+      "shards": [
+        {
+          "categories": [
+            "cs.CL",
+            "cs.LG",
+            "cs.AI",
+            "cs.CV"
+          ],
+          "end": "2026-11-28T09:51:00+00:00",
+          "seen": 104,
+          "start": "2026-11-21T09:51:00+00:00",
+          "status": "limit_reached"
+        }
+      ],
       "started_at": "2026-11-28T09:51:14.932488+00:00",
       "window": {
         "end": "2026-11-28T09:51:14.932488+00:00",

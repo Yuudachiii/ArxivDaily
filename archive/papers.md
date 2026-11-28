@@ -4,6 +4,16 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
+| 2026-11-28 | The Linguistic Knowledge Benchmark: Do Language Models Know the Foundations of Early-Grade Literacy? | 待翻译 | [arXiv 2611.34823v1](https://arxiv.org/abs/2611.34823v1) |
+| 2026-11-28 | VulnSafe: Measuring Vulnerability-Aware Relational Safety in Large Language Models | 待翻译 | [arXiv 2611.34819v1](https://arxiv.org/abs/2611.34819v1) |
+| 2026-11-28 | PersonaFactory: Stylistic User Prompt Augmentation with Synthetic Persona Bank | 待翻译 | [arXiv 2611.34785v1](https://arxiv.org/abs/2611.34785v1) |
+| 2026-11-28 | Make the Adversary Spend More: Stateful Deception as a Cost-Exchange Primitive for AI-Era Cyber Defense | 待翻译 | [arXiv 2611.34770v1](https://arxiv.org/abs/2611.34770v1) |
+| 2026-11-28 | TASK Memory: Beyond Text-Only Memory with Activation Steering and Knowledge Editing against Memory Hallucination | 待翻译 | [arXiv 2611.34762v1](https://arxiv.org/abs/2611.34762v1) |
+| 2026-11-28 | One Model, Many Modes: Evolving System Prompt Ensembles for Creative Generation | 待翻译 | [arXiv 2611.34760v1](https://arxiv.org/abs/2611.34760v1) |
+| 2026-11-28 | What Is a Theory Worth to an LLM Solver? Measuring, Inducing, and Merging Theories in Context | 待翻译 | [arXiv 2611.34751v1](https://arxiv.org/abs/2611.34751v1) |
+| 2026-11-28 | SOLVE: Sparse, Ordered Keyposes Make LLM Agents Versatile and Efficient Robot Manipulator | 待翻译 | [arXiv 2611.34750v1](https://arxiv.org/abs/2611.34750v1) |
+| 2026-11-28 | Seeing the Right Context: Grounded On-Policy Distillation for Remote Sensing | 待翻译 | [arXiv 2611.34700v1](https://arxiv.org/abs/2611.34700v1) |
+| 2026-11-28 | Learning to Be Truncated: Preparing LLM Checkpoints for SVD Compression | 待翻译 | [arXiv 2611.34667v1](https://arxiv.org/abs/2611.34667v1) |
 | 2026-11-27 | Diverse Alternative Reasoning Traces for Hard Math Problems | 困难数学问题的多种替代推理轨迹 | [arXiv 2611.34928v1](https://arxiv.org/abs/2611.34928v1) |
 | 2026-11-27 | Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation | Agentic LongLive：用于长视频生成的异步代理内存 | [arXiv 2611.34907v1](https://arxiv.org/abs/2611.34907v1) |
 | 2026-11-27 | ProbFaS: Probabilistic Video Frame Selection for MLLMs via Multi-Fidelity Calibration | ProbFaS：通过多保真度校准进行 MLLM 的概率视频帧选择 | [arXiv 2611.34903v1](https://arxiv.org/abs/2611.34903v1) |
