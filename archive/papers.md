@@ -4,7 +4,7 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
-| 2026-11-27 | Diverse Alternative Reasoning Traces for Hard Math Problems | 待翻译 | [arXiv 2611.34928v1](https://arxiv.org/abs/2611.34928v1) |
+| 2026-11-27 | Diverse Alternative Reasoning Traces for Hard Math Problems | 困难数学问题的多种替代推理轨迹（谷歌备用翻译） | [arXiv 2611.34928v1](https://arxiv.org/abs/2611.34928v1) |
 | 2026-11-27 | Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation | Agentic LongLive：用于长视频生成的异步代理内存（谷歌备用翻译） | [arXiv 2611.34907v1](https://arxiv.org/abs/2611.34907v1) |
 | 2026-11-27 | ProbFaS: Probabilistic Video Frame Selection for MLLMs via Multi-Fidelity Calibration | ProbFaS：通过多保真度校准进行 MLLM 的概率视频帧选择（谷歌备用翻译） | [arXiv 2611.34903v1](https://arxiv.org/abs/2611.34903v1) |
 | 2026-11-27 | Stranger Things: When Objects Appear Without Their Typical Neighbors | 怪奇物语：当物体在没有典型邻居的情况下出现时（谷歌备用翻译） | [arXiv 2611.34881v1](https://arxiv.org/abs/2611.34881v1) |
