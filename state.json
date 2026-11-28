@@ -80854,7 +80854,7 @@
         "llm_reasoning",
         "llm_safety"
       ],
-      "stage": "presentation_pending",
+      "stage": "ready",
       "versions": [
         "2611.34848v1"
       ]
