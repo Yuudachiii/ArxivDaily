@@ -81144,11 +81144,6 @@
           "attempts": 1,
           "error": "translation_request_failed",
           "last_at": "2026-11-27T10:35:01.449540+00:00"
-        },
-        "translation": {
-          "attempts": 1,
-          "error": "translation_request_failed",
-          "last_at": "2026-11-27T10:35:01.449540+00:00"
         }
       },
       "first_discovered": "2026-11-27T10:35:01.449540+00:00",
@@ -81194,11 +81189,14 @@
         "llm_eval"
       ],
       "stage": "ready",
-      "stage_started": {
-        "at": "2026-11-28T09:51:14.435487+00:00",
-        "run_id": "20261128T095114Z-aa37ad92",
-        "stage": "translation"
+      "title_zh": "Agentic LongLive：用于长视频生成的异步代理内存",
+      "translation": {
+        "abstract_zh": "实时自回归视频生成器可以传输几分钟的视频并即时接受新的提示，但很难在长互动故事中保持人物、物体和地点的一致。代理系统为离线多镜头生成提供这样的内存，但它们提前读取整个脚本，在生成每个镜头之前对其进行规划，并重新生成失败的镜头，这是直播流所不允许的。我们推出了 Agentic LongLive，一种用于长视频生成的异步代理内存。单独 GPU 上的内存代理仅读取迄今为止显示的提示，而不会读取生成的视频，并保留每个人、物体和场景的文本状态和不断变化的图像。它从这个实体内存中组成一个全局图像和一个每次镜头内存图像，辅助 GPU 在下一个镜头开始之前将其预填充到生成器的注意力池中，并为命名它们的提示写入实体卡，因此视频永远不会等待内存，并且视频错误也不会被写回。一个小型语言模型，经过强化学习训练和使用下游视频结果校准的图像奖励，决定在知道下一个提示之前要记住什么。在 LongStory-Online 上，25 个故事（857 个镜头）的新基准一次显示一个镜头，Agentic LongLive 将其基本生成器 LongLive-2.0 的持久状态准确度提高了 26.3 分，主角身份提高了 44.9 分，重访地点一致性提高了 40.4 分，在 H100 上额外生成时间约为 1%。整个系统在一个 8xB200 节点上使用 BF16 (34.3 FPS) 生成器进行流传输，速度比实时更快，在 14 分钟的故事中保持图像质量稳定，并提高了两个 MiniMax-H3 生成器的身份，其中之一 LongLive-H3 也与其实时运行。据我们所知，它是第一个由 LLM 代理保存文本和图像内存的实时视频生成器。",
+        "fallback_provider": "google_free",
+        "title_zh": "Agentic LongLive：用于长视频生成的异步代理内存"
       },
+      "translation_prompt_fingerprint": "microsoft_free",
+      "translation_provider": "google_free",
       "versions": [
         "2611.34907v1"
       ]
