@@ -81169,7 +81169,7 @@
         "llm_core",
         "llm_eval"
       ],
-      "stage": "presentation_pending",
+      "stage": "ready",
       "versions": [
         "2611.34907v1"
       ]
