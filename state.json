@@ -80929,7 +80929,7 @@
       "rule_hits": [
         "llm_core"
       ],
-      "stage": "presentation_pending",
+      "stage": "ready",
       "versions": [
         "2611.34868v1"
       ]
