@@ -83190,9 +83190,25 @@
       "attempts": {
         "selection": 1
       },
+      "config_fingerprint": "6503a95a9da1882f825679ee6caef18ec828924649f92acbd5d22a49162bbad5",
+      "decision": {
+        "abstract_evidence": [],
+        "dpo_is_method": false,
+        "reason": "确定性规则命中：llm_safety、llm_core",
+        "review_evidence": [],
+        "rl_is_method": false,
+        "route": "llm_safety",
+        "score": 0.0,
+        "status": "select",
+        "theory_evidence": false,
+        "tier": "translation",
+        "transfer_evidence": false,
+        "uncertainty": []
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "model": "rules",
       "paper": {
         "abstract": "Preference-aligned LLMs can exhibit mode collapse, concentrating their output distributions around a narrow set of high-reward responses. This limits creative generation, which requires quality, novelty, and diversity. Existing test-time methods often emphasize diversity, giving less attention to whether individual responses are both high-quality and novel. This distinction matters in practical use, where users may seek a single compelling, original response. We formalize creative generation as a multi-objective distributional optimization problem and introduce SEPO, a training-free framework for System Prompt Ensemble Optimization. The framework combines prompt evolution with greedy max-min selection to identify behaviorally distinct system prompts under a quality constraint, then uniformly samples one prompt per response at inference time. Across four creative generation tasks with increasing quality requirements and three open-weight models, SEPO ranks first in 8 of 12 settings on the harmonic mean of quality, diversity, and novelty, while no baseline leads in more than two. On average, it raises LLM-judged diversity from 1.92 to 3.43 and novelty from 1.00 to 3.34 over base sampling (1-5 scale), with quality decreasing from 3.72 to 3.30. We further show that expanding the optimized ensemble increases separation among prompt-conditioned response distributions. These results support system prompt ensemble optimization as a promising approach to improving LLM creativity at inference time.",
         "authors": [
@@ -83213,16 +83229,12 @@
         "updated": "2026-11-25T17:29:33+00:00",
         "version_id": "2611.34760v1"
       },
+      "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_safety",
         "llm_core"
       ],
-      "stage": "candidate",
-      "stage_started": {
-        "at": "2026-11-28T09:51:14.932488+00:00",
-        "run_id": "20261128T095114Z-064ba6e4",
-        "stage": "selection"
-      },
+      "stage": "selected",
       "versions": [
         "2611.34760v1"
       ]
