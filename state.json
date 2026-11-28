@@ -83121,7 +83121,9 @@
       ]
     },
     "2611.34750": {
-      "attempts": {},
+      "attempts": {
+        "selection": 1
+      },
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-28T09:51:14.932488+00:00",
@@ -83153,6 +83155,11 @@
         "llm_core"
       ],
       "stage": "candidate",
+      "stage_started": {
+        "at": "2026-11-28T09:51:14.932488+00:00",
+        "run_id": "20261128T095114Z-064ba6e4",
+        "stage": "selection"
+      },
       "versions": [
         "2611.34750v1"
       ]
