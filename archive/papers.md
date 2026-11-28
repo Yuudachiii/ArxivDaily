@@ -4,7 +4,7 @@
 
 | 日期 | 英文标题 | 中文标题 | 链接 |
 | --- | --- | --- | --- |
-| 2026-11-28 | The Linguistic Knowledge Benchmark: Do Language Models Know the Foundations of Early-Grade Literacy? | 待翻译 | [arXiv 2611.34823v1](https://arxiv.org/abs/2611.34823v1) |
+| 2026-11-28 | The Linguistic Knowledge Benchmark: Do Language Models Know the Foundations of Early-Grade Literacy? | 语言知识基准：语言模型知道早期识字的基础吗？ | [arXiv 2611.34823v1](https://arxiv.org/abs/2611.34823v1) |
 | 2026-11-28 | VulnSafe: Measuring Vulnerability-Aware Relational Safety in Large Language Models | 待翻译 | [arXiv 2611.34819v1](https://arxiv.org/abs/2611.34819v1) |
 | 2026-11-28 | PersonaFactory: Stylistic User Prompt Augmentation with Synthetic Persona Bank | 待翻译 | [arXiv 2611.34785v1](https://arxiv.org/abs/2611.34785v1) |
 | 2026-11-28 | Make the Adversary Spend More: Stateful Deception as a Cost-Exchange Primitive for AI-Era Cyber Defense | 待翻译 | [arXiv 2611.34770v1](https://arxiv.org/abs/2611.34770v1) |
