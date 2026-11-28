@@ -81256,7 +81256,7 @@
         "llm_reasoning",
         "llm_training"
       ],
-      "stage": "presentation_pending",
+      "stage": "ready",
       "versions": [
         "2611.34928v1"
       ]
