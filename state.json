@@ -81088,7 +81088,7 @@
         "llm_multimodal",
         "llm_safety"
       ],
-      "stage": "presentation_pending",
+      "stage": "ready",
       "versions": [
         "2611.34903v1"
       ]
