@@ -80621,7 +80621,7 @@
         "llm_efficiency",
         "llm_training"
       ],
-      "stage": "presentation_pending",
+      "stage": "ready",
       "versions": [
         "2611.34831v1"
       ]
