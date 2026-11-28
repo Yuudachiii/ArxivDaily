@@ -80698,7 +80698,7 @@
         "llm_core",
         "llm_reasoning"
       ],
-      "stage": "presentation_pending",
+      "stage": "ready",
       "versions": [
         "2611.34832v1"
       ]
