@@ -80471,7 +80471,7 @@
       "attempts": {
         "selection": 1,
         "title_translation": 1,
-        "translation": 1
+        "translation": 2
       },
       "config_fingerprint": "a71fec15f5043de3f378b8923bdae8d392d07e37823ad263b03b4ed869bdd70e",
       "decision": {
@@ -80541,6 +80541,11 @@
         "llm_eval"
       ],
       "stage": "ready",
+      "stage_started": {
+        "at": "2026-11-28T09:51:14.435487+00:00",
+        "run_id": "20261128T095114Z-aa37ad92",
+        "stage": "translation"
+      },
       "versions": [
         "2611.34825v1"
       ]
