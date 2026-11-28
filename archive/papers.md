@@ -12,7 +12,7 @@
 | 2026-11-28 | One Model, Many Modes: Evolving System Prompt Ensembles for Creative Generation | 一种模型，多种模式：不断发展的系统提示集成以实现创意生成 | [arXiv 2611.34760v1](https://arxiv.org/abs/2611.34760v1) |
 | 2026-11-28 | What Is a Theory Worth to an LLM Solver? Measuring, Inducing, and Merging Theories in Context | 理论对 LLM 求解者有何价值？在上下文中测量、归纳和融合理论 | [arXiv 2611.34751v1](https://arxiv.org/abs/2611.34751v1) |
 | 2026-11-28 | SOLVE: Sparse, Ordered Keyposes Make LLM Agents Versatile and Efficient Robot Manipulator | 解决：稀疏、有序的按键使 LLM 代理成为多功能且高效的机器人操纵器 | [arXiv 2611.34750v1](https://arxiv.org/abs/2611.34750v1) |
-| 2026-11-28 | Seeing the Right Context: Grounded On-Policy Distillation for Remote Sensing | 待翻译 | [arXiv 2611.34700v1](https://arxiv.org/abs/2611.34700v1) |
+| 2026-11-28 | Seeing the Right Context: Grounded On-Policy Distillation for Remote Sensing | 看到正确的背景：遥感的基础政策蒸馏 | [arXiv 2611.34700v1](https://arxiv.org/abs/2611.34700v1) |
 | 2026-11-28 | Learning to Be Truncated: Preparing LLM Checkpoints for SVD Compression | 待翻译 | [arXiv 2611.34667v1](https://arxiv.org/abs/2611.34667v1) |
 | 2026-11-27 | Diverse Alternative Reasoning Traces for Hard Math Problems | 困难数学问题的多种替代推理轨迹 | [arXiv 2611.34928v1](https://arxiv.org/abs/2611.34928v1) |
 | 2026-11-27 | Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation | Agentic LongLive：用于长视频生成的异步代理内存 | [arXiv 2611.34907v1](https://arxiv.org/abs/2611.34907v1) |
