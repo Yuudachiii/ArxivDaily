@@ -83125,6 +83125,7 @@
       "events": [],
       "failures": {},
       "first_discovered": "2026-11-28T09:51:14.932488+00:00",
+      "intended_tier": "translation",
       "model": "rules",
       "paper": {
         "abstract": "Remote sensing scene understanding requires multimodal large language models (MLLMs) to interpret queried targets in relation to nearby objects and surrounding structures, which serve as spatial references or define the scope of an answer. However, standard answers and bounding boxes often leave these contextual relationships implicit. Thus, we construct GeoContext-5K to make them explicit in 5,394 training pairs for visual question answering (VQA), with spatial cues, visual facts, and supporting regions. GeOPD uses these annotations for on-policy distillation, guiding a frozen teacher with region marks on the full image and a visual fact while preserving surrounding spatial references. It prioritizes teacher corrections that agree with the shift in the student's next token distribution when evidence is restored. A complementary objective weights the contrast between the student's scores on the two views by how much masking lowers the teacher's log probability for the same sampled token. Experiments on five remote sensing VQA benchmarks show that GeOPD outperforms the evaluated open-source MLLMs and matched post-training baselines, improving over the 4B and 9B base models by 5.81 and 2.97 percentage points on average. The dataset and code will be publicly released at https://github.com/YeeCharm/GeOPD.",
@@ -83146,6 +83147,20 @@
         "updated": "2026-11-25T16:58:12+00:00",
         "version_id": "2611.34700v1"
       },
+      "presentation_modules": [
+        "title",
+        "title_translation",
+        "abstract",
+        "abstract_translation",
+        "source",
+        "screening_routes"
+      ],
+      "presentation_rule_hits": [
+        "llm_training",
+        "llm_efficiency",
+        "llm_eval",
+        "llm_core"
+      ],
       "prompt_fingerprint": "ce12ebafcc76c72f9d6e6bf0f20a69e7558aaa2302d1b186813f2ffd5c26fd55",
       "rule_hits": [
         "llm_training",
@@ -83153,7 +83168,7 @@
         "llm_eval",
         "llm_core"
       ],
-      "stage": "selected",
+      "stage": "ready",
       "versions": [
         "2611.34700v1"
       ]
